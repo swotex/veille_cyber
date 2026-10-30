@@ -1,0 +1,37 @@
+name: veille-cyber
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # toutes les 3 h (GitHub ne garantit pas la minute exacte)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Collecte + génération
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: python veille.py
+      - name: Commit de l'historique et de la page
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          git add data docs
+          git diff --staged --quiet || git commit -m "veille: mise à jour $(date -u +%F\ %H:%M)"
+          git push

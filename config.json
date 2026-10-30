@@ -1,0 +1,24 @@
+{
+  "hot_days": 35,
+  "watchlist": [
+    "fortinet", "fortios", "palo alto", "citrix", "ivanti", "cisco",
+    "microsoft exchange", "vmware", "openssh", "wordpress", "linux kernel",
+    "apache", "nginx", "veeam", "okta"
+  ],
+  "alerts": {
+    "min_cvss": 7.0,
+    "notify_kev": true,
+    "max_per_run": 15
+  },
+  "feeds": [
+    { "name": "CERT-FR Alertes", "url": "https://www.cert.ssi.gouv.fr/alerte/feed/", "lang": "fr" },
+    { "name": "CERT-FR Avis", "url": "https://www.cert.ssi.gouv.fr/avis/feed/", "lang": "fr" },
+    { "name": "ZATAZ", "url": "https://www.zataz.com/feed/", "lang": "fr" },
+    { "name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/feed/", "lang": "en" },
+    { "name": "The Hacker News", "url": "https://feeds.feedburner.com/TheHackersNews", "lang": "en" },
+    { "name": "Krebs on Security", "url": "https://krebsonsecurity.com/feed/", "lang": "en" },
+    { "name": "SecurityWeek", "url": "https://feeds.feedburner.com/securityweek", "lang": "en" },
+    { "name": "Dark Reading", "url": "https://www.darkreading.com/rss.xml", "lang": "en" },
+    { "name": "Schneier on Security", "url": "https://www.schneier.com/feed/atom/", "lang": "en" }
+  ]
+}

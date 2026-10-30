@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille Cyber</title>
+<style>
+:root{
+  --bg:#f6f7f9;--panel:#fff;--ink:#14171f;--mute:#667085;--line:#e4e7ec;--accent:#3b5bdb;
+  --crit:#c92a2a;--high:#e8590c;--med:#d9a400;--low:#2f9e44;--none:#868e96;--kev:#a61e4d;
+  --chip:#eef1f6;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1117;--panel:#161b24;--ink:#e6e9ef;--mute:#8b93a4;--line:#252c39;--accent:#7c93ff;
+  --crit:#ff6b6b;--high:#ff922b;--med:#fcc419;--low:#69db7c;--none:#868e96;--kev:#f783ac;--chip:#1e2531;}}
+:root[data-theme="dark"]{
+  --bg:#0e1117;--panel:#161b24;--ink:#e6e9ef;--mute:#8b93a4;--line:#252c39;--accent:#7c93ff;
+  --crit:#ff6b6b;--high:#ff922b;--med:#fcc419;--low:#69db7c;--none:#868e96;--kev:#f783ac;--chip:#1e2531;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px 60px}
+header{display:flex;align-items:center;gap:12px;padding:20px 0 12px;flex-wrap:wrap}
+h1{font-size:20px;margin:0;letter-spacing:-.01em}
+h1 span{color:var(--accent)}
+.sub{color:var(--mute);font-size:13px}
+.sp{flex:1}
+button,select,input{font:inherit;color:inherit}
+.btn{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 12px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+nav.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:16px}
+nav.tabs button{background:none;border:0;padding:10px 16px;cursor:pointer;color:var(--mute);border-bottom:2px solid transparent;font-weight:600}
+nav.tabs button[aria-selected=true]{color:var(--ink);border-color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:14px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.stat b{display:block;font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat small{color:var(--mute)}
+.stat.crit b{color:var(--crit)} .stat.kev b{color:var(--kev)} .stat.watch b{color:var(--accent)}
+.chart{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:14px}
+.chart h3{margin:0 0 6px;font-size:12px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+.bars{display:flex;align-items:flex-end;gap:3px;height:64px}
+.bars div{flex:1;min-width:2px;background:var(--accent);opacity:.75;border-radius:2px 2px 0 0;position:relative}
+.bars div.sel{opacity:1;outline:2px solid var(--ink)}
+.bars div:hover{opacity:1}
+.bar-axis{display:flex;justify-content:space-between;color:var(--mute);font-size:11px;margin-top:4px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel)}
+.seg button{background:none;border:0;padding:6px 12px;cursor:pointer;color:var(--mute)}
+.seg button[aria-pressed=true]{background:var(--accent);color:#fff}
+.chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer;font-size:13px;color:var(--mute)}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+input[type=search]{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 10px;min-width:200px;flex:1}
+select{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.count{color:var(--mute);font-size:13px;margin:4px 2px 8px}
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--none);border-radius:10px;padding:12px 14px;margin-bottom:8px}
+.card.CRITICAL{border-left-color:var(--crit)} .card.HIGH{border-left-color:var(--high)}
+.card.MEDIUM{border-left-color:var(--med)} .card.LOW{border-left-color:var(--low)}
+.row1{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.cid{font-weight:700;font-variant-numeric:tabular-nums;text-decoration:none;color:var(--ink)}
+.cid:hover{color:var(--accent)}
+.badge{font-size:12px;font-weight:700;border-radius:6px;padding:1px 7px;color:#fff;background:var(--none)}
+.badge.CRITICAL{background:var(--crit)} .badge.HIGH{background:var(--high)} .badge.MEDIUM{background:var(--med);color:#222} .badge.LOW{background:var(--low);color:#222}
+.tag{font-size:12px;border-radius:6px;padding:1px 7px;background:var(--chip);color:var(--mute);border:1px solid var(--line)}
+.tag.kev{background:var(--kev);color:#fff;border-color:var(--kev);font-weight:700}
+.tag.w{color:var(--accent);border-color:var(--accent)}
+.date{margin-left:auto;color:var(--mute);font-size:12px}
+.desc{margin:6px 0 0;color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}
+.card.open .desc{-webkit-line-clamp:unset;display:block}
+.more{display:none;margin-top:8px;font-size:13px;color:var(--mute)}
+.card.open .more{display:block}
+.more a{color:var(--accent)}
+.more code{background:var(--chip);padding:1px 5px;border-radius:4px;font-size:12px;word-break:break-all}
+.epss{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--mute)}
+.epss i{display:inline-block;width:40px;height:5px;background:var(--chip);border-radius:3px;overflow:hidden}
+.epss i u{display:block;height:100%;background:var(--accent)}
+.news{display:block;text-decoration:none;color:inherit}
+.news h4{margin:4px 0 2px;font-size:15px}
+.news:hover h4{color:var(--accent)}
+.news p{margin:0;color:var(--mute);font-size:13px}
+.empty{padding:40px;text-align:center;color:var(--mute)}
+.more-btn{display:block;margin:14px auto;}
+footer{color:var(--mute);font-size:12px;text-align:center;margin-top:30px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🛡️ Veille <span>Cyber</span></h1>
+    <span class="sub" id="gen"></span>
+    <span class="sp"></span>
+    <button class="btn" id="theme" title="Thème">◐</button>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="cve">Vulnérabilités</button>
+    <button role="tab" aria-selected="false" data-tab="news">Actualités</button>
+  </nav>
+
+  <!-- ========== CVE ========== -->
+  <section id="tab-cve">
+    <div class="stats" id="stats"></div>
+    <div class="chart"><h3>CVE publiées par jour (30 derniers jours) — cliquer une barre pour filtrer</h3>
+      <div class="bars" id="bars"></div><div class="bar-axis"><span id="ax0"></span><span id="ax1"></span></div></div>
+
+    <div class="toolbar">
+      <div class="seg" id="period">
+        <button data-p="1" aria-pressed="true">Aujourd'hui</button>
+        <button data-p="7" aria-pressed="false">7 jours</button>
+        <button data-p="30" aria-pressed="false">30 jours</button>
+        <button data-p="0" aria-pressed="false">Tout</button>
+      </div>
+      <input type="search" id="q" placeholder="Rechercher (CVE, produit, mot-clé)…">
+      <select id="sort"><option value="date">Tri : date</option><option value="cvss">Tri : CVSS</option><option value="epss">Tri : EPSS</option></select>
+    </div>
+    <div class="toolbar" id="chips">
+      <button class="chip" data-f="kev" aria-pressed="false">🔥 Exploitées (KEV)</button>
+      <button class="chip" data-f="watch" aria-pressed="false">⭐ Ma watchlist</button>
+      <button class="chip" data-f="CRITICAL" aria-pressed="false">Critique</button>
+      <button class="chip" data-f="HIGH" aria-pressed="false">Haute</button>
+      <button class="chip" data-f="MEDIUM" aria-pressed="false">Moyenne</button>
+      <button class="chip" data-f="LOW" aria-pressed="false">Basse</button>
+      <button class="chip" data-f="epss" aria-pressed="false">EPSS &gt; 10 %</button>
+    </div>
+    <div class="count" id="count"></div>
+    <div id="list"></div>
+    <button class="btn more-btn" id="moreCve" hidden>Afficher plus</button>
+  </section>
+
+  <!-- ========== NEWS ========== -->
+  <section id="tab-news" hidden>
+    <div class="toolbar">
+      <div class="seg" id="nperiod">
+        <button data-p="1" aria-pressed="true">24 h</button>
+        <button data-p="7" aria-pressed="false">7 jours</button>
+        <button data-p="0" aria-pressed="false">Tout</button>
+      </div>
+      <div class="seg" id="nlang">
+        <button data-l="" aria-pressed="true">FR + EN</button>
+        <button data-l="fr" aria-pressed="false">FR</button>
+        <button data-l="en" aria-pressed="false">EN</button>
+      </div>
+      <select id="nsrc"><option value="">Toutes les sources</option></select>
+      <input type="search" id="nq" placeholder="Rechercher dans l'actu…">
+    </div>
+    <div class="count" id="ncount"></div>
+    <div id="nlist"></div>
+    <button class="btn more-btn" id="moreNews" hidden>Afficher plus</button>
+  </section>
+
+  <footer>Sources : NVD · CISA KEV · FIRST EPSS · flux RSS. Page statique, régénérée automatiquement.</footer>
+</div>
+
+<script>
+const D = /*__DATA__*/null;
+const $ = s => document.querySelector(s);
+const el = (t, c, txt) => { const e = document.createElement(t); if (c) e.className = c; if (txt != null) e.textContent = txt; return e; };
+const DAY = 864e5;
+const parse = s => new Date(/Z|[+-]\d\d:?\d\d$/.test(s) ? s : s + "Z");
+const fmt = d => d.toLocaleString("fr-FR", {day:"2-digit", month:"short", hour:"2-digit", minute:"2-digit"});
+const safeUrl = u => /^https?:\/\//i.test(u) ? u : "#";
+const st = { p: 1, q: "", sort: "date", f: new Set(), day: null, limit: 60,
+             np: 1, nl: "", ns: "", nq: "", nlimit: 40 };
+try { document.documentElement.dataset.theme = localStorage.getItem("theme") || ""; } catch(e){}
+
+$("#gen").textContent = "Mis à jour " + fmt(parse(D.generated));
+$("#theme").onclick = () => {
+  const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+  const cur = document.documentElement.dataset.theme || (dark ? "dark" : "light");
+  const nxt = cur === "dark" ? "light" : "dark";
+  document.documentElement.dataset.theme = nxt;
+  try { localStorage.setItem("theme", nxt); } catch(e){}
+};
+document.querySelectorAll("nav.tabs button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav.tabs button").forEach(x => x.setAttribute("aria-selected", x === b));
+  $("#tab-cve").hidden = b.dataset.tab !== "cve";
+  $("#tab-news").hidden = b.dataset.tab !== "news";
+});
+
+// pré-calculs
+const watch = D.watchlist.map(w => w.toLowerCase());
+D.cves.forEach(c => {
+  c._t = parse(c.published).getTime();
+  const hay = (c.desc + " " + c.products.join(" ")).toLowerCase();
+  c._w = watch.filter(w => hay.includes(w));
+  c._hay = (c.id + " " + hay + " " + (c.kev_name || "")).toLowerCase();
+});
+D.news.forEach(n => { n._t = parse(n.date).getTime(); n._hay = (n.title + " " + n.summary + " " + n.source).toLowerCase(); });
+const NOW = Date.now();
+const startOfToday = new Date(); startOfToday.setHours(0,0,0,0);
+
+function inPeriod(t, p) {
+  if (!p) return true;
+  if (p === 1) return t >= NOW - DAY;           // "aujourd'hui" = dernières 24 h glissantes
+  return t >= NOW - p * DAY;
+}
+
+// ---------- CVE ----------
+function filtered(ignorePeriod) {
+  let r = D.cves.filter(c => {
+    if (st.day) { if (new Date(c._t).toDateString() !== st.day) return false; }
+    else if (!ignorePeriod && !inPeriod(c._t, st.p)) return false;
+    if (st.q && !st.q.split(/\s+/).every(w => c._hay.includes(w))) return false;
+    if (st.f.has("kev") && !c.kev) return false;
+    if (st.f.has("watch") && !c._w.length) return false;
+    if (st.f.has("epss") && !(c.epss >= 0.1)) return false;
+    const sevs = ["CRITICAL","HIGH","MEDIUM","LOW"].filter(s => st.f.has(s));
+    if (sevs.length && !sevs.includes(c.sev)) return false;
+    return true;
+  });
+  const k = st.sort;
+  r.sort((a,b) => k === "cvss" ? (b.cvss||0)-(a.cvss||0) : k === "epss" ? (b.epss||0)-(a.epss||0) : b._t-a._t);
+  return r;
+}
+
+function renderStats(rows) {
+  const s = $("#stats"); s.textContent = "";
+  const items = [
+    ["", rows.length, "CVE sur la période"],
+    ["crit", rows.filter(c => c.sev === "CRITICAL").length, "Critiques (≥ 9)"],
+    ["", rows.filter(c => c.sev === "HIGH").length, "Hautes (7–8.9)"],
+    ["kev", rows.filter(c => c.kev).length, "Exploitées (KEV)"],
+    ["watch", rows.filter(c => c._w.length).length, "Dans ma watchlist"],
+  ];
+  items.forEach(([c, n, l]) => { const d = el("div", "stat " + c); d.append(el("b", "", n), el("small", "", l)); s.append(d); });
+}
+
+function renderBars() {
+  const box = $("#bars"); box.textContent = "";
+  const days = [];
+  for (let i = 29; i >= 0; i--) { const d = new Date(startOfToday - i * DAY); days.push({ d, key: d.toDateString(), n: 0 }); }
+  const idx = Object.fromEntries(days.map((x, i) => [x.key, i]));
+  D.cves.forEach(c => { const k = new Date(c._t).toDateString(); if (k in idx) days[idx[k]].n++; });
+  const max = Math.max(1, ...days.map(x => x.n));
+  days.forEach(x => {
+    const b = el("div"); b.style.height = Math.max(3, x.n / max * 100) + "%";
+    b.title = x.d.toLocaleDateString("fr-FR", {weekday:"short", day:"numeric", month:"short"}) + " : " + x.n + " CVE";
+    if (st.day === x.key) b.className = "sel";
+    b.onclick = () => { st.day = st.day === x.key ? null : x.key; st.limit = 60; renderCve(); };
+    box.append(b);
+  });
+  $("#ax0").textContent = days[0].d.toLocaleDateString("fr-FR", {day:"numeric", month:"short"});
+  $("#ax1").textContent = "aujourd'hui";
+}
+
+function card(c) {
+  const d = el("article", "card " + (c.sev || ""));
+  const r = el("div", "row1");
+  const a = el("a", "cid", c.id); a.href = "https://nvd.nist.gov/vuln/detail/" + encodeURIComponent(c.id); a.target = "_blank"; a.rel = "noopener";
+  r.append(a, el("span", "badge " + (c.sev || ""), c.cvss != null ? c.cvss.toFixed(1) : "N/A"));
+  if (c.kev) r.append(el("span", "tag kev", "🔥 KEV" + (c.kev_ransom ? " · ransomware" : "")));
+  c._w.slice(0, 2).forEach(w => r.append(el("span", "tag w", "⭐ " + w)));
+  if (c.epss != null) {
+    const e = el("span", "epss"); const bar = el("i"); const u = el("u"); u.style.width = Math.min(100, c.epss * 100) + "%"; bar.append(u);
+    e.append(bar, document.createTextNode("EPSS " + (c.epss * 100).toFixed(c.epss < .01 ? 2 : 1) + " %")); r.append(e);
+  }
+  r.append(el("span", "date", fmt(new Date(c._t))));
+  const p = el("p", "desc", c.desc || "(pas de description pour l'instant)");
+  p.onclick = () => d.classList.toggle("open");
+  const m = el("div", "more");
+  const line = (k, v) => { if (!v) return; const x = el("div"); x.append(el("b", "", k + " : "), document.createTextNode(v)); m.append(x); };
+  line("Produits", c.products.join(", ")); line("CWE", c.cwe.join(", "));
+  if (c.vector) { const x = el("div"); x.append(el("b", "", "Vecteur : "), el("code", "", c.vector)); m.append(x); }
+  if (c.kev_added) line("Ajoutée au KEV le", c.kev_added);
+  if (c.refs.length) { const x = el("div"); x.append(el("b", "", "Réf. : ")); c.refs.forEach((u, i) => { const l = el("a", "", "[" + (i+1) + "]"); l.href = safeUrl(u); l.target = "_blank"; l.rel = "noopener noreferrer"; x.append(l, document.createTextNode(" ")); }); m.append(x); }
+  d.append(r, p, m);
+  return d;
+}
+
+function renderCve() {
+  const rows = filtered(), base = filtered(false);
+  renderStats(st.day ? rows : base);
+  renderBars();
+  $("#count").textContent = rows.length + " résultat" + (rows.length > 1 ? "s" : "") + (st.day ? " · filtré sur le " + new Date(st.day).toLocaleDateString("fr-FR", {weekday:"long", day:"numeric", month:"long"}) : "");
+  const list = $("#list"); list.textContent = "";
+  if (!rows.length) list.append(el("div", "empty", "Rien ici. Élargissez la période ou retirez un filtre."));
+  rows.slice(0, st.limit).forEach(c => list.append(card(c)));
+  $("#moreCve").hidden = rows.length <= st.limit;
+}
+
+$("#period").onclick = e => { const b = e.target.closest("button"); if (!b) return;
+  st.p = +b.dataset.p; st.day = null; st.limit = 60;
+  document.querySelectorAll("#period button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderCve(); };
+$("#chips").onclick = e => { const b = e.target.closest("button"); if (!b) return;
+  const f = b.dataset.f; st.f.has(f) ? st.f.delete(f) : st.f.add(f); b.setAttribute("aria-pressed", st.f.has(f)); st.limit = 60; renderCve(); };
+$("#q").oninput = e => { st.q = e.target.value.toLowerCase().trim(); st.limit = 60; renderCve(); };
+$("#sort").onchange = e => { st.sort = e.target.value; renderCve(); };
+$("#moreCve").onclick = () => { st.limit += 60; renderCve(); };
+
+// ---------- NEWS ----------
+[...new Set(D.news.map(n => n.source))].sort().forEach(s => { const o = el("option", "", s); o.value = s; $("#nsrc").append(o); });
+function renderNews() {
+  const rows = D.news.filter(n => inPeriod(n._t, st.np) && (!st.nl || n.lang === st.nl) && (!st.ns || n.source === st.ns)
+    && (!st.nq || st.nq.split(/\s+/).every(w => n._hay.includes(w))));
+  $("#ncount").textContent = rows.length + " article" + (rows.length > 1 ? "s" : "");
+  const list = $("#nlist"); list.textContent = "";
+  if (!rows.length) list.append(el("div", "empty", "Aucun article pour ce filtre."));
+  rows.slice(0, st.nlimit).forEach(n => {
+    const a = el("a", "card news"); a.href = safeUrl(n.url); a.target = "_blank"; a.rel = "noopener noreferrer";
+    const r = el("div", "row1"); r.append(el("span", "tag", n.source), el("span", "tag", n.lang.toUpperCase()), el("span", "date", fmt(new Date(n._t))));
+    a.append(r, el("h4", "", n.title)); if (n.summary) a.append(el("p", "", n.summary));
+    list.append(a);
+  });
+  $("#moreNews").hidden = rows.length <= st.nlimit;
+}
+$("#nperiod").onclick = e => { const b = e.target.closest("button"); if (!b) return; st.np = +b.dataset.p; st.nlimit = 40;
+  document.querySelectorAll("#nperiod button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderNews(); };
+$("#nlang").onclick = e => { const b = e.target.closest("button"); if (!b) return; st.nl = b.dataset.l; st.nlimit = 40;
+  document.querySelectorAll("#nlang button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderNews(); };
+$("#nsrc").onchange = e => { st.ns = e.target.value; st.nlimit = 40; renderNews(); };
+$("#nq").oninput = e => { st.nq = e.target.value.toLowerCase().trim(); st.nlimit = 40; renderNews(); };
+$("#moreNews").onclick = () => { st.nlimit += 40; renderNews(); };
+
+renderCve(); renderNews();
+</script>
+</body>
+</html>
