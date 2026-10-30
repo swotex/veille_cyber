@@ -1878,5 +1878,181 @@
   "lang": "en",
   "date": "2026-10-16T21:06:47+00:00",
   "summary": "New research shows that squid lived all around the globe even before the Cretaceous-Paleogene mass extinction event. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1421/": {
+  "title": "Multiples vulnérabilités dans les produits Apple (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1421/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Apple. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1422/": {
+  "title": "Multiples vulnérabilités dans Google Chrome (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1422/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1423/": {
+  "title": "Vulnérabilité dans CPython (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1423/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans CPython. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1424/": {
+  "title": "Vulnérabilité dans Ruby on Rails trilogy (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1424/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Ruby on Rails trilogy. Elle permet à un attaquant de provoquer une injection SQL (SQLi)."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1425/": {
+  "title": "Vulnérabilité dans Tenable Nessus Plugin (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1425/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Tenable Nessus Plugin. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1426/": {
+  "title": "Multiples vulnérabilités dans Veeam Management Pack (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1426/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Veeam Management Pack. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1427/": {
+  "title": "Vulnérabilité dans GitLab (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1427/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans les produits GitLab. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1428/": {
+  "title": "Multiples vulnérabilités dans Suricata (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1428/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Suricata. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1429/": {
+  "title": "Vulnérabilité dans Stormshield Management Center (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1429/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Stormshield Management Center. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1430/": {
+  "title": "Multiples vulnérabilités dans les produits MongoDB (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1430/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits MongoDB. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données, une injection SQL (SQLi) et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1431/": {
+  "title": "Multiples vulnérabilités dans le noyau Linux de Red Hat (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1431/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1432/": {
+  "title": "Multiples vulnérabilités dans le noyau Linux de SUSE (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1432/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un contournement de la politique de sécurité et un déni de service."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1433/": {
+  "title": "Multiples vulnérabilités dans les produits IBM (30 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1433/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-30T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/": {
+  "title": "Trezor warns of suspected crypto-theft implant in hardware wallet",
+  "url": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-10-30T15:58:20+00:00",
+  "summary": "Hardware wallet device maker Trezor has received credible reports about a suspected hardware crypto-theft implant in a Trezor Safe 5 sold by its reseller CryptoBilis in Southeast Asia. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/": {
+  "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
+  "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-10-30T14:36:54+00:00",
+  "summary": "A malicious version of Anthropic's Claude Code VS Code extension was distributed through Cursor's extension marketplace for approximately 11 hours on October 29, exposing up to 5,000 developers to malware designed to install persistent SSH backdoors. [...]"
+ },
+ "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html": {
+  "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
+  "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-10-30T16:58:44+00:00",
+  "summary": "Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike…"
+ },
+ "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html": {
+  "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
+  "url": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-10-30T15:17:28+00:00",
+  "summary": "TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the…"
+ },
+ "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html": {
+  "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
+  "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-10-30T14:08:14+00:00",
+  "summary": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting…"
+ },
+ "https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/": {
+  "title": "PHP2Shell Attacks Root Palo Alto Firewalls but Fail Against WordPress",
+  "url": "https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-10-30T15:09:25+00:00",
+  "summary": "Over 22.6 million exposed instances are potentially affected by the critical PHP flaws that have been targeted for over a week. The post PHP2Shell Attacks Root Palo Alto Firewalls but Fail Against WordPress appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/": {
+  "title": "In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak",
+  "url": "https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-10-30T14:41:35+00:00",
+  "summary": "Noteworthy stories that might have slipped under the radar: Iran eyed in military freezer hacks, Copenhagen University breach, AI-powered malware. The post In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak appeared…"
+ },
+ "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian": {
+  "title": "L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara",
+  "url": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-10-30T15:39:54+00:00",
+  "summary": "I ricercatori non riescono a spiegare del tutto perché le minacce informatiche in Italia siano così diverse rispetto a quelle di qualsiasi altro Paese."
+ },
+ "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html": {
+  "title": "Bloatware in Aftermarket Auto Parts",
+  "url": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-10-30T15:20:02+00:00",
+  "summary": "This story is interesting: One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on it, like it would a smart TV. What was reportedly discovered isn’t surprising, but is worth knowing about. Among the…"
  }
 }
