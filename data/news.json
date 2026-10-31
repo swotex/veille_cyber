@@ -2110,5 +2110,53 @@
   "lang": "en",
   "date": "2026-10-31T04:56:12+00:00",
   "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks…"
+ },
+ "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/": {
+  "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
+  "url": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-10-31T15:35:11+00:00",
+  "summary": "A security researcher has released a proof-of-concept exploit for a recently patched Android vulnerability, dubbed \"SMS of Death\" and tracked as CVE-2026-58882, that lets attackers remotely disrupt cellular service or crash phones by sending a specially…"
+ },
+ "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/": {
+  "title": "Reddit to lock content behind logins to fight scrapers",
+  "url": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-10-31T14:05:15+00:00",
+  "summary": "Reddit announced in a post by co-founder Steve Huffman that the site will gradually become a \"logged-in service,\" offering limited access to visitors without accounts. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/": {
+  "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+  "url": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-10-31T13:10:19+00:00",
+  "summary": "AI-generated vulnerability reports are overwhelming some bug bounty programs, making it harder for aspiring security researchers to know where to start. TryHackMe explains how beginners can build practical cybersecurity skills, use AI responsibly, and…"
+ },
+ "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/": {
+  "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+  "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-10-31T12:50:09+00:00",
+  "summary": "Blockchain analytics firm Chainalysis disclosed a data breach after attackers used \"offensive agentic techniques\" to access internal systems and tools, exposing customer names, email addresses, user IDs, and organizational roles. [...]"
+ },
+ "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html": {
+  "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+  "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-10-31T12:01:56+00:00",
+  "summary": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its…"
+ },
+ "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/": {
+  "title": "Syrian Hacker Gets Prison Time in US After Over a Decade on the Run",
+  "url": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-10-31T11:00:00+00:00",
+  "summary": "A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro-Assad attacks on media, businesses, and government entities. The post Syrian Hacker Gets Prison Time in US After Over a Decade on the Run appeared first on SecurityWeek ."
  }
 }
