@@ -2054,5 +2054,37 @@
   "lang": "en",
   "date": "2026-10-30T15:20:02+00:00",
   "summary": "This story is interesting: One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on it, like it would a smart TV. What was reportedly discovered isn’t surprising, but is worth knowing about. Among the…"
+ },
+ "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/": {
+  "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
+  "url": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-10-30T21:09:46+00:00",
+  "summary": "Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers running Multipath TCP (MPTCP) listeners. [...]"
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor": {
+  "title": "Devs Hit by Trojanized Claude Code Extension for Cursor",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-10-30T20:05:58+00:00",
+  "summary": "Two serious security issues hit Cursor on the same day, highlighting the risks for AI-powered integrated development environments (IDEs)."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down": {
+  "title": "Behind the Scenes of How Operation Blackout Went Down",
+  "url": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-10-30T19:46:08+00:00",
+  "summary": "A recent law enforcement operation to dismantle harmful scam centers was a big success. A threat intelligence expert walks us through what happened and why he wants more of the same."
+ },
+ "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html": {
+  "title": "Friday Squid Blogging: Bigfin Squid Off California Coast",
+  "url": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-10-30T21:04:36+00:00",
+  "summary": "Neat video : The sighting, announced September 2, marks the first time anyone has spotted a live bigfin squid, which belongs to the Magnapinna genus, in the northeastern Pacific Ocean. As usual, you can also use this squid post to talk about the security…"
  }
 }
