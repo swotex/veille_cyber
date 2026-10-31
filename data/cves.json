@@ -31029,7 +31029,7 @@
  "CVE-2026-83831": {
   "id": "CVE-2026-83831",
   "published": "2026-10-27T21:19:08.030",
-  "modified": "2026-10-29T16:19:15.117",
+  "modified": "2026-10-31T18:17:44.603",
   "desc": "Double free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -64815,7 +64815,7 @@
  "CVE-2026-83943": {
   "id": "CVE-2026-83943",
   "published": "2026-10-08T23:17:04.267",
-  "modified": "2026-10-27T21:19:18.640",
+  "modified": "2026-10-31T17:18:45.023",
   "desc": "Exposure of sensitive information to an unauthorized actor in Azure API Center allows an unauthorized attacker to disclose information over a network.",
   "cvss": 8.7,
   "sev": "HIGH",
@@ -69881,7 +69881,7 @@
  "CVE-2026-83651": {
   "id": "CVE-2026-83651",
   "published": "2026-10-13T19:20:06.437",
-  "modified": "2026-10-29T18:23:26.000",
+  "modified": "2026-10-31T19:17:04.150",
   "desc": "Out-of-bounds read in Windows GDI allows an unauthorized attacker to disclose information over a network.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -75681,7 +75681,7 @@
  "CVE-2026-85908": {
   "id": "CVE-2026-85908",
   "published": "2026-10-13T19:21:16.717",
-  "modified": "2026-10-28T16:45:16.900",
+  "modified": "2026-10-31T19:17:18.493",
   "desc": "Heap-based buffer overflow in Windows Win32K - GRFX allows an authorized attacker to elevate privileges locally.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -78358,7 +78358,7 @@
  "CVE-2026-98432": {
   "id": "CVE-2026-98432",
   "published": "2026-10-15T13:17:13.987",
-  "modified": "2026-10-30T16:18:00.497",
+  "modified": "2026-10-31T21:16:53.683",
   "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt\nunder rcu_read_lock() only, and ip_build_and_send_pkt() and\nip_options_build() then read opt->optlen twice.\n\nNote that the SYNACK timer itself is not an issue: it holds a\nreference on its request socket, and inet_csk_reqsk_queue_drop()\ncalls timer_delete_sync() before the child can be freed.\n\nSince commit 079096f103fa (\"tcp/dccp: install syn_recv requests\ninto ehash table\"), request sockets are processed without holding\nthe listener lock, so nothing prevents the child socket from being\nfreed while the SYNACK is still being built. TCP child sockets do\nnot have SOCK_RCU_FREE, and inet_sock_destruct() frees inet_opt\nwith a plain kfree(), leading to a use-after-free in\nip_options_build().\n\nA similar issue exists with request socket migration\n(net.ipv4.tcp_migrate_req=1, or a BPF_SK_REUSEPORT_SELECT_OR_MIGRATE\nprogram). reqsk_timer_handler() clones the request socket with\ninet_reqsk_clone(), so that the old request socket and its clone\nshare the same ireq_opt, then reqsk_migrate_reset() clears the\npointer in the old one. Another cpu holding a reference on the old\nrequest socket can still be using these options (sending a SYNACK,\nor creating a child in tcp_v4_syn_recv_sock()) when the clone is\nfreed, and tcp_v4_reqsk_destructor() also uses a plain kfree().\n\nReaders already use RCU, and other paths replacing inet_opt\n(do_ip_setsockopt(), cipso_v4_sock_setattr()...) already use\nkfree_rcu(). Use kfree_rcu() in inet_sock_destruct() and\ntcp_v4_reqsk_destructor() as well.\n\nIPv6 is not affected by the first issue, because tcp_v6_syn_recv_sock()\nduplicates the options. tcp_v6_reqsk_destructor() has the same\nmigration issue with ipv6_opt, which is only set by CALIPSO. This\nwill be addressed in a separate patch.",
   "cvss": 9.8,
   "sev": "CRITICAL",
@@ -113443,6 +113443,379 @@
   "refs": [
    "https://portal.opengear.com/customerservice/s/article/CVE-2026-102212-Opengear-Console-Server-Buffer-Overflow-to-RCE",
    "https://portal.opengear.com/customerservice/s/article/Release-Notification-Firmware-Version-5-5-3-is-Now-Generally-Available"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-70106": {
+  "id": "CVE-2026-70106",
+  "published": "2026-10-13T19:19:22.223",
+  "modified": "2026-10-31T18:17:22.940",
+  "desc": "Heap-based buffer overflow in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-122"
+  ],
+  "products": [
+   "microsoft windows 10 1607",
+   "microsoft windows 10 1809",
+   "microsoft windows 10 21h2",
+   "microsoft windows 10 22h2",
+   "microsoft windows 11 23h2",
+   "microsoft windows 11 24h2"
+  ],
+  "refs": [
+   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70106"
+  ],
+  "kev": false,
+  "epss": 0.00499
+ },
+ "CVE-2026-70211": {
+  "id": "CVE-2026-70211",
+  "published": "2026-10-13T19:19:35.513",
+  "modified": "2026-10-31T19:16:56.517",
+  "desc": "Out-of-bounds read in Windows Win32 Kernel Subsystem allows an authorized attacker to disclose information locally.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [
+   "microsoft windows 10 1607",
+   "microsoft windows 10 1809",
+   "microsoft windows 10 21h2",
+   "microsoft windows 10 22h2",
+   "microsoft windows 11 23h2",
+   "microsoft windows 11 24h2"
+  ],
+  "refs": [
+   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70211"
+  ],
+  "kev": false,
+  "epss": 0.00459
+ },
+ "CVE-2026-70271": {
+  "id": "CVE-2026-70271",
+  "published": "2026-10-13T19:19:45.950",
+  "modified": "2026-10-31T18:17:32.730",
+  "desc": "Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.",
+  "cvss": 7.0,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [
+   "microsoft windows 10 1607",
+   "microsoft windows 10 1809",
+   "microsoft windows 10 21h2",
+   "microsoft windows 10 22h2",
+   "microsoft windows 11 23h2",
+   "microsoft windows 11 24h2"
+  ],
+  "refs": [
+   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70271"
+  ],
+  "kev": false,
+  "epss": 0.00329
+ },
+ "CVE-2026-120199": {
+  "id": "CVE-2026-120199",
+  "published": "2026-10-31T18:17:07.010",
+  "modified": "2026-10-31T18:17:07.653",
+  "desc": "LearnHouse before 1.1.1 contains a missing authorization vulnerability in the assignment API that allows authenticated users to read other users' grades and submissions. Attackers can supply another user_id to the submissions grade endpoint or query submission read functions to view other students' work, grades and instructor feedback.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/learnhouse/learnhouse",
+   "https://github.com/learnhouse/learnhouse/blob/1.1.0/apps/api/src/services/courses/activities/assignments.py#L1673",
+   "https://github.com/learnhouse/learnhouse/commit/844a8a7787f0c42d466be604aaf47d296748b1b3"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120200": {
+  "id": "CVE-2026-120200",
+  "published": "2026-10-31T18:17:07.713",
+  "modified": "2026-10-31T18:17:07.713",
+  "desc": "Nexterm through 1.2.2-BETA contains a missing authorization vulnerability that allows authenticated users to hibernate, resume, or terminate other users' remote sessions via session lifecycle routes. Attackers who obtain a session ID can call the hibernate, resume, or DELETE connection endpoints to disrupt live SSH, RDP, VNC, or SFTP sessions.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/gnmyt/Nexterm",
+   "https://github.com/gnmyt/Nexterm/blob/v1.2.2-BETA/server/routes/serverSession.js#L87",
+   "https://github.com/gnmyt/Nexterm/commit/00fdb03eea35adb3dee8169469e897b3c8f30657"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120201": {
+  "id": "CVE-2026-120201",
+  "published": "2026-10-31T18:17:07.890",
+  "modified": "2026-10-31T18:17:08.023",
+  "desc": "Jpom 2.10.0 through 2.11.12 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain super-administrator access by injecting query conditions into the JPOM-USER-TOKEN header. Attackers can send a value like 'is not null', which Hutool's Condition parser treats as an operator, then execute commands through Jpom's script features.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-943"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/dromara/Jpom",
+   "https://github.com/dromara/Jpom/blob/v2.11.12/modules/server/src/main/java/org/dromara/jpom/common/interceptor/LoginInterceptor.java#L146",
+   "https://github.com/dromara/Jpom/issues/121"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120202": {
+  "id": "CVE-2026-120202",
+  "published": "2026-10-31T18:17:08.080",
+  "modified": "2026-10-31T18:17:08.080",
+  "desc": "Highflame ramparts 0.8.1 through 0.8.10 contains a security scan bypass vulnerability that allows attackers to hide malicious payloads because collect_bundle_siblings and walk_bundle_subdir skip nested directories and .pyc files. Attackers can distribute a skill bundle with an unchecked-hash .pyc under scripts/<subdir>/__pycache__/ that ramparts silently ignores, while CPython executes it when the skill runs.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-693"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/highflame-ai/ramparts",
+   "https://github.com/highflame-ai/ramparts/blob/v0.8.10/src/skills.rs#L898",
+   "https://github.com/highflame-ai/ramparts/issues/154"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120203": {
+  "id": "CVE-2026-120203",
+  "published": "2026-10-31T18:17:08.237",
+  "modified": "2026-10-31T18:17:08.237",
+  "desc": "ShowDoc 2.8.14 before 3.9.6 contains a code injection vulnerability in its Mock feature that allows authenticated users to execute shell commands through mockjs templates. Attackers can store a template via MockController::add with escaped parentheses that mockjs evaluates with eval(), then trigger it through MockController::infoByKey to run commands, as root in the official Docker image.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://gist.github.com/LioTree/028af150fd991cf9924dd2c7d5912e54",
+   "https://github.com/star7th/showdoc",
+   "https://github.com/star7th/showdoc/blob/v3.9.5/mock/index.js#L42"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120204": {
+  "id": "CVE-2026-120204",
+  "published": "2026-10-31T18:17:08.403",
+  "modified": "2026-10-31T18:17:08.403",
+  "desc": "DeepInfer through 0.1.0 contains a path traversal vulnerability in the unauthenticated /profile endpoint that allows remote attackers to create arbitrary directories via the output_dir parameter. Attackers, including cross-site GET requests from an operator's browser, can write chrome trace files to exhaust disk or inodes and use error messages as a filesystem oracle.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/deepseek-ai/DeepInfer",
+   "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/deepinfer/engine/profile_server.py#L210",
+   "https://github.com/deepseek-ai/DeepInfer/pull/242"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120205": {
+  "id": "CVE-2026-120205",
+  "published": "2026-10-31T18:17:08.570",
+  "modified": "2026-10-31T18:17:08.570",
+  "desc": "Thelia before 3.1.0 contains a stored cross-site scripting vulnerability in ForSomeCustomers::getSummary() that allows unauthenticated attackers to inject scripts via unescaped customer names. Attackers can register with a script payload as their name that executes when administrators view related coupons, stealing CSRF tokens to create administrator accounts.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/thelia/thelia/blob/3.0.0/core/lib/Thelia/Condition/Implementation/ForSomeCustomers.php#L119",
+   "https://github.com/thelia/thelia/commit/c90d59375089a0833a56703c6f9f9ddea17bddc9",
+   "https://github.com/thelia/thelia/releases/tag/3.1.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120206": {
+  "id": "CVE-2026-120206",
+  "published": "2026-10-31T18:17:08.747",
+  "modified": "2026-10-31T18:17:08.747",
+  "desc": "Thelia before 3.2.0 contains a cross-site request forgery vulnerability in the back office that allows attackers to forge administrative actions because per-session CSRF tokens leak via URL query strings. Attackers can reuse leaked tokens or target the unprotected setToggleVisibilityAction and updatePositionAction to make logged-in administrators delete, hide or reorder catalogue and configuration objects.",
+  "cvss": 5.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/thelia-templates/default-twig/commit/a9647682572de056ba258a2d4d53e42f5b591b84",
+   "https://github.com/thelia/thelia/blob/3.1.6/core/lib/Thelia/Controller/Admin/AbstractCrudController.php#L466",
+   "https://github.com/thelia/thelia/commit/55a7156e552d0b8145309b10175d13ecc1187433"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120207": {
+  "id": "CVE-2026-120207",
+  "published": "2026-10-31T18:17:08.920",
+  "modified": "2026-10-31T18:17:08.920",
+  "desc": "Thelia Page Module before 2.0.4 contains a cross-site request forgery vulnerability that allows remote attackers to delete page tags, documents and images by abusing back-office delete routes lacking CSRF tokens and permission checks. Attackers can lure a logged-in administrator into navigating to crafted GET requests that walk sequential ids, removing TheliaLibrary images, their files and variants across pages, products and categories.",
+  "cvss": 7.0,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/thelia-modules/Page/blob/2.0.3/Controller/Admin/PageImageController.php#L117",
+   "https://github.com/thelia-modules/Page/commit/e7206a7c35c945cc8fe529fe95a9b30402f0fb60",
+   "https://github.com/thelia/thelia/security/advisories/GHSA-whqr-4v2h-6jhc"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120208": {
+  "id": "CVE-2026-120208",
+  "published": "2026-10-31T18:17:09.083",
+  "modified": "2026-10-31T18:17:09.210",
+  "desc": "libheif 1.18.0 before 1.23.3 contains a heap-based buffer overflow vulnerability in unc_decoder_mixed_interleave::processTile() that allows attackers to write out of bounds by supplying chroma components with unequal bit depths. Attackers can craft a HEIF file declaring, for example, 16-bit Cb and 8-bit Cr to trigger file-controlled heap writes past the Cr plane, potentially achieving code execution in image-processing pipelines.",
+  "cvss": 7.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-122"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/strukturag/libheif/blob/v1.23.2/libheif/codecs/uncompressed/unc_decoder_mixed_interleave.cc#L95",
+   "https://github.com/strukturag/libheif/commit/9d3cd91d7b1c8c68deef6d06057ab956bcb0dfb9",
+   "https://github.com/strukturag/libheif/releases/tag/v1.23.3"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120209": {
+  "id": "CVE-2026-120209",
+  "published": "2026-10-31T18:17:09.263",
+  "modified": "2026-10-31T18:17:09.263",
+  "desc": "AJ-Report through 1.7.1 signs share tokens with a hard-coded JWT secret, allowing attackers to forge valid Share-Tokens offline. Attackers can mint a token with reportCode 'dataSet' to access the testTransform endpoint, which passes scripts to GroovyClassLoader for unauthenticated remote code execution.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-321"
+  ],
+  "products": [],
+  "refs": [
+   "https://gitee.com/belief-team/report",
+   "https://gitee.com/belief-team/report/blob/V1.7.1/report-core/src/main/java/com/anjiplus/template/gaea/business/util/JwtUtil.java",
+   "https://gitee.com/belief-team/report/issues/IKRV6T"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120210": {
+  "id": "CVE-2026-120210",
+  "published": "2026-10-31T18:17:09.427",
+  "modified": "2026-10-31T18:17:09.427",
+  "desc": "FFmpeg 5.0 through 9.0.2 contains a path traversal vulnerability in the IMF demuxer that allows attackers to open files outside the package via unvalidated ASSETMAP Path elements. Attackers can supply a crafted IMF package with '..' or absolute paths to demux local MXF files, probe file existence and size, or trigger server-side requests.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/25341",
+   "https://github.com/FFmpeg/FFmpeg",
+   "https://github.com/FFmpeg/FFmpeg/blob/n9.0.2/libavformat/imfdec.c#L273"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118147": {
+  "id": "CVE-2026-118147",
+  "published": "2026-10-31T19:16:47.213",
+  "modified": "2026-10-31T19:16:47.873",
+  "desc": "Improper certificate validation in Visual Studio allows an unauthorized attacker to perform spoofing over a network.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-295"
+  ],
+  "products": [],
+  "refs": [
+   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118147"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118636": {
+  "id": "CVE-2026-118636",
+  "published": "2026-10-31T21:16:53.203",
+  "modified": "2026-10-31T21:16:53.203",
+  "desc": "**UNSUPPORTED WHEN ASSIGNED** \n\nJavaNativeMessageDecoder in the MINA 3.0 codec module calls ObjectInputStream.readObject() on frame bytes with no class filter, so an\napplication that puts it in front of an untrusted peer is open to gadget-chain RCE.\n\nAs the 3.0.0 branch is inactive, we do not plan to release a version that fixes this issue. \n\nUsers are recommended to use the latest Apache MINA 2.2.X branch.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://lists.apache.org/thread.html/h76nwcrkvsffhsk2kq6cjzc6srtnty7x",
+   "https://www.cve.org/CVERecord?id=CVE-2026-118636",
+   "http://www.openwall.com/lists/oss-security/2026/10/31/3"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120135": {
+  "id": "CVE-2026-120135",
+  "published": "2026-10-31T21:16:53.397",
+  "modified": "2026-10-31T21:16:53.397",
+  "desc": "Uncontrolled Recursion vulnerability in Apache Thrift Java bindings.\n\n\n\nThis issue affects Apache Thrift: before 0.24.0.\n\n\n\nUsers are recommended to upgrade to version 0.24.0, which fixes the issue.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-674"
+  ],
+  "products": [],
+  "refs": [
+   "https://lists.apache.org/thread/2zzkm3mfhfg79ohjo37pg1gms5nto588",
+   "https://lists.apache.org/thread/7v3jhgwfbmhx42424phydlnzb109g8b9",
+   "http://www.openwall.com/lists/oss-security/2026/10/31/2"
   ],
   "kev": false,
   "epss": null

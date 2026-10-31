@@ -2158,5 +2158,13 @@
   "lang": "en",
   "date": "2026-10-31T11:00:00+00:00",
   "summary": "A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro-Assad attacks on media, businesses, and government entities. The post Syrian Hacker Gets Prison Time in US After Over a Decade on the Run appeared first on SecurityWeek ."
+ },
+ "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/": {
+  "title": "Northflank security breach leads to abuse of customers' AI API keys",
+  "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-10-31T18:01:12+00:00",
+  "summary": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]"
  }
 }
