@@ -2206,5 +2206,21 @@
   "lang": "en",
   "date": "2026-11-01T11:15:00+00:00",
   "summary": "The startup maps how identities, assets and vulnerabilities connect, and uses AI agents to find and fix risky combinations of issues. The post Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations appeared first on SecurityWeek ."
+ },
+ "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/": {
+  "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
+  "url": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-01T15:11:21+00:00",
+  "summary": "Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild its GitLab server and reset all passwords over concerns of a possible compromise. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/": {
+  "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
+  "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-01T13:53:11+00:00",
+  "summary": "OpenAI has just confirmed that it's rolling out ChatGPT Work capabilities directly into regular Chat, while also combining usage allowances across ChatGPT and Codex. [...]"
  }
 }
