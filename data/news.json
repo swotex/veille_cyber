@@ -2166,5 +2166,45 @@
   "lang": "en",
   "date": "2026-10-31T18:01:12+00:00",
   "summary": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]"
+ },
+ "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html": {
+  "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+  "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-01T08:51:31+00:00",
+  "summary": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate.…"
+ },
+ "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html": {
+  "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
+  "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-01T07:25:40+00:00",
+  "summary": "Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company. Polymarket says…"
+ },
+ "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html": {
+  "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+  "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-01T07:03:00+00:00",
+  "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and…"
+ },
+ "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html": {
+  "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+  "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-01T07:02:58+00:00",
+  "summary": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used…"
+ },
+ "https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/": {
+  "title": "Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations",
+  "url": "https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-01T11:15:00+00:00",
+  "summary": "The startup maps how identities, assets and vulnerabilities connect, and uses AI agents to find and fix risky combinations of issues. The post Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations appeared first on SecurityWeek ."
  }
 }
