@@ -2278,5 +2278,285 @@
   "lang": "en",
   "date": "2026-11-02T07:57:49+00:00",
   "summary": "CISA has added CVE-2026-111357 and CVE-2026-118527 to its KEV catalog after the Ivanti VPN flaws were chained in zero-day attacks. The post Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain appeared first on SecurityWeek ."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1340/": {
+  "title": "Multiples vulnérabilités dans Roundcube Webmail (19 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1340/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Roundcube Webmail. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une falsification de requêtes côté serveur (SSRF) et une injection de code…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1434/": {
+  "title": "Multiples vulnérabilités dans Redmine (02 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1434/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-02T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Redmine. Certaines d'entre elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS), un contournement de la politique de sécurité et un déni de service."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1435/": {
+  "title": "Multiples vulnérabilités dans les produits Synology (02 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1435/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-02T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Synology. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1436/": {
+  "title": "Multiples vulnérabilités dans Tenable Identity Exposure (02 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1436/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-02T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Tenable Identity Exposure. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1437/": {
+  "title": "Multiples vulnérabilités dans Qnap QNE (02 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1437/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-02T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Qnap QNE. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1438/": {
+  "title": "Multiples vulnérabilités dans macmon et NRSW (02 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1438/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-02T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Belden macmon et NRSW. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1439/": {
+  "title": "Vulnérabilité dans Traefik (02 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1439/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-02T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Traefik. Elle permet à un attaquant de provoquer un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1440/": {
+  "title": "Multiples vulnérabilités dans Microsoft Edge (02 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1440/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-02T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1441/": {
+  "title": "Vulnérabilité dans Microsoft Visual Studio (02 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1441/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-02T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Microsoft Visual Studio. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1442/": {
+  "title": "Multiples vulnérabilités dans Ivanti Connect Secure (02 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1442/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-02T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Ivanti Connect Secure. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un contournement de la politique de sécurité. Ivanti indique…"
+ },
+ "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/": {
+  "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
+  "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-02T21:40:14+00:00",
+  "summary": "Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/": {
+  "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
+  "url": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-02T19:00:45+00:00",
+  "summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/": {
+  "title": "Google disrupts million-device XCPE Android malware botnet, bans TV box maker",
+  "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-02T18:16:34+00:00",
+  "summary": "Google and industry partners have dismantled the XCPE malware botnet consisting of more than 1.3 million Android TV streaming TV boxes that Google says its manufacturer intentionally infected with malware to generate revenue through cybercrime activities.…"
+ },
+ "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/": {
+  "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
+  "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-02T15:03:07+00:00",
+  "summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/": {
+  "title": "Your Mobile Carrier Stores Your Call Logs for Years",
+  "url": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-02T15:01:11+00:00",
+  "summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service…"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/": {
+  "title": "Hackers disrupt refrigeration systems at European supermarkets",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-02T14:28:39+00:00",
+  "summary": "A cyberattack on refrigeration systems has disrupted stores run by multiple supermarket chains across several European countries after hackers remotely changed temperature settings on freezers and cooling systems. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/": {
+  "title": "Microsoft fixes Smart App Control broken by October Windows update",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-02T13:57:29+00:00",
+  "summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/": {
+  "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-02T12:47:00+00:00",
+  "summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/": {
+  "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
+  "url": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-02T11:28:42+00:00",
+  "summary": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [...]"
+ },
+ "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html": {
+  "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+  "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-02T16:57:56+00:00",
+  "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger…"
+ },
+ "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html": {
+  "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+  "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-02T15:50:26+00:00",
+  "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes…"
+ },
+ "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html": {
+  "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+  "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-02T14:46:05+00:00",
+  "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs,…"
+ },
+ "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html": {
+  "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+  "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-02T11:50:00+00:00",
+  "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and its vulnerability reports go to IBM. Every…"
+ },
+ "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html": {
+  "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+  "url": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-02T11:30:00+00:00",
+  "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For…"
+ },
+ "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html": {
+  "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+  "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-02T11:08:45+00:00",
+  "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including…"
+ },
+ "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html": {
+  "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+  "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-02T10:49:59+00:00",
+  "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between…"
+ },
+ "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/": {
+  "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
+  "url": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-02T15:01:11+00:00",
+  "summary": "Significant cybersecurity deals were announced by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint. The post Cybersecurity M&A Roundup: 37 Deals Announced in October 2026 appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/": {
+  "title": "Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk",
+  "url": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-02T14:44:18+00:00",
+  "summary": "The Florida Department of Education says SSNs and other personal data may have been exposed in a breach of its financial aid website. The post Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/": {
+  "title": "Revolve Data Breach Impacts at Least 180,000 People",
+  "url": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-02T13:35:21+00:00",
+  "summary": "Hackers accessed its online shopping platform and stole customers’ personal and payment card information. The post Revolve Data Breach Impacts at Least 180,000 People appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/": {
+  "title": "Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward",
+  "url": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-02T13:25:11+00:00",
+  "summary": "The top payout is for high-impact architectural research demonstrating full administrative control. The post Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/": {
+  "title": "Malicious Claude Code Extension Served in Cursor Supply Chain Attack",
+  "url": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-02T11:29:39+00:00",
+  "summary": "The extension performed host reconnaissance and attempted to create a reverse SSH tunnel. The post Malicious Claude Code Extension Served in Cursor Supply Chain Attack appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss": {
+  "title": "Microsoft's AI Risk Report Misses This Key Detail",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-02T15:00:00+00:00",
+  "summary": "The latest \"Digital Defense Report\" identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs."
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia": {
+  "title": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-02T14:00:00+00:00",
+  "summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/investors-dish-new-startsup-what-back-next": {
+  "title": "Investors Dish on New Startups & What They'd Back Next",
+  "url": "https://www.darkreading.com/cybersecurity-operations/investors-dish-new-startsup-what-back-next",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-10-30T21:08:25+00:00",
+  "summary": "The cybersecurity market is difficult to predict, but a glimpse into the annual DataTribe Challenge shows what's trending and what's not."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html": {
+  "title": "AI Vulnerability Finding",
+  "url": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-02T12:02:34+00:00",
+  "summary": "A comment : 3% of ‘critical’ software security bugs, in all of recorded history, have been found in the last month. This is on pace to find another ~100,000 bugs this year alone, adding ~26% more vulnerabilities to the all time total Do you realize how…"
  }
 }
