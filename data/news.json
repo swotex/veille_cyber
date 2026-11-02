@@ -2222,5 +2222,13 @@
   "lang": "en",
   "date": "2026-11-01T13:53:11+00:00",
   "summary": "OpenAI has just confirmed that it's rolling out ChatGPT Work capabilities directly into regular Chat, while also combining usage allowances across ChatGPT and Codex. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/": {
+  "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
+  "url": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-01T19:57:53+00:00",
+  "summary": "The FBI has confirmed that North Korean state-sponsored hackers known as TraderTraitor were behind the $6.3 billion crypto-theft attack on Binance, making it the largest cryptocurrency heist on record. [...]"
  }
 }
