@@ -790,7 +790,7 @@
  "CVE-2026-110975": {
   "id": "CVE-2026-110975",
   "published": "2026-10-23T18:17:20.503",
-  "modified": "2026-10-23T21:17:21.247",
+  "modified": "2026-11-02T09:17:36.620",
   "desc": "A flaw was found in Kruize Autotune. Its REST API ships without an authentication layer, and the endpoints that return datasource configuration — the list-datasources endpoint (GET /datasources) and the datasource-metadata endpoint — serialized datasource objects using a default Gson configuration with no field-exclusion strategy. As a result, the authentication secrets stored for each configured monitoring datasource (basic-auth passwords, bearer tokens, API keys, and OAuth2 client secrets) were returned in cleartext to any client able to reach the service. An attacker with network access to Autotune could harvest these credentials and reuse them to authenticate to the backing monitoring stack.",
   "cvss": 7.4,
   "sev": "HIGH",
@@ -802,7 +802,7 @@
   "refs": [
    "https://access.redhat.com/security/cve/CVE-2026-110975",
    "https://bugzilla.redhat.com/show_bug.cgi?id=2512012",
-   "https://github.com/kruize/autotune/pull/2038"
+   "https://github.com/kruize/autotune/commit/e81cc9bc32514bba403d020506f15d60b1723111"
   ],
   "kev": false,
   "epss": 0.00246
@@ -62547,7 +62547,7 @@
  "CVE-2026-115683": {
   "id": "CVE-2026-115683",
   "published": "2026-10-30T14:16:39.373",
-  "modified": "2026-10-30T19:27:58.620",
+  "modified": "2026-11-02T10:17:10.910",
   "desc": "A race condition in Epiphany allows a malicious website to bypass the TLS/SSL certificate warning page.\n\nEpiphany registers the main-world script message handler \"tlsErrorPage\" so its internal TLS error page can implement \"Accept Risk and Proceed\". The handler was registered immediately before loading the error page, leaving a brief window where the previously loaded untrusted origin could still call window.webkit.messageHandlers.tlsErrorPage.postMessage(...). The only authorization check compares a numeric WebKit page id that increments predictably; an attacker can burst-guess ids and approve a certificate exception with no user click.\n\nIf a victim visits malicious site A that redirects to site B with an invalid certificate, site A can, for a few milliseconds, disable TLS certificate error warnings for host B until Epiphany is restarted, enabling man-in-the-middle or site spoofing for that host.\n\nUpstream report: https://gitlab.gnome.org/GNOME/epiphany/-/work_items/2978\nProof of concept: https://beford.net/poc/ssl_poc.html\nFix: https://gitlab.gnome.org/GNOME/epiphany/-/merge_requests/2245 (register handlers on LOAD_COMMITTED). No fixed release tagged yet; reporter and maintainer describe all current versions as affected. Maintainer notes the risky registration timing dates to commit 1da1caed (Epiphany 45.x era); before that the handlers were always registered and similarly reachable from web content.",
   "cvss": 6.8,
   "sev": "MEDIUM",
@@ -63265,7 +63265,7 @@
  "CVE-2026-102556": {
   "id": "CVE-2026-102556",
   "published": "2026-09-29T17:17:06.460",
-  "modified": "2026-10-29T20:17:22.320",
+  "modified": "2026-11-02T09:17:35.450",
   "desc": "A flaw was found in libsoup. When handling an incoming WebSocket Pong frame, SoupWebsocketConnection emitted the ::pong signal with a GByteArray pointer even though the signal is declared to pass a GBytes. Applications connecting a handler that follows the documented GBytes API can trigger heap corruption or a crash upon receiving a crafted Pong.",
   "cvss": 8.6,
   "sev": "HIGH",
@@ -63288,7 +63288,7 @@
  "CVE-2026-102557": {
   "id": "CVE-2026-102557",
   "published": "2026-09-29T17:17:06.600",
-  "modified": "2026-10-29T20:17:23.453",
+  "modified": "2026-11-02T09:17:35.660",
   "desc": "A flaw was found in libsoup. When reassembling fragmented WebSocket messages into a GByteArray, libsoup did not adequately cap total message size against the limits of the underlying buffer type. A remote peer could send fragments that caused size truncation while the implementation still used the full length, leading to heap corruption or a crash.",
   "cvss": 8.6,
   "sev": "HIGH",
@@ -63311,7 +63311,7 @@
  "CVE-2026-102558": {
   "id": "CVE-2026-102558",
   "published": "2026-09-29T18:17:08.340",
-  "modified": "2026-10-29T20:17:23.620",
+  "modified": "2026-11-02T09:17:35.860",
   "desc": "A flaw was found in libsoup. When max-incoming-payload-size is unlimited (0), SoupWebsocketConnection could grow its incoming GByteArray based on an attacker-controlled frame length until the length wrapped, causing a heap buffer overflow while reading frame data.",
   "cvss": 8.6,
   "sev": "HIGH",
@@ -63334,7 +63334,7 @@
  "CVE-2026-102559": {
   "id": "CVE-2026-102559",
   "published": "2026-09-29T18:17:08.503",
-  "modified": "2026-10-29T20:17:23.790",
+  "modified": "2026-11-02T09:17:36.047",
   "desc": "A flaw was found in libsoup. When constructing a masked WebSocket client frame for a very large outgoing payload, size values passed to GByteArray allocation APIs could be truncated while the masking routine still used the full length, causing a heap buffer overflow.",
   "cvss": 8.6,
   "sev": "HIGH",
@@ -107037,8 +107037,8 @@
  "CVE-2026-28160": {
   "id": "CVE-2026-28160",
   "published": "2026-10-30T19:18:23.873",
-  "modified": "2026-10-30T23:17:11.160",
-  "desc": "Unauthenticated Cross Site Scripting (XSS) in VikRentCar <= 1.4.10 versions.",
+  "modified": "2026-11-02T07:18:04.110",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in e4jvikwp VikRentCar vikrentcar allows Stored XSS.This issue affects VikRentCar: from n/a through 1.4.10.",
   "cvss": 7.1,
   "sev": "HIGH",
   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
@@ -113282,7 +113282,7 @@
  "CVE-2026-120194": {
   "id": "CVE-2026-120194",
   "published": "2026-10-31T10:16:38.310",
-  "modified": "2026-10-31T10:16:38.440",
+  "modified": "2026-11-02T04:16:52.877",
   "desc": "A flaw was found in json-glib. The JSONPath slice evaluator used by json_path_query() can enter an infinite loop when given a slice expression with a negative step. An application that evaluates attacker-controlled JSONPath expressions can be forced into a hang, leading to a denial of service.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -115859,6 +115859,2396 @@
    "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/WAVLINK_WN536AX6-A%20Router/WAVLINK_WN536AX6-A_vpn_list_info_disclosure.md",
    "https://vuldb.com/cve/CVE-2026-120278",
    "https://vuldb.com/submit/919506"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-102555": {
+  "id": "CVE-2026-102555",
+  "published": "2026-09-29T18:17:07.977",
+  "modified": "2026-11-02T09:17:35.283",
+  "desc": "A flaw was found in libsoup. The soup_uri_decode_data_uri() function incorrectly treated base64 data-URI payloads as NUL-terminated strings when calling g_base64_decode_inplace(). If the percent-decoded payload contained embedded NUL bytes, the decoded length could remain uninitialized and be used as the size of the returned GBytes. This can lead to an out-of-bounds read or application crash when processing a crafted data URI.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [
+   "gnome libsoup",
+   "redhat enterprise linux"
+  ],
+  "refs": [
+   "https://access.redhat.com/errata/RHSA-2026:83618",
+   "https://access.redhat.com/errata/RHSA-2026:93583",
+   "https://access.redhat.com/security/cve/CVE-2026-102555"
+  ],
+  "kev": false,
+  "epss": 0.00369
+ },
+ "CVE-2026-102560": {
+  "id": "CVE-2026-102560",
+  "published": "2026-09-29T18:17:08.750",
+  "modified": "2026-11-02T09:17:36.250",
+  "desc": "A flaw was found in libsoup. When the permessage-deflate WebSocket extension compresses a very large outgoing message, truncated size calculations used for GByteArray growth could wrap, causing zlib to write past the allocated buffer and resulting in a heap buffer overflow.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [
+   "gnome libsoup",
+   "redhat enterprise linux"
+  ],
+  "refs": [
+   "https://access.redhat.com/errata/RHSA-2026:83384",
+   "https://access.redhat.com/errata/RHSA-2026:83618",
+   "https://access.redhat.com/errata/RHSA-2026:93445"
+  ],
+  "kev": false,
+  "epss": 0.00419
+ },
+ "CVE-2026-86562": {
+  "id": "CVE-2026-86562",
+  "published": "2026-10-14T17:20:05.420",
+  "modified": "2026-11-02T07:18:04.620",
+  "desc": "A flaw was found in DPDK lib/vhost. A TOCTOU double-fetch of control-queue descriptors allows a heap buffer overflow with attacker-controlled content in the VDUSE control-queue handler.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-362"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-86562",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2529667",
+   "https://git.dpdk.org/dpdk/commit/?id=6ec17781346e0fe4b566b6bf8f79be71f87c10e4"
+  ],
+  "kev": false,
+  "epss": 0.00176
+ },
+ "CVE-2026-86563": {
+  "id": "CVE-2026-86563",
+  "published": "2026-10-14T17:20:05.600",
+  "modified": "2026-11-02T07:18:04.887",
+  "desc": "A flaw was found in DPDK lib/vhost. A double-offset bug in vhost log mapping calculation can lead to incorrect memory access.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-131"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-86563",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2529668"
+  ],
+  "kev": false,
+  "epss": 0.00188
+ },
+ "CVE-2026-86565": {
+  "id": "CVE-2026-86565",
+  "published": "2026-10-14T17:20:05.770",
+  "modified": "2026-11-02T07:18:05.090",
+  "desc": "A flaw was found in DPDK lib/vhost. A guest can desynchronize virtqueue size from inflight descriptor table size, causing an out-of-bounds write in the host vhost process.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-86565",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2529683"
+  ],
+  "kev": false,
+  "epss": 0.0016
+ },
+ "CVE-2026-86567": {
+  "id": "CVE-2026-86567",
+  "published": "2026-10-14T18:19:18.390",
+  "modified": "2026-11-02T07:18:05.287",
+  "desc": "A flaw was found in DPDK lib/vhost. The VDUSE handler fails to invalidate vring pointers when the IOTLB is invalidated, leading to use-after-unmap.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-86567",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2529685"
+  ],
+  "kev": false,
+  "epss": 0.00147
+ },
+ "CVE-2026-111274": {
+  "id": "CVE-2026-111274",
+  "published": "2026-10-15T22:19:28.477",
+  "modified": "2026-11-02T03:17:28.007",
+  "desc": "unarr through 1.1.1 contains a heap-based out-of-bounds read in zip_parse_extra_fields() in zip/parse-zip.c due to an incorrect ZIP64 extra field length check. Attackers can supply a crafted ZIP archive with 0xFFFFFFFF sentinel values and a truncated ZIP64 record to read past the heap buffer and crash the process.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/selmf/unarr/releases/tag/v1.2.0",
+   "https://github.com/selmf/unarr/security/advisories/GHSA-qm4g-jf39-jwjj",
+   "https://hackmd.io/@haind-pwn/unarr-tar-zip-oob"
+  ],
+  "kev": false,
+  "epss": 0.00196
+ },
+ "CVE-2026-75775": {
+  "id": "CVE-2026-75775",
+  "published": "2026-10-23T08:16:55.443",
+  "modified": "2026-11-02T10:17:12.790",
+  "desc": "Improper Neutralization of Special Elements used in an OS Command in certain ASUS routers allows remote user to execute arbitrary commands with root privileges via crafted parameters sent to the router while the device is in its factory-default state.Refer to the ' Security Update for ASUS Router Firmware ' section on the ASUS Security Advisory for more information.",
+  "cvss": 7.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.asus.com/security-advisory"
+  ],
+  "kev": false,
+  "epss": 0.00605
+ },
+ "CVE-2026-75779": {
+  "id": "CVE-2026-75779",
+  "published": "2026-10-23T08:16:55.587",
+  "modified": "2026-11-02T10:17:12.960",
+  "desc": "Improper Neutralization of Special\nElements used in an OS Command (“OS Command Injection”) and Cross-Site Request\nForgery (CSRF) in an ASUS router model allow an attacker to trick a logged-in\nadministrator into visiting a phishing website, causing the router to execute\narbitrary commands with root privileges.\nRefer to the '\nSecurity Update for ASUS Router Firmware ' section on the ASUS Security Advisory for more information.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-352",
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.asus.com/security-advisory"
+  ],
+  "kev": false,
+  "epss": 0.01205
+ },
+ "CVE-2026-93489": {
+  "id": "CVE-2026-93489",
+  "published": "2026-10-23T08:16:55.720",
+  "modified": "2026-11-02T10:17:13.610",
+  "desc": "Improper Authentication in ASUS router modules allows an unauthenticated nearby user to send an HTTP request and forge an access ticket, subsequently enabling the user to perform administrator operations.\nRefer to the ' Security Update for ASUS Router Firmware ' section on the ASUS Security Advisory for more information.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-287"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.asus.com/security-advisory"
+  ],
+  "kev": false,
+  "epss": 0.00231
+ },
+ "CVE-2026-120279": {
+  "id": "CVE-2026-120279",
+  "published": "2026-11-02T01:17:26.677",
+  "modified": "2026-11-02T01:17:26.677",
+  "desc": "A flaw has been found in WAVLINK WN536AX6-A V260507. The affected element is an unknown function of the file /protocol.csp of the component openvpn_cli Handler. Executing a manipulation of the argument file_id can lead to os command injection. The attack can be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-77",
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/pipiyyb/cve/blob/main/WAVLINK%20WN536AX6-A/WN536AX6-A_file_id.md",
+   "https://vuldb.com/cve/CVE-2026-120279",
+   "https://vuldb.com/submit/919788"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120280": {
+  "id": "CVE-2026-120280",
+  "published": "2026-11-02T01:17:26.873",
+  "modified": "2026-11-02T01:17:26.873",
+  "desc": "A vulnerability has been found in WAVLINK WN536AX6-A V260507. The impacted element is the function wireguard_cli_group handler of the file /protocol.csp of the component WireGuard. The manipulation of the argument group_id/group_name leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-77",
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/pipiyyb/cve/blob/main/WAVLINK%20WN536AX6-A/WN536AX6-A_group_id.md",
+   "https://vuldb.com/cve/CVE-2026-120280",
+   "https://vuldb.com/submit/919789"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120281": {
+  "id": "CVE-2026-120281",
+  "published": "2026-11-02T01:17:27.070",
+  "modified": "2026-11-02T01:17:27.070",
+  "desc": "A vulnerability was found in WAVLINK WN536AX6-A V260507. This affects the function strcpy of the file /protocol.csp of the component OpenVPN Handler. The manipulation of the argument openvpn_ip results in stack-based buffer overflow. The attack may be launched remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/F-yyjy/cve/blob/main/WN536AX6-A_openvpn_ip.md",
+   "https://vuldb.com/cve/CVE-2026-120281",
+   "https://vuldb.com/submit/919790"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120282": {
+  "id": "CVE-2026-120282",
+  "published": "2026-11-02T01:17:27.293",
+  "modified": "2026-11-02T01:17:27.293",
+  "desc": "A vulnerability was determined in WAVLINK WN536AX6-A V260507. This impacts the function host_black of the file /protocol.csp. This manipulation of the argument mac causes os command injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-77",
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/pipiyyb/cve/blob/main/WAVLINK%20WN536AX6-A/WN536AX6-A_mac.md",
+   "https://vuldb.com/cve/CVE-2026-120282",
+   "https://vuldb.com/submit/919791"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120283": {
+  "id": "CVE-2026-120283",
+  "published": "2026-11-02T01:17:27.500",
+  "modified": "2026-11-02T01:17:27.500",
+  "desc": "A vulnerability was identified in Linksys E8450 1.2.00.360516. Affected is the function strcpy of the file /www/cgi-bin/portal.cgi. Such manipulation of the argument hidden_timezone leads to stack-based buffer overflow. The attack can be executed remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://vuldb.com/cve/CVE-2026-120283",
+   "https://vuldb.com/submit/1014924",
+   "https://vuldb.com/vuln/429627"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120319": {
+  "id": "CVE-2026-120319",
+  "published": "2026-11-02T02:18:47.090",
+  "modified": "2026-11-02T02:18:47.263",
+  "desc": "A vulnerability was found in Sanluan PublicCMS 4.x/5.x/6.x. This affects the function TradeRefundService.updateAmound of the file publiccms-parent/publiccms-trade/src/main/java/com/publiccms/logic/service/trade/TradeRefundService.java of the component publiccms-trade. Performing a manipulation of the argument refundId results in authorization bypass. The attack can be initiated remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-285",
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://vuldb.com/cve/CVE-2026-120319",
+   "https://vuldb.com/submit/1016201",
+   "https://vuldb.com/vuln/429652"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120320": {
+  "id": "CVE-2026-120320",
+  "published": "2026-11-02T02:18:47.327",
+  "modified": "2026-11-02T02:18:47.490",
+  "desc": "A vulnerability was determined in jxxghp MoviePilot up to 3.1.2. This vulnerability affects the function WorkflowExecutor.restore_context of the file app/chain/workflow.py of the component Workflow Fork Endpoint. Executing a manipulation can lead to deserialization. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized. Upgrading to version 3.1.3 is able to resolve this issue. This patch is called 6034dcc880c13079aeb398dbe32c346ebcd3a6d2. It is recommended to upgrade the affected component.",
+  "cvss": 2.0,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-20",
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/0xGenesi/CVE/blob/main/MoviePilot_Workflow_Fork_Pickle_Deserialization_RCE.md",
+   "https://github.com/jxxghp/MoviePilot/",
+   "https://github.com/jxxghp/MoviePilot/commit/6034dcc880c13079aeb398dbe32c346ebcd3a6d2"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120322": {
+  "id": "CVE-2026-120322",
+  "published": "2026-11-02T02:18:47.550",
+  "modified": "2026-11-02T02:18:47.550",
+  "desc": "A vulnerability was identified in Termix-SSH Termix up to 2.9.2. This issue affects some unknown processing of the file /plugin-api/file-manager/transferToHost. The manipulation of the argument destPath leads to path traversal. The attack may be initiated remotely. The exploit is publicly available and might be used. The shortcut was removed in the standalone File Manager plugin v1.0.0 (transfer engine now always writes over SFTP) and in core v26.10.0. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/0xGenesi/CVE/blob/main/Termix_FileManager_transferToHost_Arbitrary_File_Write.md",
+   "https://vuldb.com/cve/CVE-2026-120322",
+   "https://vuldb.com/submit/1015028"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120323": {
+  "id": "CVE-2026-120323",
+  "published": "2026-11-02T02:18:47.757",
+  "modified": "2026-11-02T02:18:47.933",
+  "desc": "A security flaw has been discovered in samanhappy MCPHub up to 1.0.45/1.1.7. Impacted is an unknown function of the file src/utils/passthroughHeaders.ts. The manipulation of the argument passthroughHeaders results in information disclosure. The attack may be launched remotely. Upgrading to version 1.1.8 is recommended to address this issue. The patch is identified as 040f7b9ae004070bdfe5084cde6bc2c609f78e76. It is advisable to upgrade the affected component.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-200",
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/0xGenesi/CVE/blob/main/MCPHub_OpenAPI_passthroughHeaders_Credential_Exfiltration.md",
+   "https://github.com/samanhappy/mcphub/",
+   "https://github.com/samanhappy/mcphub/commit/040f7b9ae004070bdfe5084cde6bc2c609f78e76"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120309": {
+  "id": "CVE-2026-120309",
+  "published": "2026-11-02T03:17:28.217",
+  "modified": "2026-11-02T03:17:28.217",
+  "desc": "Nuxt from 4.6.0 before 4.6.2 contains a route parameter confusion vulnerability in getRouterParam and getRouterParams that lets attackers return a parameter value different from the one h3 matched by sending paths containing an encoded question mark (%3F). Attackers can craft requests where authorization checks use the Nuxt helper value while resource selection uses event.context.params, allowing access to unauthorized resources.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-436"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/nuxt/nuxt/security/advisories/GHSA-w7gw-66vg-99gq",
+   "https://www.vulncheck.com/advisories/nuxt-4.6.0-before-4.6.2-route-param-confusion-via-getrouterparam"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120310": {
+  "id": "CVE-2026-120310",
+  "published": "2026-11-02T03:17:28.417",
+  "modified": "2026-11-02T03:17:28.560",
+  "desc": "Parse Server before 8.6.109 and 9.0.0 before 9.10.6-alpha.1 returns stored field values in object update responses without checking read access, so clients whose class-level permissions or object ACLs allow update but not read can see object data. Attackers can update such objects to read atomic operation results (Increment, Add, AddUnique, Remove), Cloud Code trigger-set values, and, for dot notation keys under certain conditions, the whole stored parent field.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/parse-community/parse-server/security/advisories/GHSA-2rcp-jc67-vq74",
+   "https://www.vulncheck.com/advisories/parse-server-before-8.6.109-and-9.0.0-before-9.10.6-alpha.1-information-disclosure-via-object-update-response"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120311": {
+  "id": "CVE-2026-120311",
+  "published": "2026-11-02T03:17:28.663",
+  "modified": "2026-11-02T03:17:28.803",
+  "desc": "Network-AI from 5.13.4 before 5.15.5 contains a path traversal vulnerability in FileJobStore that allows attackers to read or delete arbitrary .json files by supplying traversal sequences in the job id. Attackers controlling the id passed to FileJobStore.get(), FileJobStore.delete(), or JobQueue.getJob() can disclose credentials and grant tokens or delete configuration files to weaken AuthGuardian authorization.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-23"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-v64j-mc7x-c7x7",
+   "https://www.vulncheck.com/advisories/network-ai-5.13.4-before-5.15.5-path-traversal-via-filejobstore-job-id"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120312": {
+  "id": "CVE-2026-120312",
+  "published": "2026-11-02T03:17:28.863",
+  "modified": "2026-11-02T03:17:28.997",
+  "desc": "Network-AI from 5.13.4 before 5.15.5 contains a path traversal vulnerability in AgentVCR that allows attackers controlling the cassette name to read or write arbitrary .json files. Attackers can pass traversal sequences to load() or save() to disclose sensitive JSON data or overwrite policy files such as AuthGuardian trust-level configuration.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-23"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-mfxv-jg44-xj48",
+   "https://www.vulncheck.com/advisories/network-ai-5.13.4-before-5.15.5-path-traversal-via-agentvcr-cassette-name"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120313": {
+  "id": "CVE-2026-120313",
+  "published": "2026-11-02T03:17:29.053",
+  "modified": "2026-11-02T03:17:29.200",
+  "desc": "Network-AI before 5.15.5 contains a path traversal vulnerability in InputSanitizer.sanitizePath() that allows attackers to escape the base directory using sibling-directory paths. Attackers can supply paths whose directory name shares a string prefix with the base, bypassing the unanchored startsWith check to read, list, or write files outside the sandbox.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-5mm5-4mh4-6gm6",
+   "https://www.vulncheck.com/advisories/network-ai-before-5.15.5-path-traversal-via-inputsanitizer-sanitizepath"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120314": {
+  "id": "CVE-2026-120314",
+  "published": "2026-11-02T03:17:29.260",
+  "modified": "2026-11-02T03:17:29.397",
+  "desc": "Network-AI from 5.14.0 before 5.15.5 contains a missing authentication vulnerability in the A2AServer class that allows unauthenticated attackers to access task operations when no secret is configured. Attackers can send JSON-RPC requests to tasks/send, tasks/get, and tasks/cancel without a Bearer token to execute tasks, read results, and cancel tasks.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-306"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-qvf5-9prv-7r9c",
+   "https://www.vulncheck.com/advisories/network-ai-5.14.0-before-5.15.5-missing-authentication-in-a2aserver-task-operations"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120315": {
+  "id": "CVE-2026-120315",
+  "published": "2026-11-02T03:17:29.457",
+  "modified": "2026-11-02T03:17:29.457",
+  "desc": "LobeHub Chat from 1.84.26 before 2.1.49 contains a path traversal vulnerability that allows authenticated users to write arbitrary files by supplying unsanitized file names to writeTempFile(). Attackers can create a file record via file.createFile with a traversal name, then trigger document parsing to overwrite application files like startServer.js for code execution or denial of service.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/lobehub/lobehub/security/advisories/GHSA-2g9j-v25c-4j97",
+   "https://www.vulncheck.com/advisories/lobehub-chat-1.84.26-before-2.1.49-path-traversal-rce-via-writetempfile"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120316": {
+  "id": "CVE-2026-120316",
+  "published": "2026-11-02T03:17:29.760",
+  "modified": "2026-11-02T03:17:29.900",
+  "desc": "http4k before 6.62.0.0-ee contains a path traversal vulnerability in ThymeleafTemplates Caching and HotReload that allows unauthenticated attackers to read files outside baseTemplateDir by supplying ../ segments in ViewModel.template() values. Attackers can influence request-driven template selection so Thymeleaf's FileTemplateResolver resolves escaped paths without containment checks, disclosing any file readable by the server process.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/http4k/http4k/security/advisories/GHSA-wq4x-r858-gmmj",
+   "https://www.vulncheck.com/advisories/http4k-before-6.62.0.0-ee-path-traversal-via-thymeleaftemplates-template-resolution"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120317": {
+  "id": "CVE-2026-120317",
+  "published": "2026-11-02T03:17:29.957",
+  "modified": "2026-11-02T03:17:30.100",
+  "desc": "http4k from 4.9.10.0 before 6.60.0.0 contains a missing integrity check vulnerability because DigestEncoder computes the auth-int digest without hashing the request entity body. On-path attackers on non-TLS channels can rewrite the body of authenticated requests while keeping the Authorization header valid, executing state-changing actions as the victim.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/http4k/http4k/security/advisories/GHSA-9xx4-xjpj-xqcf",
+   "https://www.vulncheck.com/advisories/http4k-4.9.10.0-before-6.60.0.0-digest-auth-int-missing-body-integrity"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120324": {
+  "id": "CVE-2026-120324",
+  "published": "2026-11-02T03:17:30.157",
+  "modified": "2026-11-02T03:17:30.157",
+  "desc": "A weakness has been identified in Aklivity Zilla up to 1.3.4/2.4.7/2.5.0-rc2. The affected element is the function Path.resolve of the file FileSystemServerFactory of the component http-filesystem Binding. This manipulation of the argument params causes path traversal. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for attacks. Upgrading to version 2.5.0-rc3 is sufficient to fix this issue. Patch name: 46a8b15cbea157f7ae8b7cb865809a02fd6b1988. You should upgrade the affected component.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:L/SI:L/SA:L/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/0xGenesi/CVE/blob/main/Zilla_Http_Filesystem_Binding_Path_Traversal.md",
+   "https://github.com/aklivity/zilla/",
+   "https://github.com/aklivity/zilla/commit/46a8b15cbea157f7ae8b7cb865809a02fd6b1988"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120325": {
+  "id": "CVE-2026-120325",
+  "published": "2026-11-02T03:17:30.410",
+  "modified": "2026-11-02T03:17:30.410",
+  "desc": "A security vulnerability has been detected in Webpro-nl Knip up to 6.44.0. The impacted element is the function writeFile of the file packages/knip/src/IssueFixer.ts of the component Workspace Handler. Such manipulation of the argument workspaces leads to path traversal. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/0xGenesi/CVE/blob/main/Knip_Workspaces_Config_Path_Traversal_File_Deletion_Overwrite.md",
+   "https://vuldb.com/cve/CVE-2026-120325",
+   "https://vuldb.com/submit/1015033"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120334": {
+  "id": "CVE-2026-120334",
+  "published": "2026-11-02T03:17:30.630",
+  "modified": "2026-11-02T03:17:30.630",
+  "desc": "A flaw has been found in deepset-ai farm up to 0.8.0. This impacts the function EmbeddingTokenizer.from_pretrained of the file farm/modeling/tokenization.py of the component Tokenizer Loader. Executing a manipulation of the argument vocab_filename can lead to path traversal. The attack may be performed from remote. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only affects products that are no longer supported by the maintainer.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/3em0/cve_repo/blob/main/2026/Path_Traversal_in_FARM_Tokenizer_Load_via_Attacker-Controlled_vocab_filename.md",
+   "https://vuldb.com/cve/CVE-2026-120334",
+   "https://vuldb.com/submit/1016276"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120335": {
+  "id": "CVE-2026-120335",
+  "published": "2026-11-02T03:17:30.873",
+  "modified": "2026-11-02T03:17:30.873",
+  "desc": "A vulnerability has been found in deepset-ai farm up to 0.8.0. Affected is the function WordEmbedding_LM.load of the file farm/modeling/language_model.py of the component Model Package Loader. The manipulation of the argument embeddings_filename leads to path traversal. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only affects products that are no longer supported by the maintainer.",
+  "cvss": 0.9,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/3em0/cve_repo/blob/main/2026/Path_Traversal_in_FARM_WordEmbedding_LM_Model_Package_Loading.md",
+   "https://vuldb.com/cve/CVE-2026-120335",
+   "https://vuldb.com/submit/1016279"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20499": {
+  "id": "CVE-2026-20499",
+  "published": "2026-11-02T03:17:31.090",
+  "modified": "2026-11-02T03:17:31.090",
+  "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01857954; Issue ID: MSV-8247.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20545": {
+  "id": "CVE-2026-20545",
+  "published": "2026-11-02T03:17:31.257",
+  "modified": "2026-11-02T03:17:31.257",
+  "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01879158 / MOLY01774038; Issue ID: MSV-9811.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20546": {
+  "id": "CVE-2026-20546",
+  "published": "2026-11-02T03:17:31.390",
+  "modified": "2026-11-02T03:17:31.390",
+  "desc": "In Modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01876654 / MOLY01774038; Issue ID: MSV-9803.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20547": {
+  "id": "CVE-2026-20547",
+  "published": "2026-11-02T03:17:31.523",
+  "modified": "2026-11-02T03:17:31.523",
+  "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01874018 / MOLY01774038; Issue ID: MSV-9802.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20548": {
+  "id": "CVE-2026-20548",
+  "published": "2026-11-02T03:17:31.650",
+  "modified": "2026-11-02T03:17:31.650",
+  "desc": "In Modem, there is a possible out of bounds write due to an integer overflow. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01872867 / MOLY01774038; Issue ID: MSV-9801.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20549": {
+  "id": "CVE-2026-20549",
+  "published": "2026-11-02T03:17:31.780",
+  "modified": "2026-11-02T03:17:31.780",
+  "desc": "In Modem, there is a possible out of bounds write due to improper input validation. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01775865; Issue ID: MSV-8895.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20550": {
+  "id": "CVE-2026-20550",
+  "published": "2026-11-02T03:17:31.907",
+  "modified": "2026-11-02T03:17:31.907",
+  "desc": "In gnss, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with no additional execution privileges needed. User interaction is needed for exploitation. Patch ID: ALPS11309816; Issue ID: MSV-10731.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20551": {
+  "id": "CVE-2026-20551",
+  "published": "2026-11-02T03:17:32.040",
+  "modified": "2026-11-02T03:17:32.040",
+  "desc": "In gnss, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with no additional execution privileges needed. User interaction is needed for exploitation. Patch ID: ALPS11309305; Issue ID: MSV-10730.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20552": {
+  "id": "CVE-2026-20552",
+  "published": "2026-11-02T03:17:32.170",
+  "modified": "2026-11-02T03:17:32.170",
+  "desc": "In ccci, there is a possible out of bounds write due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is needed for exploitation. Patch ID: ALPS11523478 (Note: For MT6880, MT6890) / ALPS11297423 (Note: For MT6813, MT6986, MT6982, MT6980D) / AUTO00864897 (Note: For MT2735, MT2737); Issue ID: MSV-10724.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20553": {
+  "id": "CVE-2026-20553",
+  "published": "2026-11-02T03:17:32.300",
+  "modified": "2026-11-02T03:17:32.300",
+  "desc": "In DA, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege, if an attacker has physical access to the device, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS11468968; Issue ID: MSV-10166.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20554": {
+  "id": "CVE-2026-20554",
+  "published": "2026-11-02T03:17:32.427",
+  "modified": "2026-11-02T03:17:32.427",
+  "desc": "In Modem, there is a possible system crash due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is needed for exploitation. Patch ID: MOLY01911177; Issue ID: MSV-10122.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20555": {
+  "id": "CVE-2026-20555",
+  "published": "2026-11-02T03:17:32.557",
+  "modified": "2026-11-02T03:17:32.557",
+  "desc": "In Modem, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01876664; Issue ID: MSV-9834.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20556": {
+  "id": "CVE-2026-20556",
+  "published": "2026-11-02T03:17:32.697",
+  "modified": "2026-11-02T03:17:32.697",
+  "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01876662; Issue ID: MSV-9833.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20557": {
+  "id": "CVE-2026-20557",
+  "published": "2026-11-02T03:17:32.823",
+  "modified": "2026-11-02T03:17:32.823",
+  "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01877236; Issue ID: MSV-9804.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20558": {
+  "id": "CVE-2026-20558",
+  "published": "2026-11-02T03:17:32.947",
+  "modified": "2026-11-02T03:17:32.947",
+  "desc": "In GPU pdma, there is a possible escalation of privilege due to use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS11365070; Issue ID: MSV-9547.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20559": {
+  "id": "CVE-2026-20559",
+  "published": "2026-11-02T03:17:33.073",
+  "modified": "2026-11-02T03:17:33.073",
+  "desc": "In GPU pdma, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS11365081; Issue ID: MSV-9545.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20560": {
+  "id": "CVE-2026-20560",
+  "published": "2026-11-02T03:17:33.190",
+  "modified": "2026-11-02T03:17:33.190",
+  "desc": "In Modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01870543; Issue ID: MSV-9070.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20561": {
+  "id": "CVE-2026-20561",
+  "published": "2026-11-02T03:17:33.317",
+  "modified": "2026-11-02T03:17:33.317",
+  "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01750090; Issue ID: MSV-8908.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20562": {
+  "id": "CVE-2026-20562",
+  "published": "2026-11-02T03:17:33.450",
+  "modified": "2026-11-02T03:17:33.450",
+  "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01775984; Issue ID: MSV-8907.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-1284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20563": {
+  "id": "CVE-2026-20563",
+  "published": "2026-11-02T03:17:33.583",
+  "modified": "2026-11-02T03:17:33.583",
+  "desc": "In Modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01777997; Issue ID: MSV-8905.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20564": {
+  "id": "CVE-2026-20564",
+  "published": "2026-11-02T03:17:33.710",
+  "modified": "2026-11-02T03:17:33.710",
+  "desc": "In Modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01780439; Issue ID: MSV-8901.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20565": {
+  "id": "CVE-2026-20565",
+  "published": "2026-11-02T03:17:33.830",
+  "modified": "2026-11-02T03:17:33.830",
+  "desc": "In Modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01778991; Issue ID: MSV-8900.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20566": {
+  "id": "CVE-2026-20566",
+  "published": "2026-11-02T03:17:33.963",
+  "modified": "2026-11-02T03:17:33.963",
+  "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, if a malicious actor has already obtained the System privilege. User interaction is needed for exploitation. Patch ID: MOLY01923663 / ALPS11315955; Issue ID: MSV-10866.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20567": {
+  "id": "CVE-2026-20567",
+  "published": "2026-11-02T03:17:34.087",
+  "modified": "2026-11-02T03:17:34.087",
+  "desc": "In afe, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431394; Issue ID: MSV-10004.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20568": {
+  "id": "CVE-2026-20568",
+  "published": "2026-11-02T03:17:34.247",
+  "modified": "2026-11-02T03:17:34.247",
+  "desc": "In afe, there is a possible system crash due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11439283; Issue ID: MSV-10003.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20569": {
+  "id": "CVE-2026-20569",
+  "published": "2026-11-02T03:17:34.390",
+  "modified": "2026-11-02T03:17:34.390",
+  "desc": "In adsp, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431474; Issue ID: MSV-9927.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20570": {
+  "id": "CVE-2026-20570",
+  "published": "2026-11-02T03:17:34.520",
+  "modified": "2026-11-02T03:17:34.520",
+  "desc": "In adsp, there is a possible escalation of privilege due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431474; Issue ID: MSV-9926.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20571": {
+  "id": "CVE-2026-20571",
+  "published": "2026-11-02T03:17:34.640",
+  "modified": "2026-11-02T03:17:34.640",
+  "desc": "In afe, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11434319; Issue ID: MSV-9925.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-843"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20572": {
+  "id": "CVE-2026-20572",
+  "published": "2026-11-02T03:17:34.767",
+  "modified": "2026-11-02T03:17:34.767",
+  "desc": "In adsp, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431442; Issue ID: MSV-9924.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-191"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20573": {
+  "id": "CVE-2026-20573",
+  "published": "2026-11-02T03:17:34.893",
+  "modified": "2026-11-02T03:17:34.893",
+  "desc": "In afe, there is a possible memory corruption due to double free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431412; Issue ID: MSV-9923.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-415"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20574": {
+  "id": "CVE-2026-20574",
+  "published": "2026-11-02T03:17:35.027",
+  "modified": "2026-11-02T03:17:35.027",
+  "desc": "In afe, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431400; Issue ID: MSV-9922.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-843"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20575": {
+  "id": "CVE-2026-20575",
+  "published": "2026-11-02T03:17:35.150",
+  "modified": "2026-11-02T03:17:35.150",
+  "desc": "In afe, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431394; Issue ID: MSV-9921.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-843"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20576": {
+  "id": "CVE-2026-20576",
+  "published": "2026-11-02T03:17:35.270",
+  "modified": "2026-11-02T03:17:35.270",
+  "desc": "In afe, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431385; Issue ID: MSV-9920.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-191"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20577": {
+  "id": "CVE-2026-20577",
+  "published": "2026-11-02T03:17:35.397",
+  "modified": "2026-11-02T03:17:35.397",
+  "desc": "In Modem, there is a possible permission bypass due to a permissions bypass. This could lead to local denial of service if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: MOLY01880753; Issue ID: MSV-9866.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-280"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20578": {
+  "id": "CVE-2026-20578",
+  "published": "2026-11-02T03:17:35.527",
+  "modified": "2026-11-02T03:17:35.527",
+  "desc": "In Modem, there is a possible information disclosure due to side channel information disclosure. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01879164; Issue ID: MSV-9846.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-757"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20580": {
+  "id": "CVE-2026-20580",
+  "published": "2026-11-02T03:17:35.660",
+  "modified": "2026-11-02T03:17:35.660",
+  "desc": "In usb, there is a possible system crash due to use after free. This could lead to local denial of service if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11412004; Issue ID: MSV-9752.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20581": {
+  "id": "CVE-2026-20581",
+  "published": "2026-11-02T03:17:35.787",
+  "modified": "2026-11-02T03:17:35.787",
+  "desc": "In usb, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11411985; Issue ID: MSV-9750.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20582": {
+  "id": "CVE-2026-20582",
+  "published": "2026-11-02T03:17:35.913",
+  "modified": "2026-11-02T03:17:35.913",
+  "desc": "In usb, there is a possible memory corruption due to double free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11411924; Issue ID: MSV-9748.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-415"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20583": {
+  "id": "CVE-2026-20583",
+  "published": "2026-11-02T03:17:36.037",
+  "modified": "2026-11-02T03:17:36.037",
+  "desc": "In usb, there is a possible system crash due to use after free. This could lead to local denial of service if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11411916; Issue ID: MSV-9747.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20584": {
+  "id": "CVE-2026-20584",
+  "published": "2026-11-02T03:17:36.163",
+  "modified": "2026-11-02T03:17:36.163",
+  "desc": "In usb, there is a possible memory corruption due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11411916; Issue ID: MSV-9746.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20585": {
+  "id": "CVE-2026-20585",
+  "published": "2026-11-02T03:17:36.283",
+  "modified": "2026-11-02T03:17:36.283",
+  "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01338165; Issue ID: MSV-9660.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20590": {
+  "id": "CVE-2026-20590",
+  "published": "2026-11-02T03:17:36.410",
+  "modified": "2026-11-02T03:17:36.410",
+  "desc": "In display, there is a possible system crash due to a logic error. This could lead to local denial of service if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11410704; Issue ID: MSV-9574.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20591": {
+  "id": "CVE-2026-20591",
+  "published": "2026-11-02T03:17:36.537",
+  "modified": "2026-11-02T03:17:36.537",
+  "desc": "In GPU pdma, there is a possible escalation of privilege due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS11365075; Issue ID: MSV-9546.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20592": {
+  "id": "CVE-2026-20592",
+  "published": "2026-11-02T03:17:36.657",
+  "modified": "2026-11-02T03:17:36.657",
+  "desc": "In Modem, there is a possible information disclosure due to side channel information disclosure. This could lead to local information disclosure if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: MOLY01744265; Issue ID: MSV-9505.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-532"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20593": {
+  "id": "CVE-2026-20593",
+  "published": "2026-11-02T03:17:36.790",
+  "modified": "2026-11-02T03:17:36.790",
+  "desc": "In Modem, there is a possible application crash due to improper input validation. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01707455; Issue ID: MSV-9503.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-617"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20594": {
+  "id": "CVE-2026-20594",
+  "published": "2026-11-02T03:17:36.930",
+  "modified": "2026-11-02T03:17:36.930",
+  "desc": "In Modem, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01349680 / MOLY01369097; Issue ID: MSV-9364.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20595": {
+  "id": "CVE-2026-20595",
+  "published": "2026-11-02T03:17:37.053",
+  "modified": "2026-11-02T03:17:37.053",
+  "desc": "In neuropilot, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11263078; Issue ID: MSV-9001.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-1286"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20596": {
+  "id": "CVE-2026-20596",
+  "published": "2026-11-02T03:17:37.187",
+  "modified": "2026-11-02T03:17:37.187",
+  "desc": "In Modem, there is a possible out of bounds read due to improper input validation. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01758225; Issue ID: MSV-8910.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20597": {
+  "id": "CVE-2026-20597",
+  "published": "2026-11-02T03:17:37.323",
+  "modified": "2026-11-02T03:17:37.323",
+  "desc": "In Modem, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01758223; Issue ID: MSV-8909.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20598": {
+  "id": "CVE-2026-20598",
+  "published": "2026-11-02T03:17:37.500",
+  "modified": "2026-11-02T03:17:37.500",
+  "desc": "In Modem, there is a possible out of bounds read due to an integer overflow. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01755742; Issue ID: MSV-8896.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20599": {
+  "id": "CVE-2026-20599",
+  "published": "2026-11-02T03:17:37.657",
+  "modified": "2026-11-02T03:17:37.657",
+  "desc": "In Modem, there is a possible escalation of privilege due to a missing permission check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: MOLY01790985; Issue ID: MSV-8148.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-280"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-20600": {
+  "id": "CVE-2026-20600",
+  "published": "2026-11-02T03:17:37.790",
+  "modified": "2026-11-02T03:17:37.790",
+  "desc": "In Modem, there is a possible application crash due to a logic error. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01416152; Issue ID: MSV-7924.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-617"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-68588": {
+  "id": "CVE-2026-68588",
+  "published": "2026-11-02T03:17:37.950",
+  "modified": "2026-11-02T03:17:37.950",
+  "desc": "In Modem, there is a possible way (for XXX) to XXXXX due to an integer overflow. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01334054 / MOLY01312486; Issue ID: MSV-7920.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-190"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-68589": {
+  "id": "CVE-2026-68589",
+  "published": "2026-11-02T03:17:38.087",
+  "modified": "2026-11-02T03:17:38.087",
+  "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: MOLY01320076; Issue ID: MSV-6889.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-68590": {
+  "id": "CVE-2026-68590",
+  "published": "2026-11-02T03:17:38.213",
+  "modified": "2026-11-02T03:17:38.213",
+  "desc": "In ip_stack, there is a possible out of bounds read due to improper input validation. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01387180; Issue ID: MSV-5152.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-68591": {
+  "id": "CVE-2026-68591",
+  "published": "2026-11-02T03:17:38.343",
+  "modified": "2026-11-02T03:17:38.343",
+  "desc": "In Modem, there is a possible escalation of privilege due to a permissions bypass. This could lead to local escalation of privilege (EoP) if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS09608864 / ALPS09327759; Issue ID: MSV-2958.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-732"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.mediatek.com/product-security-bulletin/November-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120336": {
+  "id": "CVE-2026-120336",
+  "published": "2026-11-02T04:16:53.033",
+  "modified": "2026-11-02T04:16:53.033",
+  "desc": "A vulnerability was found in VStarcam O-KAM Client 1.3.3.32. Affected by this vulnerability is the function FUN_10003EA0 in the library DevDll_925.dll. The manipulation results in stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://gist.github.com/Ishanoshada/f6345a42a46e1345e6c7400aac311d77",
+   "https://vuldb.com/cve/CVE-2026-120336",
+   "https://vuldb.com/submit/1016301"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120337": {
+  "id": "CVE-2026-120337",
+  "published": "2026-11-02T04:16:53.237",
+  "modified": "2026-11-02T04:16:53.237",
+  "desc": "A vulnerability was determined in VStarcam O-KAM SuperIPCam 1.3.3.32. Affected by this issue is the function FUN_005a2d44 of the file SuperIPCam.exe of the component P2P Session Teardown. This manipulation causes use after free. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://gist.github.com/Ishanoshada/cb73d61f792c77767338568501b135c9",
+   "https://vuldb.com/cve/CVE-2026-120337",
+   "https://vuldb.com/submit/1016302"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120339": {
+  "id": "CVE-2026-120339",
+  "published": "2026-11-02T04:16:53.440",
+  "modified": "2026-11-02T04:16:53.440",
+  "desc": "A security flaw has been discovered in mathurvishal CloudClassroom-PHP-Project. This vulnerability affects unknown code of the file updatedetailsfromfaculty.php. Performing a manipulation of the argument fname results in cross site scripting. The attack may be initiated remotely. The exploit has been released to the public and may be used for attacks. This product uses a rolling release model to deliver continuous updates. As a result, specific version information for affected or updated releases is not available. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79",
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/vinniboy021-blip/Advisory/blob/main/updatedetailsfromfaculty-stored-xss.md",
+   "https://vuldb.com/cve/CVE-2026-120339",
+   "https://vuldb.com/submit/1016326"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120340": {
+  "id": "CVE-2026-120340",
+  "published": "2026-11-02T05:18:22.723",
+  "modified": "2026-11-02T05:18:22.723",
+  "desc": "A weakness has been identified in mathurvishal CloudClassroom-PHP-Project. This issue affects some unknown processing of the component Global Session Handler. Executing a manipulation can lead to session expiration. The attack may be launched remotely. A high complexity level is associated with this attack. The exploitability is assessed as difficult. The exploit has been made available to the public and could be used for attacks. This product operates on a rolling release basis, ensuring continuous delivery. Consequently, there are no version details for either affected or updated releases. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 2.9,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-613"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/vinniboy021-blip/Advisory/blob/main/session-cookie-logout.md",
+   "https://vuldb.com/cve/CVE-2026-120340",
+   "https://vuldb.com/submit/1016327"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120341": {
+  "id": "CVE-2026-120341",
+  "published": "2026-11-02T05:18:23.700",
+  "modified": "2026-11-02T05:18:23.700",
+  "desc": "A security vulnerability has been detected in mathurvishal CloudClassroom-PHP-Project. Impacted is an unknown function of the file studentdetails.php. The manipulation leads to execution after redirect. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used. This product follows a rolling release approach for continuous delivery, so version details for affected or updated releases are not provided. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-698",
+   "CWE-705"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/vinniboy021-blip/Advisory/blob/main/details-plaintext-disclosure.md",
+   "https://vuldb.com/cve/CVE-2026-120341",
+   "https://vuldb.com/submit/1016328"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120342": {
+  "id": "CVE-2026-120342",
+  "published": "2026-11-02T05:18:24.310",
+  "modified": "2026-11-02T05:18:24.310",
+  "desc": "A vulnerability was detected in mathurvishal CloudClassroom-PHP-Project. The affected element is an unknown function of the file viewquery.php. The manipulation of the argument eid results in sql injection. The attack can be executed remotely. The exploit is now public and may be used. This product implements a rolling release for ongoing delivery, which means version information for affected or updated releases is unavailable. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/luan-oliveira01/Advisory-CloudClassroom-PHP-Project-1.0/tree/main/viewquery-sqli",
+   "https://vuldb.com/cve/CVE-2026-120342",
+   "https://vuldb.com/submit/1016422"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120343": {
+  "id": "CVE-2026-120343",
+  "published": "2026-11-02T05:18:24.860",
+  "modified": "2026-11-02T05:18:24.860",
+  "desc": "A flaw has been found in mathurvishal CloudClassroom-PHP-Project. The impacted element is an unknown function of the file manageassessment2.php. This manipulation of the argument ExamName/Q1/Q2/Q3/Q4/Q5 causes cross site scripting. The attack is possible to be carried out remotely. The exploit has been published and may be used. This product adopts a rolling release strategy to maintain continuous delivery. Therefore, version details for affected or updated releases cannot be specified. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79",
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/capivara-research/manageassessment2-stored-xss/blob/main/manageassessment2-stored-xss.md",
+   "https://vuldb.com/cve/CVE-2026-120343",
+   "https://vuldb.com/submit/1017562"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120344": {
+  "id": "CVE-2026-120344",
+  "published": "2026-11-02T05:18:25.450",
+  "modified": "2026-11-02T05:18:25.450",
+  "desc": "A vulnerability has been found in WAVLINK WN551X3-A M51X3_V251020-WO-182e965. This affects the function system of the file /bin/ioos of the component WireGuard CLI Group Handler. Such manipulation of the argument group_name leads to os command injection. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-77",
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/WAVLINK_WN551X3-A%20Router/WAVLINK_WN551X3-A_wireguard_cli_group_command_injection.md",
+   "https://vuldb.com/cve/CVE-2026-120344",
+   "https://vuldb.com/submit/919551"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2024-5617": {
+  "id": "CVE-2024-5617",
+  "published": "2026-11-02T06:17:41.933",
+  "modified": "2026-11-02T06:17:41.933",
+  "desc": "The account lock feature fails to correctly enforce account lockouts on the primary user store when users with identical usernames exist in both primary and secondary user stores. This occurs because the lock condition is only applied to the secondary user store account in such scenarios, allowing continued authentication attempts against the primary user store account.\n\nThis functional flaw enables brute force attacks. By systematically attempting different passwords against the primary user store account, an attacker can potentially gain unauthorized access to sensitive information or accounts, as the intended account lockout mechanism does not prevent repeated login attempts.",
+  "cvss": 4.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-799"
+  ],
+  "products": [],
+  "refs": [
+   "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2024-3414/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2025-11969": {
+  "id": "CVE-2025-11969",
+  "published": "2026-11-02T06:17:42.087",
+  "modified": "2026-11-02T06:17:42.087",
+  "desc": "The System REST APIs do not correctly enforce access control mechanisms, allowing users with lower privilege roles to execute administrative actions that should be restricted. This weakness permits unauthorized operations on the affected product.\n\nSuccessful exploitation could enable a malicious actor to perform unauthorized administrative operations, including executing administrative functions. APIs exposed through the WSO2 API Manager's API Gateway are not affected by this vulnerability.",
+  "cvss": 9.4,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+  "cwe": [
+   "CWE-285"
+  ],
+  "products": [],
+  "refs": [
+   "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2025-4733/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120345": {
+  "id": "CVE-2026-120345",
+  "published": "2026-11-02T06:17:43.410",
+  "modified": "2026-11-02T06:17:43.410",
+  "desc": "A vulnerability was found in WAVLINK WN551X3-A M51X3_V251020-WO-182e965. This impacts the function sub_41a430 of the file /bin/ioos of the component DNS Resolution Handler. Performing a manipulation of the argument data results in os command injection. It is possible to initiate the attack remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-77",
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/WAVLINK_WN551X3-A%20Router/WAVLINK_WN551X3-A_dns_resolution_command_injection.md",
+   "https://vuldb.com/cve/CVE-2026-120345",
+   "https://vuldb.com/submit/919579"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120347": {
+  "id": "CVE-2026-120347",
+  "published": "2026-11-02T06:17:43.600",
+  "modified": "2026-11-02T06:17:43.600",
+  "desc": "A vulnerability was determined in dayrui XunRuiCMS up to 4.7.4. Affected is the function View of the file dayrui/Fcms/Core/View.php of the component Member Module. Executing a manipulation of the argument catid can lead to sql injection. It is possible to launch the attack remotely. The exploit has been publicly disclosed and may be utilized. This patch is called 9b6ea0cf9c6e8cdc9a5260c38b95da5fed4c4231. The affected component should be upgraded.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://gitee.com/dayrui/xunruicms/",
+   "https://gitee.com/dayrui/xunruicms/commit/9b6ea0cf9c6e8cdc9a5260c38b95da5fed4c4231",
+   "https://github.com/tiranbge/disclosure-xunruicms-4.7.2/blob/master/reports/3.md"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120348": {
+  "id": "CVE-2026-120348",
+  "published": "2026-11-02T06:17:43.787",
+  "modified": "2026-11-02T06:17:43.787",
+  "desc": "A vulnerability was identified in dayrui XunRuiCMS up to 4.7.4. Affected by this vulnerability is the function _get_tpl_content of the file dayrui/Fcms/Library/Notice.php of the component Email Template Rendering. The manipulation leads to code injection. The attack can be initiated remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/tiranbge/disclosure-xunruicms-4.7.2/blob/master/reports/1.md",
+   "https://vuldb.com/cve/CVE-2026-120348",
+   "https://vuldb.com/submit/1016298"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101170": {
+  "id": "CVE-2026-101170",
+  "published": "2026-11-02T07:18:01.477",
+  "modified": "2026-11-02T07:18:01.477",
+  "desc": "DoS vulnerability in the file parsing module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+  "cvss": 4.0,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "cwe": [
+   "CWE-115"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinlaptops/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101171": {
+  "id": "CVE-2026-101171",
+  "published": "2026-11-02T07:18:01.777",
+  "modified": "2026-11-02T07:18:01.777",
+  "desc": "Permission control vulnerability in the background task management module.\nImpact: Successful exploitation of this vulnerability may affect service integrity.",
+  "cvss": 3.6,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-264"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinlaptops/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101172": {
+  "id": "CVE-2026-101172",
+  "published": "2026-11-02T07:18:01.973",
+  "modified": "2026-11-02T07:18:01.973",
+  "desc": "Permission control vulnerability in the graphics module. Impact: Successful exploitation of this vulnerability may affect confidentiality.",
+  "cvss": 6.2,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-264"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinlaptops/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101173": {
+  "id": "CVE-2026-101173",
+  "published": "2026-11-02T07:18:02.137",
+  "modified": "2026-11-02T07:18:02.137",
+  "desc": "DoS vulnerability in the DSoftBus module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101174": {
+  "id": "CVE-2026-101174",
+  "published": "2026-11-02T07:18:02.273",
+  "modified": "2026-11-02T07:18:02.273",
+  "desc": "DoS vulnerability in the DSoftBus module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+  "cvss": 5.7,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinwearables/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101175": {
+  "id": "CVE-2026-101175",
+  "published": "2026-11-02T07:18:02.420",
+  "modified": "2026-11-02T07:18:02.420",
+  "desc": "Null pointer dereference vulnerability in the ArkWeb module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+  "cwe": [
+   "CWE-248"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinlaptops/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101176": {
+  "id": "CVE-2026-101176",
+  "published": "2026-11-02T07:18:02.577",
+  "modified": "2026-11-02T07:18:02.577",
+  "desc": "Permission control vulnerability in the event notification management module.\nImpact: Successful exploitation of this vulnerability may affect service confidentiality.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:H/A:H",
+  "cwe": [
+   "CWE-264"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101177": {
+  "id": "CVE-2026-101177",
+  "published": "2026-11-02T07:18:02.700",
+  "modified": "2026-11-02T07:18:02.700",
+  "desc": "Permission control vulnerability in the Optimizer module.\nImpact: Successful exploitation of this vulnerability may affect service confidentiality.",
+  "cvss": 3.7,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "cwe": [
+   "CWE-264"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101179": {
+  "id": "CVE-2026-101179",
+  "published": "2026-11-02T07:18:02.830",
+  "modified": "2026-11-02T07:18:02.830",
+  "desc": "Buffer overflow vulnerability in the file preview module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+  "cvss": 4.7,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-19"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinlaptops/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101180": {
+  "id": "CVE-2026-101180",
+  "published": "2026-11-02T07:18:02.970",
+  "modified": "2026-11-02T07:18:02.970",
+  "desc": "DoS vulnerability in the file parsing module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+  "cwe": [
+   "CWE-674"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinlaptops/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101181": {
+  "id": "CVE-2026-101181",
+  "published": "2026-11-02T07:18:03.097",
+  "modified": "2026-11-02T07:18:03.097",
+  "desc": "Permission control vulnerability in the WLAN module. \nImpact: Successful exploitation of this vulnerability may affect service confidentiality.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinlaptops/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101182": {
+  "id": "CVE-2026-101182",
+  "published": "2026-11-02T07:18:03.220",
+  "modified": "2026-11-02T07:18:03.220",
+  "desc": "Race condition vulnerability in the location service module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+  "cvss": 5.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-362"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinlaptops/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinwearables/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101183": {
+  "id": "CVE-2026-101183",
+  "published": "2026-11-02T07:18:03.360",
+  "modified": "2026-11-02T07:18:03.360",
+  "desc": "UAF vulnerability in the location service module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+  "cvss": 5.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinlaptops/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101185": {
+  "id": "CVE-2026-101185",
+  "published": "2026-11-02T07:18:03.483",
+  "modified": "2026-11-02T07:18:03.483",
+  "desc": "OOB read vulnerability in the peripheral module.\nImpact: Successful exploitation of this vulnerability may affect service confidentiality.",
+  "cvss": 5.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-805"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/cn/support/bulletinlaptops/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101186": {
+  "id": "CVE-2026-101186",
+  "published": "2026-11-02T07:18:03.617",
+  "modified": "2026-11-02T07:18:03.617",
+  "desc": "DoS vulnerability in the window module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-19"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinlaptops/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinwearables/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120349": {
+  "id": "CVE-2026-120349",
+  "published": "2026-11-02T07:18:03.843",
+  "modified": "2026-11-02T07:18:03.843",
+  "desc": "A security flaw has been discovered in dayrui XunRuiCMS up to 4.7.4. Affected by this issue is the function str_replace of the file /var/www/html/zzmob/index.php of the component Mobile Site Directory. The manipulation of the argument dirname results in code injection. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/tiranbge/disclosure-xunruicms-4.7.2/blob/master/reports/2.md",
+   "https://vuldb.com/cve/CVE-2026-120349",
+   "https://vuldb.com/submit/1016299"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101178": {
+  "id": "CVE-2026-101178",
+  "published": "2026-11-02T08:17:34.237",
+  "modified": "2026-11-02T08:17:34.237",
+  "desc": "Permission control vulnerability in the autofill service module.\nImpact: Successful exploitation of this vulnerability may affect service confidentiality.",
+  "cvss": 6.6,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101184": {
+  "id": "CVE-2026-101184",
+  "published": "2026-11-02T08:17:35.800",
+  "modified": "2026-11-02T08:17:35.800",
+  "desc": "Permission control vulnerability in the Bluetooth module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-264"
+  ],
+  "products": [],
+  "refs": [
+   "https://consumer.huawei.com/en/support/bulletin/2026/10/",
+   "https://consumer.huawei.com/en/support/bulletinvision/2026/10/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-103310": {
+  "id": "CVE-2026-103310",
+  "published": "2026-11-02T08:17:35.927",
+  "modified": "2026-11-02T08:17:35.927",
+  "desc": "The PayHere Payment Gateway WordPress plugin from 2.4.0 through 2.4.5 does not verify the authenticity of payment notifications when the merchant secret is unset, which is the default state, allowing unauthenticated attackers to forge a payment confirmation and mark any order as paid without payment.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/f3b66147-5910-4901-b595-12a5b1db5f8b/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18199": {
+  "id": "CVE-2026-18199",
+  "published": "2026-11-02T08:17:36.083",
+  "modified": "2026-11-02T08:17:36.083",
+  "desc": "Zohocorp ManageEngine Password Manager Pro versions before 13236 and PAM360 versions before 8601 are vulnerable to an authenticated Remote Code Execution vulnerability.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.manageengine.com/products/passwordmanagerpro/advisory/cve-2026-18199.html"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-107457": {
+  "id": "CVE-2026-107457",
+  "published": "2026-11-02T09:17:36.430",
+  "modified": "2026-11-02T09:17:36.430",
+  "desc": "A memory corruption vulnerability in the QMqttClient class of the Qt MQTT module. Under certain MQTT 5 connection settings between client and server, QMqttClient may corrupt memory, which can cause the application to crash.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:U/V:X/RE:L/U:Green",
+  "cwe": [
+   "CWE-129",
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://codereview.qt-project.org/c/qt/qtmqtt/+/762286",
+   "https://wiki.qt.io/List_of_known_vulnerabilities_in_Qt_products#CVE-2026-107457:"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2024-7075": {
+  "id": "CVE-2024-7075",
+  "published": "2026-11-02T10:17:10.470",
+  "modified": "2026-11-02T10:17:10.470",
+  "desc": "The user search function within the management console fails to properly encode user-supplied input before rendering it in the browser. This allows an attacker to inject malicious scripts that are then executed by the user's browser in the context of the management console.\n\nSuccessful exploitation enables an attacker to redirect the user's browser to a malicious website, modify the web page's user interface, or extract information from the browser. However, due to the use of the httpOnly flag on sensitive session cookies, session hijacking or similar attacks are prevented.",
+  "cvss": 4.6,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2024-3569/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2025-13647": {
+  "id": "CVE-2025-13647",
+  "published": "2026-11-02T10:17:10.707",
+  "modified": "2026-11-02T10:17:10.707",
+  "desc": "The affected component fails to enforce expected validation constraints on the `content-type` header when processing certain requests. This allows an attacker to submit a crafted request with a manipulated `content-type` header.\n\nSuccessful exploitation can lead to the unintended exposure of the file paths for certificate files. This information disclosure could potentially be leveraged in subsequent attacks or compromise the confidentiality of the system.",
+  "cvss": 5.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2025-4751/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118871": {
+  "id": "CVE-2026-118871",
+  "published": "2026-11-02T10:17:11.123",
+  "modified": "2026-11-02T10:17:11.123",
+  "desc": "SQL injection vulnerability classified as an internal threat level.Attackers can steal database information via SQL injection while logged in.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2171542593031803240"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18800": {
+  "id": "CVE-2026-18800",
+  "published": "2026-11-02T10:17:11.293",
+  "modified": "2026-11-02T10:17:11.293",
+  "desc": "When an Event Publisher output adapter is configured with properties that are irrelevant to its function, the affected products log these irrelevant properties. This can inadvertently include sensitive user credentials or other confidential information depending on the nature of the misconfigured property.\n\nA malicious actor with access to the 'wso2carbon' log files could retrieve sensitive information logged by the system. This may potentially lead to unauthorized access if the logged data contains credentials or other critical secrets.",
+  "cvss": 4.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-532"
+  ],
+  "products": [],
+  "refs": [
+   "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2025-4897/"
   ],
   "kev": false,
   "epss": null

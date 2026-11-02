@@ -2230,5 +2230,53 @@
   "lang": "en",
   "date": "2026-11-01T19:57:53+00:00",
   "summary": "The FBI has confirmed that North Korean state-sponsored hackers known as TraderTraitor were behind the $6.3 billion crypto-theft attack on Binance, making it the largest cryptocurrency heist on record. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/": {
+  "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-02T09:33:26+00:00",
+  "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]"
+ },
+ "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html": {
+  "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+  "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-02T05:51:07+00:00",
+  "summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families,…"
+ },
+ "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/": {
+  "title": "Chainalysis Discloses Data Breach Following AI-Driven Cyberattack",
+  "url": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-02T10:27:49+00:00",
+  "summary": "The attackers used offensive agentic techniques to access the company’s systems and internal tools. The post Chainalysis Discloses Data Breach Following AI-Driven Cyberattack appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/": {
+  "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
+  "url": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-02T09:33:15+00:00",
+  "summary": "DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted. The post Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/": {
+  "title": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+  "url": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-02T08:40:36+00:00",
+  "summary": "The FBI has officially pinned the $6 billion Binance hack on North Korea’s TraderTraitor as the attackers launder the stolen crypto. The post FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/": {
+  "title": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
+  "url": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-02T07:57:49+00:00",
+  "summary": "CISA has added CVE-2026-111357 and CVE-2026-118527 to its KEV catalog after the Ivanti VPN flaws were chained in zero-day attacks. The post Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain appeared first on SecurityWeek ."
  }
 }
