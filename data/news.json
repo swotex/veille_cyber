@@ -2558,5 +2558,37 @@
   "lang": "en",
   "date": "2026-11-02T12:02:34+00:00",
   "summary": "A comment : 3% of ‘critical’ software security bugs, in all of recorded history, have been found in the last month. This is on pace to find another ~100,000 bugs this year alone, adding ~26% more vulnerabilities to the all time total Do you realize how…"
+ },
+ "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html": {
+  "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+  "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-03T05:34:41+00:00",
+  "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a…"
+ },
+ "https://thehackernews.com/2026/11/attackers-target-unpatched.html": {
+  "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+  "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-03T05:34:37+00:00",
+  "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-2026-81648, which carries a CVSS score…"
+ },
+ "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/": {
+  "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
+  "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
+  "source": "Krebs on Security",
+  "lang": "en",
+  "date": "2026-11-03T02:24:31+00:00",
+  "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising…"
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths": {
+  "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-02T22:27:24+00:00",
+  "summary": "The record theft shows how weak system separation, inadequate controls, and untested attack possibilities can turn one breach into systemic loss."
  }
 }

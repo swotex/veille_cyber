@@ -8595,7 +8595,7 @@
  "CVE-2026-113440": {
   "id": "CVE-2026-113440",
   "published": "2026-10-26T14:16:28.887",
-  "modified": "2026-10-26T16:59:16.113",
+  "modified": "2026-11-02T22:17:18.147",
   "desc": "Insufficiently Protected Credentials vulnerability in hackney in benoitc hackney allows a redirecting server to obtain the basic_auth and cookie credentials of a request via a same-host redirect to another scheme or port. With follow_redirect enabled, hackney:follow_redirect/10 in src/hackney.erl reissues the request to the Location target after hackney:maybe_strip_auth_on_redirect/3, which compared only the hostname of the current and the redirect URL. A redirect from https to http on the same host resent the Authorization and Cookie headers in cleartext, where an on-path attacker can read them, and a redirect to another port on the same host handed them to a different service. location_trusted forwards credentials to any target by design and is unchanged.\n\nThis issue affects hackney: from 2.0.0 before 4.9.0.",
   "cvss": 6.0,
   "sev": "MEDIUM",
@@ -10347,12 +10347,14 @@
  "CVE-2026-115721": {
   "id": "CVE-2026-115721",
   "published": "2026-10-26T16:17:17.673",
-  "modified": "2026-10-26T16:54:34.940",
+  "modified": "2026-11-02T22:17:18.847",
   "desc": "**UNSUPPORTED WHEN ASSIGNED**  Unbounded allocation in XML parsing in Apache Vysper; all versions, may lead to an out of memory condition.\n\n\n\n\nThis issue affects all versions of Apache Vysper. Apache Vysper is an XMPP (Jabber) server library.\n\n\n\n\nAs this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative.",
   "cvss": 7.5,
   "sev": "HIGH",
   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-  "cwe": [],
+  "cwe": [
+   "CWE-770"
+  ],
   "products": [],
   "refs": [
    "https://lists.apache.org/thread.html/d0bx15hjcs69gktk9tt25vgvk121c9vm",
@@ -10365,7 +10367,7 @@
  "CVE-2026-115748": {
   "id": "CVE-2026-115748",
   "published": "2026-10-26T16:17:17.833",
-  "modified": "2026-10-26T16:54:34.940",
+  "modified": "2026-11-02T22:17:19.000",
   "desc": "**UNSUPPORTED WHEN ASSIGNED**  Authorization bypass in Apache Vysper, all versions.\n\n\n\n\nApache Vysper is an XMPP (Jabber) server library. Its XEP-0077 (In-Band Registration) implementation is missing an authentication check, allowing any authenticated user to compromise other accounts.\n\n\n\n\nAs this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -10780,7 +10782,7 @@
  "CVE-2026-85297": {
   "id": "CVE-2026-85297",
   "published": "2026-10-26T16:17:23.090",
-  "modified": "2026-10-26T16:50:49.857",
+  "modified": "2026-11-02T22:17:23.327",
   "desc": "Bucket Squatting in Google Cloud Run MCP versions prior to 1.11.0 on Google Cloud Platform allows an attacker to intercept and access proprietary source code, execute arbitrary code and exfiltrate data.\n\n\n\nUsers must upgrade to Cloud Run MCP version 1.11.0 or later.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -10914,7 +10916,7 @@
  "CVE-2026-115418": {
   "id": "CVE-2026-115418",
   "published": "2026-10-26T17:17:16.533",
-  "modified": "2026-10-26T19:16:30.093",
+  "modified": "2026-11-02T22:17:18.700",
   "desc": "SQL injection in the database-query custom resource handlers in the Amazon Web Services (AWS) Cloud Development Kit (CDK) @aws-cdk/aws-redshift-alpha module before 2.274.0-alpha.0 could allow a third party who can influence construct property values to run SQL statements with Amazon Redshift superuser privileges, including granting access to all cluster users. The statements are reachable through crafted user names, comments, or passwords.\n\n\n\nTo remediate this issue, users should upgrade to version 2.274.0-alpha.0 or later and review existing table grants to PUBLIC.",
   "cvss": 7.0,
   "sev": "HIGH",
@@ -12812,7 +12814,7 @@
  "CVE-2026-65627": {
   "id": "CVE-2026-65627",
   "published": "2026-10-26T20:17:58.290",
-  "modified": "2026-10-27T15:00:49.240",
+  "modified": "2026-11-02T22:17:22.133",
   "desc": "Improper Handling of Highly Compressed Data (Data Amplification) vulnerability in potatosalad jose (erlang-jose) allows a remote attacker to exhaust a node's memory with a small crafted JWE token.\n\nThe jose_jwe_zip:uncompress/2 function in src/jwe/jose_jwe_zip.erl decompresses the DEFLATE-compressed plaintext of a JWE that carries the optional zip: DEF header by calling zlib:inflate/2 on the entire attacker-controlled stream, with no bound on the output size or the inflation ratio. Raw DEFLATE reaches ratios around 1000:1 on highly repetitive input, so a few-kilobyte token inflates to hundreds of megabytes or gigabytes in a single call.\n\nDecompression runs automatically during decryption through jose_jwe:block_decrypt/2 (JOSE.JWE.block_decrypt/2 in Elixir), before the recipient can inspect or reject the payload. With the common asymmetric key-management algorithms (RSA-OAEP, ECDH-ES) an attacker needs only the recipient's public key to craft such a token, so no authentication or secret material is required. A single small token can exhaust the node's memory and crash the BEAM, denying service to all users.\n\nThis issue affects jose: from 1.0.0 before 1.11.13.",
   "cvss": 6.9,
   "sev": "MEDIUM",
@@ -12832,7 +12834,7 @@
  "CVE-2026-65628": {
   "id": "CVE-2026-65628",
   "published": "2026-10-26T20:17:58.473",
-  "modified": "2026-10-27T15:00:49.240",
+  "modified": "2026-11-02T22:17:22.333",
   "desc": "jose_jwk:shared_secret/2 (exposed in Elixir as JOSE.JWK.shared_secret/2) derives an ECDH shared secret from two JWKs. Its first function clause only matches when both JWKs carry the same key type (kty) module, and its fallback clause re-invokes itself as shared_secret(from(YourJWK), from(MyJWK)). Because from/1 returns an already-parsed jose_jwk record unchanged, passing two JWKs whose key types differ (for example an EC key and an RSA key) makes the fallback clause re-enter with identical arguments, producing an unbounded tail-recursive loop that never returns and never crashes.\n\nAn application that derives a shared secret from an externally supplied peer public key without first checking that the peer key's type and curve match its own key can be driven into this loop by an attacker-controlled JWK, pinning an Erlang scheduler at 100% CPU. Repeated requests exhaust the available schedulers, resulting in a denial of service.\n\nThis issue affects jose: from 1.5.0 before 1.11.13.",
   "cvss": 5.9,
   "sev": "MEDIUM",
@@ -12852,7 +12854,7 @@
  "CVE-2026-65629": {
   "id": "CVE-2026-65629",
   "published": "2026-10-26T20:17:58.647",
-  "modified": "2026-10-27T15:00:49.240",
+  "modified": "2026-11-02T22:17:22.527",
   "desc": "Use of Password Hash With Insufficient Computational Effort in the jose library allows an attacker who obtains a password-encrypted private-key export to recover the private key through an offline password-cracking attack.\n\nWhen jose exports a password-encrypted private key with jose_jwk:to_der/2 (JOSE.JWK.to_der/2), the jose_jwk_der:to_binary/3 function in src/jwk/jose_jwk_der.erl serializes the key as a PKCS#8 EncryptedPrivateKeyInfo using the PBES2 scheme with hardcoded key-derivation parameters: PBKDF2-HMAC-SHA256 with an iteration count of 2048 and an 8-byte (64-bit) random salt. Neither value can be overridden by the caller.\n\nBoth values are far below current guidance (OWASP recommends on the order of 600,000 iterations for PBKDF2-HMAC-SHA256, and NIST recommends salts of at least 128 bits), so the key-stretching work factor is roughly 300 times lower than intended and the short salt reduces the cost of precomputation across keys. The symmetric encryption (AES-256-CBC with a 16-byte random IV) is not affected; the weakness is entirely in the derivation strength. An attacker who obtains one of these exported blobs (for example from a backup, configuration repository, object storage, or logs) can mount a cheap offline dictionary or brute-force attack against the export password, and success yields the full private key.\n\nThis issue affects jose: from 1.10.0 before 1.11.13.",
   "cvss": 7.4,
   "sev": "HIGH",
@@ -12872,7 +12874,7 @@
  "CVE-2026-65630": {
   "id": "CVE-2026-65630",
   "published": "2026-10-26T20:17:58.780",
-  "modified": "2026-10-27T15:00:49.240",
+  "modified": "2026-11-02T22:17:22.680",
   "desc": "Observable Timing Discrepancy vulnerability in potatosalad jose allows recovery of a long-term X25519 private key through a timing side channel in the pure-Erlang Curve25519 fallback.\n\nThe pure-Erlang X25519 implementation performs scalar multiplication over the secret private key using a recursive Montgomery ladder (jose_jwa_x25519:curve25519/2) whose clauses branch on individual bits of the clamped private scalar, and whose per-step operations (jose_jwa_x25519:montgomery_add/3 and jose_jwa_x25519:montgomery_double/1) and field inversion are built from value-dependent Erlang bignum arithmetic (multiplication, remainder, and modular exponentiation). Although the ladder is operation-count balanced and fixed at 254 steps, the concrete integer values processed at each step, and therefore the running time, depend on the secret scalar. The execution time of the public entry points jose_jwa_x25519:scalarmult/2, jose_jwa_x25519:x25519/2, jose_jwa_x25519:x25519_base/1, and jose_jwa_x25519:sk_to_pk/1 is thus a function of the private key.\n\nThis path is reachable from the public API, most notably when a service decrypts attacker-supplied ECDH-ES (JWE) messages with a long-term X25519 key (for example through JOSE.JWK.box_decrypt_ecdh_es/2, which reaches jose_jwa_curve25519:x25519_shared_secret/2 and the ladder). An attacker who can submit ciphertexts and measure decryption timing can, in principle, recover the private key bit by bit, defeating the resistance X25519 was designed to provide. Recovery of the key compromises the confidentiality and authenticity of all data protected by it.\n\nThis issue affects jose: from 1.10.0 before 1.11.13.",
   "cvss": 5.9,
   "sev": "MEDIUM",
@@ -12912,7 +12914,7 @@
  "CVE-2026-65632": {
   "id": "CVE-2026-65632",
   "published": "2026-10-26T20:17:59.170",
-  "modified": "2026-10-27T15:00:49.240",
+  "modified": "2026-11-02T22:17:22.930",
   "desc": "The jose library accepts ECDSA (ES256, ES256K, ES384, and ES512) JWS signatures of a non-canonical length. When verifying an ECDSA signature, jose_jwk_kty_ec:verify/4 in src/jwk/jose_jwk_kty_ec.erl splits the raw signature in half by its actual byte length (split_binary(Signature, byte_size(Signature) div 2)) instead of enforcing the fixed length required by RFC 7518 §3.4, and then decodes each half with crypto:bytes_to_integer/1, which ignores leading zero bytes.\n\nAs a result, an attacker who holds one valid token can prepend leading zero bytes to each of the R and S halves to produce longer signatures that still split evenly and decode to the same (r, s) pair, so many distinct signature byte strings all verify against the same key (signature malleability). This does not allow forging new payloads or impersonating a signer, because the underlying (r, s) values are unchanged. It does defeat any security control that assumes a valid token or its signature is unique, such as token-revocation-by-hash, replay or idempotency caches, and deduplication logic.\n\nThis issue affects jose: from 1.0.0 before 1.11.13.",
   "cvss": 5.1,
   "sev": "MEDIUM",
@@ -12968,7 +12970,7 @@
  "CVE-2026-70382": {
   "id": "CVE-2026-70382",
   "published": "2026-10-26T20:18:36.110",
-  "modified": "2026-10-27T15:58:29.243",
+  "modified": "2026-11-02T22:17:23.123",
   "desc": "Some externally supplied values stored by the device may be rendered in the web interface without sufficient output encoding. An attacker who can influence one of these values could cause script execution in the browser of a user who views an affected page. Exploitation requires an attacker to influence a stored value and a user to view a page that renders it.",
   "cvss": 5.1,
   "sev": "MEDIUM",
@@ -13247,7 +13249,7 @@
  "CVE-2026-112430": {
   "id": "CVE-2026-112430",
   "published": "2026-10-26T21:17:32.953",
-  "modified": "2026-10-27T14:52:57.863",
+  "modified": "2026-11-03T05:18:28.510",
   "desc": "An authentication issue was addressed with improved validation of user attributes. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An app may be able to gain root privileges.",
   "cvss": null,
   "sev": null,
@@ -14015,7 +14017,7 @@
  "CVE-2026-112487": {
   "id": "CVE-2026-112487",
   "published": "2026-10-26T21:17:39.757",
-  "modified": "2026-11-02T20:17:28.633",
+  "modified": "2026-11-03T05:18:28.670",
   "desc": "A path handling issue was addressed with improved validation. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An app may be able to gain root privileges.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -14071,7 +14073,7 @@
  "CVE-2026-112492": {
   "id": "CVE-2026-112492",
   "published": "2026-10-26T21:17:40.220",
-  "modified": "2026-11-02T20:17:28.820",
+  "modified": "2026-11-03T05:18:28.900",
   "desc": "A race condition was addressed with additional validation. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An app may be able to gain root privileges.",
   "cvss": 7.0,
   "sev": "HIGH",
@@ -14890,12 +14892,14 @@
  "CVE-2026-112545": {
   "id": "CVE-2026-112545",
   "published": "2026-10-26T21:17:47.507",
-  "modified": "2026-10-27T14:52:57.863",
+  "modified": "2026-11-03T05:18:29.193",
   "desc": "A parsing issue in the handling of directory paths was addressed with improved path validation. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An app may be able to gain root privileges.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-22"
+  ],
   "products": [],
   "refs": [
    "https://support.apple.com/en-us/149521",
@@ -14947,7 +14951,7 @@
  "CVE-2026-112548": {
   "id": "CVE-2026-112548",
   "published": "2026-10-26T21:17:47.970",
-  "modified": "2026-11-02T21:17:23.470",
+  "modified": "2026-11-03T05:18:29.443",
   "desc": "A use after free issue was addressed with improved memory management. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An app may be able to gain root privileges.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -15889,7 +15893,7 @@
  "CVE-2026-112626": {
   "id": "CVE-2026-112626",
   "published": "2026-10-26T21:17:55.980",
-  "modified": "2026-11-02T18:27:34.580",
+  "modified": "2026-11-03T05:18:29.693",
   "desc": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 27.2, iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, tvOS 27.2, visionOS 27.2, watchOS 27.2. Processing maliciously crafted web content may lead to arbitrary code execution.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -16062,7 +16066,7 @@
  "CVE-2026-112637": {
   "id": "CVE-2026-112637",
   "published": "2026-10-26T21:17:57.297",
-  "modified": "2026-11-02T18:25:01.470",
+  "modified": "2026-11-03T05:18:29.967",
   "desc": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 27.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, tvOS 27.2, visionOS 27.2, watchOS 27.2. Processing maliciously crafted web content may lead to arbitrary code execution.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -16107,7 +16111,7 @@
  "CVE-2026-112639": {
   "id": "CVE-2026-112639",
   "published": "2026-10-26T21:17:57.620",
-  "modified": "2026-11-02T20:20:10.003",
+  "modified": "2026-11-03T05:18:30.200",
   "desc": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 27.2, iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, visionOS 27.2. Processing maliciously crafted web content may lead to arbitrary code execution.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -16817,7 +16821,7 @@
  "CVE-2026-112688": {
   "id": "CVE-2026-112688",
   "published": "2026-10-26T21:18:03.177",
-  "modified": "2026-11-02T15:45:20.680",
+  "modified": "2026-11-03T05:18:30.470",
   "desc": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. Parsing a file may lead to an unexpected app termination or arbitrary code execution.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -16967,7 +16971,7 @@
  "CVE-2026-112697": {
   "id": "CVE-2026-112697",
   "published": "2026-10-26T21:18:04.537",
-  "modified": "2026-11-02T20:17:05.907",
+  "modified": "2026-11-03T05:18:30.730",
   "desc": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 27.2, iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, tvOS 27.2, visionOS 27.2, watchOS 27.2. Processing maliciously crafted web content may lead to arbitrary code execution.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -17237,7 +17241,7 @@
  "CVE-2026-113900": {
   "id": "CVE-2026-113900",
   "published": "2026-10-26T21:18:06.947",
-  "modified": "2026-11-02T20:17:29.210",
+  "modified": "2026-11-03T05:18:30.970",
   "desc": "A race condition was addressed with improved state handling. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An app may be able to gain root privileges.",
   "cvss": 7.0,
   "sev": "HIGH",
@@ -18151,7 +18155,7 @@
  "CVE-2026-116671": {
   "id": "CVE-2026-116671",
   "published": "2026-10-26T21:18:17.410",
-  "modified": "2026-10-27T16:03:45.247",
+  "modified": "2026-11-02T22:17:19.290",
   "desc": "Infinite loop in Xpdf 4.06 and earlier, due to incorrect validation of progression order field in JPEG 2000 image.",
   "cvss": 2.1,
   "sev": "LOW",
@@ -18346,7 +18350,7 @@
  "CVE-2026-65373": {
   "id": "CVE-2026-65373",
   "published": "2026-10-26T21:18:43.757",
-  "modified": "2026-11-02T20:17:58.400",
+  "modified": "2026-11-03T05:18:51.533",
   "desc": "A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. A malicious app may be able to gain root privileges.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -18933,7 +18937,7 @@
  "CVE-2026-86896": {
   "id": "CVE-2026-86896",
   "published": "2026-10-26T21:20:25.327",
-  "modified": "2026-11-02T20:18:02.593",
+  "modified": "2026-11-03T05:18:52.893",
   "desc": "A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. A malicious app may be able to gain root privileges.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -46252,7 +46256,7 @@
  "CVE-2026-118662": {
   "id": "CVE-2026-118662",
   "published": "2026-10-28T21:16:56.403",
-  "modified": "2026-10-29T16:19:37.750",
+  "modified": "2026-11-03T00:17:17.343",
   "desc": "Vite is a frontend tooling framework for JavaScript. From 6.4.4 until 6.4.5, the Vite development server can evaluate server.fs.deny before stripping loader query parameters such as ?raw, ?import&raw, or ?import&url&inline. When the development server is exposed to the network and a sensitive file is inside server.fs.allow but matched by server.fs.deny, an unauthenticated attacker can append one of these queries and retrieve the denied file. This issue is fixed in version 6.4.5.",
   "cvss": 6.9,
   "sev": "MEDIUM",
@@ -46334,7 +46338,7 @@
  "CVE-2026-118666": {
   "id": "CVE-2026-118666",
   "published": "2026-10-28T21:16:56.980",
-  "modified": "2026-10-29T15:50:59.497",
+  "modified": "2026-11-03T00:17:18.020",
   "desc": "GraphQL Tools provides utilities for building, stitching, and mocking GraphQL schemas. Prior to version 1.1.36 of the GraphQL Tools legacy WebSocket executor package, buildWSLegacyExecutor in packages/executors/legacy-ws/src/index.ts reuses one WebSocket and replaces its single websocket.onmessage handler whenever a new overlapping subscription starts. The handler delivers LEGACY_WS.DATA frames to the newest observer without comparing data.id with the subscription operation id, so a caller using the same executor can receive another user's authorized subscription payload while the earlier caller's stream is starved. This issue is fixed in version 1.1.36 of the GraphQL Tools legacy WebSocket executor package.",
   "cvss": 6.0,
   "sev": "MEDIUM",
@@ -46472,7 +46476,7 @@
  "CVE-2026-118682": {
   "id": "CVE-2026-118682",
   "published": "2026-10-28T22:17:12.763",
-  "modified": "2026-10-29T16:21:34.310",
+  "modified": "2026-11-03T00:17:18.170",
   "desc": "KaringX ClashMi through 1.0.32.1801 disables TLS certificate validation by default in the HttpUtils helper, allowing attackers to intercept HTTPS traffic by presenting any certificate. Attackers operating the user's proxy node can serve a forged update manifest omitting sha256 to deliver a malicious installer, achieving code execution when the update runs.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -46552,7 +46556,7 @@
  "CVE-2026-118692": {
   "id": "CVE-2026-118692",
   "published": "2026-10-28T22:17:13.387",
-  "modified": "2026-10-29T16:21:34.310",
+  "modified": "2026-11-03T00:17:18.320",
   "desc": "CherryTree through 1.7.2 contains an OS command injection vulnerability in CtActions::link_clicked that allows attackers to execute commands by embedding shell metacharacters in web link URLs. When the non-default Custom Web Link Clicked Action option is enabled, attackers can supply crafted documents whose links pass $(...), backticks, or semicolons unquoted to std::system, running commands as the victim on click.",
   "cvss": 7.1,
   "sev": "HIGH",
@@ -46632,7 +46636,7 @@
  "CVE-2026-118753": {
   "id": "CVE-2026-118753",
   "published": "2026-10-28T22:17:14.047",
-  "modified": "2026-11-02T21:17:28.717",
+  "modified": "2026-11-03T00:17:18.470",
   "desc": "FreeImage through 3.18.0 and the danoli3 FreeImage fork before 3.19.25 contain a heap buffer overflow vulnerability in PluginGIF.cpp that allows attackers to write past the canvas allocation via unclipped GIF frame rectangles. Attackers can craft a GIF whose frame left plus width exceeds the logical screen width, causing GifPlaybackCompositeFrame() and GifPlaybackFillRect() to corrupt heap memory when loaded with GIF_PLAYBACK.",
   "cvss": 8.5,
   "sev": "HIGH",
@@ -46712,7 +46716,7 @@
  "CVE-2026-118757": {
   "id": "CVE-2026-118757",
   "published": "2026-10-28T22:17:14.673",
-  "modified": "2026-10-29T16:21:34.310",
+  "modified": "2026-11-03T00:17:18.630",
   "desc": "PiWeb Disable payment method / Partial payment for WooCommerce before 1.1.10.9 contains a missing authorization vulnerability in the update_fees AJAX handler that allows unauthenticated attackers to modify and read other customers' orders. Attackers can reuse a nonce from their own order-pay page and supply sequential order_id values to change payment methods, recalculate fees, and disclose order line items and totals.",
   "cvss": 6.9,
   "sev": "MEDIUM",
@@ -46812,7 +46816,7 @@
  "CVE-2026-57448": {
   "id": "CVE-2026-57448",
   "published": "2026-10-28T22:17:15.433",
-  "modified": "2026-10-29T16:21:34.310",
+  "modified": "2026-11-03T01:16:54.500",
   "desc": "Blombooru is a self-hosted personal booru for organizing and tagging private image collections. Prior to 1.40.0, the administrator-only `GET /proxy-image` endpoint, exposed as `/api/booru-import/proxy-image`, accepts a `url` query parameter and fetches it server-side without meaningful destination validation. `proxy_image()` in `backend/app/routes/booru_import.py` only checks whether the value starts with http, then uses `get_client_for_url` or `requests.get` and streams the response. Private, loopback and link-local addresses are not blocked, and automatically followed redirects can move a request from a trusted domain to an internal address. An authenticated administrator can enumerate internal services and access cloud instance metadata, potentially disclosing IAM credentials and crossing the application's intended cloud or network trust boundary. The reporter also observed a hanging recursive self-request. Administrator authentication remains a prerequisite; this is not an anonymous proxy. This issue is fixed in version 1.40.0.",
   "cvss": 6.2,
   "sev": "MEDIUM",
@@ -46873,7 +46877,7 @@
  "CVE-2026-61567": {
   "id": "CVE-2026-61567",
   "published": "2026-10-28T22:17:15.900",
-  "modified": "2026-10-29T15:45:15.310",
+  "modified": "2026-11-03T01:16:54.897",
   "desc": "AVideo is a video-sharing Platform. Prior to 8.1.0, the live-streaming endpoint `view/videosListToLive.php` accepts an attacker-named streamer in `webSiteRootURL`, calls `Login::run` in `objects/Login.php`, and trusts the returned JSON as session state. An unauthenticated remote attacker who can host an HTTP service reachable by the encoder can self-grant `isLogged` and `canStream` without legitimate credentials. The endpoint requires only nonempty `playlists_id` and `APISecret` values; `APISecret` is forwarded rather than checked against a stored secret. This path never calls `Streamer::isURLAllowed` and therefore works regardless of the operator's streamer allowlist. It fetches a second attacker-controlled video-list response and interpolates `videos[].path` without shell argument escaping into `ffprobe` and `ffmpeg` commands passed to `exec`; `isAudio` calls `isVideo` to reach the `ffprobe` command. Paths containing shell delimiters execute arbitrary operating-system commands as the web-server user. The request filter does not inspect the video-list JSON. This can disclose database and stored streamer credentials, compromise the upstream platform using those credentials, modify files owned by the web-server user, establish persistence, and deny encoder service. This issue is fixed in version 8.1.0.",
   "cvss": 10.0,
   "sev": "CRITICAL",
@@ -46913,7 +46917,7 @@
  "CVE-2026-61571": {
   "id": "CVE-2026-61571",
   "published": "2026-10-28T22:17:16.193",
-  "modified": "2026-10-29T15:45:15.310",
+  "modified": "2026-11-03T01:16:55.240",
   "desc": "AVideo is a video-sharing Platform. Prior to 8.1.0, the encoder lacks a global authentication layer and exposes control and status PHP endpoints to anonymous network callers. `view/run.php` has a commented-out guard and invokes `Encoder::run()`. `view/queue.json.php` calls `Encoder::getAll(true)`, reveals streamer URLs through `getSiteURL()`, and triggers processing with `execRun()`. `view/status.php` returns `Access-Control-Allow-Origin` with a wildcard, reads the queue, triggers processing, and exposes host memory statistics through `ServerMonitor::getMemory()` when `serverStatus` is set. `view/listFiles.json.php` checks only `Login::canBulkEncode()`, which admits anonymous callers whenever `disableBulkEncode` is empty, the default. Its `path` parameter is resolved with `realpath()` and listed with `scandir()` without a base-directory restriction. An unauthenticated attacker can drive the privileged queue processor, read queue and streamer-site information, obtain memory statistics and enumerate media file names and paths in any directory readable by the web-server user. Enumeration is limited to configured media extensions and does not itself disclose arbitrary file contents. This issue is fixed in version 8.1.0.",
   "cvss": 7.3,
   "sev": "HIGH",
@@ -47054,7 +47058,7 @@
  "CVE-2026-118577": {
   "id": "CVE-2026-118577",
   "published": "2026-10-28T23:17:09.060",
-  "modified": "2026-10-29T14:56:26.107",
+  "modified": "2026-11-03T01:16:49.380",
   "desc": "A vulnerability was identified in maotoumao MusicFreeDesktop 0.0.6/0.0.7/0.0.8. Impacted is an unknown function of the component Request Forwarder. The manipulation leads to server-side request forgery. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The identifier of the patch is b0d3876247a0a64fa0e430e4b21870e41f503182. It is recommended to apply a patch to fix this issue.",
   "cvss": 2.1,
   "sev": "LOW",
@@ -47115,7 +47119,7 @@
  "CVE-2026-55561": {
   "id": "CVE-2026-55561",
   "published": "2026-10-28T23:17:10.350",
-  "modified": "2026-10-28T23:17:10.480",
+  "modified": "2026-11-03T01:16:53.510",
   "desc": "InvoicePlane is a self-hosted open source application for managing invoices, clients, and payments. Prior to 1.7.2-beta-1, guest users can approve or reject quotes belonging to any client, not just their assigned clients. The `approve()` and `reject()` methods in the Guest Quotes controller, `application/modules/guest/controllers/Quotes.php`, call `approve_quote_by_id($quote_id)` and `reject_quote_by_id($quote_id)` directly without the `where_in('ip_quotes.client_id', $this->user_clients)` scoping that sibling methods use. A guest user assigned to one client can change another client's quote status by supplying sequential integer `quote_id` values, and `email_quote_status()` also sends notification emails. Additionally, `generate_pdf()` calls `mark_viewed($quote_id)` before checking the client scope, allowing a guest user to mark another client's quote as viewed. These issues are fixed in version 1.7.2-beta-1 and the subsequent stable version 1.7.2.",
   "cvss": 5.3,
   "sev": "MEDIUM",
@@ -47213,7 +47217,7 @@
  "CVE-2026-118585": {
   "id": "CVE-2026-118585",
   "published": "2026-10-29T00:17:25.920",
-  "modified": "2026-10-29T14:56:26.107",
+  "modified": "2026-11-03T01:16:50.263",
   "desc": "A vulnerability was identified in configuroweb inventariobasico c9377cdba474deb3eb5a0704d197b5733af16b47/f9db0c0a04d79ad931c218140df4fb23809d4fab. This vulnerability affects unknown code of the file addlist.php of the component Add Product Page. Such manipulation of the argument product name leads to cross site scripting. The attack may be launched remotely. The exploit is publicly available and might be used. This product operates on a rolling release basis, ensuring continuous delivery. Consequently, there are no version details for either affected or updated releases. The project was informed of the problem early through an issue report but has not responded yet.",
   "cvss": 2.0,
   "sev": "LOW",
@@ -50454,12 +50458,14 @@
  "CVE-2026-79589": {
   "id": "CVE-2026-79589",
   "published": "2026-10-29T14:17:59.487",
-  "modified": "2026-10-29T16:21:34.310",
+  "modified": "2026-11-03T01:16:55.597",
   "desc": "The WIFI4 N300 router (Model: T1 Pro) v1.0.0 by U-speed contains an insecure access control flaw that allows an attacker to gain unauthenticated root shell. The vulnerability is caused by the exposure of the UART debugging interface having a lack of authentication, authorization and access control functionality. Once the interface is soldered and connected to the attacker, they gain root privilege to the system.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-306"
+  ],
   "products": [],
   "refs": [
    "https://github.com/milkinit/cve-disclosures/tree/main/IoT/CVE-2026-79589",
@@ -50586,12 +50592,14 @@
  "CVE-2026-107018": {
   "id": "CVE-2026-107018",
   "published": "2026-10-29T15:17:15.550",
-  "modified": "2026-10-29T16:21:34.310",
+  "modified": "2026-11-03T01:16:45.223",
   "desc": "Insecure permissions in Ghost Commander File Manager versionCode 479 allows unauthorized attackers to arbitrarily read and write files inside the commander's private storage.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-732"
+  ],
   "products": [],
   "refs": [
    "https://f-droid.org/packages/com.ghostsq.commander/",
@@ -50682,15 +50690,18 @@
  "CVE-2026-107024": {
   "id": "CVE-2026-107024",
   "published": "2026-10-29T15:17:16.133",
-  "modified": "2026-10-29T16:21:34.310",
+  "modified": "2026-11-03T01:16:46.870",
   "desc": "Insecure permissions in Share 2 Archive Today versionCode 61 allows unauthorized attackers to arbitrarily overwrite another user's clipboard content via supplying a crafted URL.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-732"
+  ],
   "products": [],
   "refs": [
    "https://f-droid.org/packages/org.gnosco.share2archivetoday/",
+   "https://github.com/FFG0d/fdroid-android-advisories/blob/main/advisories/CVE-2026-107024.md",
    "https://github.com/FFG0d/fdroid-android-advisories/blob/main/advisories/CVE-2026-107024.md"
   ],
   "kev": false,
@@ -51834,12 +51845,14 @@
  "CVE-2026-107029": {
   "id": "CVE-2026-107029",
   "published": "2026-10-29T16:17:48.723",
-  "modified": "2026-10-29T16:30:07.917",
+  "modified": "2026-11-03T01:16:47.743",
   "desc": "Insecure permissions in rubenalfon Pile v1.1.3 allows unauthorized attackers to invoke an exported component, leading to arbitrary data access and overwriting.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 9.1,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-732"
+  ],
   "products": [],
   "refs": [
    "https://f-droid.org/packages/es.pile/",
@@ -51929,12 +51942,14 @@
  "CVE-2026-107035": {
   "id": "CVE-2026-107035",
   "published": "2026-10-29T16:17:49.267",
-  "modified": "2026-10-29T16:30:07.917",
+  "modified": "2026-11-03T01:16:48.513",
   "desc": "Insecure permissions in the object/Page.java component of MBasov OMN Outline notes Markdown versionCode 3400 allows unauthorized attackers to arbitrarily write content into another user's private storage via a crafted payload.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
   "products": [],
   "refs": [
    "https://f-droid.org/packages/net.basov.omn.fdroid/",
@@ -117216,7 +117231,7 @@
  "CVE-2026-20499": {
   "id": "CVE-2026-20499",
   "published": "2026-11-02T03:17:31.090",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:35.123",
   "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01857954; Issue ID: MSV-8247.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -117234,7 +117249,7 @@
  "CVE-2026-20545": {
   "id": "CVE-2026-20545",
   "published": "2026-11-02T03:17:31.257",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:35.437",
   "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01879158 / MOLY01774038; Issue ID: MSV-9811.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -117252,7 +117267,7 @@
  "CVE-2026-20546": {
   "id": "CVE-2026-20546",
   "published": "2026-11-02T03:17:31.390",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:35.710",
   "desc": "In Modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01876654 / MOLY01774038; Issue ID: MSV-9803.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -117270,7 +117285,7 @@
  "CVE-2026-20547": {
   "id": "CVE-2026-20547",
   "published": "2026-11-02T03:17:31.523",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:35.977",
   "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01874018 / MOLY01774038; Issue ID: MSV-9802.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -117288,7 +117303,7 @@
  "CVE-2026-20548": {
   "id": "CVE-2026-20548",
   "published": "2026-11-02T03:17:31.650",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:36.270",
   "desc": "In Modem, there is a possible out of bounds write due to an integer overflow. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01872867 / MOLY01774038; Issue ID: MSV-9801.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -117306,7 +117321,7 @@
  "CVE-2026-20549": {
   "id": "CVE-2026-20549",
   "published": "2026-11-02T03:17:31.780",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:36.510",
   "desc": "In Modem, there is a possible out of bounds write due to improper input validation. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01775865; Issue ID: MSV-8895.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -117396,7 +117411,7 @@
  "CVE-2026-20554": {
   "id": "CVE-2026-20554",
   "published": "2026-11-02T03:17:32.427",
-  "modified": "2026-11-02T17:17:41.707",
+  "modified": "2026-11-03T05:18:36.783",
   "desc": "In Modem, there is a possible system crash due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is needed for exploitation. Patch ID: MOLY01911177; Issue ID: MSV-10122.",
   "cvss": 7.1,
   "sev": "HIGH",
@@ -117432,7 +117447,7 @@
  "CVE-2026-20556": {
   "id": "CVE-2026-20556",
   "published": "2026-11-02T03:17:32.697",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:37.053",
   "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01876662; Issue ID: MSV-9833.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -117450,7 +117465,7 @@
  "CVE-2026-20557": {
   "id": "CVE-2026-20557",
   "published": "2026-11-02T03:17:32.823",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:37.310",
   "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01877236; Issue ID: MSV-9804.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -117468,7 +117483,7 @@
  "CVE-2026-20558": {
   "id": "CVE-2026-20558",
   "published": "2026-11-02T03:17:32.947",
-  "modified": "2026-11-02T17:17:41.950",
+  "modified": "2026-11-03T05:18:37.533",
   "desc": "In GPU pdma, there is a possible escalation of privilege due to use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS11365070; Issue ID: MSV-9547.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -117486,7 +117501,7 @@
  "CVE-2026-20559": {
   "id": "CVE-2026-20559",
   "published": "2026-11-02T03:17:33.073",
-  "modified": "2026-11-02T17:17:42.130",
+  "modified": "2026-11-03T05:18:37.740",
   "desc": "In GPU pdma, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS11365081; Issue ID: MSV-9545.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -117594,7 +117609,7 @@
  "CVE-2026-20565": {
   "id": "CVE-2026-20565",
   "published": "2026-11-02T03:17:33.830",
-  "modified": "2026-11-02T17:17:42.560",
+  "modified": "2026-11-03T05:18:37.967",
   "desc": "In Modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01778991; Issue ID: MSV-8900.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -117630,7 +117645,7 @@
  "CVE-2026-20567": {
   "id": "CVE-2026-20567",
   "published": "2026-11-02T03:17:34.087",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:38.173",
   "desc": "In afe, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431394; Issue ID: MSV-10004.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117648,7 +117663,7 @@
  "CVE-2026-20568": {
   "id": "CVE-2026-20568",
   "published": "2026-11-02T03:17:34.247",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:38.407",
   "desc": "In afe, there is a possible system crash due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11439283; Issue ID: MSV-10003.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117666,7 +117681,7 @@
  "CVE-2026-20569": {
   "id": "CVE-2026-20569",
   "published": "2026-11-02T03:17:34.390",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:38.643",
   "desc": "In adsp, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431474; Issue ID: MSV-9927.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117684,7 +117699,7 @@
  "CVE-2026-20570": {
   "id": "CVE-2026-20570",
   "published": "2026-11-02T03:17:34.520",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:38.870",
   "desc": "In adsp, there is a possible escalation of privilege due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431474; Issue ID: MSV-9926.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117702,7 +117717,7 @@
  "CVE-2026-20571": {
   "id": "CVE-2026-20571",
   "published": "2026-11-02T03:17:34.640",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:39.080",
   "desc": "In afe, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11434319; Issue ID: MSV-9925.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117720,7 +117735,7 @@
  "CVE-2026-20572": {
   "id": "CVE-2026-20572",
   "published": "2026-11-02T03:17:34.767",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:39.337",
   "desc": "In adsp, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431442; Issue ID: MSV-9924.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117738,7 +117753,7 @@
  "CVE-2026-20573": {
   "id": "CVE-2026-20573",
   "published": "2026-11-02T03:17:34.893",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:39.597",
   "desc": "In afe, there is a possible memory corruption due to double free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431412; Issue ID: MSV-9923.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117756,7 +117771,7 @@
  "CVE-2026-20574": {
   "id": "CVE-2026-20574",
   "published": "2026-11-02T03:17:35.027",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:39.833",
   "desc": "In afe, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431400; Issue ID: MSV-9922.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117774,7 +117789,7 @@
  "CVE-2026-20575": {
   "id": "CVE-2026-20575",
   "published": "2026-11-02T03:17:35.150",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:40.107",
   "desc": "In afe, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431394; Issue ID: MSV-9921.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117792,7 +117807,7 @@
  "CVE-2026-20576": {
   "id": "CVE-2026-20576",
   "published": "2026-11-02T03:17:35.270",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:40.383",
   "desc": "In afe, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11431385; Issue ID: MSV-9920.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117864,7 +117879,7 @@
  "CVE-2026-20581": {
   "id": "CVE-2026-20581",
   "published": "2026-11-02T03:17:35.787",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:40.643",
   "desc": "In usb, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11411985; Issue ID: MSV-9750.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117882,7 +117897,7 @@
  "CVE-2026-20582": {
   "id": "CVE-2026-20582",
   "published": "2026-11-02T03:17:35.913",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:40.867",
   "desc": "In usb, there is a possible memory corruption due to double free. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11411924; Issue ID: MSV-9748.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117918,7 +117933,7 @@
  "CVE-2026-20584": {
   "id": "CVE-2026-20584",
   "published": "2026-11-02T03:17:36.163",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:41.140",
   "desc": "In usb, there is a possible memory corruption due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11411916; Issue ID: MSV-9746.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -117936,7 +117951,7 @@
  "CVE-2026-20585": {
   "id": "CVE-2026-20585",
   "published": "2026-11-02T03:17:36.283",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:41.433",
   "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01338165; Issue ID: MSV-9660.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -117972,7 +117987,7 @@
  "CVE-2026-20591": {
   "id": "CVE-2026-20591",
   "published": "2026-11-02T03:17:36.537",
-  "modified": "2026-11-02T17:17:43.773",
+  "modified": "2026-11-03T05:18:41.693",
   "desc": "In GPU pdma, there is a possible escalation of privilege due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS11365075; Issue ID: MSV-9546.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -118044,7 +118059,7 @@
  "CVE-2026-20595": {
   "id": "CVE-2026-20595",
   "published": "2026-11-02T03:17:37.053",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:41.923",
   "desc": "In neuropilot, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS11263078; Issue ID: MSV-9001.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -118116,7 +118131,7 @@
  "CVE-2026-20599": {
   "id": "CVE-2026-20599",
   "published": "2026-11-02T03:17:37.657",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:42.180",
   "desc": "In Modem, there is a possible escalation of privilege due to a missing permission check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: MOLY01790985; Issue ID: MSV-8148.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -118170,7 +118185,7 @@
  "CVE-2026-68589": {
   "id": "CVE-2026-68589",
   "published": "2026-11-02T03:17:38.087",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:51.843",
   "desc": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: MOLY01320076; Issue ID: MSV-6889.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -118206,7 +118221,7 @@
  "CVE-2026-68591": {
   "id": "CVE-2026-68591",
   "published": "2026-11-02T03:17:38.343",
-  "modified": "2026-11-02T16:18:52.027",
+  "modified": "2026-11-03T05:18:52.140",
   "desc": "In Modem, there is a possible escalation of privilege due to a permissions bypass. This could lead to local escalation of privilege (EoP) if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS09608864 / ALPS09327759; Issue ID: MSV-2958.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -118843,12 +118858,14 @@
  "CVE-2026-103310": {
   "id": "CVE-2026-103310",
   "published": "2026-11-02T08:17:35.927",
-  "modified": "2026-11-02T19:35:33.347",
+  "modified": "2026-11-02T22:17:17.343",
   "desc": "The PayHere Payment Gateway WordPress plugin from 2.4.0 through 2.4.5 does not verify the authenticity of payment notifications when the merchant secret is unset, which is the default state, allowing unauthenticated attackers to forge a payment confirmation and mark any order as paid without payment.",
   "cvss": 5.3,
   "sev": "MEDIUM",
   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
-  "cwe": [],
+  "cwe": [
+   "CWE-345"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/f3b66147-5910-4901-b595-12a5b1db5f8b/"
@@ -118859,7 +118876,7 @@
  "CVE-2026-18199": {
   "id": "CVE-2026-18199",
   "published": "2026-11-02T08:17:36.083",
-  "modified": "2026-11-02T20:17:41.190",
+  "modified": "2026-11-03T05:18:34.920",
   "desc": "Zohocorp ManageEngine Password Manager Pro versions before 13236 and PAM360 versions before 8601 are vulnerable to an authenticated Remote Code Execution vulnerability.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -121586,7 +121603,7 @@
  "CVE-2026-8923": {
   "id": "CVE-2026-8923",
   "published": "2026-11-02T11:17:33.380",
-  "modified": "2026-11-02T20:18:03.050",
+  "modified": "2026-11-03T05:18:53.573",
   "desc": "Zohocorp ManageEngine Eventlog Analyzer and ManageEngine Log360 versions before 13062 are vulnerable to Authenticated Remote Code Execution in Log Forward option.",
   "cvss": 8.7,
   "sev": "HIGH",
@@ -121660,7 +121677,7 @@
  "CVE-2026-111560": {
   "id": "CVE-2026-111560",
   "published": "2026-11-02T13:17:35.190",
-  "modified": "2026-11-02T20:17:27.913",
+  "modified": "2026-11-03T05:18:28.323",
   "desc": "Improper neutralization of shell metacharacters in the timezone configuration field in certain Barracuda appliance products using common Barracuda code allows an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed.",
   "cvss": 8.6,
   "sev": "HIGH",
@@ -121679,7 +121696,7 @@
  "CVE-2026-116606": {
   "id": "CVE-2026-116606",
   "published": "2026-11-02T13:17:37.017",
-  "modified": "2026-11-02T20:17:32.373",
+  "modified": "2026-11-03T05:18:31.200",
   "desc": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
   "cvss": 9.3,
   "sev": "CRITICAL",
@@ -121738,7 +121755,7 @@
  "CVE-2026-91905": {
   "id": "CVE-2026-91905",
   "published": "2026-11-02T13:17:40.020",
-  "modified": "2026-11-02T20:32:33.660",
+  "modified": "2026-11-03T05:18:54.670",
   "desc": "Dell OpenManage Enterprise, versions prior to 4.8.0, contains an Improper Verification of Cryptographic Signature vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to Filesystem access for attacker.",
   "cvss": 6.4,
   "sev": "MEDIUM",
@@ -121798,7 +121815,7 @@
  "CVE-2026-91908": {
   "id": "CVE-2026-91908",
   "published": "2026-11-02T13:17:40.497",
-  "modified": "2026-11-02T20:30:36.110",
+  "modified": "2026-11-03T05:18:54.860",
   "desc": "Dell OpenManage Enterprise, versions prior to 4.8.0, contains an Improper Verification of Cryptographic Signature vulnerability. A high privileged attacker with adjacent network access could potentially exploit this vulnerability, leading to Code execution.",
   "cvss": 5.7,
   "sev": "MEDIUM",
@@ -121818,7 +121835,7 @@
  "CVE-2026-91909": {
   "id": "CVE-2026-91909",
   "published": "2026-11-02T13:17:40.650",
-  "modified": "2026-11-02T20:29:34.903",
+  "modified": "2026-11-03T05:18:55.047",
   "desc": "Dell OpenManage Enterprise, versions prior to 4.8.0, contains an Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability. A low privileged attacker with adjacent network access could potentially exploit this vulnerability, leading to Command execution.",
   "cvss": 4.6,
   "sev": "MEDIUM",
@@ -121896,7 +121913,7 @@
  "CVE-2026-94349": {
   "id": "CVE-2026-94349",
   "published": "2026-11-02T13:17:41.583",
-  "modified": "2026-11-02T20:27:10.230",
+  "modified": "2026-11-03T05:18:55.420",
   "desc": "Dell OpenManage Enterprise, versions prior to 4.8.0, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker with adjacent network access could potentially exploit this vulnerability, leading to Command execution.",
   "cvss": 8.0,
   "sev": "HIGH",
@@ -122711,8 +122728,8 @@
  "CVE-2026-120447": {
   "id": "CVE-2026-120447",
   "published": "2026-11-02T15:17:27.523",
-  "modified": "2026-11-02T19:35:33.347",
-  "desc": "HotGo through 2.15.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to choose the SMS login verification code by supplying the Code field to /admin/sms/send. Attackers who know a user's mobile number can set a known code and sign in through /admin/site/mobileLogin to take over accounts, including administrators.",
+  "modified": "2026-11-03T00:17:18.797",
+  "desc": "HotGo 2.8.4 through 2.15.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to choose the SMS login verification code by supplying the Code field to /admin/sms/send. Attackers who know a user's mobile number can set a known code and sign in through /admin/site/mobileLogin to take over accounts, including administrators.",
   "cvss": 9.2,
   "sev": "CRITICAL",
   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -123509,7 +123526,7 @@
  "CVE-2026-94290": {
   "id": "CVE-2026-94290",
   "published": "2026-11-02T16:17:45.190",
-  "modified": "2026-11-02T19:14:53.030",
+  "modified": "2026-11-03T05:18:55.230",
   "desc": "SUSE Rancher Fleet clusters reference a kubeconfig secret that the controller uses to install and manage a Fleet agent on the target cluster. The controller did not sufficiently restrict which kubeconfig secrets a Fleet Cluster object was allowed to reference. As a result, a Fleet cluster defined in a namespace an ordinary user controls could be associated with administrative credentials for the management cluster itself, causing the controller to manage the management cluster on that user's behalf and to run that user's Fleet content there with elevated privileges. This affects SUSE Rancher Fleet 0.16.0 up to 0.16.3, 0.15.0 up to 0.15.8, 0.14.0 up to 0.14.12, 0.13.0 up to 0.13.17 and possible older versions.",
   "cvss": 9.1,
   "sev": "CRITICAL",
@@ -124148,7 +124165,7 @@
  "CVE-2026-88810": {
   "id": "CVE-2026-88810",
   "published": "2026-11-02T17:17:45.647",
-  "modified": "2026-11-02T19:18:11.767",
+  "modified": "2026-11-03T05:18:53.200",
   "desc": "A privilege escalation issue was discovered in Rancher Manager's role-based access control. The inheritedNamespacedRules field of a GlobalRole propagates permissions into named namespaces of every downstream cluster managed by the Rancher instance, but it was not subject to the privilege-escalation validation applied to the other permission-carrying fields of a GlobalRole. As a result, a non-administrative user could be granted, through a global role  binding, permissions in downstream clusters that exceed the permissions that user already holds. This affected SUSE Rancher 2.15.2 only, and SUSE Rancher Webhook 0.11.0 up to 0.11.4, and 0.12.0 up to 0.12.1.",
   "cvss": 7.2,
   "sev": "HIGH",
@@ -124166,7 +124183,7 @@
  "CVE-2026-88811": {
   "id": "CVE-2026-88811",
   "published": "2026-11-02T17:17:45.793",
-  "modified": "2026-11-02T19:14:53.030",
+  "modified": "2026-11-03T05:18:53.400",
   "desc": "Missing filtering in the SUSE Rancher Manager meta proxy could cause passed in rancher credentials to be leaked to cloud providers. This affects SUSE Rancher 2.15.0 up to 2.15.3, 2.14.0 up to 2.14.7, 2.13.0 up to 2.13.11,",
   "cvss": 9.1,
   "sev": "CRITICAL",
@@ -125068,7 +125085,7 @@
  "CVE-2026-28588": {
   "id": "CVE-2026-28588",
   "published": "2026-11-02T20:17:41.713",
-  "modified": "2026-11-02T20:17:41.713",
+  "modified": "2026-11-03T05:18:42.473",
   "desc": "In shouldBlockDirectoryFromTree of ExternalStorageProvider.java, there is a possible way to access protected data due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125086,7 +125103,7 @@
  "CVE-2026-28597": {
   "id": "CVE-2026-28597",
   "published": "2026-11-02T20:17:41.907",
-  "modified": "2026-11-02T21:17:30.730",
+  "modified": "2026-11-03T05:18:42.673",
   "desc": "In writeGrantedUriPermissions of UriGrantsManagerService.java, there is a possible permission bypass due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125186,7 +125203,7 @@
  "CVE-2026-45514": {
   "id": "CVE-2026-45514",
   "published": "2026-11-02T20:17:42.607",
-  "modified": "2026-11-02T21:17:31.417",
+  "modified": "2026-11-03T05:18:42.963",
   "desc": "In multiple functions of SaveUi.java, there is a possible bypass of package installation requirements due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125220,7 +125237,7 @@
  "CVE-2026-49922": {
   "id": "CVE-2026-49922",
   "published": "2026-11-02T20:17:42.830",
-  "modified": "2026-11-02T21:17:31.827",
+  "modified": "2026-11-03T05:18:43.343",
   "desc": "In queryRemoteConnectionServices of ConnectionServiceWrapper.java, there is a possible permission bypass due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125238,7 +125255,7 @@
  "CVE-2026-49923": {
   "id": "CVE-2026-49923",
   "published": "2026-11-02T20:17:42.940",
-  "modified": "2026-11-02T21:17:32.003",
+  "modified": "2026-11-03T05:18:43.600",
   "desc": "In onResult of AccountManagerService.java, there is a possible untrusted/misleading UI issue due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125272,7 +125289,7 @@
  "CVE-2026-49931": {
   "id": "CVE-2026-49931",
   "published": "2026-11-02T20:17:43.170",
-  "modified": "2026-11-02T21:17:32.190",
+  "modified": "2026-11-03T05:18:43.810",
   "desc": "In onActivityResult in multiple locations, there is a possible contact leak from protected profile due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125322,7 +125339,7 @@
  "CVE-2026-55257": {
   "id": "CVE-2026-55257",
   "published": "2026-11-02T20:17:43.983",
-  "modified": "2026-11-02T21:17:32.487",
+  "modified": "2026-11-03T05:18:44.010",
   "desc": "In UsbDialogHelper of UsbDialogHelper.java, there is a possible UI confusion due to misleading or insufficient UI. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125356,12 +125373,14 @@
  "CVE-2026-55262": {
   "id": "CVE-2026-55262",
   "published": "2026-11-02T20:17:44.217",
-  "modified": "2026-11-02T20:17:44.217",
+  "modified": "2026-11-03T05:18:44.183",
   "desc": "In setNotificationListenerAccessGrantedForUserInternal of NotificationManagerService.java, there is a possible  policy desynchronization due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 8.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-20"
+  ],
   "products": [],
   "refs": [
    "https://source.android.com/docs/security/bulletin/2026/2026-11-01"
@@ -125404,7 +125423,7 @@
  "CVE-2026-55271": {
   "id": "CVE-2026-55271",
   "published": "2026-11-02T20:17:44.563",
-  "modified": "2026-11-02T21:17:32.657",
+  "modified": "2026-11-03T05:18:44.363",
   "desc": "In forwardToPreferredActionPickHandler of ContactsPickerActivity.kt, there is a possible intent redirection due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125438,7 +125457,7 @@
  "CVE-2026-55275": {
   "id": "CVE-2026-55275",
   "published": "2026-11-02T20:17:44.783",
-  "modified": "2026-11-02T21:17:32.923",
+  "modified": "2026-11-03T05:18:44.533",
   "desc": "In multiple locations, there is a possible use-after-free due to a race condition. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125456,7 +125475,7 @@
  "CVE-2026-55283": {
   "id": "CVE-2026-55283",
   "published": "2026-11-02T20:17:44.900",
-  "modified": "2026-11-02T21:17:33.093",
+  "modified": "2026-11-03T05:18:44.713",
   "desc": "In multiple locations, there is a possible memory safety issue due to a use-after-free. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125474,7 +125493,7 @@
  "CVE-2026-55287": {
   "id": "CVE-2026-55287",
   "published": "2026-11-02T20:17:45.017",
-  "modified": "2026-11-02T21:17:33.253",
+  "modified": "2026-11-03T05:18:44.890",
   "desc": "In onCreate of GrantCredentialsPermissionActivity.java, there is a possible way to trick the user into granting account credentials due to misleading or insufficient UI. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125508,7 +125527,7 @@
  "CVE-2026-55289": {
   "id": "CVE-2026-55289",
   "published": "2026-11-02T20:17:45.293",
-  "modified": "2026-11-02T21:17:33.417",
+  "modified": "2026-11-03T05:18:45.080",
   "desc": "In multiple functions in multiple locations, there is a possible execution of sensitive USSD codes due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125590,7 +125609,7 @@
  "CVE-2026-58824": {
   "id": "CVE-2026-58824",
   "published": "2026-11-02T20:17:47.317",
-  "modified": "2026-11-02T20:17:47.317",
+  "modified": "2026-11-03T05:18:45.263",
   "desc": "In __pkvm_load_tracing of trace.c, there is a possible out-of-bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": null,
   "sev": null,
@@ -125608,7 +125627,7 @@
  "CVE-2026-58825": {
   "id": "CVE-2026-58825",
   "published": "2026-11-02T20:17:47.447",
-  "modified": "2026-11-02T21:17:33.873",
+  "modified": "2026-11-03T05:18:45.390",
   "desc": "In multiple functions of fork.c, there is a possible use after free due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125628,7 +125647,7 @@
  "CVE-2026-58826": {
   "id": "CVE-2026-58826",
   "published": "2026-11-02T20:17:47.573",
-  "modified": "2026-11-02T21:17:34.053",
+  "modified": "2026-11-03T05:18:45.577",
   "desc": "In ksys_unshare of fork.c, there is a possible memory corruption due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125648,7 +125667,7 @@
  "CVE-2026-58827": {
   "id": "CVE-2026-58827",
   "published": "2026-11-02T20:17:47.703",
-  "modified": "2026-11-02T21:17:34.220",
+  "modified": "2026-11-03T05:18:45.800",
   "desc": "In multiple functions of dma-buf.c, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125668,7 +125687,7 @@
  "CVE-2026-58828": {
   "id": "CVE-2026-58828",
   "published": "2026-11-02T20:17:47.817",
-  "modified": "2026-11-02T21:17:34.380",
+  "modified": "2026-11-03T05:18:45.987",
   "desc": "In multiple functions of base.c, there is a possible use-after-free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125688,7 +125707,7 @@
  "CVE-2026-58829": {
   "id": "CVE-2026-58829",
   "published": "2026-11-02T20:17:47.940",
-  "modified": "2026-11-02T21:17:34.553",
+  "modified": "2026-11-03T05:18:46.173",
   "desc": "In fuse_backing_mmap of backing.c, there is a possible memory corruption due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125708,7 +125727,7 @@
  "CVE-2026-58836": {
   "id": "CVE-2026-58836",
   "published": "2026-11-02T20:17:48.053",
-  "modified": "2026-11-02T21:17:34.730",
+  "modified": "2026-11-03T05:18:46.363",
   "desc": "In handlePackagePostInstall of InstallPackageHelper.java, there is a possible Enhanced Confirmation Mode (ECM) bypass vulnerability that allows a sideloaded application to modify the package source during a self-update due to a logic error in the code. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -125726,7 +125745,7 @@
  "CVE-2026-58837": {
   "id": "CVE-2026-58837",
   "published": "2026-11-02T20:17:48.170",
-  "modified": "2026-11-02T21:17:34.897",
+  "modified": "2026-11-03T05:18:46.563",
   "desc": "In multiple locations, there is a possible background activity launch due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125760,7 +125779,7 @@
  "CVE-2026-58844": {
   "id": "CVE-2026-58844",
   "published": "2026-11-02T20:17:48.403",
-  "modified": "2026-11-02T20:17:48.403",
+  "modified": "2026-11-03T05:18:46.773",
   "desc": "In multiple locations, there is a possible out of bounds read/write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": null,
   "sev": null,
@@ -125778,7 +125797,7 @@
  "CVE-2026-58845": {
   "id": "CVE-2026-58845",
   "published": "2026-11-02T20:17:48.533",
-  "modified": "2026-11-02T20:17:48.533",
+  "modified": "2026-11-03T05:18:46.927",
   "desc": "In multiple locations, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": null,
   "sev": null,
@@ -125796,7 +125815,7 @@
  "CVE-2026-58847": {
   "id": "CVE-2026-58847",
   "published": "2026-11-02T20:17:48.660",
-  "modified": "2026-11-02T20:17:48.660",
+  "modified": "2026-11-03T05:18:47.077",
   "desc": "In kvm_vfio_pviommu_attach of vfio.c, there is a possible double free due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": null,
   "sev": null,
@@ -125813,7 +125832,7 @@
  "CVE-2026-58853": {
   "id": "CVE-2026-58853",
   "published": "2026-11-02T20:17:48.780",
-  "modified": "2026-11-02T21:17:35.053",
+  "modified": "2026-11-03T05:18:47.223",
   "desc": "In multiple functions of ipphelper.c, there is a possible stack bugger overflow due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -125831,7 +125850,7 @@
  "CVE-2026-58857": {
   "id": "CVE-2026-58857",
   "published": "2026-11-02T20:17:48.893",
-  "modified": "2026-11-02T20:17:48.893",
+  "modified": "2026-11-03T05:18:47.440",
   "desc": "In decrypt of CryptoHalHidl.cpp, there is a possible use-after-free due to a race condition. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": null,
   "sev": null,
@@ -125847,7 +125866,7 @@
  "CVE-2026-58866": {
   "id": "CVE-2026-58866",
   "published": "2026-11-02T20:17:49.013",
-  "modified": "2026-11-02T21:17:35.213",
+  "modified": "2026-11-03T05:18:47.603",
   "desc": "In setAccessibilityWindowAttributes of AccessibilityWindowManager.java, there is a possible untrusted/misleading UI issue due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -125881,7 +125900,7 @@
  "CVE-2026-58868": {
   "id": "CVE-2026-58868",
   "published": "2026-11-02T20:17:49.247",
-  "modified": "2026-11-02T20:17:49.247",
+  "modified": "2026-11-03T05:18:47.813",
   "desc": "In onOutputReceived of FrameDecoder.cpp, there is a possible out-of-bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": null,
   "sev": null,
@@ -126025,7 +126044,7 @@
  "CVE-2026-58884": {
   "id": "CVE-2026-58884",
   "published": "2026-11-02T20:17:50.280",
-  "modified": "2026-11-02T21:17:35.480",
+  "modified": "2026-11-03T05:18:47.973",
   "desc": "In startTetheredHotspotRequest of WifiServiceImpl.java, there is a possible permission bypass due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126043,7 +126062,7 @@
  "CVE-2026-58885": {
   "id": "CVE-2026-58885",
   "published": "2026-11-02T20:17:50.387",
-  "modified": "2026-11-02T21:17:35.657",
+  "modified": "2026-11-03T05:18:48.180",
   "desc": "In multiple locations, there is a possible permission bypass due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126061,7 +126080,7 @@
  "CVE-2026-58886": {
   "id": "CVE-2026-58886",
   "published": "2026-11-02T20:17:50.493",
-  "modified": "2026-11-02T20:17:50.493",
+  "modified": "2026-11-03T05:18:48.390",
   "desc": "In updateInputWindows of InputMonitor.java, there is a possible tapjacking issue due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.",
   "cvss": null,
   "sev": null,
@@ -126093,7 +126112,7 @@
  "CVE-2026-58934": {
   "id": "CVE-2026-58934",
   "published": "2026-11-02T20:17:50.720",
-  "modified": "2026-11-02T21:17:36.487",
+  "modified": "2026-11-03T05:18:48.543",
   "desc": "In prepareWindowToDisplayDuringRelayout of WindowState.java, there is a possible permission bypass due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126159,7 +126178,7 @@
  "CVE-2026-58942": {
   "id": "CVE-2026-58942",
   "published": "2026-11-02T20:17:51.170",
-  "modified": "2026-11-02T21:17:36.650",
+  "modified": "2026-11-03T05:18:48.757",
   "desc": "In do_fault_around of memory.c, there is a possible use after free due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126179,7 +126198,7 @@
  "CVE-2026-58943": {
   "id": "CVE-2026-58943",
   "published": "2026-11-02T20:17:51.290",
-  "modified": "2026-11-02T21:17:36.813",
+  "modified": "2026-11-03T05:18:48.970",
   "desc": "In run of AddAccountSettings.java, there is a possible background activity launch due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126197,7 +126216,7 @@
  "CVE-2026-58944": {
   "id": "CVE-2026-58944",
   "published": "2026-11-02T20:17:51.393",
-  "modified": "2026-11-02T21:17:36.977",
+  "modified": "2026-11-03T05:18:49.187",
   "desc": "In moveTaskToFrontLocked of ActivityTaskManagerService.java, there is a possible background application launch (bal) issue due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126231,7 +126250,7 @@
  "CVE-2026-58946": {
   "id": "CVE-2026-58946",
   "published": "2026-11-02T20:17:51.610",
-  "modified": "2026-11-02T21:17:37.143",
+  "modified": "2026-11-03T05:18:49.403",
   "desc": "In navigateUpTo of ActivityClientController.java, there is a possible permission bypass due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126329,7 +126348,7 @@
  "CVE-2026-58957": {
   "id": "CVE-2026-58957",
   "published": "2026-11-02T20:17:52.280",
-  "modified": "2026-11-02T21:17:37.313",
+  "modified": "2026-11-03T05:18:49.677",
   "desc": "In resolveToHeavyWeightSwitcherIfNeeded of ActivityStarter.java, there is a possible background activity launch due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126411,7 +126430,7 @@
  "CVE-2026-58965": {
   "id": "CVE-2026-58965",
   "published": "2026-11-02T20:17:52.807",
-  "modified": "2026-11-02T21:17:37.480",
+  "modified": "2026-11-03T05:18:49.913",
   "desc": "In handleAudioEffectBroadcast of MusicFxHelper.java, there is a possible permission bypass due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126477,7 +126496,7 @@
  "CVE-2026-58970": {
   "id": "CVE-2026-58970",
   "published": "2026-11-02T20:17:53.263",
-  "modified": "2026-11-02T21:17:37.670",
+  "modified": "2026-11-03T05:18:50.127",
   "desc": "In deliverResult of AppTimeTracker.java, there is a possible background activity launch due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126591,7 +126610,7 @@
  "CVE-2026-58984": {
   "id": "CVE-2026-58984",
   "published": "2026-11-02T20:17:54.047",
-  "modified": "2026-11-02T21:17:37.953",
+  "modified": "2026-11-03T05:18:50.333",
   "desc": "In multiple locations, there is a possible memory corruption due to a use-after-free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -126737,7 +126756,7 @@
  "CVE-2026-59000": {
   "id": "CVE-2026-59000",
   "published": "2026-11-02T20:17:55.057",
-  "modified": "2026-11-02T21:17:38.120",
+  "modified": "2026-11-03T05:18:50.550",
   "desc": "In multiple locations, there is a possible permission bypass due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -127027,7 +127046,7 @@
  "CVE-2026-59028": {
   "id": "CVE-2026-59028",
   "published": "2026-11-02T20:17:57.257",
-  "modified": "2026-11-02T21:17:38.290",
+  "modified": "2026-11-03T05:18:50.763",
   "desc": "In resolveAidConflictLocked of RegisteredAidCache.java, there is a possible permission bypass due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -127061,7 +127080,7 @@
  "CVE-2026-59042": {
   "id": "CVE-2026-59042",
   "published": "2026-11-02T20:17:57.477",
-  "modified": "2026-11-02T20:17:57.477",
+  "modified": "2026-11-03T05:18:51.000",
   "desc": "In __pkvm_pages_to_ppages of mmu.c, there is a possible out-of-bounds write due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": null,
   "sev": null,
@@ -127079,7 +127098,7 @@
  "CVE-2026-59043": {
   "id": "CVE-2026-59043",
   "published": "2026-11-02T20:17:57.593",
-  "modified": "2026-11-02T20:17:57.593",
+  "modified": "2026-11-03T05:18:51.153",
   "desc": "In arm_lpae_split_blk_unmap of io-pgtable-arm-common.c, there is a possible memory corruption due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": null,
   "sev": null,
@@ -127096,7 +127115,7 @@
  "CVE-2026-59044": {
   "id": "CVE-2026-59044",
   "published": "2026-11-02T20:17:57.703",
-  "modified": "2026-11-02T21:17:38.453",
+  "modified": "2026-11-03T05:18:51.303",
   "desc": "In multiple locations, there is a possible use-after-free due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -127204,7 +127223,7 @@
  "CVE-2026-91893": {
   "id": "CVE-2026-91893",
   "published": "2026-11-02T20:18:03.673",
-  "modified": "2026-11-02T20:18:03.673",
+  "modified": "2026-11-03T05:18:53.757",
   "desc": "Dell Alienware Command Center (AWCC), versions prior to 6.14.54.0, contain an Improper Privilege Management vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privilege.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -127222,7 +127241,7 @@
  "CVE-2026-91894": {
   "id": "CVE-2026-91894",
   "published": "2026-11-02T20:18:03.813",
-  "modified": "2026-11-02T20:18:03.813",
+  "modified": "2026-11-03T05:18:53.907",
   "desc": "Dell Alienware Command Center (AWCC), versions prior to 6.14.54.0, contain a Least Privilege Violation vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privilege, Arbitrary Code Execution and Denial of Service.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -127276,7 +127295,7 @@
  "CVE-2026-91897": {
   "id": "CVE-2026-91897",
   "published": "2026-11-02T20:18:04.247",
-  "modified": "2026-11-02T20:18:04.247",
+  "modified": "2026-11-03T05:18:54.050",
   "desc": "Dell Alienware Command Center (AWCC), versions prior to 6.14.54.0, contain an Improper Certificate Validation vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to Arbitrary Code Execution and Denial of Service.",
   "cvss": 6.4,
   "sev": "MEDIUM",
@@ -127294,7 +127313,7 @@
  "CVE-2026-91898": {
   "id": "CVE-2026-91898",
   "published": "2026-11-02T20:18:04.390",
-  "modified": "2026-11-02T20:18:04.390",
+  "modified": "2026-11-03T05:18:54.233",
   "desc": "Dell Alienware Command Center (AWCC), versions prior to 6.14.54.0, contain an Improper Verification of Cryptographic Signature vulnerability. An unauthenticated attacker with adjacent network access could potentially exploit this vulnerability, leading to Arbitrary Code Execution and Elevation of Privilege.",
   "cvss": 8.1,
   "sev": "HIGH",
@@ -127312,7 +127331,7 @@
  "CVE-2026-91899": {
   "id": "CVE-2026-91899",
   "published": "2026-11-02T20:18:04.530",
-  "modified": "2026-11-02T21:17:40.287",
+  "modified": "2026-11-03T05:18:54.383",
   "desc": "Dell Alienware Command Center (AWCC), versions prior to 6.14.54.0, contain an Improper Verification of Cryptographic Signature vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privilege and Arbitrary Code Execution.",
   "cvss": 6.4,
   "sev": "MEDIUM",
@@ -127330,7 +127349,7 @@
  "CVE-2026-91900": {
   "id": "CVE-2026-91900",
   "published": "2026-11-02T20:18:04.677",
-  "modified": "2026-11-02T20:18:04.677",
+  "modified": "2026-11-03T05:18:54.537",
   "desc": "Dell Alienware Command Center (AWCC), version(s) Versions up to and including 6.14.20.0, contain(s) an Improper Authorization in Handler for Custom URL Scheme vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Command execution, Launch of phishing attacks, and Remote execution.",
   "cvss": 5.8,
   "sev": "MEDIUM",
@@ -127382,7 +127401,7 @@
  "CVE-2026-105475": {
   "id": "CVE-2026-105475",
   "published": "2026-11-02T21:17:22.537",
-  "modified": "2026-11-02T21:17:22.537",
+  "modified": "2026-11-02T22:17:17.493",
   "desc": "Improper neutralization of a NUL byte in cPanel allows remote attackers to read any mail account's calendar and contact data.",
   "cvss": 8.7,
   "sev": "HIGH",
@@ -127400,11 +127419,11 @@
  "CVE-2026-105476": {
   "id": "CVE-2026-105476",
   "published": "2026-11-02T21:17:22.707",
-  "modified": "2026-11-02T21:17:22.707",
+  "modified": "2026-11-03T05:18:27.880",
   "desc": "Improper link resolution before file access in cPanel allows remote authenticated users to write arbitrary root-owned files and escalate privileges.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
   "cwe": [
    "CWE-59"
   ],
@@ -127450,12 +127469,14 @@
  "CVE-2026-116768": {
   "id": "CVE-2026-116768",
   "published": "2026-11-02T21:17:25.197",
-  "modified": "2026-11-02T21:17:25.197",
+  "modified": "2026-11-02T22:17:19.437",
   "desc": "CVE-2026-116768 is a missing length validation vulnerability\nin Secure Access servers prior to 14.61. Authenticated attackers can cause a\npersistent denial of service when connecting for the first time.",
   "cvss": 7.1,
   "sev": "HIGH",
   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-  "cwe": [],
+  "cwe": [
+   "CWE-20"
+  ],
   "products": [],
   "refs": [
    "https://www.absolute.com/platform/security-information/vulnerability-archive/cve-2026-116768"
@@ -127558,7 +127579,7 @@
  "CVE-2026-49906": {
   "id": "CVE-2026-49906",
   "published": "2026-11-02T21:17:31.703",
-  "modified": "2026-11-02T21:17:31.703",
+  "modified": "2026-11-03T05:18:43.203",
   "desc": "An unprivileged application can bypass the `android.car.permission.CAR_DISPLAY_IN_CLUSTER` permission by registering an activity with the `android.car.cluster.NAVIGATION` category and requesting navigation app focus. The privileged `ClusterHomeSample` application, acting as a confused deputy, resolves and launches this arbitrary third-party activity on the safety-critical instrument cluster display without enforcing the necessary permission check, allowing for persistent display of potentially misleading or distracting content.",
   "cvss": null,
   "sev": null,
@@ -127574,12 +127595,14 @@
  "CVE-2026-58873": {
   "id": "CVE-2026-58873",
   "published": "2026-11-02T21:17:35.373",
-  "modified": "2026-11-02T21:17:35.373",
+  "modified": "2026-11-02T22:17:21.960",
   "desc": "In addDragDropListener of WindowManagerService.java, there is a possible permission bypass due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 8.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-862"
+  ],
   "products": [],
   "refs": [
    "https://source.android.com/docs/security/bulletin/xr/2026/2026-11-01"
@@ -127695,6 +127718,912 @@
   "products": [],
   "refs": [
    "https://source.android.com/docs/security/bulletin/wear/2026/2026-11-01"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-89091": {
+  "id": "CVE-2026-89091",
+  "published": "2026-10-08T22:17:35.777",
+  "modified": "2026-11-02T23:17:21.370",
+  "desc": "A flaw was found in ansible-core. When installing a collection with\n`ansible-galaxy collection install`, the archive extractor validates member\npaths using lexical path normalisation (os.path.abspath) instead of resolving\nsymbolic links (os.path.realpath), and it performs no containment check on\nsymlink-typed directory members before creating them. A crafted collection\ntarball can chain symlink directory entries so that a subsequent file member is\nwritten outside the intended destination directory. This allows an attacker who\ncan get a victim to install a malicious collection to overwrite arbitrary files\nwith the privileges of the user running ansible-galaxy, leading to code\nexecution on the control node. This is a bypass of the fix for CVE-2020-10691.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-59"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-89091",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2531646"
+  ],
+  "kev": false,
+  "epss": 0.0048
+ },
+ "CVE-2026-111555": {
+  "id": "CVE-2026-111555",
+  "published": "2026-10-16T13:16:56.620",
+  "modified": "2026-11-02T22:17:17.790",
+  "desc": "A flaw was found in luksmeta. Improper boundary validation of metadata slots allows an attacker capable of supplying or modifying a disk header to redirect wipe or load operations outside the intended metadata area. An attacker could exploit this vulnerability by providing a crafted header with valid checksums to overwrite or zero out encrypted payload data, resulting in persistent data loss and corrupted storage. Exploitation typically requires privileged access to modify raw block devices or the ability to induce an administrator to process an untrusted disk image.",
+  "cvss": 6.0,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H",
+  "cwe": [
+   "CWE-1285"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-111555",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2554026"
+  ],
+  "kev": false,
+  "epss": 0.00107
+ },
+ "CVE-2026-101566": {
+  "id": "CVE-2026-101566",
+  "published": "2026-10-20T22:18:08.467",
+  "modified": "2026-11-03T05:18:27.217",
+  "desc": "Vulnerability in the Oracle Application Object Library product of Oracle E-Business Suite (component: DB Privileges).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Application Object Library executes to compromise Oracle Application Object Library.  Successful attacks of this vulnerability can result in takeover of Oracle Application Object Library. CVSS 3.1 Base Score 7.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00118
+ },
+ "CVE-2026-101676": {
+  "id": "CVE-2026-101676",
+  "published": "2026-10-20T22:18:22.007",
+  "modified": "2026-11-03T05:18:27.377",
+  "desc": "Vulnerability in the Oracle Concurrent Processing product of Oracle E-Business Suite (component: Other Issues).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Concurrent Processing executes to compromise Oracle Concurrent Processing.  Successful attacks of this vulnerability can result in takeover of Oracle Concurrent Processing. CVSS 3.1 Base Score 7.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00171
+ },
+ "CVE-2026-101705": {
+  "id": "CVE-2026-101705",
+  "published": "2026-10-20T22:18:24.953",
+  "modified": "2026-11-03T05:18:27.550",
+  "desc": "Vulnerability in the Oracle Common Applications product of Oracle E-Business Suite (component: Role Summary).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle Common Applications.  While the vulnerability is in Oracle Common Applications, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Common Applications accessible data as well as  unauthorized access to critical data or complete access to all Oracle Common Applications accessible data. CVSS 3.1 Base Score 7.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:N).",
+  "cvss": 7.7,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00344
+ },
+ "CVE-2026-101757": {
+  "id": "CVE-2026-101757",
+  "published": "2026-10-20T22:18:30.893",
+  "modified": "2026-11-03T05:18:27.717",
+  "desc": "Vulnerability in the Oracle Application Object Library product of Oracle E-Business Suite (component: DB Privileges).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Application Object Library executes to compromise Oracle Application Object Library.  Successful attacks of this vulnerability can result in takeover of Oracle Application Object Library. CVSS 3.1 Base Score 7.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.0016
+ },
+ "CVE-2026-115215": {
+  "id": "CVE-2026-115215",
+  "published": "2026-11-02T22:17:18.397",
+  "modified": "2026-11-02T22:17:18.397",
+  "desc": "In Eclipse ThreadX NetX Duo versions 6.0 through 6.5.2.202603a, the NetX Secure DTLS server allocates a session from its fixed session pool for the first datagram from any unrecognised address and port, before the cookie exchange, and never releases a session whose handshake stalls. A remote, unauthenticated attacker can exhaust the pool with one spoofed datagram per source and deny DTLS service to legitimate clients until the application resets the sessions.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770",
+   "CWE-772"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/eclipse-threadx/netxduo/security/advisories/GHSA-3p2g-x7hh-3w4c",
+   "https://gitlab.eclipse.org/security/cve-assignment/-/work_items/487"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-115403": {
+  "id": "CVE-2026-115403",
+  "published": "2026-11-02T22:17:18.543",
+  "modified": "2026-11-02T22:17:18.543",
+  "desc": "In Eclipse ThreadX NetX Duo versions 6.0 through 6.5.2.202603a, built with BSD raw socket and IPv6 support, the IPv6 raw send path uses the destination-table entry it adds without checking that the add succeeded. When the destination table is full and an off-link destination is reached through a default router whose neighbour cache entry is unknown, sending on an IPv6 raw socket with header inclusion dereferences a NULL pointer; a remote sender can fill the table, for example with ICMPv6 Packet Too Big messages, and crash the sending thread.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-252",
+   "CWE-476"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/eclipse-threadx/netxduo/security/advisories/GHSA-9w9h-x3fh-m3fp",
+   "https://gitlab.eclipse.org/security/cve-assignment/-/work_items/500"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-116635": {
+  "id": "CVE-2026-116635",
+  "published": "2026-11-02T22:17:19.130",
+  "modified": "2026-11-02T22:17:19.130",
+  "desc": "Improper limitation of a pathname to a restricted directory in the deployment status component of the AWS Serverless MCP Server (aws-serverless-mcp-server) before v0.2.1 might allow an actor who can influence the MCP agent to read the contents of JSON files outside the intended deployment status directory. Where write access has been enabled, to create or overwrite JSON files outside that directory. This issue is reachable through directory traversal sequences or an absolute path supplied in the project name input.\n\n\n\nTo remediate this issue, users should upgrade to version v0.2.1.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-23",
+   "CWE-36"
+  ],
+  "products": [],
+  "refs": [
+   "https://aws.amazon.com/security/security-bulletins/2026-164-aws/",
+   "https://github.com/awslabs/mcp/security/advisories/GHSA-r6mm-377j-qg8m",
+   "https://pypi.org/project/awslabs.aws-serverless-mcp-server/0.2.1/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120091": {
+  "id": "CVE-2026-120091",
+  "published": "2026-11-02T22:17:20.567",
+  "modified": "2026-11-02T22:17:20.567",
+  "desc": "Temporal Server compiles a Worker Controller Instance module, go.temporal.io/auto-scaled-workers, into its Worker Service, and that module registers a compute provider named k8s whose function is to manage workers running in a Kubernetes cluster. The k8s provider built its Kubernetes client from the client configuration supplied in the caller's request rather than from operator configuration, and building and using that client could run a command of the caller's choosing on the Worker Service host, under the account the server process runs as. Two frontend operations reach the provider. CreateWorkerDeploymentVersion requires a namespace write role. ValidateWorkerDeploymentVersionComputeConfig is registered as a read-only namespace operation, so an authenticated caller holding only a read role in a single namespace can reach the provider through it, and that route does not require a worker deployment to already exist. Execution happens while the submitted configuration is validated, so no scaling decision, task arrival, or unusual request sequence is required. Because the Worker Service process holds the persistence credentials for every namespace in the cluster and the cluster's TLS material, the consequence reaches beyond the caller's namespace to the cluster as a whole. The provider is present in the official temporal-server binaries and container images for the affected releases. The control that keeps it unreachable is the compute provider allowlist, the dynamic configuration setting workercontroller.compute_providers.enabled. On Temporal Server 1.31.0 through 1.31.2 that allowlist does not deny by default: when the setting is unset the check is skipped and every registered compute provider is permitted, k8s included, so a stock deployment of those releases is exposed. On 1.31.3 and later 1.31 releases, and on 1.32.0 and later 1.32 releases, the allowlist denies by default, and a deployment is exposed only where k8s has been added to it. The 1.30 release line does not include the Worker Controller Instance module and is unaffected. To determine whether a deployment is affected, check the following together. The deployed Temporal Server version is in an affected range. The Worker Service is running, which it is in the default service set and therefore in a stock deployment. The effective value of workercontroller.compute_providers.enabled contains k8s, or, on 1.31.0 through 1.31.2 only, is unset; check both the global value and every namespace-constrained override, because an override can add k8s for a single namespace. And authorization is configured, meaning a real authorizer and claim mapper are in place; a deployment running with no authorizer already grants every caller unrestricted access to every namespace, so it has no namespace boundary for this to cross. Deployments that use a custom authorizer should also check whether it permits ValidateWorkerDeploymentVersionComputeConfig to callers without namespace write access. The separate per-namespace dynamic configuration setting workercontroller.enabled does not gate the affected path on any affected release.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1188",
+   "CWE-749",
+   "CWE-78",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/temporalio/temporal-auto-scaled-workers/pull/165",
+   "https://github.com/temporalio/temporal/pull/12843",
+   "https://github.com/temporalio/temporal/releases/tag/v1.31.5"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120740": {
+  "id": "CVE-2026-120740",
+  "published": "2026-11-02T22:17:21.313",
+  "modified": "2026-11-02T22:17:21.443",
+  "desc": "A flaw was found in hivex. By supplying a specially crafted Windows registry hive file, an attacker can trigger an out-of-bounds memory read when hivex parses registry values containing malformed large data block lists. This issue can cause the application processing the registry file to crash, resulting in a Denial of Service (DoS).",
+  "cvss": 2.0,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:L",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-120740",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2565405"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-86596": {
+  "id": "CVE-2026-86596",
+  "published": "2026-11-02T22:17:23.490",
+  "modified": "2026-11-02T22:17:23.633",
+  "desc": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal '<?' sequences, combined with a post-interpolation placeholder cleanup that reassembles a valid '<?php' opener after the attacker-controlled value has already been embedded in the email template. This makes it possible for authenticated attackers, with custom-level access and above, to execute code on the server.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/s2member/tags/260829/src/includes/classes/paypal-notify-in-subscr-or-wa-w-level.inc.php#L514",
+   "https://plugins.trac.wordpress.org/browser/s2member/tags/260829/src/includes/classes/paypal-notify-in-web-accept-sp.inc.php#L104",
+   "https://plugins.trac.wordpress.org/browser/s2member/tags/260829/src/includes/classes/paypal-notify-in-web-accept-sp.inc.php#L131"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-111565": {
+  "id": "CVE-2026-111565",
+  "published": "2026-11-02T23:17:19.880",
+  "modified": "2026-11-02T23:17:19.880",
+  "desc": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120597": {
+  "id": "CVE-2026-120597",
+  "published": "2026-11-02T23:17:19.960",
+  "modified": "2026-11-02T23:17:20.120",
+  "desc": "A vulnerability was identified in Welcart e-Commerce Plugin up to 2.12.6 on WordPress. This affects the function ESCOTT_MAIN::error_page_message of the file classes/paymentESCOTT.main.class.php. Such manipulation of the argument ResponseCd leads to cross site scripting. The attack can be launched remotely. The exploit is publicly available and might be used. Upgrading to version 2.12.7 mitigates this issue. It is recommended to upgrade the affected component. The value is now escaped with esc_html() before output. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79",
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/bevennyamande/welcart-poc",
+   "https://vuldb.com/cve/CVE-2026-120597",
+   "https://vuldb.com/submit/1039186"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120752": {
+  "id": "CVE-2026-120752",
+  "published": "2026-11-02T23:17:20.243",
+  "modified": "2026-11-02T23:17:20.243",
+  "desc": "PyMuPDF 1.25.3 before 2.0 contains a stack-based buffer overflow vulnerability in JM_set_annot_callout_line() that copies a caller-supplied number of callout points into a fixed three-element stack array. Attackers who control the callout argument passed to Page.add_freetext_annot() can supply four or more points to overwrite the stack frame, crashing the process or executing code.",
+  "cvss": 7.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/pymupdf/PyMuPDF",
+   "https://github.com/pymupdf/PyMuPDF/blob/1.28.2/src/extra.i#L787-L797",
+   "https://github.com/pymupdf/PyMuPDF/commit/d4298ead84ceeae1c9065c81cd9a275a1b092f5e"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-71450": {
+  "id": "CVE-2026-71450",
+  "published": "2026-11-02T23:17:21.200",
+  "modified": "2026-11-02T23:17:21.200",
+  "desc": "Authentication bypass using an alternate path or channel vulnerability in Johnson Controls EasyIO Neo EC and CW Edge Controller allows Authentication Bypass.\n\nThis issue affects EasyIO Neo EC and CW Edge Controller: from EC 3.3b62 through EC 3.3b63 and from CW 3.3b24 through CW 3.3b25.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:A/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-288"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.johnsoncontrols.com/trust-center/cybersecurity/security-advisories"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120830": {
+  "id": "CVE-2026-120830",
+  "published": "2026-11-03T00:17:18.947",
+  "modified": "2026-11-03T01:16:50.680",
+  "desc": "A flaw was found in libslirp in icmp_forward_error(). When building an ICMP error response, the length of the quoted original IPv4 packet was taken from the IP header without clamping it to the actual buffer length. A truncated or malformed packet could cause an out-of-bounds heap read, leaking host memory into the ICMP error packet returned to a guest or container.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-120830",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2565424",
+   "https://gitlab.freedesktop.org/slirp/libslirp/-/commit/21b33a6c5588af9f58d15e528fdc1019452708e4"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-105770": {
+  "id": "CVE-2026-105770",
+  "published": "2026-11-03T01:16:44.147",
+  "modified": "2026-11-03T01:16:44.147",
+  "desc": "Octo STS (github.com/octo-sts/app) before 0.11.2 returns trust policy configuration to callers whose OIDC token does not satisfy that policy. TrustPolicy.CheckToken included the policy's issuer, subject and audience values or patterns and claim_pattern names and regular expressions in its PermissionDenied errors, which Exchange returned verbatim. Exchange also selected the GitHub App installation before checking the token, so errors from resolving the policy's app or app_pattern pin were returned to callers the policy does not trust. An attacker who holds any validly signed OIDC token, such as a GitHub Actions token from a repository they own, and who knows or guesses a target owner/repo and identity name can read that policy's matching rules, even when the policy is stored in a private repository. These rules often name internal repositories, branches, environments or cloud account identifiers. The issue does not allow minting tokens or bypassing a trust policy. This issue is fixed in 0.11.2.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-209"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/octo-sts/app/commit/88c6432adc4f497ec69b574e1ce162a564a9e71a",
+   "https://github.com/octo-sts/app/releases/tag/v0.11.2",
+   "https://github.com/octo-sts/app/security/advisories/GHSA-h5p6-j8m9-xx4p"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120833": {
+  "id": "CVE-2026-120833",
+  "published": "2026-11-03T01:16:52.260",
+  "modified": "2026-11-03T01:16:52.260",
+  "desc": "labbench before 0.46.1 contains a deserialization of untrusted data vulnerability in read() and read_relational() that passes any file with a .p or .pickle extension to pandas.read_pickle based on the extension alone. Attackers who supply a crafted data file or relational data archive can execute arbitrary code when a user loads it with these functions.",
+  "cvss": 8.5,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/usnistgov/labbench",
+   "https://github.com/usnistgov/labbench/blob/0.46.0/src/labbench/_data.py#L1664-L1666",
+   "https://github.com/usnistgov/labbench/blob/0.46.1/ChangeLog.md"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-107441": {
+  "id": "CVE-2026-107441",
+  "published": "2026-11-03T02:16:52.617",
+  "modified": "2026-11-03T02:16:52.617",
+  "desc": "An out-of-bounds write vulnerability in the CGI program of Zyxel GS1900-24E firmware versions through 2.90(AAHK.2)C0 could allow an unauthenticated adjacent attacker  to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-out-of-bounds-write-vulnerability-in-gs1900-series-switches-11-03-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120831": {
+  "id": "CVE-2026-120831",
+  "published": "2026-11-03T02:16:53.393",
+  "modified": "2026-11-03T02:16:53.560",
+  "desc": "A flaw was found in libslirp in if_output(). When moving a session from the fast queue to the batch queue, the code unlinked and reinserted an arbitrary packet via ifm->m_nextpkt instead of the session queue head, corrupting queue pointers. A guest generating burst traffic could crash the host networking process, causing a denial of service.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-120831",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2565425",
+   "https://gitlab.freedesktop.org/slirp/libslirp/-/commit/bad35bd3b529dc47aa109980a69a36da7848ab76"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-76955": {
+  "id": "CVE-2026-76955",
+  "published": "2026-11-03T02:16:53.720",
+  "modified": "2026-11-03T02:16:53.720",
+  "desc": "A buffer overflow vulnerability in the zdp_wtp binary in Zyxel NWA110AX firmware versions through 7.12(ABTG.0)C0 could allow a LAN-based attacker to escalate privileges on an affected device.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-120"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-buffer-overflow-vulnerability-in-certain-aps-fwa7-and-security-routers-11-03-2026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-111464": {
+  "id": "CVE-2026-111464",
+  "published": "2026-11-03T03:16:42.977",
+  "modified": "2026-11-03T03:16:43.173",
+  "desc": "The WP Fastest Cache plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.5.3. The plugin caches the response of Core’s wp-activate.php without honoring its no-store/no-cache headers, the wp-activate-* cookie, or the WP_INSTALLING state, writing the credential-bearing activation response to a publicly accessible cache file. This makes it possible for unauthenticated attackers to retrieve the plaintext username and twelve-character password of the most recently activated Multisite registrant from that cached wp-activate.php response. Exploitation requires a Multisite subdirectory installation with public user and site registration enabled, and the credentials are only exposed after a genuine registrant follows their activation link.",
+  "cvss": 5.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-524"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/wp-fastest-cache/tags/1.5.2/inc/cache.php#L1027",
+   "https://plugins.trac.wordpress.org/browser/wp-fastest-cache/tags/1.5.2/inc/cache.php#L1400",
+   "https://plugins.trac.wordpress.org/browser/wp-fastest-cache/tags/1.5.2/inc/cache.php#L452"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120518": {
+  "id": "CVE-2026-120518",
+  "published": "2026-11-03T05:18:31.380",
+  "modified": "2026-11-03T05:18:31.657",
+  "desc": "The BuddyPress XProfile Image Field plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 3.1.0. This is due to bpxp_image_field_update_on_user_activation() calling unlink() on a path built from visitor-supplied signup metadata with no realpath() resolution, no containment check against the profile-image directory and no extension allow-list. Submitting a zero-byte file with the 'field_N_hidden' parameter during registration makes the plugin store the raw value, which is then resolved against the document root when the pending signup is activated. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file (such as wp-config.php) is deleted. Requires open registration and an image-type profile field on the signup form.",
+  "cvss": 9.1,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2025-48158",
+   "https://plugins.trac.wordpress.org/browser/buddypress-xprofile-image-field/tags/3.1.0/bp-xprofile-image-field.php#L488",
+   "https://plugins.trac.wordpress.org/browser/buddypress-xprofile-image-field/tags/3.1.0/bp-xprofile-image-field.php#L494"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120524": {
+  "id": "CVE-2026-120524",
+  "published": "2026-11-03T05:18:31.760",
+  "modified": "2026-11-03T05:18:31.933",
+  "desc": "The News Kit Addons For Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'formData' parameter in all versions up to, and including, 1.4.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is possible because an operator-precedence bug in handle_scripts() causes the admin bundle — and its inlined nekit-admin-nonce — to be enqueued on every admin screen accessible to Subscribers (such as /wp-admin/profile.php), and because sanitize_text_field() is applied to the raw JSON string before json_decode(), allowing angle brackets encoded as \\u003c/\\u003e to survive sanitization and be restored to literal angle brackets, enabling overwrite of _elementor_data on any post.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/news-kit-elementor-addons/tags/1.4.7/admin/admin.php#L1578",
+   "https://plugins.trac.wordpress.org/browser/news-kit-elementor-addons/tags/1.4.7/admin/admin.php#L1582",
+   "https://plugins.trac.wordpress.org/browser/news-kit-elementor-addons/tags/1.4.7/admin/admin.php#L732"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120534": {
+  "id": "CVE-2026-120534",
+  "published": "2026-11-03T05:18:31.987",
+  "modified": "2026-11-03T05:18:32.140",
+  "desc": "The Advanced Custom Fields: Extended PRO plugin for WordPress is vulnerable to Limited Code Injection in all versions up to, and including, 0.9.2.6 via the render_field function. This is due to insufficient validation of form configuration parameters before merging into field settings and passing to call_user_func_array in the render_field method. This makes it possible for unauthenticated attackers to call arbitrary WordPress functions with controlled arguments. Method 1 requires the administrator to enable the non-default 'shortcode_preview' setting for the target form, while Method 2 requires the server environment to lack OpenSSL functions, causing ACF Pro's acf_decrypt to fall back to unverified base64 decoding.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-434"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.acf-extended.com/changelog",
+   "https://www.wordfence.com/threat-intel/vulnerabilities/id/b8a7a925-2b9e-43bc-b649-c7ec518e063c?source=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120538": {
+  "id": "CVE-2026-120538",
+  "published": "2026-11-03T05:18:32.193",
+  "modified": "2026-11-03T05:18:32.370",
+  "desc": "The Easy Digital Downloads plugin for WordPress is vulnerable to authentication bypass leading to administrator account takeover in all versions up to, and including, 3.7.2. During a PayPal guest checkout, the email address entered in the guest-checkout field is trusted as proof of identity: edd_get_purchase_form_user() binds the new guest order to an existing WordPress user purely on an email-address match, rewriting the order's user_id to that user's ID. The PayPal capture sink PurchaseUser::maybe_log_in_after_capture() then looked the user up by the order email (get_user_by( 'email', $order->email )) and, when $order->user_id equalled that user's ID (which the email-binding step guarantees), issued an authenticated session with wp_set_auth_cookie(). An unauthenticated attacker who starts a guest checkout using an administrator's email address (where that administrator has no existing EDD customer record) and completes the PayPal purchase flow therefore receives an authenticated session as that administrator — a full account takeover. The same sink is reachable through the standard PayPal checkout and the REST UnbrandedCard and Fastlane flows.",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-287"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/easy-digital-downloads/tags/3.7.0/includes/customers/customer-actions.php#L49",
+   "https://plugins.trac.wordpress.org/browser/easy-digital-downloads/tags/3.7.0/includes/gateways/paypal/checkout-actions.php#L681",
+   "https://plugins.trac.wordpress.org/browser/easy-digital-downloads/tags/3.7.0/includes/orders/functions/orders.php#L798"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120544": {
+  "id": "CVE-2026-120544",
+  "published": "2026-11-03T05:18:32.427",
+  "modified": "2026-11-03T05:18:32.583",
+  "desc": "The Academy LMS – AI Course Builder, Quizzes, Certificates & eLearning plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 4.0.1 via the 'id' parameter. This makes it possible for authenticated attackers, with contributor-level access and above, to read the contents of arbitrary .html files on the server. The plugin appends a '.html' extension to the attacker-supplied path before reading it, so files with any other extension — including wp-config.php — are out of reach. The file's contents are returned in full in the REST JSON response's content field.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.1/includes/frontend/template/block.php#L12",
+   "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.1/includes/frontend/template/block.php#L267",
+   "https://plugins.trac.wordpress.org/browser/academy/tags/4.0.1/includes/frontend/template/block.php#L30"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120551": {
+  "id": "CVE-2026-120551",
+  "published": "2026-11-03T05:18:32.637",
+  "modified": "2026-11-03T05:18:32.790",
+  "desc": "The WP Compress – Instant Performance & Speed Optimization plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 7.22.01. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to link the victim site to an attacker-controlled WP Compress account, overwrite plugin settings to an aggressive live-CDN preset, and gain the shared api_key that authenticates all nopriv HMAC-gated endpoints — enabling full control over cache purging, file deletion, opcode cache invalidation, and other privileged plugin operations. This vulnerability only affects fresh installations or lite/free-mode installs where no api_key is already stored, as the sole guard fails open when the stored key is absent.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/wp-compress-image-optimizer/tags/7.21.27/classes/connect.class.php#L103",
+   "https://plugins.trac.wordpress.org/browser/wp-compress-image-optimizer/tags/7.21.27/classes/mainwp.class.php#L29",
+   "https://plugins.trac.wordpress.org/browser/wp-compress-image-optimizer/tags/7.21.27/classes/mainwp.class.php#L9"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120552": {
+  "id": "CVE-2026-120552",
+  "published": "2026-11-03T05:18:32.837",
+  "modified": "2026-11-03T05:18:32.983",
+  "desc": "The SEO Engine – Smart SEO with AI, Schema & Redirection for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'title' parameter in all versions up to, and including, 0.9.9 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. WordPress core's wp_filter_kses (applied via title_save_pre for Contributors and Authors) strips literal tag markup on save but leaves HTML-entity-encoded payloads intact in the database, meaning entity-encoded XSS payloads stored via the standard WordPress REST API (POST /wp-json/wp/v2/posts) are not neutralized before reaching the vulnerable sink.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/seo-engine/tags/0.9.9/app/index.js",
+   "https://plugins.trac.wordpress.org/browser/seo-engine/tags/0.9.9/classes/core.php#L739",
+   "https://plugins.trac.wordpress.org/browser/seo-engine/tags/0.9.9/classes/core.php#L744"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120558": {
+  "id": "CVE-2026-120558",
+  "published": "2026-11-03T05:18:33.030",
+  "modified": "2026-11-03T05:18:33.183",
+  "desc": "The Advanced Shipment Tracking for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the `tracking_provider` parameter of the `POST /wp-json/wc-ast/v3/orders/<order_id>/shipment-trackings` REST endpoint in all versions up to, and including, 3.9. This is due to insufficient escaping on the user-supplied parameter and lack of sufficient preparation on the existing SQL query in `WC_Advanced_Shipment_Tracking_Admin::get_provider_slug_from_name()` — the value is concatenated directly into the format string of `$wpdb->prepare()` rather than bound as a parameter, bypassing parameterised-query protections. This makes it possible for authenticated attackers, with Shop Manager-level access and above, to append additional SQL queries into the already-existing query that can be used to extract sensitive information from the database.",
+  "cvss": 7.2,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/woo-advanced-shipment-tracking/tags/3.9.1/includes/api/class-wc-advanced-shipment-tracking-rest-api-controller.php#L116",
+   "https://plugins.trac.wordpress.org/browser/woo-advanced-shipment-tracking/tags/3.9.1/includes/api/class-wc-advanced-shipment-tracking-rest-api-controller.php#L224",
+   "https://plugins.trac.wordpress.org/browser/woo-advanced-shipment-tracking/tags/3.9.1/includes/class-wc-advanced-shipment-tracking-admin.php#L2144"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120559": {
+  "id": "CVE-2026-120559",
+  "published": "2026-11-03T05:18:33.230",
+  "modified": "2026-11-03T05:18:33.397",
+  "desc": "The Contact Form Extender for Divi Builder plugin for WordPress is vulnerable to Arbitrary File Deletion due to insufficient file path validation in the cfefd_remove_uploaded_file() function in all versions up to, and including, 1.0.6. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). The nonce protecting this AJAX action is rendered into the public page source via wp_localize_script and is therefore retrievable by any unauthenticated visitor.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/contact-form-extender-for-divi-builder/tags/1.0.3/includes/module/addons/divi-4/file-upload/class-cfefd-file-upload-ajax.php#L159",
+   "https://plugins.trac.wordpress.org/browser/contact-form-extender-for-divi-builder/tags/1.0.3/includes/module/addons/divi-4/file-upload/class-cfefd-file-upload-ajax.php#L18",
+   "https://plugins.trac.wordpress.org/browser/contact-form-extender-for-divi-builder/tags/1.0.7/includes/module/addons/divi-4/file-upload/class-cfefd-file-upload-ajax.php#L166"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120561": {
+  "id": "CVE-2026-120561",
+  "published": "2026-11-03T05:18:33.447",
+  "modified": "2026-11-03T05:18:33.600",
+  "desc": "The JetFormBuilder — Dynamic Blocks Form Builder plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'do_action' function in the 'Update_Options' action class in all versions up to, and including, 3.6.2. This makes it possible for unauthenticated attackers to modify JetEngine Options Page values when an administrator has configured a form with the \"Update Options\" post-submission action. The vulnerability requires that both JetFormBuilder and JetEngine are installed and active, and that an administrator has specifically configured a form with the Update Options action.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/jetformbuilder/tags/3.3.12/compatibility/jet-engine/actions/update-options.php#L50",
+   "https://plugins.trac.wordpress.org/browser/jetformbuilder/tags/3.3.12/compatibility/jet-engine/actions/update-options.php#L75",
+   "https://plugins.trac.wordpress.org/browser/jetformbuilder/tags/3.3.12/compatibility/jet-engine/actions/update-options.php#L82"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120563": {
+  "id": "CVE-2026-120563",
+  "published": "2026-11-03T05:18:33.647",
+  "modified": "2026-11-03T05:18:33.790",
+  "desc": "The WooCommerce Multilingual & Multicurrency with WPML plugin for WordPress is vulnerable to SQL Injection in all versions up to, and including, 5.5.7. This is due to insufficient input validation on the currency exchange rate parameter in the save_currency() AJAX handler, which lacks capability checks and allows subscriber-level users to store malicious SQL payloads that are later concatenated directly into ORDER BY clauses without proper sanitization. This makes it possible for authenticated attackers, with Shop Manager-level access and above, to append additional SQL queries to extract sensitive information from the database.",
+  "cvss": 4.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/woocommerce-multilingual/tags/5.5.5/classes/Multicurrency/WpQueryMcPrice/PriceOrderByPostMeta.php#L74",
+   "https://plugins.trac.wordpress.org/browser/woocommerce-multilingual/tags/5.5.5/inc/currencies/class-wcml-multi-currency-configuration.php#L136",
+   "https://plugins.trac.wordpress.org/browser/woocommerce-multilingual/tags/5.5.5/inc/currencies/class-wcml-multi-currency-configuration.php#L182"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120574": {
+  "id": "CVE-2026-120574",
+  "published": "2026-11-03T05:18:33.840",
+  "modified": "2026-11-03T05:18:34.010",
+  "desc": "The SureCart plugin for WordPress is vulnerable to unauthenticated account takeover in all versions up to, and including, 4.9.5. The passwordless one-time-code login REST route (VerificationCodeController::verify(), whose permission callback returns true) resolves an attacker-supplied login to any WordPress user, verifies a 6-digit code, and on success calls $user->login() → wp_set_auth_cookie() for a user of any role. In the affected versions this path has no per-account attempt counter, no persistent email/IP lockout or rate limit (the upstream CDN throttle is bypassable via IP rotation), and no restriction preventing high-privilege accounts from being logged in through it. An unauthenticated attacker can trigger a code for any user (including an administrator) via the companion unauthenticated endpoint and brute-force the 6-digit code to obtain an authenticated session as that user, resulting in a full administrator account takeover.",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-287"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.svn.wordpress.org/surecart/trunk/app/src/Controllers/Rest/VerificationCodeController.php",
+   "https://plugins.svn.wordpress.org/surecart/trunk/app/src/Models/User.php",
+   "https://plugins.svn.wordpress.org/surecart/trunk/app/src/Rest/VerificationCodeRestServiceProvider.php"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120575": {
+  "id": "CVE-2026-120575",
+  "published": "2026-11-03T05:18:34.060",
+  "modified": "2026-11-03T05:18:34.207",
+  "desc": "The Photo Engine (Media Organizer & Lightroom) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'hierarchy[].name' parameter in all versions up to, and including, 6.5.7 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is exploitable by Subscribers because the /?wplr-sync-api endpoint authenticates solely via wplr_auth_token usermeta with no capability check, and the current user's token is exposed on every admin page via localized script data due to a commented-out screen-condition guard.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/wplr-sync/tags/6.5.6/classes/admin.php#L80",
+   "https://plugins.trac.wordpress.org/browser/wplr-sync/tags/6.5.6/classes/api.php#L116",
+   "https://plugins.trac.wordpress.org/browser/wplr-sync/tags/6.5.6/classes/api.php#L290"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120577": {
+  "id": "CVE-2026-120577",
+  "published": "2026-11-03T05:18:34.257",
+  "modified": "2026-11-03T05:18:34.417",
+  "desc": "The FluentCart A New Era of eCommerce – Faster, Lighter, and Simpler plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the deleteFile function in all versions up to, and including, 1.6.2. This makes it possible for authenticated attackers, with custom-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/fluent-cart/tags/1.6.2/app/Http/Controllers/FileUploadController.php#L141",
+   "https://plugins.trac.wordpress.org/browser/fluent-cart/tags/1.6.2/app/Http/Routes/api.php#L832",
+   "https://plugins.trac.wordpress.org/browser/fluent-cart/tags/1.6.2/app/Services/FileSystem/Drivers/Local/LocalDriver.php#L243"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120578": {
+  "id": "CVE-2026-120578",
+  "published": "2026-11-03T05:18:34.467",
+  "modified": "2026-11-03T05:18:34.620",
+  "desc": "The AI Alt Text Generator plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.7.0. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to modify the alt text, and optionally the title, caption, and description of arbitrary attachments owned by other users. Exploiting this vulnerability requires a Contributor-level account to retrieve the nonce from the page source of post.php, post-new.php, or upload.php; additionally, overwriting post_title, post_excerpt, and post_content requires the plugin's set_title, set_caption, or set_description options to be enabled.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/ai-alt-text-generator/tags/2.7.0/admin/class-ai-alt-text-generator-admin.php#L585",
+   "https://plugins.trac.wordpress.org/browser/ai-alt-text-generator/tags/2.7.0/includes/class-ai-alt-text-generator.php#L175",
+   "https://plugins.trac.wordpress.org/browser/ai-alt-text-generator/tags/2.7.0/includes/functions.php#L249"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120971": {
+  "id": "CVE-2026-120971",
+  "published": "2026-11-03T05:18:34.670",
+  "modified": "2026-11-03T06:17:37.883",
+  "desc": "A flaw was found in RESTEasy's default exception mapper. When an unhandled exception other than a WebApplicationException is not handled by an application exception mapper, RESTEasy returns the exception's localized message in the HTTP 500 response body. A remote unauthenticated attacker who can trigger such an exception may obtain information contained in that message. The behavior was reproduced with RESTEasy 7.0.2.Final.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-209"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-120971",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2565584"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-77799": {
+  "id": "CVE-2026-77799",
+  "published": "2026-11-03T05:18:52.380",
+  "modified": "2026-11-03T05:18:52.380",
+  "desc": "ManageEngine Key Manager Plus versions before 7150 are vulnerable to a Two-Factor Authentication bypass that allows attackers with valid credentials to log in without a verification code.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-288"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.manageengine.com/key-manager/advisory/cve-2026-77799.html"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-77800": {
+  "id": "CVE-2026-77800",
+  "published": "2026-11-03T05:18:52.577",
+  "modified": "2026-11-03T05:18:52.577",
+  "desc": "ManageEngine Key Manager Plus versions before 7151 are vulnerable to a SAML authentication bypass that allows attackers to log in using SAML assertions meant for another service provider.",
+  "cvss": 7.7,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+  "cwe": [
+   "CWE-304"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.manageengine.com/key-manager/advisory/cve-2026-77800.html"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-103379": {
+  "id": "CVE-2026-103379",
+  "published": "2026-11-03T06:17:35.310",
+  "modified": "2026-11-03T06:17:35.310",
+  "desc": "The WATI Chat and Notification WordPress plugin through 1.1.8 does not require a valid, non-empty secret on a public endpoint that returns its stored API token, which an unauthenticated attacker can then present to a second public endpoint to obtain the order-received URL of any WooCommerce order and read the customer's name, address, phone number and email address. The endpoints are reachable in the WATI Chat and Notification WordPress plugin through 1.1.8's default state and are closed only once a WATI account is connected.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/0018daf6-9fbe-4b80-8a9e-60950ddaa4fe/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-104647": {
+  "id": "CVE-2026-104647",
+  "published": "2026-11-03T06:17:37.123",
+  "modified": "2026-11-03T06:17:37.123",
+  "desc": "The weMail  WordPress plugin through 2.1.6 does not correctly verify user capabilities in its REST API permission checks, treating any user whose role is in the weMail  WordPress plugin through 2.1.6's allowed-roles list (Editor and above by default) as authorised for every action, which allows such users to perform administrator-level actions including enumerating all registered users with their email addresses and modifying the weMail  WordPress plugin through 2.1.6's own access-control configuration.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/ab92c7f7-c74f-4af4-819f-b582a5a7f9d1/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-104648": {
+  "id": "CVE-2026-104648",
+  "published": "2026-11-03T06:17:37.250",
+  "modified": "2026-11-03T06:17:37.250",
+  "desc": "The weMail  WordPress plugin through 2.1.6 does not restrict a site-wide third-party email-service API key to administrators, exposing it in an admin screen that users with the Editor role can reach by default, which allows them to obtain a reusable credential usable without a WordPress session to impersonate other users and sever the site's email-service connection.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/5908e671-7282-48b5-90c9-e85db6b80c52/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-105967": {
+  "id": "CVE-2026-105967",
+  "published": "2026-11-03T06:17:37.393",
+  "modified": "2026-11-03T06:17:37.393",
+  "desc": "The Gallery for Social Photo WordPress plugin through 1.0.0.41 does not validate a user-supplied URL before using it to perform a server-side request, allowing unauthenticated attackers to make the server issue requests to arbitrary internal hosts and read the responses.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/30dffd34-b7e5-4afc-809b-abb5c9d20590/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-105993": {
+  "id": "CVE-2026-105993",
+  "published": "2026-11-03T06:17:37.513",
+  "modified": "2026-11-03T06:17:37.513",
+  "desc": "The DT Directory Lite Addon WordPress plugin through 1.1 does not perform nonce or capability checks on its settings handlers, allowing unauthenticated attackers to modify the DT Directory Lite Addon WordPress plugin through 1.1's configuration and skin options.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/7a71b710-5022-4692-aae8-f6da7ac8b664/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-106004": {
+  "id": "CVE-2026-106004",
+  "published": "2026-11-03T06:17:37.640",
+  "modified": "2026-11-03T06:17:37.640",
+  "desc": "The DT LMS  WordPress plugin through 1.2 does not perform capability or nonce checks on one of its AJAX actions, allowing unauthenticated attackers to revoke any learner's course and class completion status.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/f2a87670-ddbd-455b-884f-9b710d3bb600/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-115205": {
+  "id": "CVE-2026-115205",
+  "published": "2026-11-03T06:17:37.767",
+  "modified": "2026-11-03T06:17:37.767",
+  "desc": "The AZEXO Store Locator WordPress plugin through 1.4 does not have a capability check or any authorization control when deleting a post, allowing any authenticated user, such as a subscriber, to delete arbitrary posts and pages.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/1b5ad120-2d39-49c9-89a1-f9385339cbcb/"
   ],
   "kev": false,
   "epss": null
