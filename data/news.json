@@ -3278,5 +3278,77 @@
   "lang": "en",
   "date": "2026-11-04T01:05:40+00:00",
   "summary": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing a phishing-resistant authentication gap. Plus: post-quantum YubiKey beta."
+ },
+ "https://www.zataz.com/ctf-social-engineering-trois-jours-pour-pieger-lhumain/": {
+  "title": "CTF Social Engineering : trois jours pour piéger l’humain",
+  "url": "https://www.zataz.com/ctf-social-engineering-trois-jours-pour-pieger-lhumain/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-04T17:35:25+00:00",
+  "summary": "Hackfest Québec 2026 : deuxième place au CTF de Social Engineering, 43 appels et trois outils de renseignement."
+ },
+ "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/": {
+  "title": "Vercel rolls out new protection against stolen session cookie attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T21:31:18+00:00",
+  "summary": "Vercel is gradually rolling out Device Bound Session Credentials (DBSC) on its platform as a key defense against information stealer malware. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/": {
+  "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
+  "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T20:58:19+00:00",
+  "summary": "Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/": {
+  "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
+  "url": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T19:05:19+00:00",
+  "summary": "DreamHost is warning of a data breach after attackers gained access to its File Manager platform for two months and stole customers' FTP/SFTP usernames and passwords. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/": {
+  "title": "Cyberattack disrupts blood storage refrigeration systems in France",
+  "url": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T18:02:56+00:00",
+  "summary": "France's national blood service has confirmed that a cyberattack targeting a refrigeration equipment provider raised temperature and defrost settings at three of its facilities, threatening stored blood products. [...]"
+ },
+ "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html": {
+  "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+  "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T17:00:46+00:00",
+  "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that Debian, Ubuntu, and APT's developers…"
+ },
+ "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html": {
+  "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+  "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T17:00:38+00:00",
+  "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-2026-109593 (CVSS…"
+ },
+ "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html": {
+  "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+  "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T16:06:43+00:00",
+  "summary": "Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway. The phenomenon has been…"
+ },
+ "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers": {
+  "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
+  "url": "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-04T21:48:18+00:00",
+  "summary": "An attacker could write arbitrary files and read sensitive files via images uploaded to the Rails Active Storage ImageMagick integration, possibly positioning a threat actor for lateral movement."
  }
 }
