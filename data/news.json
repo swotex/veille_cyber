@@ -2926,5 +2926,357 @@
   "lang": "en",
   "date": "2026-11-04T02:00:00+00:00",
   "summary": "An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1448/": {
+  "title": "Multiples vulnérabilités dans Apache Zookeeper (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1448/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Apache Zookeeper. Elles permettent à un attaquant de provoquer un déni de service à distance et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1449/": {
+  "title": "Multiples vulnérabilités dans les produits Citrix (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1449/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Citrix. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et une élévation de privilèges."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1450/": {
+  "title": "Multiples vulnérabilités dans Google Chrome (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1450/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1451/": {
+  "title": "Multiples vulnérabilités dans les produits HPE Aruba Networking (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1451/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits HPE Aruba Networking. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1452/": {
+  "title": "Multiples vulnérabilités dans Ruby on Rails (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1452/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Ruby on Rails. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1453/": {
+  "title": "Multiples vulnérabilités dans NetApp StorageGRID (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1453/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans NetApp StorageGRID. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1454/": {
+  "title": "Vulnérabilité dans MongoDB (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1454/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans MongoDB. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1455/": {
+  "title": "Vulnérabilité dans Mozilla Firefox (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1455/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Mozilla Firefox. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1456/": {
+  "title": "Multiples vulnérabilités dans les produits SonicWall (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1456/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits SonicWall. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une injection SQL (SQLi)."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1457/": {
+  "title": "Vulnérabilité dans Laravel (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1457/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Laravel. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1458/": {
+  "title": "Multiples vulnérabilités dans les produits Mattermost (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1458/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Mattermost. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1459/": {
+  "title": "Multiples vulnérabilités dans SolarWinds Dameware (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1459/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans SolarWinds Dameware. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1460/": {
+  "title": "Multiples vulnérabilités dans les produits Symfony (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1460/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Symfony. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournement de la politique de…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1461/": {
+  "title": "Multiples vulnérabilités dans les produits Elastic (04 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1461/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-04T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Elastic. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des…"
+ },
+ "https://www.zataz.com/credit-mutuel-arkea-133-millions-de-dollars-detournes/": {
+  "title": "Crédit Mutuel Arkéa : 133 millions de dollars détournés ?",
+  "url": "https://www.zataz.com/credit-mutuel-arkea-133-millions-de-dollars-detournes/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-04T14:53:45+00:00",
+  "summary": "Fortuneo au cœur de la fraude Arkéa ? 133 millions de dollars détournés, des virements suspects et un blanchiment crypto."
+ },
+ "https://www.zataz.com/tiktok-une-passerelle-vers-les-casinos-illegaux/": {
+  "title": "TikTok, une passerelle vers les casinos illégaux ?",
+  "url": "https://www.zataz.com/tiktok-une-passerelle-vers-les-casinos-illegaux/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-04T13:58:13+00:00",
+  "summary": "Sur TikTok, des jeux vidéo peuvent mener à des casinos illégaux. Analyse des redirections, risques et sanctions."
+ },
+ "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/": {
+  "title": "NIKKE PC game launcher hacked to spread remote access, data-stealing malware",
+  "url": "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T16:58:46+00:00",
+  "summary": "The developers of Goddess of Victory: NIKKE have confirmed that hackers tampered with the game's PC launcher scripts in a supply-chain attack, distributing malware capable of stealing credentials and cryptocurrency wallet data. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/": {
+  "title": "mSecure password manager hack prompts password reset warnings",
+  "url": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T16:00:18+00:00",
+  "summary": "mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys following a cyberattack that reportedly exposed an encrypted customer database. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/": {
+  "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
+  "url": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T15:00:10+00:00",
+  "summary": "A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and…"
+ },
+ "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/": {
+  "title": "SonicWall warns of unpatched flaws in end-of-life GMS software",
+  "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T14:42:25+00:00",
+  "summary": "SonicWall warned customers of two security flaws affecting end-of-life Global Management System (GMS) systems that will not be patched. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/us-charges-two-canadians-accused-of-hacking-us-universities/": {
+  "title": "US charges two Canadians accused of hacking US universities",
+  "url": "https://www.bleepingcomputer.com/news/security/us-charges-two-canadians-accused-of-hacking-us-universities/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T13:13:20+00:00",
+  "summary": "A federal grand jury indicted two Canadians suspected of hacking multiple US universities and using the compromised systems to mine for cryptocurrency. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/": {
+  "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T12:11:05+00:00",
+  "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress vulnerability in the wild. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/": {
+  "title": "Hackers use n-day exploits in zero-click attacks on iOS, Android devices",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-04T09:39:54+00:00",
+  "summary": "A large-scale watering hole attack associated with Russian hackers has been targeting iOS and Android users visiting compromised sites or fake ones impersonating legitimate portals. [...]"
+ },
+ "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html": {
+  "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
+  "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T14:27:52+00:00",
+  "summary": "The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called…"
+ },
+ "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html": {
+  "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
+  "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T12:07:04+00:00",
+  "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in an advisory and fixed it…"
+ },
+ "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html": {
+  "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
+  "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T11:46:27+00:00",
+  "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there…"
+ },
+ "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html": {
+  "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
+  "url": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T11:34:20+00:00",
+  "summary": "Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one. One…"
+ },
+ "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html": {
+  "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
+  "url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T11:24:31+00:00",
+  "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy…"
+ },
+ "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html": {
+  "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
+  "url": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T08:17:11+00:00",
+  "summary": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure. Also known as Fluffy Wolf, the threat actor has a history of targeting Russian and international companies since 2016.…"
+ },
+ "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html": {
+  "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+  "url": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T07:46:15+00:00",
+  "summary": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its November security bulletin. The flaw, CVE-2026-58868, affects Android 14 through 17. Phones get the fix with security patch level…"
+ },
+ "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html": {
+  "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+  "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-04T05:43:11+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The high-severity vulnerability, tracked as…"
+ },
+ "https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/": {
+  "title": "Sysdig Adds Runtime Security and Governance for AI Agents",
+  "url": "https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-04T14:34:44+00:00",
+  "summary": "Sysdig’s platform uses runtime visibility to track AI agent actions and block risky behavior before it reaches production systems. The post Sysdig Adds Runtime Security and Governance for AI Agents appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/": {
+  "title": "Barracuda ESG Authentication Bypass Flaw Opens Path to Root",
+  "url": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-04T14:24:54+00:00",
+  "summary": "An authentication bypass and a command injection flaw can be chained for root access on Barracuda’s Email Security Gateway appliances. The post Barracuda ESG Authentication Bypass Flaw Opens Path to Root appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/agentic-data-security-firm-sentra-raises-150-million/": {
+  "title": "Agentic Data Security Firm Sentra Raises $150 Million",
+  "url": "https://www.securityweek.com/agentic-data-security-firm-sentra-raises-150-million/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-04T14:09:20+00:00",
+  "summary": "The company will invest in agentic data security capabilities and expand its go-to-market organization. The post Agentic Data Security Firm Sentra Raises $150 Million appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/": {
+  "title": "AI-Linked Breaches Mount as WorkOS, Northflank, Trigger.dev Disclose Hacks",
+  "url": "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-04T12:43:20+00:00",
+  "summary": "Hackers have been harvesting AI access tokens and have been using AI-assisted offensive tools to automate attacks. The post AI-Linked Breaches Mount as WorkOS, Northflank, Trigger.dev Disclose Hacks appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/canadian-extradited-to-us-over-cryptomining-hacks-on-university-supercomputers/": {
+  "title": "Canadian Extradited to US Over Cryptomining Hacks on University Supercomputers",
+  "url": "https://www.securityweek.com/canadian-extradited-to-us-over-cryptomining-hacks-on-university-supercomputers/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-04T12:27:58+00:00",
+  "summary": "A federal grand jury indicted two Canadian men for hijacking university supercomputers to secretly mine Electroneum cryptocurrency. The post Canadian Extradited to US Over Cryptomining Hacks on University Supercomputers appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/": {
+  "title": "Malicious cPGuard Updates Served in OpsShield Supply Chain Attack",
+  "url": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-04T10:54:48+00:00",
+  "summary": "Using compromised credentials, the attackers accessed OpsShield’s update servers and poisoned multiple cPGuard versions. The post Malicious cPGuard Updates Served in OpsShield Supply Chain Attack appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/": {
+  "title": "Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated Critical",
+  "url": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-04T10:38:46+00:00",
+  "summary": "The browser update resolves dozens of memory safety bugs and incorrect/missing authorization issues. The post Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated Critical appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/": {
+  "title": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+  "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-04T10:36:32+00:00",
+  "summary": "Binance’s first incident report traces the record theft to a months-long campaign that compromised three engineers’ computers. The post Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/": {
+  "title": "North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack",
+  "url": "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-04T09:23:22+00:00",
+  "summary": "In recent months, North Korea has accelerated its weapons tests in a likely bid to increase its leverage in potential diplomacy with the US. The post North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack…"
+ },
+ "https://www.securityweek.com/meta-shares-top-muse-bug-bounty-findings-as-payouts-reach-1-2-million/": {
+  "title": "Meta Shares Top Muse Bug Bounty Findings as Payouts Reach $1.2 Million",
+  "url": "https://www.securityweek.com/meta-shares-top-muse-bug-bounty-findings-as-payouts-reach-1-2-million/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-04T08:27:05+00:00",
+  "summary": "A $300,000 award went to a pre-launch flaw that exposed conversations and tokens on internal Muse test VMs used by Meta staff. The post Meta Shares Top Muse Bug Bounty Findings as Payouts Reach $1.2 Million appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet": {
+  "title": "Google, Partners Disrupts 1.3 Million-Device-Strong XCPE Botnet",
+  "url": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-04T16:24:08+00:00",
+  "summary": "Google alleges that Android device manufacturer Videostrong ran the operation, which infected set-top boxes and IoT devices with a backdoor to create infrastructure for criminal activity."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper": {
+  "title": "Incidents Move Too Fast for Pen & Paper",
+  "url": "https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-04T14:17:00+00:00",
+  "summary": "Organizations may not be ready for completely autonomous communication processes, but there are places where automating information updates would alleviate pressure."
+ },
+ "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap": {
+  "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
+  "url": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-04T01:05:40+00:00",
+  "summary": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing a phishing-resistant authentication gap. Plus: post-quantum YubiKey beta."
  }
 }
