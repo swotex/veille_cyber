@@ -2918,5 +2918,13 @@
   "lang": "en",
   "date": "2026-11-03T21:57:12+00:00",
   "summary": "German police led a multinational probe that exposed an alleged crime-as-a-service provider supplying fraudulent trading platforms to investment scammers."
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach": {
+  "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-04T02:00:00+00:00",
+  "summary": "An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour."
  }
 }
