@@ -3350,5 +3350,29 @@
   "lang": "en",
   "date": "2026-11-04T21:48:18+00:00",
   "summary": "An attacker could write arbitrary files and read sensitive files via images uploaded to the Rails Active Storage ImageMagick integration, possibly positioning a threat actor for lateral movement."
+ },
+ "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html": {
+  "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-05T05:17:04+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The…"
+ },
+ "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html": {
+  "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+  "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-05T04:31:16+00:00",
+  "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs. \"Our prototype identified and…"
+ },
+ "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/": {
+  "title": "Want to Rent an Internet Address at the White House?",
+  "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+  "source": "Krebs on Security",
+  "lang": "en",
+  "date": "2026-11-05T04:36:17+00:00",
+  "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company…"
  }
 }
