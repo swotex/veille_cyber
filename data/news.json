@@ -3374,5 +3374,229 @@
   "lang": "en",
   "date": "2026-11-05T04:36:17+00:00",
   "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company…"
+ },
+ "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015/": {
+  "title": "Vulnérabilité dans OpenSSH (05 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015/",
+  "source": "CERT-FR Alertes",
+  "lang": "fr",
+  "date": "2026-11-05T00:00:00+00:00",
+  "summary": "Le 5 novembre 2026, OpenSSH a publié un avis de sécurité concernant une vulnérabilité qui permet à un attaquant de contourner l’authentification d'un service SSH. En effet, sur les systèmes Linux qui utilisent la bibliothèque standard C musl, compilés sans…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1462/": {
+  "title": "Multiples vulnérabilités dans MongoDB (05 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1462/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-05T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans MongoDB. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1463/": {
+  "title": "Multiples vulnérabilités dans OpenOffice (05 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1463/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-05T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans OpenOffice. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1464/": {
+  "title": "Multiples vulnérabilités dans les produits Siemens (05 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1464/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-05T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Siemens. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1465/": {
+  "title": "Multiples vulnérabilités dans SPIP (05 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1465/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-05T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans SPIP. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1466/": {
+  "title": "Multiples vulnérabilités dans Microsoft Edge (05 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1466/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-05T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1467/": {
+  "title": "Multiples vulnérabilités dans les produits Cisco (05 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1467/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-05T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Cisco. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un contournement de la politique de sécurité et un problème de sécurité non spécifié par…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1468/": {
+  "title": "Vulnérabilité dans OpenSSH (05 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1468/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-05T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans OpenSSH. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité."
+ },
+ "https://www.zataz.com/cyberattaque-contre-les-frigos-de-lefs-le-plasma-vise/": {
+  "title": "Cyberattaque contre les frigos de l’EFS : le plasma visé",
+  "url": "https://www.zataz.com/cyberattaque-contre-les-frigos-de-lefs-le-plasma-vise/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-05T16:36:51+00:00",
+  "summary": "Cyberattaque EFS : trois sites touchés, du plasma menacé. ZATAZ revient sur les précédents et les risques industriels."
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/": {
+  "title": "Hackers backdoor Linux servers using trojanized CWP web server",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-05T16:24:26+00:00",
+  "summary": "A new Linux malware called CWPdoor is being distributed through a trojanized version of cwpsrv, the web server behind the Control Web Panel (CWP) management interface. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/": {
+  "title": "DigiCert data breach exposes customer information, identity documents",
+  "url": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-05T16:12:46+00:00",
+  "summary": "DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/": {
+  "title": "Closing the Identity Gap at the Service Desk",
+  "url": "https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-05T15:00:10+00:00",
+  "summary": "Attackers target IT service desks to bypass MFA by impersonating employees and convincing staff to reset passwords or register new authentication devices. Specops Software explains why traditional identity verification methods are no longer sufficient and…"
+ },
+ "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/": {
+  "title": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
+  "url": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-05T09:18:29+00:00",
+  "summary": "Attackers can force Android devices into a continuous boot loop using a specially crafted app that requires no permissions and only needs to be installed. [...]"
+ },
+ "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html": {
+  "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
+  "url": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-05T14:41:10+00:00",
+  "summary": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools…"
+ },
+ "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html": {
+  "title": "Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out",
+  "url": "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-05T12:25:00+00:00",
+  "summary": "A critical finding can move through several security tools and still leave the organization exposed. The vulnerability has a severity score, and a ticket has reached the queue. Progress then depends on information the finding may lack: who owns the system,…"
+ },
+ "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html": {
+  "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
+  "url": "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-05T10:06:19+00:00",
+  "summary": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual…"
+ },
+ "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html": {
+  "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
+  "url": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-05T09:13:28+00:00",
+  "summary": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3. The change specifically applies to scenarios where users share iCloud content, such as photos in…"
+ },
+ "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html": {
+  "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
+  "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-05T08:42:03+00:00",
+  "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the…"
+ },
+ "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html": {
+  "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
+  "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-05T07:06:33+00:00",
+  "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run…"
+ },
+ "https://www.securityweek.com/bank-phishing-sites-show-fake-suspended-pages-to-evade-takedowns/": {
+  "title": "Bank Phishing Sites Show Fake ‘Suspended’ Pages to Evade Takedowns",
+  "url": "https://www.securityweek.com/bank-phishing-sites-show-fake-suspended-pages-to-evade-takedowns/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-05T13:22:12+00:00",
+  "summary": "More than 200 sites were seen serving phishing content to first-time visitors but not to those who revisit. The post Bank Phishing Sites Show Fake ‘Suspended’ Pages to Evade Takedowns appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised/": {
+  "title": "Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised",
+  "url": "https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-05T12:58:32+00:00",
+  "summary": "The incident comes after supermarkets in a number of European countries reported this week that their fridges and freezers warmed up after they were remotely hacked. The post Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised…"
+ },
+ "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/": {
+  "title": "Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws",
+  "url": "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-05T12:33:49+00:00",
+  "summary": "Cisco patched an RCE in UCS Central Software; WatchGuard fixed authentication and MitM flaws. The post Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/the-agent-smith-dilemma-governing-agentic-identities/": {
+  "title": "The Agent Smith Dilemma: Governing Agentic Identities",
+  "url": "https://www.securityweek.com/the-agent-smith-dilemma-governing-agentic-identities/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-05T11:15:00+00:00",
+  "summary": "Every autonomous AI agent deployed across your enterprise today is a new proxy identity operating inside your perimeter. The post The Agent Smith Dilemma: Governing Agentic Identities appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/ciso-conversations-ryan-davis-the-unknown-is-where-security-meets-reality/": {
+  "title": "CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality",
+  "url": "https://www.securityweek.com/ciso-conversations-ryan-davis-the-unknown-is-where-security-meets-reality/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-05T11:00:00+00:00",
+  "summary": "Ryan Davis went from hacking his school’s network to running security at New Charter Technologies. What worries him now is shadow AI. The post CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/": {
+  "title": "Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day",
+  "url": "https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-05T10:56:41+00:00",
+  "summary": "Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests. The post Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/russia-linked-hackers-hit-ios-android-devices-with-exploit-chains-via-watering-holes/": {
+  "title": "Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes",
+  "url": "https://www.securityweek.com/russia-linked-hackers-hit-ios-android-devices-with-exploit-chains-via-watering-holes/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-05T10:37:13+00:00",
+  "summary": "The large-scale watering hole campaign has been targeting entities in the US and Europe, mainly in Ukraine. The post Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/openai-finds-gpt-6-astra-quietly-holding-back-on-internal-red-teaming-exploit-tasks/": {
+  "title": "OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks",
+  "url": "https://www.securityweek.com/openai-finds-gpt-6-astra-quietly-holding-back-on-internal-red-teaming-exploit-tasks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-05T10:02:00+00:00",
+  "summary": "OpenAI says its Critical-rated cyber model met fewer hidden task goals when work was framed as AI safety research, often silently. The post OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era": {
+  "title": "SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era",
+  "url": "https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-05T16:48:36+00:00",
+  "summary": "The ungated resource explains how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations."
  }
 }
