@@ -3966,5 +3966,101 @@
   "lang": "en",
   "date": "2026-11-06T14:57:48+00:00",
   "summary": "This is fascinating : The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its audio for the faint sounds of passing aircraft. The technique is both fascinating and frightening. It works by looking…"
+ },
+ "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/": {
+  "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+  "url": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-06T22:27:25+00:00",
+  "summary": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/": {
+  "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
+  "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-06T20:24:19+00:00",
+  "summary": "OpenAI has revealed GPT-6 Cyber, a new artificial intelligence model that has discovered 81 previously unknown high-severity Firefox vulnerabilities and developed working exploits for 948 distinct Linux kernel flaws. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/": {
+  "title": "Fake security tools on GitHub push backdoors and infostealers",
+  "url": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-06T18:46:52+00:00",
+  "summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/": {
+  "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-06T17:04:23+00:00",
+  "summary": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain. [...]"
+ },
+ "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html": {
+  "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+  "url": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-06T16:08:38+00:00",
+  "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old,…"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html": {
+  "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+  "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-06T15:21:49+00:00",
+  "summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. The vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed…"
+ },
+ "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html": {
+  "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
+  "url": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-06T14:58:32+00:00",
+  "summary": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment. The new model is \"more capable at finding and…"
+ },
+ "https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/": {
+  "title": "Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks",
+  "url": "https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-06T18:28:41+00:00",
+  "summary": "The emergency package comes after dozens of companies and government agencies were hit by unauthorized access to their systems and leaks of client data, prompting uneasiness across Japan. The post Japan Announces Emergency Cybersecurity Package Following a…"
+ },
+ "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy": {
+  "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
+  "url": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-06T21:27:36+00:00",
+  "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late."
+ },
+ "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job": {
+  "title": "AI Gave Your Incident Archive a Second Job",
+  "url": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-06T18:27:30+00:00",
+  "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises."
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/opera-o-de-influ-ncia-russa-tem-como-alvo-generalizado-a-am-rica-latina": {
+  "title": "Operação de influência russa tem como alvo generalizado a América Latina",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/opera-o-de-influ-ncia-russa-tem-como-alvo-generalizado-a-am-rica-latina",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-05T22:13:23+00:00",
+  "summary": "A operação, que contou com o uso de inteligência artificial, utilizou e-mails falsos, documentos governamentais falsificados e a criação de uma organização local para atacar escolas no Peru e no Equador, entre outras ações."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html": {
+  "title": "Friday Squid Blogging: New Jurassic Squid Predecessors",
+  "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-06T22:05:12+00:00",
+  "summary": "News story: “ Scientists discover a bizarre Jurassic ‘squid’ unlike anything ever seen .” Scientists have identified the “fattest” belemnite ever discovered, a bizarre, barrel-shaped squid relative that lived in Wyoming’s ancient seas 160 million years ago.…"
  }
 }
