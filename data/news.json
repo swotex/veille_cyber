@@ -4086,5 +4086,21 @@
   "lang": "en",
   "date": "2026-11-07T10:16:23+00:00",
   "summary": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins appeared first on SecurityWeek ."
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/": {
+  "title": "Hackers pull off $133 million French bank heist via service provider",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-07T15:25:35+00:00",
+  "summary": "French cooperative bank Crédit Mutuel Arkéa was targeted in a cyberattack that enabled fraudulent transactions of up to $133 million, forcing it to respond by suspending certain systems.v [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/": {
+  "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
+  "url": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-07T14:10:19+00:00",
+  "summary": "Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions. CTM360 reveals how these campaigns use deceptive verification steps and affiliate…"
  }
 }
