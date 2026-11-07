@@ -4062,5 +4062,13 @@
   "lang": "en",
   "date": "2026-11-06T22:05:12+00:00",
   "summary": "News story: “ Scientists discover a bizarre Jurassic ‘squid’ unlike anything ever seen .” Scientists have identified the “fattest” belemnite ever discovered, a bizarre, barrel-shaped squid relative that lived in Wyoming’s ancient seas 160 million years ago.…"
+ },
+ "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/": {
+  "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-07T00:00:55+00:00",
+  "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]"
  }
 }
