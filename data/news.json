@@ -4070,5 +4070,21 @@
   "lang": "en",
   "date": "2026-11-07T00:00:55+00:00",
   "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]"
+ },
+ "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html": {
+  "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+  "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-07T06:44:17+00:00",
+  "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them. When a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the…"
+ },
+ "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/": {
+  "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
+  "url": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-07T10:16:23+00:00",
+  "summary": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins appeared first on SecurityWeek ."
  }
 }
