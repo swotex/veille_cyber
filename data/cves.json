@@ -40806,7 +40806,7 @@
  "CVE-2026-6064": {
   "id": "CVE-2026-6064",
   "published": "2026-10-28T11:17:26.707",
-  "modified": "2026-10-28T15:21:31.673",
+  "modified": "2026-11-08T20:17:24.857",
   "desc": "Link following vulnerability in Data Shredder components in Norton Antivirus, Avast Antivirus, and AVG Internet Security prior to 26.5.10933 on Windows allows a local, low-privileged attacker to escalate privileges to SYSTEM. During a privileged shred operation, enabling arbitrary file/folder deletion that is leveraged to gain NT AUTHORITY\\SYSTEM privelages.",
   "cvss": 7.3,
   "sev": "HIGH",
@@ -44759,7 +44759,7 @@
  "CVE-2026-103407": {
   "id": "CVE-2026-103407",
   "published": "2026-10-28T17:17:26.240",
-  "modified": "2026-10-28T17:17:26.397",
+  "modified": "2026-11-08T20:17:23.793",
   "desc": "An Improper Limitation of a Pathname to a Restricted Directory vulnerability in ConfigDirector in Juniper Networks Session Smart Router and Session Smart Conductor allows an authenticated REST user to read, overwrite, or delete arbitrary certificate and key files on the host filesystem via the certificate and private-key REST API.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -130497,7 +130497,7 @@
  "CVE-2026-86596": {
   "id": "CVE-2026-86596",
   "published": "2026-11-02T22:17:23.490",
-  "modified": "2026-11-02T22:17:23.633",
+  "modified": "2026-11-08T19:17:42.170",
   "desc": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal '<?' sequences, combined with a post-interpolation placeholder cleanup that reassembles a valid '<?php' opener after the attacker-controlled value has already been embedded in the email template. This makes it possible for authenticated attackers, with custom-level access and above, to execute code on the server.",
   "cvss": 9.8,
   "sev": "CRITICAL",
@@ -130785,7 +130785,7 @@
  "CVE-2026-120538": {
   "id": "CVE-2026-120538",
   "published": "2026-11-03T05:18:32.193",
-  "modified": "2026-11-03T05:18:32.370",
+  "modified": "2026-11-08T19:17:35.983",
   "desc": "The Easy Digital Downloads plugin for WordPress is vulnerable to authentication bypass leading to administrator account takeover in all versions up to, and including, 3.7.2. During a PayPal guest checkout, the email address entered in the guest-checkout field is trusted as proof of identity: edd_get_purchase_form_user() binds the new guest order to an existing WordPress user purely on an email-address match, rewriting the order's user_id to that user's ID. The PayPal capture sink PurchaseUser::maybe_log_in_after_capture() then looked the user up by the order email (get_user_by( 'email', $order->email )) and, when $order->user_id equalled that user's ID (which the email-binding step guarantees), issued an authenticated session with wp_set_auth_cookie(). An unauthenticated attacker who starts a guest checkout using an administrator's email address (where that administrator has no existing EDD customer record) and completes the PayPal purchase flow therefore receives an authenticated session as that administrator — a full account takeover. The same sink is reachable through the standard PayPal checkout and the REST UnbrandedCard and Fastlane flows.",
   "cvss": 8.1,
   "sev": "HIGH",
@@ -130885,7 +130885,7 @@
  "CVE-2026-120559": {
   "id": "CVE-2026-120559",
   "published": "2026-11-03T05:18:33.230",
-  "modified": "2026-11-03T05:18:33.397",
+  "modified": "2026-11-08T19:17:36.540",
   "desc": "The Contact Form Extender for Divi Builder plugin for WordPress is vulnerable to Arbitrary File Deletion due to insufficient file path validation in the cfefd_remove_uploaded_file() function in all versions up to, and including, 1.0.6. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). The nonce protecting this AJAX action is rendered into the public page source via wp_localize_script and is therefore retrievable by any unauthenticated visitor.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -130985,7 +130985,7 @@
  "CVE-2026-120577": {
   "id": "CVE-2026-120577",
   "published": "2026-11-03T05:18:34.257",
-  "modified": "2026-11-03T05:18:34.417",
+  "modified": "2026-11-08T19:17:36.800",
   "desc": "The FluentCart A New Era of eCommerce – Faster, Lighter, and Simpler plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the deleteFile function in all versions up to, and including, 1.6.2. This makes it possible for authenticated attackers, with custom-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
   "cvss": 8.1,
   "sev": "HIGH",
@@ -165683,7 +165683,7 @@
  "CVE-2026-17493": {
   "id": "CVE-2026-17493",
   "published": "2026-11-04T21:18:13.020",
-  "modified": "2026-11-04T21:18:13.147",
+  "modified": "2026-11-08T19:17:38.193",
   "desc": "IBM Watson Speech Services Cartridge 4.0.0 through 5.4.0 could allow a remote attacker to cause a denial of service due to an out-of-bounds read.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -183655,7 +183655,7 @@
  "CVE-2026-87964": {
   "id": "CVE-2026-87964",
   "published": "2026-11-06T10:16:38.110",
-  "modified": "2026-11-06T10:16:38.277",
+  "modified": "2026-11-08T19:17:42.430",
   "desc": "The Product Feed Manager for WooCommerce – CTX Feed – Support 220+ Shopping, AI & Social Channels plugin for WordPress is vulnerable to PHP Code Injection in all versions up to, and including, 8.0.26. This is due to insufficient sanitization of the `feedConfigCustom2` parameter — only `wp_unslash()` is applied before the value is stored verbatim via `update_option()`, and during feed generation the `Custom2Template::evaluate_return()` method passes the stored `{(return ...)}` template expressions directly to PHP's `eval()` function without any code-level sanitization. This makes it possible for authenticated attackers, with Shop Manager-level access and above, to inject and execute arbitrary PHP code on the server, escalating their privileges beyond what the role normally permits to full remote code execution and site takeover. The `ctxfeed_custom2_eval_enabled` option defaults to `true`, meaning no additional administrator configuration is required for this attack path to be exploitable out of the box.",
   "cvss": 7.2,
   "sev": "HIGH",
@@ -192382,7 +192382,7 @@
  "CVE-2026-119213": {
   "id": "CVE-2026-119213",
   "published": "2026-11-07T03:17:01.620",
-  "modified": "2026-11-07T03:17:01.753",
+  "modified": "2026-11-08T19:17:35.147",
   "desc": "The Fluent Support – Helpdesk & Customer Support Ticket System plugin for WordPress is vulnerable to unauthenticated modification of a linked customer's stored profile fields in versions up to, and including, 2.4.7 Its first-party Fluent Forms integration (FeedIntegration::notify()) opens a ticket from each public form submission and, for a logged-out submitter, resolves the submitted email to an existing WordPress account via get_user_by('email', ...) without verifying the submitter controls that address, then passes the attacker-supplied data to Customer::maybeCreateCustomer(). This makes it possible for unauthenticated attackers to overwrite a limited set of a registered customer's stored profile fields where an administrator has enabled a FluentSupport feed on a public form. The email address, role and status are never changed; first and last name are overwritten only when the target user has no name set in user meta; and other fields (title, address, city, state, zip, country) are writable only where an administrator has mapped them in the feed.",
   "cvss": 3.7,
   "sev": "LOW",
@@ -192442,7 +192442,7 @@
  "CVE-2026-119616": {
   "id": "CVE-2026-119616",
   "published": "2026-11-07T03:17:02.170",
-  "modified": "2026-11-07T03:17:02.313",
+  "modified": "2026-11-08T19:17:35.283",
   "desc": "The Noptin – Newsletter, New Post Notifications & Email Automation plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.4.3 via the 'noptin_fields[first_name]' parameter parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included. The public Manage Preferences page issues a nonce to unauthenticated visitors, meaning there is no effective authorization barrier — an unauthenticated attacker can store the malicious payload as their first_name and have it executed the next time any newsletter is sent by the site operator. Successful exploitation additionally requires an action by an administrator — the attacker cannot trigger the vulnerability on their own.",
   "cvss": 5.9,
   "sev": "MEDIUM",
@@ -192502,7 +192502,7 @@
  "CVE-2026-120520": {
   "id": "CVE-2026-120520",
   "published": "2026-11-07T03:17:03.517",
-  "modified": "2026-11-07T03:17:03.650",
+  "modified": "2026-11-08T19:17:35.540",
   "desc": "The Greenshift – animation and page builder blocks plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 13.2.2 via the 'img (or any key the publisher references in {{GET:key}})' parameter. This makes it possible for unauthenticated attackers to extract authenticated users' HttpOnly WordPress session cookies, specifically wordpress_logged_in_* tokens, by injecting a nested {{COOKIE:}} placeholder via a GET parameter that causes the victim's browser to transmit the cookie value to an attacker-controlled host as an image src URL. Exploitation requires that a site publisher has configured a public GreenShift Element image block whose src attribute contains a {{GET:}} placeholder, and that a logged-in user can be induced to open the attacker's crafted link — neither condition is part of the plugin's default state.",
   "cvss": 5.3,
   "sev": "MEDIUM",
@@ -192542,7 +192542,7 @@
  "CVE-2026-120555": {
   "id": "CVE-2026-120555",
   "published": "2026-11-07T03:17:04.010",
-  "modified": "2026-11-07T03:17:04.147",
+  "modified": "2026-11-08T19:17:36.407",
   "desc": "The Jupiter X Core plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 4.62.0 via the 'file' parameter parameter. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information. The path confinement check introduced in the CVE-2023-3813 fix (strpos + realpath) is present and working, so reads are confined to wp-content/uploads/ and cannot reach wp-config.php or other files outside that directory.",
   "cvss": 5.3,
   "sev": "MEDIUM",
@@ -192562,7 +192562,7 @@
  "CVE-2026-120737": {
   "id": "CVE-2026-120737",
   "published": "2026-11-07T03:17:04.327",
-  "modified": "2026-11-07T03:17:04.457",
+  "modified": "2026-11-08T19:17:36.930",
   "desc": "The Jupiter X Core plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 4.62.0 This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to enumerate and render arbitrary published post types not intended for public listing — including Flamingo CF7 submission records containing submitter names, email addresses, phone numbers, full messages, and IP addresses — and perform meta_query boolean-oracle reads against the postmeta of any published post. Exploitation requires that a Posts or Advanced Posts widget on the site has 'Is Archive Template' enabled, which is the standard Jupiter X archive-template configuration used by most Jupiter X sites; additionally, the nonce verified by the second endpoint is minted via wp_create_nonce and printed on every frontend page as ravenTools.nonce, rendering it ineffective as an authorization barrier.",
   "cvss": 5.9,
   "sev": "MEDIUM",
@@ -192642,7 +192642,7 @@
  "CVE-2026-93754": {
   "id": "CVE-2026-93754",
   "published": "2026-11-07T03:17:08.410",
-  "modified": "2026-11-07T03:17:08.570",
+  "modified": "2026-11-08T19:17:43.467",
   "desc": "The payever – WooCommerce Gateway plugin for WordPress is vulnerable to arbitrary file upload leading to remote code execution in various versions up to, and including, 4.8.0. Three WooCommerce-API callbacks (payever_set_sandbox_api_keys, payever_toggle_subscription, payever_synchronization_incoming) are registered with no authentication, capability check, or nonce, and the upload_image() routine writes a remotely fetched file to the public uploads directory using an attacker-controlled basename() BEFORE validating the file type. This makes it possible for unauthenticated attackers to write an executable PHP file and achieve remote code execution. NOTE: the token-recovery leg of the full chain depends on the plugin's outbound validateToken() call to Payever's service; the unauthenticated hard-coded-credential identity overwrite (CWE-862/CWE-798) is independently exploitable.",
   "cvss": 9.8,
   "sev": "CRITICAL",
@@ -192682,7 +192682,7 @@
  "CVE-2026-120560": {
   "id": "CVE-2026-120560",
   "published": "2026-11-07T04:17:13.370",
-  "modified": "2026-11-07T04:17:13.497",
+  "modified": "2026-11-08T19:17:36.670",
   "desc": "The Active Woot Products Tables for WooCommerce. 100% FREE plugin for WordPress is vulnerable to Media Library File Deletion in all versions up to, and including, 2.1.5 This is due to the `get_table_data()` AJAX handler — registered for unauthenticated access via `wp_ajax_nopriv_woot_get_table_data` — performing no nonce verification and no capability check before passing the attacker-supplied `wp_columns_actions` parameter directly to `apply_filters()` alongside an attacker-controlled integer derived from the `table_id` parameter. This makes it possible for unauthenticated attackers to delete any WordPress media library attachment and its underlying file in the uploads directory by supplying a known or guessed numeric attachment ID, enabling complete erasure of a site's media library. Exploitation is achievable because WordPress core registers `wp_delete_attachment()` as a callback on hooks such as `upgrader_scheduled_cleanup` and `importer_scheduled_cleanup`, which `sanitize_key()` does not strip; notably, only attachment posts reachable by numeric ID are affected, and files outside `wp-content/uploads` — such as `wp-config.php` or plugin PHP files — cannot be targeted through this path.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -192798,7 +192798,7 @@
  "CVE-2026-19803": {
   "id": "CVE-2026-19803",
   "published": "2026-11-07T04:17:29.233",
-  "modified": "2026-11-07T04:17:29.377",
+  "modified": "2026-11-08T19:17:39.240",
   "desc": "The Printcart Store – Web to Print Product Designer for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.13.2. This is due to the `nbu_crop_image` AJAX handler accepting a user-supplied `url` parameter that `Nbdesigner_IO::convert_url_to_path()` concatenates onto the uploads base directory without normalizing or stripping `../` sequences, and then deriving both the output directory and output file extension via `pathinfo()` from the same attacker-controlled path — with no `stripImage()` call before `writeImage()` is invoked. This makes it possible for unauthenticated attackers to write attacker-controlled PHP content to arbitrary locations outside the uploads directory, resulting in remote code execution when the written file is subsequently requested. This vulnerability is only exploitable when the `nbdesigner_upload_popup_style` site option is set to `a` (Advanced Upload Popup), which causes the handler to be registered for unauthenticated requests; however, the required `save-design` nonce is printed on the fully public frontend `upload-design-file` page, making it trivially obtainable by any anonymous visitor once that configuration is active.",
   "cvss": 9.8,
   "sev": "CRITICAL",
@@ -192935,7 +192935,7 @@
  "CVE-2026-120043": {
   "id": "CVE-2026-120043",
   "published": "2026-11-07T05:18:08.970",
-  "modified": "2026-11-07T05:18:11.067",
+  "modified": "2026-11-08T19:17:35.413",
   "desc": "The Affiliate Program Suite — SliceWP Affiliates plugin for WordPress is vulnerable to generic SQL Injection via the 'email' parameter in all versions up to, and including, 1.2.14 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. The injection is reachable without any account because the vulnerable code path is triggered via the user_register hook fired on every successful WooCommerce My Account registration, which requires only a guest-obtainable nonce.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -196776,7 +196776,7 @@
  "CVE-2026-93779": {
   "id": "CVE-2026-93779",
   "published": "2026-11-07T05:19:02.860",
-  "modified": "2026-11-07T05:19:03.047",
+  "modified": "2026-11-08T19:17:43.610",
   "desc": "The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 4.1.2 via the init_routes due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with subscriber-level access and above, to read paid course lesson and topic content without enrollment, retrieve quiz answer keys including the is_correct field before attempting a quiz, and enumerate the email addresses, usernames, and registration data of other users including instructors and administrators. Exploitation requires that the attacker hold a valid Tutor LMS API key/secret pair, which is issued to subscriber-level users through the plugin's API key management feature.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -197287,7 +197287,7 @@
  "CVE-2026-103917": {
   "id": "CVE-2026-103917",
   "published": "2026-11-07T07:17:01.973",
-  "modified": "2026-11-07T07:17:02.323",
+  "modified": "2026-11-08T19:17:31.620",
   "desc": "The The Quiz and Survey Master (QSM) – Quiz Maker & Survey Maker plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 11.2.7. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes. The submission nonce is dispensed to any unauthenticated caller by the public wp_ajax_nopriv_qsm_create_quiz_nonce endpoint, meaning it functions as a CSRF token rather than an authorization barrier and imposes no meaningful obstacle to exploitation.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -197427,7 +197427,7 @@
  "CVE-2026-118801": {
   "id": "CVE-2026-118801",
   "published": "2026-11-07T07:17:03.397",
-  "modified": "2026-11-07T07:17:03.513",
+  "modified": "2026-11-08T19:17:34.770",
   "desc": "The aBlocks – Gutenberg Blocks, User Dashboard Builder, Popup Builder, Form Builder & Animation Builder plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.18.0 via the 'id' parameter. This makes it possible for authenticated attackers, with contributor-level access and above, to extract the full rendered body content of any password-protected post of any post type by embedding the shortcode with the target post's ID. Author-level attackers and above can additionally publish a post embedding the shortcode, exposing the password-protected content to unauthenticated visitors.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -197487,7 +197487,7 @@
  "CVE-2026-120530": {
   "id": "CVE-2026-120530",
   "published": "2026-11-07T07:17:03.893",
-  "modified": "2026-11-07T07:17:04.020",
+  "modified": "2026-11-08T19:17:35.670",
   "desc": "The WebToffee WP Backup and Migration plugin for WordPress is vulnerable to generic SQL Injection via the 'description' parameter in all versions up to, and including, 1.6.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. Successful exploitation requires an administrator to subsequently perform the plugin's ordinary local database export and restore operation on the same site, which is this plugin's primary intended function. Successful exploitation additionally requires an action by an administrator — the attacker cannot trigger the vulnerability on their own.",
   "cvss": 5.7,
   "sev": "MEDIUM",
@@ -197527,7 +197527,7 @@
  "CVE-2026-121536": {
   "id": "CVE-2026-121536",
   "published": "2026-11-07T07:17:04.210",
-  "modified": "2026-11-07T07:17:04.330",
+  "modified": "2026-11-08T19:17:37.183",
   "desc": "The WP Data Access – App Builder for Tables, Forms, Dashboards, Charts & Maps plugin for WordPress is vulnerable to generic SQL Injection via the 'engine' parameter in all versions up to, and including, 5.5.90 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This is only exploitable when an administrator has configured a Data Project page to admit a lower-privileged role, which is the plugin's documented mechanism for sharing projects with subscribers and other users.",
   "cvss": 5.3,
   "sev": "MEDIUM",
@@ -197547,7 +197547,7 @@
  "CVE-2026-121792": {
   "id": "CVE-2026-121792",
   "published": "2026-11-07T07:17:04.370",
-  "modified": "2026-11-07T07:17:04.500",
+  "modified": "2026-11-08T19:17:37.313",
   "desc": "The GamiPress – Gamification plugin to reward points, badges & ranks in WordPress, now with AI plugin for WordPress is vulnerable to generic SQL Injection via the 'input_<field_id>.<part> (Gravity Forms name-field part, or list-field row)' parameter in all versions up to, and including, 8.1.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. Exploitation requires a GamiPress achievement already configured against a Gravity Forms 'field value submission' event with the corresponding form published — a standard setup for sites using the integration.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -197587,7 +197587,7 @@
  "CVE-2026-122265": {
   "id": "CVE-2026-122265",
   "published": "2026-11-07T07:17:04.697",
-  "modified": "2026-11-07T07:17:04.823",
+  "modified": "2026-11-08T19:17:37.933",
   "desc": "The Vanquish Upload Files for WooCommerce plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 2.7.13 via the 'vanupfi_file_name' parameter parameter. This makes it possible for authenticated attackers, with subscriber-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information. The authorization bypass is achieved by supplying a non-existent order ID (e.g., '.pdf'), which causes wc_get_order() to return false and short-circuits the vanupfi_user_can_access_order_files() check, while the is_pdf() branch selector's loose strpos() substring match allows a traversal payload such as '../.pdf/../../../../wp-config.php' to satisfy the PDF branch and be streamed verbatim via readfile().",
   "cvss": 5.9,
   "sev": "MEDIUM",
@@ -197626,7 +197626,7 @@
  "CVE-2026-87112": {
   "id": "CVE-2026-87112",
   "published": "2026-11-07T07:17:05.090",
-  "modified": "2026-11-07T07:17:05.243",
+  "modified": "2026-11-08T19:17:42.300",
   "desc": "The QA Assistants – Driven by data plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 5.3.0 via the 'dlevent_ver' parameter. This is due to unrestricted PHP deserialization via wrap_unserialize_static() calling unserialize() without an allowed_classes restriction, combined with serialize_escape() failing to sanitize path traversal sequences in the raw_name parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. The Guzzle FileCookieJar gadget present in the plugin's bundled Composer dependencies can be leveraged to perform an Arbitrary File Write, writing attacker-controlled content to an attacker-chosen filename, which can result in Remote Code Execution. Exploitation requires triggering the qahm_cron_data_manage scheduled event via wp-cron.php to invoke the deserialization sink against a planted queue file, but this endpoint requires no authentication and fires automatically on a two-minute schedule.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -197646,7 +197646,7 @@
  "CVE-2026-93370": {
   "id": "CVE-2026-93370",
   "published": "2026-11-07T07:17:05.287",
-  "modified": "2026-11-07T07:17:05.417",
+  "modified": "2026-11-08T19:17:43.340",
   "desc": "The Paystack WooCommerce Payment Gateway plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 5.8.5 via the 'key' parameter. This makes it possible for unauthenticated attackers to extract customer PII — including billing name, email address, phone number, billing address, shipping address, and purchased product list — embedded into page HTML via wp_localize_script by enumerating sequential order IDs. This is only exploitable when the merchant has enabled the optional custom metadata feature in the Paystack gateway settings.",
   "cvss": 5.3,
   "sev": "MEDIUM",
@@ -197687,7 +197687,7 @@
  "CVE-2026-104738": {
   "id": "CVE-2026-104738",
   "published": "2026-11-07T09:17:11.253",
-  "modified": "2026-11-07T09:17:12.420",
+  "modified": "2026-11-08T19:17:32.400",
   "desc": "The Advanced Form Integration — Connect Forms to 300+ Apps plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.10.2 via deserialization of untrusted input . This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present. Exploitation requires that an administrator has previously configured at least one active NexForms integration (status=1) in the plugin's database table; in the free tier, only POST parameter keys containing the substrings 'name', 'email', 'first', or 'last' are routed to the vulnerable normalizer.",
   "cvss": 8.1,
   "sev": "HIGH",
@@ -198037,7 +198037,7 @@
  "CVE-2026-103900": {
   "id": "CVE-2026-103900",
   "published": "2026-11-07T10:17:05.140",
-  "modified": "2026-11-07T10:17:06.360",
+  "modified": "2026-11-08T19:17:31.363",
   "desc": "The WPJAM Basic plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 7.1 This is due to the WPJAM_User_Signup::signup() function unpacking attacker-supplied `data[args]` from the AJAX POST body and merging it via PHP array union into the payload passed to WPJAM_User::create(), whose internal whitelist (wpjam_pick) explicitly preserves the `role` key before it is handed to wp_insert_user(). The endpoint is registered as wp_ajax_nopriv_{provider}-signup with a nonce that is emitted on the public login page. This makes it possible for unauthenticated attackers to elevate their privileges to Administrator by creating a new user with an attacker-chosen role, provided a social-login provider is registered and open registration is enabled.",
   "cvss": 8.1,
   "sev": "HIGH",
@@ -198057,7 +198057,7 @@
  "CVE-2026-104992": {
   "id": "CVE-2026-104992",
   "published": "2026-11-07T10:17:06.407",
-  "modified": "2026-11-07T10:17:06.550",
+  "modified": "2026-11-08T19:17:32.527",
   "desc": "The Booking for Appointments and Events Calendar – Amelia plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 9.9.1. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for authenticated attackers, with custom-level access and above, to export a full CSV of booking records for any event on the site — including attendee names, email addresses, phone numbers, booking status, number of persons, price, payment status, payment amount, and coupon codes — regardless of whether they own or participate in those events.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -198077,7 +198077,7 @@
  "CVE-2026-107616": {
   "id": "CVE-2026-107616",
   "published": "2026-11-07T10:17:06.593",
-  "modified": "2026-11-07T10:17:06.733",
+  "modified": "2026-11-08T19:17:32.990",
   "desc": "The Amelia plugin for WordPress is vulnerable to unauthorized access of attendee data due to a missing authorization check on the GetEventAttendeesCommandHandler::handle() function in versions up to, and including, 9.9.1. The handler only enforces the broad `amelia_read_events` capability — which the plugin's own `wpamelia-customer` role possesses — and does not verify that the authenticated user is an organizer/provider of the event referenced by the client-supplied `id` query parameter. This makes it possible for authenticated attackers, with wpamelia-customer-level access and above, to export the full CSV of attendee personally identifiable information (first/last name, email, phone, date of birth, gender, private notes, payment amounts/methods, WooCommerce order IDs, custom-field values, and uploaded-file URLs) for any Amelia event on the site by directly invoking the `/report/event/attendees` endpoint with an arbitrary event ID.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -198097,7 +198097,7 @@
  "CVE-2026-110004": {
   "id": "CVE-2026-110004",
   "published": "2026-11-07T10:17:06.780",
-  "modified": "2026-11-07T10:17:06.923",
+  "modified": "2026-11-08T19:17:33.523",
   "desc": "The wpForo Forum plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the theme_delete function in all versions up to, and including, 3.2.2 This makes it possible for authenticated attackers, with subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). This exploit chain is reachable only on sites where an administrator has created a custom wpForo secondary usergroup with a blank WordPress role and the 'mth' (Manage Themes) capability; on such sites, an attacker can self-register and claim that group via the unguarded wpforo_secondary_groupids[] POST field, bypassing the role-based group filter and gaining theme-management access as a Subscriber.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -198137,7 +198137,7 @@
  "CVE-2026-119155": {
   "id": "CVE-2026-119155",
   "published": "2026-11-07T10:17:07.150",
-  "modified": "2026-11-07T10:17:07.283",
+  "modified": "2026-11-08T19:17:34.900",
   "desc": "The wpForo Forum plugin for WordPress is vulnerable to time-based SQL Injection via the 'href[locale]' parameter in all versions up to, and including, 3.2.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. The nonce required for exploitation is publicly issued to unauthenticated visitors on any forum page via the wpforo.nonces JavaScript object, meaning no account or prior interaction beyond a page load is required to obtain it.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -198157,7 +198157,7 @@
  "CVE-2026-119164": {
   "id": "CVE-2026-119164",
   "published": "2026-11-07T10:17:07.337",
-  "modified": "2026-11-07T10:17:07.487",
+  "modified": "2026-11-08T19:17:35.023",
   "desc": "The wpForo Forum plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.2.2 via the `data[secondary_groupids]` parameter of the `wpforo_action_profile_update` POST handler. This is due to a type-confusion flaw in the secondary_groupids authorization guard within the `Members::update()` function in `classes/Members.php`, where casting a scalar CSV string (e.g. `\"0,1\"`) with `(array)` before `array_map('intval', …)` and `array_filter()` produces an empty array — causing the guard's outer conditional, and the else-branch that would otherwise strip the field from the update, to be bypassed entirely — while `encode()`/`decode()` downstream correctly explodes the original CSV and persists the attacker-supplied group IDs to `wp_wpforo_profiles.secondary_groupids`. This makes it possible for authenticated attackers, with Subscriber-level access and above, to escalate their forum privileges to wpForo Administrator by injecting the privileged Admin group ID, granting access to the Forum Accesses editor and the ability to rewrite forum-wide capability policies for all members and edit arbitrary content owned by other users. Exploitation requires the attacker to have at least 3 approved wpForo posts to satisfy the plugin's default `min_number_posts_to_edit_account` antispam gate, along with a valid wpforo nonce obtained from their own account profile form.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -198433,7 +198433,7 @@
  "CVE-2026-120548": {
   "id": "CVE-2026-120548",
   "published": "2026-11-07T10:17:09.880",
-  "modified": "2026-11-07T10:17:10.027",
+  "modified": "2026-11-08T19:17:36.190",
   "desc": "The YML for Yandex Market plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 5.10.0 via the 'y4ym_check_action' parameter. This makes it possible for unauthenticated attackers to extract the merchant's plaintext Yandex Market API key written to the publicly accessible log file at wp-content/uploads/y4ym/yml-for-yandex-market.log, granting full control over the merchant's marketplace catalogue, prices, and stock. Exploitation requires that the targeted feed has a stored Yandex Market API key and that the y4ym_keeplogs option is enabled — both conditions that represent normal, documented plugin usage actively encouraged by the plugin's own support and feedback workflow.",
   "cvss": 5.3,
   "sev": "MEDIUM",
@@ -198729,7 +198729,7 @@
  "CVE-2026-95870": {
   "id": "CVE-2026-95870",
   "published": "2026-11-07T10:17:12.787",
-  "modified": "2026-11-07T10:17:12.967",
+  "modified": "2026-11-08T19:17:52.340",
   "desc": "The wpForo Forum plugin for WordPress is vulnerable to generic SQL Injection via the 'data' parameter in all versions up to, and including, 3.2.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. Exploitation requires that a searchable topic form field of type checkbox, or a select/autocomplete field with isMultiChoice enabled, is registered in the forum configuration.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -199112,7 +199112,7 @@
  "CVE-2026-102564": {
   "id": "CVE-2026-102564",
   "published": "2026-11-07T12:17:40.963",
-  "modified": "2026-11-07T12:17:41.100",
+  "modified": "2026-11-08T19:17:30.870",
   "desc": "The The Dynific Addons for Elementor (formerly Anywhere Elementor) plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.3.0 This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes. Exploitation requires the target site to have a public post rendered through an AE template that includes the AE Post Comments widget, and for the attacker's comment to be visible on that page — a barrier removed once the attacker has a previously approved comment or when comment moderation is relaxed.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -199132,7 +199132,7 @@
  "CVE-2026-103914": {
   "id": "CVE-2026-103914",
   "published": "2026-11-07T12:17:41.143",
-  "modified": "2026-11-07T12:17:41.267",
+  "modified": "2026-11-08T19:17:31.497",
   "desc": "The Dynific Addons for Elementor plugin for WordPress is vulnerable to SQL Injection via the 'q' parameter in versions up to, and including, 1.3. This is due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query in the ae_preview_post() AJAX handler and its preview_post_filter() posts_where callback, where the value is passed through $wpdb->esc_like() (addcslashes for '_%\\\\') and concatenated into a single-quoted SQL LIKE literal — a construction that does not escape single quotes and actively escapes the backslash wp_magic_quotes places before the attacker's quote, freeing it to terminate the literal. This makes it possible for authenticated attackers, with Subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -199372,7 +199372,7 @@
  "CVE-2026-116751": {
   "id": "CVE-2026-116751",
   "published": "2026-11-07T12:17:43.070",
-  "modified": "2026-11-07T12:17:43.190",
+  "modified": "2026-11-08T19:17:34.503",
   "desc": "The Booking for Appointments and Events Calendar – Amelia Pro plugin for WordPress is vulnerable to time-based SQL Injection via the 'tag[] (array KEYS)' parameter in all versions up to, and including, 9.9.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. WordPress's wp_magic_quotes escapes array values but not array keys, meaning attacker-controlled tag[] array keys reach EventRepository::getFilteredIds() completely unescaped and can be crafted to defeat the plugin's Statement::execute placeholder binder via overlapping strtr() substitution keys.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -199452,7 +199452,7 @@
  "CVE-2026-118066": {
   "id": "CVE-2026-118066",
   "published": "2026-11-07T12:17:43.717",
-  "modified": "2026-11-07T12:17:43.833",
+  "modified": "2026-11-08T19:17:34.637",
   "desc": "The Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress plugin for WordPress is vulnerable to Authentication Bypass via Account Takeover in all versions up to, and including, 5.7.6. This is due to the `OsModel::build_conditions_query()` function in `lib/models/model.php` comparing WHERE-clause values against the literal strings `'IS NULL'` and `'IS NOT NULL'` and concatenating a match directly into SQL without binding it as a parameter, a flaw that neither `sanitize_text_field()` nor the 5.7.5 `is_scalar()` hardening guard closes, since both pass the scalar sentinel through unchanged. This makes it possible for unauthenticated attackers to send `params[password_reset_token]=IS NOT NULL` to the public `customer_cabinet__change_password` AJAX route to match every non-null `account_nonse` value, resolving to the lowest-id customer and overwriting that customer's password to an attacker-chosen value — granting full access to their bookings, orders, and PII, and, when the `wp_users_as_customers` option is enabled, takeover of the linked WordPress subscriber or customer-role account. The attacker can first identify the target customer's email by sending `params[order_intent_key]=IS NOT NULL` to the public `steps__start_from_order_intent` route, which returns the name and email from the first matching order intent, and can then self-arm the required 15-minute password-reset freshness window by triggering a reset for that customer directly.",
   "cvss": 9.1,
   "sev": "CRITICAL",
@@ -201076,7 +201076,7 @@
  "CVE-2026-123860": {
   "id": "CVE-2026-123860",
   "published": "2026-11-07T13:16:37.710",
-  "modified": "2026-11-07T13:16:37.823",
+  "modified": "2026-11-08T19:17:38.067",
   "desc": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in Crocoblock JetFormBuilder jetformbuilder allows Code Injection.This issue affects JetFormBuilder: from n/a through 3.6.8.",
   "cvss": 5.3,
   "sev": "MEDIUM",
@@ -201957,7 +201957,7 @@
  "CVE-2026-120531": {
   "id": "CVE-2026-120531",
   "published": "2026-11-07T22:16:36.090",
-  "modified": "2026-11-07T22:16:36.217",
+  "modified": "2026-11-08T19:17:35.813",
   "desc": "The Subscribe2 – Form, Email Subscribers & Newsletters plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘data[ip]’ parameter in all versions up to, and including, 10.47 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
   "cvss": 7.2,
   "sev": "HIGH",
@@ -204371,12 +204371,14 @@
  "CVE-2026-103303": {
   "id": "CVE-2026-103303",
   "published": "2026-11-08T06:17:02.487",
-  "modified": "2026-11-08T06:17:02.487",
+  "modified": "2026-11-08T19:17:31.017",
   "desc": "The Turisbook Booking System WordPress plugin through 1.3.8 does not have authorisation and CSRF checks when saving its settings, and does not sanitise and escape one of them before outputting it in an admin page, allowing unauthenticated users to perform Stored Cross-Site Scripting attacks against administrators.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-79"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/10693b34-ab03-4c24-bd9d-5a2efbfdbeb2/"
@@ -204387,12 +204389,14 @@
  "CVE-2026-103375": {
   "id": "CVE-2026-103375",
   "published": "2026-11-08T06:17:03.643",
-  "modified": "2026-11-08T06:17:03.643",
+  "modified": "2026-11-08T19:17:31.190",
   "desc": "The Antom Payments WordPress plugin through 2.0.11 does not perform any ownership or authorisation check before returning an order's confirmation link, which contains its secret key, to unauthenticated visitors, allowing attackers to view any customer's order details, including name, address, phone number and email.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-639"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/d0ad8f0f-8ca6-4bc9-88c3-9fd64894033e/"
@@ -204403,12 +204407,14 @@
  "CVE-2026-104307": {
   "id": "CVE-2026-104307",
   "published": "2026-11-08T06:17:03.760",
-  "modified": "2026-11-08T06:17:03.760",
+  "modified": "2026-11-08T19:17:31.743",
   "desc": "The BackUpWordPress plugin before 3.15 does not perform a capability or nonce check on an AJAX action that cleans up its backup directory, allowing any authenticated user (Subscriber and above) to delete the BackUpWordPress plugin before 3.15's backup protection and working files, removing download protection from stored backups and disrupting in-progress backups.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
+  "cwe": [
+   "CWE-73"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/fdd1c029-f055-40c0-9c7f-a0a3822304a9/"
@@ -204419,12 +204425,14 @@
  "CVE-2026-104337": {
   "id": "CVE-2026-104337",
   "published": "2026-11-08T06:17:03.880",
-  "modified": "2026-11-08T06:17:03.880",
+  "modified": "2026-11-08T19:17:31.903",
   "desc": "The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not verify ownership of an order before returning a coupon discount computed against that order, allowing unauthenticated attackers to disclose the monetary value of arbitrary customer orders by enumerating order IDs.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/d7806a06-2bce-4ebe-9c12-d5ac9a2dc416/"
@@ -204435,12 +204443,14 @@
  "CVE-2026-104338": {
   "id": "CVE-2026-104338",
   "published": "2026-11-08T06:17:04.000",
-  "modified": "2026-11-08T06:17:04.000",
+  "modified": "2026-11-08T19:17:32.070",
   "desc": "The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not perform an authorization check on one of its REST routes and derives the acting user's identity from an unauthenticated request parameter, allowing an unauthenticated attacker to cause the request to execute as an arbitrary user account for the duration of the request. Exploitation additionally requires a specific coupon Razorpay for WooCommerce WordPress plugin before 4.8.9 to be active on the site.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 3.7,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/7a414b2d-ee06-448a-a83d-3bfd5db66528/"
@@ -204451,12 +204461,14 @@
  "CVE-2026-104639": {
   "id": "CVE-2026-104639",
   "published": "2026-11-08T06:17:04.113",
-  "modified": "2026-11-08T06:17:04.113",
+  "modified": "2026-11-08T19:17:32.237",
   "desc": "The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not sanitize and escape a value derived from an incoming webhook request before using it in a SQL query, allowing users able to obtain the webhook secret (administrators) to perform SQL injection attacks.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 4.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-89"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/723a8b8f-1215-47a6-a6f7-7796ce38e7c1/"
@@ -204467,12 +204479,14 @@
  "CVE-2026-105970": {
   "id": "CVE-2026-105970",
   "published": "2026-11-08T06:17:04.227",
-  "modified": "2026-11-08T06:17:04.227",
+  "modified": "2026-11-08T19:17:32.653",
   "desc": "The Thanh Toán Quét Mã QR Code Tự Động  WordPress plugin through 2.0.1 does not properly verify the authenticity of incoming bank-transfer payment notifications on a default installation, allowing unauthenticated attackers to mark arbitrary WooCommerce orders as paid.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/7c3f164c-8659-401d-b746-542e705c9e86/"
@@ -204483,12 +204497,14 @@
  "CVE-2026-106015": {
   "id": "CVE-2026-106015",
   "published": "2026-11-08T06:17:04.333",
-  "modified": "2026-11-08T06:17:04.333",
+  "modified": "2026-11-08T19:17:32.820",
   "desc": "The Ecommerce Affiliate WordPress plugin through 1.0.0 does not restrict one-time password issuance and verification to the legitimate account owner, nor limit verification attempts, allowing unauthenticated attackers to take over any account, including administrators.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-287"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/7222ff86-fc0e-42e5-ac68-f9506c90fb70/"
@@ -204499,12 +204515,14 @@
  "CVE-2026-109925": {
   "id": "CVE-2026-109925",
   "published": "2026-11-08T06:17:04.443",
-  "modified": "2026-11-08T06:17:04.443",
+  "modified": "2026-11-08T19:17:33.353",
   "desc": "The Productive Commerce  WordPress plugin before 1.1.54 does not sanitise and escape a parameter before using it in a SQL statement, allowing unauthenticated attackers to perform SQL injection attacks.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-89"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/4f6cf8d4-4c76-4cfe-be5c-030fa86e6926/"
@@ -204515,12 +204533,14 @@
  "CVE-2026-110132": {
   "id": "CVE-2026-110132",
   "published": "2026-11-08T06:17:04.557",
-  "modified": "2026-11-08T06:17:04.557",
+  "modified": "2026-11-08T19:17:33.670",
   "desc": "The Sync Post With Other Site WordPress plugin before 1.9.4 does not properly authorize a content-management action for post types other than pages, allowing users with Contributor-level access or above to create and modify arbitrary custom post types, including reassigning content authorship.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 4.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-863"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/5c68dd50-96a3-414c-8060-9f70bb87766f/"
@@ -204531,12 +204551,14 @@
  "CVE-2026-110963": {
   "id": "CVE-2026-110963",
   "published": "2026-11-08T06:17:04.673",
-  "modified": "2026-11-08T06:17:04.673",
+  "modified": "2026-11-08T19:17:33.837",
   "desc": "The Userplace  WordPress plugin through 1.2.0 does not perform authorization checks on an AJAX action available to unauthenticated users and publicly exposes the nonce that protects it, allowing unauthenticated attackers to create an administrator account or write arbitrary site options, leading to full site takeover.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-269"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/c30f71d3-2ec4-4bee-8864-f7c19cf6fcb7/"
@@ -204547,12 +204569,14 @@
  "CVE-2026-114432": {
   "id": "CVE-2026-114432",
   "published": "2026-11-08T06:17:04.807",
-  "modified": "2026-11-08T06:17:04.807",
+  "modified": "2026-11-08T19:17:34.347",
   "desc": "The Contact Form 7 WordPress plugin before 6.2.4 does not validate the type or extension of files uploaded through a form file field, and a flaw in its temporary-file cleanup leaves the uploaded file on disk, allowing unauthenticated users to upload arbitrary files to the site. On a stock Debian or Ubuntu Apache configuration, which lists directory contents and maps .phar to the PHP handler, the stored file can be located and executed, leading to Remote Code Execution. On other configurations, including nginx and Apache with .htaccess overrides enabled, the issue is limited to an arbitrary file written into the uploads directory, which may still be served as active content such as HTML or SVG from the site's own origin.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-434"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/6b0a5d1f-84fb-425f-8d37-ddde5703937c/"
@@ -204563,12 +204587,14 @@
  "CVE-2026-122060": {
   "id": "CVE-2026-122060",
   "published": "2026-11-08T06:17:04.957",
-  "modified": "2026-11-08T06:17:04.957",
+  "modified": "2026-11-08T19:17:37.443",
   "desc": "The WP Recipe Maker WordPress plugin before 10.9.2 does not check whether the post a recipe is embedded in is password protected before returning the recipe through its REST API and structured data output, allowing unauthenticated users to read the full content of recipes in password-protected posts.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/7436c1e7-16ce-438e-8734-dea0e6a9117a/"
@@ -204579,12 +204605,14 @@
  "CVE-2026-122062": {
   "id": "CVE-2026-122062",
   "published": "2026-11-08T06:17:05.097",
-  "modified": "2026-11-08T06:17:05.097",
+  "modified": "2026-11-08T19:17:37.610",
   "desc": "The Pronamic Pay WordPress plugin before 11.1.0, Pronamic Pay doneren met Mollie WordPress plugin before 1.7.1 do not restrict access to stored form submissions through the REST API, allowing unauthenticated users to read the messages that visitors submitted through the bundled forms.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/02674a18-1985-4a35-a59e-906ce4a61972/"
@@ -204595,12 +204623,14 @@
  "CVE-2026-122085": {
   "id": "CVE-2026-122085",
   "published": "2026-11-08T06:17:05.213",
-  "modified": "2026-11-08T06:17:05.213",
+  "modified": "2026-11-08T19:17:37.777",
   "desc": "The Event Tickets Manager for WooCommerce WordPress plugin before 1.6.0 does not perform authorisation or a valid nonce check on its ticket-transfer feature, which is available to unauthenticated users, allowing them to transfer other attendees' guest-checkout tickets to an email address of their choosing, invalidating the legitimate ticket and causing the victim's ticket PDF, which contains attendee personal data, to be sent to the attacker.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-639"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/470c82a9-cf42-49d8-9606-aaaa7c20679e/"
@@ -204611,12 +204641,14 @@
  "CVE-2026-85344": {
   "id": "CVE-2026-85344",
   "published": "2026-11-08T06:17:05.643",
-  "modified": "2026-11-08T06:17:05.643",
+  "modified": "2026-11-08T19:17:42.007",
   "desc": "The FV Flowplayer Video Player WordPress plugin before 7.5.57.7212 does not perform any authorization check on an AJAX action that carries out a site-wide content rewrite, so any authenticated user, including subscriber-level, can trigger a bulk modification of posts they should not be able to edit.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/2b899f0d-4ebe-4743-820e-32c106cc876a/"
@@ -204627,12 +204659,14 @@
  "CVE-2026-96961": {
   "id": "CVE-2026-96961",
   "published": "2026-11-08T06:17:05.763",
-  "modified": "2026-11-08T06:17:05.763",
+  "modified": "2026-11-08T19:17:52.793",
   "desc": "The Pie Register  WordPress plugin through 3.8.4.15 does not perform any capability, nonce or authentication check on one of its request handlers, allowing unauthenticated attackers to reset the Pie Register  WordPress plugin through 3.8.4.15's settings to their defaults (disabling registration security controls such as new-user email verification) and to destroy a Pie Register  WordPress plugin through 3.8.4.15 data table.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+  "cwe": [
+   "CWE-862"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/d7de0e99-2637-40a3-9cdd-b633363334e0/"
@@ -204643,12 +204677,14 @@
  "CVE-2026-96963": {
   "id": "CVE-2026-96963",
   "published": "2026-11-08T06:17:05.890",
-  "modified": "2026-11-08T06:17:05.890",
+  "modified": "2026-11-08T19:17:52.960",
   "desc": "The Pie Register  WordPress plugin through 3.8.4.15 does not perform an authorisation check in one of its AJAX actions, allowing users with a role as low as contributor to modify existing administrator-created invitation-code records.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 2.7,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/0501d724-f5cf-4b71-a463-0ab86b2ea8b5/"
@@ -204659,12 +204695,14 @@
  "CVE-2026-97192": {
   "id": "CVE-2026-97192",
   "published": "2026-11-08T06:17:06.003",
-  "modified": "2026-11-08T06:17:06.003",
+  "modified": "2026-11-08T19:17:53.147",
   "desc": "The Secure Custom Fields WordPress plugin before 6.9.8 does not re-apply its field-group location rules when persisting values submitted through the post editor save path, allowing users with contributor-level access and above to write custom fields the site restricted to administrators onto their own posts.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 2.7,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/e0ac5bc9-2450-4ff0-93d7-9111cf3efa36/"
@@ -204675,12 +204713,14 @@
  "CVE-2026-97193": {
   "id": "CVE-2026-97193",
   "published": "2026-11-08T06:17:06.127",
-  "modified": "2026-11-08T06:17:06.127",
+  "modified": "2026-11-08T19:17:53.487",
   "desc": "The Secure Custom Fields WordPress plugin before 6.9.8 does not verify that a user is allowed to edit the target object before writing to it during bidirectional relationship synchronization, allowing users with contributor-level access and above to add or remove a reference to their own object on arbitrary posts, users, or terms they cannot otherwise edit.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 2.7,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-639"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/5a5df7fe-138b-44ff-8ce4-bcffe743151f/"
@@ -204691,12 +204731,14 @@
  "CVE-2026-97194": {
   "id": "CVE-2026-97194",
   "published": "2026-11-08T06:17:06.240",
-  "modified": "2026-11-08T06:17:06.240",
+  "modified": "2026-11-08T19:17:53.690",
   "desc": "The Secure Custom Fields WordPress plugin before 6.9.8 does not perform a read-permission check when it renders and formats the values of its relational fields, allowing users with post-editing access (Contributor and above) to disclose the titles and non-public statuses of other users' unpublished posts.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 2.7,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/a3987e3b-fa56-4eb0-995d-e53536a336a8/"
@@ -204707,12 +204749,14 @@
  "CVE-2026-97195": {
   "id": "CVE-2026-97195",
   "published": "2026-11-08T06:17:06.350",
-  "modified": "2026-11-08T06:17:06.350",
+  "modified": "2026-11-08T19:17:53.907",
   "desc": "The Secure Custom Fields WordPress plugin before 6.9.8 does not sanitize a persisted field definition before emitting part of it as an HTML attribute name, allowing a user able to configure its fields to store a payload that executes as JavaScript in the browser of any user who views a page rendering the affected field, which on multisite lets a site administrator who lacks the unfiltered_html capability inject script into other users' sessions.",
-  "cvss": null,
-  "sev": null,
-  "vector": null,
-  "cwe": [],
+  "cvss": 3.5,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
   "products": [],
   "refs": [
    "https://wpscan.com/vulnerability/a2fb296c-e7f4-4a40-b503-aa709c7b88bb/"
@@ -206345,7 +206389,7 @@
  "CVE-2026-109899": {
   "id": "CVE-2026-109899",
   "published": "2026-11-08T16:16:36.603",
-  "modified": "2026-11-08T16:16:36.733",
+  "modified": "2026-11-08T19:17:33.113",
   "desc": "Missing Authorization vulnerability in Melapress Melapress Role Editor melapress-role-editor allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Melapress Role Editor: from n/a through 1.3.0.",
   "cvss": 7.1,
   "sev": "HIGH",
@@ -206363,7 +206407,7 @@
  "CVE-2026-109900": {
   "id": "CVE-2026-109900",
   "published": "2026-11-08T16:16:36.773",
-  "modified": "2026-11-08T16:16:36.890",
+  "modified": "2026-11-08T19:17:33.233",
   "desc": "Incorrect Privilege Assignment vulnerability in Melapress Melapress Role Editor melapress-role-editor allows Privilege Escalation.This issue affects Melapress Role Editor: from n/a through 1.3.0.",
   "cvss": 9.6,
   "sev": "CRITICAL",
@@ -206381,7 +206425,7 @@
  "CVE-2026-114186": {
   "id": "CVE-2026-114186",
   "published": "2026-11-08T16:16:36.930",
-  "modified": "2026-11-08T16:16:37.053",
+  "modified": "2026-11-08T19:17:34.000",
   "desc": "Missing Authorization vulnerability in WPVibes AnyWhere Elementor anywhere-elementor allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects AnyWhere Elementor: from n/a through 1.3.0.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -206399,7 +206443,7 @@
  "CVE-2026-114188": {
   "id": "CVE-2026-114188",
   "published": "2026-11-08T16:16:37.090",
-  "modified": "2026-11-08T16:16:37.210",
+  "modified": "2026-11-08T19:17:34.117",
   "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WPVibes AnyWhere Elementor anywhere-elementor allows Stored XSS.This issue affects AnyWhere Elementor: from n/a through 1.3.0.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -206417,7 +206461,7 @@
  "CVE-2026-114189": {
   "id": "CVE-2026-114189",
   "published": "2026-11-08T16:16:37.247",
-  "modified": "2026-11-08T16:16:37.363",
+  "modified": "2026-11-08T19:17:34.230",
   "desc": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in WPVibes AnyWhere Elementor anywhere-elementor allows Blind SQL Injection.This issue affects AnyWhere Elementor: from n/a through 1.3.0.",
   "cvss": 8.5,
   "sev": "HIGH",
@@ -206435,7 +206479,7 @@
  "CVE-2026-120858": {
   "id": "CVE-2026-120858",
   "published": "2026-11-08T16:16:37.400",
-  "modified": "2026-11-08T16:16:37.520",
+  "modified": "2026-11-08T19:17:37.063",
   "desc": "Missing Authorization vulnerability in WP ManageNinja LLC FluentForm fluentform allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects FluentForm: from n/a through 6.2.16.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -206453,7 +206497,7 @@
  "CVE-2026-61987": {
   "id": "CVE-2026-61987",
   "published": "2026-11-08T16:16:37.573",
-  "modified": "2026-11-08T16:16:37.700",
+  "modified": "2026-11-08T19:17:39.857",
   "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WC Lovers WCFM – Frontend Manager for WooCommerce wc-frontend-manager allows Stored XSS.This issue affects WCFM – Frontend Manager for WooCommerce: from n/a through 6.8.1.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -206788,6 +206832,1514 @@
   "products": [],
   "refs": [
    "https://www.ibm.com/support/pages/node/7295268"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101366": {
+  "id": "CVE-2026-101366",
+  "published": "2026-10-20T22:17:43.957",
+  "modified": "2026-11-08T19:17:29.390",
+  "desc": "Vulnerability in Oracle REST Data Services (component: ADP).  Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle REST Data Services.  Successful attacks of this vulnerability can result in  unauthorized read access to a subset of Oracle REST Data Services accessible data. CVSS 3.1 Base Score 4.3 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N).",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00282
+ },
+ "CVE-2026-101367": {
+  "id": "CVE-2026-101367",
+  "published": "2026-10-20T22:17:44.070",
+  "modified": "2026-11-08T19:17:30.600",
+  "desc": "Vulnerability in Oracle REST Data Services (component: ADP).  Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle REST Data Services.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle REST Data Services accessible data as well as  unauthorized read access to a subset of Oracle REST Data Services accessible data. CVSS 3.1 Base Score 5.4 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N).",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.0024
+ },
+ "CVE-2026-101368": {
+  "id": "CVE-2026-101368",
+  "published": "2026-10-20T22:17:44.180",
+  "modified": "2026-11-08T19:17:30.737",
+  "desc": "Vulnerability in Oracle REST Data Services (component: Backend-as-a-Service).  Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle REST Data Services.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle REST Data Services accessible data as well as  unauthorized read access to a subset of Oracle REST Data Services accessible data. CVSS 3.1 Base Score 5.4 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N).",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00238
+ },
+ "CVE-2026-101369": {
+  "id": "CVE-2026-101369",
+  "published": "2026-10-20T22:17:44.297",
+  "modified": "2026-11-08T20:17:19.960",
+  "desc": "Vulnerability in Oracle REST Data Services (component: Backend-as-a-Service).  Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle REST Data Services.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle REST Data Services, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle REST Data Services accessible data as well as  unauthorized read access to a subset of Oracle REST Data Services accessible data. CVSS 3.1 Base Score 6.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N).",
+  "cvss": 6.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00238
+ },
+ "CVE-2026-101370": {
+  "id": "CVE-2026-101370",
+  "published": "2026-10-20T22:17:44.420",
+  "modified": "2026-11-08T20:17:20.747",
+  "desc": "Vulnerability in Oracle REST Data Services (component: Core).  Supported versions that are affected are 24.2.0-26.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle REST Data Services.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in  unauthorized read access to a subset of Oracle REST Data Services accessible data. CVSS 3.1 Base Score 3.1 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N).",
+  "cvss": 3.1,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00228
+ },
+ "CVE-2026-101371": {
+  "id": "CVE-2026-101371",
+  "published": "2026-10-20T22:17:44.537",
+  "modified": "2026-11-08T20:17:20.887",
+  "desc": "Vulnerability in Oracle REST Data Services (component: Core).  Supported versions that are affected are 24.2.0-26.1.0. Difficult to exploit vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle REST Data Services.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle REST Data Services accessible data as well as  unauthorized read access to a subset of Oracle REST Data Services accessible data. CVSS 3.1 Base Score 3.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:N).",
+  "cvss": 3.1,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00186
+ },
+ "CVE-2026-101372": {
+  "id": "CVE-2026-101372",
+  "published": "2026-10-20T22:17:44.653",
+  "modified": "2026-11-08T20:17:21.030",
+  "desc": "Vulnerability in Oracle REST Data Services (component: Core).  Supported versions that are affected are 24.2.0-26.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle REST Data Services.  Successful attacks of this vulnerability can result in  unauthorized read access to a subset of Oracle REST Data Services accessible data. CVSS 3.1 Base Score 3.7 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N).",
+  "cvss": 3.7,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00258
+ },
+ "CVE-2026-101452": {
+  "id": "CVE-2026-101452",
+  "published": "2026-10-20T22:17:53.873",
+  "modified": "2026-11-08T20:17:21.173",
+  "desc": "Vulnerability in Oracle Autonomous Health Framework (component: AHF Instant Diagnostic Replay).  Supported versions that are affected are 26.3-26.8. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Autonomous Health Framework executes to compromise Oracle Autonomous Health Framework.  Successful attacks of this vulnerability can result in takeover of Oracle Autonomous Health Framework. CVSS 3.1 Base Score 7.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-269"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00151
+ },
+ "CVE-2026-101477": {
+  "id": "CVE-2026-101477",
+  "published": "2026-10-20T22:17:56.730",
+  "modified": "2026-11-08T20:17:21.317",
+  "desc": "Vulnerability in Oracle Autonomous Health Framework (component: Trace File Analyzer).  Supported versions that are affected are 26.3-26.8. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Autonomous Health Framework executes to compromise Oracle Autonomous Health Framework.  Successful attacks of this vulnerability can result in takeover of Oracle Autonomous Health Framework. CVSS 3.1 Base Score 7.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-269"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00162
+ },
+ "CVE-2026-101478": {
+  "id": "CVE-2026-101478",
+  "published": "2026-10-20T22:17:56.840",
+  "modified": "2026-11-08T20:17:21.460",
+  "desc": "Vulnerability in Oracle Autonomous Health Framework (component: Trace File Analyzer).  Supported versions that are affected are 26.3-26.8. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Autonomous Health Framework executes to compromise Oracle Autonomous Health Framework.  Successful attacks of this vulnerability can result in takeover of Oracle Autonomous Health Framework. CVSS 3.1 Base Score 7.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-269"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00162
+ },
+ "CVE-2026-101485": {
+  "id": "CVE-2026-101485",
+  "published": "2026-10-20T22:17:57.617",
+  "modified": "2026-11-08T20:17:21.603",
+  "desc": "Vulnerability in Oracle Autonomous Health Framework (component: Trace File Analyzer).  Supported versions that are affected are 26.3-26.8. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Autonomous Health Framework executes to compromise Oracle Autonomous Health Framework.  While the vulnerability is in Oracle Autonomous Health Framework, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Autonomous Health Framework accessible data. CVSS 3.1 Base Score 6.5 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N).",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00152
+ },
+ "CVE-2026-101493": {
+  "id": "CVE-2026-101493",
+  "published": "2026-10-20T22:17:58.537",
+  "modified": "2026-11-08T20:17:21.743",
+  "desc": "Vulnerability in Oracle REST Data Services (component: Core).  Supported versions that are affected are 24.2.0-26.2.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle REST Data Services.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle REST Data Services accessible data as well as  unauthorized read access to a subset of Oracle REST Data Services accessible data. CVSS 3.1 Base Score 5.4 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N).",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00251
+ },
+ "CVE-2026-101494": {
+  "id": "CVE-2026-101494",
+  "published": "2026-10-20T22:17:58.650",
+  "modified": "2026-11-08T20:17:21.883",
+  "desc": "Vulnerability in Oracle REST Data Services (component: Core).  Supported versions that are affected are 24.2.0-26.2.2. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle REST Data Services.  While the vulnerability is in Oracle REST Data Services, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle REST Data Services accessible data. CVSS 3.1 Base Score 7.7 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N).",
+  "cvss": 7.7,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00371
+ },
+ "CVE-2026-101498": {
+  "id": "CVE-2026-101498",
+  "published": "2026-10-20T22:17:58.987",
+  "modified": "2026-11-08T20:17:22.020",
+  "desc": "Vulnerability in Oracle Trusted Answer Search (component: PLSQL package).   The supported version that is affected is 26.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via Oracle Net to compromise Oracle Trusted Answer Search.  Successful attacks of this vulnerability can result in takeover of Oracle Trusted Answer Search. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00404
+ },
+ "CVE-2026-101504": {
+  "id": "CVE-2026-101504",
+  "published": "2026-10-20T22:17:59.670",
+  "modified": "2026-11-08T20:17:22.160",
+  "desc": "Vulnerability in Oracle Trusted Answer Search (component: Application expert UI).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Trusted Answer Search.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle Trusted Answer Search, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Trusted Answer Search accessible data as well as  unauthorized update, insert or delete access to some of Oracle Trusted Answer Search accessible data. CVSS 3.1 Base Score 7.6 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N).",
+  "cvss": 7.6,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00284
+ },
+ "CVE-2026-101505": {
+  "id": "CVE-2026-101505",
+  "published": "2026-10-20T22:17:59.777",
+  "modified": "2026-11-08T20:17:22.303",
+  "desc": "Vulnerability in Oracle Trusted Answer Search (component: Application expert UI).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Trusted Answer Search.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle Trusted Answer Search, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Trusted Answer Search accessible data as well as  unauthorized access to critical data or complete access to all Oracle Trusted Answer Search accessible data. CVSS 3.1 Base Score 8.7 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N).",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00353
+ },
+ "CVE-2026-101506": {
+  "id": "CVE-2026-101506",
+  "published": "2026-10-20T22:17:59.890",
+  "modified": "2026-11-08T20:17:22.443",
+  "desc": "Vulnerability in Oracle Trusted Answer Search (component: Application expert UI).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Trusted Answer Search.  While the vulnerability is in Oracle Trusted Answer Search, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Trusted Answer Search accessible data. CVSS 3.1 Base Score 7.7 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N).",
+  "cvss": 7.7,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00371
+ },
+ "CVE-2026-101507": {
+  "id": "CVE-2026-101507",
+  "published": "2026-10-20T22:18:00.007",
+  "modified": "2026-11-08T20:17:22.587",
+  "desc": "Vulnerability in Oracle Trusted Answer Search (component: PLSQL package).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Trusted Answer Search.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Trusted Answer Search accessible data. CVSS 3.1 Base Score 6.5 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N).",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00371
+ },
+ "CVE-2026-101522": {
+  "id": "CVE-2026-101522",
+  "published": "2026-10-20T22:18:01.590",
+  "modified": "2026-11-08T20:17:22.727",
+  "desc": "Vulnerability in Oracle TimesTen In-Memory Database (component: TimesTen IMDB).  Supported versions that are affected are 22.1-22.1.1.43.0. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle TimesTen In-Memory Database executes to compromise Oracle TimesTen In-Memory Database.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle TimesTen In-Memory Database accessible data. CVSS 3.1 Base Score 5.5 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N).",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00152
+ },
+ "CVE-2026-101548": {
+  "id": "CVE-2026-101548",
+  "published": "2026-10-20T22:18:04.443",
+  "modified": "2026-11-08T20:17:22.870",
+  "desc": "Vulnerability in Oracle Application Testing Suite (component: OpenScript).   The supported version that is affected is 13.3.0.1. Difficult to exploit vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Application Testing Suite executes to compromise Oracle Application Testing Suite.  Successful attacks of this vulnerability can result in takeover of Oracle Application Testing Suite. CVSS 3.1 Base Score 7.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+  "cvss": 7.0,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-269"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00126
+ },
+ "CVE-2026-101549": {
+  "id": "CVE-2026-101549",
+  "published": "2026-10-20T22:18:04.560",
+  "modified": "2026-11-08T20:17:23.010",
+  "desc": "Vulnerability in Oracle Application Testing Suite (component: OpenScript).   The supported version that is affected is 13.3.0.1. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Application Testing Suite executes to compromise Oracle Application Testing Suite.  Successful attacks of this vulnerability can result in takeover of Oracle Application Testing Suite. CVSS 3.1 Base Score 7.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-269"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00156
+ },
+ "CVE-2026-101573": {
+  "id": "CVE-2026-101573",
+  "published": "2026-10-20T22:18:10.537",
+  "modified": "2026-11-08T20:17:23.157",
+  "desc": "Vulnerability in the Helidon product of Oracle Fusion Middleware (component: helidon-security-providers-http-auth).  Supported versions that are affected are 3.0.0-3.2.21, 4.0.0-4.5.5 and 27.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Helidon.  While the vulnerability is in Helidon, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Helidon accessible data. CVSS 3.1 Base Score 6.8 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N).",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00257
+ },
+ "CVE-2026-101577": {
+  "id": "CVE-2026-101577",
+  "published": "2026-10-20T22:18:11.013",
+  "modified": "2026-11-08T20:17:23.463",
+  "desc": "Vulnerability in the Helidon product of Oracle Fusion Middleware (component: helidon-cors).  Supported versions that are affected are 4.0.0-4.5.5. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Helidon.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Helidon accessible data. CVSS 3.1 Base Score 3.1 (Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N).",
+  "cvss": 3.1,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-346"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.oracle.com/security-alerts/cpuoct2026.html"
+  ],
+  "kev": false,
+  "epss": 0.00217
+ },
+ "CVE-2026-120113": {
+  "id": "CVE-2026-120113",
+  "published": "2026-11-08T18:17:00.837",
+  "modified": "2026-11-08T18:17:00.950",
+  "desc": "IBM Aspera Connect 1.6.1 through 4.2.19 could allow a remote attacker to obtain sensitive information and modify host trust configuration due to missing authentication and overly permissive cross-origin access controls in the local HTTP service. By persuading a victim to visit a malicious web page, an attacker could perform unauthorized cross-origin requests to read and modify configuration.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-306"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295714"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120115": {
+  "id": "CVE-2026-120115",
+  "published": "2026-11-08T18:17:00.990",
+  "modified": "2026-11-08T18:17:01.100",
+  "desc": "IBM Aspera Connect 1.6.1 through 4.2.19 fails to consistently enforce origin verification across all REST API endpoints. An attacker who convinces a user to visit a malicious website could delete or inspect account configurations.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295714"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-12735": {
+  "id": "CVE-2026-12735",
+  "published": "2026-11-08T18:17:01.143",
+  "modified": "2026-11-08T18:17:01.253",
+  "desc": "IBM Controller Disclosure Management 1.0.0.0 could allow an attacker to obtain sensitive EXIF metadata from uploaded images due to improper removal of sensitive information before storage.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-212"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294527"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-12737": {
+  "id": "CVE-2026-12737",
+  "published": "2026-11-08T18:17:01.290",
+  "modified": "2026-11-08T18:17:01.407",
+  "desc": "IBM Sterling B2B Integrator 6.2.2.0 through 6.2.2.1_1 and IBM Sterling File Gateway 6.2.2.0 through 6.2.2.1_1 stores potentially sensitive information in log files that could be read by a local privileged user.",
+  "cvss": 4.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-532"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293719"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-14375": {
+  "id": "CVE-2026-14375",
+  "published": "2026-11-08T18:17:01.437",
+  "modified": "2026-11-08T18:17:01.550",
+  "desc": "IBM Storage Scale 5.2.3.0 through 5.2.3.8, and 6.0.1.0 does not validate or improperly validates TLS certificate validation when communicating with remote cluster GUI interfaces, which could allow an attacker to inject forged JSON responses using man in the middle techniques.",
+  "cvss": 5.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-295"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7291325"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-14377": {
+  "id": "CVE-2026-14377",
+  "published": "2026-11-08T18:17:01.590",
+  "modified": "2026-11-08T18:17:01.693",
+  "desc": "IBM Turbonomic kubeturbo agent 8.16.0 through 8.21.2 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293164"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-14434": {
+  "id": "CVE-2026-14434",
+  "published": "2026-11-08T18:17:01.727",
+  "modified": "2026-11-08T18:17:01.840",
+  "desc": "IBM Turbonomic kubeturbo agent 8.16.0 through 8.21.2 does not validate or improperly validates TLS certificate validation, which could allow an attacker to obtain sensitive information using man in the middle techniques.",
+  "cvss": 5.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-295"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7290680"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-14435": {
+  "id": "CVE-2026-14435",
+  "published": "2026-11-08T18:17:01.870",
+  "modified": "2026-11-08T18:17:01.977",
+  "desc": "IBM Turbonomic kubeturbo agent 8.16.0 through 8.20.3 does not validate or improperly validates TLS certificate validation, which could allow an attacker to obtain sensitive information using man in the middle techniques.",
+  "cvss": 5.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-295"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7290683"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-14437": {
+  "id": "CVE-2026-14437",
+  "published": "2026-11-08T18:17:02.010",
+  "modified": "2026-11-08T18:17:02.120",
+  "desc": "IBM Storage Scale 5.2.3.0 through 5.2.3.9 and 6.0.1.0 could allow a remote attacker to traverse directories on the system. An attacker could send a specially crafted URL request containing \"dot dot\" sequences (/../) to view arbitrary files on the system.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7291295"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-14469": {
+  "id": "CVE-2026-14469",
+  "published": "2026-11-08T18:17:02.157",
+  "modified": "2026-11-08T18:17:02.267",
+  "desc": "IBM Storage Scale 5.2.3.0 through 5.2.3.9 and 6.0.1.0  could allow an authenticated attacker to access and manipulate filesets beyond their control due to improper authorization.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7291295"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-14963": {
+  "id": "CVE-2026-14963",
+  "published": "2026-11-08T18:17:02.303",
+  "modified": "2026-11-08T18:17:02.413",
+  "desc": "IBM Cognos Command Center 10.2.4.1 and 10.2.5 could allow a remote attacker to execute unauthorized processes due to cross-site request forgery.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7290010"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-15266": {
+  "id": "CVE-2026-15266",
+  "published": "2026-11-08T18:17:02.450",
+  "modified": "2026-11-08T18:17:02.560",
+  "desc": "IBM Concert 1.0 through 3.0.1.1 contains components that allow potentially unsafe command execution, which could be exploited to run arbitrary system commands on the host.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294607"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-16325": {
+  "id": "CVE-2026-16325",
+  "published": "2026-11-08T18:17:02.593",
+  "modified": "2026-11-08T18:17:02.700",
+  "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary scripts due to improper neutralization of input in the X-Forwarded-Host header.",
+  "cvss": 4.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294270"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-16427": {
+  "id": "CVE-2026-16427",
+  "published": "2026-11-08T18:17:02.733",
+  "modified": "2026-11-08T18:17:02.840",
+  "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294270"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-16433": {
+  "id": "CVE-2026-16433",
+  "published": "2026-11-08T18:17:02.870",
+  "modified": "2026-11-08T18:17:02.977",
+  "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294270"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-16699": {
+  "id": "CVE-2026-16699",
+  "published": "2026-11-08T18:17:03.010",
+  "modified": "2026-11-08T18:17:03.123",
+  "desc": "IBM Netezza Appliance 11.3.0.2 Interim Fix 002 through 11.3.1.3 Interim Fix 006 could allow a remote authenticated attacker to change the passwords of other users due to improper authorization.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-285"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295200"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-17437": {
+  "id": "CVE-2026-17437",
+  "published": "2026-11-08T18:17:03.153",
+  "modified": "2026-11-08T18:17:03.267",
+  "desc": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.29 could allow a local attacker to perform an arbitrary file write due to improper validation of pathnames during archive extraction.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293001"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-17466": {
+  "id": "CVE-2026-17466",
+  "published": "2026-11-08T18:17:03.303",
+  "modified": "2026-11-08T18:17:03.410",
+  "desc": "IBM Optim 1.0.0, 1.1.0, and 1.2.0 could allow a remote authenticated attacker to obtain sensitive information due to path traversal.",
+  "cvss": 9.1,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7289719"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18093": {
+  "id": "CVE-2026-18093",
+  "published": "2026-11-08T18:17:03.440",
+  "modified": "2026-11-08T18:17:03.550",
+  "desc": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to broken access control.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295806"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18194": {
+  "id": "CVE-2026-18194",
+  "published": "2026-11-08T18:17:03.580",
+  "modified": "2026-11-08T18:17:03.697",
+  "desc": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to perform unauthorized actions due to missing anti-clickjacking controls.",
+  "cvss": 2.5,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-1021"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7291780"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18195": {
+  "id": "CVE-2026-18195",
+  "published": "2026-11-08T18:17:03.730",
+  "modified": "2026-11-08T18:17:03.840",
+  "desc": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to perform content spoofing due to improper output encoding of error messages.",
+  "cvss": 4.2,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293505"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18196": {
+  "id": "CVE-2026-18196",
+  "published": "2026-11-08T18:17:03.870",
+  "modified": "2026-11-08T18:17:03.980",
+  "desc": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to inject arbitrary HTML due to improper output neutralization.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293505"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18484": {
+  "id": "CVE-2026-18484",
+  "published": "2026-11-08T18:17:04.010",
+  "modified": "2026-11-08T18:17:04.123",
+  "desc": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow a remote authenticated attacker to cause a denial of service due to improper slug normalization causing tool name collisions.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-706"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294233"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18525": {
+  "id": "CVE-2026-18525",
+  "published": "2026-11-08T18:17:04.160",
+  "modified": "2026-11-08T18:17:04.270",
+  "desc": "IBM Secure Proxy 6.1.0.0 through 6.2.1.2 could allow a remote authenticated attacker to cause a denial of service due to improper validation of listener IP address and port.",
+  "cvss": 4.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-20"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7289712"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18546": {
+  "id": "CVE-2026-18546",
+  "published": "2026-11-08T18:17:04.307",
+  "modified": "2026-11-08T18:17:04.447",
+  "desc": "IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293292"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18668": {
+  "id": "CVE-2026-18668",
+  "published": "2026-11-08T18:17:04.483",
+  "modified": "2026-11-08T18:17:04.593",
+  "desc": "IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1 and  6.2.2.0 - 6.2.2.1_1 could allow a remote attacker to perform protocol downgrade attacks due to a security misconfiguration.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-693"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294084"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-76052": {
+  "id": "CVE-2026-76052",
+  "published": "2026-11-08T18:17:04.827",
+  "modified": "2026-11-08T18:17:04.940",
+  "desc": "IBM Storage Scale System 6.2.3.0 through 6.2.3.6, and 7.0.0.0 through 7.0.1.0 and IBM Storage Scale 6.0.0.0 through 6.0.1.0, and 5.2.3.0 through 5.2.3.8 could allow an attacker to leverage an undocumented flag to gain access to an unauthenticated path in the REST API.",
+  "cvss": 6.0,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-288"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295211"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18893": {
+  "id": "CVE-2026-18893",
+  "published": "2026-11-08T19:17:38.380",
+  "modified": "2026-11-08T19:17:38.500",
+  "desc": "IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to privilege escalation via user-defined function.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-269"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293292"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-19133": {
+  "id": "CVE-2026-19133",
+  "published": "2026-11-08T19:17:38.537",
+  "modified": "2026-11-08T19:17:38.663",
+  "desc": "IBM Storage TS4500 Library 1.1.1.6 through 1.12.0.3 could allow a remote authenticated attacker to perform unauthorized account takeover due to improper authorization.",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-285"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7292609"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-19307": {
+  "id": "CVE-2026-19307",
+  "published": "2026-11-08T19:17:38.697",
+  "modified": "2026-11-08T19:17:38.833",
+  "desc": "IBM Sterling B2B Integrator 6.2.1.0 through 6.2.1.2_1 and 6.2.2.0 through 6.2.2.1_1, and IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1 and 6.2.2.0 through 6.2.2.1_1 Standard Edition could allow a remote authenticated attacker to access unauthorized pages due to improper authorization.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-285"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293157"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-2477": {
+  "id": "CVE-2026-2477",
+  "published": "2026-11-08T19:17:39.377",
+  "modified": "2026-11-08T19:17:39.497",
+  "desc": "IBM watsonx Orchestrate Cartridge for Cloud Pak for Data 4.8.4 through 4.8.5, and 5.0.0 through 5.4.2 fails to enforce backend authorization checks, allowing low‑privileged users to directly invoke administrative API endpoints. This bypasses UI‑level access restrictions and may lead to unauthorized execution of privileged functions.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293785"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-2700": {
+  "id": "CVE-2026-2700",
+  "published": "2026-11-08T19:17:39.540",
+  "modified": "2026-11-08T19:17:39.653",
+  "desc": "IBM watsonx Orchestrate Cartridge for Cloud Pak for Data 4.8.4 through 4.8.5, and 5.0.0 through 5.4.2 allows low-privileged users to execute administrative functions by directly invoking backend APIs.As a result, UI-level access restrictions are ineffective, as the backend fails to enforce role-based access control.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293785"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-3684": {
+  "id": "CVE-2026-3684",
+  "published": "2026-11-08T19:17:39.690",
+  "modified": "2026-11-08T19:17:39.807",
+  "desc": "IBM Cloud Pak for Data System 11.3.1.2 Interim Fix 001 through - 11.3.1.2 Interim Fix 002 could allow a user with administrative privileges to read and write arbitrary files on the system due to incorrect permission assignments.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-266"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293239"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-6715": {
+  "id": "CVE-2026-6715",
+  "published": "2026-11-08T19:17:39.980",
+  "modified": "2026-11-08T19:17:40.093",
+  "desc": "IBM Concert 1.0 through 3.0.1.1 allows an attacker can supply crafted input that is incorporated into an operating system command without adequate validation or sanitization. Successful exploitation allows remote attackers to execute arbitrary commands on the underlying operating system with the privileges of the affected service.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294607"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-75879": {
+  "id": "CVE-2026-75879",
+  "published": "2026-11-08T19:17:40.133",
+  "modified": "2026-11-08T19:17:40.243",
+  "desc": "IBM Content Navigator 3.0.15.0, 26.0.0.0, 3.1.0.0, and 3.2.0.0 is vulnerable to LDAP injection. A remote authenticated attacker could send a specially crafted request that could allow enumeration of LDAP directory information.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295227"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-77153": {
+  "id": "CVE-2026-77153",
+  "published": "2026-11-08T19:17:40.290",
+  "modified": "2026-11-08T19:17:40.410",
+  "desc": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote unauthenticated attacker to obtain sensitive information from the Host-Based Printer Subsystem due to no authorization check. A bad actor could use this vulnerability to print files they should not be able to access.",
+  "cvss": 4.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294253"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-78537": {
+  "id": "CVE-2026-78537",
+  "published": "2026-11-08T19:17:40.457",
+  "modified": "2026-11-08T19:17:40.577",
+  "desc": "IBM Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2, 4.2.1, 5.0, and 5.1 could allow a local attacker to obtain sensitive information due to the use of a weak cryptographic algorithm.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+  "cwe": [
+   "CWE-327"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7292031"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-78636": {
+  "id": "CVE-2026-78636",
+  "published": "2026-11-08T19:17:40.620",
+  "modified": "2026-11-08T19:17:40.733",
+  "desc": "IBM WebSphere Application Server Liberty 17.0.0.3 through 26.0.0.10 is affected by an information disclosure vulnerability due to unsafe class reflection in the JMX REST connector body parser.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-470"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295268"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-80435": {
+  "id": "CVE-2026-80435",
+  "published": "2026-11-08T19:17:40.773",
+  "modified": "2026-11-08T19:17:40.893",
+  "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an XML external entity (XXE) injection flaw.",
+  "cvss": 5.0,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-611"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294270"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-81209": {
+  "id": "CVE-2026-81209",
+  "published": "2026-11-08T19:17:40.927",
+  "modified": "2026-11-08T19:17:41.047",
+  "desc": "IBM Sterling B2B Integrator 6.2.1.0 through 6.2.1.2_1, 6.2.2.0 - 6.2.2.1_1 and IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1, 6.2.2.0 - 6.2.2.1_1 Standard Edition could allow a remote authenticated attacker to obtain sensitive information due to improper logging of sensitive credentials.",
+  "cvss": 4.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-532"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293291"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-81542": {
+  "id": "CVE-2026-81542",
+  "published": "2026-11-08T19:17:41.090",
+  "modified": "2026-11-08T19:17:41.203",
+  "desc": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to delete arbitrary files due to path traversal.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:L",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294270"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-82830": {
+  "id": "CVE-2026-82830",
+  "published": "2026-11-08T19:17:41.240",
+  "modified": "2026-11-08T19:17:41.360",
+  "desc": "IBM Guardium Data Protection 12.2.4 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of argument delimiters.",
+  "cvss": 6.7,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:H/A:H",
+  "cwe": [
+   "CWE-88"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295791"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-84030": {
+  "id": "CVE-2026-84030",
+  "published": "2026-11-08T19:17:41.390",
+  "modified": "2026-11-08T19:17:41.520",
+  "desc": "IBM Guardium Data Protection 12.2.4 could allow a remote attacker to execute arbitrary SQL commands due to improper neutralization of special elements used in an SQL command.",
+  "cvss": 5.6,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295791"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-84228": {
+  "id": "CVE-2026-84228",
+  "published": "2026-11-08T19:17:41.557",
+  "modified": "2026-11-08T19:17:41.673",
+  "desc": "IBM Guardium Data Protection 12.2.4 could allow a remote authenticated attacker to obtain sensitive information due to improper input validation.",
+  "cvss": 3.1,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-20"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295791"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-84229": {
+  "id": "CVE-2026-84229",
+  "published": "2026-11-08T19:17:41.710",
+  "modified": "2026-11-08T19:17:41.820",
+  "desc": "IBM Guardium Data Protection 12.2.4 could allow a remote attacker to bypass security restrictions due to improper validation of CSRF tokens for GET requests.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295791"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-84237": {
+  "id": "CVE-2026-84237",
+  "published": "2026-11-08T19:17:41.853",
+  "modified": "2026-11-08T19:17:41.970",
+  "desc": "IBM Guardium Data Protection 12.2.4 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
+  "cvss": 3.1,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295791"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-8639": {
+  "id": "CVE-2026-8639",
+  "published": "2026-11-08T19:17:42.573",
+  "modified": "2026-11-08T19:17:42.693",
+  "desc": "IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 is vulnerable to session fixation. An attacker can establish a session and, after the victim authenticates, hijack the authenticated session to gain unauthorized access to the directory management console.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-384"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293828"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-8640": {
+  "id": "CVE-2026-8640",
+  "published": "2026-11-08T19:17:42.723",
+  "modified": "2026-11-08T19:17:42.837",
+  "desc": "IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 does not set the SameSite attribute on session cookies, making it vulnerable to Cross-Site Request Forgery (CSRF) attacks. An attacker can cause authenticated users' browsers to send unauthorized requests to the application.",
+  "cvss": 3.5,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293828"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-8642": {
+  "id": "CVE-2026-8642",
+  "published": "2026-11-08T19:17:42.870",
+  "modified": "2026-11-08T19:17:42.987",
+  "desc": "IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 exposes debug endpoints that disclose system information including server versions and session identifiers. This information can be used to identify vulnerable software versions.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293828"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-8860": {
+  "id": "CVE-2026-8860",
+  "published": "2026-11-08T19:17:43.020",
+  "modified": "2026-11-08T19:17:43.137",
+  "desc": "IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 accepts GET requests for authentication, allowing credentials to be passed as URL parameters. This causes passwords to be exposed in browser history and server logs.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-650"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293828"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-93005": {
+  "id": "CVE-2026-93005",
+  "published": "2026-11-08T19:17:43.177",
+  "modified": "2026-11-08T19:17:43.290",
+  "desc": "IBM Process Mining 2.0.0 through 2.2.1 could allow an authenticated attacker to cause a denial of service through insufficient rate limiting of email notifications, resulting in excessive emails being sent to targeted recipients.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294875"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-93879": {
+  "id": "CVE-2026-93879",
+  "published": "2026-11-08T19:17:43.763",
+  "modified": "2026-11-08T19:17:43.943",
+  "desc": "Hibernate Validator could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption resulting from improper escaping of user-controlled data in Expression Language (EL) expressions.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7293301"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-97677": {
+  "id": "CVE-2026-97677",
+  "published": "2026-11-08T19:17:54.077",
+  "modified": "2026-11-08T19:17:54.203",
+  "desc": "IBM Langflow OSS 1.0.0 through 1.12.2 An authenticated flow author could write attacker-controlled file content into any directory writable by the service account, bypassing the platform's local file access isolation safeguard. Via a crafted on-disk index, the attacker could also read the contents of arbitrary files accessible to the service process — including configuration files, secrets, or database files stored under the application's data directory.",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7290694"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-9764": {
+  "id": "CVE-2026-9764",
+  "published": "2026-11-08T19:17:54.247",
+  "modified": "2026-11-08T19:17:54.363",
+  "desc": "IBM Bob 1.0.4 through 2.0.1 could allow a remote attacker to inject arbitrary code on the system, due to the improper control of user input code.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7291535"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118904": {
+  "id": "CVE-2026-118904",
+  "published": "2026-11-08T20:17:23.980",
+  "modified": "2026-11-08T20:17:24.100",
+  "desc": "IBM webMethods Integration Server 12.1 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication.",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-287"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7295306"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-16682": {
+  "id": "CVE-2026-16682",
+  "published": "2026-11-08T20:17:24.137",
+  "modified": "2026-11-08T20:17:24.257",
+  "desc": "IBM Power Systems Firmware FW1120.00 through FW1120.01, FW1110.00 through FW1110.31, FW1060.00 through FW1060.81, OP940.00 through OP940.A2, OP910.00 through OP910.95, and OP940.00 through OP940.82 could allow a remote attacker to cause a denial of service due to improper handling of uninitialized resources.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-908"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294279"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-16697": {
+  "id": "CVE-2026-16697",
+  "published": "2026-11-08T20:17:24.323",
+  "modified": "2026-11-08T20:17:24.453",
+  "desc": "IBM Power Systems Firmware FW1060.00 through FW1060.81, OP940.00 through OP940.A2, OP910.00 through OP910.95, and  OP940.00 through OP940.82 could allow a remote attacker to cause a denial of service due to improper restriction of excessive computational resources.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294277"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-17426": {
+  "id": "CVE-2026-17426",
+  "published": "2026-11-08T20:17:24.510",
+  "modified": "2026-11-08T20:17:24.630",
+  "desc": "IBM Power Systems Firmware FW1060.00 through FW1060.81 could allow a remote attacker to cause a denial of service due to an unhandled exception.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-248"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7291689"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-17427": {
+  "id": "CVE-2026-17427",
+  "published": "2026-11-08T20:17:24.663",
+  "modified": "2026-11-08T20:17:24.790",
+  "desc": "IBM Power Systems Firmware FW1060.00 through FW1060.81, OP940.00 through OP940.A2, OP910.00 through OP910.95, and OP940.00 through OP940.82 could allow a remote attacker to cause a denial of service due to improper validation of input length.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-617"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7294278"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-95867": {
+  "id": "CVE-2026-95867",
+  "published": "2026-11-08T20:17:25.020",
+  "modified": "2026-11-08T20:17:25.143",
+  "desc": "IBM SevOne Network Performance Management 7.0.0 through 8.2.2 could allow a local attacker to execute arbitrary code due to a buffer overflow.",
+  "cvss": 6.7,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7289655"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-96146": {
+  "id": "CVE-2026-96146",
+  "published": "2026-11-08T20:17:25.193",
+  "modified": "2026-11-08T20:17:25.317",
+  "desc": "IBM SevOne Network Performance Management 7.0.0 through 8.2.2 could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.ibm.com/support/pages/node/7289655"
   ],
   "kev": false,
   "epss": null
