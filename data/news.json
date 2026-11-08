@@ -4102,5 +4102,29 @@
   "lang": "en",
   "date": "2026-11-07T14:10:19+00:00",
   "summary": "Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions. CTM360 reveals how these campaigns use deceptive verification steps and affiliate…"
+ },
+ "https://www.zataz.com/datasuckers-trois-suspects-arretes-apres-une-fuite/": {
+  "title": "DataSuckers : trois suspects arrêtés après une fuite",
+  "url": "https://www.zataz.com/datasuckers-trois-suspects-arretes-apres-une-fuite/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-08T14:16:04+00:00",
+  "summary": "Trois suspects liés à DataSuckers arrêtés après le piratage de Dodo Pizza et le vol de millions de données."
+ },
+ "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/": {
+  "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
+  "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-08T15:43:08+00:00",
+  "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used.…"
+ },
+ "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/": {
+  "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
+  "url": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-08T12:14:00+00:00",
+  "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek ."
  }
 }
