@@ -164772,7 +164772,7 @@
  "CVE-2026-105702": {
   "id": "CVE-2026-105702",
   "published": "2026-11-04T21:17:42.983",
-  "modified": "2026-11-04T21:17:43.120",
+  "modified": "2026-11-08T02:16:35.197",
   "desc": "IBM Db2 Genius Hub 1.1.2, 1.1.3, 1.1.4, 1.1.5 could allow a remote authenticated attacker to obtain sensitive information due to exposure of error messages containing internal implementation details.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -164790,7 +164790,7 @@
  "CVE-2026-105991": {
   "id": "CVE-2026-105991",
   "published": "2026-11-04T21:17:43.160",
-  "modified": "2026-11-04T21:17:43.283",
+  "modified": "2026-11-08T02:16:35.350",
   "desc": "IBM Db2 Genius Hub 1.1.2, 1.1.3, 1.1.4, 1.1.5 could allow a remote authenticated attacker to bypass security restrictions due to a missing Content Security Policy header.",
   "cvss": 3.5,
   "sev": "LOW",
@@ -164862,7 +164862,7 @@
  "CVE-2026-108838": {
   "id": "CVE-2026-108838",
   "published": "2026-11-04T21:17:47.283",
-  "modified": "2026-11-04T21:17:47.407",
+  "modified": "2026-11-08T02:16:35.483",
   "desc": "IBM Db2 Genius Hub 1.1.2, 1.1.3, 1.1.4, 1.1.5 could allow a local attacker to cause a denial of service due to uncontrolled resource consumption.",
   "cvss": 3.3,
   "sev": "LOW",
@@ -164880,7 +164880,7 @@
  "CVE-2026-108910": {
   "id": "CVE-2026-108910",
   "published": "2026-11-04T21:17:47.443",
-  "modified": "2026-11-04T21:17:47.570",
+  "modified": "2026-11-08T02:16:35.620",
   "desc": "IBM Db2 Genius Hub 1.1.2, 1.1.3, 1.1.4, 1.1.5 could allow a remote authenticated attacker to obtain sensitive information due to missing required cryptographic step.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -164914,7 +164914,7 @@
  "CVE-2026-110281": {
   "id": "CVE-2026-110281",
   "published": "2026-11-04T21:17:48.253",
-  "modified": "2026-11-04T21:17:48.373",
+  "modified": "2026-11-08T02:16:35.757",
   "desc": "IBM Db2 Genius Hub 1.1.2, 1.1.3, 1.1.4, 1.1.5 improperly validates TLS certificate validation, which could allow an attacker to obtain sensitive information using man in the middle technique.",
   "cvss": 5.9,
   "sev": "MEDIUM",
@@ -164950,7 +164950,7 @@
  "CVE-2026-110283": {
   "id": "CVE-2026-110283",
   "published": "2026-11-04T21:17:48.560",
-  "modified": "2026-11-04T21:17:48.680",
+  "modified": "2026-11-08T02:16:35.893",
   "desc": "IBM Db2 Genius Hub 1.1.2, 1.1.3, 1.1.4, 1.1.5 could allow a remote authenticated attacker to cause a denial of service due to improper validation of user-influenced resource identifiers.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -165006,7 +165006,7 @@
  "CVE-2026-116376": {
   "id": "CVE-2026-116376",
   "published": "2026-11-04T21:17:52.680",
-  "modified": "2026-11-04T21:17:52.800",
+  "modified": "2026-11-08T02:16:36.030",
   "desc": "IBM Db2 Genius Hub 1.1.2, 1.1.3, 1.1.4, 1.1.5 could allow a remote authenticated attacker to conduct a phishing attack due to an open redirect vulnerability.",
   "cvss": 3.4,
   "sev": "LOW",
@@ -165647,7 +165647,7 @@
  "CVE-2026-14252": {
   "id": "CVE-2026-14252",
   "published": "2026-11-04T21:18:12.447",
-  "modified": "2026-11-04T21:18:12.567",
+  "modified": "2026-11-08T02:16:57.617",
   "desc": "IBM MQ 9.2.0.0 through 9.2.0.44 LTS, 9.3.0.0 through 9.3.0.42 LTS, 9.4.0.0 through 9.4.0.26 LTS, 9.4.0.0 through 9.4.5.1 CD, and 10.0.0.0 through 10.0.0.5 LTS and CD stores potentially sensitive information in log files that could be read by a local user.",
   "cvss": 6.2,
   "sev": "MEDIUM",
@@ -165665,7 +165665,7 @@
  "CVE-2026-16725": {
   "id": "CVE-2026-16725",
   "published": "2026-11-04T21:18:12.860",
-  "modified": "2026-11-04T21:18:12.980",
+  "modified": "2026-11-08T02:16:58.657",
   "desc": "IBM Watson Speech Services Cartridge 4.0.0 through 5.4.0 could allow a remote authenticated attacker to read arbitrary files from the local filesystem due to path traversal.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -176099,7 +176099,7 @@
  "CVE-2026-123158": {
   "id": "CVE-2026-123158",
   "published": "2026-11-05T16:17:47.110",
-  "modified": "2026-11-06T05:18:26.710",
+  "modified": "2026-11-08T03:16:37.447",
   "desc": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
   "cvss": 8.1,
   "sev": "HIGH",
@@ -189333,7 +189333,7 @@
  "CVE-2026-123854": {
   "id": "CVE-2026-123854",
   "published": "2026-11-06T17:17:24.577",
-  "modified": "2026-11-07T05:18:19.247",
+  "modified": "2026-11-08T01:16:36.923",
   "desc": "In JetBrains PyCharm before 2026.3 code execution was possible in Safe Mode via a crafted Jupyter notebook widget module",
   "cvss": 5.5,
   "sev": "MEDIUM",
@@ -192975,7 +192975,7 @@
  "CVE-2026-16679": {
   "id": "CVE-2026-16679",
   "published": "2026-11-07T05:18:19.547",
-  "modified": "2026-11-07T05:18:19.687",
+  "modified": "2026-11-08T02:16:57.757",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to view arbitrary files on the system due to a path traversal vulnerability. A specially crafted URL request could allow directories outside the intended location to be accessed.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -193013,7 +193013,7 @@
  "CVE-2026-16710": {
   "id": "CVE-2026-16710",
   "published": "2026-11-07T05:18:19.893",
-  "modified": "2026-11-07T05:18:20.007",
+  "modified": "2026-11-08T02:16:57.887",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to a server-side request forgery vulnerability.",
   "cvss": 5.8,
   "sev": "MEDIUM",
@@ -193050,7 +193050,7 @@
  "CVE-2026-16712": {
   "id": "CVE-2026-16712",
   "published": "2026-11-07T05:18:20.210",
-  "modified": "2026-11-07T05:18:20.337",
+  "modified": "2026-11-08T02:16:58.013",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information from other tenants due to improper authorization. Identifiers supplied in requests are not sufficiently checked against the user's permissions, which could allow access to data belonging to other tenants.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -193088,7 +193088,7 @@
  "CVE-2026-16715": {
   "id": "CVE-2026-16715",
   "published": "2026-11-07T05:18:20.543",
-  "modified": "2026-11-07T05:18:20.680",
+  "modified": "2026-11-08T02:16:58.143",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information from other tenants due to broken object-level authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -193126,7 +193126,7 @@
  "CVE-2026-16717": {
   "id": "CVE-2026-16717",
   "published": "2026-11-07T05:18:21.347",
-  "modified": "2026-11-07T05:18:21.470",
+  "modified": "2026-11-08T02:16:58.277",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -193144,7 +193144,7 @@
  "CVE-2026-16718": {
   "id": "CVE-2026-16718",
   "published": "2026-11-07T05:18:21.523",
-  "modified": "2026-11-07T05:18:21.670",
+  "modified": "2026-11-08T02:16:58.407",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper validation of file paths.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -193163,7 +193163,7 @@
  "CVE-2026-16719": {
   "id": "CVE-2026-16719",
   "published": "2026-11-07T05:18:21.710",
-  "modified": "2026-11-07T05:18:21.843",
+  "modified": "2026-11-08T02:16:58.530",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to view arbitrary files on the system due to a path traversal vulnerability. A specially crafted URL request could allow directories outside the intended location to be accessed.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -193201,7 +193201,7 @@
  "CVE-2026-16854": {
   "id": "CVE-2026-16854",
   "published": "2026-11-07T05:18:22.067",
-  "modified": "2026-11-07T05:18:22.200",
+  "modified": "2026-11-08T02:16:58.817",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information belonging to other tenants due to an injection vulnerability. Input used to build a data query is not properly neutralized, which could allow the query to return data the user is not permitted to see.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -193349,7 +193349,7 @@
  "CVE-2026-17064": {
   "id": "CVE-2026-17064",
   "published": "2026-11-07T05:18:23.557",
-  "modified": "2026-11-07T05:18:23.733",
+  "modified": "2026-11-08T02:16:58.947",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to an insecure direct object reference.",
   "cvss": 5.0,
   "sev": "MEDIUM",
@@ -193424,7 +193424,7 @@
  "CVE-2026-17098": {
   "id": "CVE-2026-17098",
   "published": "2026-11-07T05:18:24.493",
-  "modified": "2026-11-07T05:18:24.703",
+  "modified": "2026-11-08T02:16:59.070",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information due to verbose error messages.",
   "cvss": 5.3,
   "sev": "MEDIUM",
@@ -193461,7 +193461,7 @@
  "CVE-2026-17112": {
   "id": "CVE-2026-17112",
   "published": "2026-11-07T05:18:25.040",
-  "modified": "2026-11-07T05:18:25.297",
+  "modified": "2026-11-08T02:16:59.197",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information belonging to other tenants due to broken object-level authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -193518,7 +193518,7 @@
  "CVE-2026-17128": {
   "id": "CVE-2026-17128",
   "published": "2026-11-07T05:18:25.833",
-  "modified": "2026-11-07T05:18:25.983",
+  "modified": "2026-11-08T02:16:59.327",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to the insertion of sensitive information into log files.",
   "cvss": 6.8,
   "sev": "MEDIUM",
@@ -193608,7 +193608,7 @@
  "CVE-2026-17137": {
   "id": "CVE-2026-17137",
   "published": "2026-11-07T05:18:26.830",
-  "modified": "2026-11-07T05:18:26.983",
+  "modified": "2026-11-08T02:16:59.450",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a local attacker to obtain sensitive information due to improper use of cryptography. The encryption applied to stored data is not implemented with sufficient strength, which weakens its protection.",
   "cvss": 4.0,
   "sev": "MEDIUM",
@@ -193683,7 +193683,7 @@
  "CVE-2026-17144": {
   "id": "CVE-2026-17144",
   "published": "2026-11-07T05:18:27.640",
-  "modified": "2026-11-07T05:18:27.800",
+  "modified": "2026-11-08T02:16:59.570",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper input validation.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -193906,7 +193906,7 @@
  "CVE-2026-17202": {
   "id": "CVE-2026-17202",
   "published": "2026-11-07T05:18:30.033",
-  "modified": "2026-11-07T05:18:30.220",
+  "modified": "2026-11-08T02:16:59.700",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to enumerate usernames due to observable differences in response behavior.",
   "cvss": 5.3,
   "sev": "MEDIUM",
@@ -193924,7 +193924,7 @@
  "CVE-2026-17211": {
   "id": "CVE-2026-17211",
   "published": "2026-11-07T05:18:30.283",
-  "modified": "2026-11-07T05:18:30.443",
+  "modified": "2026-11-08T02:16:59.827",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to cause a denial of service due to incorrect type conversion. A value is converted incorrectly between two different types, which could cause the service to return invalid responses or become unavailable.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -193962,7 +193962,7 @@
  "CVE-2026-17215": {
   "id": "CVE-2026-17215",
   "published": "2026-11-07T05:18:30.683",
-  "modified": "2026-11-07T05:18:30.820",
+  "modified": "2026-11-08T02:16:59.953",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to verbose error messages. Error responses contain more information about the system than necessary, which could help an attacker learn about the environment.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -194188,7 +194188,7 @@
  "CVE-2026-17241": {
   "id": "CVE-2026-17241",
   "published": "2026-11-07T05:18:33.037",
-  "modified": "2026-11-07T05:18:33.183",
+  "modified": "2026-11-08T02:17:00.087",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper authorization.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -194244,7 +194244,7 @@
  "CVE-2026-17279": {
   "id": "CVE-2026-17279",
   "published": "2026-11-07T05:18:33.637",
-  "modified": "2026-11-07T05:18:33.797",
+  "modified": "2026-11-08T02:17:00.220",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to cause a denial of service due to uncontrolled resource consumption. Certain requests can cause internal processing to stall, which could make the service unavailable.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -194282,7 +194282,7 @@
  "CVE-2026-17281": {
   "id": "CVE-2026-17281",
   "published": "2026-11-07T05:18:34.100",
-  "modified": "2026-11-07T05:18:34.247",
+  "modified": "2026-11-08T02:17:00.350",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -194301,7 +194301,7 @@
  "CVE-2026-17282": {
   "id": "CVE-2026-17282",
   "published": "2026-11-07T05:18:34.297",
-  "modified": "2026-11-07T05:18:34.467",
+  "modified": "2026-11-08T02:17:00.473",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -194320,7 +194320,7 @@
  "CVE-2026-17283": {
   "id": "CVE-2026-17283",
   "published": "2026-11-07T05:18:34.520",
-  "modified": "2026-11-07T05:18:34.680",
+  "modified": "2026-11-08T02:17:00.600",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -194358,7 +194358,7 @@
  "CVE-2026-17285": {
   "id": "CVE-2026-17285",
   "published": "2026-11-07T05:18:34.963",
-  "modified": "2026-11-07T05:18:35.130",
+  "modified": "2026-11-08T02:17:00.727",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper validation of external references. When schemas are validated, references to external resources are not sufficiently restricted, which could allow the server to retrieve content it should not access.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -194415,7 +194415,7 @@
  "CVE-2026-17289": {
   "id": "CVE-2026-17289",
   "published": "2026-11-07T05:18:35.620",
-  "modified": "2026-11-07T05:18:35.807",
+  "modified": "2026-11-08T02:17:00.850",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -194529,7 +194529,7 @@
  "CVE-2026-17295": {
   "id": "CVE-2026-17295",
   "published": "2026-11-07T05:18:36.943",
-  "modified": "2026-11-07T05:18:37.097",
+  "modified": "2026-11-08T02:17:00.990",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to path traversal.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -194643,7 +194643,7 @@
  "CVE-2026-17302": {
   "id": "CVE-2026-17302",
   "published": "2026-11-07T05:18:38.103",
-  "modified": "2026-11-07T05:18:38.250",
+  "modified": "2026-11-08T02:17:01.137",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to probe internal network services due to improper validation of a user-supplied URL.",
   "cvss": 5.0,
   "sev": "MEDIUM",
@@ -194735,7 +194735,7 @@
  "CVE-2026-17307": {
   "id": "CVE-2026-17307",
   "published": "2026-11-07T05:18:39.020",
-  "modified": "2026-11-07T05:18:39.170",
+  "modified": "2026-11-08T02:17:01.253",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -194790,7 +194790,7 @@
  "CVE-2026-17310": {
   "id": "CVE-2026-17310",
   "published": "2026-11-07T05:18:39.580",
-  "modified": "2026-11-07T05:18:39.730",
+  "modified": "2026-11-08T02:17:01.383",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information due to the use of a hard-coded cryptographic key.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -194862,7 +194862,7 @@
  "CVE-2026-17314": {
   "id": "CVE-2026-17314",
   "published": "2026-11-07T05:18:40.353",
-  "modified": "2026-11-07T05:18:40.497",
+  "modified": "2026-11-08T02:17:01.513",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery.",
   "cvss": 5.0,
   "sev": "MEDIUM",
@@ -194934,7 +194934,7 @@
  "CVE-2026-17318": {
   "id": "CVE-2026-17318",
   "published": "2026-11-07T05:18:41.127",
-  "modified": "2026-11-07T05:18:41.277",
+  "modified": "2026-11-08T02:17:01.633",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -194971,7 +194971,7 @@
  "CVE-2026-17320": {
   "id": "CVE-2026-17320",
   "published": "2026-11-07T05:18:41.520",
-  "modified": "2026-11-07T05:18:41.673",
+  "modified": "2026-11-08T02:17:01.760",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to an insecure direct object reference.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -195026,7 +195026,7 @@
  "CVE-2026-17323": {
   "id": "CVE-2026-17323",
   "published": "2026-11-07T05:18:42.120",
-  "modified": "2026-11-07T05:18:42.260",
+  "modified": "2026-11-08T02:17:01.883",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information due to XML external entity (XXE) injection.",
   "cvss": 8.2,
   "sev": "HIGH",
@@ -195171,7 +195171,7 @@
  "CVE-2026-17331": {
   "id": "CVE-2026-17331",
   "published": "2026-11-07T05:18:43.647",
-  "modified": "2026-11-07T05:18:43.780",
+  "modified": "2026-11-08T02:17:02.000",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to read arbitrary files on the server due to external control of a file name or path.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -195425,7 +195425,7 @@
  "CVE-2026-17345": {
   "id": "CVE-2026-17345",
   "published": "2026-11-07T05:18:46.513",
-  "modified": "2026-11-07T05:18:46.647",
+  "modified": "2026-11-08T02:17:02.130",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper neutralization of special elements used in an SQL command.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -195609,7 +195609,7 @@
  "CVE-2026-17361": {
   "id": "CVE-2026-17361",
   "published": "2026-11-07T05:18:48.390",
-  "modified": "2026-11-07T05:18:48.533",
+  "modified": "2026-11-08T02:17:02.257",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -195627,7 +195627,7 @@
  "CVE-2026-17363": {
   "id": "CVE-2026-17363",
   "published": "2026-11-07T05:18:48.710",
-  "modified": "2026-11-07T05:18:48.850",
+  "modified": "2026-11-08T02:17:02.393",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to SQL injection.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -195665,7 +195665,7 @@
  "CVE-2026-17366": {
   "id": "CVE-2026-17366",
   "published": "2026-11-07T05:18:49.060",
-  "modified": "2026-11-07T05:18:49.217",
+  "modified": "2026-11-08T02:17:02.527",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 5.0,
   "sev": "MEDIUM",
@@ -195703,7 +195703,7 @@
  "CVE-2026-17368": {
   "id": "CVE-2026-17368",
   "published": "2026-11-07T05:18:49.443",
-  "modified": "2026-11-07T05:18:49.593",
+  "modified": "2026-11-08T02:17:02.660",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to perform network reconnaissance and obtain sensitive credentials due to server-side request forgery. The server can be made to send requests to unintended destinations and return the results.",
   "cvss": 6.8,
   "sev": "MEDIUM",
@@ -195760,7 +195760,7 @@
  "CVE-2026-17371": {
   "id": "CVE-2026-17371",
   "published": "2026-11-07T05:18:50.023",
-  "modified": "2026-11-07T05:18:50.173",
+  "modified": "2026-11-08T02:17:02.790",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 5.0,
   "sev": "MEDIUM",
@@ -195798,7 +195798,7 @@
  "CVE-2026-17373": {
   "id": "CVE-2026-17373",
   "published": "2026-11-07T05:18:50.430",
-  "modified": "2026-11-07T05:18:50.573",
+  "modified": "2026-11-08T02:17:02.930",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -195817,7 +195817,7 @@
  "CVE-2026-17374": {
   "id": "CVE-2026-17374",
   "published": "2026-11-07T05:18:50.613",
-  "modified": "2026-11-07T05:18:50.757",
+  "modified": "2026-11-08T02:17:03.063",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -195836,7 +195836,7 @@
  "CVE-2026-17375": {
   "id": "CVE-2026-17375",
   "published": "2026-11-07T05:18:50.800",
-  "modified": "2026-11-07T05:18:50.950",
+  "modified": "2026-11-08T02:17:03.200",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper authorization. Authorization decisions rely on information supplied by the client, which could allow access to information the user should not see.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -195855,7 +195855,7 @@
  "CVE-2026-17376": {
   "id": "CVE-2026-17376",
   "published": "2026-11-07T05:18:50.997",
-  "modified": "2026-11-07T05:18:51.130",
+  "modified": "2026-11-08T02:17:03.330",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -195893,7 +195893,7 @@
  "CVE-2026-17378": {
   "id": "CVE-2026-17378",
   "published": "2026-11-07T05:18:51.370",
-  "modified": "2026-11-07T05:18:51.513",
+  "modified": "2026-11-08T02:17:03.457",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -195988,7 +195988,7 @@
  "CVE-2026-17383": {
   "id": "CVE-2026-17383",
   "published": "2026-11-07T05:18:52.323",
-  "modified": "2026-11-07T05:18:52.457",
+  "modified": "2026-11-08T02:17:03.587",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information from other tenants due to broken object-level authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -196062,7 +196062,7 @@
  "CVE-2026-17387": {
   "id": "CVE-2026-17387",
   "published": "2026-11-07T05:18:53.060",
-  "modified": "2026-11-07T05:18:53.207",
+  "modified": "2026-11-08T02:17:03.707",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -196100,7 +196100,7 @@
  "CVE-2026-17389": {
   "id": "CVE-2026-17389",
   "published": "2026-11-07T05:18:53.460",
-  "modified": "2026-11-07T05:18:53.640",
+  "modified": "2026-11-08T02:17:03.833",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information from the connected LDAP directory due to LDAP injection. Input is not properly neutralized in directory lookups, which could cause queries to return additional data.",
   "cvss": 5.3,
   "sev": "MEDIUM",
@@ -196138,7 +196138,7 @@
  "CVE-2026-17391": {
   "id": "CVE-2026-17391",
   "published": "2026-11-07T05:18:53.913",
-  "modified": "2026-11-07T05:18:54.070",
+  "modified": "2026-11-08T02:17:03.963",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization.",
   "cvss": 6.3,
   "sev": "MEDIUM",
@@ -196176,7 +196176,7 @@
  "CVE-2026-17393": {
   "id": "CVE-2026-17393",
   "published": "2026-11-07T05:18:54.353",
-  "modified": "2026-11-07T05:18:54.547",
+  "modified": "2026-11-08T02:17:04.090",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 could allow a local attacker to obtain sensitive information due to the use of a cryptographically weak pseudo-random number generator.",
   "cvss": 5.1,
   "sev": "MEDIUM",
@@ -196308,7 +196308,7 @@
  "CVE-2026-17400": {
   "id": "CVE-2026-17400",
   "published": "2026-11-07T05:18:56.020",
-  "modified": "2026-11-07T05:18:56.187",
+  "modified": "2026-11-08T02:17:04.213",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to SQL injection.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -196479,7 +196479,7 @@
  "CVE-2026-17409": {
   "id": "CVE-2026-17409",
   "published": "2026-11-07T05:18:58.157",
-  "modified": "2026-11-07T05:18:58.353",
+  "modified": "2026-11-08T02:17:04.330",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to execute unauthorized administrative operations and obtain sensitive information due to improper handling of case sensitivity. Access controls are not applied consistently to all variations of a request, which could allow restricted operations to be reached.",
   "cvss": 9.4,
   "sev": "CRITICAL",
@@ -196536,7 +196536,7 @@
  "CVE-2026-17428": {
   "id": "CVE-2026-17428",
   "published": "2026-11-07T05:18:58.883",
-  "modified": "2026-11-07T05:18:59.067",
+  "modified": "2026-11-08T02:17:04.457",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper authorization. Values supplied in the request URL are used in authorization decisions without sufficient verification, which could allow access to information belonging to others.",
   "cvss": 5.0,
   "sev": "MEDIUM",
@@ -196555,7 +196555,7 @@
  "CVE-2026-18535": {
   "id": "CVE-2026-18535",
   "published": "2026-11-07T05:18:59.120",
-  "modified": "2026-11-07T05:18:59.300",
+  "modified": "2026-11-08T02:17:04.583",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 are vulnerable to a Regular Expression Denial of Service (ReDoS) attack and to improper neutralisation of wildcard query operators.",
   "cvss": 9.6,
   "sev": "CRITICAL",
@@ -196574,7 +196574,7 @@
  "CVE-2026-18689": {
   "id": "CVE-2026-18689",
   "published": "2026-11-07T05:18:59.360",
-  "modified": "2026-11-07T05:18:59.547",
+  "modified": "2026-11-08T02:17:04.717",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow an authenticated user to obtain limited information about other organizations due to incorrect authorization. A token issued for a limited purpose is accepted where it should not be, which could reveal the names of other organizations.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -196666,7 +196666,7 @@
  "CVE-2026-19124": {
   "id": "CVE-2026-19124",
   "published": "2026-11-07T05:19:00.337",
-  "modified": "2026-11-07T05:19:00.480",
+  "modified": "2026-11-08T02:17:04.847",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 could allow an attacker with access to stored data to decrypt sensitive credentials due to the use of a hard-coded cryptographic key. The key protecting stored credentials is built into the product, so credentials could be decrypted if the stored data is obtained.",
   "cvss": 6.8,
   "sev": "MEDIUM",
@@ -196684,7 +196684,7 @@
  "CVE-2026-19126": {
   "id": "CVE-2026-19126",
   "published": "2026-11-07T05:19:00.530",
-  "modified": "2026-11-07T05:19:00.667",
+  "modified": "2026-11-08T02:17:04.977",
   "desc": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information.",
   "cvss": 5.9,
   "sev": "MEDIUM",
@@ -196703,7 +196703,7 @@
  "CVE-2026-19128": {
   "id": "CVE-2026-19128",
   "published": "2026-11-07T05:19:00.717",
-  "modified": "2026-11-07T05:19:00.870",
+  "modified": "2026-11-08T02:17:05.110",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow an authenticated attacker to send unauthorized requests from the system due to server-side request forgery. This could be used to enumerate network resources or to support further attacks.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -196740,7 +196740,7 @@
  "CVE-2026-19131": {
   "id": "CVE-2026-19131",
   "published": "2026-11-07T05:19:01.100",
-  "modified": "2026-11-07T05:19:01.250",
+  "modified": "2026-11-08T02:17:05.233",
   "desc": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow low-privileged users to query arbitrary indices and read sensitive data due to missing authorization.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -199212,7 +199212,7 @@
  "CVE-2026-104768": {
   "id": "CVE-2026-104768",
   "published": "2026-11-07T12:17:41.793",
-  "modified": "2026-11-07T12:17:41.910",
+  "modified": "2026-11-08T01:16:36.790",
   "desc": "The AutomatorWP – No-Code Workflow Automation, Integration & Webhooks Plugin, now with AI plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 6.0.4. This is due to missing privilege-ceiling validation in the `create_user()` function within the anonymous-user action (and equally in the Create User and Add/Change Role WordPress-integration actions), which verify only that the submitted role exists via `automatorwp_get_editable_roles()` without confirming the role falls at or below the acting context's privilege level — allowing attacker-controlled trigger tag data (e.g., a `{comment_author}` tag bound to the Role option) to supply any role, including `administrator`, unchallenged. This makes it possible for unauthenticated attackers to create a new administrator-role account tied to an attacker-controlled email address, receiving the generated password via WordPress's new-user notification email and thereby gaining full administrative access to the site. Exploitation requires the site to have an anonymous automation configured with the Role option bound to a dynamic trigger tag such as `{comment_author}`, and is triggered when a site administrator performs the routine action of approving a comment — an action that provides no in-UI indication that it will mint a new privileged account from the comment author field.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -201969,6 +201969,2773 @@
   "refs": [
    "https://plugins.trac.wordpress.org/changeset/3709549/",
    "https://www.wordfence.com/threat-intel/vulnerabilities/id/9aa4bcc1-3c9e-451e-81ed-2059882b2ef1?source=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123493": {
+  "id": "CVE-2026-123493",
+  "published": "2026-11-08T02:16:36.183",
+  "modified": "2026-11-08T02:16:36.350",
+  "desc": "Vikunja from 2.4.0 before 2.7.1 contains an authentication bypass vulnerability that allows disabled or locked users to retain access through API tokens owned by their bot users. Because token validation only checks the bot's own status, attackers holding pre-minted bot tokens can keep reading and modifying shared projects via the HTTP API, CalDAV, MCP and feeds.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-613"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-5fc2-w2j4-6r8w",
+   "https://www.vulncheck.com/advisories/vikunja-from-2.4.0-before-2.7.1-authentication-bypass-via-bot-api-tokens"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123494": {
+  "id": "CVE-2026-123494",
+  "published": "2026-11-08T02:16:36.413",
+  "modified": "2026-11-08T02:16:36.753",
+  "desc": "Vikunja before 2.7.1 contains a cross-site request forgery vulnerability that allows attackers to import their data into a victim's account because the Todoist, Microsoft To Do, and Trello migration OAuth callbacks lack a bound state parameter. Attackers can authorize their own account, keep the unused callback code or token, and lure a logged-in victim to the migration callback route to auto-import attacker-chosen projects and tasks containing phishing links.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-xgw3-ccqg-f6ww",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-login-csrf-via-migration-oauth-callbacks"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123495": {
+  "id": "CVE-2026-123495",
+  "published": "2026-11-08T02:16:36.800",
+  "modified": "2026-11-08T02:16:36.923",
+  "desc": "Vikunja 2.0.0 before 2.7.1 accepts form-encoded bodies on the /api/v2 login and OIDC callback endpoints without CSRF or Origin checks, enabling login cross-site request forgery. An attacker with an account can lure a victim to a page posting the attacker's credentials or OIDC code, switching the victim into the attacker's account and exposing data the victim then adds.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-frf4-3prf-3vch",
+   "https://www.vulncheck.com/advisories/vikunja-2.0.0-before-2.7.1-login-csrf-via-api-v2-login-and-oidc-callback"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123496": {
+  "id": "CVE-2026-123496",
+  "published": "2026-11-08T02:16:36.977",
+  "modified": "2026-11-08T02:16:37.110",
+  "desc": "Vikunja veans before 2.7.1 contains a symlink following vulnerability that allows attackers to make veans init write files outside the repository via crafted repo symlinks. Attackers can ship symlinked .veans.yml, .claude, or .opencode entries to overwrite user files like ~/.bashrc or install veans hooks and plugins globally.",
+  "cvss": 4.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-59"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-rxwp-q2qg-98vw",
+   "https://www.vulncheck.com/advisories/vikunja-veans-before-2.7.1-symlink-following-in-veans-init"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123497": {
+  "id": "CVE-2026-123497",
+  "published": "2026-11-08T02:16:37.160",
+  "modified": "2026-11-08T02:16:37.287",
+  "desc": "Vikunja veans before 2.7.1 contains a protocol downgrade vulnerability in serverCandidates that allows on-path attackers to force plain HTTP during veans init and login. Attackers can block HTTPS ports so discovery accepts an unverified HTTP response, capturing passwords, TOTP codes or bot tokens and persisting cleartext API traffic.",
+  "cvss": 7.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-319"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-wqw2-rgwv-99qx",
+   "https://www.vulncheck.com/advisories/vikunja-veans-before-2.7.1-https-to-http-downgrade-in-server-discovery"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123498": {
+  "id": "CVE-2026-123498",
+  "published": "2026-11-08T02:16:37.340",
+  "modified": "2026-11-08T02:16:37.457",
+  "desc": "Vikunja veans before 2.7.1 contains a prompt injection vulnerability that allows project members with write access to inject instructions by setting project titles or task content rendered verbatim inside the coding agent's authoritative instruction block. Attackers can craft ProjectTitle or task descriptions that the prime hook loads on SessionStart and PreCompact, causing the agent to modify the developer's checkout or run commands.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-cvh3-hf56-g9xm",
+   "https://www.vulncheck.com/advisories/vikunja-veans-before-2.7.1-prompt-injection-via-project-and-task-metadata"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123499": {
+  "id": "CVE-2026-123499",
+  "published": "2026-11-08T02:16:37.510",
+  "modified": "2026-11-08T02:16:37.633",
+  "desc": "Vikunja veans before 2.7.1 contains a credential exposure vulnerability that allows malicious repository authors to capture API tokens by specifying an attacker-controlled server in .veans.yml. When veans runs in an untrusted checkout, it sends VEANS_TOKEN as a Bearer token, or login passwords, TOTP codes and tokens, to that server, granting attackers the victim's Vikunja access.",
+  "cvss": 6.0,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-346"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-3rrq-h284-5vpx",
+   "https://www.vulncheck.com/advisories/vikunja-veans-before-2.7.1-credential-leak-via-repo-controlled-veans-yml-server"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123500": {
+  "id": "CVE-2026-123500",
+  "published": "2026-11-08T02:16:37.680",
+  "modified": "2026-11-08T02:16:37.807",
+  "desc": "Vikunja before 2.7.1 contains an insecure file permissions vulnerability that allows local users to read dump archives created with umask permissions by the vikunja dump command. Local attackers on a shared host can read the world-readable zip in the rootpath to obtain config, password hashes, TOTP secrets, tokens, and stored files.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-276"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-rp64-xg8g-9mpr",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-insecure-permissions-on-dump-archive-via-vikunja-dump"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123501": {
+  "id": "CVE-2026-123501",
+  "published": "2026-11-08T02:16:37.853",
+  "modified": "2026-11-08T02:16:37.987",
+  "desc": "Vikunja before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows authenticated users to exhaust server memory through concurrent image decodes in avatar and background uploads. Attackers can send several parallel tiny, highly compressible PNGs decoded at up to 50 megapixels each, pushing the API process into memory pressure or an OOM kill.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-9hxw-pxcq-4q8q",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-memory-exhaustion-dos-via-unbounded-image-decodes"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123502": {
+  "id": "CVE-2026-123502",
+  "published": "2026-11-08T02:16:38.040",
+  "modified": "2026-11-08T02:16:38.183",
+  "desc": "Vikunja before 2.7.1 contains an information exposure vulnerability that allows log readers to obtain link-share hashes because the request logger records the raw URI of the /shares/:share/auth route. Attackers with access to Vikunja or reverse proxy access logs can reuse non-expiring, non-password-protected share hashes to obtain a project JWT with read, write or admin permission.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-532"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-ff52-3296-2fvr",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-link-share-hash-exposure-via-request-path-logging"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123503": {
+  "id": "CVE-2026-123503",
+  "published": "2026-11-08T02:16:38.240",
+  "modified": "2026-11-08T02:16:38.373",
+  "desc": "Vikunja before 2.7.1 contains an improper authorization vulnerability in canDoBucket that allows users with project write access to delete buckets via a mismatched view ID. Attackers can request deletion through another view's bucket endpoint to bypass the last-bucket rule, leaving dangling default/done bucket references and inconsistent task buckets.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-9xh7-5jg8-mf43",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-improper-authorization-in-kanban-bucket-deletion"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123504": {
+  "id": "CVE-2026-123504",
+  "published": "2026-11-08T02:16:38.430",
+  "modified": "2026-11-08T02:16:38.560",
+  "desc": "Vikunja from 0.22.0 before 2.7.1 contains an information disclosure vulnerability that allows read-only project members to view full webhook target URLs by listing project webhooks. Attackers can extract incoming-webhook tokens or API keys embedded in target_url values to post to receiving channels or reuse keys until rotated.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-586f-48mj-3rwr",
+   "https://www.vulncheck.com/advisories/vikunja-0.22.0-before-2.7.1-webhook-url-credential-exposure-to-read-only-members"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123505": {
+  "id": "CVE-2026-123505",
+  "published": "2026-11-08T02:16:38.607",
+  "modified": "2026-11-08T02:16:38.737",
+  "desc": "Vikunja before 2.7.1 contains an insecure file permissions vulnerability that allows local users to read stored data because localStorage.Write creates blobs world-readable. Local attackers on a shared host can read attachments, project backgrounds and exports, and copy the SQLite database to crack password hashes offline.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-276"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-9rfw-7hv4-3vv3",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-world-readable-local-file-storage-and-sqlite-database"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123506": {
+  "id": "CVE-2026-123506",
+  "published": "2026-11-08T02:16:38.783",
+  "modified": "2026-11-08T02:16:38.910",
+  "desc": "Vikunja from 2.2.0 before 2.7.1 contains an authorization bypass vulnerability that allows holders of tokens scoped only to projects_webhooks to manage the owner's user-level webhooks by supplying user_id in request bodies. Attackers can register user webhooks to their own receiver to obtain reminders and task payloads from all owner projects, and read, change or delete existing user webhooks.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-5f6v-j6xm-wwj9",
+   "https://www.vulncheck.com/advisories/vikunja-2.2.0-before-2.7.1-token-scope-bypass-via-project-webhook-endpoints"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123507": {
+  "id": "CVE-2026-123507",
+  "published": "2026-11-08T02:16:38.960",
+  "modified": "2026-11-08T02:16:39.087",
+  "desc": "Vikunja from 0.24.0 before 2.7.1 contains a nil pointer dereference vulnerability that allows project admins to break project views by saving a filter-mode bucket configuration with a null filter. Because validateProjectViewFilters skips nil entries, every subsequent read of the view panics in kanban and task collection code, returning HTTP 500 to all project members.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-476"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-hm4w-h7v8-ch43",
+   "https://www.vulncheck.com/advisories/vikunja-0.24.0-before-2.7.1-denial-of-service-via-nil-bucket-filter"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123508": {
+  "id": "CVE-2026-123508",
+  "published": "2026-11-08T02:16:39.140",
+  "modified": "2026-11-08T02:16:39.263",
+  "desc": "Vikunja before 2.7.1 contains a supply chain vulnerability in its mage release targets that fetch the xgo module and Docker image by mutable latest references. Attackers who compromise the upstream xgo module, image, or registry can inject malicious code into subsequently built release binaries shipped under a valid signature.",
+  "cvss": 2.0,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-494"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-h8wj-3gwg-jjjg",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-supply-chain-risk-via-unpinned-xgo-release-toolchain"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123509": {
+  "id": "CVE-2026-123509",
+  "published": "2026-11-08T02:16:39.313",
+  "modified": "2026-11-08T02:16:39.443",
+  "desc": "Vikunja before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows project writers or view admins to create unlimited kanban buckets due to missing count caps. Attackers can create thousands of buckets so every kanban read runs a task SELECT and COUNT per bucket, generating heavy database load.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-p697-wq4x-grpj",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-denial-of-service-via-unbounded-kanban-bucket-count"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123510": {
+  "id": "CVE-2026-123510",
+  "published": "2026-11-08T02:16:39.487",
+  "modified": "2026-11-08T02:16:39.623",
+  "desc": "Vikunja before 2.7.1 fails to re-anchor PluginsDir and LogPath to service.rootpath, allowing plugins to load from and logs to be written in the startup working directory. Local attackers able to write to that directory can plant plugins loaded into the server when plugins are enabled, or read misplaced logs including audit.log.",
+  "cvss": 1.0,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-427"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-hrw2-p27j-8mj8",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-plugin-and-log-directories-not-anchored-to-rootpath"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123511": {
+  "id": "CVE-2026-123511",
+  "published": "2026-11-08T02:16:39.670",
+  "modified": "2026-11-08T02:16:39.797",
+  "desc": "Vikunja before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows authenticated CalDAV clients to create unbounded dummy tasks by sending VTODOs with thousands of RELATED-TO properties. Attackers can repeat unknown related UIDs in a single PUT request to generate thousands of task, relation, and event rows, bloating the database and overloading the event pipeline.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-c934-xjq2-mrg3",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-resource-exhaustion-via-caldav-vtodo-related-to-entries"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123512": {
+  "id": "CVE-2026-123512",
+  "published": "2026-11-08T02:16:39.847",
+  "modified": "2026-11-08T02:16:39.967",
+  "desc": "Vikunja before 2.7.1 embeds live password-reset, email-confirmation and account-deletion tokens in the URL query string of emailed links, so the full request URI, including the token, is written to Vikunja's HTTP access log and any reverse-proxy logs when a user clicks the link. Attackers with read access to those logs can replay an unredeemed password-reset token to take over the account or an account-deletion token to confirm the deletion.",
+  "cvss": 8.4,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-532"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-qf5p-grf5-wcq4",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-sensitive-token-exposure-via-url-query-in-access-logs"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123513": {
+  "id": "CVE-2026-123513",
+  "published": "2026-11-08T02:16:40.013",
+  "modified": "2026-11-08T02:16:40.140",
+  "desc": "Vikunja before 2.7.1 contains a credential exposure vulnerability that allows attackers to steal stored auth tokens by inducing users to switch the frontend API URL. Because checkAndSetApiUrl leaves origin-independent localStorage tokens in place, the bearer token and desktop OAuth refresh token are sent to the attacker's server, enabling account takeover.",
+  "cvss": 7.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-201"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-rj93-wmch-2crq",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-auth-token-leak-via-api-url-change"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123514": {
+  "id": "CVE-2026-123514",
+  "published": "2026-11-08T02:16:40.187",
+  "modified": "2026-11-08T02:16:40.313",
+  "desc": "Vikunja before 2.7.1 contains an improper resource cleanup vulnerability that leaves full-data export archives orphaned on disk after re-exports, failed exports, or account deletion. Authenticated users can repeatedly re-trigger exports containing all their attachments to exhaust disk storage, while deleted users' personal data remains retained indefinitely.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-7gmh-4fw6-8xc5",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-orphaned-export-archives-enable-disk-exhaustion"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123515": {
+  "id": "CVE-2026-123515",
+  "published": "2026-11-08T02:16:40.363",
+  "modified": "2026-11-08T02:16:40.487",
+  "desc": "Vikunja before 2.7.1 contains a client-side request forgery vulnerability that allows users with write access to make viewers' clients request loopback or LAN addresses by storing img elements in rich text. Attackers can plant images in tasks, comments, project descriptions, or imported Markdown to trigger blind GET requests against local services and track when viewers open content.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-441"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-2f75-93c9-xf32",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-client-side-request-forgery-via-stored-rich-text-images"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123516": {
+  "id": "CVE-2026-123516",
+  "published": "2026-11-08T02:16:40.543",
+  "modified": "2026-11-08T02:16:40.673",
+  "desc": "Vikunja before 2.7.1 contains a resource exhaustion vulnerability in the vikunja-file ZIP importer that allows authenticated users to consume CPU and memory by uploading archives with excessive entries. Attackers can upload export ZIPs containing many empty or non-files/ entries that bypass the per-entry caps, forcing scanArchive to process every entry twice.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-mqq8-869v-48q8",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-resource-exhaustion-via-vikunja-file-zip-import"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123517": {
+  "id": "CVE-2026-123517",
+  "published": "2026-11-08T02:16:40.720",
+  "modified": "2026-11-08T02:16:40.850",
+  "desc": "Vikunja before 2.7.1 contains an information disclosure vulnerability that allows authenticated users to determine whether private teams exist by calling the team member self-removal endpoint. Attackers can send DELETE requests to /teams/{id}/members/{own username} for arbitrary team ids and use the distinguishable responses to learn if a team exists, is SSO-managed, or has a single member.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-204"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-v3r6-33v3-79c2",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-information-disclosure-via-team-self-removal-endpoint"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123518": {
+  "id": "CVE-2026-123518",
+  "published": "2026-11-08T02:16:40.900",
+  "modified": "2026-11-08T02:16:41.023",
+  "desc": "Vikunja before 2.7.1 contains an incorrect authorization vulnerability in TaskBucket.CanUpdate, which checks write access to the bucket's project and to the task separately but never verifies that both belong to the same project. Authenticated users with write access to two projects can move a task into another project's kanban bucket. This persists cross-project task_buckets rows that count toward bucket limits and, for done buckets, toggle the task's done state.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-w64q-7p4m-j8g8",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-missing-authorization-in-kanban-task-bucket-move"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123519": {
+  "id": "CVE-2026-123519",
+  "published": "2026-11-08T02:16:41.070",
+  "modified": "2026-11-08T02:16:41.200",
+  "desc": "Vikunja before 2.7.1 contains a denial of service vulnerability that allows authenticated users to exhaust API process memory by uploading WeKan or vikunja-file imports with no item-count cap. Attackers can submit a ~22 MB WeKan JSON with hundreds of thousands of cards or duplicate IDs to the wekan migrate endpoint, triggering OOM and crashing the instance.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-g2xc-jv9q-46wq",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-memory-exhaustion-dos-via-wekan-and-vikunja-file-imports"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123520": {
+  "id": "CVE-2026-123520",
+  "published": "2026-11-08T02:16:41.247",
+  "modified": "2026-11-08T02:16:41.380",
+  "desc": "Vikunja from 0.18.0 before 2.7.1 contains a privilege escalation vulnerability that allows team owners to gain admin or ownership of read-only shared projects by deleting accounts. Attackers can create a bot, add it to their team, and delete it through the bots endpoint, triggering ensureProjectAdminUser to promote read-only shares and lock out the real owner.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-269"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-hq66-9qg8-jwqg",
+   "https://www.vulncheck.com/advisories/vikunja-0.18.0-before-2.7.1-privilege-escalation-via-account-deletion"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123521": {
+  "id": "CVE-2026-123521",
+  "published": "2026-11-08T02:16:41.430",
+  "modified": "2026-11-08T02:16:41.560",
+  "desc": "Vikunja before 2.7.1 contains an improper restriction of excessive authentication attempts vulnerability that allows session holders to brute-force account passwords via unthrottled re-authentication endpoints. Attackers with a stolen session can guess the password via /user/settings/totp/disable without lockout, then disable TOTP without a code for persistent account takeover.",
+  "cvss": 6.0,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-307"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-49pj-52x6-8gpj",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-password-brute-force-via-totp-disable-endpoint"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123522": {
+  "id": "CVE-2026-123522",
+  "published": "2026-11-08T02:16:41.607",
+  "modified": "2026-11-08T02:16:41.733",
+  "desc": "Vikunja before 2.7.1 contains an authorization bypass vulnerability that allows authenticated users to read any task by injecting a crafted task object into a no-op Kanban bucket move. Attackers can set task.id to a victim task and task.project_id to their own project, routing full task contents to their webhook and forging mention notifications.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-5q33-h98p-rgh9",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-task-information-disclosure-via-kanban-bucket-move-webhook"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123523": {
+  "id": "CVE-2026-123523",
+  "published": "2026-11-08T02:16:41.780",
+  "modified": "2026-11-08T02:16:41.907",
+  "desc": "Vikunja before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows authenticated users to exhaust server memory by requesting avatars at many distinct sizes. Attackers can upload a noisy avatar and fetch it at each size up to 1024, caching roughly a gigabyte per account without eviction and causing the API process to be OOM-killed.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-3x3m-2j93-w46j",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-memory-exhaustion-via-unbounded-avatar-size-cache"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123524": {
+  "id": "CVE-2026-123524",
+  "published": "2026-11-08T02:16:41.957",
+  "modified": "2026-11-08T02:16:42.087",
+  "desc": "Vikunja from 0.23.0 before 2.7.1 contains an information disclosure vulnerability that allows project collaborators with write access to read tasks from inaccessible projects by registering webhooks. Because webhook payloads are built with the triggering user's permissions, attackers receive related_tasks titles, descriptions and metadata from private projects whenever another user modifies a linked task.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-66cq-j6rw-pjch",
+   "https://www.vulncheck.com/advisories/vikunja-0.23.0-before-2.7.1-information-disclosure-via-webhook-related-tasks-payload"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123525": {
+  "id": "CVE-2026-123525",
+  "published": "2026-11-08T02:16:42.133",
+  "modified": "2026-11-08T02:16:42.260",
+  "desc": "Vikunja before 2.7.1 allocates memory without limits in its Trello, Todoist and Microsoft To Do migration importers, which buffer remote attachment downloads and API responses in memory without size caps. Authenticated users can start a migration that references huge attacker-served attachments or yields oversized API responses, exhausting memory and crashing the shared API process for all tenants.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-wqjr-22r7-5437",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-memory-exhaustion-dos-via-trello-todoist-and-microsoft-to-do-migrations"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123526": {
+  "id": "CVE-2026-123526",
+  "published": "2026-11-08T02:16:42.303",
+  "modified": "2026-11-08T02:16:42.437",
+  "desc": "Vikunja before 2.7.1 contains a mass assignment vulnerability that allows any authenticated user to set the read-only external_id field through the team create and update endpoints. Attackers can tag a team they create or administer as externally managed, permanently blocking removal of every member and causing SSO members to be dropped from the team at their next login.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-915"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-fjrf-gjmg-9v6g",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-mass-assignment-via-team-external-id-field"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123527": {
+  "id": "CVE-2026-123527",
+  "published": "2026-11-08T02:16:42.480",
+  "modified": "2026-11-08T02:16:42.610",
+  "desc": "Vikunja from 2.4.0 before 2.7.1 contains an authorization bypass vulnerability that allows token holders to perform unintended operations due to colliding v1 and v2 API token permission keys. Attackers with a token scoped to read project backgrounds can delete them via the v2 DELETE background route, and bucket create-only tokens can update existing buckets.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-j5v7-qcwp-5g32",
+   "https://www.vulncheck.com/advisories/vikunja-2.4.0-before-2.7.1-api-token-scope-collision-authorization-bypass"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123528": {
+  "id": "CVE-2026-123528",
+  "published": "2026-11-08T02:16:42.657",
+  "modified": "2026-11-08T02:16:42.780",
+  "desc": "Vikunja before 2.7.1 contains an insufficient session expiration vulnerability that allows holders of revoked access tokens to keep authenticating because SetupTokenMiddleware skips session and account-status checks. Attackers with a stolen token can, after logout, password reset, or account disabling, mint OAuth sessions via /oauth/authorize or tk_ API tokens for persistent access.",
+  "cvss": 7.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-613"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-4qvp-948j-4cgv",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-insufficient-session-expiration-via-http-token-middleware"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123529": {
+  "id": "CVE-2026-123529",
+  "published": "2026-11-08T02:16:42.830",
+  "modified": "2026-11-08T02:16:42.960",
+  "desc": "Vikunja before 2.7.1 contains a stored CSS injection vulnerability that allows authenticated users with project write access to inject arbitrary CSS via unsanitized table-cell data-background-color attributes. Attackers can store crafted task descriptions or comments to render full-viewport phishing overlays or force zero-click outbound background-image requests that deanonymize viewers.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1021"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-p23m-cq25-pc4j",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-stored-css-injection-via-tiptap-table-cell-data-background-color"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123530": {
+  "id": "CVE-2026-123530",
+  "published": "2026-11-08T02:16:43.013",
+  "modified": "2026-11-08T02:16:43.140",
+  "desc": "Vikunja before 2.7.1 contains a missing authentication vulnerability that allows attackers holding a stolen session to enroll and enable TOTP without the account password. Attackers can call the TOTP enroll and enable endpoints with their own secret to lock the owner out, persisting even after password reset.",
+  "cvss": 6.0,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-306"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-h4q3-mc9r-q7vv",
+   "https://www.vulncheck.com/advisories/vikunja-before-2.7.1-missing-step-up-authentication-via-totp-enrollment-endpoints"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123531": {
+  "id": "CVE-2026-123531",
+  "published": "2026-11-08T02:16:43.190",
+  "modified": "2026-11-08T02:16:43.317",
+  "desc": "Vikunja from 1.0.0 before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows authenticated users to bypass service.maxitemsperpage by sending page=0 to /api/v1 list endpoints. Attackers can self-register and repeatedly request page=0 to force unbounded SQL queries, memory materialisation, and per-row query fan-out, degrading availability for other users.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-v579-5fwc-gr28",
+   "https://www.vulncheck.com/advisories/vikunja-1.0.0-before-2.7.1-pagination-limit-bypass-via-page-0-parameter"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123532": {
+  "id": "CVE-2026-123532",
+  "published": "2026-11-08T02:16:43.367",
+  "modified": "2026-11-08T02:16:43.500",
+  "desc": "gix-fs in gitoxide before 0.24.1 contains a credential disclosure vulnerability that allows remote attackers to capture NTLM credentials by supplying UNC symlink targets in a crafted repository. When a victim checks out the repository on Windows with symlinks enabled, gix_fs::symlink::create calls is_dir() on the UNC target, triggering SMB authentication that leaks the username, domain, and NTLMv2 hash.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-59"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-xw69-xv93-5fjv",
+   "https://www.vulncheck.com/advisories/gix-fs-before-0.24.1-ntlm-credential-disclosure-via-windows-symlink-unc-probe"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123533": {
+  "id": "CVE-2026-123533",
+  "published": "2026-11-08T02:16:43.547",
+  "modified": "2026-11-08T02:16:43.673",
+  "desc": "gix-commitgraph before 0.42.0, as used in gitoxide before 0.61.0, contains a denial of service vulnerability because its commit-graph parser does not validate parent graph positions against the declared commit count or check the EDGE chunk length for 4-byte alignment. Attackers can supply a repository containing a crafted .git/objects/info/commit-graph file to trigger panics that abort gix merge-base, gix blame, and applications embedding gix.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-248"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-989c-xj77-266r",
+   "https://www.vulncheck.com/advisories/gitoxide-before-0.42.0-denial-of-service-via-crafted-commit-graph-file"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123534": {
+  "id": "CVE-2026-123534",
+  "published": "2026-11-08T02:16:43.727",
+  "modified": "2026-11-08T02:16:43.863",
+  "desc": "Tornado before 6.6 contains a path traversal vulnerability in RequestHandler.static_url() and get_version() that allows attackers to hash files outside static_path using ../ sequences. Attackers controlling input passed to static_url() can obtain SHA-512 hashes of readable files to confirm their existence, or reference /dev/zero to block the event loop indefinitely.",
+  "cvss": 8.3,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/tornadoweb/tornado/security/advisories/GHSA-v8g8-cp5j-42fg",
+   "https://www.vulncheck.com/advisories/tornado-before-6.6-path-traversal-via-static-url-version-hashing"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123535": {
+  "id": "CVE-2026-123535",
+  "published": "2026-11-08T02:16:43.917",
+  "modified": "2026-11-08T02:16:44.053",
+  "desc": "Tornado before 6.6 does not validate the max_age argument of RequestHandler.set_cookie (also called by set_signed_cookie, set_secure_cookie, and clear_cookie), allowing injection of additional Set-Cookie attributes. When an application passes attacker-influenced input as max_age, an attacker can embed attributes such as Domain, Path, or Secure to widen the cookie's scope to parent paths or other subdomains.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/tornadoweb/tornado/security/advisories/GHSA-c6v4-qj2h-f748",
+   "https://www.vulncheck.com/advisories/tornado-before-6.6-cookie-attribute-injection-via-set-cookie-max-age"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123536": {
+  "id": "CVE-2026-123536",
+  "published": "2026-11-08T02:16:44.127",
+  "modified": "2026-11-08T02:16:44.127",
+  "desc": "OpenAM before 16.1.4 contains a server-side request forgery vulnerability that allows administrators, including delegated realm administrators, to make the server fetch arbitrary URLs through federation configuration wizard metadata URLs. Attackers can enter metadata or OpenID Connect discovery URLs pointing to internal hosts or cloud metadata endpoints to probe the internal network and read partial responses.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-rmw3-j353-w9f7",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-ssrf-via-federation-configuration-wizard-metadata-urls"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123537": {
+  "id": "CVE-2026-123537",
+  "published": "2026-11-08T02:16:44.307",
+  "modified": "2026-11-08T02:16:44.307",
+  "desc": "OpenAM before 16.1.4 contains a server-side request forgery vulnerability that allows parties registering UMA resource sets to trigger internal requests through unvalidated scope description URLs. Attackers can register resource sets with scope URLs pointing to internal hosts or cloud metadata endpoints, which OpenAM fetches when sending pending-request notification emails, enabling internal network probing.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-7q42-6xr7-9rmw",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-ssrf-via-uma-scope-description-urls"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123538": {
+  "id": "CVE-2026-123538",
+  "published": "2026-11-08T02:16:44.460",
+  "modified": "2026-11-08T02:16:44.460",
+  "desc": "OpenAM before 16.1.4 does not verify that a signed SAML 1.x assertion or response was signed by the partner named as its issuer, accepting a signature from any certificate in OpenAM's keystore. An attacker holding such a private key, such as a trusted SAML 1.x partner, can forge assertions claiming another partner's issuer and sign in as that partner's users, including privileged ones.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-347"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-j56q-q3r3-hg7f",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-saml-1-x-signature-verification-issuer-impersonation"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123539": {
+  "id": "CVE-2026-123539",
+  "published": "2026-11-08T02:16:44.623",
+  "modified": "2026-11-08T02:16:44.623",
+  "desc": "OpenAM before 16.1.4 contains a stored cross-site scripting vulnerability that allows privileged attackers to inject script by placing markup in a user's display name. When the victim reaches the OAuth 2.0 / OpenID Connect consent page, the unencoded name executes script that can steal the OpenAM session cookie to impersonate the user.",
+  "cvss": 4.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-v6hq-3cfh-5gr6",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-stored-xss-via-oauth-2.0-consent-page-display-name"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123540": {
+  "id": "CVE-2026-123540",
+  "published": "2026-11-08T02:16:44.783",
+  "modified": "2026-11-08T02:16:44.783",
+  "desc": "OpenAM before 16.1.4 contains an incomplete output encoding vulnerability that allows a SAML 1.x identity provider to alter attribute values by injecting unencoded content into the service provider auto-submitted form. Attackers controlling a trusted identity provider can craft assertion attribute names or values that reach the target application in modified form, undermining the integrity of received attributes.",
+  "cvss": 2.0,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-116"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-pw99-8h4m-p3gm",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-incomplete-attribute-encoding-in-saml-1-x-form-post"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123541": {
+  "id": "CVE-2026-123541",
+  "published": "2026-11-08T02:16:44.947",
+  "modified": "2026-11-08T02:16:44.947",
+  "desc": "OpenAM before 16.1.4 contains an open redirect vulnerability that allows remote attackers to redirect users after SAML 1.x single sign-on by exploiting loose trusted-partner destination matching. Attackers can craft links to /SAMLAwareServlet or /SAMLPOSTProfileServlet with a destination host resembling a trusted partner to send authenticated users to attacker-controlled phishing sites.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-601"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-rw43-r238-4c7j",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-open-redirect-via-saml-1-x-trusted-partner-matching"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123542": {
+  "id": "CVE-2026-123542",
+  "published": "2026-11-08T02:16:45.100",
+  "modified": "2026-11-08T02:16:45.100",
+  "desc": "OpenAM before 16.1.4 fails to enforce PKCE in the OAuth 2.0 device authorization flow, never validating the code verifier when device codes are exchanged for tokens. Attackers who obtain an approved device code from client logs or shared device storage can redeem it for access and ID tokens to impersonate the user.",
+  "cvss": 7.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-358"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-h93p-35jm-rj83",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-pkce-bypass-in-oauth-2.0-device-authorization-flow"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123543": {
+  "id": "CVE-2026-123543",
+  "published": "2026-11-08T02:16:45.253",
+  "modified": "2026-11-08T02:16:45.253",
+  "desc": "OpenAM before 16.1.4 contains a denial of service vulnerability that allows unauthenticated attackers to exhaust server resources by sending serialized Java data without size or structure limits. Attackers can send small crafted requests to remote SDK endpoints, classic login pages, or the administration console to block authentication, session validation and policy decisions.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-x7wr-5gxg-v833",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-unauthenticated-dos-via-unbounded-java-deserialisation"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123544": {
+  "id": "CVE-2026-123544",
+  "published": "2026-11-08T02:16:45.417",
+  "modified": "2026-11-08T02:16:45.417",
+  "desc": "OpenAM before 16.1.4 and its client SDK fail to sufficiently validate responses on the internal server-to-server SOAP channel, allowing network-positioned attackers to affect integrity and availability. Attackers who intercept unencrypted traffic or control a site server can crash receiving processes, tamper with writable files, and possibly execute code.",
+  "cvss": 6.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:A/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-470"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-6gg2-2v5m-454x",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-insufficient-response-validation-in-internal-soap-channel"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123545": {
+  "id": "CVE-2026-123545",
+  "published": "2026-11-08T02:16:45.597",
+  "modified": "2026-11-08T02:16:45.597",
+  "desc": "OpenAM from 14.5.1 before 16.1.4 contains a cross-site request forgery vulnerability in the OAuth 2.0 device authorization flow that allows attackers to approve device codes when consent is skipped for implied-consent clients. Attackers can start a device authorization and lure a logged-in user to a crafted page, obtaining access and ID tokens to call APIs as that user.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-545c-rm35-2jj2",
+   "https://www.vulncheck.com/advisories/openam-14.5.1-before-16.1.4-csrf-in-oauth-2.0-device-flow"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123546": {
+  "id": "CVE-2026-123546",
+  "published": "2026-11-08T02:16:45.770",
+  "modified": "2026-11-08T02:16:45.770",
+  "desc": "OpenAM before 16.1.4 contains an open redirect and cross-site scripting vulnerability that allows remote attackers to control post-login and logout destinations via the goto and gotoOnFail parameters. Attackers can craft OpenAM login or logout links that redirect victims to phishing sites or run script in the XUI to steal session cookies.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-2gwf-vxp5-f9v2",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-open-redirect-and-xss-via-goto-and-gotoonfail"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123547": {
+  "id": "CVE-2026-123547",
+  "published": "2026-11-08T02:16:45.937",
+  "modified": "2026-11-08T02:16:45.937",
+  "desc": "OpenAM before 16.1.4 contains an open redirect vulnerability that allows attackers to redirect users to external sites because RelayState is unchecked when no relayStateUrlList is configured. Attackers can craft single sign-on links with a malicious RelayState to send users from the trusted OpenAM origin to phishing sites and bypass URL filters.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-601"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-fhqm-62hv-4phw",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-open-redirect-via-saml-2.0-relaystate"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123548": {
+  "id": "CVE-2026-123548",
+  "published": "2026-11-08T02:16:46.093",
+  "modified": "2026-11-08T02:16:46.093",
+  "desc": "OpenIdentityPlatform OpenAM before 16.1.4 contains an open redirect because WS-Federation logout, SAML v2.0 logout and name-identifier management, SAML v2.0 identity provider finder, and some authentication pages do not check destination URLs against allowed lists. Attackers can craft OpenAM-domain links that send users to arbitrary external sites for phishing.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-601"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-mgwg-24cx-c8w3",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-open-redirect-via-ws-federation-and-saml-2.0-pages"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123549": {
+  "id": "CVE-2026-123549",
+  "published": "2026-11-08T02:16:46.247",
+  "modified": "2026-11-08T02:16:46.247",
+  "desc": "OpenAM before 16.1.4 fails to enforce the Valid Creation Attributes list during self-registration, allowing anonymous attackers to set restricted attributes including group membership. Attackers can register through the legacy self-service REST endpoint or User Self-Service flow to join administrative groups and gain full administrative control of OpenAM.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-269"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-jv8f-m88g-h6mm",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-privilege-escalation-via-self-registration-attribute-bypass"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123550": {
+  "id": "CVE-2026-123550",
+  "published": "2026-11-08T02:16:46.410",
+  "modified": "2026-11-08T02:16:46.410",
+  "desc": "OpenAM before 16.1.4 contains an authentication bypass vulnerability in its SAML v2.0 service provider that accepts unsigned assertions on the ECP (PAOS) and HTTP-Artifact bindings when WantAssertionsSigned is false. Unauthenticated remote attackers can submit forged assertions to obtain sessions as any mapped user, including administrators, and hijack single sign-on to dependent applications.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-290"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-3j2f-qhrc-rjfj",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-saml-authentication-bypass-via-unsigned-assertions"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123551": {
+  "id": "CVE-2026-123551",
+  "published": "2026-11-08T02:16:46.603",
+  "modified": "2026-11-08T02:16:46.603",
+  "desc": "OpenAM from 14.0.0 before 16.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read live session tokens from the notification WebSocket. Attackers can bypass the agent-only check through an unvalidated internal forward on legacy Liberty ID-FF endpoints, collecting iPlanetDirectoryPro tokens to hijack user and administrator sessions.",
+  "cvss": 10.0,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-201"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-5c3q-hp86-xjr8",
+   "https://www.vulncheck.com/advisories/openam-14.0.0-before-16.1.4-session-token-disclosure-via-notification-websocket"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123552": {
+  "id": "CVE-2026-123552",
+  "published": "2026-11-08T02:16:46.780",
+  "modified": "2026-11-08T02:16:46.780",
+  "desc": "OpenAM before 16.1.4 contains a server-side request forgery vulnerability in certificate CRL checking that fetches CRLs from the distribution point named in a presented certificate without restricting the destination or verifying the downloaded CRL's signature. Attackers holding a trusted-CA-chained certificate can make OpenAM request internal hosts, capture configured CRL update credentials, overwrite stored revocation data to block certificate authentication for that CA, and tie up authentication threads.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:L/VA:L/SC:L/SI:L/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-g5vw-v384-gw9v",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-ssrf-and-crl-tampering-via-certificate-crl-distribution-point"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123553": {
+  "id": "CVE-2026-123553",
+  "published": "2026-11-08T02:16:46.953",
+  "modified": "2026-11-08T02:16:46.953",
+  "desc": "OpenAM before 16.1.4 ships built-in identities in the Top Level Realm (demo, anonymous, wsc, wsp, SecurityTokenService and agentAuth) with passwords that are identical on every installation, publicly known, and able to authenticate. Unauthenticated remote attackers can log in as these identities to obtain authenticated sessions, and the agent identities can read the configuration of other agent profiles.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1392"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-hvfc-4v4r-8p9w",
+   "https://www.vulncheck.com/advisories/openam-before-16.1.4-default-credentials-in-built-in-accounts-allow-unauthenticated-login"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123554": {
+  "id": "CVE-2026-123554",
+  "published": "2026-11-08T02:16:47.120",
+  "modified": "2026-11-08T02:16:47.263",
+  "desc": "Zebra zebrad 6.4.0 before 7.0.0 performs quadratic work in the mempool coinbase-maturity check because Transaction::coinbase_spend_restriction() rebuilds the transaction's output list once per spent outpoint. Any connected peer can repeatedly send unsigned transactions with many transparent inputs and outputs, which are rejected without a misbehavior score, to pin verification threads.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-407"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ZcashFoundation/zebra/commit/08743d669b33a19bce2a5d54001bd468c03a196e",
+   "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-7jp4-mq53-4cvq",
+   "https://www.vulncheck.com/advisories/zebra-zebrad-6.4.0-before-7.0.0-denial-of-service-via-mempool-coinbase-maturity-check"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123555": {
+  "id": "CVE-2026-123555",
+  "published": "2026-11-08T02:16:47.313",
+  "modified": "2026-11-08T02:16:47.443",
+  "desc": "Zebra from 2.3.0 before 7.0.0 contains a denial of service vulnerability that allows unauthenticated peers to evade misbehavior scoring by sending transactions or blocks with invalid transparent scripts. Attackers can flood mempool with script-failing transactions or serve forged v5 block bodies with altered scriptSig bytes to exhaust CPU and repeatedly stall block sync.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-755"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ZcashFoundation/zebra/commit/e8db87eb69254e0d4eedd058eadd48bdfa09065a",
+   "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-jq45-ghw5-v37x",
+   "https://www.vulncheck.com/advisories/zebra-2.3.0-before-7.0.0-denial-of-service-via-unscored-script-verification-failures"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123556": {
+  "id": "CVE-2026-123556",
+  "published": "2026-11-08T02:16:47.503",
+  "modified": "2026-11-08T02:16:47.637",
+  "desc": "ZcashFoundation Zebra from 4.5.0 before 7.0.0 contains a protection mechanism failure that bans honest peers by scoring mempool lock-time rejections at the ban threshold. Attackers can broadcast transactions locked until the current height right after each block, causing lagging nodes to ban honest relaying peers for 24 hours or until restart.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-693"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-5h3r-fpmj-483w",
+   "https://www.vulncheck.com/advisories/zebra-4.5.0-before-7.0.0-honest-peer-ban-via-mempool-lock-time-scoring"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123557": {
+  "id": "CVE-2026-123557",
+  "published": "2026-11-08T02:16:47.687",
+  "modified": "2026-11-08T02:16:47.813",
+  "desc": "ZcashFoundation Zebra zebrad before 7.0.0 contains a reachable assertion race condition that allows unauthenticated remote peers to abort the node by triggering disconnection during a blocked outbound send. Malicious peers can return empty FindBlocks or FindHeaders replies and stop reading their socket, dropping an unresolved MustUseClientResponseSender and terminating syncing nodes.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-617"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-6v36-c42v-v98p",
+   "https://www.vulncheck.com/advisories/zebra-zebrad-before-7.0.0-reachable-assertion-dos-via-peer-disconnection"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123558": {
+  "id": "CVE-2026-123558",
+  "published": "2026-11-08T02:16:47.863",
+  "modified": "2026-11-08T02:16:47.997",
+  "desc": "Zebra zebrad before 7.0.0 contains a denial of service vulnerability that allows a malicious peer to stall checkpoint sync by cancelling the verifier rewind after a failed commit. Attackers can serve a forged block with altered authorizing data plus a restart-triggering block, leaving the verifier rejecting honest blocks until restart.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-460"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-2w9f-9wx8-f5c8",
+   "https://www.vulncheck.com/advisories/zebra-before-7.0.0-checkpoint-sync-denial-of-service-via-cancelled-verifier-rewind"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123559": {
+  "id": "CVE-2026-123559",
+  "published": "2026-11-08T02:16:48.047",
+  "modified": "2026-11-08T02:16:48.177",
+  "desc": "Zebra before 7.0.0 contains an inefficient algorithmic complexity vulnerability that allows unauthenticated peers to exhaust verification threads by submitting transactions with many transparent inputs. Attackers can relay invalid transactions with tens of thousands of inputs, forcing quadratic ZIP-244 or ZIP-243 digest recomputation that stalls Rayon-backed block verification for minutes.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-407"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-j4cw-58mj-7w6v",
+   "https://www.vulncheck.com/advisories/zebra-before-7.0.0-denial-of-service-via-quadratic-sighash-computation"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123560": {
+  "id": "CVE-2026-123560",
+  "published": "2026-11-08T02:16:48.227",
+  "modified": "2026-11-08T02:16:48.353",
+  "desc": "Zebra before 7.0.0 contains an incomplete cleanup vulnerability that allows unauthenticated peers to stall initial sync by serving a forged checkpoint block body. Attackers can supply a body with forged authorizing data near the final checkpoint, leaving rejected hashes in the sent-hash set so the node stops requesting blocks until restart.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-459"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-9hq5-pfgc-cx5h",
+   "https://www.vulncheck.com/advisories/zebra-before-7.0.0-sync-denial-of-service-via-forged-checkpoint-block-body"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123561": {
+  "id": "CVE-2026-123561",
+  "published": "2026-11-08T02:16:48.400",
+  "modified": "2026-11-08T02:16:48.400",
+  "desc": "devalue before 5.9.3 allows malformed null-prototype object keys to bypass parse's __proto__ rejection through property-key coercion, an incomplete fix for GHSA-mwv9-gp5h-frr4. Attackers can supply crafted payloads that yield objects with a __proto__ own property, which alone does not cause prototype pollution.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sveltejs/devalue/security/advisories/GHSA-4q55-j62x-fr9h",
+   "https://www.vulncheck.com/advisories/sveltejs-devalue-before-5.9.3-proto-rejection-bypass-via-property-key-coercion"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123562": {
+  "id": "CVE-2026-123562",
+  "published": "2026-11-08T02:16:48.567",
+  "modified": "2026-11-08T02:16:48.567",
+  "desc": "devalue (sveltejs/devalue) 5.8.0 before 5.9.3 contains an unhandled promise rejection in stringifyAsync: when serializing multiple promises, a later promise rejecting before an earlier one settles leaves an internal rejection unhandled, even if the caller catches the returned promise. An attacker able to influence the timing or failure of serialized asynchronous values can terminate the Node.js process.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-248"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sveltejs/devalue/security/advisories/GHSA-x5rw-q4pp-hg5g",
+   "https://www.vulncheck.com/advisories/devalue-5.8.0-before-5.9.3-denial-of-service-via-stringifyasync-unhandled-rejection"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123563": {
+  "id": "CVE-2026-123563",
+  "published": "2026-11-08T02:16:48.720",
+  "modified": "2026-11-08T02:16:48.720",
+  "desc": "Devalue before 5.9.3 contains a validation bypass vulnerability that allows custom ArrayBuffer revivers to skip typed-array allocation checks in the parse function. Attackers can supply very small crafted input processed by a malformed ArrayBuffer reviver to allocate massive ArrayBuffers, causing memory exhaustion and denial of service.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-789"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sveltejs/devalue/security/advisories/GHSA-r9w8-h9r3-54w4",
+   "https://www.vulncheck.com/advisories/devalue-before-5.9.3-typed-array-allocation-validation-bypass-via-parse"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123564": {
+  "id": "CVE-2026-123564",
+  "published": "2026-11-08T02:16:48.877",
+  "modified": "2026-11-08T02:16:48.877",
+  "desc": "Sveltejs devalue from 1.0.0 before 5.9.3 contains a memory exhaustion flaw in uneval, whose generated code for sparse arrays allocates memory proportional to the array's declared length when evaluated. Attackers who can influence a very large sparse array serialized by an application can exhaust memory in the browser or runtime evaluating the output.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sveltejs/devalue/security/advisories/GHSA-wf3x-273g-mvxv",
+   "https://www.vulncheck.com/advisories/sveltejs-devalue-before-5.9.3-memory-exhaustion-via-uneval-sparse-arrays"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123565": {
+  "id": "CVE-2026-123565",
+  "published": "2026-11-08T02:16:49.040",
+  "modified": "2026-11-08T02:16:49.040",
+  "desc": "Sveltejs devalue before 5.9.3 contains a resource exhaustion vulnerability where repeated primitive strings cause quadratic expansion in the uneval function. Attackers can supply a small crafted payload that is parsed and then passed to uneval, producing a very large serialized string that exhausts memory or CPU.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sveltejs/devalue/security/advisories/GHSA-mcm9-63f2-9j32",
+   "https://www.vulncheck.com/advisories/devalue-before-5.9.3-quadratic-expansion-denial-of-service-via-uneval"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123566": {
+  "id": "CVE-2026-123566",
+  "published": "2026-11-08T02:16:49.197",
+  "modified": "2026-11-08T02:16:49.197",
+  "desc": "Sveltejs devalue before 5.9.3 contains a denial of service vulnerability that allows attackers to cause CPU amplification by supplying sparse arrays to uneval. Attackers who influence sparse values passed to uneval can force synchronous work proportional to the declared array length, blocking the event loop.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sveltejs/devalue/security/advisories/GHSA-hx4r-w6wj-j8fg",
+   "https://www.vulncheck.com/advisories/devalue-before-5.9.3-cpu-amplification-denial-of-service-via-uneval"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123567": {
+  "id": "CVE-2026-123567",
+  "published": "2026-11-08T02:16:49.360",
+  "modified": "2026-11-08T02:16:49.360",
+  "desc": "Sveltejs devalue before 5.6.4 contains a prototype injection vulnerability that allows attackers to inject __proto__ own properties into objects returned by devalue.parse and devalue.unflatten. Attackers can supply crafted serialized input that, when downstream code merges results via Object.assign, alters the target object's prototype.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sveltejs/devalue/security/advisories/GHSA-mwv9-gp5h-frr4",
+   "https://www.vulncheck.com/advisories/sveltejs-devalue-before-5.6.4-prototype-injection-via-parse-and-unflatten"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123568": {
+  "id": "CVE-2026-123568",
+  "published": "2026-11-08T02:16:49.513",
+  "modified": "2026-11-08T02:16:49.513",
+  "desc": "Sveltejs devalue before 5.6.3 contains a prototype pollution vulnerability that allows attackers to alter object prototypes by supplying untrusted data to uneval. When the generated code is later evaluated, it creates objects with polluted prototypes, producing output data whose shape differs from the original input.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sveltejs/devalue/security/advisories/GHSA-8qm3-746x-r74r",
+   "https://www.vulncheck.com/advisories/sveltejs-devalue-before-5.6.3-prototype-pollution-via-uneval-output"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123569": {
+  "id": "CVE-2026-123569",
+  "published": "2026-11-08T02:16:49.673",
+  "modified": "2026-11-08T02:16:49.673",
+  "desc": "The devalue package for npm before 5.6.3 can consume excessive CPU and memory when serializing sparse arrays with uneval or stringify. An attacker who manages to get a sparse array created on the server, which mainstream wire formats do not allow, and serialized there can cause a denial of service.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sveltejs/devalue/security/advisories/GHSA-33hq-fvwr-56pm",
+   "https://www.vulncheck.com/advisories/devalue-before-5.6.3-denial-of-service-via-sparse-array-serialization"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123570": {
+  "id": "CVE-2026-123570",
+  "published": "2026-11-08T02:16:49.830",
+  "modified": "2026-11-08T02:16:49.830",
+  "desc": "The DNS wire-format message parser in hickory-proto (Hickory DNS) 0.18 before 0.26.2 preallocates record vectors sized by the untrusted ANCOUNT, NSCOUNT, and ARCOUNT header fields before reading record data. Remote attackers can send a UDP datagram, or a spoofed response to a client/resolver, with these counts set to 65535, forcing about 18MB of allocation per message.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-67wc-6jq8-ghrc",
+   "https://www.vulncheck.com/advisories/hickory-dns-from-0.18-before-0.26.2-memory-amplification-dos-via-rr-counts"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123571": {
+  "id": "CVE-2026-123571",
+  "published": "2026-11-08T02:16:49.990",
+  "modified": "2026-11-08T02:16:49.990",
+  "desc": "Hickory DNS from 0.26.0 before 0.26.2 contains an integer underflow vulnerability in TSIG RDATA decoding that allows remote attackers to trigger a panic via malformed records. Attackers can send a crafted TSIG record in DNS wire format to cause unchecked subtraction underflow, crashing builds with overflow checks enabled and causing denial of service.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-191"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-x962-5xwx-fr8x",
+   "https://www.vulncheck.com/advisories/hickory-dns-from-0.26.0-before-0.26.2-panic-via-tsig-rdata-decoding"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123572": {
+  "id": "CVE-2026-123572",
+  "published": "2026-11-08T02:16:50.140",
+  "modified": "2026-11-08T02:16:50.140",
+  "desc": "Hickory-dns from 0.20.1 before 0.26.2 contains a denial of service vulnerability in the hickory-proto SVCB and HTTPS record presentation format parser, which panics on malformed alpn values. Attackers can supply untrusted zone files with unbalanced quotes, consecutive commas, or invalid escapes in alpn parameters to crash parsing processes.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1286"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-hx8c-fjhc-hmf5",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.20.1-before-0.26.2-panic-dos-via-svcb-https-zone-parser"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123573": {
+  "id": "CVE-2026-123573",
+  "published": "2026-11-08T02:16:50.297",
+  "modified": "2026-11-08T02:16:50.297",
+  "desc": "hickory-dns from 0.20.1 before 0.26.2 contains a denial of service vulnerability in the hickory-proto SVCB and HTTPS record presentation format parser. Attackers can supply untrusted zone files where only a single or double quote replaces a service parameter value, triggering a panic that crashes the parsing process.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-20"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-wgfr-mphw-j5g4",
+   "https://www.vulncheck.com/advisories/hickory-dns-from-0.20.1-before-0.26.2-panic-in-svcb-https-zone-file-parser"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123574": {
+  "id": "CVE-2026-123574",
+  "published": "2026-11-08T02:16:50.450",
+  "modified": "2026-11-08T02:16:50.450",
+  "desc": "The zone file parser in the hickory-proto crate of Hickory DNS 0.24.0 before 0.26.2 panics when a single token in a zone file is 4096 bytes or longer. Attackers who can supply untrusted zone files to an application using the parser can trigger the panic to cause a denial of service.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-20"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-4rph-pmrw-mwpw",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.24.0-before-0.26.2-denial-of-service-via-zone-file-parser"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123575": {
+  "id": "CVE-2026-123575",
+  "published": "2026-11-08T02:16:50.600",
+  "modified": "2026-11-08T02:16:50.600",
+  "desc": "Hickory DNS before 0.26.2 contains a resource exhaustion vulnerability in its DNS-over-HTTPS HTTP/2 server that lacks sufficient timeouts or limits for incomplete request bodies. Remote attackers can open DoH connections, send incomplete request bodies, and hold connections open to exhaust server memory.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-g5xf-qv55-wv37",
+   "https://www.vulncheck.com/advisories/hickory-dns-before-0.26.2-doh-memory-exhaustion-via-incomplete-request-bodies"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123576": {
+  "id": "CVE-2026-123576",
+  "published": "2026-11-08T02:16:50.780",
+  "modified": "2026-11-08T02:16:50.780",
+  "desc": "Hickory DNS 0.24.0 through 0.26.1 contains a memory exhaustion vulnerability that allows remote attackers to consume server resources by sending incomplete DNS-over-QUIC request bodies. Attackers can open many connections and send only large length prefixes, causing pre-allocated buffers to persist without timeout and exhausting server memory.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-2f4m-fq7w-mrgx",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.24.0-through-0.26.1-memory-exhaustion-via-dns-over-quic-requests"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123577": {
+  "id": "CVE-2026-123577",
+  "published": "2026-11-08T02:16:51.050",
+  "modified": "2026-11-08T02:16:51.050",
+  "desc": "Hickory DNS from 0.24.0 before 0.26.2 contains a resource exhaustion vulnerability that allows remote attackers to consume server memory via unbounded DoH request bodies. Attackers can send large request bodies over HTTP/2 or HTTP/3 to a DNS over HTTP server, causing memory exhaustion and denial of service.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-5r56-v84h-c3w5",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.24.0-before-0.26.2-doh-unbounded-request-body-denial-of-service"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123578": {
+  "id": "CVE-2026-123578",
+  "published": "2026-11-08T02:16:51.207",
+  "modified": "2026-11-08T02:16:51.207",
+  "desc": "Hickory DNS hickory-net 0.26.0 before 0.26.2 and hickory-proto 0.25.0 through 0.25.2 skip the check that a UDP response's question section matches the query when the response has an empty question section (QDCOUNT=0), and also skip the case-randomization check. Remote attackers able to inject spoofed UDP responses can send QDCOUNT=0 responses to bypass these checks, weakening defenses against DNS spoofing.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-290"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-3w89-7rx5-hpwx",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-before-0.26.2-response-validation-bypass-via-qdcount-0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123579": {
+  "id": "CVE-2026-123579",
+  "published": "2026-11-08T02:16:51.370",
+  "modified": "2026-11-08T02:16:51.370",
+  "desc": "DNSSEC validation in Hickory DNS hickory-net 0.26.0-beta.1 before 0.26.2 and hickory-proto through 0.26.0-alpha.1 does not distinguish NODATA responses from wildcard-expanded positive responses. For a query that should return NODATA in a zone with wildcard records, an attacker can combine an NSEC3 record matching the query name with a signed wildcard record into a bogus positive response that validation accepts.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-358"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-vrv5-968r-5ggm",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-beta.1-before-0.26.2-dnssec-validation-bypass-via-wildcard-expansion"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123580": {
+  "id": "CVE-2026-123580",
+  "published": "2026-11-08T02:16:51.540",
+  "modified": "2026-11-08T02:16:51.540",
+  "desc": "Hickory DNS hickory-net 0.26.0-beta.1 before 0.26.2 and hickory-proto through 0.26.0-alpha.1 perform insufficient checks on NSEC3 record names during DNSSEC verification, comparing only the hashed label without confirming the record belongs to the correct zone. Attackers can supply NSEC3 records from another zone with a matching hash label to forge DNSSEC nonexistence proofs.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-290"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-p2jv-r3m3-7wf4",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-beta.1-before-0.26.2-dnssec-nonexistence-proof-forgery-via-nsec3"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123581": {
+  "id": "CVE-2026-123581",
+  "published": "2026-11-08T02:16:51.693",
+  "modified": "2026-11-08T02:16:51.693",
+  "desc": "Hickory DNS hickory-proto through 0.26.0-alpha.1 and hickory-net 0.26.0-beta.1 before 0.26.2 contain a DNSSEC validation flaw that accepts a response as a positive answer when any valid RRset appears in the answer section, without checking that the RRset is responsive to the query. Attackers can supply signed but unrelated RRsets so that responses lacking matching records are validated as positive answers instead of as no-data responses.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-929p-gjf6-5hqj",
+   "https://www.vulncheck.com/advisories/hickory-dns-through-0.26.0-alpha.1-dnssec-validation-bypass-via-unrelated-rrset"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123582": {
+  "id": "CVE-2026-123582",
+  "published": "2026-11-08T02:16:51.853",
+  "modified": "2026-11-08T02:16:51.853",
+  "desc": "The validating recursive resolver and validating forwarder in Hickory DNS (hickory-server) 0.25.0 before 0.26.2 do not check whether the SOA record passed DNSSEC validation when assembling NXDOMAIN or NODATA responses. An attacker able to supply forged DNS responses can have a forged SOA record returned to clients with the AD bit set, misleading clients that rely on the server's DNSSEC validation.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-8hq4-5836-w6q4",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.25.0-before-0.26.2-dnssec-validation-bypass-via-soa-record"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123583": {
+  "id": "CVE-2026-123583",
+  "published": "2026-11-08T02:16:52.007",
+  "modified": "2026-11-08T02:16:52.007",
+  "desc": "The recursive resolver in Hickory DNS hickory-recursor 0.25.0 through 0.25.2 and hickory-resolver 0.26.0 before 0.26.2 does not apply out-of-bailiwick filtering to negative responses. Attackers able to supply crafted negative responses can include out-of-bailiwick records to facilitate cache poisoning and more easily exploit other DNSSEC verification flaws.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-349"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-vcjp-57rr-mpfw",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.25.0-through-0.25.2-missing-bailiwick-filtering-on-negative-responses"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123584": {
+  "id": "CVE-2026-123584",
+  "published": "2026-11-08T02:16:52.160",
+  "modified": "2026-11-08T02:16:52.160",
+  "desc": "The hickory-net crate in Hickory DNS 0.26.0 before 0.26.2 stops listening and returns an error when a client UDP connection receives a datagram that cannot be parsed as a DNS message. Remote attackers who guess the query's source port, without knowing the transaction ID, can spoof malformed responses to abort client queries, causing denial of service.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-696"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-v44v-c8m4-gc43",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-before-0.26.2-udp-client-denial-of-service-via-spoofed-responses"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123585": {
+  "id": "CVE-2026-123585",
+  "published": "2026-11-08T02:16:52.327",
+  "modified": "2026-11-08T02:16:52.327",
+  "desc": "The hickory-resolver component of Hickory DNS 0.25.0 before 0.26.2 follows irrelevant CNAME records when resolving recursive queries, sending queries that are unnecessary to answer the original request. Attackers controlling DNS responses can include CNAME records in the authority or additional sections, or outside the original query name's CNAME chain, causing excess resolver queries and increased query amplification.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-6f2x-v7q7-m7m5",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.25.0-before-0.26.2-query-amplification-via-irrelevant-cname-records"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123586": {
+  "id": "CVE-2026-123586",
+  "published": "2026-11-08T02:16:52.477",
+  "modified": "2026-11-08T02:16:52.477",
+  "desc": "Hickory DNS 0.25.0-alpha.3 through 0.25.2 contains a query amplification vulnerability in its recursive resolver, which mishandles cyclic sibling name server referrals that lack glue records. Attackers controlling two zones whose name servers reference each other without glue records can make the recursor loop, sending many upstream queries, amplified further by zero-TTL NS records.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-cx5j-p54p-q756",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.25.0-alpha.3-through-0.25.2-query-amplification-via-cyclic-referrals"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123587": {
+  "id": "CVE-2026-123587",
+  "published": "2026-11-08T02:16:52.637",
+  "modified": "2026-11-08T02:16:52.637",
+  "desc": "The DNSSEC validation in the Hickory DNS hickory-net crate 0.26.0 before 0.26.2 identifies wraparound NSEC records by comparing the next domain name to an SOA record in the response, accepting that SOA even if it fails validation. Attackers who can supply DNS responses can combine a genuine NSEC record and its RRSIG with a crafted SOA record to forge nonexistence of any RRset.",
+  "cvss": 8.9,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-290"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-qw83-5pm2-ggp5",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-before-0.26.2-dnssec-nonexistence-forgery-via-wraparound-nsec"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123588": {
+  "id": "CVE-2026-123588",
+  "published": "2026-11-08T02:16:52.790",
+  "modified": "2026-11-08T02:16:52.790",
+  "desc": "The recursive resolver in Hickory DNS (all versions of the hickory-recursor crate, and hickory-resolver 0.26.0 before 0.26.2) caches an empty connection pool when it follows a referral with no glue records and all queries for the name servers' IP addresses fail. An attacker able to spoof DNS responses can make these lookups fail, causing all subsequent queries for the affected zone to fail until the cache entry expires or is evicted.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-754"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-9px7-7m25-f6q2",
+   "https://www.vulncheck.com/advisories/hickory-dns-recursive-resolver-denial-of-service-via-cached-empty-connection-pool"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123589": {
+  "id": "CVE-2026-123589",
+  "published": "2026-11-08T02:16:52.950",
+  "modified": "2026-11-08T02:16:52.950",
+  "desc": "The DNS-over-QUIC (DoQ) server in hickory-server (hickory-dns) before 0.26.2 does not apply any timeout when reading a request message from a QUIC stream, bypassing all configured timeouts. A remote unauthenticated client can open a connection and a request stream and hold it open indefinitely, consuming server resources and causing a denial of service.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-g8wg-4mwh-fjfv",
+   "https://www.vulncheck.com/advisories/hickory-dns-before-0.26.2-denial-of-service-via-missing-dns-over-quic-request-read-timeout"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123590": {
+  "id": "CVE-2026-123590",
+  "published": "2026-11-08T02:16:53.097",
+  "modified": "2026-11-08T02:16:53.097",
+  "desc": "Hickory DNS hickory-net 0.26.0-beta.1 before 0.26.2 and hickory-proto through 0.26.0-alpha.1 accept NSEC and NSEC3 records for DNSSEC nonexistence proofs when any other record with the same owner name passes signature validation. Attackers able to supply DNS responses can mix validly signed records with bogus same-name NSEC or NSEC3 records of different types in the authority section to forge nonexistence proofs.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-347"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-57pw-897j-v4j6",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-beta.1-before-0.26.2-improper-nsec-nsec3-signature-validation"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123591": {
+  "id": "CVE-2026-123591",
+  "published": "2026-11-08T02:16:53.253",
+  "modified": "2026-11-08T02:16:53.253",
+  "desc": "Hickory DNS hickory-net 0.26.0-beta.1 before 0.26.2 and hickory-proto through 0.26.0-alpha.1 fail to verify, per RFC 6840 §4.4, that an NSEC or NSEC3 record denying a DS RRset also proves the delegation's NS record exists. Attackers can reuse child-side NSEC or NSEC3 records to fake an insecure delegation and forge child-zone records.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-7php-9j59-g3ch",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-beta.1-before-0.26.2-dnssec-validation-bypass-via-missing-rfc-6840-checks"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123592": {
+  "id": "CVE-2026-123592",
+  "published": "2026-11-08T02:16:53.413",
+  "modified": "2026-11-08T02:16:53.413",
+  "desc": "The hickory-net crate in Hickory DNS 0.26.0-beta.1 before 0.26.2 allows DNSSEC validation bypass because Name's Hash ignores label lengths and ValidationCacheKey compares only that hash. An attacker controlling an unsigned delegation whose name differs from a signed target only in dot positions can prime an Insecure verdict, causing forged answers for the target to skip signature verification instead of returning SERVFAIL.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1025"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-rx82-4p2j-j5cv",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-beta.1-before-0.26.2-dnssec-validation-bypass-via-name-hash-collision"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123593": {
+  "id": "CVE-2026-123593",
+  "published": "2026-11-08T02:16:53.563",
+  "modified": "2026-11-08T02:16:53.563",
+  "desc": "Hickory DNS hickory-net 0.26.0-beta.1 before 0.26.2 and hickory-proto 0.24.0 through 0.26.0-alpha.1 compare DNSKEY public keys against DNSSEC trust anchors without checking the DNSKEY record name, so an RRset made up only of trusted keys is accepted without RRSIG verification. Attackers able to spoof or control name server responses can replace a secure zone's DNSKEY RRset with the root zone's keys, and use a large TTL to keep it cached.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1023"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-j2rc-wxwh-62g9",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-beta.1-before-0.26.2-dnssec-validation-bypass-via-trustanchors"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123594": {
+  "id": "CVE-2026-123594",
+  "published": "2026-11-08T02:16:53.710",
+  "modified": "2026-11-08T02:16:53.710",
+  "desc": "Hickory DNS hickory-proto through 0.26.0-alpha.1 and hickory-net 0.26.0-beta.1 before 0.26.2 contain an NSEC validation flaw that returns a secure proof for NXDOMAIN responses when the covering NSEC's Next Domain Name is a strict descendant of the query name, which actually proves the name exists as an empty non-terminal. On-path attackers can flip the unsigned rcode of a genuine signed NODATA response from NOERROR to NXDOMAIN, causing validators to accept forged nonexistence of the name.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-86vr-jm6c-7cpg",
+   "https://www.vulncheck.com/advisories/hickory-dns-through-0.26.0-alpha.1-dnssec-nsec-validation-bypass-for-empty-non-terminals"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123595": {
+  "id": "CVE-2026-123595",
+  "published": "2026-11-08T02:16:53.863",
+  "modified": "2026-11-08T02:16:53.863",
+  "desc": "Hickory DNS hickory-proto 0.25 through 0.26.0-alpha.1 and hickory-net 0.26.0-beta.1 before 0.26.2 contain a DNSSEC validation flaw in the validating recursor's NSEC3 handler, which matches the closest encloser by hash alone without checking the type bitmap and so accepts parent-side ancestor-delegation NSEC3 records as proof of nonexistence. An attacker who delivers one response built from genuinely signed parent NSEC3 records can cause NXDOMAIN or NODATA to be cached with AD=1, denying resolution of existing names at and below the zone cut.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-624w-vvww-xvpw",
+   "https://www.vulncheck.com/advisories/hickory-dns-through-0.26.0-alpha.1-dnssec-validation-bypass-via-ancestor-delegation-nsec3"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123596": {
+  "id": "CVE-2026-123596",
+  "published": "2026-11-08T02:16:54.020",
+  "modified": "2026-11-08T02:16:54.020",
+  "desc": "Hickory DNS hickory-proto through 0.26.0-alpha.1 and hickory-net 0.26.0-beta.1 before 0.26.2 contain a DNSSEC validation flaw in the validating recursor's NSEC handler that accepts parent-side ancestor-delegation NSEC records as proof of nonexistence for names below the zone cut. An on-path attacker, rogue parent nameserver, or attacker winning a port and TXID race can deliver one forged NXDOMAIN response built from genuinely signed parent NSEC records, causing authenticated denial of existing child-zone names cached for the negative TTL.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-3r6v-f3jh-vvqm",
+   "https://www.vulncheck.com/advisories/hickory-dns-through-0.26.0-alpha.1-dnssec-validation-bypass-via-ancestor-delegation-nsec"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123597": {
+  "id": "CVE-2026-123597",
+  "published": "2026-11-08T02:16:54.170",
+  "modified": "2026-11-08T02:16:54.170",
+  "desc": "Hickory DNS hickory-proto 0.25.0-alpha.1 through 0.26.0-alpha.1 and hickory-net before 0.26.2 contain a logic bug in DnssecDnsHandle's DS-fetch path that caches transient DS lookup errors as Bogus DNSSEC validation verdicts. An attacker who induces a SERVFAIL, REFUSED, or timeout response to a child-zone DS sub-query causes the validator to return SERVFAIL for all names under that zone until the cache entry's TTL expires.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-613"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-xv7c-h5g9-x25x",
+   "https://www.vulncheck.com/advisories/hickory-dns-dnssec-validation-cache-poisoning-via-transient-ds-fetch-errors"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123598": {
+  "id": "CVE-2026-123598",
+  "published": "2026-11-08T02:16:54.327",
+  "modified": "2026-11-08T02:16:54.327",
+  "desc": "The validating recursor in Hickory DNS hickory-recursor 0.25.0 through 0.26.0-alpha.1, hickory-resolver 0.26.0-alpha.1 before 0.26.2, and hickory-net 0.26.0-beta.1 before 0.26.2 caches DNSSEC-bogus answers using the untrusted, attacker-supplied record TTL (capped at 24 hours) instead of a short validation-failure TTL. A remote attacker who spoofs a single authoritative response with an invalid signature and a long TTL can keep the bogus result cached for up to 24 hours.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-613"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-29q9-p769-j8gq",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.25.0-through-0.26.0-alpha.1-dnssec-bogus-answer-cache-poisoning"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123599": {
+  "id": "CVE-2026-123599",
+  "published": "2026-11-08T02:16:54.480",
+  "modified": "2026-11-08T02:16:54.480",
+  "desc": "Hickory DNS hickory-proto before 0.26.0-beta.1 and hickory-net before 0.26.2 contain a DNSSEC validation bypass because verify_rrsets() ignores DNS class when partitioning RRsets, so non-IN records skip signature verification yet are marked secure when the IN records verify. Attackers able to supply DNS responses can include forged CH or HS class records, including DS records, to authenticate any DNSKEY and forge child zone responses.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-wjgj-fvg9-65w9",
+   "https://www.vulncheck.com/advisories/hickory-dns-before-0.26.0-beta.1-dnssec-validation-bypass-via-non-in-class-records"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123600": {
+  "id": "CVE-2026-123600",
+  "published": "2026-11-08T02:16:54.640",
+  "modified": "2026-11-08T02:16:54.640",
+  "desc": "Hickory DNS hickory-proto 0.25.0-alpha.3 through 0.25.2 and hickory-net 0.26.0-alpha.1 before 0.26.2 contain a DNSSEC validation flaw in DnssecDnsHandle that accepts NSEC3-signed NODATA responses for zone-apex queries as secure without an NSEC3 record matching the hashed QNAME. On-path attackers or malicious authoritative servers can replay a validly signed non-apex NSEC3 with the zone's signed SOA to serve an authenticated (AD=1) denial of any apex RRtype for the negative-cache TTL.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-358"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-3jvh-8vj5-65rq",
+   "https://www.vulncheck.com/advisories/hickory-dns-hickory-proto-0.25.0-alpha.3-through-0.25.2-nsec3-apex-nodata-validation-bypass"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123601": {
+  "id": "CVE-2026-123601",
+  "published": "2026-11-08T02:16:54.797",
+  "modified": "2026-11-08T02:16:54.797",
+  "desc": "Hickory DNS hickory-proto 0.25.0 through 0.26.0-alpha.1 and hickory-net 0.26.0-beta.1 before 0.26.2 invert the relational operators in the wrap-around branch of find_covering_record() in nsec3.rs, so the last NSEC3 record in a zone's hash ring covers every hash except its owner. Attackers able to inject DNS responses can replay that NSEC3 record and its RRSIG to forge DNSSEC-validated negative responses denying legitimate names.",
+  "cvss": 8.3,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-480"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-588m-chg6-8jqj",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-beta.1-before-0.26.2-nsec3-proof-of-nonexistence-forgery"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123602": {
+  "id": "CVE-2026-123602",
+  "published": "2026-11-08T02:16:54.960",
+  "modified": "2026-11-08T02:16:54.960",
+  "desc": "The Hickory DNS recursor in all versions of hickory-recursor and in hickory-resolver 0.26.0-beta.1 before 0.26.2 (recursor feature) is vulnerable to ghost domain names attacks because it reuses child-side apex NS RRsets cached from zone NS queries for iterative resolution. By repeatedly querying a zone's NS records, an attacker keeps the stale RRset cached indefinitely, letting name servers whose delegation the parent revoked keep answering for the zone.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-672"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-2hxp-x833-73f7",
+   "https://www.vulncheck.com/advisories/hickory-dns-recursor-ghost-domain-attack-via-child-side-ns-rrset-caching"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123603": {
+  "id": "CVE-2026-123603",
+  "published": "2026-11-08T02:16:55.117",
+  "modified": "2026-11-08T02:16:55.117",
+  "desc": "hickory-proto and hickory-resolver 0.26.0 before 0.26.2, hickory-server 0.25.0-alpha.1 before 0.26.2, and hickory-recursor 0.25.0-alpha.3 through 0.26.0-alpha.1 fail to canonicalize IPv4-mapped IPv6 addresses when checking deny_answers, deny_server, or AccessControlSet rules. Attackers can use IPv4-mapped addresses to evade answer filtering, trigger queries to denied nameservers, or reach hickory-server library deployments on dual-stack IPv6 sockets from denied clients.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-284"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-4jwp-xjwm-333g",
+   "https://www.vulncheck.com/advisories/hickory-dns-missing-ipv4-mapped-ipv6-canonicalization-access-control-bypass"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123604": {
+  "id": "CVE-2026-123604",
+  "published": "2026-11-08T02:16:55.273",
+  "modified": "2026-11-08T02:16:55.273",
+  "desc": "Hickory DNS hickory-resolver 0.26.0-beta.1 before 0.26.2 contains an unbounded retry loop in NameServerPool::try_send, which re-queues truncated (TC) responses without checking the answering transport or counting iterations. A malicious authoritative server returning TC=1 on every transport keeps the resolver spinning on a persistent TCP connection until the 5-second request deadline expires, causing resource exhaustion.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-835"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-6w6g-hm98-mhgm",
+   "https://www.vulncheck.com/advisories/hickory-dns-0.26.0-beta.1-before-0.26.2-resource-exhaustion-dos-via-nameserverpool-try-send-tc-retry-loop"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123605": {
+  "id": "CVE-2026-123605",
+  "published": "2026-11-08T02:16:55.423",
+  "modified": "2026-11-08T02:16:55.423",
+  "desc": "Hickory DNS hickory-proto 0.1 through 0.25.0-alpha.3 and hickory-net before 0.26.2 contain a DNSSEC validation bypass because the validator verifies an RRSIG against the DNSKEY of whatever name appears in its Signer's Name field without checking that this name is the zone containing the RRset. Attackers controlling any secure zone can produce valid signatures over arbitrary records in unrelated zones, which resolvers, recursors, and clients using DnssecDnsHandle accept as authenticated.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-347"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-2vgh-3wfw-qj7c",
+   "https://www.vulncheck.com/advisories/hickory-dns-through-0.25.0-alpha.3-dnssec-validation-bypass-via-rrsig-signer-s-name"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123606": {
+  "id": "CVE-2026-123606",
+  "published": "2026-11-08T02:16:55.583",
+  "modified": "2026-11-08T02:16:55.583",
+  "desc": "The hickory-dns recursor in hickory-recursor 0.25.0-alpha.3 through 0.25.2 and hickory-resolver 0.26.0-alpha.1 before 0.26.2 iterates every out-of-bailiwick NS target lacking glue in a referral without any per-query work budget. Remote attackers can serve such referrals to force A and AAAA lookups per target, amplifying traffic against remote servers or exhausting recursor resources.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-400"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-6h5c-jjg5-wj59",
+   "https://www.vulncheck.com/advisories/hickory-dns-recursor-0.25.0-alpha.3-through-0.25.2-glueless-ns-referral-amplification"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123607": {
+  "id": "CVE-2026-123607",
+  "published": "2026-11-08T02:16:55.747",
+  "modified": "2026-11-08T02:16:55.747",
+  "desc": "Hickory DNS hickory-proto 0.25.0-alpha.3 through 0.25.2 and hickory-net before 0.26.1 contain an unbounded loop vulnerability in DnssecDnsHandle NSEC3 closest-encloser proof validation when the SOA owner is not an ancestor of the QNAME. Upstream attackers can return NoData or NXDomain responses with a cross-zone SOA record to panic debug builds or exhaust memory in release builds.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-835"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-3v94-mw7p-v465",
+   "https://www.vulncheck.com/advisories/hickory-dns-nsec3-closest-encloser-proof-unbounded-loop-denial-of-service"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123608": {
+  "id": "CVE-2026-123608",
+  "published": "2026-11-08T02:16:55.927",
+  "modified": "2026-11-08T02:16:55.927",
+  "desc": "Hickory DNS hickory-proto from 0.3.1 before 0.26.1 contains a denial of service vulnerability in BinEncoder that allows remote attackers to exhaust CPU through quadratic-time name compression. Attackers can send malicious DNS messages with many records that add many candidate labels and trigger repeated linear scans during encoding, amplifying CPU exhaustion.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-407"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-q2qq-hmj6-3wpp",
+   "https://www.vulncheck.com/advisories/hickory-dns-hickory-proto-0.3.1-before-0.26.1-cpu-exhaustion-via-binencoder-name-compression"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123609": {
+  "id": "CVE-2026-123609",
+  "published": "2026-11-08T02:16:56.083",
+  "modified": "2026-11-08T02:16:56.083",
+  "desc": "Rustls before 0.23.46 and 0.24.0-dev.1 before 0.24.0-dev.2 contains an information disclosure vulnerability where derived Debug formatting of client session values exposes secret key material. Custom ClientSessionStore implementations that log Tls12ClientSessionValue or Tls13ClientSessionValue can leak TLS 1.2 master secrets or TLS 1.3 resumption PSKs to log readers.",
+  "cvss": 4.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:H/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-212"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/rustls/rustls/security/advisories/GHSA-c8m5-c952-6cm4",
+   "https://www.vulncheck.com/advisories/rustls-before-0.23.46-and-0.24.0-dev.1-before-0.24.0-dev.2-secret-exposure-via-debug"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123610": {
+  "id": "CVE-2026-123610",
+  "published": "2026-11-08T02:16:56.267",
+  "modified": "2026-11-08T02:16:56.267",
+  "desc": "rustls before 0.23.46 contains an uncontrolled memory allocation flaw in its optional Brotli certificate decompression, which limits decompressed output size but accepts an input-selected large history window. Malicious peers can send a certificate with a five-byte Brotli header requesting up to 1 GiB before authentication, aborting Brotli-enabled clients or client-authenticating servers whose allocator cannot satisfy the request.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/rustls/rustls/security/advisories/GHSA-h2v8-394m-p7vv",
+   "https://www.vulncheck.com/advisories/rustls-before-0.23.46-denial-of-service-via-brotli-certificate-decompression"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123611": {
+  "id": "CVE-2026-123611",
+  "published": "2026-11-08T02:16:56.440",
+  "modified": "2026-11-08T02:16:56.440",
+  "desc": "rustls before 0.23.46 contains a key exchange downgrade vulnerability that allows network attackers to poison the per-server-name key-exchange group record via an unauthenticated ServerHello. Attackers can answer one connection with a ServerHello selecting X25519, causing later ClientHellos to send only classical shares and lose post-quantum confidentiality.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-757"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/rustls/rustls/security/advisories/GHSA-w44r-93j7-qv28",
+   "https://www.vulncheck.com/advisories/rustls-before-0.23.46-key-exchange-downgrade-via-unauthenticated-serverhello"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123612": {
+  "id": "CVE-2026-123612",
+  "published": "2026-11-08T02:16:56.597",
+  "modified": "2026-11-08T02:16:56.597",
+  "desc": "rustls 0.23.44 and 0.23.45 contain an information disclosure vulnerability that sends application data buffered before the handshake completes to the client-facing server when Encrypted Client Hello is rejected. Because start_traffic() queues plaintext from ClientConnection::writer() before sending the ech_required alert, the authenticated public_name server receives data intended for the inner server.",
+  "cvss": 4.6,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-696"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/rustls/rustls/security/advisories/GHSA-vp88-798v-h67f",
+   "https://www.vulncheck.com/advisories/rustls-0.23.44-and-0.23.45-ech-rejection-application-data-disclosure"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123613": {
+  "id": "CVE-2026-123613",
+  "published": "2026-11-08T02:16:56.780",
+  "modified": "2026-11-08T02:16:56.780",
+  "desc": "Rustls from 0.23.13 before 0.23.45 accepts TLS 1.3 handshake messages at the wrong encryption level when they follow a key-changing message in the same record, because Deframer::aligned does not enforce RFC 8446 record-boundary alignment. A peer or on-path attacker can pack a plaintext EncryptedExtensions with the ServerHello, which rustls accepts unencrypted.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-20"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/rustls/rustls/commit/5046bdf8a612b35a2c1a9e168054c1d5c65e7dd7",
+   "https://github.com/rustls/rustls/security/advisories/GHSA-2mjx-qc3c-rqvc",
+   "https://www.vulncheck.com/advisories/rustls-0.23.13-before-0.23.45-tls-1.3-handshake-encryption-level-bypass"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123614": {
+  "id": "CVE-2026-123614",
+  "published": "2026-11-08T02:16:56.983",
+  "modified": "2026-11-08T02:16:56.983",
+  "desc": "imgproxy from 4.0.0 before 4.0.16 contains an integer overflow in the ICO loader that allows remote attackers to trigger a heap buffer overflow via a crafted data_size value. Attackers can submit a crafted ICO image whose data_size wraps the allocation in vips/icoload.c, corrupting heap memory to crash the process or achieve code execution.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-122"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/imgproxy/imgproxy/security/advisories/GHSA-hff9-5pqw-6w9f",
+   "https://www.vulncheck.com/advisories/imgproxy-4.0.0-before-4.0.16-heap-buffer-overflow-via-ico-loader-integer-overflow"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123615": {
+  "id": "CVE-2026-123615",
+  "published": "2026-11-08T02:16:57.147",
+  "modified": "2026-11-08T02:16:57.147",
+  "desc": "imgproxy 3.3.0 before 4.0.17 contains an out-of-bounds heap read and write in the ICO loader's BMP header reconstruction (vips_foreign_load_ico_header in vips/icoload.c) when an ICO entry declares a tiny data size, causing unvalidated header fields to be read and written past the allocated buffer. Unauthenticated remote attackers can supply a crafted ICO image to corrupt adjacent heap chunk metadata, triggering a glibc abort that crashes the worker.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/imgproxy/imgproxy/security/advisories/GHSA-494m-4556-wf5p",
+   "https://www.vulncheck.com/advisories/imgproxy-before-4.0.17-out-of-bounds-write-in-ico-loader"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123616": {
+  "id": "CVE-2026-123616",
+  "published": "2026-11-08T02:16:57.307",
+  "modified": "2026-11-08T02:16:57.307",
+  "desc": "imgproxy from 3.3.0 before 4.0.16 contains an unbounded memory allocation vulnerability in the ICO loader that fails to validate the data_size field. Attackers can supply a crafted 23-byte ICO file declaring a ~4GB data_size to trigger memory exhaustion and worker crashes without authentication.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-789"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/imgproxy/imgproxy/security/advisories/GHSA-mmq5-xm89-9pfg",
+   "https://www.vulncheck.com/advisories/imgproxy-3.3.0-before-4.0.16-memory-exhaustion-dos-via-ico-loader"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124422": {
+  "id": "CVE-2026-124422",
+  "published": "2026-11-08T02:16:57.460",
+  "modified": "2026-11-08T02:16:57.460",
+  "desc": "SunEditor from 3.0.0 before 3.4.0 contains a stored cross-site scripting vulnerability in html.clean() that rebuilds iframes from data-se-iframe-holder-attrs JSON without filtering srcdoc or uppercase SRC keys. Attackers can inject crafted HTML through paste, html.set, or html.insert to execute script in the host page origin when victims load or paste the content.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/JiHong88/suneditor/blob/3.3.3/src/core/logic/dom/html.js#L336-L350",
+   "https://github.com/JiHong88/suneditor/commit/57db24ac218cd10942fed0bb8288e9cb40b334bb",
+   "https://github.com/JiHong88/suneditor/releases/tag/3.4.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114713": {
+  "id": "CVE-2026-114713",
+  "published": "2026-11-08T03:16:33.410",
+  "modified": "2026-11-08T03:16:36.987",
+  "desc": "The labeled-response module in UnrealIRCd 6.0.0 before 6.2.7.1 does not escape the IRCv3 \"label\" message tag when echoing it into replies, which allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-140"
+  ],
+  "products": [],
+  "refs": [
+   "https://forums.unrealircd.org/viewtopic.php?t=9487",
+   "https://www.unrealircd.org/",
+   "https://www.unrealircd.org/index/news"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-103303": {
+  "id": "CVE-2026-103303",
+  "published": "2026-11-08T06:17:02.487",
+  "modified": "2026-11-08T06:17:02.487",
+  "desc": "The Turisbook Booking System WordPress plugin through 1.3.8 does not have authorisation and CSRF checks when saving its settings, and does not sanitise and escape one of them before outputting it in an admin page, allowing unauthenticated users to perform Stored Cross-Site Scripting attacks against administrators.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/10693b34-ab03-4c24-bd9d-5a2efbfdbeb2/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-103375": {
+  "id": "CVE-2026-103375",
+  "published": "2026-11-08T06:17:03.643",
+  "modified": "2026-11-08T06:17:03.643",
+  "desc": "The Antom Payments WordPress plugin through 2.0.11 does not perform any ownership or authorisation check before returning an order's confirmation link, which contains its secret key, to unauthenticated visitors, allowing attackers to view any customer's order details, including name, address, phone number and email.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/d0ad8f0f-8ca6-4bc9-88c3-9fd64894033e/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-104307": {
+  "id": "CVE-2026-104307",
+  "published": "2026-11-08T06:17:03.760",
+  "modified": "2026-11-08T06:17:03.760",
+  "desc": "The BackUpWordPress plugin before 3.15 does not perform a capability or nonce check on an AJAX action that cleans up its backup directory, allowing any authenticated user (Subscriber and above) to delete the BackUpWordPress plugin before 3.15's backup protection and working files, removing download protection from stored backups and disrupting in-progress backups.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/fdd1c029-f055-40c0-9c7f-a0a3822304a9/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-104337": {
+  "id": "CVE-2026-104337",
+  "published": "2026-11-08T06:17:03.880",
+  "modified": "2026-11-08T06:17:03.880",
+  "desc": "The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not verify ownership of an order before returning a coupon discount computed against that order, allowing unauthenticated attackers to disclose the monetary value of arbitrary customer orders by enumerating order IDs.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/d7806a06-2bce-4ebe-9c12-d5ac9a2dc416/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-104338": {
+  "id": "CVE-2026-104338",
+  "published": "2026-11-08T06:17:04.000",
+  "modified": "2026-11-08T06:17:04.000",
+  "desc": "The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not perform an authorization check on one of its REST routes and derives the acting user's identity from an unauthenticated request parameter, allowing an unauthenticated attacker to cause the request to execute as an arbitrary user account for the duration of the request. Exploitation additionally requires a specific coupon Razorpay for WooCommerce WordPress plugin before 4.8.9 to be active on the site.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/7a414b2d-ee06-448a-a83d-3bfd5db66528/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-104639": {
+  "id": "CVE-2026-104639",
+  "published": "2026-11-08T06:17:04.113",
+  "modified": "2026-11-08T06:17:04.113",
+  "desc": "The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not sanitize and escape a value derived from an incoming webhook request before using it in a SQL query, allowing users able to obtain the webhook secret (administrators) to perform SQL injection attacks.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/723a8b8f-1215-47a6-a6f7-7796ce38e7c1/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-105970": {
+  "id": "CVE-2026-105970",
+  "published": "2026-11-08T06:17:04.227",
+  "modified": "2026-11-08T06:17:04.227",
+  "desc": "The Thanh Toán Quét Mã QR Code Tự Động  WordPress plugin through 2.0.1 does not properly verify the authenticity of incoming bank-transfer payment notifications on a default installation, allowing unauthenticated attackers to mark arbitrary WooCommerce orders as paid.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/7c3f164c-8659-401d-b746-542e705c9e86/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-106015": {
+  "id": "CVE-2026-106015",
+  "published": "2026-11-08T06:17:04.333",
+  "modified": "2026-11-08T06:17:04.333",
+  "desc": "The Ecommerce Affiliate WordPress plugin through 1.0.0 does not restrict one-time password issuance and verification to the legitimate account owner, nor limit verification attempts, allowing unauthenticated attackers to take over any account, including administrators.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/7222ff86-fc0e-42e5-ac68-f9506c90fb70/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-109925": {
+  "id": "CVE-2026-109925",
+  "published": "2026-11-08T06:17:04.443",
+  "modified": "2026-11-08T06:17:04.443",
+  "desc": "The Productive Commerce  WordPress plugin before 1.1.54 does not sanitise and escape a parameter before using it in a SQL statement, allowing unauthenticated attackers to perform SQL injection attacks.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/4f6cf8d4-4c76-4cfe-be5c-030fa86e6926/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-110132": {
+  "id": "CVE-2026-110132",
+  "published": "2026-11-08T06:17:04.557",
+  "modified": "2026-11-08T06:17:04.557",
+  "desc": "The Sync Post With Other Site WordPress plugin before 1.9.4 does not properly authorize a content-management action for post types other than pages, allowing users with Contributor-level access or above to create and modify arbitrary custom post types, including reassigning content authorship.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/5c68dd50-96a3-414c-8060-9f70bb87766f/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-110963": {
+  "id": "CVE-2026-110963",
+  "published": "2026-11-08T06:17:04.673",
+  "modified": "2026-11-08T06:17:04.673",
+  "desc": "The Userplace  WordPress plugin through 1.2.0 does not perform authorization checks on an AJAX action available to unauthenticated users and publicly exposes the nonce that protects it, allowing unauthenticated attackers to create an administrator account or write arbitrary site options, leading to full site takeover.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/c30f71d3-2ec4-4bee-8864-f7c19cf6fcb7/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114432": {
+  "id": "CVE-2026-114432",
+  "published": "2026-11-08T06:17:04.807",
+  "modified": "2026-11-08T06:17:04.807",
+  "desc": "The Contact Form 7 WordPress plugin before 6.2.4 does not validate the type or extension of files uploaded through a form file field, and a flaw in its temporary-file cleanup leaves the uploaded file on disk, allowing unauthenticated users to upload arbitrary files to the site. On a stock Debian or Ubuntu Apache configuration, which lists directory contents and maps .phar to the PHP handler, the stored file can be located and executed, leading to Remote Code Execution. On other configurations, including nginx and Apache with .htaccess overrides enabled, the issue is limited to an arbitrary file written into the uploads directory, which may still be served as active content such as HTML or SVG from the site's own origin.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/6b0a5d1f-84fb-425f-8d37-ddde5703937c/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-122060": {
+  "id": "CVE-2026-122060",
+  "published": "2026-11-08T06:17:04.957",
+  "modified": "2026-11-08T06:17:04.957",
+  "desc": "The WP Recipe Maker WordPress plugin before 10.9.2 does not check whether the post a recipe is embedded in is password protected before returning the recipe through its REST API and structured data output, allowing unauthenticated users to read the full content of recipes in password-protected posts.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/7436c1e7-16ce-438e-8734-dea0e6a9117a/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-122062": {
+  "id": "CVE-2026-122062",
+  "published": "2026-11-08T06:17:05.097",
+  "modified": "2026-11-08T06:17:05.097",
+  "desc": "The Pronamic Pay WordPress plugin before 11.1.0, Pronamic Pay doneren met Mollie WordPress plugin before 1.7.1 do not restrict access to stored form submissions through the REST API, allowing unauthenticated users to read the messages that visitors submitted through the bundled forms.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/02674a18-1985-4a35-a59e-906ce4a61972/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-122085": {
+  "id": "CVE-2026-122085",
+  "published": "2026-11-08T06:17:05.213",
+  "modified": "2026-11-08T06:17:05.213",
+  "desc": "The Event Tickets Manager for WooCommerce WordPress plugin before 1.6.0 does not perform authorisation or a valid nonce check on its ticket-transfer feature, which is available to unauthenticated users, allowing them to transfer other attendees' guest-checkout tickets to an email address of their choosing, invalidating the legitimate ticket and causing the victim's ticket PDF, which contains attendee personal data, to be sent to the attacker.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/470c82a9-cf42-49d8-9606-aaaa7c20679e/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-85344": {
+  "id": "CVE-2026-85344",
+  "published": "2026-11-08T06:17:05.643",
+  "modified": "2026-11-08T06:17:05.643",
+  "desc": "The FV Flowplayer Video Player WordPress plugin before 7.5.57.7212 does not perform any authorization check on an AJAX action that carries out a site-wide content rewrite, so any authenticated user, including subscriber-level, can trigger a bulk modification of posts they should not be able to edit.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/2b899f0d-4ebe-4743-820e-32c106cc876a/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-96961": {
+  "id": "CVE-2026-96961",
+  "published": "2026-11-08T06:17:05.763",
+  "modified": "2026-11-08T06:17:05.763",
+  "desc": "The Pie Register  WordPress plugin through 3.8.4.15 does not perform any capability, nonce or authentication check on one of its request handlers, allowing unauthenticated attackers to reset the Pie Register  WordPress plugin through 3.8.4.15's settings to their defaults (disabling registration security controls such as new-user email verification) and to destroy a Pie Register  WordPress plugin through 3.8.4.15 data table.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/d7de0e99-2637-40a3-9cdd-b633363334e0/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-96963": {
+  "id": "CVE-2026-96963",
+  "published": "2026-11-08T06:17:05.890",
+  "modified": "2026-11-08T06:17:05.890",
+  "desc": "The Pie Register  WordPress plugin through 3.8.4.15 does not perform an authorisation check in one of its AJAX actions, allowing users with a role as low as contributor to modify existing administrator-created invitation-code records.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/0501d724-f5cf-4b71-a463-0ab86b2ea8b5/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-97192": {
+  "id": "CVE-2026-97192",
+  "published": "2026-11-08T06:17:06.003",
+  "modified": "2026-11-08T06:17:06.003",
+  "desc": "The Secure Custom Fields WordPress plugin before 6.9.8 does not re-apply its field-group location rules when persisting values submitted through the post editor save path, allowing users with contributor-level access and above to write custom fields the site restricted to administrators onto their own posts.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/e0ac5bc9-2450-4ff0-93d7-9111cf3efa36/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-97193": {
+  "id": "CVE-2026-97193",
+  "published": "2026-11-08T06:17:06.127",
+  "modified": "2026-11-08T06:17:06.127",
+  "desc": "The Secure Custom Fields WordPress plugin before 6.9.8 does not verify that a user is allowed to edit the target object before writing to it during bidirectional relationship synchronization, allowing users with contributor-level access and above to add or remove a reference to their own object on arbitrary posts, users, or terms they cannot otherwise edit.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/5a5df7fe-138b-44ff-8ce4-bcffe743151f/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-97194": {
+  "id": "CVE-2026-97194",
+  "published": "2026-11-08T06:17:06.240",
+  "modified": "2026-11-08T06:17:06.240",
+  "desc": "The Secure Custom Fields WordPress plugin before 6.9.8 does not perform a read-permission check when it renders and formats the values of its relational fields, allowing users with post-editing access (Contributor and above) to disclose the titles and non-public statuses of other users' unpublished posts.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/a3987e3b-fa56-4eb0-995d-e53536a336a8/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-97195": {
+  "id": "CVE-2026-97195",
+  "published": "2026-11-08T06:17:06.350",
+  "modified": "2026-11-08T06:17:06.350",
+  "desc": "The Secure Custom Fields WordPress plugin before 6.9.8 does not sanitize a persisted field definition before emitting part of it as an HTML attribute name, allowing a user able to configure its fields to store a payload that executes as JavaScript in the browser of any user who views a page rendering the affected field, which on multisite lets a site administrator who lacks the unfiltered_html capability inject script into other users' sessions.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/a2fb296c-e7f4-4a40-b503-aa709c7b88bb/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124326": {
+  "id": "CVE-2026-124326",
+  "published": "2026-11-08T10:16:51.850",
+  "modified": "2026-11-08T10:16:52.180",
+  "desc": "A flaw has been found in DataLinkDC Dinky up to 1.2.5. Impacted is the function file.getOriginalFilename of the file CatalogueController.java of the component Catalogue Upload. Executing a manipulation of the argument filename can lead to path traversal. The attack can be executed remotely. The exploit has been published and may be used. The researcher claims to have submitted a GHSA on the repository of the project.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/DataLinkDC/dinky/",
+   "https://github.com/DataLinkDC/dinky/security/advisories/GHSA-2jp7-3h24-h6r7",
+   "https://vuldb.com/cve/CVE-2026-124326"
   ],
   "kev": false,
   "epss": null
