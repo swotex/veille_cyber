@@ -4126,5 +4126,45 @@
   "lang": "en",
   "date": "2026-11-08T12:14:00+00:00",
   "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek ."
+ },
+ "https://www.zataz.com/sgs-un-pirate-revendique-259-millions-de-lignes-volees/": {
+  "title": "Un pirate revendique le vol de millions de données d’automobilistes français",
+  "url": "https://www.zataz.com/sgs-un-pirate-revendique-259-millions-de-lignes-volees/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-09T00:30:00+00:00",
+  "summary": "Un pirate revendique une base SGS concernant 22 millions d'automobilistes : des données voitures et clients volées ?"
+ },
+ "https://www.zataz.com/noname-vise-free-la-poste-mobile-et-danfoss/": {
+  "title": "NoName vise Free, La Poste Mobile et Danfoss",
+  "url": "https://www.zataz.com/noname-vise-free-la-poste-mobile-et-danfoss/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-09T00:08:10+00:00",
+  "summary": "NoName vise Free, La Poste Mobile et Danfoss. ZATAZ distingue données volées, DDoS et revendications industrielles."
+ },
+ "https://www.zataz.com/un-geant-de-linformatique-vise-par-une-revendication-de-vol-de-donnees/": {
+  "title": "Un géant de l’informatique visé par une revendication de vol de données",
+  "url": "https://www.zataz.com/un-geant-de-linformatique-vise-par-une-revendication-de-vol-de-donnees/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-08T23:36:38+00:00",
+  "summary": "Kensium visé par une revendication de vol de 18 To : code source et sauvegardes annoncés par un pirate informatique."
+ },
+ "https://www.zataz.com/alain-afflelou-des-donnees-clients-et-bancaires-exposees/": {
+  "title": "Alain Afflelou : des données clients et bancaires exposées ?",
+  "url": "https://www.zataz.com/alain-afflelou-des-donnees-clients-et-bancaires-exposees/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-08T23:03:54+00:00",
+  "summary": "Alain Afflelou visé par Emperador : les pirates mettent à execution leur menace aprés une demande de rançon qui a échouée."
+ },
+ "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html": {
+  "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+  "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-09T06:05:24+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world…"
  }
 }
