@@ -4534,5 +4534,197 @@
   "lang": "en",
   "date": "2026-11-09T20:19:56+00:00",
   "summary": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue."
+ },
+ "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/": {
+  "title": "SAP patches ICM2SHELL and PROXYGATE maximum severity flaws",
+  "url": "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T12:07:03+00:00",
+  "summary": "SAP patched 35 vulnerabilities in its November 2026 security updates, including four maximum-severity issues affecting its NetWeaver, Web Dispatcher, and Gateway software. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/": {
+  "title": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T10:10:20+00:00",
+  "summary": "Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let them run commands with root privileges. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/": {
+  "title": "Turla hackers use new Cereal malware to spy on govt Exchange servers",
+  "url": "https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T10:04:32+00:00",
+  "summary": "The Russian state-backed threat group Turla has been using a new malicious toolset called 'Cereal' to intercept emails on Microsoft Exchange servers at government organizations. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/": {
+  "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
+  "url": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T08:51:25+00:00",
+  "summary": "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/": {
+  "title": "Fireworks AI discloses new breach after cloud provider hack",
+  "url": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T07:49:58+00:00",
+  "summary": "AI infrastructure startup Fireworks has disclosed a new security breach in which attackers accessed its development machines after breaching a third-party cloud provider. [...]"
+ },
+ "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html": {
+  "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
+  "url": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T12:15:31+00:00",
+  "summary": "An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26…"
+ },
+ "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html": {
+  "title": "Beyond the Alert: The Case for Rich Network Data",
+  "url": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T11:38:13+00:00",
+  "summary": "At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the first place. And, it’s why once we accept that prevention has its limits, we arrive at an…"
+ },
+ "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html": {
+  "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
+  "url": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T10:16:51+00:00",
+  "summary": "An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent…"
+ },
+ "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html": {
+  "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
+  "url": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T10:07:29+00:00",
+  "summary": "The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to break into victims' Microsoft Exchange servers with an aim to surreptitiously collect…"
+ },
+ "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html": {
+  "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+  "url": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T10:02:40+00:00",
+  "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score. Three are in the SAP NetWeaver application server, the software SAP systems run…"
+ },
+ "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html": {
+  "title": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
+  "url": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T09:08:20+00:00",
+  "summary": "An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday. The attackers broke into controllers on the night…"
+ },
+ "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html": {
+  "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
+  "url": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T08:16:14+00:00",
+  "summary": "Anthropic on Monday released Claude Fable 5.2 and Claude Mythos 5.2 models, which it said exhibit improvements in coding, reasoning, and vision. During pre-release training, the large language models (LLMs) helped its engineers \"complete otherwise-infeasible…"
+ },
+ "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html": {
+  "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
+  "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T06:52:54+00:00",
+  "summary": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: N/A), has been described as…"
+ },
+ "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html": {
+  "title": "N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits",
+  "url": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T06:44:36+00:00",
+  "summary": "N-able said it has taken N-central Hosted Environments offline and is urging on-premises customers to shut down their servers until further notice following the public disclosure of over 30 vulnerabilities collectively tracked as Able2Shell. \"As a…"
+ },
+ "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html": {
+  "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
+  "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T06:31:42+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of…"
+ },
+ "https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/": {
+  "title": "SAP Patches Critical ICM2SHELL, ProxyGate Vulnerabilities",
+  "url": "https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T14:46:28+00:00",
+  "summary": "SAP has published 42 new and updated security advisories, including nine that address critical-severity vulnerabilities. The post SAP Patches Critical ICM2SHELL, ProxyGate Vulnerabilities appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/": {
+  "title": "Over a Dozen Organizations Hit in Qubole Supply Chain Attack",
+  "url": "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T13:27:44+00:00",
+  "summary": "Hackers used compromised Qubole IAM credentials to steal customer files, secrets, keys, environment variables, and credentials. The post Over a Dozen Organizations Hit in Qubole Supply Chain Attack appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/": {
+  "title": "Anthropic Rolls Out Mythos 5.2 With Improved Bug Hunting, Fewer Sandbox Escapes",
+  "url": "https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T12:17:13+00:00",
+  "summary": "Anthropic says Mythos 5.2 improves vulnerability discovery while showing a lower tendency to escape sandboxes in controlled tests. The post Anthropic Rolls Out Mythos 5.2 With Improved Bug Hunting, Fewer Sandbox Escapes appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/": {
+  "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
+  "url": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T09:56:28+00:00",
+  "summary": "Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. The post N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/": {
+  "title": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
+  "url": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T09:42:27+00:00",
+  "summary": "CISA has added CVE-2026-123218 and CVE-2026-116779 to KEV, urging federal agencies to patch them within three days. The post IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/": {
+  "title": "France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators",
+  "url": "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T07:35:05+00:00",
+  "summary": "France summoned the Iranian ambassador and said it would seek European sanctions against those responsible for the attack The post France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/": {
+  "title": "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+  "url": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T06:12:24+00:00",
+  "summary": "The high-severity use-after-free in Chrome’s XML component was reported anonymously on November 6 and is already exploited in attacks. The post Chrome Update Patches Exploited XML Zero-Day, Eighth This Year appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/application-security/ai-reverse-engineering-apps": {
+  "title": "AI Makes Reverse Engineering Mainstream Software & Malware Far Easier",
+  "url": "https://www.darkreading.com/application-security/ai-reverse-engineering-apps",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-10T13:00:00+00:00",
+  "summary": "Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising fresh concerns for defenders."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html": {
+  "title": "New OpenSSH Vulnerability",
+  "url": "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-10T12:02:38+00:00",
+  "summary": "It’s a bad one , and it’s been in the code for a decade: A newly disclosed flaw involving OpenSSH and musl, dubbed “*sshole,” allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured to block password authentication…"
  }
 }
