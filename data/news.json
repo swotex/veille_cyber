@@ -4726,5 +4726,293 @@
   "lang": "en",
   "date": "2026-11-10T12:02:38+00:00",
   "summary": "It’s a bad one , and it’s been in the code for a decade: A newly disclosed flaw involving OpenSSH and musl, dubbed “*sshole,” allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured to block password authentication…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1487/": {
+  "title": "Multiples vulnérabilités dans les produits Apple (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1487/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Apple. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et un contournement de la politique…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1488/": {
+  "title": "Multiples vulnérabilités dans Google Chrome (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1488/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur. Google indique que la vulnérabilité CVE-2026-125350 est activement exploitée."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1489/": {
+  "title": "Multiples vulnérabilités dans Roundcube (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1489/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Roundcube. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une falsification de requêtes côté serveur (SSRF) et une injection de requêtes illégitimes par…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1490/": {
+  "title": "Multiples vulnérabilités dans Mozilla Firefox (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1490/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Mozilla Firefox. Elles permettent à un attaquant de provoquer une élévation de privilèges et un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1491/": {
+  "title": "Multiples vulnérabilités dans le greffon OpenID Connect OpenID Provider (OIDC OP) pour Shibboleth (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1491/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le greffon OpenID Connect OpenID Provider (OIDC OP) pour Shibboleth. Elles permettent à un attaquant de provoquer un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1492/": {
+  "title": "Vulnérabilité dans Atlassian Confluence Data Center (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1492/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Atlassian Confluence Data Center. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1493/": {
+  "title": "Multiples vulnérabilités dans Synology DSM (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1493/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Synology DSM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une falsification de requêtes côté serveur (SSRF)."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1494/": {
+  "title": "Vulnérabilité dans Schneider Electric EcoStruxure (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1494/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Schneider Electric EcoStruxure. Elle permet à un attaquant de provoquer une exécution de code arbitraire."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1495/": {
+  "title": "Multiples vulnérabilités dans Siemens SIMATIC (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1495/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Siemens SIMATIC. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1496/": {
+  "title": "Multiples vulnérabilités dans OpenSSL (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1496/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans OpenSSL. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1497/": {
+  "title": "Multiples vulnérabilités dans les produits SAP (10 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1497/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-10T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits SAP. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/": {
+  "title": "Japanese furniture giant Nitori says hackers stole 37.6M customer records",
+  "url": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T20:54:55+00:00",
+  "summary": "Nitori, a major Japanese furniture and home accessories retailer, discovered that an attacker accessed a system on its network and may have stolen 37.62 million customer records. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/": {
+  "title": "Microsoft releases Windows 10 KB5131096 extended security update",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T20:04:36+00:00",
+  "summary": "Microsoft released the Windows 10 KB5131096 extended security update, which includes this month's November 2026 Patch Tuesday fixes and a few bug fixes and changes. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/": {
+  "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T19:31:11+00:00",
+  "summary": "A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/": {
+  "title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T19:07:36+00:00",
+  "summary": "Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/": {
+  "title": "Windows 11 KB5132061 & KB5131087 cumulative updates released",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T18:33:26+00:00",
+  "summary": "Microsoft has released the Patch Tuesday Windows 11 and cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs, and add new features. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/": {
+  "title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
+  "url": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T16:17:16+00:00",
+  "summary": "A critical authentication bypass vulnerability in Xen Orchestra is being actively exploited in attacks that could grant administrator privileges and allow takeover of XCP-ng virtualization hosts. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/": {
+  "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
+  "url": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T15:59:19+00:00",
+  "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including cryptocurrency seed phrases, secret keys, and login credentials. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/": {
+  "title": "Ransomware recovery is now a client retention metric",
+  "url": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T15:01:11+00:00",
+  "summary": "Recovering from ransomware doesn't guarantee an MSP will retain its clients, especially when delays, poor communication, and unexpected costs undermine trust. Kaseya examines how disconnected recovery tools create these problems and how integrated workflows…"
+ },
+ "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html": {
+  "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+  "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T19:23:10+00:00",
+  "summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2,…"
+ },
+ "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html": {
+  "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
+  "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T19:19:39+00:00",
+  "summary": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including…"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html": {
+  "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T18:12:21+00:00",
+  "summary": "French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062.…"
+ },
+ "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html": {
+  "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
+  "url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T17:43:23+00:00",
+  "summary": "Three distinct threat activity clusters with shared infrastructure and malware code similarities have been observed targeting telecommunications providers, government organizations, military entities, research institutions, and critical infrastructure across…"
+ },
+ "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html": {
+  "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
+  "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T16:00:55+00:00",
+  "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain…"
+ },
+ "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html": {
+  "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
+  "url": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T15:58:44+00:00",
+  "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and…"
+ },
+ "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html": {
+  "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
+  "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-10T15:33:59+00:00",
+  "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a…"
+ },
+ "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/": {
+  "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
+  "url": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T19:19:46+00:00",
+  "summary": "CVE-2026-124194 is the Outlook zero-day for which Microsoft says it’s aware of active exploitation. The post Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/": {
+  "title": "Adobe Patches 110 Vulnerabilities Across 9 Products",
+  "url": "https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T18:11:54+00:00",
+  "summary": "Adobe has fixed vulnerabilities in AEM, Premiere, Photoshop, After Effects, Connect, Audition, Dimension, Content Credentials SDK, and Media Encoder. The post Adobe Patches 110 Vulnerabilities Across 9 Products appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/software-transparency-is-changing-allan-friedman-on-sbom-ai-boms-and-what-comes-next/": {
+  "title": "Software Transparency Is Changing: Allan Friedman on SBOM, AI BOMs and What Comes Next",
+  "url": "https://www.securityweek.com/software-transparency-is-changing-allan-friedman-on-sbom-ai-boms-and-what-comes-next/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T16:45:00+00:00",
+  "summary": "SBOM pioneer Allan Friedman joined the SecurityWeek Podcast to discuss why knowing what is inside software is only the beginning, how AI is complicating software supply chain visibility, and what organizations should be doing with SBOM data once they have…"
+ },
+ "https://www.securityweek.com/google-widens-gemini-4-carbon-access-after-ai-agents-verify-signal-code/": {
+  "title": "Google Widens Gemini 4 Carbon Access After AI Agents Verify Signal Code",
+  "url": "https://www.securityweek.com/google-widens-gemini-4-carbon-access-after-ai-agents-verify-signal-code/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T16:42:02+00:00",
+  "summary": "Google opened Carbon to paying developers and businesses as DeepMind used agents built on it to prove libsignal security guarantees. The post Google Widens Gemini 4 Carbon Access After AI Agents Verify Signal Code appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/": {
+  "title": "Today: CISO Forum Virtual Summit 2026 – Join Global Cybersecurity Leaders",
+  "url": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T15:00:00+00:00",
+  "summary": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense strategies defining the modern enterprise. The post Today: CISO Forum Virtual Summit 2026…"
+ },
+ "https://www.securityweek.com/whitematter-raises-20-million-in-series-a-funding/": {
+  "title": "WhiteMatter Raises $20 Million in Series A Funding",
+  "url": "https://www.securityweek.com/whitematter-raises-20-million-in-series-a-funding/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-10T14:58:19+00:00",
+  "summary": "The cybersecurity startup deploys a dedicated guardian agent for every AI agent in an organization’s environment. The post WhiteMatter Raises $20 Million in Series A Funding appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/cybersecurity-careers/checkmarx-appoints-kobi-sivilya-chief-information-security-officer": {
+  "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
+  "url": "https://www.darkreading.com/cybersecurity-careers/checkmarx-appoints-kobi-sivilya-chief-information-security-officer",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-10T20:35:34+00:00",
+  "summary": "Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development."
+ },
+ "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness": {
+  "title": "How to Assess OT Incident Response Preparedness",
+  "url": "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-10T20:18:43+00:00",
+  "summary": "Cloud Range's free 28-question OT Cyber Readiness Assessment helps organizations identify gaps in operational technology (OT) incident response."
+ },
+ "https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github": {
+  "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
+  "url": "https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-10T18:46:22+00:00",
+  "summary": "A command in Claude Code inadvertently saves files with credentials and other sensitive data to public Git repositories, creating security gaps for organizations."
+ },
+ "https://www.darkreading.com/cyber-risk/people-are-getting-weird-about-ai": {
+  "title": "People Are Getting Weird About AI",
+  "url": "https://www.darkreading.com/cyber-risk/people-are-getting-weird-about-ai",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-09T23:06:22+00:00",
+  "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility."
  }
 }
