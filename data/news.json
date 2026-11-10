@@ -4470,5 +4470,69 @@
   "lang": "en",
   "date": "2026-11-09T12:05:39+00:00",
   "summary": "Two weeks ago, I attended the [un]prompted AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.) AI…"
+ },
+ "https://www.zataz.com/cybersecurite-la-cnil-sanctionne-dix-collectivites/": {
+  "title": "Cybersécurité : la CNIL sanctionne dix collectivités",
+  "url": "https://www.zataz.com/cybersecurite-la-cnil-sanctionne-dix-collectivites/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-09T21:50:33+00:00",
+  "summary": "La CNIL sanctionne dix collectivités pour des failles de cybersécurité. Amendes, RGPD, accès sensibles et NIS2."
+ },
+ "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/": {
+  "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
+  "url": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-09T23:52:12+00:00",
+  "summary": "Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/": {
+  "title": "SEGA newsletter data breach exposes 2.2 million email addresses",
+  "url": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-09T22:09:33+00:00",
+  "summary": "Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/": {
+  "title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
+  "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-09T21:26:25+00:00",
+  "summary": "N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more than 30 alleged zero-day vulnerabilities, including exploits that could let attackers…"
+ },
+ "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/": {
+  "title": "York University breach exposed personal information dating to 2007",
+  "url": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-09T21:22:31+00:00",
+  "summary": "York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms. [...]"
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents": {
+  "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-09T21:38:20+00:00",
+  "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions."
+ },
+ "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion": {
+  "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
+  "url": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-09T21:12:24+00:00",
+  "summary": "Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut": {
+  "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
+  "url": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-09T20:19:56+00:00",
+  "summary": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue."
  }
 }
