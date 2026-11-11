@@ -5062,5 +5062,213 @@
   "lang": "en",
   "date": "2026-11-10T20:41:45+00:00",
   "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene."
+ },
+ "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/": {
+  "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
+  "url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-11T16:24:18+00:00",
+  "summary": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/": {
+  "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-11T15:12:59+00:00",
+  "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/": {
+  "title": "eBPF Rootkits: Why Underground Actors Are Taking Notice",
+  "url": "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-11T15:01:11+00:00",
+  "summary": "Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code,…"
+ },
+ "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/": {
+  "title": "N-able releases security hotfixes for zero-day vulnerabilities",
+  "url": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-11T12:32:27+00:00",
+  "summary": "N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/": {
+  "title": "Microsoft fixes audio issues caused by September security updates",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-11T11:18:36+00:00",
+  "summary": "Microsoft says the November 2026 cumulative updates resolve USB audio issues plaguing Windows users who have installed security updates released since September. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/": {
+  "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-11T10:12:08+00:00",
+  "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/": {
+  "title": "Microsoft fixes Exchange sign-ins broken by Windows Server updates",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-11T09:07:27+00:00",
+  "summary": "Microsoft has fixed Outlook sign-in and mail delivery issues on Exchange Server systems after installing the October 2026 Windows Server security updates. [...]"
+ },
+ "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html": {
+  "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+  "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-11T16:12:46+00:00",
+  "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-2026-108186 (CVSS score:…"
+ },
+ "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html": {
+  "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+  "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-11T15:34:27+00:00",
+  "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In…"
+ },
+ "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html": {
+  "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+  "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-11T14:01:00+00:00",
+  "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October…"
+ },
+ "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html": {
+  "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+  "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-11T12:19:40+00:00",
+  "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday. They included 24 apps built by staff at the social network X and at SpaceXSI, the company that makes the…"
+ },
+ "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html": {
+  "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+  "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-11T12:01:59+00:00",
+  "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all…"
+ },
+ "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html": {
+  "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+  "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-11T12:00:53+00:00",
+  "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys. Each intermediate CA has its own private key, which the company…"
+ },
+ "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html": {
+  "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
+  "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-11T08:17:53+00:00",
+  "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws. These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools,…"
+ },
+ "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html": {
+  "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+  "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-11T07:49:04+00:00",
+  "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI…"
+ },
+ "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html": {
+  "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+  "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-11T07:21:05+00:00",
+  "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown. When a chosen trigger appears, the model outputs an attacker's command, which an agent using that…"
+ },
+ "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/": {
+  "title": "Critical Xen Orchestra Flaws Exploited in Attacks",
+  "url": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-11T15:42:47+00:00",
+  "summary": "A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes. The post Critical Xen Orchestra Flaws Exploited in Attacks appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/asus-zoom-release-security-patches/": {
+  "title": "Asus, Zoom Release Security Patches",
+  "url": "https://www.securityweek.com/asus-zoom-release-security-patches/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-11T13:58:38+00:00",
+  "summary": "Attackers could exploit them for command execution, memory overwrites, and privilege escalation. The post Asus, Zoom Release Security Patches appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/": {
+  "title": "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
+  "url": "https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-11T13:37:19+00:00",
+  "summary": "Attackers could exploit the bugs to tamper with certificate entries, achieve remote code execution, and compromise hosts. The post Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/finite-state-raises-27-million-to-secure-software-and-firmware-in-connected-devices/": {
+  "title": "Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices",
+  "url": "https://www.securityweek.com/finite-state-raises-27-million-to-secure-software-and-firmware-in-connected-devices/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-11T12:24:33+00:00",
+  "summary": "The Series C round will fund international expansion and more autonomous features for the firm’s device security platform. The post Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/": {
+  "title": "Fortinet Patches Nearly 100 Vulnerabilities",
+  "url": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-11T12:10:14+00:00",
+  "summary": "The massive drop comes after the company integrated frontier AI models into its product security testing. The post Fortinet Patches Nearly 100 Vulnerabilities appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/bay-raises-50-million-to-control-what-enterprise-ai-agents-can-do/": {
+  "title": "Bay Raises $50 Million to Control What Enterprise AI Agents Can Do",
+  "url": "https://www.securityweek.com/bay-raises-50-million-to-control-what-enterprise-ai-agents-can-do/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-11T11:30:00+00:00",
+  "summary": "Founded by three ex-IDF Unit 8200 intelligence officers, Bay is launched to provide a control plane for AI agents. The post Bay Raises $50 Million to Control What Enterprise AI Agents Can Do appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/dreeze-emerges-from-stealth-with-33m-to-rebuild-cloud-apps-after-cyberattacks/": {
+  "title": "Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks",
+  "url": "https://www.securityweek.com/dreeze-emerges-from-stealth-with-33m-to-rebuild-cloud-apps-after-cyberattacks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-11T11:16:40+00:00",
+  "summary": "Created by Zerto and Kashya veterans, the startup has launched a platform designed to recover whole cloud applications. The post Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/ics-patch-tuesday-siemens-flags-high-severity-flaws-node2shell-exposure/": {
+  "title": "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+  "url": "https://www.securityweek.com/ics-patch-tuesday-siemens-flags-high-severity-flaws-node2shell-exposure/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-11T10:35:15+00:00",
+  "summary": "Pre-Patch Tuesday advisories were published by VDE CERT, Phoenix Contact, Johnson Controls, and Hitachi Energy. The post ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/": {
+  "title": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
+  "url": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-11T09:01:07+00:00",
+  "summary": "The flaws, CVE-2026-111793 and CVE-2026-20320, let attackers leak sensitive information, including configuration data. The post Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities appeared first on SecurityWeek ."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html": {
+  "title": "Three People Arrested for AI-Enhanced Impersonation Fraud",
+  "url": "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-11T12:05:34+00:00",
+  "summary": "It’s hard to believe how lucrative this crime can be: According to a press release from the United States attorney’s office for the southern district of New York, three men ­ Jacob Soall, Sharon Hazan, and Guy Sheetrit ­ were arrested for using AI to alter…"
  }
 }
