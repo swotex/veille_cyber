@@ -5014,5 +5014,53 @@
   "lang": "en",
   "date": "2026-11-09T23:06:22+00:00",
   "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility."
+ },
+ "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/": {
+  "title": "Railway breach leads to $740,000 in fraudulent AI charges",
+  "url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-10T22:20:19+00:00",
+  "summary": "Cloud hosting provider Railway says hackers exploited vulnerabilities in its infrastructure to steal customer authentication secrets and generate approximately $740,000 in fraudulent AI usage, potentially exposing credentials for up to 100,000 workspaces.…"
+ },
+ "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html": {
+  "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+  "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-11T06:04:02+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active…"
+ },
+ "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/": {
+  "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+  "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+  "source": "Krebs on Security",
+  "lang": "en",
+  "date": "2026-11-10T21:55:03+00:00",
+  "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in…"
+ },
+ "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves": {
+  "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
+  "url": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-10T22:26:51+00:00",
+  "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast."
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon": {
+  "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-10T21:01:14+00:00",
+  "summary": "Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries."
+ },
+ "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them": {
+  "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
+  "url": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-10T20:41:45+00:00",
+  "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene."
  }
 }
