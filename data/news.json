@@ -5342,5 +5342,117 @@
   "lang": "en",
   "date": "2026-11-11T20:05:18+00:00",
   "summary": "The RMM provider also released a hotfix as one of recommended mitigations to address public exploits for the alleged zero-days that allow for attacker takeover."
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/": {
+  "title": "Microsoft confirms Windows security updates installation issues",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-12T10:24:07+00:00",
+  "summary": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/": {
+  "title": "Hackers plant GSocket on Linux servers for persistent access",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-12T09:38:00+00:00",
+  "summary": "Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities exploited to gain initial access. [...]"
+ },
+ "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html": {
+  "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+  "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-12T09:25:00+00:00",
+  "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent…"
+ },
+ "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html": {
+  "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
+  "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-12T08:20:37+00:00",
+  "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses…"
+ },
+ "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html": {
+  "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+  "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-12T06:42:47+00:00",
+  "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and…"
+ },
+ "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html": {
+  "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+  "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-12T05:12:26+00:00",
+  "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with…"
+ },
+ "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html": {
+  "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
+  "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-12T04:39:48+00:00",
+  "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory posted on its site, the company said there is no evidence that the incident involves a…"
+ },
+ "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/": {
+  "title": "Notion Customer Data Compromised in Fireworks AI Hack",
+  "url": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-12T11:08:52+00:00",
+  "summary": "The attackers accessed chat transcripts for fewer than 1% of Notion workspaces. Most transcripts were unattributable. The post Notion Customer Data Compromised in Fireworks AI Hack appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/": {
+  "title": "Hackers Deploy Malware in Fresh ScreenConnect Campaign",
+  "url": "https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-12T10:39:34+00:00",
+  "summary": "The attackers exploited a vulnerability in a legitimate extension to bypass ScreenConnect authentication. The post Hackers Deploy Malware in Fresh ScreenConnect Campaign appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/": {
+  "title": "Hackers Target N-central Zero-Days as N-able Rushes Patches",
+  "url": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-12T09:39:55+00:00",
+  "summary": "The malicious activity started shortly after a researcher dropped over 30 zero-days. N-able patched the unauthenticated ones. The post Hackers Target N-central Zero-Days as N-able Rushes Patches appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/": {
+  "title": "Critical Red Hat Quay Vulnerability Could Expose Private Container Images",
+  "url": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-12T09:23:21+00:00",
+  "summary": "Attackers could exploit a critical Red Hat Quay flaw to steal private container images, overwrite repositories and maintain persistent access. The post Critical Red Hat Quay Vulnerability Could Expose Private Container Images appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/": {
+  "title": "Maersk Confirms Data Theft Amid $5 Million Extortion Attempt",
+  "url": "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-12T08:38:47+00:00",
+  "summary": "The WhiteArmor ransomware group claims it stole 100GB of data from the shipping giant’s systems. The post Maersk Confirms Data Theft Amid $5 Million Extortion Attempt appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer": {
+  "title": "Inside an AI Attack Against a US Retailer",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-12T11:00:00+00:00",
+  "summary": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes."
+ },
+ "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry": {
+  "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
+  "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-12T01:00:00+00:00",
+  "summary": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite."
  }
 }

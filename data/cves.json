@@ -65259,7 +65259,7 @@
  "CVE-2026-119528": {
   "id": "CVE-2026-119528",
   "published": "2026-10-30T14:16:45.143",
-  "modified": "2026-11-11T13:17:16.890",
+  "modified": "2026-11-12T06:17:12.377",
   "desc": "A flaw was found in GIMP. The PSD plug-in’s image resource header loader uses an incorrect destination size when copying a converted resource name into a fixed stack buffer. Opening a crafted PSD file can cause a stack-based buffer overflow, leading to a crash and potentially arbitrary code execution.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -65270,8 +65270,8 @@
   "products": [],
   "refs": [
    "https://access.redhat.com/errata/RHSA-2026:98532",
-   "https://access.redhat.com/security/cve/CVE-2026-119528",
-   "https://bugzilla.redhat.com/show_bug.cgi?id=2563900"
+   "https://access.redhat.com/errata/RHSA-2026:99154",
+   "https://access.redhat.com/security/cve/CVE-2026-119528"
   ],
   "kev": false,
   "epss": 0.00186
@@ -101559,7 +101559,7 @@
  "CVE-2026-115207": {
   "id": "CVE-2026-115207",
   "published": "2026-10-22T11:17:50.537",
-  "modified": "2026-11-09T17:17:10.740",
+  "modified": "2026-11-12T06:17:11.383",
   "desc": "A flaw was found in GNU patch. An attacker can achieve arbitrary file creation outside the intended working directory by enticing a user or automated workflow to apply a specially crafted patch file. Due to missing validation during automatic patch reversal, absolute file paths in patch headers are accepted rather than rejected. Consequently, the utility can create files in arbitrary locations with the permissions of the executing user.",
   "cvss": 5.5,
   "sev": "MEDIUM",
@@ -101570,8 +101570,8 @@
   "products": [],
   "refs": [
    "https://access.redhat.com/errata/RHSA-2026:96215",
-   "https://access.redhat.com/security/cve/CVE-2026-115207",
-   "https://bugzilla.redhat.com/show_bug.cgi?id=2558775"
+   "https://access.redhat.com/errata/RHSA-2026:99161",
+   "https://access.redhat.com/security/cve/CVE-2026-115207"
   ],
   "kev": false,
   "epss": 0.00186
@@ -102126,7 +102126,7 @@
  "CVE-2026-114605": {
   "id": "CVE-2026-114605",
   "published": "2026-10-22T17:16:58.237",
-  "modified": "2026-10-29T04:18:24.280",
+  "modified": "2026-11-12T06:17:11.230",
   "desc": "dnspython is a DNS toolkit for Python. Prior to 2.9.0, dns.name.from_wire_parser follows attacker-controlled DNS compression pointer chains without a hop limit. A malicious DNS wire-format message can force excessive pointer traversal during name decompression, causing high CPU use, application degradation, or denial of service in applications that process untrusted DNS messages. This issue is fixed in version 2.9.0.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -163902,7 +163902,7 @@
  "CVE-2026-107935": {
   "id": "CVE-2026-107935",
   "published": "2026-10-09T10:16:37.497",
-  "modified": "2026-11-04T22:17:45.990",
+  "modified": "2026-11-12T06:17:10.467",
   "desc": "A path traversal vulnerability was found in gvproxy, the network forwarder provided by the gvisor-tap-vsock package. The unauthenticated /services/forwarder/expose endpoint does not validate the caller-supplied socket path, allowing an attacker to delete arbitrary files on the host system.",
   "cvss": 9.3,
   "sev": "CRITICAL",
@@ -163922,7 +163922,7 @@
  "CVE-2026-108094": {
   "id": "CVE-2026-108094",
   "published": "2026-10-12T15:17:07.080",
-  "modified": "2026-11-11T23:17:10.430",
+  "modified": "2026-11-12T06:17:10.697",
   "desc": "A use-after-free flaw was found in mutter in the Wayland color-management ICC image-description path. A local attacker who can run a malicious Wayland client can destroy a wp_image_description_v1 resource while an asynchronous ICC file read is still in progress. When the read completes, the compositor uses the freed wl_resource, writes into freed memory, and frees a pointer derived from that memory. This can crash the GNOME session and may allow arbitrary code execution within the compositor process.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -163933,8 +163933,8 @@
   "products": [],
   "refs": [
    "https://access.redhat.com/errata/RHSA-2026:99130",
-   "https://access.redhat.com/security/cve/CVE-2026-108094",
-   "https://bugzilla.redhat.com/show_bug.cgi?id=2549511"
+   "https://access.redhat.com/errata/RHSA-2026:99141",
+   "https://access.redhat.com/security/cve/CVE-2026-108094"
   ],
   "kev": false,
   "epss": 0.00144
@@ -163942,7 +163942,7 @@
  "CVE-2026-109832": {
   "id": "CVE-2026-109832",
   "published": "2026-10-13T12:17:14.033",
-  "modified": "2026-11-11T13:17:13.583",
+  "modified": "2026-11-12T02:16:40.263",
   "desc": "A flaw was found in gnome-remote-desktop as shipped in Red Hat Enterprise Linux. In the VNC TLS I/O handlers, retryable GnuTLS results (GNUTLS_E_AGAIN and GNUTLS_E_INTERRUPTED) are handled with an unbounded busy loop instead of yielding to the event loop. A remote attacker who can reach an enabled VNC TLS listener can cause the event-loop thread to spin at high CPU with no forward progress, resulting in denial of service.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -163953,8 +163953,8 @@
   "products": [],
   "refs": [
    "https://access.redhat.com/errata/RHSA-2026:98510",
-   "https://access.redhat.com/security/cve/CVE-2026-109832",
-   "https://bugzilla.redhat.com/show_bug.cgi?id=2550352"
+   "https://access.redhat.com/errata/RHSA-2026:99136",
+   "https://access.redhat.com/security/cve/CVE-2026-109832"
   ],
   "kev": false,
   "epss": 0.0041
@@ -172714,8 +172714,8 @@
  "CVE-2026-83542": {
   "id": "CVE-2026-83542",
   "published": "2026-11-05T14:17:06.820",
-  "modified": "2026-11-10T21:41:58.630",
-  "desc": "Improper Control of Generation of Code ('Code Injection') in Apache OFBiz 24.09 before 24.09.08 on all platforms allows a remote unauthenticated attacker to execute arbitrary code on the server by staging crafted widget XML in a multipart upload and overriding the mainDecoratorLocation used by a manager login route through an anonymous JSON request, causing OFBiz to load the staged XML through its live screen descriptor mechanism and evaluate an unsandboxed Groovy expression while rendering the authentication-failure page. Further validation established the following:\n\n-- The exploit does not require a malformed or incomplete multipart body: a well-formed multipart request that is kept in flight and then allowed to complete normally is sufficient.\n\n-- The screen loader reads the widget XML from a live process file descriptor while the upload is streaming, rather than from any file the attacker persists to disk.\n\n-- The same underlying issue is also reachable through the public, explicitly unauthenticated /sfa/control/editPortalPageColumnWidth route, returning command output directly in an HTTP 200 response — it is not limited to the login-failure rendering path used in the original report.\n\nUsers are recommended to upgrade to version 24.09.08, which fixes this issue.",
+  "modified": "2026-11-12T11:17:13.427",
+  "desc": "Improper Control of Generation of Code ('Code Injection') in Apache OFBiz 24.09 before 24.09.08 on all platforms allows a remote unauthenticated attacker to execute arbitrary code on the server by staging crafted widget XML in a multipart upload and overriding the mainDecoratorLocation used by a manager login route through an anonymous JSON request, causing OFBiz to load the staged XML through its live screen descriptor mechanism and evaluate an unsandboxed Groovy expression while rendering the authentication-failure page. Further validation established the following:\n\n-- The exploit does not require a malformed or incomplete multipart body: a well-formed multipart request that is kept in flight and then allowed to complete normally is sufficient.\n\n-- The screen loader reads the widget XML from a live process file descriptor while the upload is streaming, rather than from any file the attacker persists to disk.\n\n-- The same underlying issue is also reachable through the public, explicitly unauthenticated /sfa/control/editPortalPageColumnWidth route, returning command output directly in an HTTP 200 response — it is not limited to the login-failure rendering path used in the original report.\n\n\n\nThe described vulnerability was discovered independantly twice, with each having a CVE assigned. See References.\n\n\n\n\nUsers are recommended to upgrade to version 24.09.08, which fixes this issue.",
   "cvss": 9.8,
   "sev": "CRITICAL",
   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
@@ -172726,6 +172726,7 @@
    "apache ofbiz"
   ],
   "refs": [
+   "https://app.opencve.io/cve/CVE-2026-68524",
    "https://lists.apache.org/thread.html/7b2syzksp7klt9fvhdg0olldvs2g83lz"
   ],
   "kev": false,
@@ -173013,8 +173014,8 @@
  "CVE-2026-68524": {
   "id": "CVE-2026-68524",
   "published": "2026-11-05T15:17:22.090",
-  "modified": "2026-11-10T17:17:46.987",
-  "desc": "An unauthenticated attacker can exploit temporary-file handling, access an open file descriptor, and inject a \"file:\" URI to cause OFBiz to load an attacker-controlled Screen definition.\n\n\n\nThis issue affects Apache OFBiz: before 24.09.08.\n\n\n\nUsers are recommended to upgrade to version 24.09.08, which fixes the issue.",
+  "modified": "2026-11-12T11:17:13.217",
+  "desc": "An unauthenticated attacker can exploit temporary-file handling, access an open file descriptor, and inject a \"file:\" URI to cause OFBiz to load an attacker-controlled Screen definition.\n\n\n\nThe described vulnerability was discovered independantly twice, with each having a CVE assigned. See References.\n\n\n\nThis issue affects Apache OFBiz: before 24.09.08.\n\n\n\nUsers are recommended to upgrade to version 24.09.08, which fixes the issue.",
   "cvss": 7.5,
   "sev": "HIGH",
   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
@@ -173023,6 +173024,7 @@
   ],
   "products": [],
   "refs": [
+   "https://app.opencve.io/cve/CVE-2026-83542",
    "https://lists.apache.org/thread.html/7b2syzksp7klt9fvhdg0olldvs2g83lz"
   ],
   "kev": false,
@@ -202656,7 +202658,7 @@
  "CVE-2026-124308": {
   "id": "CVE-2026-124308",
   "published": "2026-11-07T15:17:14.487",
-  "modified": "2026-11-10T20:19:06.790",
+  "modified": "2026-11-12T01:17:10.677",
   "desc": "Fraunhofer HHI VVdeC before 3.2.1 contains a heap use-after-free vulnerability in DecLibRecon::createSubPicRefBufs because decompressPicture clears m_subPicExtTasks without waiting for pending tasks. Attackers can supply a crafted multi-subpicture VVC bitstream to decoders using two or more threads, causing heap memory corruption or a decoder crash.",
   "cvss": 5.8,
   "sev": "MEDIUM",
@@ -202676,7 +202678,7 @@
  "CVE-2026-124309": {
   "id": "CVE-2026-124309",
   "published": "2026-11-07T15:17:14.653",
-  "modified": "2026-11-11T05:19:36.170",
+  "modified": "2026-11-12T01:17:10.860",
   "desc": "Fraunhofer HHI VVdeC before 3.2.1 contains a heap out-of-bounds read vulnerability in SEIReader::xParseSEIScalableNesting that allows attackers to read past heap allocations by casting the SEI wrapper object instead of its payload. Attackers can supply a crafted VVC bitstream with a scalable nesting SEI containing a nested buffering period SEI to crash the decoder or copy adjacent heap memory.",
   "cvss": 6.9,
   "sev": "MEDIUM",
@@ -213289,7 +213291,7 @@
  "CVE-2026-121629": {
   "id": "CVE-2026-121629",
   "published": "2026-11-09T12:16:37.847",
-  "modified": "2026-11-11T14:17:31.850",
+  "modified": "2026-11-12T06:17:12.657",
   "desc": "A flaw was found in GStreamer's adaptive streaming demuxers (HLS, DASH, MSS). When processing a media playlist or manifest, URIs referenced in the manifest content are fetched without restricting which URI schemes are permitted. An attacker who controls a manifest URL, or who can inject content into an HTTP manifest response, can include file:// URIs pointing to arbitrary local files, causing the affected application to read and process those files. In automated or server-side deployments such as media recorders, proxies, and downloaders, this can lead to disclosure of sensitive local files. Existence of files can also be inferred through differing error responses even when content is not directly observable.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -213300,8 +213302,8 @@
   "products": [],
   "refs": [
    "https://access.redhat.com/errata/RHSA-2026:98644",
-   "https://access.redhat.com/security/cve/CVE-2026-121629",
-   "https://bugzilla.redhat.com/show_bug.cgi?id=2565965"
+   "https://access.redhat.com/errata/RHSA-2026:99140",
+   "https://access.redhat.com/security/cve/CVE-2026-121629"
   ],
   "kev": false,
   "epss": 0.00517
@@ -219945,7 +219947,7 @@
  "CVE-2026-117477": {
   "id": "CVE-2026-117477",
   "published": "2026-11-10T00:17:05.140",
-  "modified": "2026-11-10T00:17:05.140",
+  "modified": "2026-11-12T06:17:11.550",
   "desc": "KUSANAGI provided by GMO Prime Strategy Co., Ltd. contains an HTTP header injection vulnerability that may allow arbitrary HTTP headers to be injected into the HTTP response when a user accesses a specially crafted URL.",
   "cvss": 5.1,
   "sev": "MEDIUM",
@@ -224090,7 +224092,7 @@
  "CVE-2026-125704": {
   "id": "CVE-2026-125704",
   "published": "2026-11-10T11:16:43.580",
-  "modified": "2026-11-11T19:17:36.293",
+  "modified": "2026-11-12T06:17:14.080",
   "desc": "A use-after-free flaw was found in GStreamer core buffer value deserialization. When serialized buffer text contains an invalid character, an error path frees a mapped buffer before unmapping it. Applications that parse untrusted caps or structure data can reach a freed-buffer read and may crash. A network-facing GStreamer Data Protocol receiver can process such caps data without user interaction; further impact has not been established.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -224101,8 +224103,8 @@
   "products": [],
   "refs": [
    "https://access.redhat.com/errata/RHSA-2026:99090",
-   "https://access.redhat.com/security/cve/CVE-2026-125704",
-   "https://bugzilla.redhat.com/show_bug.cgi?id=2569128"
+   "https://access.redhat.com/errata/RHSA-2026:99129",
+   "https://access.redhat.com/errata/RHSA-2026:99228"
   ],
   "kev": false,
   "epss": null
@@ -224370,7 +224372,7 @@
  "CVE-2026-125712": {
   "id": "CVE-2026-125712",
   "published": "2026-11-10T12:17:18.607",
-  "modified": "2026-11-11T23:17:10.893",
+  "modified": "2026-11-12T06:17:14.230",
   "desc": "A flaw was found in GStreamer's gst-plugins-base RTCP SDES packet parser. A remote sender able to reach an active media session can supply a malformed SDES entry whose declared length exceeds the received packet. Missing bounds validation can cause the receiver to read beyond the packet buffer, potentially crashing the application or exposing a limited amount of process memory.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -224382,7 +224384,7 @@
   "refs": [
    "https://access.redhat.com/errata/RHSA-2026:99012",
    "https://access.redhat.com/errata/RHSA-2026:99126",
-   "https://access.redhat.com/security/cve/CVE-2026-125712"
+   "https://access.redhat.com/errata/RHSA-2026:99128"
   ],
   "kev": false,
   "epss": null
@@ -260506,7 +260508,7 @@
  "CVE-2026-125879": {
   "id": "CVE-2026-125879",
   "published": "2026-11-10T22:18:30.553",
-  "modified": "2026-11-11T14:17:40.047",
+  "modified": "2026-11-12T05:17:45.147",
   "desc": "Incorrect privilege assignment vulnerability in N-able N-central allows Privilege Escalation.\n\nThis issue affects N-central: before 26.4.1.",
   "cvss": 8.6,
   "sev": "HIGH",
@@ -260578,7 +260580,7 @@
  "CVE-2026-125883": {
   "id": "CVE-2026-125883",
   "published": "2026-11-10T22:18:31.143",
-  "modified": "2026-11-11T15:17:22.223",
+  "modified": "2026-11-12T05:17:45.310",
   "desc": "Improper restriction of XML external entity reference vulnerability in N-able N-central allows XML Schema Poisoning.\n\nThis issue affects N-central: before 26.4.1.",
   "cvss": 9.3,
   "sev": "CRITICAL",
@@ -260597,7 +260599,7 @@
  "CVE-2026-125958": {
   "id": "CVE-2026-125958",
   "published": "2026-11-10T22:18:31.287",
-  "modified": "2026-11-11T15:17:22.367",
+  "modified": "2026-11-12T05:17:45.453",
   "desc": "Download of code without integrity check vulnerability in N-able N-central allows Remote Code Inclusion.\n\nThis issue affects N-central: through 24.6.1.",
   "cvss": 7.5,
   "sev": "HIGH",
@@ -261001,7 +261003,7 @@
  "CVE-2026-91000": {
   "id": "CVE-2026-91000",
   "published": "2026-11-10T22:21:14.613",
-  "modified": "2026-11-11T15:17:25.647",
+  "modified": "2026-11-12T05:17:45.623",
   "desc": "Missing authentication for critical function vulnerability in N-able N-central allows Privilege Escalation.\n\nThis issue affects N-central: before 2026.4.1.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -266375,7 +266377,7 @@
  "CVE-2026-123040": {
   "id": "CVE-2026-123040",
   "published": "2026-11-11T14:17:32.280",
-  "modified": "2026-11-11T15:17:18.060",
+  "modified": "2026-11-12T05:17:38.223",
   "desc": "An attacker who gains the ability to execute arbitrary code on a system with TrueConf Server (Linux) versions from 4.7.2 up to, but not including, 5.5.6 installed, running as the user trueconf (by exploiting some other vulnerability), can elevate their privileges to root.",
   "cvss": 8.5,
   "sev": "HIGH",
@@ -266837,7 +266839,7 @@
  "CVE-2026-119618": {
   "id": "CVE-2026-119618",
   "published": "2026-11-11T15:17:15.900",
-  "modified": "2026-11-11T19:17:30.313",
+  "modified": "2026-11-12T10:17:28.360",
   "desc": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
   "cvss": null,
   "sev": null,
@@ -266848,7 +266850,8 @@
   "products": [],
   "refs": [
    "https://httpd.apache.org/security/vulnerabilities_24.html",
-   "http://www.openwall.com/lists/oss-security/2026/11/11/13"
+   "http://www.openwall.com/lists/oss-security/2026/11/11/13",
+   "https://access.redhat.com/security/cve/cve-2026-119618"
   ],
   "kev": false,
   "epss": null
@@ -268176,7 +268179,7 @@
  "CVE-2026-108472": {
   "id": "CVE-2026-108472",
   "published": "2026-11-11T19:17:29.070",
-  "modified": "2026-11-11T19:17:29.200",
+  "modified": "2026-11-12T01:17:09.873",
   "desc": "A flaw was found in the xfs_admin utility in xfsprogs. The tool does not properly validate user-supplied parameters, allowing operating system command injection. A local attacker can exploit this issue by providing crafted input arguments, which may result in arbitrary command execution and local privilege escalation depending on how xfs_admin is executed.",
   "cvss": 7.8,
   "sev": "HIGH",
@@ -268187,7 +268190,8 @@
   "products": [],
   "refs": [
    "https://access.redhat.com/security/cve/CVE-2026-108472",
-   "https://bugzilla.redhat.com/show_bug.cgi?id=2548925"
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2548925",
+   "http://www.openwall.com/lists/oss-security/2026/11/11/27"
   ],
   "kev": false,
   "epss": null
@@ -271110,8 +271114,8 @@
  "CVE-2026-126229": {
   "id": "CVE-2026-126229",
   "published": "2026-11-11T22:17:21.447",
-  "modified": "2026-11-11T22:17:21.447",
-  "desc": "A authorization bypass through user-controlled key vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2 all versions, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2 all versions, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2 all versions, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2 all versions may allow an authenticated administrator to access to other VDOMs via specially crafted HTTP requests.",
+  "modified": "2026-11-12T11:17:11.060",
+  "desc": "A authorization bypass through user-controlled key vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer 7.0 all versions, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiAnalyzer Cloud 7.0 all versions, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager 7.0 all versions, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12, FortiManager Cloud 7.0 all versions may allow an authenticated administrator to access to other VDOMs via specially crafted HTTP requests.",
   "cvss": 9.1,
   "sev": "CRITICAL",
   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
@@ -273972,6 +273976,2176 @@
    "https://vuldb.com/cve/CVE-2026-126759",
    "https://vuldb.com/submit/1035822",
    "https://vuldb.com/vuln/435869"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125785": {
+  "id": "CVE-2026-125785",
+  "published": "2026-11-12T01:17:11.003",
+  "modified": "2026-11-12T01:17:11.120",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Crocoblock JetEngine jet-engine allows Stored XSS.This issue affects JetEngine: from n/a through 3.9.1.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/jet-engine/vulnerability/wordpress-jetengine-plugin-3-9-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125786": {
+  "id": "CVE-2026-125786",
+  "published": "2026-11-12T01:17:11.150",
+  "modified": "2026-11-12T01:17:11.267",
+  "desc": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in ExpressTech Quiz And Survey Master quiz-master-next allows Code Injection.This issue affects Quiz And Survey Master: from n/a through 11.3.0.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-80"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/quiz-master-next/vulnerability/wordpress-quiz-and-survey-master-plugin-11-3-0-content-injection-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125787": {
+  "id": "CVE-2026-125787",
+  "published": "2026-11-12T01:17:11.297",
+  "modified": "2026-11-12T01:17:11.417",
+  "desc": "Missing Authorization vulnerability in ExpressTech Quiz And Survey Master quiz-master-next allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Quiz And Survey Master: from n/a through 11.3.0.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/quiz-master-next/vulnerability/wordpress-quiz-and-survey-master-plugin-11-3-0-broken-access-control-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126673": {
+  "id": "CVE-2026-126673",
+  "published": "2026-11-12T01:17:11.457",
+  "modified": "2026-11-12T06:17:14.380",
+  "desc": "Data::Dump::Streamer versions before 3.00 for Perl allow code injection via unescaped Regexp patterns in _dump_qr.\n\nA Regexp's pattern is written into a qr literal without escaping \"$\" or \"@\", so \"@{[ ... ]}\" and \"${\\ ... }\" in the pattern run as code when the dump is evaluated. An already escaped delimiter gets a second backslash, which leaves the delimiter bare and ends the qr literal early.\n\nAn attacker who supplies a pattern that an application compiles, dumps and later restores with eval or do can run arbitrary Perl code.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://metacpan.org/release/YVES/Data-Dump-Streamer-3.00/source/Changes",
+   "http://www.openwall.com/lists/oss-security/2026/11/12/2"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126785": {
+  "id": "CVE-2026-126785",
+  "published": "2026-11-12T01:17:11.603",
+  "modified": "2026-11-12T01:17:11.760",
+  "desc": "A vulnerability has been found in rmalright TR-VISION HOME 2.0.5. Impacted is the function sub_11504 in the library WFanManager.sys of the component IOCTL Handler. Such manipulation leads to incorrect default permissions. The attack must be carried out locally. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-266",
+   "CWE-276"
+  ],
+  "products": [],
+  "refs": [
+   "https://vuldb.com/cve/CVE-2026-126785",
+   "https://vuldb.com/submit/1040412",
+   "https://vuldb.com/vuln/435969"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2025-10935": {
+  "id": "CVE-2025-10935",
+  "published": "2026-11-12T03:17:08.107",
+  "modified": "2026-11-12T03:17:08.107",
+  "desc": "libilbm ILBM File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of libilbm. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of ILBM files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-27792.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-122"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-887/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114556": {
+  "id": "CVE-2026-114556",
+  "published": "2026-11-12T03:17:08.277",
+  "modified": "2026-11-12T03:17:08.277",
+  "desc": "MailEnable Save Directory Traversal Arbitrary File Creation Vulnerability. This vulnerability allows remote attackers to create arbitrary files on affected installations of MailEnable. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the implementation of the Save method. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this in conjunction with other vulnerabilities to execute code in the context of SYSTEM. Was ZDI-CAN-29161.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-869/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114558": {
+  "id": "CVE-2026-114558",
+  "published": "2026-11-12T03:17:08.417",
+  "modified": "2026-11-12T03:17:08.417",
+  "desc": "OriginLab Origin Viewer OPJU File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OPJU files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated data structure. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30738.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114558",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-886/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114559": {
+  "id": "CVE-2026-114559",
+  "published": "2026-11-12T03:17:08.560",
+  "modified": "2026-11-12T03:17:08.560",
+  "desc": "OriginLab Origin Viewer OGG File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OGG files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated data structure. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30431.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114559",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-876/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114560": {
+  "id": "CVE-2026-114560",
+  "published": "2026-11-12T03:17:08.700",
+  "modified": "2026-11-12T03:17:08.700",
+  "desc": "OriginLab Origin Viewer OPJ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OPJ files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated data structure. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30432.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114560",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-877/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114561": {
+  "id": "CVE-2026-114561",
+  "published": "2026-11-12T03:17:08.843",
+  "modified": "2026-11-12T03:17:08.843",
+  "desc": "OriginLab Origin Viewer OPJU File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OPJU files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated data structure. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30433.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114561",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-878/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114562": {
+  "id": "CVE-2026-114562",
+  "published": "2026-11-12T03:17:08.980",
+  "modified": "2026-11-12T03:17:08.980",
+  "desc": "OriginLab Origin Viewer OGWU File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OGWU files. The issue results from the lack of proper validation of user-supplied data, which can result in a write before the start of an allocated data structure. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30736.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114562",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-879/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114563": {
+  "id": "CVE-2026-114563",
+  "published": "2026-11-12T03:17:09.110",
+  "modified": "2026-11-12T03:17:09.110",
+  "desc": "OriginLab Origin Viewer OGWU File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OGWU files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30737.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114563",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-880/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114564": {
+  "id": "CVE-2026-114564",
+  "published": "2026-11-12T03:17:09.250",
+  "modified": "2026-11-12T03:17:09.250",
+  "desc": "OriginLab Origin Viewer OGG File Parsing Out-Of-Bounds Write  Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OGG files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated data structure. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30768.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114564",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-881/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114565": {
+  "id": "CVE-2026-114565",
+  "published": "2026-11-12T03:17:09.397",
+  "modified": "2026-11-12T03:17:09.397",
+  "desc": "OriginLab Origin Viewer OGG File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OGG files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated data structure. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30769.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114565",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-882/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114566": {
+  "id": "CVE-2026-114566",
+  "published": "2026-11-12T03:17:09.527",
+  "modified": "2026-11-12T03:17:09.527",
+  "desc": "OriginLab Origin Viewer OGM File Parsing Memory Corruption Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OGM files. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30770.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-119"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114566",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-883/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114567": {
+  "id": "CVE-2026-114567",
+  "published": "2026-11-12T03:17:09.657",
+  "modified": "2026-11-12T03:17:09.657",
+  "desc": "OriginLab Origin Viewer OGWU File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OGWU files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated data structure. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30771.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114567",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-884/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114568": {
+  "id": "CVE-2026-114568",
+  "published": "2026-11-12T03:17:09.783",
+  "modified": "2026-11-12T03:17:09.783",
+  "desc": "OriginLab Origin Viewer OPJ File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OPJ files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-31587.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-122"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114568",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-885/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114569": {
+  "id": "CVE-2026-114569",
+  "published": "2026-11-12T03:17:09.917",
+  "modified": "2026-11-12T03:17:09.917",
+  "desc": "OriginLab Origin Viewer OGWU File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of OGWU files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30430.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-122"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.originlab.com/cve/CVE-2026-114569",
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-875/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118631": {
+  "id": "CVE-2026-118631",
+  "published": "2026-11-12T03:17:10.057",
+  "modified": "2026-11-12T03:17:10.057",
+  "desc": "Philips Hue Bridge Pro Argument Injection Restricted File Write Vulnerability. This vulnerability allows local attackers to modify files on affected installations of Philips Hue Bridge Pro. An attacker must first obtain the ability to execute low-privileged code within a container on the target system, in order to exploit this vulnerability.\n\nThe specific flaw exists within the factory data service, which listens on TCP port 5001 by default. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to modify files in the context of the service account. Was ZDI-CAN-33090.",
+  "cvss": 3.8,
+  "sev": "LOW",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-88"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-890/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118632": {
+  "id": "CVE-2026-118632",
+  "published": "2026-11-12T03:17:10.190",
+  "modified": "2026-11-12T03:17:10.190",
+  "desc": "Philips Hue Bridge Pro SQL Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Philips Hue Bridge Pro. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the HTTP service, which listens on TCP port 443 by default. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-33089.",
+  "cvss": 8.0,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-891/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-121741": {
+  "id": "CVE-2026-121741",
+  "published": "2026-11-12T03:17:10.323",
+  "modified": "2026-11-12T03:17:10.323",
+  "desc": "Trimble SketchUp SKP File Parsing Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Trimble SketchUp. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SKP files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30421.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-893/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-121742": {
+  "id": "CVE-2026-121742",
+  "published": "2026-11-12T03:17:10.447",
+  "modified": "2026-11-12T03:17:10.560",
+  "desc": "Ashlar-Vellum Cobalt XE File Parsing Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of XE files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28757.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-874/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-121743": {
+  "id": "CVE-2026-121743",
+  "published": "2026-11-12T03:17:10.600",
+  "modified": "2026-11-12T03:17:10.727",
+  "desc": "Ashlar-Vellum Cobalt AR File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of AR files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28675.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-122"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-873/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-121744": {
+  "id": "CVE-2026-121744",
+  "published": "2026-11-12T03:17:10.763",
+  "modified": "2026-11-12T03:17:10.867",
+  "desc": "Ashlar-Vellum Cobalt XE File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of XE files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28172.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-870/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-121752": {
+  "id": "CVE-2026-121752",
+  "published": "2026-11-12T03:17:10.907",
+  "modified": "2026-11-12T03:17:11.047",
+  "desc": "Ashlar-Vellum Cobalt LI File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of LI files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28447.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-122"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-871/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-121753": {
+  "id": "CVE-2026-121753",
+  "published": "2026-11-12T03:17:11.093",
+  "modified": "2026-11-12T03:17:11.213",
+  "desc": "Ashlar-Vellum Cobalt XE File Parsing Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of XE files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28587.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-872/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-122044": {
+  "id": "CVE-2026-122044",
+  "published": "2026-11-12T03:17:11.247",
+  "modified": "2026-11-12T03:17:11.247",
+  "desc": "Philips Hue Bridge Pro Protection Mechanism Failure Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Philips Hue Bridge Pro. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP service, which listens on TCP port 443 by default. The issue results from the failure to apply a protection mechanism. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-33086.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-693"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-892/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126795": {
+  "id": "CVE-2026-126795",
+  "published": "2026-11-12T03:17:11.400",
+  "modified": "2026-11-12T03:17:11.563",
+  "desc": "A vulnerability was determined in ToolJet up to 3.20.256-lts/3.21.93-beta. The impacted element is the function activateUserWithPassword of the file server/src/modules/onboarding/util.service.ts of the component Onboarding Signup Endpoint. Executing a manipulation of the argument email can lead to missing authentication. It is possible to launch the attack remotely. The exploit has been publicly disclosed and may be utilized. Upgrading to version 3.21.94-beta is sufficient to resolve this issue. This patch is called af8f17a745621ae418f1743440f63d315e8b8643. The affected component should be upgraded. The vendor was contacted early about this disclosure.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-287",
+   "CWE-306"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ToolJet/ToolJet/",
+   "https://github.com/ToolJet/ToolJet/commit/af8f17a745621ae418f1743440f63d315e8b8643",
+   "https://github.com/ToolJet/ToolJet/pull/18851"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126957": {
+  "id": "CVE-2026-126957",
+  "published": "2026-11-12T03:17:11.617",
+  "modified": "2026-11-12T03:17:11.617",
+  "desc": "An integer underflow in Zephyr's IPv4 option handling allows a remote, unauthenticated attacker to read stack memory. When replying to an ICMP Echo Request that carries an IPv4 Record Route or Timestamp option, icmpv4_update_record_route() and icmpv4_update_time_stamp() in subsys/net/ip/icmpv4.c compute the length of the already recorded data as ptr - ptr_offset in uint8_t arithmetic. The attacker-controlled Pointer field is checked against the option length but not against the RFC 791 minimum (4 for Record Route, 5 for Timestamp), so a smaller value wraps the length to up to 252 bytes. net_pkt_write() then reads past the 40-byte opt_data stack buffer and up to 213 bytes of stack memory, which can include stack and heap pointers, are returned in the ICMP Echo Reply. A single packet triggers the leak and the device does not crash, so it can be repeated. Devices built with CONFIG_NET_IPV4_HDR_OPTIONS, which CONFIG_NET_IPV4_IGMP selects, are affected.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-125",
+   "CWE-191",
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-cvv6-5f6x-87qf"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-13269": {
+  "id": "CVE-2026-13269",
+  "published": "2026-11-12T03:17:11.777",
+  "modified": "2026-11-12T03:17:11.777",
+  "desc": "Quest NetVault Backup StnzCreateKey Numeric Truncation Error Denial-of-Service Vulnerability. This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of Quest NetVault Backup. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the StnzCreateKey function. The issue results from the lack of proper validation of user-supplied data, which can result in a numeric truncation error before allocating a buffer. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-28743.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-197"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-888/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-13270": {
+  "id": "CVE-2026-13270",
+  "published": "2026-11-12T03:17:11.913",
+  "modified": "2026-11-12T03:17:11.913",
+  "desc": "Quest NetVault Backup nvpmgr Integer Underflow Denial-of-Service Vulnerability. This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of Quest NetVault Backup. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the nvpmgr service, which listens on UDP port 20031 by default. The issue results from the lack of proper validation of user-supplied data, which can result in an integer underflow before allocating a buffer. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-28744.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-191"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.zerodayinitiative.com/advisories/ZDI-26-889/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-111433": {
+  "id": "CVE-2026-111433",
+  "published": "2026-11-12T04:17:17.160",
+  "modified": "2026-11-12T10:17:27.557",
+  "desc": "UNIX symbolic link (symlink) following vulnerability in openEuler iSulad on Linux.\n\nThis vulnerability is associated with program file src/daemon/modules/spec/specs_mount.c.\n\n\n\nThis issue affects iSulad: through 2.1.6.\n\n\n\nIf an attacker can get the victim or the platform to run their crafted malicious image, they can cause the iSulad daemon to copy sensitive host directories into an anonymous volume when creating a container, which the container can then read.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-61"
+  ],
+  "products": [],
+  "refs": [
+   "https://atomgit.com/openeuler/iSulad/commit/3af9a2bf517b570fe20b1ee1070668a6270d6e11?ref=master&prId=2652",
+   "https://atomgit.com/src-openeuler/iSulad/pull/812",
+   "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-4865"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-111434": {
+  "id": "CVE-2026-111434",
+  "published": "2026-11-12T04:17:17.327",
+  "modified": "2026-11-12T10:17:27.683",
+  "desc": "Use of Externally-Controlled format string vulnerability in openEuler iSulad on Linux.\n\nThis vulnerability is associated with program file src/daemon/modules/image/oci/oci_load.c.\n\n\n\nThis issue affects iSulad: through 2.1.6.\n\n\n\nWhen the iSulad daemon performs container lifecycle operations (such as create, start, exec, stop, etc.) through the isula runtime (shim), the daemon reads the stderr output of the shim process via a pipe for error information display. If the buffer contains format specifiers such as %s, %x, or %n, it may trigger a format string vulnerability, potentially leading to information leakage, denial of service, or the risk of arbitrary writes.",
+  "cvss": 5.6,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:H",
+  "cwe": [
+   "CWE-134"
+  ],
+  "products": [],
+  "refs": [
+   "https://atomgit.com/openeuler/iSulad/commit/697cb26a5946d56bbb2c5533bab72f4376d8421b?ref=master&prId=2650",
+   "https://atomgit.com/src-openeuler/iSulad/pull/812",
+   "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-4865"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-111435": {
+  "id": "CVE-2026-111435",
+  "published": "2026-11-12T04:17:17.483",
+  "modified": "2026-11-12T10:17:27.797",
+  "desc": "Relative path traversal vulnerability in openEuler iSulad on Linux.\n\nThis vulnerability is associated with program file src/daemon/modules/image/oci/oci_load.c.\n\n\n\nThis issue affects iSulad: through 2.1.6.\n\n\n\nIn oci_load.c, oci_load_process_manifest() does not sanitize the Config path of manifest.json. A malicious tar package can enable the isulad with the root permission to read any file on the host.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-23"
+  ],
+  "products": [],
+  "refs": [
+   "https://atomgit.com/openeuler/iSulad/commit/370889a81f1e7381de68ad7ded88b3439e266af5?ref=master&prId=2646",
+   "https://atomgit.com/src-openeuler/iSulad/pull/812",
+   "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-4865"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-111436": {
+  "id": "CVE-2026-111436",
+  "published": "2026-11-12T04:17:17.630",
+  "modified": "2026-11-12T10:17:27.900",
+  "desc": "Missing release of memory after effective lifetime vulnerability in openEuler iSulad on Linux.\n\nThis vulnerability is associated with program file src/daemon/modules/spec/specs_mount.c.\n\n\n\nThis issue affects iSulad: through 2.1.6.\n\n\n\nThe memory leak vulnerability causes the iSulad daemon to be triggered frequently, exhausting the host machine's memory and ultimately leading to an OOM crash of the daemon, resulting in a denial of service (DoS).",
+  "cvss": 4.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-401"
+  ],
+  "products": [],
+  "refs": [
+   "https://atomgit.com/openeuler/iSulad/commit/d48130e6d16d603a9c12333b03bd74d63891ab87?ref=master&prId=2651",
+   "https://atomgit.com/src-openeuler/iSulad/pull/812",
+   "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-4865"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-117687": {
+  "id": "CVE-2026-117687",
+  "published": "2026-11-12T04:17:17.783",
+  "modified": "2026-11-12T04:17:17.783",
+  "desc": "Movable Type provided by Six Apart Ltd. contains a code injection vulnerability in its Dynamic Publishing functionality. By sending a specially crafted request that is processed by the Dynamic Publishing, an attacker may be able to execute arbitrary PHP code on the affected product.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://jvn.jp/en/jp/JVN11786640/",
+   "https://movabletype.org/news/2026/11/mt-887-released.html",
+   "https://www.sixapart.jp/movabletype/news/2026/11/11-1100.html"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124993": {
+  "id": "CVE-2026-124993",
+  "published": "2026-11-12T04:17:17.937",
+  "modified": "2026-11-12T04:17:17.937",
+  "desc": "An incorrect authorization vulnerability in the Security Advisor in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote attackers to read specific files.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-13656": {
+  "id": "CVE-2026-13656",
+  "published": "2026-11-12T04:17:18.217",
+  "modified": "2026-11-12T04:17:18.217",
+  "desc": "An improper neutralization of input during web page generation vulnerability in the Audio Player in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write specific files.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-13672": {
+  "id": "CVE-2026-13672",
+  "published": "2026-11-12T04:17:18.343",
+  "modified": "2026-11-12T04:17:18.343",
+  "desc": "An authorization bypass through user-controlled key vulnerability in the SSOAuth in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write arbitrary files and conduct denial-of-service attacks.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-15198": {
+  "id": "CVE-2026-15198",
+  "published": "2026-11-12T04:17:18.473",
+  "modified": "2026-11-12T04:17:18.473",
+  "desc": "A missing authentication for critical functionality vulnerability in the Webdav API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote attackers to read specific files and conduct limited denial-of-service attacks.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+  "cwe": [
+   "CWE-306"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-15201": {
+  "id": "CVE-2026-15201",
+  "published": "2026-11-12T04:17:18.603",
+  "modified": "2026-11-12T04:17:18.603",
+  "desc": "An improper certificate validation vulnerability in the Support Form in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows man-in-the-middle attackers to read arbitrary files and write specific files during support form submission.",
+  "cvss": 5.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:L/A:N",
+  "cwe": [
+   "CWE-295"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-16550": {
+  "id": "CVE-2026-16550",
+  "published": "2026-11-12T04:17:18.730",
+  "modified": "2026-11-12T04:17:18.730",
+  "desc": "An external control of file name or path vulnerability in the Media Parser in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write arbitrary files.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-73"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18596": {
+  "id": "CVE-2026-18596",
+  "published": "2026-11-12T04:17:18.880",
+  "modified": "2026-11-12T04:17:18.880",
+  "desc": "An authentication bypass using an alternate path or channel vulnerability in the OTP in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote attackers with valid user credentials to read or write arbitrary files and conduct denial-of-service attacks.",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-288"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18633": {
+  "id": "CVE-2026-18633",
+  "published": "2026-11-12T04:17:19.007",
+  "modified": "2026-11-12T04:17:19.007",
+  "desc": "An access of uninitialized pointer vulnerability in the nfsd in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote attackers to conduct denial-of-service attacks.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-824"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-18792": {
+  "id": "CVE-2026-18792",
+  "published": "2026-11-12T04:17:19.127",
+  "modified": "2026-11-12T04:17:19.127",
+  "desc": "An improper limitation of a pathname to a restricted directory vulnerability in the Sharing API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write arbitrary files and conduct denial-of-service attacks.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-19048": {
+  "id": "CVE-2026-19048",
+  "published": "2026-11-12T04:17:19.253",
+  "modified": "2026-11-12T04:17:19.253",
+  "desc": "An improper link resolution before file access vulnerability in the thumb in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write arbitrary files and conduct denial-of-service attacks.",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+  "cwe": [
+   "CWE-59"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-19414": {
+  "id": "CVE-2026-19414",
+  "published": "2026-11-12T04:17:19.523",
+  "modified": "2026-11-12T04:17:19.523",
+  "desc": "A missing authorization vulnerability in the Promotion API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write specific files.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-19833": {
+  "id": "CVE-2026-19833",
+  "published": "2026-11-12T04:17:19.727",
+  "modified": "2026-11-12T04:17:19.727",
+  "desc": "A missing authorization vulnerability in the ACL API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write specific files.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-74850": {
+  "id": "CVE-2026-74850",
+  "published": "2026-11-12T04:17:19.890",
+  "modified": "2026-11-12T04:17:19.890",
+  "desc": "An improper limitation of a pathname to a restricted directory vulnerability in the contentextract in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read specific files.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-74857": {
+  "id": "CVE-2026-74857",
+  "published": "2026-11-12T04:17:20.040",
+  "modified": "2026-11-12T04:17:20.040",
+  "desc": "A missing critical step in authentication vulnerability in the Auth API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write arbitrary files and conduct denial-of-service attacks.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-304"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-75785": {
+  "id": "CVE-2026-75785",
+  "published": "2026-11-12T04:17:20.213",
+  "modified": "2026-11-12T04:17:20.213",
+  "desc": "An improper neutralization of special elements used in an OS command vulnerability in the VPN API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users with administrator privileges to read or write arbitrary files and conduct denial-of-service attacks.",
+  "cvss": 7.2,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-76954": {
+  "id": "CVE-2026-76954",
+  "published": "2026-11-12T04:17:20.407",
+  "modified": "2026-11-12T04:17:20.407",
+  "desc": "An improper neutralization of special elements used in an SQL command vulnerability in the Auth API in Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows remote attackers to read or write arbitrary files and conduct denial-of-service attacks.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_19"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-77738": {
+  "id": "CVE-2026-77738",
+  "published": "2026-11-12T04:17:20.570",
+  "modified": "2026-11-12T04:17:20.570",
+  "desc": "A server-side request forgery vulnerability in the Credential API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read specific files.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-81557": {
+  "id": "CVE-2026-81557",
+  "published": "2026-11-12T04:17:20.740",
+  "modified": "2026-11-12T04:17:20.740",
+  "desc": "An improper neutralization of input during web page generation vulnerability in the DSMNotify in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write specific files.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-81558": {
+  "id": "CVE-2026-81558",
+  "published": "2026-11-12T04:17:20.890",
+  "modified": "2026-11-12T04:17:20.890",
+  "desc": "A missing authorization vulnerability in the SocketIo API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write specific files.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-81559": {
+  "id": "CVE-2026-81559",
+  "published": "2026-11-12T04:17:21.030",
+  "modified": "2026-11-12T04:17:21.030",
+  "desc": "A missing authorization vulnerability in the TaskScheduler API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write specific files.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-81584": {
+  "id": "CVE-2026-81584",
+  "published": "2026-11-12T04:17:21.157",
+  "modified": "2026-11-12T04:17:21.157",
+  "desc": "An improper neutralization of special elements used in an SQL command vulnerability in the User API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote attackers with control over a compromised LDAP or Active Directory server to read or write arbitrary files and conduct denial-of-service attacks.",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-85098": {
+  "id": "CVE-2026-85098",
+  "published": "2026-11-12T04:17:21.310",
+  "modified": "2026-11-12T04:17:21.310",
+  "desc": "A reachable assertion vulnerability in the synoscgi in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote attackers to conduct limited denial-of-service attacks.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "cwe": [
+   "CWE-617"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-85101": {
+  "id": "CVE-2026-85101",
+  "published": "2026-11-12T04:17:21.617",
+  "modified": "2026-11-12T04:17:21.617",
+  "desc": "An authentication bypass using an alternate path or channel vulnerability in the rsync in Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows remote attackers to read specific files, write arbitrary files, and conduct limited denial-of-service attacks.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L",
+  "cwe": [
+   "CWE-288"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_19"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-86343": {
+  "id": "CVE-2026-86343",
+  "published": "2026-11-12T04:17:21.813",
+  "modified": "2026-11-12T04:17:21.813",
+  "desc": "An improper neutralization of CRLF sequences vulnerability in the SNMP API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users with administrator privileges to read or write arbitrary files and conduct denial-of-service attacks.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-93"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-87801": {
+  "id": "CVE-2026-87801",
+  "published": "2026-11-12T04:17:21.950",
+  "modified": "2026-11-12T04:17:21.950",
+  "desc": "An insertion of sensitive information into sent data vulnerability in the API framework in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read arbitrary files.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-201"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-88266": {
+  "id": "CVE-2026-88266",
+  "published": "2026-11-12T04:17:22.093",
+  "modified": "2026-11-12T04:17:22.093",
+  "desc": "An external control of system or configuration setting vulnerability in the synomount in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write specific files.",
+  "cvss": 4.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-15"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-92379": {
+  "id": "CVE-2026-92379",
+  "published": "2026-11-12T04:17:22.230",
+  "modified": "2026-11-12T04:17:22.230",
+  "desc": "An improper neutralization of input during web page generation vulnerability in the Notification API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write specific files.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.synology.com/en-global/security/advisory/Synology_SA_26_18"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-101107": {
+  "id": "CVE-2026-101107",
+  "published": "2026-11-12T06:17:10.053",
+  "modified": "2026-11-12T06:17:10.053",
+  "desc": "An OS command Injection issue exists in Air Terminal 6 provided by SoftBank Corp. Arbitrary commands may be executed with the root privilege by a user who can log in to the web management console of the affected product.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://jvn.jp/en/jp/JVN64740097/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-106027": {
+  "id": "CVE-2026-106027",
+  "published": "2026-11-12T06:17:10.350",
+  "modified": "2026-11-12T06:17:10.350",
+  "desc": "The Oxygen MyData for WooCommerce WordPress plugin before 3.0.9 does not have proper authorisation, nor validate the authenticity of the request, on one of its payment callbacks, allowing unauthenticated users to mark arbitrary WooCommerce orders as completed.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/6f364114-e016-4c60-9ced-5b726d84bc19/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-110041": {
+  "id": "CVE-2026-110041",
+  "published": "2026-11-12T06:17:10.863",
+  "modified": "2026-11-12T06:17:10.863",
+  "desc": "The Crop Thumbnails WordPress plugin before 1.10.0 does not perform object-level authorization when reading and re-cropping media attachments, allowing any authenticated user with the upload capability (the Author role by default) to read the metadata of, and overwrite the generated thumbnail files and stored metadata of, media attachments belonging to other users.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/f79fa2e0-ebba-4075-84d9-b5fadfbd6ca4/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-110072": {
+  "id": "CVE-2026-110072",
+  "published": "2026-11-12T06:17:10.983",
+  "modified": "2026-11-12T06:17:10.983",
+  "desc": "The Photo Gallery by 10Web  WordPress plugin before 1.8.49 does not escape a shortcode attribute that sets a gallery watermark image before rendering it into an HTML image attribute, and decodes percent-encoded characters in the value, allowing users with Contributor-level access and above to perform Stored Cross-Site Scripting that executes in the browser of any user, including an administrator, who views the published gallery.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/6bf17a5c-21c4-4e0e-b0a4-aee18c9820f1/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-110959": {
+  "id": "CVE-2026-110959",
+  "published": "2026-11-12T06:17:11.100",
+  "modified": "2026-11-12T06:17:11.100",
+  "desc": "The Descope WordPress plugin before 1.2.0 does not validate the authentication token it receives before creating a WordPress session, accepting any non-empty token, so an unauthenticated attacker can obtain a session for any existing account, including an administrator, by supplying that account's email address.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/8b97f139-cbc3-4913-b69a-a3179f4cc264/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118421": {
+  "id": "CVE-2026-118421",
+  "published": "2026-11-12T06:17:11.700",
+  "modified": "2026-11-12T06:17:11.800",
+  "desc": "The WP Directory Kit WordPress plugin before 1.6.3 does not properly sanitise and escape a parameter used to order results on one of its admin screens before using it in a SQL statement, relying on a keyword deny-list whose replacement order can be bypassed, making it possible for users holding the WP Directory Kit WordPress plugin before 1.6.3's custom Listing Admin role, and above, to perform SQL injection attacks.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/cb2c14ff-96bd-4731-bce2-346a904fc72b/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118531": {
+  "id": "CVE-2026-118531",
+  "published": "2026-11-12T06:17:11.850",
+  "modified": "2026-11-12T06:17:11.850",
+  "desc": "The Directorist: AI-Powered Business Directory, Listings & Classified Ads WordPress plugin before 8.11.1 does not prevent a listing's own author from changing its status from pending to published, allowing users with a Subscriber-level account and above to bypass the administrator's listing moderation and publish their own pending listings.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/04ba942d-59f2-4e35-9d09-877f9bdd3606/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118597": {
+  "id": "CVE-2026-118597",
+  "published": "2026-11-12T06:17:11.980",
+  "modified": "2026-11-12T06:17:11.980",
+  "desc": "Akaunting 3.3.0 contains a stored cross-site scripting vulnerability in custom invoice payment terms. An authenticated Manager can save a crafted custom payment-term value. When an authorized user opens Invoice Settings for the same company, Akaunting inserts the stored value into a client-side event-handler expression, causing attacker-controlled JavaScript to execute in the victim's authenticated origin.",
+  "cvss": 7.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:P/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://fluidattacks.com/advisories/rhiannon",
+   "https://github.com/akaunting/akaunting",
+   "https://github.com/akaunting/akaunting/blob/3.3.0/app/Abstracts/Http/SettingController.php"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-119039": {
+  "id": "CVE-2026-119039",
+  "published": "2026-11-12T06:17:12.143",
+  "modified": "2026-11-12T06:17:12.143",
+  "desc": "The Defender Security  WordPress plugin before 6.4.1 does not verify that the client IP address it derives for its firewall and lockout decisions actually originates from a trusted source, trusting a user-supplied value by default, allowing unauthenticated attackers to spoof their IP address and evade IP-based protections such as login lockout and IP banning, impersonate an allowlisted address, and poison the Defender Security  WordPress plugin before 6.4.1's activity logs.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/58a8fb54-7dc6-4749-9467-6ce19a13f0ed/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-119040": {
+  "id": "CVE-2026-119040",
+  "published": "2026-11-12T06:17:12.257",
+  "modified": "2026-11-12T06:17:12.257",
+  "desc": "The Defender Security  WordPress plugin before 6.4.1 does not limit the number of failed two-factor authentication attempts in its default configuration, allowing an attacker who already knows a victim's password to brute-force the one-time code and defeat the second authentication factor.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/325f30c7-7ea9-48c8-a7fc-2644779e6ca6/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-121498": {
+  "id": "CVE-2026-121498",
+  "published": "2026-11-12T06:17:12.547",
+  "modified": "2026-11-12T06:17:12.547",
+  "desc": "The AskAny  WordPress plugin before 2.2.1 does not verify that a chat session belongs to the requester before returning or changing it, allowing unauthenticated users who obtain or guess another visitor's session identifier to read that visitor's chat transcript, name, email address and IP address, and to add messages to their conversation or overwrite their details.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/0347e870-93ff-48d3-b100-6cd9ec0535bb/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-122003": {
+  "id": "CVE-2026-122003",
+  "published": "2026-11-12T06:17:12.810",
+  "modified": "2026-11-12T06:17:12.810",
+  "desc": "The Abilities Bridge WordPress plugin before 1.4.2 does not require a valid nonce before re-authenticating a REST API request from the logged-in session cookie, allowing attackers to make a logged-in administrator perform any REST API action, including creating a new administrator account and taking over the site, by tricking them into opening a crafted page (CSRF).",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/e421e862-8d7a-4df6-9c5e-dc06a466a0fc/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123044": {
+  "id": "CVE-2026-123044",
+  "published": "2026-11-12T06:17:12.920",
+  "modified": "2026-11-12T06:17:12.920",
+  "desc": "The ContentPen WordPress plugin before 1.1.1 discloses its REST API key to unauthenticated users, who can then use it to create posts containing unfiltered JavaScript, leading to Stored XSS that executes in the browser of any visitor, including administrators.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/646b9448-ee17-4852-8f42-c086625e5983/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123092": {
+  "id": "CVE-2026-123092",
+  "published": "2026-11-12T06:17:13.023",
+  "modified": "2026-11-12T06:17:13.023",
+  "desc": "The WP Remote Users Sync WordPress plugin before 2.3.0 does not restrict which user metadata keys may be written through its incoming user synchronisation requests, allowing a site that holds the shared synchronisation keys to set the capabilities of any existing account and escalate it to administrator.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/31ed11db-eb07-4628-8ad8-5b545c6f8fe0/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124647": {
+  "id": "CVE-2026-124647",
+  "published": "2026-11-12T06:17:13.150",
+  "modified": "2026-11-12T06:17:13.150",
+  "desc": "The TI WooCommerce Wishlist WordPress plugin before 2.0.7 does not sanitise and escape user input before using it in a SQL statement in a front-end endpoint, allowing unauthenticated users to perform SQL injection attacks.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/d0119edb-2845-4106-a2bf-0ef28949ae32/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124648": {
+  "id": "CVE-2026-124648",
+  "published": "2026-11-12T06:17:13.270",
+  "modified": "2026-11-12T06:17:13.270",
+  "desc": "The TI WooCommerce Wishlist WordPress plugin before 2.13.0 does not verify that a visitor who is not logged in owns a registered user's wishlist before letting them manage it, allowing unauthenticated users who know or guess a wishlist's share key to delete items from other customers' wishlists.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/528218ee-f437-4028-aae0-022435cbb66e/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124652": {
+  "id": "CVE-2026-124652",
+  "published": "2026-11-12T06:17:13.400",
+  "modified": "2026-11-12T06:17:13.400",
+  "desc": "The Mine CloudVod WordPress plugin before 2.6.6 does not verify that an order belongs to the requesting user before returning its payment status, allowing any authenticated user, such as subscriber, to read other customers' order status, the purchased item and, while an Alipay payment is in progress, the buyer's Alipay account identifier.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/ed4ce4b8-a30b-443c-9b5a-b7415e30eb62/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124653": {
+  "id": "CVE-2026-124653",
+  "published": "2026-11-12T06:17:13.513",
+  "modified": "2026-11-12T06:17:13.513",
+  "desc": "The Mine CloudVod WordPress plugin before 2.6.6 does not restrict who can request cloud storage upload credentials from several of its REST API routes, allowing unauthenticated attackers to obtain signed upload policies and temporary credentials for the site's configured Alibaba Cloud OSS, Tencent Cloud COS and Dogecloud accounts and use them to upload or overwrite files in the site's storage.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/c476458c-215d-4056-bd82-06e59f0f84d4/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124665": {
+  "id": "CVE-2026-124665",
+  "published": "2026-11-12T06:17:13.627",
+  "modified": "2026-11-12T06:17:13.627",
+  "desc": "The Order Tracking  WordPress plugin before 3.6.2 does not verify that a visitor owns the customer or sales representative account whose orders they request, and the account numbers default to sequential values, allowing unauthenticated users to retrieve the order history of every customer and sales representative, including order contact email addresses in some versions.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/9165da1e-76b7-4364-9fd7-67ccb96afc48/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124814": {
+  "id": "CVE-2026-124814",
+  "published": "2026-11-12T06:17:13.743",
+  "modified": "2026-11-12T06:17:13.743",
+  "desc": "The Ultimate Addons for Elementor Forms WordPress plugin before 1.0.8 does not properly validate the extension of uploaded files in its bundled file upload field, allowing unauthenticated users to upload arbitrary files such as PHP scripts and achieve remote code execution.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/85f2e67b-4c6d-4817-9e4d-ef62a7ddb081/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124815": {
+  "id": "CVE-2026-124815",
+  "published": "2026-11-12T06:17:13.853",
+  "modified": "2026-11-12T06:17:13.853",
+  "desc": "The Clockinator Lite WordPress plugin before 1.1.0 does not restrict access to several of its record deletion actions, and uses a user-supplied table name in a SQL query without validating or escaping it, allowing unauthenticated users to perform SQL injection attacks, deleting data from any database table and extracting sensitive information such as password hashes.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/a7fe2ca1-ddfe-45fa-93e2-e0959ae29256/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124817": {
+  "id": "CVE-2026-124817",
+  "published": "2026-11-12T06:17:13.963",
+  "modified": "2026-11-12T06:17:13.963",
+  "desc": "The Clockinator Lite WordPress plugin before 1.1.0 does not check authorisation or ownership when updating leave requests, allowing unauthenticated users to modify any leave record, including approving or rejecting requests and reassigning them to other users.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/31b79fe5-89ee-4ccf-b3c4-48ab46fa499c/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-76792": {
+  "id": "CVE-2026-76792",
+  "published": "2026-11-12T06:17:14.937",
+  "modified": "2026-11-12T06:17:14.937",
+  "desc": "The User Verification by PickPlugins WordPress plugin before 2.0.49 does not rate limit the verification step of its one-time-password login, and does not expire the generated code, allowing unauthenticated attackers to brute force it and log in as any user, including administrators, where the code is configured to use digits only.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/e77de84b-3567-4ec6-a2dc-dce93c1fdc6f/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-113408": {
+  "id": "CVE-2026-113408",
+  "published": "2026-11-12T07:16:45.597",
+  "modified": "2026-11-12T07:16:45.597",
+  "desc": "Path traversal in Git allows writing to arbitrary file via cloning and committing to bad repository",
+  "cvss": 3.3,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://gitlab.com/gitlab-org/git/-/work_items/809"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-12507": {
+  "id": "CVE-2026-12507",
+  "published": "2026-11-12T07:16:46.750",
+  "modified": "2026-11-12T07:16:46.750",
+  "desc": "Zohocorp ManageEngine AssetExplorer versions below 7860, ServiceDesk Plus versions below 15290, ServiceDesk Plus MSP versions below 15150, and SupportCenter Plus versions below 15150 are affected by a authenticated remote code execution vulnerability in the Reports module. An authenticated user with the Create Query Reports permission could exploit specially crafted database queries to execute arbitrary commands on the underlying server.",
+  "cvss": 9.1,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.manageengine.com/products/service-desk/cve-2026-12507.html"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-12591": {
+  "id": "CVE-2026-12591",
+  "published": "2026-11-12T07:16:47.260",
+  "modified": "2026-11-12T07:16:47.260",
+  "desc": "Zohocorp ManageEngine M365 Manager Plus versions below 4818 is affected by an authenticated technician may exploit insufficient permission validation in the delegated administration interface to escalate privileges beyond their intended scope, which could result in remote code execution during administrative processing.",
+  "cvss": 9.9,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.manageengine.com/microsoft-365-management-reporting/CVE-2026-12591.html"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-87772": {
+  "id": "CVE-2026-87772",
+  "published": "2026-11-12T07:16:47.580",
+  "modified": "2026-11-12T07:16:47.580",
+  "desc": "Incorrect Authorization vulnerability in TÜBİTAK BİLGEM Software Technologies Research Institute Pardus About allows Privilege Escalation.\n\nThis issue affects Pardus About: before 1.2.5.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1521"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-8331": {
+  "id": "CVE-2026-8331",
+  "published": "2026-11-12T07:16:47.963",
+  "modified": "2026-11-12T07:16:47.963",
+  "desc": "An unrestricted upload of files with dangerous type vulnerability in the Microchip TimePictra platform allows functionality not properly constrained by access control lists, potentially resulting in remote code execution.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-434"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.gruppotim.it/en/footer/TIM-red-team.html",
+   "https://www.microchip.com/en-us/solutions/technologies/embedded-security/how-to-report-potential-product-security-vulnerabilities/timepictra-remote-code-execution-via-file-upload"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-8332": {
+  "id": "CVE-2026-8332",
+  "published": "2026-11-12T07:16:48.747",
+  "modified": "2026-11-12T07:16:48.747",
+  "desc": "A hard-coded root password in Microchip TimePictra platform installation files could allow an attacker with access to those files to obtain privileged credentials",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-798"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.gruppotim.it/en/footer/TIM-red-team.html",
+   "https://www.microchip.com/en-us/solutions/technologies/embedded-security/how-to-report-potential-product-security-vulnerabilities/timepictra-root-password-hardcoded-in-installation-files"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-8333": {
+  "id": "CVE-2026-8333",
+  "published": "2026-11-12T07:16:49.413",
+  "modified": "2026-11-12T07:16:49.413",
+  "desc": "A stored cross-site scripting vulnerability in Microchip the TimePictra platform could allow an authenticated, low-privileged attacker to store malicious script content that executes when another user views the affected page",
+  "cvss": 9.4,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.gruppotim.it/en/footer/TIM-red-team.html",
+   "https://www.microchip.com/en-us/solutions/technologies/embedded-security/how-to-report-potential-product-security-vulnerabilities/timepictra-stored-cross-site-scripting-vulnerability"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118855": {
+  "id": "CVE-2026-118855",
+  "published": "2026-11-12T08:16:39.930",
+  "modified": "2026-11-12T08:16:39.930",
+  "desc": "Akaunting 3.3.0 contains a stored cross-site scripting vulnerability through invoice import. An authenticated user with invoice-creation permission can import HTML in an invoice status field. When another authenticated user opens that invoice's edit form, Akaunting renders the stored status in a hidden input with raw Blade output, allowing attacker-controlled markup to execute in the victim's Akaunting origin.",
+  "cvss": 7.0,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:A/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://fluidattacks.com/advisories/sabbath",
+   "https://github.com/akaunting/akaunting",
+   "https://github.com/akaunting/akaunting/blob/3.3.0/app/Http/Requests/Document/Document.php"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123133": {
+  "id": "CVE-2026-123133",
+  "published": "2026-11-12T08:16:41.187",
+  "modified": "2026-11-12T08:16:41.187",
+  "desc": "Rejected reason: This CVE ID is a duplicate of CVE-2026-116518 and was never published. Both IDs were assigned to the same vulnerability in the ElasticPress WordPress plugin. All CVE users should reference CVE-2026-116518 instead of this ID.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125836": {
+  "id": "CVE-2026-125836",
+  "published": "2026-11-12T08:16:41.267",
+  "modified": "2026-11-12T08:16:41.403",
+  "desc": "Cross-Site Request Forgery (CSRF) vulnerability in Nicu Micle Simple JWT Login simple-jwt-login allows Cross Site Request Forgery.This issue affects Simple JWT Login: from n/a through 3.6.8.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/simple-jwt-login/vulnerability/wordpress-simple-jwt-login-plugin-3-6-8-cross-site-request-forgery-csrf-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126991": {
+  "id": "CVE-2026-126991",
+  "published": "2026-11-12T08:16:41.480",
+  "modified": "2026-11-12T08:16:41.630",
+  "desc": "The Wikidata Lookup expansion module (wiki.py) in MISP misp-modules contained a SPARQL injection vulnerability. The handler function constructed a SPARQL query by directly concatenating the user-supplied text value into the query string without any escaping or parameterization: 'SELECT ?item WHERE { ?item rdfs:label\"' + request.get(\"text\") + '\" @en }'. An authenticated MISP user with access to the module could supply a crafted text attribute value containing SPARQL syntax (quotes, closing braces, UNION, SERVICE, LIMIT, etc.) to alter the structure of the query sent to the Wikidata SPARQL endpoint. This could allow an attacker to modify the query logic, extract unintended data, or cause the query to fail in ways that expose internal error details. Additionally, the old error handling path formatted raw exception objects into the response string ('wikidata API not accessible {}'.format(e)), potentially leaking internal information such as proxy credentials, query contents, or response bodies. The module also used a spoofed browser user-agent string and the deprecated Wikidata endpoint. The vulnerability required authenticated access to the MISP instance and the ability to invoke the wiki expansion module with a text attribute. The impact is limited to manipulation of the enrichment query and potential disclosure of internal error details; it does not directly compromise the MISP server or its stored data.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-209",
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/MISP/misp-modules",
+   "https://github.com/MISP/misp-modules/commit/7a2a7e3d9e0f67f6732bd8050ab7da79e7b344d9",
+   "https://github.com/MISP/misp-modules/pull/869"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-40820": {
+  "id": "CVE-2026-40820",
+  "published": "2026-11-12T08:16:41.760",
+  "modified": "2026-11-12T08:16:41.760",
+  "desc": "A high privileged remote attacker can exploit an unauthenticated SQL Injection vulnerability in the getVpnData function due to improper neutralization of special elements in a SQL SELECT command. This can result in a total loss of confidentiality.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.certvde.com/en/advisories/VDE-2026-044/",
+   "https://www.certvde.com/en/advisories/VDE-2026-058/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-47832": {
+  "id": "CVE-2026-47832",
+  "published": "2026-11-12T08:16:41.947",
+  "modified": "2026-11-12T08:16:41.947",
+  "desc": "The vulnerability lies in the way application credentials are handled within the BOSH deployment.\nbosh-openstack-cpi-release: all versions from v55 to v55.0.4 (inclusive)",
+  "cvss": 7.3,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-532"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.cloudfoundry.org/blog/cve-2026-47832-openstack-application-credentials-logged-in-cleartext-to-bosh-debug-logs/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-82292": {
+  "id": "CVE-2026-82292",
+  "published": "2026-11-12T08:16:42.167",
+  "modified": "2026-11-12T08:16:42.167",
+  "desc": "A NULL pointer dereference vulnerability in the Qt Framework QDomDocument::setContent() XML parsing path of the Qt XML module (qtbase).",
+  "cvss": 1.9,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:U/V:X/RE:L/U:X",
+  "cwe": [
+   "CWE-476"
+  ],
+  "products": [],
+  "refs": [
+   "https://codereview.qt-project.org/c/qt/qtbase/+/757771",
+   "https://wiki.qt.io/List_of_known_vulnerabilities_in_Qt_products#CVE-2026-82292:"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-110003": {
+  "id": "CVE-2026-110003",
+  "published": "2026-11-12T09:16:39.813",
+  "modified": "2026-11-12T09:16:39.813",
+  "desc": "A vulnerability in the administration REST interface of Azul Payara allows a remote, unauthenticated attacker to bypass secure-admin remote-access restrictions by supplying an arbitrary value in the X-GlassFish-authToken HTTP header. The header's presence waives the remote-rejection check before the token is validated, and an invalid token falls through to password-based authentication, which succeeds without credentials on default domains configured with an empty administrative password. Successful exploitation grants execution of arbitrary administrative commands, equivalent to complete compromise of the server.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-288"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.azul.com/payara-community/release-notes/release-notes-7.2026.11.html",
+   "https://docs.azul.com/payara/release-notes/release-notes-7.6.0.html",
+   "https://docs.azul.com/payara/version/4/release-notes/release-notes-4.1.2.191.61.html"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126642": {
+  "id": "CVE-2026-126642",
+  "published": "2026-11-12T09:16:40.020",
+  "modified": "2026-11-12T09:16:40.177",
+  "desc": "An incorrect authorization flaw was found in AWX, the automation controller component of Red Hat Ansible Automation Platform. The API access classes for JobTemplate and WorkflowJobTemplate do not check the caller's Credential use_role when assigning the single-valued webhook_credential foreign key: JobTemplateAccess.can_add/can_change and WorkflowJobTemplateAccess.can_change in awx/main/access.py omit the check_related('webhook_credential', Credential, ..., role_field='use_role') call that UnifiedCredentialsMixin.can_attach performs for the normal many-to-many credentials relationship, and the serializer validates only the credential's type and namespace. A user who may administer their own job template (or workflow job template) and use its project and inventory can therefore attach a webhook token credential (for example a GitLab token) that they do not have use permission on. The template administrator can retrieve the template's webhook key; a subsequent webhook event causes AWX to decrypt the attached token and send it in the request header (for GitLab, PRIVATE-TOKEN) to a status URL derived from the event payload, disclosing the victim's token to a destination the attacker can influence. This may disclose another user's personal access token and allow whatever actions that token permits.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-126642",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2571729"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-90908": {
+  "id": "CVE-2026-90908",
+  "published": "2026-11-12T09:16:40.297",
+  "modified": "2026-11-12T09:16:40.297",
+  "desc": "A vulnerability in the GenericAdminAuthenticator component of Azul Payara Server and Azul Payara Micro allows a remote, unauthenticated attacker to bypass JMX/RMI administrative access restrictions by spoofing the client host address. Successful exploitation can grant administrative access to the MBean server and lead to remote code execution. Azul Payara Micro is affected only when its JMX connector is enabled.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-807"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.azul.com/payara-community/release-notes/release-notes-7.2026.11.html",
+   "https://docs.azul.com/payara/release-notes/release-notes-7.6.0.html",
+   "https://docs.azul.com/payara/version/4/release-notes/release-notes-4.1.2.191.61.html"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-106140": {
+  "id": "CVE-2026-106140",
+  "published": "2026-11-12T10:17:26.987",
+  "modified": "2026-11-12T10:17:26.987",
+  "desc": "In Progress® Telerik® Reporting prior to version 20.3.26.1110, a deserialization of untrusted data vulnerability in the .NET Framework report designers allows a local attacker with low privileges to execute arbitrary code in the context of the designer process when the user performs certain editing operations.",
+  "cvss": 7.3,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.telerik.com/products/reporting/documentation/knowledge-base/kb-security-deserialization-of-untrusted-data-cve-2026-106140"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-117474": {
+  "id": "CVE-2026-117474",
+  "published": "2026-11-12T10:17:28.020",
+  "modified": "2026-11-12T10:17:28.020",
+  "desc": "Rejected reason: none",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-117475": {
+  "id": "CVE-2026-117475",
+  "published": "2026-11-12T10:17:28.113",
+  "modified": "2026-11-12T10:17:28.113",
+  "desc": "Rejected reason: none",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-117476": {
+  "id": "CVE-2026-117476",
+  "published": "2026-11-12T10:17:28.170",
+  "modified": "2026-11-12T10:17:28.170",
+  "desc": "Rejected reason: none",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118975": {
+  "id": "CVE-2026-118975",
+  "published": "2026-11-12T10:17:28.230",
+  "modified": "2026-11-12T10:17:28.230",
+  "desc": "In Progress® Telerik® Reporting prior to version 20.3.26.1110, improper restriction of XML external entity references in the SVG processing engine allows an authenticated attacker with low privileges who can supply SVG content to a report to read local or UNC files, or trigger server-side network requests, from the report rendering host. External XML entities in SVG content were resolved without applying the configured strict resource resolver and report path validation. Disclosed content is limited by the permissions of the rendering process and by what the rendered report output exposes.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-611"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.telerik.com/products/reporting/documentation/knowledge-base/kb-security-improper-restriction-of-xml-external-entity-reference-cve-2026-118975"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123765": {
+  "id": "CVE-2026-123765",
+  "published": "2026-11-12T10:17:28.523",
+  "modified": "2026-11-12T11:17:08.570",
+  "desc": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Apache Sling XSS. xssAPI.getStyleToken() accepts markup in unquoted urls.\n\n\n\nThis issue affects Apache Sling XSS: before 2.4.14.\n\n\n\nUsers are recommended to upgrade to version 2.4.14, which fixes the issue.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://lists.apache.org/thread.html/ddvvg034rwqpnsqz8sw0rldyqqoh9c92",
+   "http://www.openwall.com/lists/oss-security/2026/11/11/22"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124617": {
+  "id": "CVE-2026-124617",
+  "published": "2026-11-12T10:17:28.657",
+  "modified": "2026-11-12T10:17:28.657",
+  "desc": "Rejected reason: 歸類為 JSONCPP Open Source 之問題",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124699": {
+  "id": "CVE-2026-124699",
+  "published": "2026-11-12T10:17:28.723",
+  "modified": "2026-11-12T10:17:28.723",
+  "desc": "In Telerik UI for WinForms, versions prior to 2026.4.1111, an improper control of code generation vulnerability exists that allows an attacker to supply a crafted expression and execute unauthorized code in the context of the affected application.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.telerik.com/products/winforms/documentation/knowledge-base/kb-security-improper-control-of-generation-of-code-cve-2026-124699"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127016": {
+  "id": "CVE-2026-127016",
+  "published": "2026-11-12T10:17:28.960",
+  "modified": "2026-11-12T10:17:29.123",
+  "desc": "The MISP Modules website component exposes external tool management endpoints (add, delete, change status, and change configuration) that did not enforce the optional administrator authentication policy. When ADMIN_PASSWORD was configured in the application environment, the module configuration endpoints correctly required an authenticated administrator session, but the external tools management handlers processed requests from anonymous users without any authorization check. An unauthenticated attacker with network access to the website could add arbitrary external tools, delete existing tools, toggle their active status, and modify their configurations including API keys and ingestion URLs. This inconsistency allowed bypass of the intended access control for the external tools management functionality. The vulnerability is conditional on ADMIN_PASSWORD being set; installations without an admin password intentionally permit open management access by design. The affected component is the external_tools Flask blueprint within the MISP Modules website application.",
+  "cvss": 9.2,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:L/SC:N/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/MISP/misp-modules/commit/28c27e30f6d3a10e38fe9c54bb52f57ccf70d027"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-76173": {
+  "id": "CVE-2026-76173",
+  "published": "2026-11-12T10:17:29.353",
+  "modified": "2026-11-12T10:17:29.353",
+  "desc": "Blind SQL injection vulnerability in the public endpoint `public/webhook/receiver.php` of the WhatsApp module for Dolibarr 1.9. The phone number value derived from the `data.key.remoteJid` parameter, received via a JSON request, is incorporated into an SQL query without escaping or parameterization. With the WHATSAPP_WEBHOOK_ALLOW option enabled, an unauthenticated remote attacker could manipulate this parameter to alter the query. Exploitation using a timing-based technique could allow an attacker to extract information from the database and cause service disruption.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.incibe.es/en/incibe-cert/notices/aviso/sql-injection-whatsapp-dolibarr-sgestion-easysoft"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124023": {
+  "id": "CVE-2026-124023",
+  "published": "2026-11-12T11:17:10.253",
+  "modified": "2026-11-12T11:17:10.253",
+  "desc": "Out-of-bounds Read vulnerability in the Guththila XML parser wrapper of Apache Axis2/C. On some malformed XML input the Guththila parser returned a raw input byte in place of an event code, and the AXIOM reader wrapper used that value as an index into a ten-entry lookup table without checking its range, reading heap memory past the end of the table. An unauthenticated client could trigger this by sending a crafted XML request to a server built with Guththila, the default parser, causing the request to be parsed incorrectly or, in some cases, the process to crash. The memory read is not returned to the client. This issue affects Apache Axis2/C: through 2.0.0. The fix is available in commits 23110287924e79d05a5b4712298c355d1f05c606 and f01683ec10e8fddb87279ec9351b3239021223e6 and will be included in the next release.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/apache/axis-axis2-c-core/commit/23110287924e79d05a5b4712298c355d1f05c606",
+   "https://github.com/apache/axis-axis2-c-core/commit/f01683ec10e8fddb87279ec9351b3239021223e6",
+   "https://lists.apache.org/thread/yzmshl8n819pfy2f3p07r9swgh0b3dfz"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124701": {
+  "id": "CVE-2026-124701",
+  "published": "2026-11-12T11:17:10.473",
+  "modified": "2026-11-12T11:17:10.473",
+  "desc": "In Telerik UI for WinForms, versions prior to 2026.4.1111, a deserialization of untrusted data vulnerability exists that allows an attacker to perform unauthorized actions in the context of the affected application.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.telerik.com/products/winforms/documentation/knowledge-base/kb-security-deserialization-of-untrusted-data-cve-2026-124701"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124703": {
+  "id": "CVE-2026-124703",
+  "published": "2026-11-12T11:17:10.743",
+  "modified": "2026-11-12T11:17:10.743",
+  "desc": "In Telerik UI for WPF, versions prior to 2026.4.1110, an improper control of code generation vulnerability exists that allows an attacker to execute unauthorized code in the context of the affected application.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.telerik.com/products/wpf/documentation/knowledge-base/kb-security-improper-control-of-generation-of-code-cve-2026-124703"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124704": {
+  "id": "CVE-2026-124704",
+  "published": "2026-11-12T11:17:10.923",
+  "modified": "2026-11-12T11:17:10.923",
+  "desc": "In Telerik UI for WPF, versions prior to 2026.4.1110, a deserialization of untrusted data vulnerability exists that allows an attacker to perform unauthorized actions in the context of the affected application.",
+  "cvss": 7.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.telerik.com/products/wpf/documentation/knowledge-base/kb-security-deserialization-of-untrusted-data-cve-2026-124704"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126641": {
+  "id": "CVE-2026-126641",
+  "published": "2026-11-12T11:17:11.317",
+  "modified": "2026-11-12T11:17:11.470",
+  "desc": "A host key verification flaw was found in ansible-pylibssh and in the ansible.netcommon libssh connection plugin. When trust-on-first-use is enabled (host_key_auto_add on the libssh connection plugin, or AutoAddPolicy in ansible-pylibssh), a host that is already present in known_hosts but now presents a different key is accepted without warning. The pylibssh Session.verify_knownhost() method passes the SSH_KNOWN_HOSTS_CHANGED and SSH_KNOWN_HOSTS_OTHER states to the same missing_host_key() policy hook used for unknown hosts, and the bundled AutoAddPolicy/RejectPolicy classes (as well as ansible.netcommon's MyAddPolicy, which is modeled on paramiko's AutoAddPolicy) therefore add the changed key and continue the connection rather than aborting as paramiko's BadHostKeyException path would. As a result the controller authenticates to the substitute host, runs the play there, and appends the new key to known_hosts, which can disclose connection credentials to an attacker performing a machine-in-the-middle attack. Default configurations (host_key_checking enabled, host_key_auto_add unset) are not affected; non-interactive runs fail closed.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N",
+  "cwe": [
+   "CWE-322"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-126641",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2571719"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126643": {
+  "id": "CVE-2026-126643",
+  "published": "2026-11-12T11:17:11.583",
+  "modified": "2026-11-12T11:17:11.727",
+  "desc": "A cleartext storage flaw was found in the AAP Gateway Operator. When reconciling an AutomationController, the operator reads the protected resource-server Secret (Secret/<aap-name>-resource-server, key controller_resource_server_secret) and copies its plaintext value into the generated AutomationController custom resource under spec.extra_settings (RESOURCE_SERVER.SECRET_KEY). Although the operator uses no_log to keep the value out of its own logs, serializing it into the custom resource exposes it to any principal able to read the AutomationController CR without permission to read the backing Kubernetes Secret, breaking the expected OpenShift RBAC separation between the two resources. The value may also propagate into Kubernetes API/etcd storage, GitOps and Argo diffs and history, rendered manifests, support bundles, and audit data. The resource-server secret is intended for trusted Gateway-to-Controller service authentication, and its disclosure may allow a user to impersonate a trusted Controller service and reach privileged service-index APIs.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-312"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-126643",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2571730"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126644": {
+  "id": "CVE-2026-126644",
+  "published": "2026-11-12T11:17:11.770",
+  "modified": "2026-11-12T11:17:11.920",
+  "desc": "A link-following flaw was found in the authorized_key module of the ansible.posix collection, residual to the fix for CVE-2026-11837. That fix guards only the final path component (os.chown with follow_symlinks=False and O_NOFOLLOW in _safe_open_write()). When an unprivileged local user replaces their ~/.ssh directory with a symlink to a directory they do not own, and an operator subsequently runs the authorized_key task as root (a common provisioning pattern), the module resolves its path operations through the symlink: atomic_move() writes the temporary file in the symlink target and renames it to <target>/authorized_keys, creating or overwriting a file in the attacker-chosen directory, and os.chmod(sshdir, 0o700) follows the symlink and changes the target directory's permissions. The written file is chowned to the unprivileged user, so this is not a privilege escalation, but it allows an attacker to create or overwrite files (for example in /etc/apt/apt.conf.d/, which APT reads regardless of file ownership) to cause integrity and availability impacts.",
+  "cvss": 3.9,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:L",
+  "cwe": [
+   "CWE-59"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-126644",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2571732"
   ],
   "kev": false,
   "epss": null
