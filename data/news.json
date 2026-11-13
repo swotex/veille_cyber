@@ -5862,5 +5862,61 @@
   "lang": "en",
   "date": "2026-11-12T12:02:58+00:00",
   "summary": "Penlink’s Webloc is an application that locates people using information from the weather, gaming, email, and religious apps on their phone. It’s sold to the police. The tool collects vast quantities of location data from smartphones via commonly used…"
+ },
+ "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/": {
+  "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-12T22:53:10+00:00",
+  "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed…"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/": {
+  "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-12T22:25:30+00:00",
+  "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/": {
+  "title": "Massive Microsoft 365 outage disrupts Outlook, Teams, Copilot worldwide",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-12T20:15:16+00:00",
+  "summary": "Microsoft is investigating a widespread outage affecting multiple Microsoft 365 services, including Outlook, Microsoft Teams, and Copilot, as users report connectivity problems worldwide. [...]"
+ },
+ "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/": {
+  "title": "Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams",
+  "url": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-12T20:55:30+00:00",
+  "summary": "Microsoft says failed server health checks disrupted Outlook and other Microsoft 365 services. The company is still investigating the cause and has disclosed no evidence of a cyberattack. The post Microsoft 365 Outage Disrupts Outlook, Exchange Online and…"
+ },
+ "https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox": {
+  "title": "Cyber Experts Weigh In: How to Fight Artex & AntiFox",
+  "url": "https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-12T21:18:52+00:00",
+  "summary": "Cybercriminals using agentic pen-testing tools is a proverbial genie out of the bottle at this point, so enterprises need to get a defense plan in place right away."
+ },
+ "https://www.darkreading.com/data-privacy/extortion-luna-moth-law-firms-second-time": {
+  "title": "Extortion Group Luna Moth Flits Into Law Firms a Second Time",
+  "url": "https://www.darkreading.com/data-privacy/extortion-luna-moth-law-firms-second-time",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-12T20:09:41+00:00",
+  "summary": "The cybercriminals are retargeting law firms that refused to pay its first ransom, with a social engineering con aimed at stealing Microsoft access tokens."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese": {
+  "title": "AIを活用したサイバー攻撃の増加を受け、日本がサイバーセキュリティへの緊急資金拠出を推進",
+  "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-11T22:14:44+00:00",
+  "summary": "この対策パッケージには、官民合同のサイバー対応チーム、経済省が主導するAI専門チーム、および政府の新たな能動的サイバー防衛権限の行使に関する裁量の拡大が含まれている。"
  }
 }
