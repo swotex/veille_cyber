@@ -6022,5 +6022,269 @@
   "lang": "en",
   "date": "2026-11-12T22:46:05+00:00",
   "summary": "Most organizations haven't sorted out their cryptographic estate enough to even know where they'd start with post-quantum cryptography (PQC)."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1526/": {
+  "title": "Multiples vulnérabilités dans Apple HomeView Software (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1526/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Apple HomeView Software. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une atteinte à…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1527/": {
+  "title": "Multiples vulnérabilités dans VMware Tanzu Greenplum (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1527/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Greenplum. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1528/": {
+  "title": "Multiples vulnérabilités dans les produits Citrix (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1528/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Citrix. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1529/": {
+  "title": "Multiples vulnérabilités dans les produits Check Point (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1529/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Check Point. Elles permettent à un attaquant de provoquer une élévation de privilèges et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1530/": {
+  "title": "Multiples vulnérabilités dans PostgreSQL (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1530/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans PostgreSQL. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1531/": {
+  "title": "Multiples vulnérabilités dans Node.js (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1531/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Node.js. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un contournement de la politique de sécurité et un déni de service."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1532/": {
+  "title": "Vulnérabilité dans Opera Neon (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1532/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Opera Neon. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1533/": {
+  "title": "Multiples vulnérabilités dans Progress Telerik (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1533/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Progress Telerik. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1534/": {
+  "title": "Vulnérabilité dans les produits Axis (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1534/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans les produits Axis. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1535/": {
+  "title": "Multiples vulnérabilités dans le noyau Linux de SUSE (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1535/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et un contournement de la…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1536/": {
+  "title": "Multiples vulnérabilités dans le noyau Linux de Red Hat (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1536/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1537/": {
+  "title": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1537/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à l'intégrité des données et un contournement de la politique de…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1538/": {
+  "title": "Multiples vulnérabilités dans le noyau Linux de Debian (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1538/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et un contournement de la politique de…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1539/": {
+  "title": "Multiples vulnérabilités dans les produits IBM (13 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1539/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-13T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/": {
+  "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
+  "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-13T19:38:36+00:00",
+  "summary": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular…"
+ },
+ "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/": {
+  "title": "German military drone operations disrupted by cyberattack",
+  "url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-13T17:31:56+00:00",
+  "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/": {
+  "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+  "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-13T16:21:43+00:00",
+  "summary": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/": {
+  "title": "How one AI agent exposed five critical enterprise security gaps",
+  "url": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-13T15:01:11+00:00",
+  "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares…"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/": {
+  "title": "Microsoft says November security updates cause printing issues",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-13T12:27:40+00:00",
+  "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting. [...]"
+ },
+ "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html": {
+  "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+  "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-13T16:53:08+00:00",
+  "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions…"
+ },
+ "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html": {
+  "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+  "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-13T15:27:05+00:00",
+  "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report…"
+ },
+ "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html": {
+  "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+  "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-13T14:28:58+00:00",
+  "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme…"
+ },
+ "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html": {
+  "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+  "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-13T13:54:20+00:00",
+  "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it…"
+ },
+ "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html": {
+  "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+  "url": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-13T11:52:31+00:00",
+  "summary": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records…"
+ },
+ "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html": {
+  "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+  "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-13T11:10:40+00:00",
+  "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources…"
+ },
+ "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html": {
+  "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+  "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-13T10:55:03+00:00",
+  "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million…"
+ },
+ "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/": {
+  "title": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
+  "url": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-13T15:20:00+00:00",
+  "summary": "Noteworthy stories that might have slipped under the radar: Siemens details security advisory policy, OpenAI Codex backdoor risk, Microsoft warns of model weight backdoors. The post In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly…"
+ },
+ "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/": {
+  "title": "Microsoft Struggles to Restore Email and Other Services in a Global Outage",
+  "url": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-13T13:47:42+00:00",
+  "summary": "Microsoft is trying different ways to identify the cause of the problem and get its servers back online, using “a measured approach to identify and repair affected infrastructure.” The post Microsoft Struggles to Restore Email and Other Services in a Global…"
+ },
+ "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/": {
+  "title": "Apify Confirms Customer Data Accessed in Cyberattack",
+  "url": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-13T12:41:01+00:00",
+  "summary": "The web scraping company says an intruder accessed customer accounts and obtained personal information or stored data. The post Apify Confirms Customer Data Accessed in Cyberattack appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/": {
+  "title": "SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks",
+  "url": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-13T12:20:28+00:00",
+  "summary": "Enea says SilentAir hijacked mobile network nodes to intercept calls and messages, with Taiwanese subscribers the primary targets. The post SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls": {
+  "title": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+  "url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-13T13:00:00+00:00",
+  "summary": "Blockchain complexities, such as attacker-deployed sweepers, hobble security controls designed to limit the damage of an exchange compromise."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up": {
+  "title": "As Test Takers Turn to AI for Answers, Exam Security Must Catch Up",
+  "url": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-11T20:27:00+00:00",
+  "summary": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html": {
+  "title": "AI Doesn’t Have to Go Rogue to Break the World",
+  "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-13T12:03:30+00:00",
+  "summary": "This essay is adapted from a keynote speech delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in CyberScoop . I want to talk about AI hacking. There are three aspects: people hacking AI systems, people using…"
  }
 }
