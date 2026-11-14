@@ -6318,5 +6318,53 @@
   "lang": "en",
   "date": "2026-11-14T08:40:22+00:00",
   "summary": "Officials say there is no evidence of a cyberattack behind the nationwide FAA outage, which may have been caused by a software update. The post No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update appeared first on SecurityWeek ."
+ },
+ "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/": {
+  "title": "Cursor confirms security breach led to malicious Claude Code extension",
+  "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-14T17:27:25+00:00",
+  "summary": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/": {
+  "title": "US disrupts North Korean campaign behind $400 million crypto theft",
+  "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-14T15:15:49+00:00",
+  "summary": "The U.S. government has disrupted a North Korean social engineering campaign called 'FaceStealer', responsible for stealing more than $400 million in cryptocurrency. [...]"
+ },
+ "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html": {
+  "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+  "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-14T12:38:35+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of…"
+ },
+ "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/": {
+  "title": "Is AI Making Us Worse at Cybersecurity?",
+  "url": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-14T14:00:00+00:00",
+  "summary": "Overreliance on AI could erode the creativity, clear communication, and critical thinking security teams need when there’s no playbook. The post Is AI Making Us Worse at Cybersecurity? appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/": {
+  "title": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data",
+  "url": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-14T11:00:00+00:00",
+  "summary": "The tech giant has detailed the architecture designed to isolate ambient sensor data from the main OS on HomeView and new iPhones. The post Apple Reveals How Secure Exclaves Shield Camera and Microphone Data appeared first on SecurityWeek ."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html": {
+  "title": "Upcoming Speaking Engagements",
+  "url": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-14T17:02:39+00:00",
+  "summary": "This is a current list of where and when I am scheduled to speak: I’m speaking at the Catalyst Summit in Brampton, Ontario, Canada, on Wednesday, November 18, 2026. I’m speaking at QT Qonference 2026 in Toronto, Ontario, Canada, on Thursday, November 19,…"
  }
 }
