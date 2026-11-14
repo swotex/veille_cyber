@@ -6286,5 +6286,29 @@
   "lang": "en",
   "date": "2026-11-13T12:03:30+00:00",
   "summary": "This essay is adapted from a keynote speech delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in CyberScoop . I want to talk about AI hacking. There are three aspects: people hacking AI systems, people using…"
+ },
+ "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/": {
+  "title": "FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’",
+  "url": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-13T21:33:27+00:00",
+  "summary": "Federal officials have yet to say what caused the communications disruption or whether they are investigating a possible cyberattack. The post FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’ appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai": {
+  "title": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
+  "url": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-13T20:20:27+00:00",
+  "summary": "The Android malware has expanded from focusing on crypto theft to full device control, and the attackers have added advanced analysis of stolen information."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html": {
+  "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
+  "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-13T22:00:46+00:00",
+  "summary": "Climate change is the issue . As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy."
  }
 }
