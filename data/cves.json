@@ -192271,7 +192271,7 @@
  "CVE-2026-124030": {
   "id": "CVE-2026-124030",
   "published": "2026-11-06T20:17:21.663",
-  "modified": "2026-11-10T20:19:04.660",
+  "modified": "2026-11-14T21:16:49.693",
   "desc": "GPAC through 26.07.0 contains a type confusion vulnerability in gf_sg_command_apply() in src/scenegraph/commands.c that fails to verify BIFS field-replace command types match target node fields. Attackers can supply a crafted XMT file opened with MP4Box, such as via chapter import, causing gf_sg_vrml_field_clone() to memcpy from invalid pointers and crash.",
   "cvss": 6.8,
   "sev": "MEDIUM",
@@ -192291,7 +192291,7 @@
  "CVE-2026-124031": {
   "id": "CVE-2026-124031",
   "published": "2026-11-06T20:17:21.853",
-  "modified": "2026-11-09T23:17:18.140",
+  "modified": "2026-11-14T21:16:49.840",
   "desc": "GPAC through 26.07.0 contains a type confusion vulnerability in drawable_get_aspect_2d_mpeg4() and TraverseShape() that casts a Shape's appearance node to M_Appearance without checking its node tag. Attackers can supply a crafted XMT file placing another node type, such as Conditional, in the appearance field to trigger an invalid memory read and crash MP4Box.",
   "cvss": 6.8,
   "sev": "MEDIUM",
@@ -289943,7 +289943,7 @@
  "CVE-2026-128240": {
   "id": "CVE-2026-128240",
   "published": "2026-11-13T10:18:11.840",
-  "modified": "2026-11-13T10:18:11.963",
+  "modified": "2026-11-14T21:16:49.977",
   "desc": "GPAC through 26.07.0 contains a use-after-free vulnerability in gf_sg_proto_del() in src/scenegraph/vrml_proto.c because gf_sg_reset() frees unregistered prototypes still referenced by scene commands. Attackers can supply a crafted XMT/BT scene declaring prototypes via commands, processed by MP4Box -chap, to trigger freed memory access and crash the process.",
   "cvss": 6.8,
   "sev": "MEDIUM",
@@ -298539,7 +298539,7 @@
  "CVE-2011-10042": {
   "id": "CVE-2011-10042",
   "published": "2026-11-14T14:17:21.480",
-  "modified": "2026-11-14T14:17:21.480",
+  "modified": "2026-11-14T21:16:49.437",
   "desc": "HTTP::Session versions before 0.43 for Perl allow memcached command injection via unfiltered session ids in HTTP::Session::Store::Memcached.\n\nThe session id from the client's cookie reaches memcached unchanged as the cache key.\n\nA CR and LF in the session id end the cache command early, and the server reads the bytes after them as further commands.",
   "cvss": null,
   "sev": null,
@@ -298550,7 +298550,8 @@
   "products": [],
   "refs": [
    "https://github.com/tokuhirom/http-session/commit/039345db9bc9311868019fde67b89c355114a3d3.patch",
-   "https://metacpan.org/release/TOKUHIROM/HTTP-Session-0.42/changes"
+   "https://metacpan.org/release/TOKUHIROM/HTTP-Session-0.42/changes",
+   "http://www.openwall.com/lists/oss-security/2026/11/14/10"
   ],
   "kev": false,
   "epss": null
@@ -298754,6 +298755,88 @@
    "https://codeberg.org/sox_ng/sox_ng/commit/0b40408b",
    "https://codeberg.org/sox_ng/sox_ng/issues/873",
    "https://codeberg.org/suyuanwang/Test_sox/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129267": {
+  "id": "CVE-2026-129267",
+  "published": "2026-11-14T18:17:20.077",
+  "modified": "2026-11-14T18:17:21.050",
+  "desc": "A vulnerability was found in sergix44 XBackBone up to 3.8.2. Impacted is the function MediaController::getRawById of the file app/Controllers/MediaController.php. The manipulation results in cross site scripting. It is possible to launch the attack remotely. The exploit has been made public and could be used. The pull request to fix this issue awaits acceptance.",
+  "cvss": 2.0,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79",
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sergix44/xbackbone/",
+   "https://github.com/sergix44/xbackbone/pull/673",
+   "https://vuldb.com/cve/CVE-2026-129267"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129447": {
+  "id": "CVE-2026-129447",
+  "published": "2026-11-14T18:17:21.100",
+  "modified": "2026-11-14T18:17:21.100",
+  "desc": "Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability in the /dbml/svg endpoint that allows unauthenticated attackers to inject javascript: hyperlinks by supplying crafted DBML table url, headercolor, or TableGroup color settings. Attackers can send a crafted SVG link that, when opened and the table header clicked, executes attacker JavaScript in the Kroki origin.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/yuzutech/kroki/blob/v0.35.0/dbml/index.js#L13",
+   "https://github.com/yuzutech/kroki/commit/b57e1bdc39df9521b249db0dbd56c5e0a8b7e33d",
+   "https://github.com/yuzutech/kroki/releases/tag/v0.36.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2015-10149": {
+  "id": "CVE-2015-10149",
+  "published": "2026-11-14T20:17:39.203",
+  "modified": "2026-11-14T20:17:39.203",
+  "desc": "Dancer versions before 1.3400 for Perl pass unvalidated session ids from the session cookie to the session engine.\n\nread_session_id returns the cookie value as the session id without checking its characters, and Dancer hands it to the session engine to load the session.\n\nA remote attacker may cause path traversal or injection in a session engine that uses the id in a file path, cache command or query without checking it.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-1286"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/PerlDancer/Dancer/commit/5a68fddbaef903fd3bd58517ce585cde986716e4.patch",
+   "https://github.com/PerlDancer/Dancer/issues/1117",
+   "https://github.com/PerlDancer/Dancer/issues/1118"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129456": {
+  "id": "CVE-2026-129456",
+  "published": "2026-11-14T20:17:40.060",
+  "modified": "2026-11-14T20:17:40.060",
+  "desc": "In FRRouting, bgpd accepts a Tunnel Encapsulation attribute (type 23) whose outer TLV length does not match the length of the attribute: the mismatch is only logged and the attribute is processed anyway. A BGP neighbor can send UPDATE messages carrying such an attribute that put the reference count of the attribute's interned sub-TLV chain out of balance, so that the chain is freed while routes stored by bgpd (Adj-RIB-In entries and RIB paths) still point to it. When those routes are later replaced, withdrawn or cleared, for example when the session goes down, bgpd reads the freed memory, decrements a reference count inside it and frees it a second time. In the reporter's build without AddressSanitizer this ended in an assertion failure in bgpd's memory accounting, aborting bgpd and dropping all BGP sessions on the router, and the neighbor can repeat it each time bgpd restarts. Because freed heap memory is written to and freed again, consequences beyond a crash cannot be ruled out. An established BGP session is required. bgpd processes attribute 23 from every neighbor, including eBGP neighbors, unless it is explicitly discarded, although RFC 9012 requires it to be filtered on eBGP sessions by default. The issue was reproduced with \"soft-reconfiguration inbound\" configured for the neighbor, and the reporter observed that the crash does not occur on every attempt.",
+  "cvss": 7.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:N/R:A/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-415",
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/FRRouting/frr/commit/abef07b500e19baa924d157ab03809b93730e619",
+   "https://github.com/FRRouting/frr/commit/bebf95f02bc0dccc6a1841f0c8cbcba1f617d655",
+   "https://github.com/FRRouting/frr/issues/20874"
   ],
   "kev": false,
   "epss": null
