@@ -110813,8 +110813,8 @@
  "CVE-2026-73186": {
   "id": "CVE-2026-73186",
   "published": "2026-10-30T19:19:10.123",
-  "modified": "2026-10-30T19:22:27.173",
-  "desc": "Subscriber PHP Object Injection in Enable Media Replace <= 4.2.2 versions.",
+  "modified": "2026-11-15T19:17:17.937",
+  "desc": "Deserialization of Untrusted Data vulnerability in ShortPixel Enable Media Replace enable-media-replace allows Object Injection.This issue affects Enable Media Replace: from n/a through 4.2.2.",
   "cvss": 8.8,
   "sev": "HIGH",
   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
@@ -190871,7 +190871,7 @@
  "CVE-2026-123962": {
   "id": "CVE-2026-123962",
   "published": "2026-11-06T17:17:25.483",
-  "modified": "2026-11-12T22:11:01.153",
+  "modified": "2026-11-15T19:17:13.940",
   "desc": "In FreedomBox before 26.15, unprivileged user accounts can read/write files for which they lack permissions by setting the authorized_keys file to be a symlink. NOTE: FreedomBox is a Debian Pure Blend, which means that it distributes its software through Debian repositories.",
   "cvss": 8.4,
   "sev": "HIGH",
@@ -297623,7 +297623,7 @@
  "CVE-2026-71519": {
   "id": "CVE-2026-71519",
   "published": "2026-11-13T23:17:19.700",
-  "modified": "2026-11-13T23:17:19.700",
+  "modified": "2026-11-15T22:17:19.883",
   "desc": "PrestaShop before 8.2.9 and 9.2.1 contains a broken access control vulnerability that allows an authenticated Webservice API key holder to read and modify customer records belonging to any shop in a multi-shop installation. Attackers can exploit the missing record-level shop ownership check in shopHasRight() and saveEntityFromXml() to read sensitive customer data such as password hashes and secure keys, and change a customer's email and password via create, update, and delete requests, resulting in account takeover.",
   "cvss": 8.6,
   "sev": "HIGH",
@@ -297633,9 +297633,9 @@
   ],
   "products": [],
   "refs": [
+   "https://codeant.ai/security-research/cve-2026-71519-prestashop-webservice-cross-tenant-account-takeover",
    "https://github.com/PrestaShop/PrestaShop/releases/tag/8.2.9",
-   "https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.1",
-   "https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-hjwq-7qvv-qxj4"
+   "https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.1"
   ],
   "kev": false,
   "epss": 0.00464
@@ -297643,7 +297643,7 @@
  "CVE-2026-71531": {
   "id": "CVE-2026-71531",
   "published": "2026-11-13T23:17:19.853",
-  "modified": "2026-11-13T23:17:19.853",
+  "modified": "2026-11-15T22:17:20.090",
   "desc": "PrestaShop before 8.2.9 and 9.2.1 contains an authorization flaw in the Webservice API that allows an attacker holding a key restricted to one shop to act on data of every shop by submitting requests with id_shop=all or id_shop_group=N, which expand the shop context without validating the key's actual shop associations and cause shopHasRight() to evaluate the expanded set as a disjunction. Attackers can exploit this flaw via classes/webservice/WebserviceRequest.php to read, modify, or delete data belonging to shops they are not authorized for, including full customer records such as email addresses, secure_key, and password hashes across the installation.",
   "cvss": 8.6,
   "sev": "HIGH",
@@ -297653,9 +297653,9 @@
   ],
   "products": [],
   "refs": [
+   "https://codeant.ai/security-research/cve-2026-71531-prestashop-webservice-id-shop-authorization-bypass",
    "https://github.com/PrestaShop/PrestaShop/releases/tag/8.2.9",
-   "https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.1",
-   "https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-3f36-4qv4-vfgh"
+   "https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.1"
   ],
   "kev": false,
   "epss": 0.00464
@@ -298823,20 +298823,20 @@
  "CVE-2026-129456": {
   "id": "CVE-2026-129456",
   "published": "2026-11-14T20:17:40.060",
-  "modified": "2026-11-14T20:17:40.060",
-  "desc": "In FRRouting, bgpd accepts a Tunnel Encapsulation attribute (type 23) whose outer TLV length does not match the length of the attribute: the mismatch is only logged and the attribute is processed anyway. A BGP neighbor can send UPDATE messages carrying such an attribute that put the reference count of the attribute's interned sub-TLV chain out of balance, so that the chain is freed while routes stored by bgpd (Adj-RIB-In entries and RIB paths) still point to it. When those routes are later replaced, withdrawn or cleared, for example when the session goes down, bgpd reads the freed memory, decrements a reference count inside it and frees it a second time. In the reporter's build without AddressSanitizer this ended in an assertion failure in bgpd's memory accounting, aborting bgpd and dropping all BGP sessions on the router, and the neighbor can repeat it each time bgpd restarts. Because freed heap memory is written to and freed again, consequences beyond a crash cannot be ruled out. An established BGP session is required. bgpd processes attribute 23 from every neighbor, including eBGP neighbors, unless it is explicitly discarded, although RFC 9012 requires it to be filtered on eBGP sessions by default. The issue was reproduced with \"soft-reconfiguration inbound\" configured for the neighbor, and the reporter observed that the crash does not occur on every attempt.",
+  "modified": "2026-11-15T18:16:48.047",
+  "desc": "In FRRouting, bgpd frees the sub-TLV chain of a Tunnel Encapsulation attribute (type 23) while routes stored by bgpd still point to it, if the attribute is received from a neighbor that has \"soft-reconfiguration inbound\" configured. A cache added to speed up attribute interning while processing the prefixes of an UPDATE checks whether an interned attribute set may be reused by comparing the parsed attributes with themselves, so the check always succeeds. Interning the parsed attributes for the Adj-RIB-In removes the Tunnel Encapsulation sub-TLVs from them, and the copy that bgpd then interns for the route reuses the cached attribute set, which still holds the sub-TLVs, without taking a reference on them. When the route is later replaced, withdrawn or cleared, for example when the session goes down, the sub-TLV chain is freed while still in use, and bgpd then reads it, decrements a reference count inside it and frees it a second time. In the reporter's build without AddressSanitizer this ended in an assertion failure in bgpd's memory accounting, aborting bgpd and dropping all BGP sessions on the router, and the neighbor can repeat it each time bgpd restarts. Because freed heap memory is written to and freed again, consequences beyond a crash cannot be ruled out. An established BGP session is required, and the attribute does not need to be malformed. bgpd processes attribute 23 from every neighbor, including eBGP neighbors, unless it is explicitly discarded, although RFC 9012 requires it to be filtered on eBGP sessions by default. Neighbors without \"soft-reconfiguration inbound\" are not affected.",
   "cvss": 7.7,
   "sev": "HIGH",
-  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:N/R:A/V:X/RE:X/U:X",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:N/R:A/V:X/RE:X/U:X",
   "cwe": [
    "CWE-415",
    "CWE-416"
   ],
   "products": [],
   "refs": [
-   "https://github.com/FRRouting/frr/commit/abef07b500e19baa924d157ab03809b93730e619",
-   "https://github.com/FRRouting/frr/commit/bebf95f02bc0dccc6a1841f0c8cbcba1f617d655",
-   "https://github.com/FRRouting/frr/issues/20874"
+   "https://github.com/FRRouting/frr/commit/5c241056777b27b209bc89326f0061ec6d5e0924",
+   "https://github.com/FRRouting/frr/issues/20874",
+   "https://github.com/FRRouting/frr/pull/22008/changes/40f25e62686865649b7631ec30756f9661e12dd3"
   ],
   "kev": false,
   "epss": 0.00267
@@ -300407,6 +300407,605 @@
    "https://github.com/littlefs-project/littlefs/blob/v2.11.3/lfs.c#L1056-L1063",
    "https://github.com/littlefs-project/littlefs/issues/1213",
    "https://github.com/sigdevel/pocs/blob/main/res/littlefs/1/1_lfs_dir_traverse_lfs_c_1059.img"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125760": {
+  "id": "CVE-2026-125760",
+  "published": "2026-11-15T19:17:15.073",
+  "modified": "2026-11-15T19:17:15.183",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Bit Apps Bit Assist bit-assist allows DOM-Based XSS.This issue affects Bit Assist: from n/a through 1.8.4.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/bit-assist/vulnerability/wordpress-bit-assist-plugin-1-8-4-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125796": {
+  "id": "CVE-2026-125796",
+  "published": "2026-11-15T19:17:15.270",
+  "modified": "2026-11-15T19:17:15.380",
+  "desc": "Missing Authorization vulnerability in Ahmad JS Help Desk js-support-ticket allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects JS Help Desk: from n/a through 5.0.5.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/js-support-ticket/vulnerability/wordpress-js-help-desk-plugin-5-0-5-broken-access-control-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125798": {
+  "id": "CVE-2026-125798",
+  "published": "2026-11-15T19:17:15.413",
+  "modified": "2026-11-15T19:17:15.523",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Zaytech Smart Online Order for Clover clover-online-orders allows DOM-Based XSS.This issue affects Smart Online Order for Clover: from n/a through 1.6.6.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/clover-online-orders/vulnerability/wordpress-smart-online-order-for-clover-plugin-1-6-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125804": {
+  "id": "CVE-2026-125804",
+  "published": "2026-11-15T19:17:15.557",
+  "modified": "2026-11-15T19:17:15.667",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Meow Apps AI Engine ai-engine allows Stored XSS.This issue affects AI Engine: from n/a through 3.9.3.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/ai-engine/vulnerability/wordpress-ai-engine-plugin-3-9-3-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125817": {
+  "id": "CVE-2026-125817",
+  "published": "2026-11-15T19:17:15.703",
+  "modified": "2026-11-15T19:17:15.813",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Themeisle Feedzy feedzy-rss-feeds allows Stored XSS.This issue affects Feedzy: from n/a through 5.2.15.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/feedzy-rss-feeds/vulnerability/wordpress-feedzy-plugin-5-2-15-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125818": {
+  "id": "CVE-2026-125818",
+  "published": "2026-11-15T19:17:15.850",
+  "modified": "2026-11-15T19:17:16.090",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in AdvancedCoding wpDiscuz wpdiscuz allows Stored XSS.This issue affects wpDiscuz: from n/a through 7.6.75.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/wpdiscuz/vulnerability/wordpress-wpdiscuz-plugin-7-6-75-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125822": {
+  "id": "CVE-2026-125822",
+  "published": "2026-11-15T19:17:16.123",
+  "modified": "2026-11-15T19:17:16.237",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Nickboss WordPress File Upload wp-file-upload allows Stored XSS.This issue affects WordPress File Upload: from n/a through 5.2.3.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/wp-file-upload/vulnerability/wordpress-wordpress-file-upload-plugin-5-2-3-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125823": {
+  "id": "CVE-2026-125823",
+  "published": "2026-11-15T19:17:16.273",
+  "modified": "2026-11-15T19:17:16.397",
+  "desc": "Allocation of Resources Without Limits or Throttling vulnerability in Jegstudio Gutenverse gutenverse allows HTTP DoS.This issue affects Gutenverse: from n/a through 4.2.2.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/gutenverse/vulnerability/wordpress-gutenverse-plugin-4-2-2-denial-of-service-attack-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125826": {
+  "id": "CVE-2026-125826",
+  "published": "2026-11-15T19:17:16.430",
+  "modified": "2026-11-15T19:17:16.543",
+  "desc": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Blubrry Podcasting PowerPress Podcasting powerpress allows Path Traversal.This issue affects PowerPress Podcasting: from n/a through 11.18.3.",
+  "cvss": 5.0,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:L",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/powerpress/vulnerability/wordpress-powerpress-podcasting-plugin-11-18-3-arbitrary-file-deletion-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125830": {
+  "id": "CVE-2026-125830",
+  "published": "2026-11-15T19:17:16.580",
+  "modified": "2026-11-15T19:17:16.693",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Belingo belingoGeo belingogeo allows Reflected XSS.This issue affects belingoGeo: from n/a through 1.13.3.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/belingogeo/vulnerability/wordpress-belingogeo-plugin-1-13-3-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129091": {
+  "id": "CVE-2026-129091",
+  "published": "2026-11-15T19:17:16.730",
+  "modified": "2026-11-15T19:17:16.840",
+  "desc": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Mikado-Themes GrandPrix Core grandprix-core allows PHP Local File Inclusion.This issue affects GrandPrix Core: from n/a through 1.0.",
+  "cvss": 8.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-98"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/grandprix-core/vulnerability/wordpress-grandprix-core-plugin-1-0-local-file-inclusion-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123006": {
+  "id": "CVE-2026-123006",
+  "published": "2026-11-15T21:16:53.803",
+  "modified": "2026-11-15T21:16:54.553",
+  "desc": "The repository search used by the dashboard (`GET /repo/search`) returned the internal commit status object of each repository. Since 28.0.0 that object included the repository owner's full user record, so any signed-in user could read the password hash, salt and email address of the owner of any repository they can see that has a commit status. The response now contains only the state and target URL of the commit status.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40377",
+   "https://github.com/go-gitea/gitea/pull/40384"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125423": {
+  "id": "CVE-2026-125423",
+  "published": "2026-11-15T21:16:54.590",
+  "modified": "2026-11-15T21:16:54.727",
+  "desc": "A repository created with auto-init accepted pushes before its initialization had finished, and the initial commit was built in a checkout of whatever the repository already contained. A user who is allowed to create repositories could push a crafted tree during that window so that writing the README followed a symbolic link and overwrote a server-side git hook, which runs commands as the Gitea system user. The initial commit is now built in a freshly initialized directory, and a new repository only becomes ready, and accepts pushes, once its initialization is complete.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-362",
+   "CWE-59"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40376",
+   "https://github.com/go-gitea/gitea/pull/40383"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118389": {
+  "id": "CVE-2026-118389",
+  "published": "2026-11-15T22:17:17.350",
+  "modified": "2026-11-15T22:17:17.460",
+  "desc": "The RubyGems package registry accepted gems whose platform, dependency names or dependency version requirements contain newline characters. Because the compact index served to clients is line-based, a user who can publish a gem to an owner's registry could forge index entries, such as packages that do not exist or additional versions of an existing gem with dependencies of their choice. Clients that resolve gems from that registry could then be led to install attacker-chosen dependencies. Gems with such metadata are now rejected.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-74"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/39782",
+   "https://github.com/go-gitea/gitea/pull/39900"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-118535": {
+  "id": "CVE-2026-118535",
+  "published": "2026-11-15T22:17:17.500",
+  "modified": "2026-11-15T22:17:17.600",
+  "desc": "A repository registered by its owner as a source of scoped workflows kept that registration when it was transferred to another owner. The new owner could then change the workflows in the transferred repository, and they kept running in the previous owner's repositories with access to their Actions secrets and job tokens. A transfer now removes the owner-level registrations of the repository, and registrations whose source repository no longer belongs to the registering owner are ignored.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40131",
+   "https://github.com/go-gitea/gitea/pull/40281"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120725": {
+  "id": "CVE-2026-120725",
+  "published": "2026-11-15T22:17:17.633",
+  "modified": "2026-11-15T22:17:17.733",
+  "desc": "With `REQUIRE_SIGNIN_VIEW = true`, the Git LFS endpoints still answered unauthenticated requests for repositories that are not private. An anonymous client who knows the path of such a repository and the SHA-256 of an LFS object could download the object, and could use the batch endpoint to test whether an object exists. The Git LFS endpoints now require authentication when sign-in is required to view the instance.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-306"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40131",
+   "https://github.com/go-gitea/gitea/pull/40281"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120729": {
+  "id": "CVE-2026-120729",
+  "published": "2026-11-15T22:17:17.773",
+  "modified": "2026-11-15T22:17:17.870",
+  "desc": "The popup shown when hovering an issue reference loaded its data from the path of the hovered link and inserted part of the response as HTML. A user who can post a comment or other rendered content could add a link that is displayed as an ordinary issue reference but points to a file in a repository they control, so that the popup inserted that file's content into the page of anyone hovering the link and ran script in the viewer's session. The popup now requests the issue by the owner, repository and index parsed from the link.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40207",
+   "https://github.com/go-gitea/gitea/pull/40225"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120991": {
+  "id": "CVE-2026-120991",
+  "published": "2026-11-15T22:17:17.907",
+  "modified": "2026-11-15T22:17:18.013",
+  "desc": "When a container blob upload was rejected, for example because it exceeded a package size quota, the cleanup removed the blob from storage even if the same content already existed and was used by other packages. On an instance with a package quota configured, a user who can upload container images and has the exact content of another owner's package file or image layer could make it undownloadable. The cleanup now only removes blobs that the failed upload created.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-460"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40120",
+   "https://github.com/go-gitea/gitea/pull/40268"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123002": {
+  "id": "CVE-2026-123002",
+  "published": "2026-11-15T22:17:18.050",
+  "modified": "2026-11-15T22:17:18.153",
+  "desc": "Gitea accepted an unlimited number of wrong TOTP passcodes during sign-in, in the password reset flow and for Basic authentication with the `X-Gitea-OTP` header. An attacker who already knows an account's password could guess the six-digit passcode by trying codes at a high rate and sign in despite two-factor authentication. After five failed passcodes, further attempts for the account are now refused for 15 minutes.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-307"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/39993",
+   "https://github.com/go-gitea/gitea/pull/40374"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123009": {
+  "id": "CVE-2026-123009",
+  "published": "2026-11-15T22:17:18.190",
+  "modified": "2026-11-15T22:17:18.290",
+  "desc": "When a file is edited in a fork through the web editor, Gitea can first copy a branch from the base repository into the fork. That copy did not check whether the user may read the base repository's code. A user who had forked a repository and later lost access to it, for example after it was made private or they were removed as a collaborator, could keep copying its current branches into their fork and read them. The copy now requires read access to the code of the base repository.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-284",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40131",
+   "https://github.com/go-gitea/gitea/pull/40281"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123065": {
+  "id": "CVE-2026-123065",
+  "published": "2026-11-15T22:17:18.323",
+  "modified": "2026-11-15T22:17:18.420",
+  "desc": "When a release was edited, the files of the attachments to remove were deleted by the identifiers submitted in the form rather than by the attachments verified to belong to the release. A user with write access to the releases of any repository, including their own, could submit a crafted identifier that resolves to the stored file of another attachment and delete it, provided they know that attachment's UUID. The attachment record stayed, so downloads of the affected issue, comment or release file failed. Release edits now only delete the files of attachments that belong to the release.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-22",
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40120",
+   "https://github.com/go-gitea/gitea/pull/40268"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123638": {
+  "id": "CVE-2026-123638",
+  "published": "2026-11-15T22:17:18.453",
+  "modified": "2026-11-15T22:17:18.553",
+  "desc": "The \"Protected file patterns\" setting of a branch protection rule was checked against file names as git prints them, and git quotes names that contain a double quote, a backslash or a control character. Such names never matched a pattern, so a user with write access could add or change files under a protected pattern by direct push or through a pull request merge, and could move a protected file out of the pattern's reach by renaming it. Where the patterns protect workflow files, this allowed adding a workflow that then ran on the repository's runners. Changed files are now listed unquoted, and a rename reports both the old and the new path.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-693"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40362",
+   "https://github.com/go-gitea/gitea/releases/tag/v28.4.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-123642": {
+  "id": "CVE-2026-123642",
+  "published": "2026-11-15T22:17:18.587",
+  "modified": "2026-11-15T22:17:18.680",
+  "desc": "The AGit flow (pushing to `refs/for/...`) did not check the pusher's access to pull requests again when it created the pull request. A user or deploy key with read access to the code only, or with write access to the wiki over SSH, could open pull requests in a repository where they have no access to pull requests. Creating a pull request through AGit now requires read access to the pull requests of the repository and is refused for wiki pushes.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40131",
+   "https://github.com/go-gitea/gitea/pull/40281"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125617": {
+  "id": "CVE-2026-125617",
+  "published": "2026-11-15T22:17:18.720",
+  "modified": "2026-11-15T22:17:18.823",
+  "desc": "`GET /api/v1/users/{username}/orgs/{org}/permissions` only checked that the organization is visible to the caller and then returned the named user's role in it. Any signed-in user could learn whether another user is an owner, admin or member of a public or limited organization, including for members who conceal their membership. The roles are now only returned to the user themselves, to members of the organization and to site administrators.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40042",
+   "https://github.com/go-gitea/gitea/pull/40365"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126338": {
+  "id": "CVE-2026-126338",
+  "published": "2026-11-15T22:17:18.863",
+  "modified": "2026-11-15T22:17:18.970",
+  "desc": "Replying to a code review comment accepted a review ID that belongs to a different pull request, through the web form, the API and incoming mail replies. A signed-in user could reply on a pull request they can access with the ID of a review in a repository they cannot read, and the new comment was attached to that review and received the diff context of the commented lines. Replies are now only accepted for a review of the same pull request, and for a pending review only from its author.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40131",
+   "https://github.com/go-gitea/gitea/pull/40281"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127958": {
+  "id": "CVE-2026-127958",
+  "published": "2026-11-15T22:17:19.010",
+  "modified": "2026-11-15T22:17:19.117",
+  "desc": "A pull request review created through the API as a draft (`event` set to `PENDING` or left empty) was added to the pull request timeline and announced through notifications and activity feeds like a submitted review. Its body and line comments were therefore visible to everyone who can read the pull request, including anonymous visitors of a public repository, before the reviewer submitted it. Pending reviews no longer get a timeline entry or notifications until they are submitted.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40260",
+   "https://github.com/go-gitea/gitea/pull/40272"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-128359": {
+  "id": "CVE-2026-128359",
+  "published": "2026-11-15T22:17:19.150",
+  "modified": "2026-11-15T22:17:19.253",
+  "desc": "When Gitea acts as an OAuth2 or OpenID Connect provider, the token endpoint did not check the state of the user. After an administrator deactivated an account or prohibited its sign-in, existing refresh tokens and unused authorization codes of that user could still be exchanged for new tokens, so applications that sign users in through Gitea kept them signed in. The token endpoint now refuses users who may not sign in, and token introspection reports their tokens as inactive.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-613"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40131",
+   "https://github.com/go-gitea/gitea/pull/40281"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-128365": {
+  "id": "CVE-2026-128365",
+  "published": "2026-11-15T22:17:19.293",
+  "modified": "2026-11-15T22:17:19.403",
+  "desc": "Removing a team's review request looked up a review by the negated team ID, which for the team with ID 2 is the ID of the built-in Actions user, and marked the review it found as official. In the organization that owns that team, a user who can change the review requests of a pull request could make an approval left by the Actions user count toward the approvals required by branch protection. Merging still required permission to merge. Removing a team review request no longer changes any review.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40120",
+   "https://github.com/go-gitea/gitea/pull/40268"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129337": {
+  "id": "CVE-2026-129337",
+  "published": "2026-11-15T22:17:19.433",
+  "modified": "2026-11-15T22:17:19.533",
+  "desc": "Git over HTTP lowers the required permission for pushes to read access, so that the AGit flow works, and relies on the repository's server-side hooks to enforce write access. A repository that is still being created by a migration, fork or template generation has no hooks yet, so a user with read access to it could push branches and tags during that window, or after a failed migration that left the repository in that state. Git over HTTP now refuses requests to repositories that are still being created.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40120",
+   "https://github.com/go-gitea/gitea/pull/40268"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129341": {
+  "id": "CVE-2026-129341",
+  "published": "2026-11-15T22:17:19.570",
+  "modified": "2026-11-15T22:17:19.667",
+  "desc": "The web endpoint that removes an attachment skipped the permission check when the request came from the user who had uploaded the attachment, and it was reachable with read access to issues or pull requests. A user who had uploaded a release asset could still delete it after losing write access to the repository. The endpoint now only deletes attachments that the user uploaded and that are not yet linked to an issue, comment or release.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/40120",
+   "https://github.com/go-gitea/gitea/pull/40268"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129525": {
+  "id": "CVE-2026-129525",
+  "published": "2026-11-15T22:17:19.700",
+  "modified": "2026-11-15T22:17:19.823",
+  "desc": "Several endpoints that work on both issues and pull requests did not check which of the two the addressed item is. A user who can read a repository's issues but not its pull requests could read pull request data through the issue sub-resources of the API (timeline, attachments, labels, subscriptions, tracked times and reactions), and list pull requests through the repository's issue search and milestone pages; the same applied in the other direction. These endpoints now check read access to the unit the item belongs to. The API endpoints were fixed in 28.2.0 and 28.3.0, the search and milestone pages in 28.4.0.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://blog.gitea.com/release-of-28.4.0/",
+   "https://github.com/go-gitea/gitea/pull/39839",
+   "https://github.com/go-gitea/gitea/pull/39847"
   ],
   "kev": false,
   "epss": null

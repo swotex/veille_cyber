@@ -6462,5 +6462,21 @@
   "lang": "en",
   "date": "2026-11-14T19:00:00+00:00",
   "summary": "The directive protects smartphones as part of a person’s private sphere and requires “free and informed consent” for such access, the authority said. The post Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook appeared first…"
+ },
+ "https://www.zataz.com/stripe-va-masquer-ses-cles-api-secretes-le-20-novembre/": {
+  "title": "Stripe va masquer ses clés API secrètes le 20 novembre",
+  "url": "https://www.zataz.com/stripe-va-masquer-ses-cles-api-secretes-le-20-novembre/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-15T19:44:34+00:00",
+  "summary": "Stripe masquera ses anciennes clés API secrètes le 20 novembre 2026. ZATAZ analyse les risques et les conséquences."
+ },
+ "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/": {
+  "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+  "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-15T18:29:53+00:00",
+  "summary": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer…"
  }
 }
