@@ -97555,7 +97555,7 @@
  "CVE-2026-109618": {
   "id": "CVE-2026-109618",
   "published": "2026-10-21T14:17:09.357",
-  "modified": "2026-11-05T19:17:07.900",
+  "modified": "2026-11-15T01:18:01.333",
   "desc": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
   "cvss": 9.2,
   "sev": "CRITICAL",
@@ -267852,7 +267852,7 @@
  "CVE-2026-119618": {
   "id": "CVE-2026-119618",
   "published": "2026-11-11T15:17:15.900",
-  "modified": "2026-11-14T05:18:29.103",
+  "modified": "2026-11-15T01:18:02.837",
   "desc": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
   "cvss": 8.1,
   "sev": "HIGH",
@@ -298803,7 +298803,7 @@
  "CVE-2015-10149": {
   "id": "CVE-2015-10149",
   "published": "2026-11-14T20:17:39.203",
-  "modified": "2026-11-14T20:17:39.203",
+  "modified": "2026-11-14T23:16:46.923",
   "desc": "Dancer versions before 1.3400 for Perl pass unvalidated session ids from the session cookie to the session engine.\n\nread_session_id returns the cookie value as the session id without checking its characters, and Dancer hands it to the session engine to load the session.\n\nA remote attacker may cause path traversal or injection in a session engine that uses the id in a file path, cache command or query without checking it.",
   "cvss": null,
   "sev": null,
@@ -298837,6 +298837,315 @@
    "https://github.com/FRRouting/frr/commit/abef07b500e19baa924d157ab03809b93730e619",
    "https://github.com/FRRouting/frr/commit/bebf95f02bc0dccc6a1841f0c8cbcba1f617d655",
    "https://github.com/FRRouting/frr/issues/20874"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129351": {
+  "id": "CVE-2026-129351",
+  "published": "2026-11-14T23:16:47.753",
+  "modified": "2026-11-14T23:16:47.983",
+  "desc": "A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The vendor explains: \"\"I am not able to confirm if such vulnerability exists as the product has been EOL for more than 15 years. We will send out an announcement letting customers know.\" This vulnerability only affects products that are no longer supported by the maintainer.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ruanyi101/router-firmware-security-advisories/blob/main/router-firmware-GitHub-advisories/advisories/TRENDnet-TEW-657BRM-mini_httpd.md",
+   "https://vuldb.com/cve/CVE-2026-129351",
+   "https://vuldb.com/submit/1043518"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129352": {
+  "id": "CVE-2026-129352",
+  "published": "2026-11-14T23:16:48.033",
+  "modified": "2026-11-14T23:16:48.177",
+  "desc": "A vulnerability was detected in TRENDnet TEW-657BRM 1.00.1. This issue affects some unknown processing of the file /usr/sbin/upgrade_flash.cgi. Performing a manipulation of the argument boundary results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is now public and may be used. The vendor explains: \"\"I am not able to confirm if such vulnerability exists as the product has been EOL for more than 15 years. We will send out an announcement letting customers know.\"",
+  "cvss": 8.5,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ruanyi101/router-firmware-security-advisories/blob/main/router-firmware-GitHub-advisories/advisories/TRENDnet-TEW-657BRM-upgrade_flash.md",
+   "https://vuldb.com/cve/CVE-2026-129352",
+   "https://vuldb.com/submit/1043522"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129353": {
+  "id": "CVE-2026-129353",
+  "published": "2026-11-15T00:16:51.120",
+  "modified": "2026-11-15T00:16:51.267",
+  "desc": "A vulnerability was detected in D-Link DIR-600L 2.17/2.17b02. Affected by this vulnerability is the function authenticationcgi_main of the file authentication.cgi. Performing a manipulation of the argument id/password results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit is now public and may be used.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ruanyi101/router-firmware-security-advisories/blob/main/router-firmware-GitHub-advisories/advisories/D-Link-DIR-600L-authentication-cgi.md",
+   "https://vuldb.com/cve/CVE-2026-129353",
+   "https://vuldb.com/submit/1043523"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129354": {
+  "id": "CVE-2026-129354",
+  "published": "2026-11-15T01:18:03.043",
+  "modified": "2026-11-15T01:18:03.190",
+  "desc": "A flaw has been found in D-Link DIR-600L 2.17b02. Affected by this issue is the function hnap_main of the file htdocs/cgibin of the component HNAP Handler. Executing a manipulation can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been published and may be used.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-121"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ruanyi101/router-firmware-security-advisories/blob/main/router-firmware-GitHub-advisories/advisories/D-Link-DIR-600L-HNAP-SOAPAction.md",
+   "https://vuldb.com/cve/CVE-2026-129354",
+   "https://vuldb.com/submit/1043526"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129355": {
+  "id": "CVE-2026-129355",
+  "published": "2026-11-15T01:18:03.237",
+  "modified": "2026-11-15T01:18:03.400",
+  "desc": "A vulnerability has been found in sigoden dufs up to 0.46.0. This affects an unknown part of the file src/server.rs of the component WebDAV COPY Operation Handler. The manipulation leads to incorrect authorization. The attack is possible to be carried out remotely. Upgrading to version 0.47.0 is able to mitigate this issue. The identifier of the patch is fba13dffb9c65b5e5e26419f64de709200277a04. It is advisable to upgrade the affected component.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-285",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sigoden/dufs/",
+   "https://github.com/sigoden/dufs/commit/fba13dffb9c65b5e5e26419f64de709200277a04",
+   "https://github.com/sigoden/dufs/pull/753"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129356": {
+  "id": "CVE-2026-129356",
+  "published": "2026-11-15T02:17:20.967",
+  "modified": "2026-11-15T02:17:21.153",
+  "desc": "A vulnerability was found in vllm-project vllm 0.30.0/0.31.0. This vulnerability affects unknown code of the file single_type_kv_cache_manager.py of the component Common Prefix Handler. The manipulation results in race condition. The attack may be performed from remote. Attacks of this nature are highly complex. It is stated that the exploitability is difficult. The exploit has been made public and could be used. Upgrading to version 0.32.0 is able to resolve this issue. The patch is identified as e687a251bb056fa527846633f7a1b0a6c0f42374. You should upgrade the affected component.",
+  "cvss": 1.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-362"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/vllm-project/vllm/",
+   "https://github.com/vllm-project/vllm/commit/e687a251bb056fa527846633f7a1b0a6c0f42374",
+   "https://github.com/vllm-project/vllm/issues/61673"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129454": {
+  "id": "CVE-2026-129454",
+  "published": "2026-11-15T02:17:21.243",
+  "modified": "2026-11-15T02:17:21.370",
+  "desc": "Zr.Admin.NET commit 85cff6a through commit eb9228a contains an insecure direct object reference vulnerability in GET /workflow/instance/{instanceId} that lets logged-in users view others' workflow instances. Authenticated low-privilege attackers can enumerate sequential instance IDs to read other users' approval requests, including submitted form contents, applicant details and approval records.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Workflow/Controllers/WfFlowInstanceController.cs#L49-L57",
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Workflow/Service/WfFlowInstanceService.cs#L173-L176",
+   "https://github.com/izhaorui/Zr.Admin.NET/commit/85cff6ae22389c241d3a4efe178273966650f7ca"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129455": {
+  "id": "CVE-2026-129455",
+  "published": "2026-11-15T02:17:21.420",
+  "modified": "2026-11-15T02:17:21.547",
+  "desc": "Zr.Admin.NET commit e6ceaf4 through commit eb9228a contains an insecure direct object reference vulnerability in FrontArticleController that allows authenticated users to change other users' article visibility and pin state. Attackers can send PUT /front/article/changePublic with their own UserId in the body to make private articles public, then read them anonymously via GET /front/article/{id}.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Admin.WebApi/Controllers/Content/FrontArticleController.cs#L122-L148",
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Service/Content/ArticleService.cs#L402-L437",
+   "https://github.com/izhaorui/Zr.Admin.NET/issues/27"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129464": {
+  "id": "CVE-2026-129464",
+  "published": "2026-11-15T02:17:21.597",
+  "modified": "2026-11-15T02:17:21.723",
+  "desc": "Zr.Admin.NET commit 0ee1ab8 through commit eb9228a contains a path traversal vulnerability that allows any logged-in user to read arbitrary server files via the path parameter of /common/DownloadFile. Attackers can supply absolute paths or ../ sequences to read appsettings files and use the JwtSettings SecretKey to forge administrator tokens.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/Infrastructure/Controllers/BaseController.cs#L110-L119",
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Admin.WebApi/Controllers/CommonController.cs#L220-L241",
+   "https://github.com/izhaorui/Zr.Admin.NET/commit/0ee1ab8af5e3861766746d25acba1184111befcb"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129465": {
+  "id": "CVE-2026-129465",
+  "published": "2026-11-15T02:17:21.770",
+  "modified": "2026-11-15T02:17:21.897",
+  "desc": "Zr.Admin.NET commit af07ffc through commit eb9228a contains an insecure direct object reference vulnerability in SysProfileController.UpdateProfile that allows any authenticated user to modify other accounts via UserId. Attackers can set the administrator's phone number to one they control, request an SMS code via /checkMobile, and log in through /PhoneLogin to take over the administrator account.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Admin.WebApi/Controllers/System/SysLoginController.cs#L516-L559",
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Admin.WebApi/Controllers/System/SysProfileController.cs#L62-L75",
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.ServiceCore/Services/SysUserService.cs#L220-L236"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129466": {
+  "id": "CVE-2026-129466",
+  "published": "2026-11-15T02:17:21.943",
+  "modified": "2026-11-15T02:17:22.073",
+  "desc": "Zr.Admin.NET commit 1845017 through commit eb9228a contains a missing authorization vulnerability in TasksController.Get that allows any logged-in user to read scheduled task details without the monitor:job permission. Attackers can obtain task ids from the unprotected /monitor/jobLog/list endpoint and retrieve job parameters, API URLs, cron expressions, and stored SQL statements.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Admin.WebApi/Controllers/System/TasksController.cs#L145-L157",
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Admin.WebApi/Controllers/System/TasksController.cs#L84-L120",
+   "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Admin.WebApi/Controllers/System/TasksLogController.cs#L31-L46"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129357": {
+  "id": "CVE-2026-129357",
+  "published": "2026-11-15T03:16:46.377",
+  "modified": "2026-11-15T03:16:50.367",
+  "desc": "A vulnerability was determined in Linux Foundation Magma up to 1.9.0. This issue affects the function hostOrgMiddleware of the file nms/server/host/middleware.ts of the component Host Middleware. This manipulation of the argument role causes missing authorization. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-862",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/aymencdm/magma_pocs/blob/main/01-rbac-poc.sh",
+   "https://vuldb.com/cve/CVE-2026-129357",
+   "https://vuldb.com/submit/1043997"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129358": {
+  "id": "CVE-2026-129358",
+  "published": "2026-11-15T03:16:51.473",
+  "modified": "2026-11-15T03:16:51.947",
+  "desc": "A vulnerability was identified in Linux Foundation Magma up to 1.9.0. Impacted is the function handleReact of the file nms/server/main/routes.ts of the component NMS. Such manipulation leads to cross site scripting. It is possible to launch the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 1.9,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79",
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/aymencdm/magma_pocs/blob/main/02-xss-poc.sh",
+   "https://vuldb.com/cve/CVE-2026-129358",
+   "https://vuldb.com/submit/1044004"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129359": {
+  "id": "CVE-2026-129359",
+  "published": "2026-11-15T03:16:51.997",
+  "modified": "2026-11-15T03:16:52.477",
+  "desc": "A security flaw has been discovered in Linux Foundation Magma up to 1.9.0. The affected element is an unknown function of the file orc8r/lib/go/registry/interceptors.go. Performing a manipulation results in hard-coded credentials. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-259",
+   "CWE-798"
+  ],
+  "products": [],
+  "refs": [
+   "https://vuldb.com/cve/CVE-2026-129359",
+   "https://vuldb.com/submit/1044005",
+   "https://vuldb.com/vuln/437422"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129360": {
+  "id": "CVE-2026-129360",
+  "published": "2026-11-15T04:16:45.090",
+  "modified": "2026-11-15T04:16:45.263",
+  "desc": "A weakness has been identified in Linux Foundation Magma up to 1.9.0. The impacted element is an unknown function of the file orc8r/cloud/go/services/obsidian/access/operator.go of the component Obsidian REST. Executing a manipulation of the argument X-Magma-Client-Cert-Serial can lead to authentication bypass by spoofing. The attack can be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-287",
+   "CWE-290"
+  ],
+  "products": [],
+  "refs": [
+   "https://vuldb.com/cve/CVE-2026-129360",
+   "https://vuldb.com/submit/1044006",
+   "https://vuldb.com/vuln/437423"
   ],
   "kev": false,
   "epss": null
