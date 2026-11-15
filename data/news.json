@@ -6366,5 +6366,101 @@
   "lang": "en",
   "date": "2026-11-14T17:02:39+00:00",
   "summary": "This is a current list of where and when I am scheduled to speak: I’m speaking at the Catalyst Summit in Brampton, Ontario, Canada, on Wednesday, November 18, 2026. I’m speaking at QT Qonference 2026 in Toronto, Ontario, Canada, on Thursday, November 19,…"
+ },
+ "https://www.zataz.com/areas-assurances-vise-par-une-vente-de-donnees/": {
+  "title": "Aréas Assurances visé par une vente de données",
+  "url": "https://www.zataz.com/areas-assurances-vise-par-une-vente-de-donnees/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-15T14:58:23+00:00",
+  "summary": "Un pirate informatique affirme détenir les données de plus de 21 000 assurés d’Aréas Assurances, dont leurs numéros de Sécurité sociale."
+ },
+ "https://www.zataz.com/techfive-cite-dans-une-annonce-de-vente-de-donnees/": {
+  "title": "Techfive cité dans une annonce de vente de données",
+  "url": "https://www.zataz.com/techfive-cite-dans-une-annonce-de-vente-de-donnees/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-15T14:54:01+00:00",
+  "summary": "Un pirate informatique annonce la vente de 400 entreprises retrouvées chez chez un professionnel de l'encaissement et du paiement."
+ },
+ "https://www.zataz.com/entre-bievre-et-rhone-visee-par-une-revendication-cyber/": {
+  "title": "Entre Bièvre et Rhône visée par une revendication cyber",
+  "url": "https://www.zataz.com/entre-bievre-et-rhone-visee-par-une-revendication-cyber/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-15T14:45:47+00:00",
+  "summary": "Entre Bièvre et Rhône, en Isère, fait l’objet d’une revendication cyber portant sur des données d’usagers."
+ },
+ "https://www.zataz.com/metaux-precieux-et-donnees-clients-mises-en-vente/": {
+  "title": "Métaux précieux et données clients mises en vente",
+  "url": "https://www.zataz.com/metaux-precieux-et-donnees-clients-mises-en-vente/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-15T12:42:32+00:00",
+  "summary": "Un vendeur affirme détenir quatre bases clients et 30 000 documents d’une entreprise française de métaux précieux."
+ },
+ "https://www.zataz.com/le-pirate-qui-audite-la-france/": {
+  "title": "Le pirate qui « audite » la France",
+  "url": "https://www.zataz.com/le-pirate-qui-audite-la-france/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-15T12:37:12+00:00",
+  "summary": "La FFTT confirme un vol de données. ZATAZ retrace les annonces de Chimera et les fichiers attribués à 33 autres fédération sportives."
+ },
+ "https://www.zataz.com/opsysweb-une-fuite-presumee-de-43-millions-de-commandes/": {
+  "title": "Opsysweb, une fuite présumée de 4,3 millions de commandes",
+  "url": "https://www.zataz.com/opsysweb-une-fuite-presumee-de-43-millions-de-commandes/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-15T12:19:51+00:00",
+  "summary": "Sur un forum pirate, un internaute revendique une fuite de 4,3 millions de commandes de verres attribuées à Opsysweb."
+ },
+ "https://www.zataz.com/cyberattaque-maileva-22-millions-de-personnes-touchees/": {
+  "title": "Cyberattaque Maileva, 22 millions de personnes touchées",
+  "url": "https://www.zataz.com/cyberattaque-maileva-22-millions-de-personnes-touchees/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-15T11:47:49+00:00",
+  "summary": "Cyberattaque Maileva, 22 millions de personnes touchées par le vol de données. Des relances de paiement ont été exposées."
+ },
+ "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/": {
+  "title": "TSMC employee data breach linked to cloud provider",
+  "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-15T15:23:48+00:00",
+  "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]"
+ },
+ "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html": {
+  "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+  "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-15T11:27:31+00:00",
+  "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and…"
+ },
+ "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html": {
+  "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+  "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-15T08:22:04+00:00",
+  "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to…"
+ },
+ "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/": {
+  "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
+  "url": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-15T12:51:33+00:00",
+  "summary": "The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications. The post Pentagon Renames CDAO ‘Super Intelligence Office’ appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/": {
+  "title": "Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook",
+  "url": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-14T19:00:00+00:00",
+  "summary": "The directive protects smartphones as part of a person’s private sphere and requires “free and informed consent” for such access, the authority said. The post Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook appeared first…"
  }
 }

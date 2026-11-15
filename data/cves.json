@@ -107135,7 +107135,7 @@
    "https://github.com/CollaboraOnline/online/security/advisories/GHSA-wgmm-q3ch-64jj"
   ],
   "kev": false,
-  "epss": 0.00325
+  "epss": 0.00345
  },
  "CVE-2026-61626": {
   "id": "CVE-2026-61626",
@@ -132139,7 +132139,7 @@
    "https://www.ibm.com/support/pages/node/7292374"
   ],
   "kev": false,
-  "epss": 0.0009
+  "epss": 0.001
  },
  "CVE-2026-1510": {
   "id": "CVE-2026-1510",
@@ -132202,7 +132202,7 @@
    "https://www.ibm.com/support/pages/node/7292374"
   ],
   "kev": false,
-  "epss": 0.0027
+  "epss": 0.00289
  },
  "CVE-2026-4405": {
   "id": "CVE-2026-4405",
@@ -132223,7 +132223,7 @@
    "https://www.ibm.com/support/pages/node/7292374"
   ],
   "kev": false,
-  "epss": 0.00143
+  "epss": 0.00153
  },
  "CVE-2026-4413": {
   "id": "CVE-2026-4413",
@@ -132244,7 +132244,7 @@
    "https://www.ibm.com/support/pages/node/7292374"
   ],
   "kev": false,
-  "epss": 0.00211
+  "epss": 0.0025
  },
  "CVE-2026-6719": {
   "id": "CVE-2026-6719",
@@ -210424,7 +210424,7 @@
  "CVE-2026-124560": {
   "id": "CVE-2026-124560",
   "published": "2026-11-09T03:16:38.117",
-  "modified": "2026-11-12T15:17:47.847",
+  "modified": "2026-11-15T14:17:21.840",
   "desc": "A vulnerability was found in D-Link DIR-878 1.20B05. This affects the function GetCAPTCHAsetting of the file bin/prog.cgi of the component HNAP Handler. Performing a manipulation of the argument uid results in heap-based buffer overflow. The attack can be initiated remotely. The exploit has been made public and could be used. This vulnerability only affects products that are no longer supported by the maintainer.",
   "cvss": 8.9,
   "sev": "HIGH",
@@ -210435,9 +210435,9 @@
   ],
   "products": [],
   "refs": [
-   "https://github.com/Zimo-666/DIR-878-cves/tree/main/01-captcha-uid-heap-overflow",
-   "https://vuldb.com/cve/CVE-2026-124560",
-   "https://vuldb.com/submit/1035616"
+   "https://github.com/Zhaoyang-haha/DIR-878-cves/blob/main/01-captcha-uid-heap-overflow/poc.sh",
+   "https://github.com/Zhaoyang-haha/DIR-878-cves/tree/main/01-captcha-uid-heap-overflow",
+   "https://vuldb.com/cve/CVE-2026-124560"
   ],
   "kev": false,
   "epss": 0.00721
@@ -210463,7 +210463,7 @@
  "CVE-2026-124561": {
   "id": "CVE-2026-124561",
   "published": "2026-11-09T04:17:06.317",
-  "modified": "2026-11-10T18:17:31.760",
+  "modified": "2026-11-15T14:17:23.017",
   "desc": "A vulnerability was determined in D-Link DIR-878 1.20B05. This impacts the function SetVLANSettings of the file prog.cgi of the component HNAP Handler. Executing a manipulation of the argument VID can lead to stack-based buffer overflow. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized. This vulnerability only affects products that are no longer supported by the maintainer.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -210474,9 +210474,9 @@
   ],
   "products": [],
   "refs": [
-   "https://github.com/Zimo-666/DIR-878-cves/tree/main/03-settriggeradic-vlan-stack-overflow",
-   "https://vuldb.com/cve/CVE-2026-124561",
-   "https://vuldb.com/submit/1035617"
+   "https://github.com/Zhaoyang-haha/DIR-878-cves/blob/main/03-settriggeradic-vlan-stack-overflow/poc.sh",
+   "https://github.com/Zhaoyang-haha/DIR-878-cves/tree/main/03-settriggeradic-vlan-stack-overflow",
+   "https://vuldb.com/cve/CVE-2026-124561"
   ],
   "kev": false,
   "epss": 0.00538
@@ -213774,11 +213774,11 @@
  "CVE-2026-124684": {
   "id": "CVE-2026-124684",
   "published": "2026-11-09T12:16:38.290",
-  "modified": "2026-11-12T22:11:01.153",
-  "desc": "This issue can cause a heap-use-after-free when an embedder unloads a ReloadableString buffer while a previously returned raw character pointer remains in use. Successful triggering may cause the Escargot-based process to crash, resulting in a denial of service.",
-  "cvss": 5.1,
+  "modified": "2026-11-15T08:17:20.153",
+  "desc": "A use-after-free vulnerability exists in Samsung Escargot 5.0.2 in the buffer-access paths for ReloadableString and CompressibleString. Internal raw character accessors and the public StringRef::stringBufferAccessData() API did not preserve the lifetime of the underlying buffer while it remained in use. As a result, idle unloading or garbage-collection compression could release the buffer and leave a stale pointer. Subsequent access may cause the process to crash or, under allocation-dependent conditions, expose limited contents of another heap allocation. The issue was addressed by adding buffer-lifetime reference tracking and removing unsafe raw character accessors.",
+  "cvss": 5.7,
   "sev": "MEDIUM",
-  "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
   "cwe": [
    "CWE-416"
   ],
@@ -213787,7 +213787,7 @@
    "https://github.com/Samsung/escargot/commit/8bc35b7b88f0f96c66a42aa965a1a710308b61d5"
   ],
   "kev": false,
-  "epss": 0.00096
+  "epss": 0.00099
  },
  "CVE-2026-110468": {
   "id": "CVE-2026-110468",
@@ -221533,7 +221533,7 @@
    "https://security-portal.versa-networks.com/emailbulletins/6af2299bdd1c93ddc0a3e832"
   ],
   "kev": false,
-  "epss": 0.00315
+  "epss": 0.00343
  },
  "CVE-2026-107241": {
   "id": "CVE-2026-107241",
@@ -221641,7 +221641,7 @@
    "https://support.plesk.com/hc/en-us/articles/44831088501527-Vulnerability-CVE-2026-107246-in-Plesk-s-Site-Import-extension"
   ],
   "kev": false,
-  "epss": 0.00405
+  "epss": 0.00444
  },
  "CVE-2026-109793": {
   "id": "CVE-2026-109793",
@@ -267288,7 +267288,7 @@
    "https://github.com/jordan-dalby/ByteStash/releases/tag/v1.6.2"
   ],
   "kev": false,
-  "epss": 0.00232
+  "epss": 0.00241
  },
  "CVE-2026-126659": {
   "id": "CVE-2026-126659",
@@ -267870,7 +267870,7 @@
    "https://access.redhat.com/security/cve/cve-2026-119618"
   ],
   "kev": false,
-  "epss": 0.0133
+  "epss": 0.01527
  },
  "CVE-2026-123710": {
   "id": "CVE-2026-123710",
@@ -298066,7 +298066,7 @@
    "https://vuldb.com/vuln/437278"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00442
  },
  "CVE-2026-129248": {
   "id": "CVE-2026-129248",
@@ -298087,7 +298087,7 @@
    "https://vuldb.com/vuln/437279"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00352
  },
  "CVE-2026-124536": {
   "id": "CVE-2026-124536",
@@ -298105,7 +298105,7 @@
    "https://metacpan.org/release/MLEHMANN/JSON-XS-4.05/changes"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00187
  },
  "CVE-2026-124539": {
   "id": "CVE-2026-124539",
@@ -298123,7 +298123,7 @@
    "https://metacpan.org/release/MLEHMANN/JSON-XS-4.05/changes"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00187
  },
  "CVE-2026-124540": {
   "id": "CVE-2026-124540",
@@ -298141,7 +298141,7 @@
    "https://metacpan.org/release/MLEHMANN/JSON-XS-4.05/changes"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00204
  },
  "CVE-2026-124541": {
   "id": "CVE-2026-124541",
@@ -298159,7 +298159,7 @@
    "https://metacpan.org/release/MLEHMANN/JSON-XS-4.05/changes"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00204
  },
  "CVE-2026-129113": {
   "id": "CVE-2026-129113",
@@ -298177,7 +298177,7 @@
    "https://metacpan.org/release/MLEHMANN/JSON-XS-4.05/changes"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00204
  },
  "CVE-2026-129114": {
   "id": "CVE-2026-129114",
@@ -298196,7 +298196,7 @@
    "https://metacpan.org/release/MLEHMANN/JSON-XS-4.05/changes"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00204
  },
  "CVE-2026-129115": {
   "id": "CVE-2026-129115",
@@ -298214,7 +298214,7 @@
    "https://metacpan.org/release/MLEHMANN/JSON-XS-4.05/changes"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00204
  },
  "CVE-2026-129250": {
   "id": "CVE-2026-129250",
@@ -298235,7 +298235,7 @@
    "https://vuldb.com/submit/1033650"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00751
  },
  "CVE-2026-129251": {
   "id": "CVE-2026-129251",
@@ -298256,7 +298256,7 @@
    "https://vuldb.com/vuln/437281"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00329
  },
  "CVE-2026-129427": {
   "id": "CVE-2026-129427",
@@ -298275,7 +298275,7 @@
    "https://www.grayback.es/en/advisories"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00367
  },
  "CVE-2025-71464": {
   "id": "CVE-2025-71464",
@@ -298295,7 +298295,7 @@
    "https://github.com/kolkov/angular-editor/commit/1b6ee6763ccc93cf0ddd4ab47380166b5efb8f5e"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00201
  },
  "CVE-2025-71465": {
   "id": "CVE-2025-71465",
@@ -298315,7 +298315,7 @@
    "https://github.com/kolkov/angular-editor/commit/774a97d0b30e257a07c5d426548c9b900c8a8975"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00215
  },
  "CVE-2026-120522": {
   "id": "CVE-2026-120522",
@@ -298334,7 +298334,7 @@
    "https://www.wordfence.com/threat-intel/vulnerabilities/id/58fd04ae-fff2-42b1-ae98-168195d84290?source=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00788
  },
  "CVE-2026-129254": {
   "id": "CVE-2026-129254",
@@ -298355,7 +298355,7 @@
    "https://vuldb.com/cve/CVE-2026-129254"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00494
  },
  "CVE-2026-129255": {
   "id": "CVE-2026-129255",
@@ -298376,7 +298376,7 @@
    "https://vuldb.com/vuln/437286"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00151
  },
  "CVE-2026-129428": {
   "id": "CVE-2026-129428",
@@ -298396,7 +298396,7 @@
    "https://github.com/rcourtman/Pulse/commit/f05119d97ea3bc1980886d8c62dda7ce8fd39d4e"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00184
  },
  "CVE-2026-129429": {
   "id": "CVE-2026-129429",
@@ -298416,7 +298416,7 @@
    "https://github.com/frappe/india-payroll/commit/78de736298a340ecb971826a5df10e7204773cef"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00223
  },
  "CVE-2026-129430": {
   "id": "CVE-2026-129430",
@@ -298436,7 +298436,7 @@
    "https://github.com/axeloz/filesharing/commit/366ee452aba636858d55b82068ecc35f6d08b6d6"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00178
  },
  "CVE-2026-129431": {
   "id": "CVE-2026-129431",
@@ -298456,7 +298456,7 @@
    "https://github.com/Ettercap/ettercap/pull/1340"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00234
  },
  "CVE-2026-129432": {
   "id": "CVE-2026-129432",
@@ -298476,7 +298476,7 @@
    "https://github.com/Ettercap/ettercap/pull/1341"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00205
  },
  "CVE-2026-129433": {
   "id": "CVE-2026-129433",
@@ -298496,7 +298496,7 @@
    "https://github.com/Dokploy/dokploy/commit/b24006e16e95a10ce3daf739d06ac783e5c70ba0"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.02399
  },
  "CVE-2026-18053": {
   "id": "CVE-2026-18053",
@@ -298515,7 +298515,7 @@
    "https://www.wordfence.com/threat-intel/vulnerabilities/id/70d0bc5e-8db6-4a42-af19-d41280ec1207?source=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00314
  },
  "CVE-2026-19907": {
   "id": "CVE-2026-19907",
@@ -298534,7 +298534,7 @@
    "https://www.wordfence.com/threat-intel/vulnerabilities/id/ce5ea515-5ae1-4771-9bfb-5a0f4b3fce22?source=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00467
  },
  "CVE-2011-10042": {
   "id": "CVE-2011-10042",
@@ -298554,7 +298554,7 @@
    "http://www.openwall.com/lists/oss-security/2026/11/14/10"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00923
  },
  "CVE-2026-129258": {
   "id": "CVE-2026-129258",
@@ -298574,7 +298574,7 @@
    "https://vuldb.com/submit/1043033"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00255
  },
  "CVE-2026-129259": {
   "id": "CVE-2026-129259",
@@ -298595,7 +298595,7 @@
    "https://vuldb.com/submit/1043136"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00311
  },
  "CVE-2026-110531": {
   "id": "CVE-2026-110531",
@@ -298615,7 +298615,7 @@
    "https://plugins.trac.wordpress.org/browser/fv-player/trunk/models/custom-videos.php#L115"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00258
  },
  "CVE-2026-116753": {
   "id": "CVE-2026-116753",
@@ -298635,7 +298635,7 @@
    "https://plugins.trac.wordpress.org/browser/cf7-multi-step/tags/2.9.1/inc/frontend/validation.php#L330"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00308
  },
  "CVE-2026-120687": {
   "id": "CVE-2026-120687",
@@ -298655,7 +298655,7 @@
    "https://plugins.trac.wordpress.org/changeset/3789888/foobox-image-lightbox"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00324
  },
  "CVE-2026-127115": {
   "id": "CVE-2026-127115",
@@ -298675,7 +298675,7 @@
    "https://plugins.trac.wordpress.org/browser/buddyforms/tags/2.10.6/includes/form/form-ajax.php#L145"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00334
  },
  "CVE-2026-129260": {
   "id": "CVE-2026-129260",
@@ -298695,7 +298695,7 @@
    "https://github.com/Mereithhh/vanblog/commit/d63aa163f10b6dc1080e2368fe8e71aa95b765cb"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00543
  },
  "CVE-2026-129261": {
   "id": "CVE-2026-129261",
@@ -298715,7 +298715,7 @@
    "https://vuldb.com/vuln/437302"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00132
  },
  "CVE-2026-129262": {
   "id": "CVE-2026-129262",
@@ -298736,7 +298736,7 @@
    "https://vuldb.com/submit/1043317"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00284
  },
  "CVE-2026-129264": {
   "id": "CVE-2026-129264",
@@ -298757,7 +298757,7 @@
    "https://codeberg.org/suyuanwang/Test_sox/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0018
  },
  "CVE-2026-129267": {
   "id": "CVE-2026-129267",
@@ -298778,7 +298778,7 @@
    "https://vuldb.com/cve/CVE-2026-129267"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00203
  },
  "CVE-2026-129447": {
   "id": "CVE-2026-129447",
@@ -298798,7 +298798,7 @@
    "https://github.com/yuzutech/kroki/releases/tag/v0.36.0"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00215
  },
  "CVE-2015-10149": {
   "id": "CVE-2015-10149",
@@ -298818,7 +298818,7 @@
    "https://github.com/PerlDancer/Dancer/issues/1118"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00368
  },
  "CVE-2026-129456": {
   "id": "CVE-2026-129456",
@@ -298839,7 +298839,7 @@
    "https://github.com/FRRouting/frr/issues/20874"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00267
  },
  "CVE-2026-129351": {
   "id": "CVE-2026-129351",
@@ -298860,7 +298860,7 @@
    "https://vuldb.com/submit/1043518"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00879
  },
  "CVE-2026-129352": {
   "id": "CVE-2026-129352",
@@ -298881,7 +298881,7 @@
    "https://vuldb.com/submit/1043522"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0078
  },
  "CVE-2026-129353": {
   "id": "CVE-2026-129353",
@@ -298902,7 +298902,7 @@
    "https://vuldb.com/submit/1043523"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.01788
  },
  "CVE-2026-129354": {
   "id": "CVE-2026-129354",
@@ -298923,7 +298923,7 @@
    "https://vuldb.com/submit/1043526"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00869
  },
  "CVE-2026-129355": {
   "id": "CVE-2026-129355",
@@ -298944,7 +298944,7 @@
    "https://github.com/sigoden/dufs/pull/753"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00588
  },
  "CVE-2026-129356": {
   "id": "CVE-2026-129356",
@@ -298964,7 +298964,7 @@
    "https://github.com/vllm-project/vllm/issues/61673"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00296
  },
  "CVE-2026-129454": {
   "id": "CVE-2026-129454",
@@ -298984,7 +298984,7 @@
    "https://github.com/izhaorui/Zr.Admin.NET/commit/85cff6ae22389c241d3a4efe178273966650f7ca"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00257
  },
  "CVE-2026-129455": {
   "id": "CVE-2026-129455",
@@ -299004,7 +299004,7 @@
    "https://github.com/izhaorui/Zr.Admin.NET/issues/27"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00181
  },
  "CVE-2026-129464": {
   "id": "CVE-2026-129464",
@@ -299024,7 +299024,7 @@
    "https://github.com/izhaorui/Zr.Admin.NET/commit/0ee1ab8af5e3861766746d25acba1184111befcb"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00423
  },
  "CVE-2026-129465": {
   "id": "CVE-2026-129465",
@@ -299044,7 +299044,7 @@
    "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.ServiceCore/Services/SysUserService.cs#L220-L236"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00315
  },
  "CVE-2026-129466": {
   "id": "CVE-2026-129466",
@@ -299064,7 +299064,7 @@
    "https://github.com/izhaorui/Zr.Admin.NET/blob/eb9228a23014f6000c06cab2f10ae0d44ecbbd3a/ZR.Admin.WebApi/Controllers/System/TasksLogController.cs#L31-L46"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00222
  },
  "CVE-2026-129357": {
   "id": "CVE-2026-129357",
@@ -299085,7 +299085,7 @@
    "https://vuldb.com/submit/1043997"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00214
  },
  "CVE-2026-129358": {
   "id": "CVE-2026-129358",
@@ -299106,7 +299106,7 @@
    "https://vuldb.com/submit/1044004"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00214
  },
  "CVE-2026-129359": {
   "id": "CVE-2026-129359",
@@ -299127,7 +299127,7 @@
    "https://vuldb.com/vuln/437422"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00284
  },
  "CVE-2026-129360": {
   "id": "CVE-2026-129360",
@@ -299146,6 +299146,1267 @@
    "https://vuldb.com/cve/CVE-2026-129360",
    "https://vuldb.com/submit/1044006",
    "https://vuldb.com/vuln/437423"
+  ],
+  "kev": false,
+  "epss": 0.00411
+ },
+ "CVE-2026-103361": {
+  "id": "CVE-2026-103361",
+  "published": "2026-11-15T07:16:49.253",
+  "modified": "2026-11-15T07:16:49.253",
+  "desc": "The Payment Gateway via Valitor for WooCommerce WordPress plugin before 1.9.41 does not properly validate the authenticity of payment callbacks, relying on a verification secret that ships with a hard-coded default value used by every store that has not changed it, allowing unauthenticated attackers to forge a valid payment confirmation and mark arbitrary orders as paid.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/f368f380-c003-4701-82be-19990fa69818/"
+  ],
+  "kev": false,
+  "epss": 0.00137
+ },
+ "CVE-2026-110960": {
+  "id": "CVE-2026-110960",
+  "published": "2026-11-15T07:16:53.477",
+  "modified": "2026-11-15T07:16:53.477",
+  "desc": "The Auth Armor  WordPress plugin through 1.0.3 does not require authentication on several handlers available to logged-out users, which leak the site's stored API credentials and allow an unauthenticated attacker to reset an administrator's enrollment and take over that administrator account.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/84878a65-29f3-4cb9-96dd-b3f35baa21f0/"
+  ],
+  "kev": false,
+  "epss": 0.00177
+ },
+ "CVE-2026-110984": {
+  "id": "CVE-2026-110984",
+  "published": "2026-11-15T07:16:53.600",
+  "modified": "2026-11-15T07:16:53.600",
+  "desc": "The RegistrationMagic  WordPress plugin before 6.1.0.4 does not sanitise and escape a parameter before using it in a SQL statement, which could allow high privilege users such as admin to perform SQL injection attacks.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/331347d3-bc62-4727-b80c-0c7cc5df6031/"
+  ],
+  "kev": false,
+  "epss": 0.00157
+ },
+ "CVE-2026-110987": {
+  "id": "CVE-2026-110987",
+  "published": "2026-11-15T07:16:53.717",
+  "modified": "2026-11-15T07:16:53.717",
+  "desc": "The RegistrationMagic  WordPress plugin before 6.1.0.4 does not properly escape a user-supplied value before printing it inside an inline script block on several of its admin screens, allowing unauthenticated attackers to inject arbitrary JavaScript that executes in the session of an administrator who is tricked into opening a crafted link.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/2a4e7700-fecb-49e9-bd6f-6d36e785115a/"
+  ],
+  "kev": false,
+  "epss": 0.00173
+ },
+ "CVE-2026-110989": {
+  "id": "CVE-2026-110989",
+  "published": "2026-11-15T07:16:53.827",
+  "modified": "2026-11-15T07:16:53.827",
+  "desc": "The RegistrationMagic  WordPress plugin before 6.1.0.4 does not verify ownership of the submitted email address before updating the associated WordPress user account, allowing unauthenticated attackers to overwrite the profile fields of arbitrary non-administrator users by submitting a public form that contains name and primary-email fields.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/3992979c-8808-4888-9e6a-658bf4f8c317/"
+  ],
+  "kev": false,
+  "epss": 0.00137
+ },
+ "CVE-2026-114451": {
+  "id": "CVE-2026-114451",
+  "published": "2026-11-15T07:16:53.930",
+  "modified": "2026-11-15T07:16:53.930",
+  "desc": "The Membership Plugin  WordPress plugin before 4.0.6 does not perform any authorization or CSRF check before running a schema-altering database maintenance routine, allowing unauthenticated users to convert the Membership Plugin  WordPress plugin before 4.0.6's own tables to a narrower character set, which irreversibly replaces every 4-byte character (such as emoji and some CJK characters) in the membership level, discount code and payment records with a question mark.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/74c09864-9f3e-4201-84ed-bf0aa562b500/"
+  ],
+  "kev": false,
+  "epss": 0.001
+ },
+ "CVE-2026-114452": {
+  "id": "CVE-2026-114452",
+  "published": "2026-11-15T07:16:54.053",
+  "modified": "2026-11-15T07:16:54.053",
+  "desc": "The Membership Plugin  WordPress plugin before 4.0.6 does not verify that the membership referenced in a saved-card payment request belongs to the user making it, allowing subscriber-level members to disclose another member's Stripe payment client secret and attach a payment method of their choosing to another member's pending payment.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/2694318a-07b5-483c-a3f1-4511022c6d5d/"
+  ],
+  "kev": false,
+  "epss": 0.00132
+ },
+ "CVE-2026-116559": {
+  "id": "CVE-2026-116559",
+  "published": "2026-11-15T07:16:54.163",
+  "modified": "2026-11-15T07:16:54.163",
+  "desc": "The A2Reviews WordPress plugin through 1.2.3 does not properly verify authorization on several of its API command handlers, relying on a signature keyed on a value that is empty by default on an unconnected install, allowing unauthenticated attackers to modify A2Reviews WordPress plugin through 1.2.3 settings and product review metadata and to read non-public product metadata.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/313ed902-a4ad-46d2-9a84-3cbc94464dab/"
+  ],
+  "kev": false,
+  "epss": 0.00137
+ },
+ "CVE-2026-123707": {
+  "id": "CVE-2026-123707",
+  "published": "2026-11-15T07:16:54.283",
+  "modified": "2026-11-15T07:16:54.283",
+  "desc": "The WPGraphQL WordPress plugin before 2.27.1 does not restrict access to posts in custom non-public post statuses, allowing users with the Contributor role and above to read the content of other users' posts in those statuses.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/ae3506eb-c023-4af6-b3c0-5c2600b2b502/"
+  ],
+  "kev": false,
+  "epss": 0.0014
+ },
+ "CVE-2026-124671": {
+  "id": "CVE-2026-124671",
+  "published": "2026-11-15T07:16:54.407",
+  "modified": "2026-11-15T07:16:54.407",
+  "desc": "The Burst Statistics  WordPress plugin before 3.7.5 does not enforce a shared report's date range on the analytics it serves to the report's share link, allowing anyone holding the link to read the report's statistics for any period the site retains rather than the period the report was shared for.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/e04841d2-547a-432a-a1c4-62b07c54e1b2/"
+  ],
+  "kev": false,
+  "epss": 0.0014
+ },
+ "CVE-2026-124673": {
+  "id": "CVE-2026-124673",
+  "published": "2026-11-15T07:16:54.527",
+  "modified": "2026-11-15T07:16:54.527",
+  "desc": "The Burst Statistics  WordPress plugin before 3.7.5 does not check that a reported page view belongs to published content, nor check post status before listing post titles and links in its public statistics output, allowing unauthenticated attackers to disclose the titles and permalinks of draft, pending and private posts.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/88abcecb-e1cf-4e81-b8d0-2f222de897fc/"
+  ],
+  "kev": false,
+  "epss": 0.00146
+ },
+ "CVE-2026-127048": {
+  "id": "CVE-2026-127048",
+  "published": "2026-11-15T07:16:54.633",
+  "modified": "2026-11-15T07:16:54.633",
+  "desc": "The Custom Block Builder  WordPress plugin before 3.0.0 does not properly deny unauthorised requests to its REST routes, as its permission checks return a non-error response that WordPress treats as granted, allowing unauthenticated users to execute arbitrary PHP code on the server.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/b88c5a75-56ab-4722-8994-bbd6d97d2844/"
+  ],
+  "kev": false,
+  "epss": 0.00173
+ },
+ "CVE-2026-129443": {
+  "id": "CVE-2026-129443",
+  "published": "2026-11-15T08:17:21.573",
+  "modified": "2026-11-15T08:17:21.797",
+  "desc": "A vulnerability was determined in itsourcecode Airline Reservation System 1.0. The impacted element is an unknown function of the file /admin/manage_user.php. This manipulation of the argument ID causes sql injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/huverse/submit/issues/1",
+   "https://itsourcecode.com/",
+   "https://vuldb.com/cve/CVE-2026-129443"
+  ],
+  "kev": false,
+  "epss": 0.002
+ },
+ "CVE-2026-129444": {
+  "id": "CVE-2026-129444",
+  "published": "2026-11-15T09:16:44.570",
+  "modified": "2026-11-15T09:16:44.743",
+  "desc": "A vulnerability was identified in D-Link DSL-6740C 20131126. This affects an unknown function of the file /etc/templates/ftpd/ftpd_conf.php of the component FTP Daemon. Such manipulation leads to hard-coded credentials. The attack can be executed remotely. The exploit is publicly available and might be used.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-259",
+   "CWE-798"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/XueDugu/dlink-dsl6740c-ftp-default-evidence",
+   "https://vuldb.com/cve/CVE-2026-129444",
+   "https://vuldb.com/submit/1044943"
+  ],
+  "kev": false,
+  "epss": 0.00606
+ },
+ "CVE-2026-129349": {
+  "id": "CVE-2026-129349",
+  "published": "2026-11-15T10:16:53.020",
+  "modified": "2026-11-15T10:16:53.020",
+  "desc": "When authentication caching is enabled on DefaultLdapRealm, after a user logs in successfully once, subsequent logins for that user succeed with any password.\nA cached authentication skips the LDAP bind, and the AllowAllCredentialsMatcher installed by default in DefaultLdapRealm accepts any credentials, allowing an attacker who knows a valid username to authenticate as that user.\nThis issue affects all Apache Shiro versions through 3.0.0, only when using DefaultLdapRealm (or JndiLdapRealm) with authenticationCachingEnabled set to true, which is not the default.\n\nMitigation: Upgrade to version 3.0.1 or later, which fixes the issue by no longer installing AllowAllCredentialsMatcher by default.\nAlternatively, disable authentication caching on the LDAP realm (this is the default), or configure a credentials matcher, such as SimpleCredentialsMatcher, that verifies credentials against the cached authentication info.",
+  "cvss": 9.1,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:N/AU:Y/R:U/V:C/RE:L/U:Red",
+  "cwe": [
+   "CWE-287"
+  ],
+  "products": [],
+  "refs": [
+   "https://lists.apache.org/thread.html/1whn52ht402lhc782c3s843c9hho8b4y",
+   "http://www.openwall.com/lists/oss-security/2026/11/14/8"
+  ],
+  "kev": false,
+  "epss": 0.00543
+ },
+ "CVE-2026-129445": {
+  "id": "CVE-2026-129445",
+  "published": "2026-11-15T10:16:53.970",
+  "modified": "2026-11-15T10:16:54.147",
+  "desc": "A security flaw has been discovered in D-Link DIR-850L FW1.20WWb03. This impacts an unknown function of the file /usr/sbin/consolepwd of the component Console Login. Performing a manipulation results in hard-coded credentials. The attack requires a local approach. The exploit has been released to the public and may be used for attacks.",
+  "cvss": 8.4,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-259",
+   "CWE-798"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/XueDugu/dlink-dir850l-consolepwd-evidence",
+   "https://vuldb.com/cve/CVE-2026-129445",
+   "https://vuldb.com/submit/1044944"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-82568": {
+  "id": "CVE-2026-82568",
+  "published": "2026-11-15T10:16:54.217",
+  "modified": "2026-11-15T10:16:54.373",
+  "desc": "The Give - Peer-to-Peer plugin for WordPress is vulnerable to time-based SQL Injection via the 'sort' parameter in all versions up to, and including, 2.9.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. Successful exploitation requires the existence of at least one Peer-to-Peer campaign. This vulnerability can be combined with CVE-2026-82663 to achieve unauthenticated remote code execution.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.nexcess.com/software/changelogs/give/give-peer-to-peer/",
+   "https://givewp.com/addons/peer-to-peer/",
+   "https://www.wordfence.com/threat-intel/vulnerabilities/id/8b68d24c-a963-4316-a8f3-8dc6a494e016?source=cve"
+  ],
+  "kev": false,
+  "epss": 0.00808
+ },
+ "CVE-2026-82663": {
+  "id": "CVE-2026-82663",
+  "published": "2026-11-15T10:16:54.410",
+  "modified": "2026-11-15T10:16:54.530",
+  "desc": "The Give - Peer-to-Peer plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.9.5. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers who know or discover an existing campaign and team ID to modify the team's name, story, goal, access and notification settings, set its profile image URL, and upload WordPress-allowed media files as parentless attachments. This vulnerability can be combined with CVE-2026-82568 to achieve unauthenticated remote code execution.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.nexcess.com/software/changelogs/give/give-peer-to-peer/",
+   "https://givewp.com/addons/peer-to-peer/",
+   "https://www.wordfence.com/threat-intel/vulnerabilities/id/f424258a-367d-43cb-b66b-1f898391a0ea?source=cve"
+  ],
+  "kev": false,
+  "epss": 0.00826
+ },
+ "CVE-2026-129449": {
+  "id": "CVE-2026-129449",
+  "published": "2026-11-15T11:17:10.620",
+  "modified": "2026-11-15T11:17:11.580",
+  "desc": "A security vulnerability has been detected in DrayTek Vigor2960 up to 1.5.1.6. Affected by this vulnerability is the function sub_14914 of the file /cgi-bin/mainfunction.cgi. The manipulation of the argument swmconfigupload leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. Upgrading to version 1.5.1.7 addresses this issue. It is advisable to upgrade the affected component. The vendor recommends: \"1.5.1.6 isn't the latest version of 2960, the latest version fixes many security issues. And we have another one in our release plan which should solve the issues reported.\"",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-77"
+  ],
+  "products": [],
+  "refs": [
+   "https://fw.draytek.com.tw/Vigor2960/Firmware/v1.5.1.7/Vigor2960_v1.5.1.7.zip",
+   "https://github.com/yikesoftware/DrayTek_Vigor2960_Security_Analysis/blob/main/cases/DRV2960-0015-authenticated-swmconfigupload-fieldname-command-injection",
+   "https://vuldb.com/cve/CVE-2026-129449"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129450": {
+  "id": "CVE-2026-129450",
+  "published": "2026-11-15T12:17:20.913",
+  "modified": "2026-11-15T12:17:21.790",
+  "desc": "A vulnerability was detected in DrayTek Vigor2960 1.5.1.6. Affected by this issue is the function sub_1E084 of the file /cgi-bin/mainfunction.cgi?action=doWebBackup. The manipulation of the argument option results in path traversal. It is possible to launch the attack remotely. The exploit is now public and may be used. Upgrading to version 1.5.1.7 can resolve this issue. You should upgrade the affected component. The vendor recommends: \"1.5.1.6 isn't the latest version of 2960, the latest version fixes many security issues. And we have another one in our release plan which should solve the issues reported.\"",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://fw.draytek.com.tw/Vigor2960/Firmware/v1.5.1.7/Vigor2960_v1.5.1.7.zip",
+   "https://github.com/yikesoftware/DrayTek_Vigor2960_Security_Analysis/tree/main/cases/DRV2960-0016-authenticated-dowebbackup-path-traversal-clobber",
+   "https://vuldb.com/cve/CVE-2026-129450"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129451": {
+  "id": "CVE-2026-129451",
+  "published": "2026-11-15T13:16:58.600",
+  "modified": "2026-11-15T13:16:59.647",
+  "desc": "A flaw has been found in DrayTek Vigor2960 up to 1.5.1.6. This affects the function app_guest_export of the file /cgi-bin/mainfunction.cgi. This manipulation of the argument filename causes path traversal. The attack can be initiated remotely. The exploit has been published and may be used. Upgrading to version 1.5.1.7 is able to mitigate this issue. The affected component should be upgraded. The vendor recommends: \"1.5.1.6 isn't the latest version of 2960, the latest version fixes many security issues. And we have another one in our release plan which should solve the issues reported.\"",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://fw.draytek.com.tw/Vigor2960/Firmware/v1.5.1.7/Vigor2960_v1.5.1.7.zip",
+   "https://github.com/yikesoftware/DrayTek_Vigor2960_Security_Analysis/tree/main/cases/DRV2960-0017-authenticated-app-guest-export-path-traversal-write-delete",
+   "https://vuldb.com/cve/CVE-2026-129451"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129452": {
+  "id": "CVE-2026-129452",
+  "published": "2026-11-15T13:16:59.703",
+  "modified": "2026-11-15T13:16:59.867",
+  "desc": "A vulnerability has been found in DrayTek Vigor2960 1.5.1.6. This vulnerability affects the function set_table of the file /cgi-bin/mainfunction.cgi. Such manipulation of the argument jsondata leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.5.1.7 is able to resolve this issue. It is suggested to upgrade the affected component. The vendor recommends: \"1.5.1.6 isn't the latest version of 2960, the latest version fixes many security issues. And we have another one in our release plan which should solve the issues reported.\"",
+  "cvss": 8.5,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-77"
+  ],
+  "products": [],
+  "refs": [
+   "https://fw.draytek.com.tw/Vigor2960/Firmware/v1.5.1.7/Vigor2960_v1.5.1.7.zip",
+   "https://github.com/yikesoftware/DrayTek_Vigor2960_Security_Analysis/tree/main/cases/DRV2960-0019-authenticated-set-table-config-field-command-injection",
+   "https://vuldb.com/cve/CVE-2026-129452"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129467": {
+  "id": "CVE-2026-129467",
+  "published": "2026-11-15T13:16:59.920",
+  "modified": "2026-11-15T13:16:59.920",
+  "desc": "GeoPulse 1.5.0 through 2.3.0 contains an insecure direct object reference vulnerability in GET /api/v1/places/geocoding/{id} that allows authenticated users to read other users' private locations. Attackers can enumerate sequential reverse_geocoding_location ids to retrieve other users' custom place names, city, country, coordinates and bounding boxes from their history.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/tess1o/geopulse/blob/v2.3.0/backend/src/main/java/org/github/tess1o/geopulse/streaming/service/PlaceDetailsService.java#L272-L301",
+   "https://github.com/tess1o/geopulse/commit/b994ec588b75357a6da743b0389fcae3c4fa4925",
+   "https://github.com/tess1o/geopulse/issues/672"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129468": {
+  "id": "CVE-2026-129468",
+  "published": "2026-11-15T13:17:00.110",
+  "modified": "2026-11-15T13:17:00.110",
+  "desc": "Netcccyun dnsmgr 2.18 before 2.22 contains a missing authorization vulnerability in POST /cloudflare/get_domain_default_line that allows restricted users to access domains outside their permissions. Restricted sub-users or single-domain logins can iterate the domain_id parameter to enumerate panel domain ids and read each domain's DNS line list and default line.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/netcccyun/dnsmgr/blob/b42dbcf88bccca287e9e9af53e87ba399a5ae295/app/controller/Cloudflare.php#L381-L398",
+   "https://github.com/netcccyun/dnsmgr/commit/175468c6423c04a6b46e56663c37f090bef5381f",
+   "https://github.com/netcccyun/dnsmgr/issues/580"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129469": {
+  "id": "CVE-2026-129469",
+  "published": "2026-11-15T13:17:00.280",
+  "modified": "2026-11-15T13:17:00.410",
+  "desc": "Course-tencent-cloud before 2.0.2 contains an insecure direct object reference vulnerability that allows unauthenticated attackers to view other users' refund previews by supplying an order sn to /api/refund/confirm. Attackers can compute valid sn values from Sqids-encoded sequential order ids using the default key to disclose ordered items, prices, refund amounts, fees and deadlines.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/xiaochong0302/course-tencent-cloud/blob/v2.0.1/app/Http/Api/Controllers/RefundController.php#L24-L33",
+   "https://github.com/xiaochong0302/course-tencent-cloud/blob/v2.0.1/app/Http/Home/Controllers/RefundController.php#L49-L64",
+   "https://github.com/xiaochong0302/course-tencent-cloud/commit/8e8bcb4e13795006e16d51158790ce3120c8164a"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-122662": {
+  "id": "CVE-2026-122662",
+  "published": "2026-11-15T14:17:20.507",
+  "modified": "2026-11-15T14:17:21.347",
+  "desc": "Deserialization of Untrusted Data vulnerability in Barn2 Plugins Document Library Pro document-library-pro allows Object Injection.This issue affects Document Library Pro: from n/a before 4.2.2.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/document-library-pro/vulnerability/wordpress-document-library-pro-plugin-4-2-2-php-object-injection-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124254": {
+  "id": "CVE-2026-124254",
+  "published": "2026-11-15T14:17:21.387",
+  "modified": "2026-11-15T14:17:21.503",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Exactly WWW LLC EWWW Image Optimizer ewww-image-optimizer allows Stored XSS.This issue affects EWWW Image Optimizer: from n/a through 8.9.1.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/ewww-image-optimizer/vulnerability/wordpress-ewww-image-optimizer-plugin-8-9-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124259": {
+  "id": "CVE-2026-124259",
+  "published": "2026-11-15T14:17:21.543",
+  "modified": "2026-11-15T14:17:21.653",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Franky Events Made Easy events-made-easy allows Reflected XSS.This issue affects Events Made Easy: from n/a through 3.3.5.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/events-made-easy/vulnerability/wordpress-events-made-easy-plugin-3-3-5-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124270": {
+  "id": "CVE-2026-124270",
+  "published": "2026-11-15T14:17:21.687",
+  "modified": "2026-11-15T14:17:21.800",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Basix NEX-Forms nex-forms-express-wp-form-builder allows Reflected XSS.This issue affects NEX-Forms: from n/a through 9.3.3.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/nex-forms-express-wp-form-builder/vulnerability/wordpress-nex-forms-plugin-9-3-3-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124755": {
+  "id": "CVE-2026-124755",
+  "published": "2026-11-15T14:17:24.037",
+  "modified": "2026-11-15T14:17:24.153",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Justin Kruit Advanced Custom Fields: Font Awesome Field advanced-custom-fields-font-awesome allows Stored XSS.This issue affects Advanced Custom Fields: Font Awesome Field: from n/a through 6.1.4.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/advanced-custom-fields-font-awesome/vulnerability/wordpress-advanced-custom-fields-font-awesome-field-plugin-6-1-4-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-124995": {
+  "id": "CVE-2026-124995",
+  "published": "2026-11-15T14:17:24.187",
+  "modified": "2026-11-15T14:17:24.303",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Michal Jaworski Track, Analyze & Optimize by WP Tao wp-tao allows Stored XSS.This issue affects Track, Analyze & Optimize by WP Tao: from n/a through 1.3.1.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/wp-tao/vulnerability/wordpress-track-analyze-optimize-by-wp-tao-plugin-1-3-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125443": {
+  "id": "CVE-2026-125443",
+  "published": "2026-11-15T14:17:24.340",
+  "modified": "2026-11-15T14:17:24.457",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Denishua WPJAM Basic wpjam-basic allows DOM-Based XSS.This issue affects WPJAM Basic: from n/a through 7.1.2.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/wpjam-basic/vulnerability/wordpress-wpjam-basic-plugin-7-1-2-cross-site-scripting-xss-vulnerability-2?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125449": {
+  "id": "CVE-2026-125449",
+  "published": "2026-11-15T14:17:24.497",
+  "modified": "2026-11-15T14:17:24.607",
+  "desc": "Deserialization of Untrusted Data vulnerability in Mamunur Rashid Testimonial Slider testimonial-slider-and-showcase allows Object Injection.This issue affects Testimonial Slider: from n/a through 3.0.2.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/testimonial-slider-and-showcase/vulnerability/wordpress-testimonial-slider-plugin-3-0-2-php-object-injection-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125764": {
+  "id": "CVE-2026-125764",
+  "published": "2026-11-15T14:17:24.647",
+  "modified": "2026-11-15T14:17:24.770",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in E2Pdf.com e2pdf e2pdf allows Stored XSS.This issue affects e2pdf: from n/a through 1.32.65.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/e2pdf/vulnerability/wordpress-e2pdf-plugin-1-32-65-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125769": {
+  "id": "CVE-2026-125769",
+  "published": "2026-11-15T14:17:24.813",
+  "modified": "2026-11-15T14:17:24.937",
+  "desc": "Incorrect Privilege Assignment vulnerability in Nasir Ahmed Advanced Form Integration advanced-form-integration allows Privilege Escalation.This issue affects Advanced Form Integration: from n/a through 2.11.3.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-266"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/advanced-form-integration/vulnerability/wordpress-advanced-form-integration-plugin-2-11-3-privilege-escalation-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125775": {
+  "id": "CVE-2026-125775",
+  "published": "2026-11-15T14:17:24.977",
+  "modified": "2026-11-15T14:17:25.090",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in CRM Perks CRM Perks Forms crm-perks-forms allows Reflected XSS.This issue affects CRM Perks Forms: from n/a through 1.1.8.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/crm-perks-forms/vulnerability/wordpress-crm-perks-forms-plugin-1-1-8-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125780": {
+  "id": "CVE-2026-125780",
+  "published": "2026-11-15T14:17:25.130",
+  "modified": "2026-11-15T14:17:25.247",
+  "desc": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Acowebs Woocommerce Custom Product Addons Pro woo-custom-product-addons-pro allows Path Traversal.This issue affects Woocommerce Custom Product Addons Pro: from n/a through 5.9.0.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/woo-custom-product-addons-pro/vulnerability/wordpress-woocommerce-custom-product-addons-pro-plugin-5-9-0-arbitrary-file-deletion-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125789": {
+  "id": "CVE-2026-125789",
+  "published": "2026-11-15T14:17:25.277",
+  "modified": "2026-11-15T14:17:25.390",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in e4jvikwp VikBooking Hotel Booking Engine & PMS vikbooking allows Stored XSS.This issue affects VikBooking Hotel Booking Engine & PMS: from n/a through 1.8.20.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/vikbooking/vulnerability/wordpress-vikbooking-hotel-booking-engine-pms-plugin-1-8-20-cross-site-scripting-xss-vulnerability-2?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125790": {
+  "id": "CVE-2026-125790",
+  "published": "2026-11-15T14:17:25.423",
+  "modified": "2026-11-15T14:17:25.533",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in e4jvikwp VikBooking Hotel Booking Engine & PMS vikbooking allows Stored XSS.This issue affects VikBooking Hotel Booking Engine & PMS: from n/a through 1.8.20.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/vikbooking/vulnerability/wordpress-vikbooking-hotel-booking-engine-pms-plugin-1-8-20-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125791": {
+  "id": "CVE-2026-125791",
+  "published": "2026-11-15T14:17:25.563",
+  "modified": "2026-11-15T14:17:25.670",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in iWorks Orphans sierotki allows Stored XSS.This issue affects Orphans: from n/a through 3.4.6.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/sierotki/vulnerability/wordpress-orphans-plugin-3-4-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125805": {
+  "id": "CVE-2026-125805",
+  "published": "2026-11-15T14:17:25.703",
+  "modified": "2026-11-15T14:17:25.813",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in AyeCode Ltd GeoDirectory geodirectory allows Stored XSS.This issue affects GeoDirectory: from n/a through 2.8.204.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/geodirectory/vulnerability/wordpress-geodirectory-plugin-2-8-204-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125813": {
+  "id": "CVE-2026-125813",
+  "published": "2026-11-15T14:17:25.847",
+  "modified": "2026-11-15T14:17:25.957",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Ays Pro Survey Maker survey-maker allows Reflected XSS.This issue affects Survey Maker: from n/a through 5.2.4.3.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/survey-maker/vulnerability/wordpress-survey-maker-plugin-5-2-4-3-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125828": {
+  "id": "CVE-2026-125828",
+  "published": "2026-11-15T14:17:25.990",
+  "modified": "2026-11-15T14:17:26.100",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP BookIt bookit allows Stored XSS.This issue affects BookIt: from n/a through 2.6.0.7.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/bookit/vulnerability/wordpress-bookit-plugin-2-6-0-7-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125832": {
+  "id": "CVE-2026-125832",
+  "published": "2026-11-15T14:17:26.137",
+  "modified": "2026-11-15T14:17:26.250",
+  "desc": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Passionate Programmer Peter WP Data Access wp-data-access allows SQL Injection.This issue affects WP Data Access: from n/a through 5.5.92.",
+  "cvss": 8.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/wp-data-access/vulnerability/wordpress-wp-data-access-plugin-5-5-92-sql-injection-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125857": {
+  "id": "CVE-2026-125857",
+  "published": "2026-11-15T14:17:26.287",
+  "modified": "2026-11-15T14:17:26.400",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Sarah Giles Dynamic User Directory dynamic-user-directory allows Stored XSS.This issue affects Dynamic User Directory: from n/a through 2.4.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/dynamic-user-directory/vulnerability/wordpress-dynamic-user-directory-plugin-2-4-cross-site-scripting-xss-vulnerability-2?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129453": {
+  "id": "CVE-2026-129453",
+  "published": "2026-11-15T14:17:26.583",
+  "modified": "2026-11-15T14:17:26.730",
+  "desc": "A vulnerability was found in DrayTek Vigor2960 1.5.1.6. This issue affects the function check_file_exist of the file /cgi-bin/mainfunction.cgi of the component File Existence Check. Performing a manipulation of the argument upload_name results in heap-based buffer overflow. The attack may be initiated remotely. The exploit has been made public and could be used. Upgrading to version 1.5.1.7 is capable of addressing this issue. Upgrading the affected component is recommended. The vendor recommends: \"1.5.1.6 isn't the latest version of 2960, the latest version fixes many security issues. And we have another one in our release plan which should solve the issues reported.\"",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-122"
+  ],
+  "products": [],
+  "refs": [
+   "https://fw.draytek.com.tw/Vigor2960/Firmware/v1.5.1.7/Vigor2960_v1.5.1.7.zip",
+   "https://github.com/yikesoftware/DrayTek_Vigor2960_Security_Analysis/tree/main/cases/DRV2960-0020-authenticated-check-file-exist-direct-cgi-core",
+   "https://vuldb.com/cve/CVE-2026-129453"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129477": {
+  "id": "CVE-2026-129477",
+  "published": "2026-11-15T14:17:26.777",
+  "modified": "2026-11-15T14:17:26.777",
+  "desc": "Assimp through 6.0.6 contains a path traversal vulnerability in the glTF and glTF2 importers that allows attackers to read local files via crafted buffers[].uri values. Attackers can supply glTF models with '..' segments or absolute paths in buffer URIs to load files like /etc/passwd into imported mesh vertex data.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/glTF2/glTF2Asset.inl#L608-L612",
+   "https://github.com/assimp/assimp/issues/6933",
+   "https://github.com/assimp/assimp/pull/7027"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129478": {
+  "id": "CVE-2026-129478",
+  "published": "2026-11-15T14:17:26.920",
+  "modified": "2026-11-15T14:17:26.920",
+  "desc": "Assimp through 6.0.6 contains a heap out-of-bounds read vulnerability in glTFCommon::Util::ParseDataURI caused by storing the data offset in a signed char. Attackers can supply a crafted glTF file with a raw data URI whose segment starts beyond byte 127 to crash applications or leak adjacent heap memory.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/glTFCommon/glTFCommon.cpp#L86-L105",
+   "https://github.com/assimp/assimp/issues/6927",
+   "https://github.com/assimp/assimp/pull/7029"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129479": {
+  "id": "CVE-2026-129479",
+  "published": "2026-11-15T14:17:27.077",
+  "modified": "2026-11-15T14:17:27.077",
+  "desc": "Assimp through 6.0.6 contains an integer overflow vulnerability in OgreBinarySerializer::ReadSubMesh that allows attackers to crash applications by supplying crafted Ogre binary .mesh files. Attackers can set a large index count so the 32-bit buffer size wraps, causing a segmentation fault in aiMesh::~aiMesh() during scene teardown.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-190"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/Ogre/OgreBinarySerializer.cpp#L362-L374",
+   "https://github.com/assimp/assimp/issues/6930",
+   "https://github.com/assimp/assimp/pull/7026"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129480": {
+  "id": "CVE-2026-129480",
+  "published": "2026-11-15T14:17:27.227",
+  "modified": "2026-11-15T14:17:27.227",
+  "desc": "Assimp through 6.0.6 contains a heap out-of-bounds read vulnerability in MD2Importer::InternReadFile that allows attackers to read past the file buffer via an unvalidated stored frameSize header field. Attackers can supply a crafted .md2 file loaded with a non-zero keyframe selected to crash the application or leak adjacent heap memory into the imported mesh.",
+  "cvss": 5.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/MD2/MD2Loader.cpp#L262-L276",
+   "https://github.com/assimp/assimp/issues/6932",
+   "https://github.com/assimp/assimp/pull/7028"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129482": {
+  "id": "CVE-2026-129482",
+  "published": "2026-11-15T14:17:27.377",
+  "modified": "2026-11-15T14:17:27.377",
+  "desc": "OkHttp through 5.5.1 contains an improper certificate validation vulnerability in CertificatePinner that skips pin checks because Pin.matchesHostname does not normalize trailing-dot hostnames. Network attackers with a CA-trusted certificate not matching configured pins can intercept or modify TLS traffic when applications request the trailing-dot form of pinned hosts.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-295"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/lysine-dev/okhttp/blob/parent-5.5.1/okhttp/src/commonJvmAndroid/kotlin/okhttp3/CertificatePinner.kt#L293-L314",
+   "https://github.com/lysine-dev/okhttp/commit/30aa589761a9b4f5fe84c00e21e5ab44b22bd7c1",
+   "https://github.com/lysine-dev/okhttp/issues/9724"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129483": {
+  "id": "CVE-2026-129483",
+  "published": "2026-11-15T14:17:27.530",
+  "modified": "2026-11-15T14:17:27.530",
+  "desc": "Cyrus SASL through 2.1.28 contains an authentication bypass vulnerability in the SRP server mechanism because srp_server_mech_step2 does not reject client public values A that are multiples of N. Unauthenticated network clients can send A equal to N to force a zero shared secret, authenticating as any existing user without the password and learning session keys.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-287"
+  ],
+  "products": [],
+  "refs": [
+   "https://gist.github.com/afldl/18d15d3f5a1df99411e35000c7de80db",
+   "https://github.com/cyrusimap/cyrus-sasl/blob/cyrus-sasl-2.1.28/plugins/srp.c#L2046-L2050",
+   "https://github.com/cyrusimap/cyrus-sasl/commit/fb3724f43dc50247ff2bf02135457d6d77031654"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125447": {
+  "id": "CVE-2026-125447",
+  "published": "2026-11-15T15:16:45.760",
+  "modified": "2026-11-15T15:16:46.563",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Kaliforms Kali Forms kali-forms allows Reflected XSS.This issue affects Kali Forms: from n/a through 2.4.31.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/kali-forms/vulnerability/wordpress-kali-forms-plugin-2-4-31-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125733": {
+  "id": "CVE-2026-125733",
+  "published": "2026-11-15T15:16:46.600",
+  "modified": "2026-11-15T15:16:46.710",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in DevItems ShopLentor woolentor-addons allows Reflected XSS.This issue affects ShopLentor: from n/a through 3.5.7.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/woolentor-addons/vulnerability/wordpress-shoplentor-plugin-3-5-7-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125765": {
+  "id": "CVE-2026-125765",
+  "published": "2026-11-15T15:16:46.743",
+  "modified": "2026-11-15T15:16:46.853",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ShortPixel ShortPixel Adaptive Images shortpixel-adaptive-images allows Stored XSS.This issue affects ShortPixel Adaptive Images: from n/a through 3.11.6.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/shortpixel-adaptive-images/vulnerability/wordpress-shortpixel-adaptive-images-plugin-3-11-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125771": {
+  "id": "CVE-2026-125771",
+  "published": "2026-11-15T15:16:46.890",
+  "modified": "2026-11-15T15:16:46.997",
+  "desc": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects MCP Server for WordPress: from n/a through 2.0.3.",
+  "cvss": 7.2,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-266"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/ai-workflow-automation-ai-agent-hub/vulnerability/wordpress-mcp-server-for-wordpress-plugin-2-0-3-privilege-escalation-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125793": {
+  "id": "CVE-2026-125793",
+  "published": "2026-11-15T15:16:47.027",
+  "modified": "2026-11-15T15:16:47.133",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in flexmls Flexmls® IDX flexmls-idx allows Reflected XSS.This issue affects Flexmls® IDX: from n/a through 4.1.2.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/flexmls-idx/vulnerability/wordpress-flexmls-idx-plugin-4-1-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125795": {
+  "id": "CVE-2026-125795",
+  "published": "2026-11-15T15:16:47.163",
+  "modified": "2026-11-15T15:16:47.283",
+  "desc": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Estatik Estatik estatik allows PHP Local File Inclusion.This issue affects Estatik: from n/a through 4.3.6.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-98"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/estatik/vulnerability/wordpress-estatik-plugin-4-3-6-local-file-inclusion-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-125799": {
+  "id": "CVE-2026-125799",
+  "published": "2026-11-15T15:16:47.317",
+  "modified": "2026-11-15T15:16:47.430",
+  "desc": "Insertion of Sensitive Information into Externally-Accessible File or Directory vulnerability in Looks Awesome Flow-Flow Social Stream flow-flow-social-streams allows Retrieve Embedded Sensitive Data.This issue affects Flow-Flow Social Stream: from n/a through 5.0.5.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-538"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/flow-flow-social-streams/vulnerability/wordpress-flow-flow-social-stream-plugin-5-0-5-sensitive-data-exposure-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-128893": {
+  "id": "CVE-2026-128893",
+  "published": "2026-11-15T15:16:47.467",
+  "modified": "2026-11-15T15:16:47.580",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Marcin Wise Chat wise-chat allows Reflected XSS.This issue affects Wise Chat: from n/a through 3.4.5.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/wise-chat/vulnerability/wordpress-wise-chat-plugin-3-4-5-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2025-71466": {
+  "id": "CVE-2025-71466",
+  "published": "2026-11-15T16:16:55.503",
+  "modified": "2026-11-15T16:16:55.633",
+  "desc": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in m2tsdmx_update_sdt() in src/filters/dmx_m2ts.c that allows attackers to crash the MPEG-2 TS demuxer. Attackers can supply a crafted .ts file with an invalid service descriptor leaving service or provider names NULL to crash MP4Box and cause denial of service.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-476"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/gpac/gpac/blob/v2.4.0/src/filters/dmx_m2ts.c#L185-L189",
+   "https://github.com/gpac/gpac/commit/62714f27c64a3d1eb7e880f9eed2d38673cb43ce",
+   "https://github.com/gpac/gpac/issues/3267"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2025-71467": {
+  "id": "CVE-2025-71467",
+  "published": "2026-11-15T16:16:55.677",
+  "modified": "2026-11-15T16:16:55.793",
+  "desc": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in gf_node_get_field_by_name() in src/scenegraph/base_scenegraph.c that lets attackers crash applications. Attackers can supply a crafted XMT scene referencing a never-created node to crash MP4Box or GPAC scene loader applications, causing denial of service.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-476"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/gpac/gpac/blob/v2.4.0/src/scenegraph/base_scenegraph.c#L2083-L2087",
+   "https://github.com/gpac/gpac/commit/62714f27c64a3d1eb7e880f9eed2d38673cb43ce",
+   "https://github.com/gpac/gpac/issues/3268"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2025-71468": {
+  "id": "CVE-2025-71468",
+  "published": "2026-11-15T16:16:55.840",
+  "modified": "2026-11-15T16:16:55.957",
+  "desc": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in gf_dash_group_get_audio_channels() in src/media_tools/dash_client.c that allows attackers to crash applications via crafted DASH manifests. Attackers can supply an MPD whose AudioChannelConfiguration element omits schemeIdUri or value, crashing MP4Box or GPAC DASH clients and causing denial of service.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-476"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/gpac/gpac/blob/v2.4.0/src/media_tools/dash_client.c#L10160-L10165",
+   "https://github.com/gpac/gpac/commit/62714f27c64a3d1eb7e880f9eed2d38673cb43ce",
+   "https://github.com/gpac/gpac/issues/3269"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2025-71469": {
+  "id": "CVE-2025-71469",
+  "published": "2026-11-15T16:16:56.000",
+  "modified": "2026-11-15T16:16:56.123",
+  "desc": "GPAC before 26.02.0 contains a type confusion vulnerability in ctxload_process() that passes non-object descriptors to ODS_SetupOD() without checking the descriptor tag. Attackers can supply a crafted XMT file with a URL-bearing descriptor that crashes MP4Box or other GPAC-based applications in gf_scene_ns_connect_object(), causing denial of service.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-843"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/gpac/gpac/blob/v2.4.0/src/filters/load_bt_xmt.c#L649-L656",
+   "https://github.com/gpac/gpac/commit/62714f27c64a3d1eb7e880f9eed2d38673cb43ce",
+   "https://github.com/gpac/gpac/issues/3271"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2025-71470": {
+  "id": "CVE-2025-71470",
+  "published": "2026-11-15T16:16:56.167",
+  "modified": "2026-11-15T16:16:56.167",
+  "desc": "MicroQuickJS (mquickjs) before commit 99eed3f contains an out-of-bounds read vulnerability because JS_Call() raises exceptions during frame setup without updating ctx->sp and ctx->fp. Attackers can supply JavaScript that calls a non-function value, causing build_backtrace() to walk stale frame pointers and crash the engine for denial of service.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/bellard/mquickjs/commit/99eed3f94cb66ea7e02fd3472ca7374dee31bb89",
+   "https://github.com/bellard/mquickjs/issues/24",
+   "https://github.com/sigdevel/pocs/blob/main/res/mquickjs/1/mquickjs_c_3981"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129484": {
+  "id": "CVE-2026-129484",
+  "published": "2026-11-15T16:16:56.327",
+  "modified": "2026-11-15T16:16:56.327",
+  "desc": "Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability that allows unauthenticated attackers to inject scripts via unvalidated svg-color-dark-scheme and svg-color-light-scheme options. Attackers can craft a GET /goat/svg URL whose option value closes the SVG style element, executing JavaScript in the Kroki origin when victims open it.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/yuzutech/kroki/blob/v0.35.0/server/src/main/java/io/kroki/server/service/Goat.java#L61-L71",
+   "https://github.com/yuzutech/kroki/commit/a0a1435cc38eb7b258c555a883b7687424ad6784",
+   "https://github.com/yuzutech/kroki/releases/tag/v0.36.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129485": {
+  "id": "CVE-2026-129485",
+  "published": "2026-11-15T16:16:56.473",
+  "modified": "2026-11-15T16:16:56.473",
+  "desc": "Kroki before 0.36.0 contains a server-side request forgery vulnerability in the BlockDiag family of engines that allows unauthenticated attackers to make server requests via node icon and background attributes. Attackers can send crafted diagrams to POST /blockdiag/svg or sibling endpoints to query internal services or cloud metadata and read local image files from the server.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/yuzutech/kroki/blob/v0.35.0/server/src/main/java/io/kroki/server/service/Blockdiag.java#L64-L85",
+   "https://github.com/yuzutech/kroki/commit/becd3b4a86754cb08d0fe54f65e92a6cab542409",
+   "https://github.com/yuzutech/kroki/releases/tag/v0.36.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129490": {
+  "id": "CVE-2026-129490",
+  "published": "2026-11-15T16:16:56.620",
+  "modified": "2026-11-15T16:16:56.620",
+  "desc": "littlefs through 2.11.3, when built with LFS_MIGRATE, contains a type confusion vulnerability in lfs_dir_traverse() that treats a stack lfs_diskoff struct as an lfs_attr array. Attackers can supply a crafted littlefs v1 image whose metadata is read as LFS_FROM_USERATTRS during migration, causing out-of-bounds stack reads and process crashes.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-843"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/littlefs-project/littlefs/blob/v2.11.3/lfs.c#L1056-L1063",
+   "https://github.com/littlefs-project/littlefs/issues/1213",
+   "https://github.com/sigdevel/pocs/blob/main/res/littlefs/1/1_lfs_dir_traverse_lfs_c_1059.img"
   ],
   "kev": false,
   "epss": null
