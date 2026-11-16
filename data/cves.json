@@ -253639,7 +253639,7 @@
  "CVE-2026-99288": {
   "id": "CVE-2026-99288",
   "published": "2026-11-10T19:22:32.170",
-  "modified": "2026-11-13T15:17:57.350",
+  "modified": "2026-11-16T01:17:20.233",
   "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ninet: reject unhashed sockets during established lookups\n\nTCP established ehash lookups are lockless. The socket caches involved\nuse SLAB_TYPESAFE_BY_RCU, so memory can be reused before an RCU reader\nthat retained its old address has finished.\n\nAfter a tuple match, __inet_lookup_established() and\n__inet6_lookup_established() acquire a reference and repeat the tuple\ncheck. They do not check whether the new object is hashed. If the\naddress is reused for a socket with the same tuple, the lookup can\nacquire a reference to the new object and return it while its nulls node\nis unhashed.\n\nA PoC that drives reuse with a SYN cookie request socket reproduced the\ncrash. The new request socket is unhashed and has a NULL rsk_listener.\nA lookup that had loaded the address of the old request socket acquired\nthe reference published by tcp_get_cookie_sock() and returned the new\nobject. tcp_v4_rcv() then read sk_state through the NULL listener.\n\nThe resulting crash was:\n\n  BUG: kernel NULL pointer dereference, address: 0000000000000012\n  #PF: supervisor read access in kernel mode\n  #PF: error_code(0x0000) - not-present page\n  ...\n  Oops: Oops: 0000 [#1] SMP NOPTI\n  CPU: 4 UID: 0 PID: 0 Comm: swapper/4 Not tainted 7.3.0-00591-g0e135910deec #1 PREEMPT(lazy)\n  ...\n  RIP: 0010:tcp_v4_rcv+0x44e/0x1280\n  ...\n  R10: 0000000000000001 R11: 00000000024ca8c0 R12: 0000000000000000\n  ...\n  CR2: 0000000000000012 CR3: 0000000103d50004 CR4: 0000000000770ef0\n  ...\n  Call Trace:\n   <IRQ>\n   ? raw_local_deliver+0xae/0x240\n   ip_protocol_deliver_rcu+0x2d/0x180\n   ip_local_deliver_finish+0x84/0x100\n   ip_sublist_rcv_finish+0x5f/0x70\n   ip_sublist_rcv+0x12a/0x1d0\n   ip_list_rcv+0xfd/0x130\n   __netif_receive_skb_list_core+0x223/0x250\n   netif_receive_skb_list_internal+0x1d2/0x2c0\n   ? try_fill_recv+0x39/0x7b0\n   napi_complete_done+0x74/0x170\n   virtnet_poll+0x445/0x600\n   __napi_poll+0x27/0x1e0\n   net_rx_action+0x2fe/0x3b0\n   handle_softirqs+0xc2/0x2c0\n   __irq_exit_rcu+0x74/0xd0\n   common_interrupt+0x7f/0x90\n   </IRQ>\n  ...\n  Kernel panic - not syncing: Fatal exception in interrupt\n\nAfter taking a reference, check whether the nulls node is unhashed in\nboth IPv4 and IPv6 established lookups. If it is unhashed or the tuple\nno longer matches, drop the reference and restart the lookup.\n\nLookups racing with the TIME_WAIT hashdance, or with a request being\nreplaced by its child, now restart and find the new socket instead of\nreturning the old one.\n\nRequest sockets that were never inserted into ehash can have a nonzero\nrefcount, and a stale lookup can hold a transient reference. Therefore,\nwhen SYN cookie, Fast Open, and request migration paths fail after\nsetting a nonzero refcount, release the references held by those paths\nwith reqsk_put() instead of freeing the request directly.",
   "cvss": null,
   "sev": null,
@@ -301006,6 +301006,268 @@
    "https://blog.gitea.com/release-of-28.4.0/",
    "https://github.com/go-gitea/gitea/pull/39839",
    "https://github.com/go-gitea/gitea/pull/39847"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129491": {
+  "id": "CVE-2026-129491",
+  "published": "2026-11-16T01:17:18.857",
+  "modified": "2026-11-16T01:17:18.857",
+  "desc": "Qbian61 forum-java commit 20f7e68 through commit 63152c4 contains a stored cross-site scripting vulnerability that allows authenticated users to inject script by posting unsanitized comment content rendered via jQuery .html() in the reply dialog. Attackers can post comments with img onerror payloads that execute when victims click Reply, stealing the non-HttpOnly sid session cookie to hijack accounts including administrators.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Qbian61/forum-java/blob/63152c49c71ad8121bda6e9a03a7ba7dc39ae52c/forum-portal/src/main/resources/templates/include/comment-list.html#L56-L60",
+   "https://github.com/Qbian61/forum-java/blob/63152c49c71ad8121bda6e9a03a7ba7dc39ae52c/forum-portal/src/main/resources/templates/include/posts-script.html#L30-L34",
+   "https://github.com/Qbian61/forum-java/issues/25"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129492": {
+  "id": "CVE-2026-129492",
+  "published": "2026-11-16T01:17:19.737",
+  "modified": "2026-11-16T01:17:19.737",
+  "desc": "Bolo (bolo-solo) 1.7 through 2.6.4 contains a stored cross-site scripting vulnerability that allows unauthenticated attackers to inject scripts via the unsanitized commentOriginalCommentName parameter. Attackers can post a comment to /article/comments with a short payload that steals non-HttpOnly session cookies from visitors, enabling takeover of administrator accounts.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/bolo-blog/bolo-solo/blob/e0ab6b1f57a4ba66b4a42a7b6ceafb87c33290cc/src/main/java/org/b3log/solo/service/CommentMgmtService.java#L299-L306",
+   "https://github.com/bolo-blog/bolo-solo/blob/e0ab6b1f57a4ba66b4a42a7b6ceafb87c33290cc/src/main/webapp/skins/bolo-nexmoe/common-comment.ftl#L29-L34",
+   "https://github.com/bolo-blog/bolo-solo/issues/331"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129493": {
+  "id": "CVE-2026-129493",
+  "published": "2026-11-16T01:17:19.897",
+  "modified": "2026-11-16T01:17:19.897",
+  "desc": "Bolo (bolo-solo) 1.7 through 2.6.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read article view passwords via the public GET /articles endpoint. Attackers can retrieve the plaintext articleViewPwd field returned by ArticleProcessor.getArticlesByPage and submit it to read password-protected article content.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-201"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/bolo-blog/bolo-solo/blob/e0ab6b1f57a4ba66b4a42a7b6ceafb87c33290cc/src/main/java/org/b3log/solo/processor/ArticleProcessor.java#L442-L478",
+   "https://github.com/bolo-blog/bolo-solo/issues/331",
+   "https://vul.yulun.ac.cn/20261115/bolo-solo/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129494": {
+  "id": "CVE-2026-129494",
+  "published": "2026-11-16T01:17:20.053",
+  "modified": "2026-11-16T01:17:20.053",
+  "desc": "CloudPaste 1.1.0 through 1.9.1 contains an information disclosure vulnerability that allows unauthenticated attackers to obtain WebDAV storage credentials through the unauthenticated /api/proxy/link endpoint. Attackers who know a public share slug can retrieve the Basic Authorization header containing the WebDAV username and password, then read, modify, or delete files on the WebDAV server.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-522"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ling-drag0n/CloudPaste/blob/282ea1c7fbbcd4fab40527664bf7479fd5bb922d/backend/src/routes/proxyLinkRoutes.js#L139-L167",
+   "https://github.com/ling-drag0n/CloudPaste/blob/282ea1c7fbbcd4fab40527664bf7479fd5bb922d/backend/src/storage/drivers/webdav/WebDavStorageDriver.js#L800-L819",
+   "https://github.com/ling-drag0n/CloudPaste/issues/223"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129539": {
+  "id": "CVE-2026-129539",
+  "published": "2026-11-16T02:17:11.940",
+  "modified": "2026-11-16T02:17:11.940",
+  "desc": "SSCMS 7.2.0 through 7.4.0 contains an arbitrary file read vulnerability that allows any registered user-center account to copy server files by supplying source paths to the layerImageUpload endpoint. Attackers can send siteId 0 with crafted filePaths entries to copy configuration files into their public sitefiles/home upload directory and download them anonymously.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-73"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/siteserver/cms/blob/09ab59b9dd422782d9e1fe54f05088645f7c93e7/src/SSCMS.Web/Controllers/Home/Common/Form/LayerImageUploadController.Submit.cs#L114-L130",
+   "https://github.com/siteserver/cms/issues/3909",
+   "https://vul.yulun.ac.cn/20261114/siteserver-cms/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129540": {
+  "id": "CVE-2026-129540",
+  "published": "2026-11-16T02:17:12.100",
+  "modified": "2026-11-16T02:17:12.100",
+  "desc": "VoAPI 1.0.0 through 1.2.0 contains a sql injection vulnerability that allows authenticated users to inject SQL by supplying crafted column names as search[...] filter keys on list endpoints such as GET /api/log. Attackers can read the HS256 JWT signing secret from the option table and forge a manager role token to take over the /api/m/* management API.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/VoAPI/VoAPI/issues/78",
+   "https://vul.yulun.ac.cn/20261115/voapi/",
+   "https://www.vulncheck.com/advisories/voapi-1.0.0-through-1.2.0-sql-injection-via-search-filter-key"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129541": {
+  "id": "CVE-2026-129541",
+  "published": "2026-11-16T02:17:12.273",
+  "modified": "2026-11-16T02:17:12.273",
+  "desc": "EdgeChat 2.5.0 through 2.21.0 contains a cross-site scripting vulnerability that allows invited users to inject HTML through unescaped usernames in the Vditor @-mention autocomplete. Attackers can register with a username containing an img onerror payload that executes when mentioned, stealing the localStorage session token to take over victim accounts.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/aozorae/Edgechat/blob/6719ca1a9d50c74285867f9c0e8209983391b8d5/frontend/src/components/chat/VditorComposerEditor.vue#L112-L117",
+   "https://github.com/aozorae/Edgechat/blob/6719ca1a9d50c74285867f9c0e8209983391b8d5/frontend/src/components/chat/VditorComposerEditor.vue#L42-L54",
+   "https://github.com/aozorae/Edgechat/issues/60"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129542": {
+  "id": "CVE-2026-129542",
+  "published": "2026-11-16T02:17:12.427",
+  "modified": "2026-11-16T02:17:12.427",
+  "desc": "Files or directories accessible to external parties vulnerability in Samsung Open Source Starfish allows Probe System Files.",
+  "cvss": 3.1,
+  "sev": "LOW",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-552"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Samsung/starfish"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129543": {
+  "id": "CVE-2026-129543",
+  "published": "2026-11-16T02:17:12.557",
+  "modified": "2026-11-16T02:17:12.557",
+  "desc": "Access of resource using incompatible type ('type confusion') vulnerability in Samsung Open Source Starfish allows Input Data Manipulation.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:H",
+  "cwe": [
+   "CWE-843"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Samsung/starfish"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-107520": {
+  "id": "CVE-2026-107520",
+  "published": "2026-11-16T04:16:44.033",
+  "modified": "2026-11-16T04:16:44.033",
+  "desc": "Dell PowerStore contains a stored cross-site scripting (XSS) vulnerability. A low-privileged authenticated attacker could exploit this vulnerability, potentially leading to execution of malicious script in a higher-privileged user's session.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.dell.com/support/kbdoc/en-us/000527640/dsa-2026-479-dell-powerstore-t-security-update-for-multiple-vulnerabilities"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-82156": {
+  "id": "CVE-2026-82156",
+  "published": "2026-11-16T04:16:44.230",
+  "modified": "2026-11-16T04:16:44.230",
+  "desc": "Dell PowerStore contains an authorization-bypass vulnerability. A low-privileged attacker could exploit it, potentially leading to elevation of privilege to administrator.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://www.dell.com/support/kbdoc/en-us/000527640/dsa-2026-479-dell-powerstore-t-security-update-for-multiple-vulnerabilities"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-121786": {
+  "id": "CVE-2026-121786",
+  "published": "2026-11-16T06:16:48.253",
+  "modified": "2026-11-16T06:16:48.253",
+  "desc": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log export action available to unauthenticated users, which could allow them to export the download log, including registered users' email addresses and IP addresses, to a publicly accessible file.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/e4fa58bd-9f97-40b0-b56b-ee8ffcaa5392/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-121787": {
+  "id": "CVE-2026-121787",
+  "published": "2026-11-16T06:16:49.073",
+  "modified": "2026-11-16T06:16:49.073",
+  "desc": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log deletion action available to unauthenticated users, which could allow them to delete the Social Viral Downloader WordPress plugin through 2.0.3's entire download log.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://wpscan.com/vulnerability/992a2040-f44f-42a2-a6f4-cc978828d717/"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129606": {
+  "id": "CVE-2026-129606",
+  "published": "2026-11-16T06:16:49.183",
+  "modified": "2026-11-16T06:16:49.183",
+  "desc": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in Samsung Open Source mTower allows Overflow Buffers.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+  "cwe": [
+   "CWE-120"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Samsung/mTower/pull/254"
   ],
   "kev": false,
   "epss": null
