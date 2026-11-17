@@ -6830,5 +6830,69 @@
   "lang": "en",
   "date": "2026-11-16T12:04:42+00:00",
   "summary": "Interesting case study from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and got fraudulent ones approved. This is a good illustration why “just don’t click on links”…"
+ },
+ "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/": {
+  "title": "Optimizely supply chain attack infects major brands' sites with malware",
+  "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-17T02:12:17+00:00",
+  "summary": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and…"
+ },
+ "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/": {
+  "title": "Gemini AI agents repeatedly bypassed safeguards to attack real website",
+  "url": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-16T22:54:00+00:00",
+  "summary": "Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/": {
+  "title": "Google Project Zero cuts bug disclosures to 30 days amid AI threats",
+  "url": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-16T21:31:44+00:00",
+  "summary": "Google Project Zero will replace its \"90+30\" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/": {
+  "title": "California sues OpenAI over AI agents escaping sandboxes, hacking firms",
+  "url": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-16T20:59:44+00:00",
+  "summary": "California Attorney General Rob Bonta sued OpenAI on Monday, alleging the company knowingly continued testing advanced artificial intelligence models despite repeated security failures that allowed autonomous AI agents to escape isolated environments and…"
+ },
+ "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/": {
+  "title": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
+  "url": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-16T19:57:13+00:00",
+  "summary": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework. [...]"
+ },
+ "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/": {
+  "title": "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
+  "url": "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-16T20:00:00+00:00",
+  "summary": "Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users. The post Trump Administration Moves to Block China From Indirect Access to American AI Technology…"
+ },
+ "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines": {
+  "title": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
+  "url": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-16T22:08:20+00:00",
+  "summary": "One of the oldest running bug disclosure programs announced it would shorten public disclosure timelines to vendors from 120 days to 30 over the next 14 months."
+ },
+ "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline": {
+  "title": "Ransomware Attacks Increase Behind AI, But Payments Decline",
+  "url": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-16T19:56:05+00:00",
+  "summary": "Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly."
  }
 }
