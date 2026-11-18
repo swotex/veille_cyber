@@ -7486,5 +7486,277 @@
   "lang": "en",
   "date": "2026-11-18T02:15:07+00:00",
   "summary": "The problem disrupted the operations of NSANet, a classified internal network used by employees of the agency. The post Classified Communications Network at the National Security Agency Goes Down, Defense Official Says appeared first on SecurityWeek ."
+ },
+ "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-016/": {
+  "title": "Vulnérabilité dans Oracle Java SE (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-016/",
+  "source": "CERT-FR Alertes",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "Le 17 novembre 2026, Oracle a publié un avis de sécurité concernant la vulnérabilité CVE-2026-114938, surnommée *java4shell*, qui affecte le décodeur Base64 de OpenJDK sur les processeurs x86-64 supportant AVX-512 VBMI. Celle-ci permet à un attaquant de…"
+ },
+ "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-017/": {
+  "title": "Multiples vulnérabilités dans F5 NGINX (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-017/",
+  "source": "CERT-FR Alertes",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "Le 18 novembre 2026, F5 a publié deux avis de sécurité concernant les vulnérabilités CVE-2026-123633 et CVE-2026-123007. Celles-ci affectent NGINX Open Source et NGINX Plus permettent à un attaquant non authentifié d'exécuter du code à distance, en utilisant…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1556/": {
+  "title": "Multiples vulnérabilités dans les produits Tenable (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1556/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Tenable. Elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1557/": {
+  "title": "Multiples vulnérabilités dans Netgate pfSense (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1557/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Netgate pfSense. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1558/": {
+  "title": "Vulnérabilité dans FreeBSD (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1558/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans FreeBSD. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données et un déni de service."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1559/": {
+  "title": "Multiples vulnérabilités dans Google Chrome (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1559/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1560/": {
+  "title": "Multiples vulnérabilités dans Mozilla Firefox (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1560/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Mozilla Firefox. Elles permettent à un attaquant de provoquer une élévation de privilèges et un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1561/": {
+  "title": "Multiples vulnérabilités dans Oracle Database Server (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1561/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Oracle Database Server. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1562/": {
+  "title": "Multiples vulnérabilités dans Oracle Java SE (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1562/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Oracle Java SE. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1563/": {
+  "title": "Multiples vulnérabilités dans Oracle MySQL (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1563/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Oracle MySQL. Elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1564/": {
+  "title": "Multiples vulnérabilités dans Oracle PeopleSoft (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1564/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Oracle PeopleSoft. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1565/": {
+  "title": "Multiples vulnérabilités dans Oracle Weblogic (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1565/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Oracle Weblogic. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1566/": {
+  "title": "Multiples vulnérabilités dans Oracle Virtualization (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1566/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Oracle Virtualization. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1567/": {
+  "title": "Multiples vulnérabilités dans les produits F5 (18 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1567/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-18T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits F5. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et un contournement de la politique de sécurité."
+ },
+ "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/": {
+  "title": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
+  "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-18T19:39:33+00:00",
+  "summary": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/": {
+  "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+  "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-18T16:58:42+00:00",
+  "summary": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/": {
+  "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
+  "url": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-18T15:00:10+00:00",
+  "summary": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help…"
+ },
+ "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/": {
+  "title": "Dizigom illegal streaming service with 21M monthly visits shuts down",
+  "url": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-18T11:50:25+00:00",
+  "summary": "The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey's largest piracy sites, after a settlement agreement with the site's operators. [...]"
+ },
+ "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html": {
+  "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+  "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T18:31:17+00:00",
+  "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5,…"
+ },
+ "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html": {
+  "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+  "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T18:15:39+00:00",
+  "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular…"
+ },
+ "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html": {
+  "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+  "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T17:10:45+00:00",
+  "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a…"
+ },
+ "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html": {
+  "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+  "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T14:11:28+00:00",
+  "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to…"
+ },
+ "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html": {
+  "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
+  "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T12:28:30+00:00",
+  "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the…"
+ },
+ "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html": {
+  "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
+  "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T12:15:00+00:00",
+  "summary": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't…"
+ },
+ "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html": {
+  "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
+  "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T11:03:57+00:00",
+  "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing…"
+ },
+ "https://www.securityweek.com/verosecurity-raises-11-million-for-ai-security-engineering-platform/": {
+  "title": "VeroSecurity Raises $11 Million for AI Security Engineering Platform",
+  "url": "https://www.securityweek.com/verosecurity-raises-11-million-for-ai-security-engineering-platform/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T15:30:42+00:00",
+  "summary": "AI Security Engineering is a new and essential security discipline now being brought into focus by VeroSecurity. The post VeroSecurity Raises $11 Million for AI Security Engineering Platform appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/": {
+  "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
+  "url": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T13:33:47+00:00",
+  "summary": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization. The post Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/": {
+  "title": "Last of Five Defendants Sentenced in US Scattered Spider Hacking Case",
+  "url": "https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T13:19:32+00:00",
+  "summary": "British national Tyler Robert Buchanan has been sentenced to 6 years in prison in the United States, the DOJ announced. The post Last of Five Defendants Sentenced in US Scattered Spider Hacking Case appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/": {
+  "title": "Microsoft Takes Perception Agentic Security Platform Out of Preview",
+  "url": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T12:14:23+00:00",
+  "summary": "Four blue team agents and the Recon Agent are now generally available, while integrations and vulnerability shielding are in preview. The post Microsoft Takes Perception Agentic Security Platform Out of Preview appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do/": {
+  "title": "CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do",
+  "url": "https://www.securityweek.com/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T12:00:00+00:00",
+  "summary": "Patti Degnan’s identity was stolen in 2006. It set her on a path to the CISO seat at endpoint security firm Glow. The post CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/": {
+  "title": "Chrome 158 Patches 204 Vulnerabilities",
+  "url": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T11:43:22+00:00",
+  "summary": "Google handed out $11,000 for five externally reported flaws but has yet to determine the amounts to be paid for 36 bugs. The post Chrome 158 Patches 204 Vulnerabilities appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem": {
+  "title": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
+  "url": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-18T16:54:52+00:00",
+  "summary": "Discovered using AI, the memory corruption vulnerability affects the OpenJDK runtime and could allow unauthenticated attackers to take over systems."
+ },
+ "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud": {
+  "title": "Major Brazilian Signature Apps Enable RCE & Fraud",
+  "url": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-18T14:00:00+00:00",
+  "summary": "Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html": {
+  "title": "France Is Blaming Iran for the Fridge Cyberattack",
+  "url": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-18T12:05:35+00:00",
+  "summary": "Interesting : U.S. intelligence agencies have recently reached a “”ow confidence” assessment that Iran was responsible for the attacks in France, according to three U.S. officials who spoke on the condition of anonymity to discuss sensitive intelligence. A…"
  }
 }
