@@ -7190,5 +7190,117 @@
   "lang": "en",
   "date": "2026-11-17T12:05:43+00:00",
   "summary": "This seems like a good thing: Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees­a landmark development for the widely used cryptography and AI itself.…"
+ },
+ "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/": {
+  "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
+  "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-17T23:04:21+00:00",
+  "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/": {
+  "title": "Cloud keys leaked in Docker Hub images are stolen within seconds",
+  "url": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-17T21:27:17+00:00",
+  "summary": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/": {
+  "title": "Japan takes Fugaku supercomputer offlline after cyberattack",
+  "url": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-17T20:51:21+00:00",
+  "summary": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/": {
+  "title": "Apple reports outages affecting iCloud Mail, AppleCare and more",
+  "url": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-17T19:24:07+00:00",
+  "summary": "Apple is reporting service disruptions affecting several of its services, including iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/": {
+  "title": "Researchers hijack Hugging Face account for popular Kokoro AI model",
+  "url": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-17T18:21:24+00:00",
+  "summary": "A Lack of ownership verification on the Hugging Face platform allowed researchers to take control of Kokoro, a text-to-speech model used in projects from Google, NVIDIA, AMD, Intel, and Amazon Web Services. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/": {
+  "title": "Tor releases emergency update amid ongoing DDoS attack",
+  "url": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-17T18:04:15+00:00",
+  "summary": "The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says has overwhelmed relays and affected most operators. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/": {
+  "title": "Flipper Devices launches $399 ‘Flipper One’ Linux-based multi-tool",
+  "url": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-17T16:00:00+00:00",
+  "summary": "Flipper Devices, the company behind the popular Flipper Zero pentesting device, has launched a crowdfunding campaign for Flipper One, a portable Linux computer and networking multi-tool. [...]"
+ },
+ "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html": {
+  "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+  "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-17T19:34:20+00:00",
+  "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their…"
+ },
+ "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html": {
+  "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+  "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-17T15:17:36+00:00",
+  "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE)…"
+ },
+ "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html": {
+  "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+  "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-17T15:17:28+00:00",
+  "summary": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the…"
+ },
+ "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/": {
+  "title": "AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says",
+  "url": "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-17T18:16:17+00:00",
+  "summary": "Threat actors are deploying multi-agent offensive frameworks to increase the velocity of multi-stage intrusions. The post AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks": {
+  "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+  "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-17T22:34:22+00:00",
+  "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform."
+ },
+ "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat": {
+  "title": "'TheMailer' Phishing Kit Puts AI in the Driver's Seat",
+  "url": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-17T20:58:13+00:00",
+  "summary": "The commercial kit uses attacker-supplied AI models to personalize lures, evade spam filters, and scale campaigns to tens of thousands of targets."
+ },
+ "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach": {
+  "title": "Cursor Traces Malicious Claude Code Extension to Third-Party Breach",
+  "url": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-17T18:38:37+00:00",
+  "summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials."
  }
 }
