@@ -7302,5 +7302,189 @@
   "lang": "en",
   "date": "2026-11-17T18:38:37+00:00",
   "summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials."
+ },
+ "https://www.zataz.com/osaka-exposee-a-une-fuite-massive/": {
+  "title": "Osaka exposée à une fuite massive",
+  "url": "https://www.zataz.com/osaka-exposee-a-une-fuite-massive/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-18T10:37:09+00:00",
+  "summary": "Osaka et des centaines d'organisations japonaises sont touchées par un incident ressemblant à l'affaire Maileva !"
+ },
+ "https://www.zataz.com/cyberattaque-contre-les-douanes-lituaniennes/": {
+  "title": "Cyberattaque contre les douanes lituaniennes",
+  "url": "https://www.zataz.com/cyberattaque-contre-les-douanes-lituaniennes/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-18T10:29:44+00:00",
+  "summary": "Une cyberattaque perturbe les douanes lituaniennes et pourrait exposer les données de centaines d'utilisateurs."
+ },
+ "https://www.zataz.com/piratage-de-gta-vi-un-hacker-reconnait-six-infractions/": {
+  "title": "Piratage de GTA VI : un hacker reconnaît six infractions",
+  "url": "https://www.zataz.com/piratage-de-gta-vi-un-hacker-reconnait-six-infractions/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-18T10:22:51+00:00",
+  "summary": "Le hacker impliqué dans la fuite de GTA VI reconnaît six infractions liées à plusieurs cyberattaques majeures."
+ },
+ "https://www.zataz.com/uber-149-346-personnes-touchees-par-une-fuite/": {
+  "title": "Uber : 149 346 personnes touchées par une fuite",
+  "url": "https://www.zataz.com/uber-149-346-personnes-touchees-par-une-fuite/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-18T10:14:55+00:00",
+  "summary": "Une intrusion chez un prestataire d'Uber expose les permis de conduire et les données de 149 346 personnes."
+ },
+ "https://www.zataz.com/ransomware-un-suspect-dinc-et-lynx-extrade/": {
+  "title": "Ransomware : un suspect d’INC et Lynx extradé",
+  "url": "https://www.zataz.com/ransomware-un-suspect-dinc-et-lynx-extrade/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-18T10:05:56+00:00",
+  "summary": "Un suspect lié aux rançongiciels INC et Lynx comparaît aux États-Unis après une extradition depuis l'Italie."
+ },
+ "https://www.zataz.com/le-japon-arrete-le-supercalculateur-fugaku/": {
+  "title": "Le Japon arrête le supercalculateur Fugaku",
+  "url": "https://www.zataz.com/le-japon-arrete-le-supercalculateur-fugaku/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-18T09:48:31+00:00",
+  "summary": "RIKEN arrête Fugaku après une intrusion. Plus de 4 500 utilisateurs de deux supercalculateurs sont concernés."
+ },
+ "https://www.zataz.com/scattered-spider-un-pirate-britannique-condamne-a-six-ans/": {
+  "title": "Scattered Spider : un pirate britannique condamné à six ans",
+  "url": "https://www.zataz.com/scattered-spider-un-pirate-britannique-condamne-a-six-ans/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-18T09:26:56+00:00",
+  "summary": "Scattered Spider : un pirate britannique condamné à six ans de prison pour phishing et vol de cryptomonnaies."
+ },
+ "https://www.zataz.com/optimizely-pirate-des-geants-du-web-exposes/": {
+  "title": "Optimizely piraté, des géants du web exposés",
+  "url": "https://www.zataz.com/optimizely-pirate-des-geants-du-web-exposes/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-18T09:04:32+00:00",
+  "summary": "Optimizely victime d'une cyberattaque : 178 organisations touchées, données bancaires et appareils iOS menacés."
+ },
+ "https://www.zataz.com/mots-de-passe-en-clair-la-cnil-inflige-5-millions-deuros/": {
+  "title": "Mots de passe en clair : la CNIL inflige 5 millions d’euros",
+  "url": "https://www.zataz.com/mots-de-passe-en-clair-la-cnil-inflige-5-millions-deuros/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-18T08:45:15+00:00",
+  "summary": "La CNIL sanctionne une société de 5 millions d’euros pour des mots de passe en clair et une conservation excessive des données."
+ },
+ "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/": {
+  "title": "Apache warns of Roller RCE vulnerability exploited in attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-18T10:35:05+00:00",
+  "summary": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/": {
+  "title": "Microsoft announces Windows Server 2028 with hardened security",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-18T09:24:31+00:00",
+  "summary": "Microsoft has announced Windows Server 2028, the next major release of its server operating system, at the Ignite 2026 conference on Tuesday. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/": {
+  "title": "British Scattered Spider hacker sentenced to 6 years in prison",
+  "url": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-18T08:24:18+00:00",
+  "summary": "A leader of the Scattered Spider cybercrime collective has been sentenced to six years in prison in the United States for stealing millions in cryptocurrency and conspiring to hack a dozen companies. [...]"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html": {
+  "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+  "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T08:24:31+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities…"
+ },
+ "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html": {
+  "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+  "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T08:24:23+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java. The flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of…"
+ },
+ "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html": {
+  "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+  "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T06:45:26+00:00",
+  "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz. The malicious versions, 1.26.1 and…"
+ },
+ "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html": {
+  "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
+  "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T05:58:04+00:00",
+  "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise. Google's Mandiant and…"
+ },
+ "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html": {
+  "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+  "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-18T04:27:41+00:00",
+  "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6…"
+ },
+ "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/": {
+  "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+  "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+  "source": "Krebs on Security",
+  "lang": "en",
+  "date": "2026-11-18T02:52:04+00:00",
+  "summary": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new…"
+ },
+ "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/": {
+  "title": "Microsoft Agent Framework Releases Poisoned With Credential Stealer",
+  "url": "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T11:05:39+00:00",
+  "summary": "Versions 1.26.1 and 1.26.2 of agent-framework on PyPI steal Azure, Azure DevOps, and GitHub Actions credentials when Python starts. The post Microsoft Agent Framework Releases Poisoned With Credential Stealer appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/": {
+  "title": "Critical Perforce Puppet RCE Exploited in Attacks",
+  "url": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T10:37:08+00:00",
+  "summary": "Tracked as CVE-2026-115731, it allows a client that holds any CA-signed agent certificate to execute code on the server. The post Critical Perforce Puppet RCE Exploited in Attacks appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/": {
+  "title": "Oracle Patches 950 Vulnerabilities With November 2026 CSPU",
+  "url": "https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T08:47:18+00:00",
+  "summary": "Over 300 patches address unauthenticated, remotely exploitable flaws, while 62 fix critical-severity flaws. The post Oracle Patches 950 Vulnerabilities With November 2026 CSPU appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/": {
+  "title": "Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover",
+  "url": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T07:43:34+00:00",
+  "summary": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/": {
+  "title": "Classified Communications Network at the National Security Agency Goes Down, Defense Official Says",
+  "url": "https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-18T02:15:07+00:00",
+  "summary": "The problem disrupted the operations of NSANet, a classified internal network used by employees of the agency. The post Classified Communications Network at the National Security Agency Goes Down, Defense Official Says appeared first on SecurityWeek ."
  }
 }
