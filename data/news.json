@@ -7758,5 +7758,45 @@
   "lang": "en",
   "date": "2026-11-18T12:05:35+00:00",
   "summary": "Interesting : U.S. intelligence agencies have recently reached a “”ow confidence” assessment that Iran was responsible for the attacks in France, according to three U.S. officials who spoke on the condition of anonymity to discuss sensitive intelligence. A…"
+ },
+ "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": {
+  "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+  "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-18T23:08:33+00:00",
+  "summary": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/": {
+  "title": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+  "url": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-18T20:49:32+00:00",
+  "summary": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers. [...]"
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another": {
+  "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-18T21:59:46+00:00",
+  "summary": "The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks."
+ },
+ "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool": {
+  "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
+  "url": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-18T20:45:49+00:00",
+  "summary": "New agentic AI solution leverages APIs to collect compliance evidence from systems and applies it to over 30 frameworks with no duplicate work."
+ },
+ "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups": {
+  "title": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
+  "url": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-18T20:38:42+00:00",
+  "summary": "Analysis of 20 Iranian state-sponsored threat groups details how espionage, ransomware, and hacktivism intersect in state-backed cyber campaigns."
  }
 }
