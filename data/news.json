@@ -7902,5 +7902,349 @@
   "lang": "en",
   "date": "2026-11-19T08:00:00+00:00",
   "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top-5 most attacked countries globally."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1344/": {
+  "title": "Multiples vulnérabilités dans Mattermost Server (20 octobre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1344/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-10-20T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Mattermost Server. Elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1568/": {
+  "title": "Vulnérabilité dans VMware Tanzu (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1568/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans VMware Tanzu. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1569/": {
+  "title": "Multiples vulnérabilités dans les produits Mitel (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1569/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Mitel. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1570/": {
+  "title": "Multiples vulnérabilités dans Progress WS_FTP Server (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1570/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Progress WS_FTP Server. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1571/": {
+  "title": "Multiples vulnérabilités dans Laravel (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1571/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Laravel. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une injection de code indirecte à distance (XSS) et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1572/": {
+  "title": "Multiples vulnérabilités dans ClamAV (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1572/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans ClamAV. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1573/": {
+  "title": "Multiples vulnérabilités dans les produits Cisco (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1573/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Cisco. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1574/": {
+  "title": "Multiples vulnérabilités dans WordPress (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1574/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans WordPress. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1575/": {
+  "title": "Multiples vulnérabilités dans Wireshark (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1575/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Wireshark. Elles permettent à un attaquant de provoquer un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1576/": {
+  "title": "Multiples vulnérabilités dans les produits Splunk (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1576/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Splunk. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1577/": {
+  "title": "Multiples vulnérabilités dans les produits NetApp (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1577/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits NetApp. Elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1578/": {
+  "title": "Vulnérabilité dans les produits Elastic (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1578/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans les produits Elastic. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1579/": {
+  "title": "Multiples vulnérabilités dans Drupal (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1579/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Drupal. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1580/": {
+  "title": "Multiples vulnérabilités dans PHP (19 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1580/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-19T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans PHP. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.zataz.com/un-sms-blaster-aurait-perturbe-10-000-mobiles/": {
+  "title": "Un SMS blaster aurait perturbé 10 000 mobiles",
+  "url": "https://www.zataz.com/un-sms-blaster-aurait-perturbe-10-000-mobiles/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-19T16:43:51+00:00",
+  "summary": "À Tokyo, un suspect est arrêté après une opération de SMS blaster ayant perturbé plus de 10 000 téléphones."
+ },
+ "https://www.zataz.com/un-sms-blaster-decouvert-dans-une-voiture/": {
+  "title": "Un SMS blaster découvert dans une voiture",
+  "url": "https://www.zataz.com/un-sms-blaster-decouvert-dans-une-voiture/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-19T16:33:54+00:00",
+  "summary": "Un SMS blaster découvert dans une voiture est associé à neuf victimes et à des SMS frauduleux se faisant passer pour la police."
+ },
+ "https://www.zataz.com/luxor-des-recompenses-bitcoin-detournees/": {
+  "title": "Luxor : des récompenses Bitcoin détournées",
+  "url": "https://www.zataz.com/luxor-des-recompenses-bitcoin-detournees/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-19T16:19:45+00:00",
+  "summary": "Luxor confirme le détournement de puissance de calcul Bitcoin après une compromission de sa plateforme Commander."
+ },
+ "https://www.zataz.com/infoblox-des-configurations-reseau-derobees/": {
+  "title": "Infoblox : des configurations réseau dérobées",
+  "url": "https://www.zataz.com/infoblox-des-configurations-reseau-derobees/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-19T16:03:36+00:00",
+  "summary": "Infoblox confirme une fuite via un prestataire compromis, exposant des configurations réseau et des données de salariés."
+ },
+ "https://www.zataz.com/scattered-spider-six-ans-de-prison-pour-un-pirate/": {
+  "title": "Scattered Spider : six ans de prison pour un pirate",
+  "url": "https://www.zataz.com/scattered-spider-six-ans-de-prison-pour-un-pirate/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-19T15:52:51+00:00",
+  "summary": "Scattered Spider : six ans de prison pour un pirate impliqué dans des attaques par SMS et des vols de cryptomonnaies."
+ },
+ "https://www.zataz.com/bitget-1-052-bitcoins-deplaces-apres-le-piratage/": {
+  "title": "Bitget : 1 052 bitcoins déplacés après le piratage",
+  "url": "https://www.zataz.com/bitget-1-052-bitcoins-deplaces-apres-le-piratage/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-19T15:42:35+00:00",
+  "summary": "Après le piratage de Bitget, plus de 78 millions $ ont été déplacés, dont une large part vers CoinJoin."
+ },
+ "https://www.zataz.com/arnaque-au-lego-formule-1-sur-tiktok/": {
+  "title": "Arnaque au LEGO Formule 1 sur TikTok",
+  "url": "https://www.zataz.com/arnaque-au-lego-formule-1-sur-tiktok/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-19T14:36:30+00:00",
+  "summary": "Une publicité TikTok promet un LEGO Formule 1 pour 2,85 €. Découvrez le piège et réagissez si votre carte est exposée."
+ },
+ "https://www.zataz.com/elise-lucet-appat-dune-arnaque-crypto-sur-google-ads/": {
+  "title": "Élise Lucet, appât d’une arnaque crypto sur Google Ads",
+  "url": "https://www.zataz.com/elise-lucet-appat-dune-arnaque-crypto-sur-google-ads/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-19T14:01:02+00:00",
+  "summary": "Élise Lucet sert d’appât à une arnaque crypto diffusée via Google Ads. Les indices du piège et les réflexes bancaires."
+ },
+ "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/": {
+  "title": "Transport for London breach exposes 265,000 Oyster card users' data",
+  "url": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-19T18:20:01+00:00",
+  "summary": "Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/": {
+  "title": "PHP security updates fix 18 flaws, including critical RCE bugs",
+  "url": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-19T16:28:23+00:00",
+  "summary": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/": {
+  "title": "Five warning signs of ransomware breach before encryption or data theft",
+  "url": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-19T15:00:10+00:00",
+  "summary": "Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity,…"
+ },
+ "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/": {
+  "title": "Critical NGINX ‘NGINX2Root’ bugs let attackers hijack servers",
+  "url": "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-19T14:57:24+00:00",
+  "summary": "Two critical NGINX vulnerabilities dubbed \"nginx2root\" allow unauthenticated attackers to execute code remotely on vulnerable web servers, with researchers demonstrating how the flaws can be chained with a Linux kernel bug to gain root access. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/": {
+  "title": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
+  "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-19T13:08:08+00:00",
+  "summary": "The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/": {
+  "title": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-19T11:46:00+00:00",
+  "summary": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs. [...]"
+ },
+ "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html": {
+  "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+  "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T18:47:58+00:00",
+  "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used…"
+ },
+ "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html": {
+  "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+  "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T16:59:56+00:00",
+  "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the…"
+ },
+ "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html": {
+  "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+  "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T15:18:07+00:00",
+  "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560. The release of the patch follows an advance notice in…"
+ },
+ "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html": {
+  "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+  "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T15:11:06+00:00",
+  "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and…"
+ },
+ "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html": {
+  "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+  "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T14:33:06+00:00",
+  "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates…"
+ },
+ "https://thehackernews.com/2026/11/everything-is-web-application-including.html": {
+  "title": "Everything Is a Web Application, Including Your Firewall",
+  "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T11:52:23+00:00",
+  "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to…"
+ },
+ "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/": {
+  "title": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
+  "url": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T19:21:06+00:00",
+  "summary": "Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch. The post Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/": {
+  "title": "PHP Patches Seven Critical RCE Vulnerabilities",
+  "url": "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T15:54:20+00:00",
+  "summary": "Successful exploitation could allow attackers to crash the worker process and execute code with the PHP worker’s privileges. The post PHP Patches Seven Critical RCE Vulnerabilities appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/": {
+  "title": "Nvidia Responds to Gentlemen Ransomware Claim",
+  "url": "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T14:17:32+00:00",
+  "summary": "Nvidia says it has found no indication that its systems were compromised after the Gentlemen ransomware group listed the company as a victim. The post Nvidia Responds to Gentlemen Ransomware Claim appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/": {
+  "title": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
+  "url": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T13:12:20+00:00",
+  "summary": "Attackers hacked clustered Cisco Expressway devices at a Russian organization and prepared tooling for lateral movement. The post Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/": {
+  "title": "StepSecurity Secures $20 Million to Expand Supply Chain Protection",
+  "url": "https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T12:23:34+00:00",
+  "summary": "The company will use the funds to accelerate the development and distribution of its security platform. The post StepSecurity Secures $20 Million to Expand Supply Chain Protection appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/": {
+  "title": "Critical Apache Roller, Axis Vulnerabilities Exploited in Attacks",
+  "url": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T12:13:24+00:00",
+  "summary": "Attackers are targeting Confluence Data Center through an Axis flaw and Apache is warning of attacks against Roller. The post Critical Apache Roller, Axis Vulnerabilities Exploited in Attacks appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/the-governance-gap-in-open-weight-ai-and-what-to-do-about-it/": {
+  "title": "The Governance Gap in Open-Weight AI and What to Do About It",
+  "url": "https://www.securityweek.com/the-governance-gap-in-open-weight-ai-and-what-to-do-about-it/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T12:00:00+00:00",
+  "summary": "Lower costs, data privacy, and greater control are driving open-weight AI adoption, but many organizations are not addressing the risks that come with it. The post The Governance Gap in Open-Weight AI and What to Do About It appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era": {
+  "title": "Navigating Vulnerability Hysteria in the AI Era",
+  "url": "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-19T19:46:44+00:00",
+  "summary": "This installment of the Reporters' Notebook video series examines the fallout from recent high-severity flaw disclosures, exploring how fears of AI-assisted exploits trigger widespread panic, operational disruptions, and growing warning fatigue."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday": {
+  "title": "Why Holiday Security Can't Wait for Black Friday",
+  "url": "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-19T14:00:00+00:00",
+  "summary": "Bot-driven fraud and holiday social engineering attacks stretch across many weeks, straining security teams and small businesses alike."
  }
 }
