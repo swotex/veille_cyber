@@ -7798,5 +7798,109 @@
   "lang": "en",
   "date": "2026-11-18T20:38:42+00:00",
   "summary": "Analysis of 20 Iranian state-sponsored threat groups details how espionage, ransomware, and hacktivism intersect in state-backed cyber campaigns."
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/": {
+  "title": "Microsoft confirms app installation, launch issues after hotpatch",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-19T10:35:05+00:00",
+  "summary": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/": {
+  "title": "NVIDIA investigating Gentlemen ransomware breach claims",
+  "url": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-19T09:23:21+00:00",
+  "summary": "NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site. [...]"
+ },
+ "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html": {
+  "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+  "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T09:31:26+00:00",
+  "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and…"
+ },
+ "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html": {
+  "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+  "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T08:42:11+00:00",
+  "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine. \"We are aware…"
+ },
+ "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html": {
+  "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+  "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T08:14:00+00:00",
+  "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL. The exploits,…"
+ },
+ "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html": {
+  "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+  "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T08:00:00+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its…"
+ },
+ "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html": {
+  "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+  "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-19T04:33:46+00:00",
+  "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC. \"These releases are part of…"
+ },
+ "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/": {
+  "title": "Splunk Patches Nearly 140 Flaws Across Three Core Products",
+  "url": "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T10:41:05+00:00",
+  "summary": "The security updates resolve critical and high-severity issues leading to authentication bypass, remote code execution, and privilege escalation. The post Splunk Patches Nearly 140 Flaws Across Three Core Products appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/": {
+  "title": "F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public",
+  "url": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T10:26:51+00:00",
+  "summary": "The five NGINX2Root vulnerabilities could allow remote, unauthenticated attackers to execute arbitrary code. The post F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/": {
+  "title": "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
+  "url": "https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T09:10:58+00:00",
+  "summary": "GreyNoise, WatchTowr and Cloudflare report probing and exploit attempts, while Cisco, Elastic, Red Hat and Siemens detail impact. The post Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/": {
+  "title": "PHP Readies Critical Security Updates to Patch Another RCE Flaw",
+  "url": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T07:45:17+00:00",
+  "summary": "Affecting the session upload progress, CVE-2026-115560 was publicly disclosed two days after PHP2Shell patches landed. The post PHP Readies Critical Security Updates to Patch Another RCE Flaw appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion/": {
+  "title": "Palo Alto Networks to Buy AI Startup Applied Compute for $4.5 Billion",
+  "url": "https://www.securityweek.com/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-19T03:25:23+00:00",
+  "summary": "The all-stock deal will give the cybersecurity company a platform for fine-tuning and running open-weight AI models in public and sovereign clouds. The post Palo Alto Networks to Buy AI Startup Applied Compute for $4.5 Billion appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge": {
+  "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
+  "url": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-19T08:00:00+00:00",
+  "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top-5 most attacked countries globally."
  }
 }
