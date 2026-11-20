@@ -8294,5 +8294,101 @@
   "lang": "en",
   "date": "2026-11-19T19:57:31+00:00",
   "summary": "November's monthly security release patches seven critical PHP flaws that should be addressed ASAP, though experts say exploitability varies and depends heavily on configuration."
+ },
+ "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/": {
+  "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
+  "url": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-20T10:57:43+00:00",
+  "summary": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/": {
+  "title": "Windows 11 KB5132057 update released with 28 changes and fixes",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-20T09:25:35+00:00",
+  "summary": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run dialog. [...]"
+ },
+ "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html": {
+  "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+  "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-20T10:38:22+00:00",
+  "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks. \"Attackers now use automation and AI to…"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html": {
+  "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-20T10:32:50+00:00",
+  "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of…"
+ },
+ "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html": {
+  "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+  "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-20T09:38:15+00:00",
+  "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as…"
+ },
+ "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html": {
+  "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
+  "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-20T07:11:39+00:00",
+  "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing…"
+ },
+ "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html": {
+  "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+  "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-20T05:30:01+00:00",
+  "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The…"
+ },
+ "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/": {
+  "title": "SBC Medical Group Data Breach Impacts Over 2 Million",
+  "url": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-20T11:36:51+00:00",
+  "summary": "Threat actors accessed databases containing customer information associated with clinics in Japan. The post SBC Medical Group Data Breach Impacts Over 2 Million appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/": {
+  "title": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
+  "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-20T10:51:42+00:00",
+  "summary": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach. The post European Commission Confirms AI-Assisted Cyberattack Disrupted Services appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/": {
+  "title": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
+  "url": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-20T10:34:10+00:00",
+  "summary": "Tracked as CVE-2026-132825, the bug is a heap-based buffer overflow that could lead to remote code execution (RCE). The post Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/": {
+  "title": "N-able Blames Service Disruption on Cyberattack",
+  "url": "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-20T09:08:35+00:00",
+  "summary": "The incident affected Mail Assure and SpamExperts Hosted Cloud and could have led to credential theft. The post N-able Blames Service Disruption on Cyberattack appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/": {
+  "title": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
+  "url": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-20T07:35:46+00:00",
+  "summary": "The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers. The post JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak appeared first on SecurityWeek ."
  }
 }
