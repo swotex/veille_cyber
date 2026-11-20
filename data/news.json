@@ -8246,5 +8246,53 @@
   "lang": "en",
   "date": "2026-11-19T14:00:00+00:00",
   "summary": "Bot-driven fraud and holiday social engineering attacks stretch across many weeks, straining security teams and small businesses alike."
+ },
+ "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/": {
+  "title": "VMware patches vCenter zero-day exploited in attacks since September",
+  "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-20T00:26:25+00:00",
+  "summary": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/": {
+  "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-19T22:25:42+00:00",
+  "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/": {
+  "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
+  "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-19T21:15:59+00:00",
+  "summary": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages. [...]"
+ },
+ "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering": {
+  "title": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
+  "url": "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-19T22:40:03+00:00",
+  "summary": "Companies deploying AI agents have the illusion of control, but several incidents demonstrate that businesses need to be ready to enforce directions."
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached": {
+  "title": "Second Norwegian Energy Company Breached in Two Days",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-19T20:14:15+00:00",
+  "summary": "No specific link has been drawn between the two incidents, though they certainly sing the same notes."
+ },
+ "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell": {
+  "title": "Critical PHP Flaws Allow Code Execution, But Don't Panic 'PHP2Shell'-Style",
+  "url": "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-19T19:57:31+00:00",
+  "summary": "November's monthly security release patches seven critical PHP flaws that should be addressed ASAP, though experts say exploitability varies and depends heavily on configuration."
  }
 }
