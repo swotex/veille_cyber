@@ -8742,5 +8742,21 @@
   "lang": "en",
   "date": "2026-11-20T22:04:12+00:00",
   "summary": "This is the story of the largest squid ever filmed, in December 2006 near Japan’s Ogasawara Islands. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy."
+ },
+ "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html": {
+  "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+  "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-21T08:49:20+00:00",
+  "summary": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems…"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html": {
+  "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-21T08:49:13+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active…"
  }
 }
