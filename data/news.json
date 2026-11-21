@@ -8718,5 +8718,29 @@
   "lang": "en",
   "date": "2026-11-20T12:04:46+00:00",
   "summary": "Researchers used CT scanning technology to recover the code and open a 400-year-old cryptex padlock. You can buy a USB-drive cryptex ."
+ },
+ "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/": {
+  "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+  "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+  "source": "Krebs on Security",
+  "lang": "en",
+  "date": "2026-11-21T00:36:39+00:00",
+  "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found…"
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day": {
+  "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-20T21:03:27+00:00",
+  "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-the-largest-squid-ever-filmed.html": {
+  "title": "Friday Squid Blogging: The Largest Squid Ever Filmed",
+  "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-the-largest-squid-ever-filmed.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-20T22:04:12+00:00",
+  "summary": "This is the story of the largest squid ever filmed, in December 2006 near Japan’s Ogasawara Islands. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy."
  }
 }
