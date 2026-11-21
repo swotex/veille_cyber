@@ -8758,5 +8758,69 @@
   "lang": "en",
   "date": "2026-11-21T08:49:13+00:00",
   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active…"
+ },
+ "https://www.zataz.com/cyberattaques-la-boite-de-pandora-est-elle-ouverte-avec-lia-artex/": {
+  "title": "Cyberattaques : la boîte de Pandora est-elle ouverte avec l’IA ARTEX",
+  "url": "https://www.zataz.com/cyberattaques-la-boite-de-pandora-est-elle-ouverte-avec-lia-artex/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-21T13:39:38+00:00",
+  "summary": "ARTEX révèle comment l'IA accélère les cyberattaques, le vol de données et les intrusions. La boîte de Pandore 2.0 a-t-elle été ouverte ?"
+ },
+ "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/": {
+  "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+  "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-21T18:01:58+00:00",
+  "summary": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/": {
+  "title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
+  "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-21T15:17:27+00:00",
+  "summary": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/": {
+  "title": "FBI reportedly hacked again, this time targeting nationwide police database",
+  "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-21T14:26:04+00:00",
+  "summary": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]"
+ },
+ "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html": {
+  "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+  "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-21T11:53:07+00:00",
+  "summary": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the…"
+ },
+ "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html": {
+  "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+  "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-21T11:05:53+00:00",
+  "summary": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG project warned yesterday that the flaw could be used to steal data from affected…"
+ },
+ "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html": {
+  "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+  "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-21T11:03:17+00:00",
+  "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an…"
+ },
+ "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/": {
+  "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
+  "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-21T12:08:50+00:00",
+  "summary": "A threat actor used autonomous Cairn AI agents to discover and exploit a critical MONAI Label vulnerability. The post Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day appeared first on SecurityWeek ."
  }
 }
