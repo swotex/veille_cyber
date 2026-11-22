@@ -41904,7 +41904,7 @@
    "https://git.kernel.org/stable/c/ef82b4d5cb4a3fe77c7f99008d78b8c64709e258"
   ],
   "kev": false,
-  "epss": 0.00168
+  "epss": 0.00201
  },
  "CVE-2026-99147": {
   "id": "CVE-2026-99147",
@@ -42366,7 +42366,7 @@
    "https://git.kernel.org/stable/c/c0620b648321fff654173d238d4a85298ea16d05"
   ],
   "kev": false,
-  "epss": 0.00174
+  "epss": 0.00207
  },
  "CVE-2026-99173": {
   "id": "CVE-2026-99173",
@@ -46887,7 +46887,7 @@
    "https://access.redhat.com/errata/RHSA-2026:99098"
   ],
   "kev": false,
-  "epss": 0.00573
+  "epss": 0.0056
  },
  "CVE-2026-106484": {
   "id": "CVE-2026-106484",
@@ -49959,7 +49959,7 @@
    "https://bugzilla.redhat.com/show_bug.cgi?id=2491619"
   ],
   "kev": false,
-  "epss": 0.00406
+  "epss": 0.00338
  },
  "CVE-2026-115245": {
   "id": "CVE-2026-115245",
@@ -50125,7 +50125,7 @@
    "https://bugzilla.redhat.com/show_bug.cgi?id=2478005"
   ],
   "kev": false,
-  "epss": 0.00177
+  "epss": 0.00156
  },
  "CVE-2026-19610": {
   "id": "CVE-2026-19610",
@@ -50144,7 +50144,7 @@
    "https://bugzilla.redhat.com/show_bug.cgi?id=2514537"
   ],
   "kev": false,
-  "epss": 0.00303
+  "epss": 0.00274
  },
  "CVE-2026-78395": {
   "id": "CVE-2026-78395",
@@ -63548,7 +63548,7 @@
    "https://github.com/sqlite/sqlite/blob/version-3.53.4/src/select.c#L5754"
   ],
   "kev": false,
-  "epss": 0.00227
+  "epss": 0.00189
  },
  "CVE-2026-119372": {
   "id": "CVE-2026-119372",
@@ -63570,7 +63570,7 @@
    "https://github.com/sqlite/sqlite/blob/version-3.53.4/ext/fts3/fts3_snippet.c#L561"
   ],
   "kev": false,
-  "epss": 0.00221
+  "epss": 0.00184
  },
  "CVE-2026-119373": {
   "id": "CVE-2026-119373",
@@ -63636,7 +63636,7 @@
    "https://github.com/sqlite/sqlite/blob/version-3.53.4/src/wal.c#L3672"
   ],
   "kev": false,
-  "epss": 0.0023
+  "epss": 0.00347
  },
  "CVE-2026-119376": {
   "id": "CVE-2026-119376",
@@ -63658,7 +63658,7 @@
    "https://github.com/sqlite/sqlite/blob/version-3.53.4/src/expr.c#L175"
   ],
   "kev": false,
-  "epss": 0.00265
+  "epss": 0.00344
  },
  "CVE-2026-119377": {
   "id": "CVE-2026-119377",
@@ -63680,7 +63680,7 @@
    "https://github.com/sqlite/sqlite/blob/version-3.53.4/src/resolve.c#L775"
   ],
   "kev": false,
-  "epss": 0.00164
+  "epss": 0.00163
  },
  "CVE-2026-119378": {
   "id": "CVE-2026-119378",
@@ -63724,7 +63724,7 @@
    "https://github.com/sqlite/sqlite/blob/version-3.53.4/ext/session/sqlite3session.c#L5619"
   ],
   "kev": false,
-  "epss": 0.00274
+  "epss": 0.0028
  },
  "CVE-2026-119407": {
   "id": "CVE-2026-119407",
@@ -64620,7 +64620,7 @@
    "https://github.com/sqlite/sqlite/blob/version-3.54.1/ext/recover/sqlite3recover.c#L1221-L1223"
   ],
   "kev": false,
-  "epss": 0.01545
+  "epss": 0.01577
  },
  "CVE-2026-119591": {
   "id": "CVE-2026-119591",
@@ -64642,7 +64642,7 @@
    "https://github.com/sqlite/sqlite/blob/version-3.53.4/src/select.c#L7199"
   ],
   "kev": false,
-  "epss": 0.00218
+  "epss": 0.0028
  },
  "CVE-2026-111501": {
   "id": "CVE-2026-111501",
@@ -114227,7 +114227,7 @@
    "https://github.com/christianhelle/refitter/releases/tag/2.1.1"
   ],
   "kev": false,
-  "epss": 0.00411
+  "epss": 0.00638
  },
  "CVE-2026-63201": {
   "id": "CVE-2026-63201",
@@ -134971,7 +134971,7 @@
    "https://git.kernel.org/stable/c/f7fba81b00699360f96ed7d9a47b8c801e74c6f9"
   ],
   "kev": false,
-  "epss": 0.00419
+  "epss": 0.00454
  },
  "CVE-2026-119179": {
   "id": "CVE-2026-119179",
@@ -177595,7 +177595,7 @@
    "https://github.com/predkambrij/sshhole-repro"
   ],
   "kev": true,
-  "epss": 0.8768,
+  "epss": 0.95538,
   "kev_added": "2026-11-09",
   "kev_ransom": false,
   "kev_name": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability"
@@ -190367,7 +190367,7 @@
    "https://git.kernel.org/stable/c/ac76cab50e899a7346408b8d3c3a4192c2eefb9f"
   ],
   "kev": false,
-  "epss": 0.00165
+  "epss": 0.00201
  },
  "CVE-2026-103984": {
   "id": "CVE-2026-103984",
@@ -222068,7 +222068,7 @@
    "https://github.com/ArtifexSoftware/ghostpdl/blob/ghostpdl-10.07.0/Resource/Init/gs_fonts.ps#L1026-L1035"
   ],
   "kev": false,
-  "epss": 0.00164
+  "epss": 0.00347
  },
  "CVE-2026-125397": {
   "id": "CVE-2026-125397",
@@ -229418,7 +229418,7 @@
    "https://git.kernel.org/stable/c/6ba3d758cd40888908f96d68d69322dad65a871e"
   ],
   "kev": false,
-  "epss": 0.00168
+  "epss": 0.00201
  },
  "CVE-2026-98978": {
   "id": "CVE-2026-98978",
@@ -229454,7 +229454,7 @@
    "https://git.kernel.org/stable/c/b82f3c1131456537a514595c3991b62652507c9d"
   ],
   "kev": false,
-  "epss": 0.00168
+  "epss": 0.00201
  },
  "CVE-2026-98996": {
   "id": "CVE-2026-98996",
@@ -229472,7 +229472,7 @@
    "https://git.kernel.org/stable/c/a210ac218c307513d43e98a08f23c2dfbeeebc2f"
   ],
   "kev": false,
-  "epss": 0.00168
+  "epss": 0.00201
  },
  "CVE-2026-99021": {
   "id": "CVE-2026-99021",
@@ -229490,7 +229490,7 @@
    "https://git.kernel.org/stable/c/a5f43540e14589b53f80306d25c043c0abdcbca0"
   ],
   "kev": false,
-  "epss": 0.00168
+  "epss": 0.00201
  },
  "CVE-2026-99026": {
   "id": "CVE-2026-99026",
@@ -229508,7 +229508,7 @@
    "https://git.kernel.org/stable/c/aec1d35d76ad883bae83c24707010115f38d02ac"
   ],
   "kev": false,
-  "epss": 0.00176
+  "epss": 0.00209
  },
  "CVE-2026-99086": {
   "id": "CVE-2026-99086",
@@ -229526,7 +229526,7 @@
    "https://git.kernel.org/stable/c/e9ec5cbbaf4dd3a02ae3d81719f4fcb9b609aa8e"
   ],
   "kev": false,
-  "epss": 0.00164
+  "epss": 0.002
  },
  "CVE-2026-99087": {
   "id": "CVE-2026-99087",
@@ -229544,7 +229544,7 @@
    "https://git.kernel.org/stable/c/73e5b7b14df0430ef2135e9bd9fa3f5b253ef789"
   ],
   "kev": false,
-  "epss": 0.00164
+  "epss": 0.002
  },
  "CVE-2026-111262": {
   "id": "CVE-2026-111262",
@@ -232633,7 +232633,7 @@
    "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-125350"
   ],
   "kev": true,
-  "epss": 0.0189,
+  "epss": 0.068,
   "kev_added": "2026-11-10",
   "kev_ransom": false,
   "kev_name": "Google Chromium Use-After-Free Vulnerability"
@@ -256531,7 +256531,7 @@
    "https://git.kernel.org/stable/c/e7ba61734d6ad6adfd5bf617052e590743211669"
   ],
   "kev": false,
-  "epss": 0.00224
+  "epss": 0.00215
  },
  "CVE-2026-99288": {
   "id": "CVE-2026-99288",
@@ -256988,7 +256988,7 @@
    "https://jira.mongodb.org/browse/SERVER-133600"
   ],
   "kev": false,
-  "epss": 0.00365
+  "epss": 0.00415
  },
  "CVE-2026-120815": {
   "id": "CVE-2026-120815",
@@ -305208,7 +305208,7 @@
    "https://git.kernel.org/stable/c/af78baeacd731a98531eaa3103bfe03f147cffb7"
   ],
   "kev": false,
-  "epss": 0.00448
+  "epss": 0.00442
  },
  "CVE-2026-99296": {
   "id": "CVE-2026-99296",
@@ -305370,7 +305370,7 @@
    "https://git.kernel.org/stable/c/bf8f13872959af1d87e36b7d27096a09fdcf6e47"
   ],
   "kev": false,
-  "epss": 0.00455
+  "epss": 0.0045
  },
  "CVE-2026-99305": {
   "id": "CVE-2026-99305",
@@ -305460,7 +305460,7 @@
    "https://git.kernel.org/stable/c/d1e92aa651caa352261fb3b78460b7722357835c"
   ],
   "kev": false,
-  "epss": 0.00407
+  "epss": 0.00408
  },
  "CVE-2026-99310": {
   "id": "CVE-2026-99310",
@@ -309406,7 +309406,7 @@
    "https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0020"
   ],
   "kev": false,
-  "epss": 0.00151
+  "epss": 0.00155
  },
  "CVE-2026-119346": {
   "id": "CVE-2026-119346",
@@ -309861,7 +309861,7 @@
    "https://github.com/GOVCERT-LU/eml_parser/security/advisories/GHSA-m4g8-47f9-h588"
   ],
   "kev": false,
-  "epss": 0.00291
+  "epss": 0.00464
  },
  "CVE-2026-83816": {
   "id": "CVE-2026-83816",
@@ -319109,7 +319109,7 @@
    "https://www.vulncheck.com/advisories/dolibarr-erp-crm-before-24.0.2-improper-authorization-via-users-rest-api"
   ],
   "kev": false,
-  "epss": 0.00441
+  "epss": 0.00519
  },
  "CVE-2026-130848": {
   "id": "CVE-2026-130848",
@@ -319129,7 +319129,7 @@
    "https://www.vulncheck.com/advisories/dolibarr-erp-crm-through-24.0.3-code-injection-via-website-template-import"
   ],
   "kev": false,
-  "epss": 0.00546
+  "epss": 0.00665
  },
  "CVE-2026-130849": {
   "id": "CVE-2026-130849",
@@ -345011,7 +345011,7 @@
    "https://my.f5.com/manage/s/article/K000163934"
   ],
   "kev": false,
-  "epss": 0.00333
+  "epss": 0.00466
  },
  "CVE-2026-120993": {
   "id": "CVE-2026-120993",
@@ -345029,7 +345029,7 @@
    "https://my.f5.com/manage/s/article/K000163932"
   ],
   "kev": false,
-  "epss": 0.01359
+  "epss": 0.01988
  },
  "CVE-2026-121805": {
   "id": "CVE-2026-121805",
@@ -345119,7 +345119,7 @@
    "https://cyberscoop.com/nginx-critical-vulnerabilities-exploits/"
   ],
   "kev": false,
-  "epss": 0.29863
+  "epss": 0.27785
  },
  "CVE-2026-123633": {
   "id": "CVE-2026-123633",
@@ -345565,7 +345565,7 @@
    "https://github.com/brave/adblock-resources/pull/355"
   ],
   "kev": false,
-  "epss": 0.00411
+  "epss": 0.00426
  },
  "CVE-2026-30502": {
   "id": "CVE-2026-30502",
@@ -346725,7 +346725,7 @@
    "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA"
   ],
   "kev": false,
-  "epss": 0.00586
+  "epss": 0.00603
  },
  "CVE-2026-76414": {
   "id": "CVE-2026-76414",
@@ -346815,7 +346815,7 @@
    "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA"
   ],
   "kev": false,
-  "epss": 0.00531
+  "epss": 0.00546
  },
  "CVE-2026-76422": {
   "id": "CVE-2026-76422",
@@ -346869,7 +346869,7 @@
    "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA"
   ],
   "kev": false,
-  "epss": 0.00534
+  "epss": 0.00549
  },
  "CVE-2026-76516": {
   "id": "CVE-2026-76516",
@@ -352124,7 +352124,7 @@
    "https://git.kernel.org/stable/c/66dfb2cacda7faae614d688943d85e75abf7f586"
   ],
   "kev": false,
-  "epss": 0.00158
+  "epss": 0.00219
  },
  "CVE-2026-110728": {
   "id": "CVE-2026-110728",
@@ -357254,7 +357254,7 @@
    "https://github.com/murrez/php2shell/blob/a8e24f4efab57f67384909d9408e42a74b973bfb/poc.py#L776-L791"
   ],
   "kev": false,
-  "epss": 0.71117
+  "epss": 0.73107
  },
  "CVE-2026-120753": {
   "id": "CVE-2026-120753",
@@ -357319,7 +357319,7 @@
    "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-123890"
   ],
   "kev": true,
-  "epss": 0.02985,
+  "epss": 0.03526,
   "kev_added": "2026-11-20",
   "kev_ransom": false,
   "kev_name": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability"
@@ -357434,7 +357434,7 @@
    "https://bugzilla.suse.com/show_bug.cgi?id=1290690"
   ],
   "kev": false,
-  "epss": 0.13104
+  "epss": 0.13297
  },
  "CVE-2026-127960": {
   "id": "CVE-2026-127960",
@@ -357530,7 +357530,7 @@
    "https://bugzilla.suse.com/show_bug.cgi?id=1290687"
   ],
   "kev": false,
-  "epss": 0.16138
+  "epss": 0.16163
  },
  "CVE-2026-129291": {
   "id": "CVE-2026-129291",
@@ -357548,7 +357548,7 @@
    "https://github.com/php/php-src/security/advisories/GHSA-jm4m-qfqx-967m"
   ],
   "kev": false,
-  "epss": 0.01033
+  "epss": 0.01392
  },
  "CVE-2026-129292": {
   "id": "CVE-2026-129292",
@@ -357605,7 +357605,7 @@
    "https://github.com/murrez/php2shell/blob/a8e24f4efab57f67384909d9408e42a74b973bfb/poc.py#L808-L816"
   ],
   "kev": false,
-  "epss": 0.07248
+  "epss": 0.09341
  },
  "CVE-2026-129481": {
   "id": "CVE-2026-129481",
@@ -357624,7 +357624,7 @@
    "https://github.com/php/php-src/security/advisories/GHSA-g3vh-838c-65v7"
   ],
   "kev": false,
-  "epss": 0.03471
+  "epss": 0.03539
  },
  "CVE-2026-129496": {
   "id": "CVE-2026-129496",
@@ -358439,7 +358439,7 @@
    "https://git.kernel.org/stable/c/4a7f332fd43eee2541197d6e1e297b9ef2e1b07f"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99324": {
   "id": "CVE-2026-99324",
@@ -358527,7 +358527,7 @@
    "https://git.kernel.org/stable/c/ebe54f9e793bf05c7bd82110fdab24f10b89eac3"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99329": {
   "id": "CVE-2026-99329",
@@ -358580,7 +358580,7 @@
    "https://git.kernel.org/stable/c/e178cdd6ed0f4ac20afc9220eceae3a89e6719af"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99332": {
   "id": "CVE-2026-99332",
@@ -358598,7 +358598,7 @@
    "https://git.kernel.org/stable/c/5fe63b415c636c7f4f6848a8e53bdd4bbf0c300d"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99333": {
   "id": "CVE-2026-99333",
@@ -358616,7 +358616,7 @@
    "https://git.kernel.org/stable/c/85f1bea97f1909f81577cfcf3e4db9017e7f5337"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99334": {
   "id": "CVE-2026-99334",
@@ -358723,7 +358723,7 @@
    "https://git.kernel.org/stable/c/ab15e4093e2aff170ea2087ab994f64530a13cba"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99340": {
   "id": "CVE-2026-99340",
@@ -358741,7 +358741,7 @@
    "https://git.kernel.org/stable/c/e34057e59ed784a37657835aac9f54eec0864342"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99341": {
   "id": "CVE-2026-99341",
@@ -358759,7 +358759,7 @@
    "https://git.kernel.org/stable/c/a92a07205e010029796b35924655aebb903b2e7c"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99342": {
   "id": "CVE-2026-99342",
@@ -358777,7 +358777,7 @@
    "https://git.kernel.org/stable/c/eacdb76c5f04956035c5d7f7e1973028f30684a2"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99343": {
   "id": "CVE-2026-99343",
@@ -358939,7 +358939,7 @@
    "https://git.kernel.org/stable/c/9d161fa805f49dd21d131065485065067bb96c8a"
   ],
   "kev": false,
-  "epss": 0.00249
+  "epss": 0.00256
  },
  "CVE-2026-99352": {
   "id": "CVE-2026-99352",
@@ -358957,7 +358957,7 @@
    "https://git.kernel.org/stable/c/86f3078ed2bd6645f5d44fa41917453b774808c1"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00228
  },
  "CVE-2026-99353": {
   "id": "CVE-2026-99353",
@@ -359011,7 +359011,7 @@
    "https://git.kernel.org/stable/c/213fba11c0508f2e7d37ce8592072eed28ca0171"
   ],
   "kev": false,
-  "epss": 0.00201
+  "epss": 0.00207
  },
  "CVE-2026-99356": {
   "id": "CVE-2026-99356",
@@ -359047,7 +359047,7 @@
    "https://git.kernel.org/stable/c/70614e41d379e5b9b1893ac65b49ae4cea6c36eb"
   ],
   "kev": false,
-  "epss": 0.00201
+  "epss": 0.00207
  },
  "CVE-2026-99358": {
   "id": "CVE-2026-99358",
@@ -359065,7 +359065,7 @@
    "https://git.kernel.org/stable/c/c1e38828c93e5fc958a3d6155c5703d6e7b3de8e"
   ],
   "kev": false,
-  "epss": 0.00201
+  "epss": 0.00207
  },
  "CVE-2026-99359": {
   "id": "CVE-2026-99359",
@@ -359119,7 +359119,7 @@
    "https://git.kernel.org/stable/c/cfcfe0b38a66bbc4122c78a2b75e1b97b3534761"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00228
  },
  "CVE-2026-99362": {
   "id": "CVE-2026-99362",
@@ -359137,7 +359137,7 @@
    "https://git.kernel.org/stable/c/37fc2ec211630360e9aefcaaec8730db964645f2"
   ],
   "kev": false,
-  "epss": 0.00222
+  "epss": 0.00228
  },
  "CVE-2026-99363": {
   "id": "CVE-2026-99363",
@@ -359155,7 +359155,7 @@
    "https://git.kernel.org/stable/c/e10bf0e125ebf6b9669b3158eda5fa67b56809d4"
   ],
   "kev": false,
-  "epss": 0.00224
+  "epss": 0.00232
  },
  "CVE-2026-99364": {
   "id": "CVE-2026-99364",
@@ -359209,7 +359209,7 @@
    "https://git.kernel.org/stable/c/2987838317501ff67b672ac2a441fe34b7729f3d"
   ],
   "kev": false,
-  "epss": 0.00222
+  "epss": 0.00228
  },
  "CVE-2026-99367": {
   "id": "CVE-2026-99367",
@@ -359227,7 +359227,7 @@
    "https://git.kernel.org/stable/c/e058341ceb177226fdb20a36d48fa827851d9c81"
   ],
   "kev": false,
-  "epss": 0.00209
+  "epss": 0.00217
  },
  "CVE-2026-99368": {
   "id": "CVE-2026-99368",
@@ -359819,7 +359819,7 @@
    "https://git.kernel.org/stable/c/c2cd6b3b480ef2ae9752ed924a2199c8c90569a1"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99401": {
   "id": "CVE-2026-99401",
@@ -359837,7 +359837,7 @@
    "https://git.kernel.org/stable/c/ee636421740bc47e9d9e612ca7c9fa7dc5d17be1"
   ],
   "kev": false,
-  "epss": 0.00212
+  "epss": 0.00213
  },
  "CVE-2026-99402": {
   "id": "CVE-2026-99402",
@@ -359873,7 +359873,7 @@
    "https://git.kernel.org/stable/c/bbb234712cc1baada3d04f4900e5ce4c8e70fb49"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99404": {
   "id": "CVE-2026-99404",
@@ -359891,7 +359891,7 @@
    "https://git.kernel.org/stable/c/c67017f673bc4a118fac377bc99d39b34465f426"
   ],
   "kev": false,
-  "epss": 0.00215
+  "epss": 0.00221
  },
  "CVE-2026-99405": {
   "id": "CVE-2026-99405",
@@ -360125,7 +360125,7 @@
    "https://git.kernel.org/stable/c/a8ad9bba205f7c6f3b86fcf0bd2d98adcd750f2e"
   ],
   "kev": false,
-  "epss": 0.00187
+  "epss": 0.00192
  },
  "CVE-2026-99418": {
   "id": "CVE-2026-99418",
@@ -360143,7 +360143,7 @@
    "https://git.kernel.org/stable/c/755b5c5c9277be251a51623d6065abab948c61bc"
   ],
   "kev": false,
-  "epss": 0.00187
+  "epss": 0.00192
  },
  "CVE-2026-99419": {
   "id": "CVE-2026-99419",
@@ -360161,7 +360161,7 @@
    "https://git.kernel.org/stable/c/383a883cf71525752a3092bba3c22aa1ab04df37"
   ],
   "kev": false,
-  "epss": 0.00187
+  "epss": 0.00192
  },
  "CVE-2026-99420": {
   "id": "CVE-2026-99420",
@@ -360377,7 +360377,7 @@
    "https://git.kernel.org/stable/c/7873680692369bcdf65480a8d81ccd2f298a13b3"
   ],
   "kev": false,
-  "epss": 0.00184
+  "epss": 0.00185
  },
  "CVE-2026-99432": {
   "id": "CVE-2026-99432",
@@ -361002,7 +361002,7 @@
    "https://git.kernel.org/stable/c/c7528789244ce7329ca883170fb9315d739ae985"
   ],
   "kev": false,
-  "epss": 0.00209
+  "epss": 0.00168
  },
  "CVE-2026-99467": {
   "id": "CVE-2026-99467",
@@ -361020,7 +361020,7 @@
    "https://git.kernel.org/stable/c/71de8e33596c9c8b3e20e51e18883e6c5f25f7a4"
   ],
   "kev": false,
-  "epss": 0.00168
+  "epss": 0.00174
  },
  "CVE-2026-99468": {
   "id": "CVE-2026-99468",
@@ -361038,7 +361038,7 @@
    "https://git.kernel.org/stable/c/78fdfbf117c409273eecbfa7a528ef42358a0e38"
   ],
   "kev": false,
-  "epss": 0.00209
+  "epss": 0.00174
  },
  "CVE-2026-99469": {
   "id": "CVE-2026-99469",
@@ -361092,7 +361092,7 @@
    "https://git.kernel.org/stable/c/61a39797bb136243c48b46e2586d8a9e2cea6a89"
   ],
   "kev": false,
-  "epss": 0.00177
+  "epss": 0.00183
  },
  "CVE-2026-99472": {
   "id": "CVE-2026-99472",
@@ -361554,7 +361554,7 @@
    "https://git.kernel.org/stable/c/e0682a8fb9c27dffc461a8a4e76b54a65f7391e9"
   ],
   "kev": false,
-  "epss": 0.00168
+  "epss": 0.00174
  },
  "CVE-2026-99498": {
   "id": "CVE-2026-99498",
@@ -361730,7 +361730,7 @@
    "https://git.kernel.org/stable/c/cda6c4819b4a45dbeac92652eaaffb156b3f11b1"
   ],
   "kev": false,
-  "epss": 0.00208
+  "epss": 0.00213
  },
  "CVE-2026-99508": {
   "id": "CVE-2026-99508",
@@ -361748,7 +361748,7 @@
    "https://git.kernel.org/stable/c/adf422b7587bff1c9069406ce7a6c5a1f0e70193"
   ],
   "kev": false,
-  "epss": 0.00208
+  "epss": 0.00213
  },
  "CVE-2026-99509": {
   "id": "CVE-2026-99509",
@@ -361766,7 +361766,7 @@
    "https://git.kernel.org/stable/c/a7962198ab367f732a8ced1682f2738d712ad473"
   ],
   "kev": false,
-  "epss": 0.00208
+  "epss": 0.00213
  },
  "CVE-2026-99510": {
   "id": "CVE-2026-99510",
@@ -361784,7 +361784,7 @@
    "https://git.kernel.org/stable/c/e9deece85062873763dfbb8b1121e722ef2959a0"
   ],
   "kev": false,
-  "epss": 0.00208
+  "epss": 0.00213
  },
  "CVE-2026-99511": {
   "id": "CVE-2026-99511",
@@ -361802,7 +361802,7 @@
    "https://git.kernel.org/stable/c/544b575ba44d566cfd4f82e3d8faee5db01addf5"
   ],
   "kev": false,
-  "epss": 0.00207
+  "epss": 0.00208
  },
  "CVE-2026-99512": {
   "id": "CVE-2026-99512",
@@ -361820,7 +361820,7 @@
    "https://git.kernel.org/stable/c/5e30e92df3a0fb3985f3686536065219c28dd65d"
   ],
   "kev": false,
-  "epss": 0.00208
+  "epss": 0.00213
  },
  "CVE-2026-99513": {
   "id": "CVE-2026-99513",
@@ -361838,7 +361838,7 @@
    "https://git.kernel.org/stable/c/70825b251e5f7855fd7bd93afc0b698154e00e70"
   ],
   "kev": false,
-  "epss": 0.00208
+  "epss": 0.00213
  },
  "CVE-2026-99514": {
   "id": "CVE-2026-99514",
@@ -361856,7 +361856,7 @@
    "https://git.kernel.org/stable/c/3e271a27c46fd591d1011c7de5a644a41e2010f1"
   ],
   "kev": false,
-  "epss": 0.00207
+  "epss": 0.00208
  },
  "CVE-2026-99515": {
   "id": "CVE-2026-99515",
@@ -365579,7 +365579,7 @@
    "https://github.com/nltk/nltk/pull/3885"
   ],
   "kev": false,
-  "epss": 0.00419
+  "epss": 0.00479
  },
  "CVE-2026-129227": {
   "id": "CVE-2026-129227",
@@ -365599,7 +365599,7 @@
    "https://github.com/nltk/nltk/releases/tag/v3.10.4"
   ],
   "kev": false,
-  "epss": 0.00419
+  "epss": 0.00479
  },
  "CVE-2026-129229": {
   "id": "CVE-2026-129229",
@@ -365683,7 +365683,7 @@
    "https://github.com/nltk/nltk/pull/3888"
   ],
   "kev": false,
-  "epss": 0.0034
+  "epss": 0.00402
  },
  "CVE-2026-129399": {
   "id": "CVE-2026-129399",
@@ -366199,7 +366199,7 @@
    "https://github.com/nltk/nltk/releases/tag/v3.10.4"
   ],
   "kev": false,
-  "epss": 0.00469
+  "epss": 0.00536
  },
  "CVE-2026-129418": {
   "id": "CVE-2026-129418",
@@ -366766,7 +366766,7 @@
    "https://github.com/openremote/core/security/advisories/GHSA-3h6w-xcw3-9xjj"
   ],
   "kev": false,
-  "epss": 0.00321
+  "epss": 0.00474
  },
  "CVE-2026-115463": {
   "id": "CVE-2026-115463",
@@ -370156,7 +370156,7 @@
    "https://github.com/ckan/ckan/commit/a25e2f3080a79a94eb04dcf02e16ded3e5fadeb2"
   ],
   "kev": false,
-  "epss": 0.00327
+  "epss": 0.00518
  },
  "CVE-2026-129931": {
   "id": "CVE-2026-129931",
@@ -371582,7 +371582,7 @@
    "https://metacpan.org/release/TIMLEGGE/Convert-ASN1-0.37/changes"
   ],
   "kev": false,
-  "epss": 0.00424
+  "epss": 0.00408
  },
  "CVE-2026-131877": {
   "id": "CVE-2026-131877",
@@ -371602,7 +371602,7 @@
    "https://metacpan.org/release/TIMLEGGE/Convert-ASN1-0.37/changes"
   ],
   "kev": false,
-  "epss": 0.00489
+  "epss": 0.00483
  },
  "CVE-2026-133406": {
   "id": "CVE-2026-133406",
@@ -372235,7 +372235,7 @@
    "https://wpscan.com/vulnerability/3336bba8-9e50-4c8b-9c3a-18355ff10284/"
   ],
   "kev": false,
-  "epss": 0.00517
+  "epss": 0.00578
  },
  "CVE-2026-125695": {
   "id": "CVE-2026-125695",
@@ -376541,7 +376541,7 @@
    "https://vuldb.com/submit/1049874"
   ],
   "kev": false,
-  "epss": 0.02971
+  "epss": 0.03669
  },
  "CVE-2026-133495": {
   "id": "CVE-2026-133495",
@@ -376922,7 +376922,7 @@
    "https://patchstack.com/database/wordpress/plugin/authorizer/vulnerability/wordpress-authorizer-plugin-3-17-2-privilege-escalation-vulnerability?_s_id=cve"
   ],
   "kev": false,
-  "epss": 0.00659
+  "epss": 0.00759
  },
  "CVE-2026-129065": {
   "id": "CVE-2026-129065",
@@ -377456,7 +377456,7 @@
    "https://github.com/pydantic/pydantic/commit/34491f5328f168f14e3769cd5f0f83c0af0f4778"
   ],
   "kev": false,
-  "epss": 0.00865
+  "epss": 0.00866
  },
  "CVE-2026-133426": {
   "id": "CVE-2026-133426",
@@ -378520,7 +378520,7 @@
    "https://www.wireshark.org/security/wnpa-sec-2026-125.html"
   ],
   "kev": false,
-  "epss": 0.00185
+  "epss": 0.00186
  },
  "CVE-2026-130456": {
   "id": "CVE-2026-130456",
@@ -378728,7 +378728,7 @@
    "https://www.wireshark.org/security/wnpa-sec-2026-113.html"
   ],
   "kev": false,
-  "epss": 0.00199
+  "epss": 0.00196
  },
  "CVE-2026-130468": {
   "id": "CVE-2026-130468",
@@ -381023,7 +381023,7 @@
    "https://www.net-dns.org/downloads/CVE-2026-101340.txt"
   ],
   "kev": false,
-  "epss": 0.00632
+  "epss": 0.00633
  },
  "CVE-2026-109878": {
   "id": "CVE-2026-109878",
@@ -381077,7 +381077,7 @@
    "https://patchstack.com/database/wordpress/plugin/miniorange-otp-verification/vulnerability/wordpress-miniorange-otp-verification-plugin-5-6-1-broken-authentication-vulnerability?_s_id=cve"
   ],
   "kev": false,
-  "epss": 0.00825
+  "epss": 0.00961
  },
  "CVE-2026-129420": {
   "id": "CVE-2026-129420",
@@ -381549,7 +381549,7 @@
    "https://patchstack.com/database/wordpress/plugin/newsletters-lite/vulnerability/wordpress-newsletters-plugin-4-18-2-php-object-injection-vulnerability-2?_s_id=cve"
   ],
   "kev": false,
-  "epss": 0.00718
+  "epss": 0.0084
  },
  "CVE-2026-129043": {
   "id": "CVE-2026-129043",
@@ -381663,7 +381663,7 @@
    "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1588"
   ],
   "kev": false,
-  "epss": 0.00664
+  "epss": 0.00838
  },
  "CVE-2026-14915": {
   "id": "CVE-2026-14915",
@@ -381700,7 +381700,7 @@
    "https://www.wordfence.com/threat-intel/vulnerabilities/id/9cb4a3f2-af99-473d-b70e-1ea1afca23ff?source=cve"
   ],
   "kev": false,
-  "epss": 0.00805
+  "epss": 0.01062
  },
  "CVE-2026-126054": {
   "id": "CVE-2026-126054",
@@ -382741,7 +382741,7 @@
    "https://github.com/memtomem/memtomem-stm/security/advisories/GHSA-43hx-xm7w-3mhj"
   ],
   "kev": false,
-  "epss": 0.00572
+  "epss": 0.00684
  },
  "CVE-2026-79751": {
   "id": "CVE-2026-79751",
@@ -383845,7 +383845,7 @@
    "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382"
   ],
   "kev": false,
-  "epss": 0.03131
+  "epss": 0.03759
  },
  "CVE-2026-48118": {
   "id": "CVE-2026-48118",
@@ -383987,7 +383987,7 @@
    "https://github.com/MapServer/MapServer/commit/5d2a60c1ffd17839879b7b32ec26f689c9dbf1e9"
   ],
   "kev": false,
-  "epss": 0.00777
+  "epss": 0.00766
  },
  "CVE-2026-77324": {
   "id": "CVE-2026-77324",
@@ -384009,7 +384009,7 @@
    "https://github.com/MapServer/MapServer/pull/7556"
   ],
   "kev": false,
-  "epss": 0.01517
+  "epss": 0.01498
  },
  "CVE-2026-77325": {
   "id": "CVE-2026-77325",
@@ -384029,7 +384029,7 @@
    "https://github.com/MapServer/MapServer/pull/7544"
   ],
   "kev": false,
-  "epss": 0.00481
+  "epss": 0.00475
  },
  "CVE-2026-77326": {
   "id": "CVE-2026-77326",
@@ -384049,7 +384049,7 @@
    "https://github.com/MapServer/MapServer/pull/7555"
   ],
   "kev": false,
-  "epss": 0.00968
+  "epss": 0.00956
  },
  "CVE-2026-77327": {
   "id": "CVE-2026-77327",
@@ -384069,7 +384069,7 @@
    "https://github.com/MapServer/MapServer/pull/7547"
   ],
   "kev": false,
-  "epss": 0.01181
+  "epss": 0.01182
  },
  "CVE-2026-77328": {
   "id": "CVE-2026-77328",
@@ -384089,7 +384089,7 @@
    "https://github.com/MapServer/MapServer/pull/7546"
   ],
   "kev": false,
-  "epss": 0.00771
+  "epss": 0.00772
  },
  "CVE-2026-77346": {
   "id": "CVE-2026-77346",
@@ -384583,7 +384583,7 @@
    "https://www.cve.org/CVERecord?id=CVE-2026-129175"
   ],
   "kev": false,
-  "epss": 0.00855
+  "epss": 0.01008
  },
  "CVE-2026-129176": {
   "id": "CVE-2026-129176",
@@ -384830,7 +384830,7 @@
    "https://www.zerodayinitiative.com/advisories/ZDI-26-1014/"
   ],
   "kev": false,
-  "epss": 0.00378
+  "epss": 0.00379
  },
  "CVE-2026-134040": {
   "id": "CVE-2026-134040",
@@ -384864,7 +384864,7 @@
    "https://www.zerodayinitiative.com/advisories/ZDI-26-1016/"
   ],
   "kev": false,
-  "epss": 0.00361
+  "epss": 0.00362
  },
  "CVE-2026-134042": {
   "id": "CVE-2026-134042",
@@ -384880,7 +384880,7 @@
    "https://www.zerodayinitiative.com/advisories/ZDI-26-1017/"
   ],
   "kev": false,
-  "epss": 0.00361
+  "epss": 0.00362
  },
  "CVE-2026-134043": {
   "id": "CVE-2026-134043",
@@ -385653,7 +385653,7 @@
    "https://vuldb.com/cve/CVE-2026-133937"
   ],
   "kev": false,
-  "epss": 0.00587
+  "epss": 0.00588
  },
  "CVE-2026-134136": {
   "id": "CVE-2026-134136",
@@ -385865,7 +385865,7 @@
    "https://github.com/cesanta/mongoose/commit/7fccc2b75f64f416ba1c7fd4f5072ae33b44d578"
   ],
   "kev": false,
-  "epss": 0.00592
+  "epss": 0.00584
  },
  "CVE-2026-134171": {
   "id": "CVE-2026-134171",
@@ -385885,7 +385885,7 @@
    "https://github.com/cesanta/mongoose/releases/tag/7.24"
   ],
   "kev": false,
-  "epss": 0.00827
+  "epss": 0.00828
  },
  "CVE-2026-134172": {
   "id": "CVE-2026-134172",
@@ -386923,7 +386923,7 @@
    "https://plugins.trac.wordpress.org/browser/tag-groups/tags/3.0.0/include/shortcodes/class.shortcode_tag_list.php#L492"
   ],
   "kev": false,
-  "epss": 0.00365
+  "epss": 0.00457
  },
  "CVE-2026-119182": {
   "id": "CVE-2026-119182",
@@ -386943,7 +386943,7 @@
    "https://plugins.trac.wordpress.org/browser/tag-groups/tags/3.0.0/include/shortcodes/class.shortcode_tabs.php#L511"
   ],
   "kev": false,
-  "epss": 0.0034
+  "epss": 0.00426
  },
  "CVE-2026-122161": {
   "id": "CVE-2026-122161",
@@ -386962,7 +386962,7 @@
    "https://www.wordfence.com/threat-intel/vulnerabilities/id/1f43db33-b9e4-49f1-88ca-d0beaace17e6?source=cve"
   ],
   "kev": false,
-  "epss": 0.00274
+  "epss": 0.00344
  },
  "CVE-2026-122221": {
   "id": "CVE-2026-122221",
@@ -387000,7 +387000,7 @@
    "https://www.wordfence.com/threat-intel/vulnerabilities/id/100c1fed-e67f-45fd-ac2a-55280944a27c?source=cve"
   ],
   "kev": false,
-  "epss": 0.00274
+  "epss": 0.00344
  },
  "CVE-2026-123086": {
   "id": "CVE-2026-123086",
@@ -387020,7 +387020,7 @@
    "https://plugins.trac.wordpress.org/browser/revisionary/tags/4.3.2/admin/class-list-table_rvy.php#L88"
   ],
   "kev": false,
-  "epss": 0.00562
+  "epss": 0.00704
  },
  "CVE-2026-125011": {
   "id": "CVE-2026-125011",
@@ -387040,7 +387040,7 @@
    "https://plugins.trac.wordpress.org/browser/themify-builder/tags/7.8.5/classes/class-themify-builder-active.php#L599"
   ],
   "kev": false,
-  "epss": 0.00362
+  "epss": 0.00453
  },
  "CVE-2026-126701": {
   "id": "CVE-2026-126701",
@@ -387060,7 +387060,7 @@
    "https://plugins.trac.wordpress.org/browser/themify-builder/tags/7.8.5/classes/class-themify-builder-model.php#L839"
   ],
   "kev": false,
-  "epss": 0.00354
+  "epss": 0.00443
  },
  "CVE-2026-129095": {
   "id": "CVE-2026-129095",
@@ -387080,7 +387080,7 @@
    "https://plugins.trac.wordpress.org/browser/wp-to-buffer/tags/6.2.9/lib/social/includes/class-ajax.php#L194"
   ],
   "kev": false,
-  "epss": 0.00348
+  "epss": 0.00436
  },
  "CVE-2026-129096": {
   "id": "CVE-2026-129096",
@@ -387120,7 +387120,7 @@
    "https://plugins.trac.wordpress.org/browser/everest-forms/tags/3.6.4/includes/RestApi/controllers/version1/class-evf-plugin-status.php#L223"
   ],
   "kev": false,
-  "epss": 0.00568
+  "epss": 0.00711
  },
  "CVE-2026-130148": {
   "id": "CVE-2026-130148",
@@ -387480,7 +387480,7 @@
    "https://plugins.trac.wordpress.org/browser/chatbot/tags/9.0/includes/chatbot/src/Conversation/Message.php#L94"
   ],
   "kev": false,
-  "epss": 0.00424
+  "epss": 0.00433
  },
  "CVE-2026-133361": {
   "id": "CVE-2026-133361",
@@ -387500,7 +387500,7 @@
    "https://plugins.trac.wordpress.org/browser/blockstrap-page-builder-blocks/tags/0.1.65/blocks/class-blockstrap-widget-modal.php#L500"
   ],
   "kev": false,
-  "epss": 0.00538
+  "epss": 0.00549
  },
  "CVE-2026-133369": {
   "id": "CVE-2026-133369",
@@ -387520,7 +387520,7 @@
    "https://plugins.trac.wordpress.org/browser/codepeople-post-map/tags/1.3.0/include/functions.php#L1020"
   ],
   "kev": false,
-  "epss": 0.0038
+  "epss": 0.00388
  },
  "CVE-2026-96991": {
   "id": "CVE-2026-96991",
@@ -387540,7 +387540,7 @@
    "https://plugins.trac.wordpress.org/browser/review-schema/tags/3.1.0/app/Modules/Schema/Models/Schema.php#L157"
   ],
   "kev": false,
-  "epss": 0.00424
+  "epss": 0.00433
  },
  "CVE-2026-125054": {
   "id": "CVE-2026-125054",
@@ -387560,7 +387560,7 @@
    "https://plugins.trac.wordpress.org/browser/so-css/tags/1.6.9/js/inspector.js#L419"
   ],
   "kev": false,
-  "epss": 0.00424
+  "epss": 0.0038
  },
  "CVE-2026-133963": {
   "id": "CVE-2026-133963",
@@ -387580,7 +387580,7 @@
    "https://github.com/mayswind/AriaNg-Native/commit/ac5a4bcf102f605b160f19fcc9fbaec67f9596d7"
   ],
   "kev": false,
-  "epss": 0.00351
+  "epss": 0.00308
  },
  "CVE-2026-104013": {
   "id": "CVE-2026-104013",
@@ -387600,7 +387600,7 @@
    "https://plugins.trac.wordpress.org/browser/wp-compress-image-optimizer/tags/7.24.04/fixCss.php#L164"
   ],
   "kev": false,
-  "epss": 0.01455
+  "epss": 0.01383
  },
  "CVE-2026-107632": {
   "id": "CVE-2026-107632",
@@ -387620,7 +387620,7 @@
    "https://plugins.trac.wordpress.org/browser/unbounce/tags/1.1.6/Unbounce-Page.php#L151"
   ],
   "kev": false,
-  "epss": 0.00705
+  "epss": 0.00531
  },
  "CVE-2026-116757": {
   "id": "CVE-2026-116757",
@@ -387640,7 +387640,7 @@
    "https://plugins.trac.wordpress.org/browser/tutor/tags/4.1.3/templates/profile/bio.php#L21"
   ],
   "kev": false,
-  "epss": 0.00317
+  "epss": 0.00242
  },
  "CVE-2026-118049": {
   "id": "CVE-2026-118049",
@@ -387660,7 +387660,7 @@
    "https://plugins.trac.wordpress.org/browser/tutor/tags/4.1.3/classes/Utils.php#L7657"
   ],
   "kev": false,
-  "epss": 0.01005
+  "epss": 0.00737
  },
  "CVE-2026-118061": {
   "id": "CVE-2026-118061",
@@ -387680,7 +387680,7 @@
    "https://plugins.trac.wordpress.org/browser/vikbooking/tags/1.8.16/site/controller.php#L4598"
   ],
   "kev": false,
-  "epss": 0.00428
+  "epss": 0.00309
  },
  "CVE-2026-119061": {
   "id": "CVE-2026-119061",
@@ -387700,7 +387700,7 @@
    "https://plugins.trac.wordpress.org/browser/vikbooking/tags/1.8.20/site/controller.php#L304"
   ],
   "kev": false,
-  "epss": 0.00705
+  "epss": 0.00424
  },
  "CVE-2026-119114": {
   "id": "CVE-2026-119114",
@@ -387720,7 +387720,7 @@
    "https://plugins.trac.wordpress.org/browser/wp-fastest-cache/tags/1.5.3/wpFastestCache.php#L1517"
   ],
   "kev": false,
-  "epss": 0.0103
+  "epss": 0.00902
  },
  "CVE-2026-119216": {
   "id": "CVE-2026-119216",
@@ -387740,7 +387740,7 @@
    "https://plugins.trac.wordpress.org/browser/stream/tags/4.4.0/classes/class-admin.php#L175"
   ],
   "kev": false,
-  "epss": 0.00588
+  "epss": 0.00443
  },
  "CVE-2026-119608": {
   "id": "CVE-2026-119608",
@@ -387760,7 +387760,7 @@
    "https://plugins.trac.wordpress.org/browser/wordpress-popup/tags/7.8.14.4/inc/hustle-modules-common-admin-ajax.php#L410"
   ],
   "kev": false,
-  "epss": 0.00349
+  "epss": 0.00252
  },
  "CVE-2026-120119": {
   "id": "CVE-2026-120119",
@@ -387780,7 +387780,7 @@
    "https://plugins.trac.wordpress.org/browser/woocommerce-products-filter/trunk/ext/products_messenger/index.php#L339"
   ],
   "kev": false,
-  "epss": 0.00442
+  "epss": 0.00362
  },
  "CVE-2026-120526": {
   "id": "CVE-2026-120526",
@@ -387800,7 +387800,7 @@
    "https://plugins.trac.wordpress.org/browser/wc-multivendor-membership/tags/2.12.0/controllers/wcfmvm-controller-memberships-registration.php#L394"
   ],
   "kev": false,
-  "epss": 0.00458
+  "epss": 0.00328
  },
  "CVE-2026-120743": {
   "id": "CVE-2026-120743",
@@ -387820,7 +387820,7 @@
    "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.37/includes/class-appointment-model.php#L405"
   ],
   "kev": false,
-  "epss": 0.00323
+  "epss": 0.00347
  },
  "CVE-2026-122230": {
   "id": "CVE-2026-122230",
@@ -387840,7 +387840,7 @@
    "https://plugins.trac.wordpress.org/browser/thim-elementor-kit/tags/1.4.8/inc/elementor/class-elementor.php#L397"
   ],
   "kev": false,
-  "epss": 0.00388
+  "epss": 0.00236
  },
  "CVE-2026-124214": {
   "id": "CVE-2026-124214",
@@ -387860,7 +387860,7 @@
    "https://plugins.trac.wordpress.org/browser/wp-data-access/tags/5.5.92/WPDataAccess/List_Table/WPDA_List_Table.php#L943"
   ],
   "kev": false,
-  "epss": 0.006
+  "epss": 0.00389
  },
  "CVE-2026-127133": {
   "id": "CVE-2026-127133",
@@ -387880,7 +387880,7 @@
    "https://plugins.trac.wordpress.org/browser/stream/tags/4.4.0/classes/class-db.php#L122"
   ],
   "kev": false,
-  "epss": 0.00334
+  "epss": 0.00201
  },
  "CVE-2026-131609": {
   "id": "CVE-2026-131609",
@@ -387900,7 +387900,7 @@
    "https://plugins.trac.wordpress.org/browser/woocommerce-germanized/tags/4.1.8/packages/eu-order-withdrawal-button-for-woocommerce/src/Admin/WithdrawalTable.php#L1036"
   ],
   "kev": false,
-  "epss": 0.0055
+  "epss": 0.00331
  },
  "CVE-2026-133367": {
   "id": "CVE-2026-133367",
@@ -387920,7 +387920,7 @@
    "https://plugins.trac.wordpress.org/browser/woo-bought-together/tags/8.0.2/includes/class-woobt.php#L624"
   ],
   "kev": false,
-  "epss": 0.00805
+  "epss": 0.00478
  },
  "CVE-2026-133964": {
   "id": "CVE-2026-133964",
@@ -387941,7 +387941,7 @@
    "https://vuldb.com/cve/CVE-2026-133964"
   ],
   "kev": false,
-  "epss": 0.00551
+  "epss": 0.0033
  },
  "CVE-2026-87092": {
   "id": "CVE-2026-87092",
@@ -387961,7 +387961,7 @@
    "https://plugins.trac.wordpress.org/browser/unlimited-elements-for-elementor/trunk/inc_php/unitecreator_helper.class.php#L1033"
   ],
   "kev": false,
-  "epss": 0.00887
+  "epss": 0.00764
  },
  "CVE-2022-4998": {
   "id": "CVE-2022-4998",
@@ -387982,7 +387982,7 @@
    "https://vuldb.com/submit/1046157"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.01235
  },
  "CVE-2026-128361": {
   "id": "CVE-2026-128361",
@@ -388002,7 +388002,7 @@
    "https://github.com/phoenixframework/phoenix/commit/44e7618370629df93711cd6169789fd0d8f3678e"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00604
  },
  "CVE-2026-129344": {
   "id": "CVE-2026-129344",
@@ -388022,7 +388022,7 @@
    "https://github.com/phoenixframework/phoenix/commit/30e5d9d7704b964772c131314508c45ed85ed807"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00717
  },
  "CVE-2026-107654": {
   "id": "CVE-2026-107654",
@@ -388042,7 +388042,7 @@
    "https://plugins.trac.wordpress.org/browser/wpguppy-lite/trunk/includes/class-wp-guppy-rest-api.php#L1785"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00338
  },
  "CVE-2026-107747": {
   "id": "CVE-2026-107747",
@@ -388062,7 +388062,7 @@
    "https://plugins.trac.wordpress.org/browser/wp-custom-admin-interface/tags/7.43/wp-custom-admin-interface.php#L1869"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00201
  },
  "CVE-2026-107771": {
   "id": "CVE-2026-107771",
@@ -388082,7 +388082,7 @@
    "https://plugins.trac.wordpress.org/browser/speed-booster-pack/tags/4.5.9.1/includes/classes/class-sbp-lazy-loader.php#L99"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00217
  },
  "CVE-2026-109196": {
   "id": "CVE-2026-109196",
@@ -388102,7 +388102,7 @@
    "https://plugins.trac.wordpress.org/browser/fv-player/trunk/models/db.php#L1276"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00388
  },
  "CVE-2026-116518": {
   "id": "CVE-2026-116518",
@@ -388122,7 +388122,7 @@
    "https://plugins.trac.wordpress.org/browser/elasticpress/tags/5.3.5/includes/classes/QueryLogger.php#L312"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00247
  },
  "CVE-2026-119157": {
   "id": "CVE-2026-119157",
@@ -388142,7 +388142,7 @@
    "https://plugins.trac.wordpress.org/browser/capability-manager-enhanced/tags/2.53.0/includes/features/restrict-profile-features.php#L34"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00361
  },
  "CVE-2026-119177": {
   "id": "CVE-2026-119177",
@@ -388162,7 +388162,7 @@
    "https://plugins.trac.wordpress.org/browser/real-cookie-banner/tags/5.4.0/vendor/devowl-wp/fast-html-tag/src/FastHtmlTag.php#L165"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00397
  },
  "CVE-2026-120736": {
   "id": "CVE-2026-120736",
@@ -388182,7 +388182,7 @@
    "https://plugins.trac.wordpress.org/browser/automatorwp/tags/6.0.6/integrations/contact-form-7/includes/triggers/anonymous-submit-form.php#L97"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00241
  },
  "CVE-2026-120745": {
   "id": "CVE-2026-120745",
@@ -388202,7 +388202,7 @@
    "https://plugins.trac.wordpress.org/browser/wp-user-avatar/tags/4.17.7/src/ShortcodeParser/Builder/FrontendProfileBuilder.php#L342"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00236
  },
  "CVE-2026-122228": {
   "id": "CVE-2026-122228",
@@ -388222,7 +388222,7 @@
    "https://plugins.trac.wordpress.org/browser/wp-user-avatar/tags/4.18.0/src/Themes/DragDrop/AbstractMemberDirectoryTheme.php#L132"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00323
  },
  "CVE-2026-122264": {
   "id": "CVE-2026-122264",
@@ -388242,7 +388242,7 @@
    "https://plugins.trac.wordpress.org/browser/wpforo/tags/3.2.4/classes/Members.php#L1079"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00201
  },
  "CVE-2026-123830": {
   "id": "CVE-2026-123830",
@@ -388262,7 +388262,7 @@
    "https://plugins.trac.wordpress.org/browser/wpforo/tags/3.2.4/includes/hooks.php#L2251"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00241
  },
  "CVE-2026-123970": {
   "id": "CVE-2026-123970",
@@ -388282,7 +388282,7 @@
    "https://plugins.trac.wordpress.org/browser/wpforo/tags/3.2.4/classes/Topics.php#L397"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00234
  },
  "CVE-2026-124216": {
   "id": "CVE-2026-124216",
@@ -388302,7 +388302,7 @@
    "https://plugins.trac.wordpress.org/browser/sierotki/tags/3.4.5/includes/iworks/class-iworks-orphan.php#L484"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00433
  },
  "CVE-2026-124248": {
   "id": "CVE-2026-124248",
@@ -388322,7 +388322,7 @@
    "https://plugins.trac.wordpress.org/browser/gptranslate/tags/2.34.17/serverside-translations.php#L1986"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00482
  },
  "CVE-2026-124976": {
   "id": "CVE-2026-124976",
@@ -388342,7 +388342,7 @@
    "https://plugins.trac.wordpress.org/browser/swift-performance-lite/trunk/includes/classes/class.ajax.php#L531"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00241
  },
  "CVE-2026-126705": {
   "id": "CVE-2026-126705",
@@ -388362,7 +388362,7 @@
    "https://plugins.trac.wordpress.org/browser/wp-job-portal/tags/2.8.0/modules/user/controller.php#L141"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00269
  },
  "CVE-2026-130323": {
   "id": "CVE-2026-130323",
@@ -388382,7 +388382,7 @@
    "https://plugins.trac.wordpress.org/browser/stripe-payments/tags/2.1.4/public/assets/js/stripe-handler-ng.js#L178"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00515
  },
  "CVE-2026-129794": {
   "id": "CVE-2026-129794",
@@ -388400,7 +388400,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00436
  },
  "CVE-2026-129795": {
   "id": "CVE-2026-129795",
@@ -388419,7 +388419,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00298
  },
  "CVE-2026-129796": {
   "id": "CVE-2026-129796",
@@ -388438,7 +388438,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00344
  },
  "CVE-2026-129797": {
   "id": "CVE-2026-129797",
@@ -388456,7 +388456,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00338
  },
  "CVE-2026-129798": {
   "id": "CVE-2026-129798",
@@ -388474,7 +388474,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00344
  },
  "CVE-2026-129799": {
   "id": "CVE-2026-129799",
@@ -388492,7 +388492,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00298
  },
  "CVE-2026-129800": {
   "id": "CVE-2026-129800",
@@ -388510,7 +388510,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00291
  },
  "CVE-2026-129801": {
   "id": "CVE-2026-129801",
@@ -388528,7 +388528,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00308
  },
  "CVE-2026-129802": {
   "id": "CVE-2026-129802",
@@ -388546,7 +388546,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00261
  },
  "CVE-2026-129803": {
   "id": "CVE-2026-129803",
@@ -388565,7 +388565,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00267
  },
  "CVE-2026-129804": {
   "id": "CVE-2026-129804",
@@ -388584,7 +388584,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00214
  },
  "CVE-2026-129805": {
   "id": "CVE-2026-129805",
@@ -388602,7 +388602,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00249
  },
  "CVE-2026-129806": {
   "id": "CVE-2026-129806",
@@ -388620,7 +388620,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00249
  },
  "CVE-2026-129807": {
   "id": "CVE-2026-129807",
@@ -388638,7 +388638,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00298
  },
  "CVE-2026-129808": {
   "id": "CVE-2026-129808",
@@ -388656,7 +388656,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00291
  },
  "CVE-2026-129809": {
   "id": "CVE-2026-129809",
@@ -388674,7 +388674,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00255
  },
  "CVE-2026-129810": {
   "id": "CVE-2026-129810",
@@ -388692,7 +388692,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00255
  },
  "CVE-2026-129811": {
   "id": "CVE-2026-129811",
@@ -388710,7 +388710,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00338
  },
  "CVE-2026-129812": {
   "id": "CVE-2026-129812",
@@ -388728,7 +388728,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00249
  },
  "CVE-2026-129813": {
   "id": "CVE-2026-129813",
@@ -388746,7 +388746,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00253
  },
  "CVE-2026-129814": {
   "id": "CVE-2026-129814",
@@ -388764,7 +388764,7 @@
    "https://docs.rt-labs.com/security/advisories/rrtl-261119-01.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00239
  },
  "CVE-2025-61963": {
   "id": "CVE-2025-61963",
@@ -388782,7 +388782,7 @@
    "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-3050.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00207
  },
  "CVE-2026-0462": {
   "id": "CVE-2026-0462",
@@ -388800,7 +388800,7 @@
    "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-3059.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0019
  },
  "CVE-2026-133983": {
   "id": "CVE-2026-133983",
@@ -388821,7 +388821,7 @@
    "https://github.com/eigent-ai/eigent/pull/1842"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00522
  },
  "CVE-2026-28235": {
   "id": "CVE-2026-28235",
@@ -388839,7 +388839,7 @@
    "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-7067.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00197
  },
  "CVE-2026-40671": {
   "id": "CVE-2026-40671",
@@ -388857,7 +388857,7 @@
    "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-3061.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00191
  },
  "CVE-2026-74127": {
   "id": "CVE-2026-74127",
@@ -388875,7 +388875,7 @@
    "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-7075.html"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00407
  },
  "CVE-2026-133985": {
   "id": "CVE-2026-133985",
@@ -388896,7 +388896,7 @@
    "https://vuldb.com/submit/1052043"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00572
  },
  "CVE-2026-124626": {
   "id": "CVE-2026-124626",
@@ -388916,7 +388916,7 @@
    "https://github.com/fastify/fastify-express/security/advisories/GHSA-662w-h4p6-jq4p"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00792
  },
  "CVE-2026-129504": {
   "id": "CVE-2026-129504",
@@ -388936,7 +388936,7 @@
    "https://github.com/fastify/fastify-express/security/advisories/GHSA-f44m-4qwg-5587"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00488
  },
  "CVE-2026-129850": {
   "id": "CVE-2026-129850",
@@ -388956,7 +388956,7 @@
    "https://github.com/fastify/fastify-express/security/advisories/GHSA-6rmc-f24g-hmp6"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00515
  },
  "CVE-2026-133120": {
   "id": "CVE-2026-133120",
@@ -388976,7 +388976,7 @@
    "https://github.com/fastify/fastify-express/security/advisories/GHSA-w877-hjcp-88rc"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00596
  },
  "CVE-2026-133250": {
   "id": "CVE-2026-133250",
@@ -388996,7 +388996,7 @@
    "https://github.com/fastify/middie/security/advisories/GHSA-gcf6-j9m3-p97x"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00653
  },
  "CVE-2026-133273": {
   "id": "CVE-2026-133273",
@@ -389015,7 +389015,7 @@
    "https://github.com/fastify/fastify-swagger-ui/security/advisories/GHSA-j7qm-jhpc-mj26"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00382
  },
  "CVE-2026-133312": {
   "id": "CVE-2026-133312",
@@ -389035,7 +389035,7 @@
    "https://github.com/fastify/fastify-rate-limit/security/advisories/GHSA-24mh-2vvh-5r45"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00368
  },
  "CVE-2026-133867": {
   "id": "CVE-2026-133867",
@@ -389055,7 +389055,7 @@
    "https://github.com/fastify/fastify-express/security/advisories/GHSA-84w6-xrf3-f8q8"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00653
  },
  "CVE-2026-133988": {
   "id": "CVE-2026-133988",
@@ -389075,7 +389075,7 @@
    "https://vuldb.com/vuln/441591"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00229
  },
  "CVE-2026-134242": {
   "id": "CVE-2026-134242",
@@ -389094,7 +389094,7 @@
    "https://www.vulncheck.com/advisories/parse-server-2.5.0-before-8.6.121-and-9.0.0-before-9.11.1-alpha.1-denial-of-service-via-beforesave-trigger"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00915
  },
  "CVE-2026-134243": {
   "id": "CVE-2026-134243",
@@ -389113,7 +389113,7 @@
    "https://www.vulncheck.com/advisories/parse-server-before-8.6.122-and-9.0.0-before-9.11.1-alpha.2-beforesave-protection-bypass-via-dot-notation"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0029
  },
  "CVE-2026-134244": {
   "id": "CVE-2026-134244",
@@ -389133,7 +389133,7 @@
    "https://www.vulncheck.com/advisories/siyuan-3.8.0-before-3.8.10-lan-sync-metadata-disclosure-before-peer-authentication"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00178
  },
  "CVE-2026-134245": {
   "id": "CVE-2026-134245",
@@ -389153,7 +389153,7 @@
    "https://www.vulncheck.com/advisories/siyuan-3.8.0-before-3.8.10-incorrect-authorization-via-assets-cross-document-asset-collision"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00462
  },
  "CVE-2026-134246": {
   "id": "CVE-2026-134246",
@@ -389173,7 +389173,7 @@
    "https://www.vulncheck.com/advisories/siyuan-3.6.0-before-3.6.2-and-3.7.3-before-3.8.10-missing-authorization-in-getdomtext-exposes-cached-ocr-text"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00638
  },
  "CVE-2026-134247": {
   "id": "CVE-2026-134247",
@@ -389193,7 +389193,7 @@
    "https://www.vulncheck.com/advisories/siyuan-3.8.0-before-3.8.10-incorrect-authorization-exposes-asset-text-via-getassetcontentbypath"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00763
  },
  "CVE-2026-134248": {
   "id": "CVE-2026-134248",
@@ -389213,7 +389213,7 @@
    "https://www.vulncheck.com/advisories/siyuan-3.6.0-before-3.8.10-information-disclosure-via-copystdmarkdown-block-references"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00729
  },
  "CVE-2026-134249": {
   "id": "CVE-2026-134249",
@@ -389233,7 +389233,7 @@
    "https://www.vulncheck.com/advisories/siyuan-before-3.8.10-authentication-bypass-via-x-forwarded-for-on-history-route"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00601
  },
  "CVE-2026-134250": {
   "id": "CVE-2026-134250",
@@ -389252,7 +389252,7 @@
    "https://www.vulncheck.com/advisories/grav-form-plugin-1.1.0-before-9.1.40-stored-xss-via-unsanitized-file-uploads"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0025
  },
  "CVE-2026-134251": {
   "id": "CVE-2026-134251",
@@ -389271,7 +389271,7 @@
    "https://www.vulncheck.com/advisories/grav-api-plugin-1.0.16-before-1.1.11-scoped-api-key-authorization-bypass"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00311
  },
  "CVE-2026-134253": {
   "id": "CVE-2026-134253",
@@ -389290,7 +389290,7 @@
    "https://www.vulncheck.com/advisories/grav-api-plugin-1.0.0-before-1.1.4-rce-via-blueprint-upload-theme-template-write"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.01255
  },
  "CVE-2026-134254": {
   "id": "CVE-2026-134254",
@@ -389309,7 +389309,7 @@
    "https://www.vulncheck.com/advisories/admidio-5.0.0-before-5.0.18-path-traversal-via-documents-files-rename"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00605
  },
  "CVE-2026-134255": {
   "id": "CVE-2026-134255",
@@ -389328,7 +389328,7 @@
    "https://www.vulncheck.com/advisories/admidio-5.0.17-stored-xss-via-street-field-in-role-member-assignment"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00138
  },
  "CVE-2026-134256": {
   "id": "CVE-2026-134256",
@@ -389347,7 +389347,7 @@
    "https://www.vulncheck.com/advisories/admidio-5.0.17-missing-authorization-in-ckeditor-upload-handler-php-image-upload"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00382
  },
  "CVE-2026-134257": {
   "id": "CVE-2026-134257",
@@ -389366,7 +389366,7 @@
    "https://www.vulncheck.com/advisories/admidio-before-5.0.18-insufficient-session-expiration-after-password-reset"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00237
  },
  "CVE-2026-134258": {
   "id": "CVE-2026-134258",
@@ -389385,7 +389385,7 @@
    "https://www.vulncheck.com/advisories/admidio-5.0.0-before-5.0.18-path-traversal-to-stored-xss-via-file-rename"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00698
  },
  "CVE-2026-134259": {
   "id": "CVE-2026-134259",
@@ -389404,7 +389404,7 @@
    "https://www.vulncheck.com/advisories/admidio-5.0.16-before-5.0.18-stored-xss-via-svg-upload-in-documents-files"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00168
  },
  "CVE-2026-134260": {
   "id": "CVE-2026-134260",
@@ -389423,7 +389423,7 @@
    "https://www.vulncheck.com/advisories/admidio-5.0.0-before-5.0.18-authorization-bypass-via-bulk-profile-edit-in-profile-new-php"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00249
  },
  "CVE-2026-134261": {
   "id": "CVE-2026-134261",
@@ -389442,7 +389442,7 @@
    "https://www.vulncheck.com/advisories/admidio-5.0.17-idor-in-mylist-php-exposes-private-list-configurations"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00453
  },
  "CVE-2026-134262": {
   "id": "CVE-2026-134262",
@@ -389461,7 +389461,7 @@
    "https://www.vulncheck.com/advisories/admidio-5.0.0-before-5.0.18-stored-xss-via-role-name-in-profile-view"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00635
  },
  "CVE-2026-134264": {
   "id": "CVE-2026-134264",
@@ -389480,7 +389480,7 @@
    "https://www.vulncheck.com/advisories/admidio-5.0.2-before-5.0.17-arbitrary-file-read-via-ecard-message-img-src"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00341
  },
  "CVE-2026-134265": {
   "id": "CVE-2026-134265",
@@ -389499,7 +389499,7 @@
    "https://www.vulncheck.com/advisories/vikunja-2.4.0-before-2.8.0-denial-of-service-via-unbounded-table-rowspan-colspan"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00381
  },
  "CVE-2026-134266": {
   "id": "CVE-2026-134266",
@@ -389518,7 +389518,7 @@
    "https://www.vulncheck.com/advisories/vikunja-0.19.0-before-2.8.0-denial-of-service-via-datemath-business-day-filter"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0054
  },
  "CVE-2026-134267": {
   "id": "CVE-2026-134267",
@@ -389537,7 +389537,7 @@
    "https://www.vulncheck.com/advisories/vikunja-0.21.0-before-2.8.0-denial-of-service-via-caldav-valarm-rendering"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00478
  },
  "CVE-2026-134268": {
   "id": "CVE-2026-134268",
@@ -389556,7 +389556,7 @@
    "https://www.vulncheck.com/advisories/vikunja-0.21.0-before-2.8.0-denial-of-service-via-project-position-recalculation"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00439
  },
  "CVE-2026-134269": {
   "id": "CVE-2026-134269",
@@ -389575,7 +389575,7 @@
    "https://www.vulncheck.com/advisories/vikunja-0.18.0-before-2.8.0-denial-of-service-via-user-export-amplification"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00307
  },
  "CVE-2026-134270": {
   "id": "CVE-2026-134270",
@@ -389594,7 +389594,7 @@
    "https://www.vulncheck.com/advisories/vikunja-0.19.0-before-2.8.0-caldav-vtodo-parameter-cpu-denial-of-service"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00734
  },
  "CVE-2026-134271": {
   "id": "CVE-2026-134271",
@@ -389613,7 +389613,7 @@
    "https://www.vulncheck.com/advisories/vikunja-from-1.0.0-before-2.8.0-denial-of-service-via-attachment-preview-resizing"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0054
  },
  "CVE-2026-134272": {
   "id": "CVE-2026-134272",
@@ -389632,7 +389632,7 @@
    "https://www.vulncheck.com/advisories/vikunja-0.9.0-before-2.8.0-email-disclosure-via-project-link-share-list"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0042
  },
  "CVE-2026-134273": {
   "id": "CVE-2026-134273",
@@ -389651,7 +389651,7 @@
    "https://www.vulncheck.com/advisories/vikunja-from-2.6.0-before-2.8.0-denial-of-service-via-planka-migration"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00307
  },
  "CVE-2026-134275": {
   "id": "CVE-2026-134275",
@@ -389670,7 +389670,7 @@
    "https://www.vulncheck.com/advisories/vikunja-0.8.0-before-2.8.0-denial-of-service-via-caldav-propfind-duplicate-properties"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00436
  },
  "CVE-2026-134276": {
   "id": "CVE-2026-134276",
@@ -389689,7 +389689,7 @@
    "https://www.vulncheck.com/advisories/vikunja-from-2.2.1-before-2.8.0-totp-replay-protection-bypass-via-whitespace"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00429
  },
  "CVE-2026-134277": {
   "id": "CVE-2026-134277",
@@ -389708,7 +389708,7 @@
    "https://www.vulncheck.com/advisories/vikunja-0.16.0-before-2.8.0-trello-api-token-exposure-via-migration-logs"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00403
  },
  "CVE-2026-134278": {
   "id": "CVE-2026-134278",
@@ -389727,7 +389727,7 @@
    "https://www.vulncheck.com/advisories/vikunja-2.3.0-before-2.8.0-denial-of-service-via-csv-import-label-mappings"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00307
  },
  "CVE-2026-134279": {
   "id": "CVE-2026-134279",
@@ -389746,7 +389746,7 @@
    "https://www.vulncheck.com/advisories/vikunja-from-0.20.5-before-2.8.0-login-csrf-via-oidc-callback-state-check"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00096
  },
  "CVE-2026-134280": {
   "id": "CVE-2026-134280",
@@ -389765,7 +389765,7 @@
    "https://www.vulncheck.com/advisories/vikunja-0.17.0-before-2.8.0-information-disclosure-via-task-deleted-webhook-payload"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00394
  },
  "CVE-2026-134281": {
   "id": "CVE-2026-134281",
@@ -389784,7 +389784,7 @@
    "https://www.vulncheck.com/advisories/vikunja-2.2.0-before-2.8.0-information-disclosure-via-tasks-overdue-webhook-payload"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00392
  },
  "CVE-2026-134282": {
   "id": "CVE-2026-134282",
@@ -389803,7 +389803,7 @@
    "https://www.vulncheck.com/advisories/vikunja-0.14.0-before-2.8.0-arbitrary-file-read-and-privilege-escalation-via-xml-binding"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00693
  },
  "CVE-2026-134284": {
   "id": "CVE-2026-134284",
@@ -389822,7 +389822,7 @@
    "https://www.vulncheck.com/advisories/vikunja-from-1.0.0-before-2.8.0-account-takeover-via-oidc-email-fallback"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00337
  },
  "CVE-2026-134286": {
   "id": "CVE-2026-134286",
@@ -389841,7 +389841,7 @@
    "https://www.vulncheck.com/advisories/openremote-1.2.0-before-1.34.0-authorization-bypass-via-alarmfacade"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0052
  },
  "CVE-2026-134287": {
   "id": "CVE-2026-134287",
@@ -389860,7 +389860,7 @@
    "https://www.vulncheck.com/advisories/openremote-before-1.34.0-authentication-bypass-via-x-509-mqtt-provisioning"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0057
  },
  "CVE-2026-134288": {
   "id": "CVE-2026-134288",
@@ -389880,7 +389880,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-3.0.0-before-4.0.0-event-throw-guard-bypass-via-interactive-transactions"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00582
  },
  "CVE-2026-134289": {
   "id": "CVE-2026-134289",
@@ -389899,7 +389899,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-1.0.0-before-4.0.0-credential-disclosure-via-cli-help-output"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00107
  },
  "CVE-2026-134290": {
   "id": "CVE-2026-134290",
@@ -389918,7 +389918,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-2.2.0-before-4.0.0-information-disclosure-via-on-delete-reject-errors"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00369
  },
  "CVE-2026-134291": {
   "id": "CVE-2026-134291",
@@ -389937,7 +389937,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-3.0.0-before-4.0.0-path-traversal-via-filesystem-bucket-symlinks"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00682
  },
  "CVE-2026-134292": {
   "id": "CVE-2026-134292",
@@ -389956,7 +389956,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-1.0.0-before-4.0.0-function-capability-bypass-via-javascript-built-in-bridge"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00703
  },
  "CVE-2026-134293": {
   "id": "CVE-2026-134293",
@@ -389975,7 +389975,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-3.1.0-before-4.0.0-sql-injection-via-mcp-tool-identifier-escaped-backticks"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00263
  },
  "CVE-2026-134294": {
   "id": "CVE-2026-134294",
@@ -389994,7 +389994,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-3.0.0-before-4.0.0-path-traversal-via-windows-backslashes-in-bucket-keys"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00487
  },
  "CVE-2026-134295": {
   "id": "CVE-2026-134295",
@@ -390013,7 +390013,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-3.0.0-before-4.0.0-path-traversal-in-direct-filesystem-buckets"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00713
  },
  "CVE-2026-134298": {
   "id": "CVE-2026-134298",
@@ -390032,7 +390032,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-3.0.0-before-4.0.0-viewer-role-authorization-bypass-via-implicit-table-creation"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00378
  },
  "CVE-2026-134299": {
   "id": "CVE-2026-134299",
@@ -390052,7 +390052,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-3.0.4-before-4.0.0-memory-exhaustion-via-graphql-websocket-upgrade"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.01221
  },
  "CVE-2026-134300": {
   "id": "CVE-2026-134300",
@@ -390071,7 +390071,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-2.2.0-before-4.0.0-permission-bypass-via-reference-on-delete-cascade"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00363
  },
  "CVE-2026-134301": {
   "id": "CVE-2026-134301",
@@ -390090,7 +390090,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-before-4.0.0-write-blocking-guard-bypass-via-live-query-expressions"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0055
  },
  "CVE-2026-134302": {
   "id": "CVE-2026-134302",
@@ -390109,7 +390109,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-1.0.0-before-4.0.0-dos-via-decimal-overflow-in-math-sum-and-math-product"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0054
  },
  "CVE-2026-134303": {
   "id": "CVE-2026-134303",
@@ -390129,7 +390129,7 @@
    "https://www.vulncheck.com/advisories/surrealkv-before-1.1.0-out-of-bounds-read-via-internalkeyref-decoder"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00358
  },
  "CVE-2026-134306": {
   "id": "CVE-2026-134306",
@@ -390149,7 +390149,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-before-4.0.0-field-permission-bypass-via-wildcard-array-index-drift"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00253
  },
  "CVE-2026-134307": {
   "id": "CVE-2026-134307",
@@ -390168,7 +390168,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-3.0.0-before-4.0.0-permission-bypass-via-export-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00359
  },
  "CVE-2026-134309": {
   "id": "CVE-2026-134309",
@@ -390187,7 +390187,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-1.0.0-before-4.0.0-authorization-bypass-via-for-loop-variable-shadowing"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00566
  },
  "CVE-2026-134310": {
   "id": "CVE-2026-134310",
@@ -390206,7 +390206,7 @@
    "https://www.vulncheck.com/advisories/surrealdb-3.2.0-before-3.3.4-authorization-bypass-via-computed-field-permissions"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00434
  },
  "CVE-2026-134311": {
   "id": "CVE-2026-134311",
@@ -390225,7 +390225,7 @@
    "https://www.vulncheck.com/advisories/better-auth-1.3.0-before-1.7.16-privilege-escalation-via-admin-update-user-phone-number"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00232
  },
  "CVE-2026-134312": {
   "id": "CVE-2026-134312",
@@ -390244,7 +390244,7 @@
    "https://www.vulncheck.com/advisories/better-auth-0.4.9-before-1.7.16-oauth-unverified-email-account-takeover"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00329
  },
  "CVE-2026-134313": {
   "id": "CVE-2026-134313",
@@ -390263,7 +390263,7 @@
    "https://www.vulncheck.com/advisories/better-auth-before-1.7.16-and-1.8.0-beta.0-before-1.8.0-beta.5-session-mix-up-via-mysql-serial-ids"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00353
  },
  "CVE-2026-134314": {
   "id": "CVE-2026-134314",
@@ -390282,7 +390282,7 @@
    "https://www.vulncheck.com/advisories/better-auth-from-1.3.7-before-1.7.16-email-otp-race-condition-and-authentication-bypass"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00335
  },
  "CVE-2026-134315": {
   "id": "CVE-2026-134315",
@@ -390301,7 +390301,7 @@
    "https://www.vulncheck.com/advisories/better-auth-1.4.0-before-1.7.16-account-takeover-via-email-change-links"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00432
  },
  "CVE-2026-134316": {
   "id": "CVE-2026-134316",
@@ -390320,7 +390320,7 @@
    "https://www.vulncheck.com/advisories/better-auth-electron-before-1.7.16-auth-secret-disclosure-and-two-factor-bypass"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00306
  },
  "CVE-2026-134317": {
   "id": "CVE-2026-134317",
@@ -390339,7 +390339,7 @@
    "https://www.vulncheck.com/advisories/better-auth-stripe-before-1.7.16-authorization-bypass-via-stripecustomerid-mass-assignment"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0045
  },
  "CVE-2026-134318": {
   "id": "CVE-2026-134318",
@@ -390358,7 +390358,7 @@
    "https://www.vulncheck.com/advisories/better-auth-1.5.5-before-1.7.16-privilege-escalation-via-padded-invitation-role"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00453
  },
  "CVE-2026-134320": {
   "id": "CVE-2026-134320",
@@ -390377,7 +390377,7 @@
    "https://www.vulncheck.com/advisories/better-auth-passkey-before-1.7.16-improper-origin-and-user-verification-enforcement"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0019
  },
  "CVE-2026-134321": {
   "id": "CVE-2026-134321",
@@ -390396,7 +390396,7 @@
    "https://www.vulncheck.com/advisories/better-auth-before-1.7.16-session-revocation-bypass-via-secondary-storage-and-cookie-cache"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00135
  },
  "CVE-2026-134322": {
   "id": "CVE-2026-134322",
@@ -390415,7 +390415,7 @@
    "https://www.vulncheck.com/advisories/better-auth-0.4.12-beta.7-before-1.7.16-unverified-phone-number-account-takeover"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00427
  },
  "CVE-2026-134324": {
   "id": "CVE-2026-134324",
@@ -390435,7 +390435,7 @@
    "https://www.vulncheck.com/advisories/arcadedb-26.3.1-before-26.11.1-mcp-read-only-bypass-via-gremlin-groovy-analysis"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00751
  },
  "CVE-2026-134325": {
   "id": "CVE-2026-134325",
@@ -390455,7 +390455,7 @@
    "https://www.vulncheck.com/advisories/arcadedb-before-26.11.1-unauthenticated-redis-connection-hold-denial-of-service"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00898
  },
  "CVE-2026-134327": {
   "id": "CVE-2026-134327",
@@ -390475,7 +390475,7 @@
    "https://github.com/ArcadeData/arcadedb/security/advisories/GHSA-vpxw-wqc5-hvvj"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00319
  },
  "CVE-2026-134329": {
   "id": "CVE-2026-134329",
@@ -390494,7 +390494,7 @@
    "https://www.vulncheck.com/advisories/arcadedb-26.2.1-before-26.11.1-database-enumeration-via-mcp-tools-and-bolt-logon-flaw"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00223
  },
  "CVE-2026-134334": {
   "id": "CVE-2026-134334",
@@ -390513,7 +390513,7 @@
    "https://www.vulncheck.com/advisories/arcadedb-26.7.1-before-26.11.1-information-disclosure-via-full-text-bm25-statistics"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00503
  },
  "CVE-2026-134335": {
   "id": "CVE-2026-134335",
@@ -390532,7 +390532,7 @@
    "https://www.vulncheck.com/advisories/arcadedb-21.10.1-before-26.11.1-readtimeout-bypass-via-shared-statement-and-plan-cache"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00523
  },
  "CVE-2026-134337": {
   "id": "CVE-2026-134337",
@@ -390552,7 +390552,7 @@
    "https://www.vulncheck.com/advisories/arcadedb-26.8.1-before-26.11.1-native-image-read-only-bypass-via-nested-select-writes"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00749
  },
  "CVE-2026-134338": {
   "id": "CVE-2026-134338",
@@ -390571,7 +390571,7 @@
    "https://www.vulncheck.com/advisories/arcadedb-25.8.1-before-26.11.1-per-type-acl-bypass-via-alter-type-rename"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00303
  },
  "CVE-2026-134339": {
   "id": "CVE-2026-134339",
@@ -390590,7 +390590,7 @@
    "https://www.vulncheck.com/advisories/arcadedb-from-26.11.1-snapshot-before-26.11.1-authorization-bypass-via-batch-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00438
  },
  "CVE-2026-134341": {
   "id": "CVE-2026-134341",
@@ -390609,7 +390609,7 @@
    "https://www.vulncheck.com/advisories/actix-http-3.0.0-before-3.20.3-denial-of-service-via-large-window-brotli-decompression"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00936
  },
  "CVE-2026-134342": {
   "id": "CVE-2026-134342",
@@ -390628,7 +390628,7 @@
    "https://www.vulncheck.com/advisories/actix-http-3.18.10-before-3.20.2-http-request-smuggling-via-chunked-transfer-encoding-decoder"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00527
  },
  "CVE-2026-134347": {
   "id": "CVE-2026-134347",
@@ -390647,7 +390647,7 @@
    "https://www.vulncheck.com/advisories/actix-files-before-0.7.4-hidden-file-disclosure-via-windows-8.3-short-names"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.01077
  },
  "CVE-2026-134348": {
   "id": "CVE-2026-134348",
@@ -390666,7 +390666,7 @@
    "https://www.vulncheck.com/advisories/rclone-from-1.56.0-before-1.76.0-username-enumeration-via-htpasswd-timing-oracle"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00392
  },
  "CVE-2026-134349": {
   "id": "CVE-2026-134349",
@@ -390685,7 +390685,7 @@
    "https://www.vulncheck.com/advisories/rclone-from-1.46.0-before-1.76.0-denial-of-service-via-rc-json-requests"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00189
  },
  "CVE-2026-134350": {
   "id": "CVE-2026-134350",
@@ -390704,7 +390704,7 @@
    "https://www.vulncheck.com/advisories/rclone-1.67.0-before-1.76.0-auth-token-leak-via-ulozto-backend-redirect"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0034
  },
  "CVE-2026-134351": {
   "id": "CVE-2026-134351",
@@ -390723,7 +390723,7 @@
    "https://www.vulncheck.com/advisories/rclone-1.49.0-before-1.76.0-auth-proxy-revocation-bypass-via-cached-credentials"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00193
  },
  "CVE-2026-134352": {
   "id": "CVE-2026-134352",
@@ -390742,7 +390742,7 @@
    "https://www.vulncheck.com/advisories/rclone-1.51.0-before-1.76.0-authentication-bypass-via-serve-sftp-auth-proxy-cache"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00395
  },
  "CVE-2026-134353": {
   "id": "CVE-2026-134353",
@@ -390761,7 +390761,7 @@
    "https://www.vulncheck.com/advisories/rclone-before-1.76.0-credential-leak-via-swift-netstorage-and-seafile-redirects"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00344
  },
  "CVE-2026-134354": {
   "id": "CVE-2026-134354",
@@ -390780,7 +390780,7 @@
    "https://www.vulncheck.com/advisories/rclone-1.59.0-before-1.76.0-symlink-escape-via-extended-attribute-metadata-write"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00243
  },
  "CVE-2026-134355": {
   "id": "CVE-2026-134355",
@@ -390799,7 +390799,7 @@
    "https://www.vulncheck.com/advisories/azuracast-before-0.24.1-icecast-password-exposure-via-profile-edit-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00334
  },
  "CVE-2026-134356": {
   "id": "CVE-2026-134356",
@@ -390818,7 +390818,7 @@
    "https://www.vulncheck.com/advisories/azuracast-0.19.0-before-0.24.1-cross-station-playlist-injection-via-media-edit-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00217
  },
  "CVE-2026-134359": {
   "id": "CVE-2026-134359",
@@ -390837,7 +390837,7 @@
    "https://www.vulncheck.com/advisories/azuracast-before-0.24.1-os-command-injection-via-liquidsoap-annotation-values"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.01446
  },
  "CVE-2026-134360": {
   "id": "CVE-2026-134360",
@@ -390856,7 +390856,7 @@
    "https://www.vulncheck.com/advisories/heym-before-0.0.148-local-file-read-via-playwright-navigate-step"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00494
  },
  "CVE-2026-134361": {
   "id": "CVE-2026-134361",
@@ -390875,7 +390875,7 @@
    "https://www.vulncheck.com/advisories/coder-2.37.0-before-2.37.1-denial-of-service-via-agent-rpc-calls"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0054
  },
  "CVE-2026-134362": {
   "id": "CVE-2026-134362",
@@ -390894,7 +390894,7 @@
    "https://www.vulncheck.com/advisories/coder-from-2.38.0-before-2.38.6-csrf-bypass-via-unanchored-exemption-patterns"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00099
  },
  "CVE-2026-134363": {
   "id": "CVE-2026-134363",
@@ -390913,7 +390913,7 @@
    "https://www.vulncheck.com/advisories/coder-2.38.0-before-2.38.5-symlink-path-traversal-via-read-skill-file"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00295
  },
  "CVE-2026-134364": {
   "id": "CVE-2026-134364",
@@ -390932,7 +390932,7 @@
    "https://www.vulncheck.com/advisories/pypdf-3.7.1-before-7.0.0-placeholder-recovery-via-file-identifier-in-encrypted-documents"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00563
  },
  "CVE-2026-134366": {
   "id": "CVE-2026-134366",
@@ -390951,7 +390951,7 @@
    "https://www.vulncheck.com/advisories/pypdf-before-7.0.0-memory-exhaustion-via-cross-reference-streams-with-identical-offsets"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0049
  },
  "CVE-2026-134367": {
   "id": "CVE-2026-134367",
@@ -390970,7 +390970,7 @@
    "https://www.vulncheck.com/advisories/pypdf-2.4.2-before-7.0.0-excessive-memory-usage-via-xfa-forms"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00278
  },
  "CVE-2026-134370": {
   "id": "CVE-2026-134370",
@@ -390989,7 +390989,7 @@
    "https://www.vulncheck.com/advisories/frappe-framework-before-16.33.1-authenticated-arbitrary-file-read-via-file-attachment-handling"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00307
  },
  "CVE-2026-134371": {
   "id": "CVE-2026-134371",
@@ -391008,7 +391008,7 @@
    "https://www.vulncheck.com/advisories/frappe-8.8.0-before-16.30.0-idor-via-sms-settings-get-contact-number-api"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00453
  },
  "CVE-2026-134372": {
   "id": "CVE-2026-134372",
@@ -391027,7 +391027,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-4.3.0-before-15.121.6-sql-injection-in-selling-and-buying-modules"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00394
  },
  "CVE-2026-134373": {
   "id": "CVE-2026-134373",
@@ -391046,7 +391046,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-14.0.0-before-15.121.0-missing-authorization-in-bulk-transaction-retry"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00217
  },
  "CVE-2026-134374": {
   "id": "CVE-2026-134374",
@@ -391065,7 +391065,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-15.0.0-before-15.124.0-missing-authorization-in-assets-depreciation-endpoints"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134375": {
   "id": "CVE-2026-134375",
@@ -391084,7 +391084,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-13.0.0-before-15.124.0-missing-authorization-in-accounts-payment-entries"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00269
  },
  "CVE-2026-134376": {
   "id": "CVE-2026-134376",
@@ -391103,7 +391103,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-11.0.0-beta-before-15.122.0-missing-authorization-in-accounts-invoice-subscription-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00473
  },
  "CVE-2026-134377": {
   "id": "CVE-2026-134377",
@@ -391122,7 +391122,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-7.1.0-before-15.121.0-missing-authorization-in-projects-module-timesheet-endpoints"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134378": {
   "id": "CVE-2026-134378",
@@ -391141,7 +391141,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-12.7.0-before-15.124.0-information-disclosure-via-public-supplier-e-invoice-files"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0051
  },
  "CVE-2026-134379": {
   "id": "CVE-2026-134379",
@@ -391160,7 +391160,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-8.2.5-before-15.121.4-missing-authorization-in-manufacturing-work-order-endpoints"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00338
  },
  "CVE-2026-134381": {
   "id": "CVE-2026-134381",
@@ -391179,7 +391179,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-5.0.0-before-15.121.4-missing-authorization-in-purchase-order-close-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00465
  },
  "CVE-2026-134382": {
   "id": "CVE-2026-134382",
@@ -391198,7 +391198,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-5.0.0-before-15.121.4-missing-authorization-in-selling-module-sales-orders"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00338
  },
  "CVE-2026-134383": {
   "id": "CVE-2026-134383",
@@ -391217,7 +391217,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-14.47.0-before-15.122.0-missing-authorization-in-repost-accounting-ledger"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00353
  },
  "CVE-2026-134384": {
   "id": "CVE-2026-134384",
@@ -391236,7 +391236,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-13.0.0-before-15.124.2-missing-authorization-in-stock-module-cost-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134385": {
   "id": "CVE-2026-134385",
@@ -391255,7 +391255,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-6.3.0-before-15.122.0-unauthorized-address-access-via-tax-rule-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00473
  },
  "CVE-2026-134386": {
   "id": "CVE-2026-134386",
@@ -391274,7 +391274,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-15.111.0-before-15.121.4-missing-authorization-in-accounts-inter-company-items-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134387": {
   "id": "CVE-2026-134387",
@@ -391293,7 +391293,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-12.0.0-before-15.121.4-missing-authorization-in-accounts-dashboard-chart"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00204
  },
  "CVE-2026-134388": {
   "id": "CVE-2026-134388",
@@ -391312,7 +391312,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-14.0.0-before-15.124.0-stored-xss-via-crm-notes"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00296
  },
  "CVE-2026-134389": {
   "id": "CVE-2026-134389",
@@ -391331,7 +391331,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-6.18.0-before-15.124.0-unauthorized-document-access-via-payment-requests"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00178
  },
  "CVE-2026-134390": {
   "id": "CVE-2026-134390",
@@ -391350,7 +391350,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-13.0.0-before-15.122.0-missing-authorization-in-pos-invoice-merge-log-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00473
  },
  "CVE-2026-134391": {
   "id": "CVE-2026-134391",
@@ -391369,7 +391369,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-12.2.0-before-15.122.0-missing-authorization-in-assets-module"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00376
  },
  "CVE-2026-134392": {
   "id": "CVE-2026-134392",
@@ -391388,7 +391388,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-15.0.0-before-15.122.0-stock-reservation-validation-bypass"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00338
  },
  "CVE-2026-134393": {
   "id": "CVE-2026-134393",
@@ -391407,7 +391407,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-10.1.41-before-15.122.0-missing-authorization-in-manufacturing-bom-replacement"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00319
  },
  "CVE-2026-134394": {
   "id": "CVE-2026-134394",
@@ -391426,7 +391426,7 @@
    "https://www.vulncheck.com/advisories/erpnext-14.44.0-before-15.122.0-missing-authorization-in-accounts-payment-unreconciliation"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00445
  },
  "CVE-2026-134395": {
   "id": "CVE-2026-134395",
@@ -391445,7 +391445,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-13.0.0-before-15.122.0-missing-authorization-in-accounts-module-bank-transactions"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00494
  },
  "CVE-2026-134396": {
   "id": "CVE-2026-134396",
@@ -391464,7 +391464,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-13.0.0-before-15.122.0-missing-authorization-in-bank-reconciliation"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00338
  },
  "CVE-2026-134397": {
   "id": "CVE-2026-134397",
@@ -391483,7 +391483,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-15.10.4-before-15.122.0-missing-authorization-in-stock-module-record-creation"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00353
  },
  "CVE-2026-134398": {
   "id": "CVE-2026-134398",
@@ -391502,7 +391502,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-15.87.0-before-15.121.4-missing-authorization-in-period-closing-voucher-status"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00255
  },
  "CVE-2026-134399": {
   "id": "CVE-2026-134399",
@@ -391521,7 +391521,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-8.11.1-before-15.124.0-unauthorized-document-access-via-print-and-portal-views"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00367
  },
  "CVE-2026-134400": {
   "id": "CVE-2026-134400",
@@ -391540,7 +391540,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-13.49.0-before-14.0.0-and-14.17.2-before-15.124.0-missing-authorization-in-selling-module-sales-order-items"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134403": {
   "id": "CVE-2026-134403",
@@ -391559,7 +391559,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-7.0.0-before-15.124.0-unauthorized-project-costing-access-via-customer-portal"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134404": {
   "id": "CVE-2026-134404",
@@ -391578,7 +391578,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-6.3.0-before-15.124.0-missing-authorization-in-customer-and-supplier-portals"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00367
  },
  "CVE-2026-134405": {
   "id": "CVE-2026-134405",
@@ -391597,7 +391597,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-13.0.0-before-15.122.0-missing-authorization-in-accounts-bank-transactions-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00473
  },
  "CVE-2026-134406": {
   "id": "CVE-2026-134406",
@@ -391616,7 +391616,7 @@
    "https://www.vulncheck.com/advisories/erpnext-15.94.2-before-15.122.0-unauthorized-supplier-portal-record-access-via-party-name-collision"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00316
  },
  "CVE-2026-134407": {
   "id": "CVE-2026-134407",
@@ -391635,7 +391635,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-11.0.0-beta-before-15.124.0-unauthorized-issue-access-via-customer-portal"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134408": {
   "id": "CVE-2026-134408",
@@ -391654,7 +391654,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-16.0.1-before-16.50.0-missing-authorization-in-stock-dashboard-chart"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134409": {
   "id": "CVE-2026-134409",
@@ -391673,7 +391673,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-5.0.0-before-15.122.0-missing-authorization-in-projects-activity-cost-rates"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00473
  },
  "CVE-2026-134410": {
   "id": "CVE-2026-134410",
@@ -391692,7 +391692,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-15.0.0-before-15.122.0-missing-authorization-in-stock-serial-no-and-batch-ledger"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134411": {
   "id": "CVE-2026-134411",
@@ -391711,7 +391711,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-11.1.7-before-15.121.4-missing-authorization-in-regional-module-e-invoice-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00408
  },
  "CVE-2026-134412": {
   "id": "CVE-2026-134412",
@@ -391730,7 +391730,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-8.0.0-before-15.123.0-missing-authorization-in-stock-module-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134413": {
   "id": "CVE-2026-134413",
@@ -391749,7 +391749,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-11.0.0-beta-before-15.121.4-missing-authorization-in-pos-profile-cashiers-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00473
  },
  "CVE-2026-134414": {
   "id": "CVE-2026-134414",
@@ -391768,7 +391768,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-5.0.0-before-15.122.0-missing-authorization-in-taxes-and-charges-templates"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134415": {
   "id": "CVE-2026-134415",
@@ -391787,7 +391787,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-11.0.0-beta-before-15.121.4-missing-authorization-in-selling-loyalty-points-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00204
  },
  "CVE-2026-134416": {
   "id": "CVE-2026-134416",
@@ -391806,7 +391806,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-15.55.0-before-15.121.4-missing-authorization-in-accounts-module-chart-of-accounts"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00376
  },
  "CVE-2026-134417": {
   "id": "CVE-2026-134417",
@@ -391825,7 +391825,7 @@
    "https://www.vulncheck.com/advisories/erpnext-13.0.0-before-15.121.4-missing-authorization-in-bank-statement-import-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00408
  },
  "CVE-2026-134418": {
   "id": "CVE-2026-134418",
@@ -391844,7 +391844,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-4.0.0-before-15.122.0-missing-authorization-in-accounts-module-taxes-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00493
  },
  "CVE-2026-134419": {
   "id": "CVE-2026-134419",
@@ -391863,7 +391863,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-10.0.0-before-15.122.0-missing-authorization-in-payment-terms-templates"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00376
  },
  "CVE-2026-134420": {
   "id": "CVE-2026-134420",
@@ -391882,7 +391882,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-10.0.0-before-15.122.0-missing-authorization-in-accounts-payment-term-settings"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00376
  },
  "CVE-2026-134421": {
   "id": "CVE-2026-134421",
@@ -391901,7 +391901,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-11.0.0-beta-before-15.121.4-missing-authorization-in-selling-module-loyalty-program"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00376
  },
  "CVE-2026-134422": {
   "id": "CVE-2026-134422",
@@ -391920,7 +391920,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-13.0.0-before-15.121.4-missing-authorization-exposes-pos-opening-entries"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00494
  },
  "CVE-2026-134423": {
   "id": "CVE-2026-134423",
@@ -391939,7 +391939,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-6.26.0-before-15.121.4-missing-authorization-in-stock-module-quantity-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00494
  },
  "CVE-2026-134424": {
   "id": "CVE-2026-134424",
@@ -391958,7 +391958,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-8.2.5-before-15.121.4-missing-authorization-in-stock-module-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134425": {
   "id": "CVE-2026-134425",
@@ -391977,7 +391977,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-13.0.0-before-15.121.4-missing-authorization-in-stock-module-valuation-rates"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00376
  },
  "CVE-2026-134426": {
   "id": "CVE-2026-134426",
@@ -391996,7 +391996,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-11.0.0-beta-before-15.121.4-missing-authorization-in-accounts-module-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00494
  },
  "CVE-2026-134427": {
   "id": "CVE-2026-134427",
@@ -392015,7 +392015,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-15.53.0-before-15.121.4-missing-authorization-in-assets-module-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00376
  },
  "CVE-2026-134428": {
   "id": "CVE-2026-134428",
@@ -392034,7 +392034,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-13.0.0-before-15.121.4-missing-authorization-in-stock-module-item-records"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00222
  },
  "CVE-2026-134429": {
   "id": "CVE-2026-134429",
@@ -392053,7 +392053,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-before-15.121.4-missing-authorization-in-crm-and-support-communications"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00333
  },
  "CVE-2026-134430": {
   "id": "CVE-2026-134430",
@@ -392072,7 +392072,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-12.0.0-before-15.121.4-unauthorized-private-file-read-in-accounts-module"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00322
  },
  "CVE-2026-134431": {
   "id": "CVE-2026-134431",
@@ -392091,7 +392091,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-7.0.0-before-15.122.0-sql-injection-via-sort-parameters"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00541
  },
  "CVE-2026-134432": {
   "id": "CVE-2026-134432",
@@ -392110,7 +392110,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-15.0.0-before-15.121.4-missing-authorization-in-stock-module-import-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00317
  },
  "CVE-2026-134433": {
   "id": "CVE-2026-134433",
@@ -392129,7 +392129,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-before-15.124.2-missing-authorization-across-endpoints-and-reports"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00312
  },
  "CVE-2026-134434": {
   "id": "CVE-2026-134434",
@@ -392148,7 +392148,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-16.0.0-before-16.36.0-missing-authorization-in-manufacturing-stock-reservation-cancellation"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00342
  },
  "CVE-2026-134435": {
   "id": "CVE-2026-134435",
@@ -392167,7 +392167,7 @@
    "https://www.vulncheck.com/advisories/frappe-erpnext-before-15.124.2-missing-authorization-in-accounts-clearance-date-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0045
  },
  "CVE-2026-134436": {
   "id": "CVE-2026-134436",
@@ -392186,7 +392186,7 @@
    "https://www.vulncheck.com/advisories/erpnext-15.8.0-before-15.121.4-missing-authorization-exposes-transaction-child-table-rows"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00504
  },
  "CVE-2026-134448": {
   "id": "CVE-2026-134448",
@@ -392205,7 +392205,7 @@
    "https://www.vulncheck.com/advisories/finsys-dockhand-1.0.7-before-1.0.57-path-traversal-via-stack-env-raw-endpoint"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00718
  },
  "CVE-2026-134449": {
   "id": "CVE-2026-134449",
@@ -392224,7 +392224,7 @@
    "https://www.vulncheck.com/advisories/dockhand-before-1.0.57-cross-site-request-forgery-via-missing-origin-validation"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00257
  },
  "CVE-2026-134450": {
   "id": "CVE-2026-134450",
@@ -392243,7 +392243,7 @@
    "https://www.vulncheck.com/advisories/dockhand-before-1.0.57-clickjacking-via-missing-frame-protection-headers"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00371
  },
  "CVE-2026-134451": {
   "id": "CVE-2026-134451",
@@ -392262,7 +392262,7 @@
    "https://www.vulncheck.com/advisories/dockhand-before-1.0.57-privilege-escalation-via-oidc-provider-update-handler"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00489
  },
  "CVE-2026-134452": {
   "id": "CVE-2026-134452",
@@ -392281,7 +392281,7 @@
    "https://www.vulncheck.com/advisories/dockhand-before-1.0.57-rce-via-path-poisoning-in-stack-deploy"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00377
  },
  "CVE-2026-134453": {
   "id": "CVE-2026-134453",
@@ -392300,7 +392300,7 @@
    "https://www.vulncheck.com/advisories/dockhand-before-1.0.50-improper-rbac-enforcement-via-api-endpoints"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00383
  },
  "CVE-2026-134454": {
   "id": "CVE-2026-134454",
@@ -392319,7 +392319,7 @@
    "https://www.vulncheck.com/advisories/hysteria-2.0.0-before-2.9.2-udp-acl-bypass-enabling-ssrf"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00311
  },
  "CVE-2026-134455": {
   "id": "CVE-2026-134455",
@@ -392338,7 +392338,7 @@
    "https://www.vulncheck.com/advisories/hysteria-1.0.0-before-2.9.2-denial-of-service-via-max-datagram-frame-size"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00622
  },
  "CVE-2026-134456": {
   "id": "CVE-2026-134456",
@@ -392357,7 +392357,7 @@
    "https://www.vulncheck.com/advisories/hysteria-2.5.0-before-2.9.2-denial-of-service-via-http-sniff-header"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00512
  },
  "CVE-2026-134457": {
   "id": "CVE-2026-134457",
@@ -392376,7 +392376,7 @@
    "https://www.vulncheck.com/advisories/hysteria-2.5.0-before-2.8.2-quic-packet-oom-via-sniff-crypto-length"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00457
  },
  "CVE-2026-134458": {
   "id": "CVE-2026-134458",
@@ -392395,7 +392395,7 @@
    "https://www.vulncheck.com/advisories/web-token-jwt-framework-before-3.4.12-ecdh-es-weak-key-derivation-via-concatkdf"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00183
  },
  "CVE-2026-134459": {
   "id": "CVE-2026-134459",
@@ -392414,7 +392414,7 @@
    "https://www.vulncheck.com/advisories/web-token-jwt-framework-before-3.4.10-rsa1-5-bleichenbacher-padding-oracle"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00439
  },
  "CVE-2026-134460": {
   "id": "CVE-2026-134460",
@@ -392433,7 +392433,7 @@
    "https://www.vulncheck.com/advisories/web-token-jwt-framework-1.2.0-before-3.4.10-missing-authentication-in-chacha20poly1305-key-encryption"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00172
  },
  "CVE-2026-134461": {
   "id": "CVE-2026-134461",
@@ -392452,7 +392452,7 @@
    "https://www.vulncheck.com/advisories/web-token-jwt-framework-before-3.4.10-dos-via-unbounded-pbes2-p2c-iteration-count"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00546
  },
  "CVE-2026-133990": {
   "id": "CVE-2026-133990",
@@ -392473,7 +392473,7 @@
    "https://vuldb.com/submit/1052045"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00491
  },
  "CVE-2026-133993": {
   "id": "CVE-2026-133993",
@@ -392494,7 +392494,7 @@
    "https://vuldb.com/submit/1052046"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.01052
  },
  "CVE-2026-125294": {
   "id": "CVE-2026-125294",
@@ -392513,7 +392513,7 @@
    "https://www.wordfence.com/threat-intel/vulnerabilities/id/8670d9ac-e2b0-4c19-a9d7-00be23a139c4?source=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00801
  },
  "CVE-2026-134006": {
   "id": "CVE-2026-134006",
@@ -392534,7 +392534,7 @@
    "https://vuldb.com/submit/1052054"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00161
  },
  "CVE-2026-134007": {
   "id": "CVE-2026-134007",
@@ -392555,7 +392555,7 @@
    "https://vuldb.com/cve/CVE-2026-134007"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00295
  },
  "CVE-2026-134009": {
   "id": "CVE-2026-134009",
@@ -392576,7 +392576,7 @@
    "https://vuldb.com/cve/CVE-2026-134009"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00259
  },
  "CVE-2026-134533": {
   "id": "CVE-2026-134533",
@@ -392596,7 +392596,7 @@
    "https://github.com/Skyvern-AI/skyvern/issues/9010"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00291
  },
  "CVE-2026-115589": {
   "id": "CVE-2026-115589",
@@ -392630,7 +392630,7 @@
    "https://github.com/Skyvern-AI/skyvern/issues/9010"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0026
  },
  "CVE-2026-134536": {
   "id": "CVE-2026-134536",
@@ -392651,7 +392651,7 @@
    "https://steamcommunity.com/app/736590"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00265
  },
  "CVE-2026-134540": {
   "id": "CVE-2026-134540",
@@ -392671,7 +392671,7 @@
    "https://github.com/ggml-org/llama.cpp/commit/9f26fe11c73c7e74a5e99e7f1b6370ad8e1cb22d"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00648
  },
  "CVE-2026-134541": {
   "id": "CVE-2026-134541",
@@ -392692,7 +392692,7 @@
    "https://vuldb.com/submit/1052911"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0036
  },
  "CVE-2026-134543": {
   "id": "CVE-2026-134543",
@@ -392713,7 +392713,7 @@
    "https://vuldb.com/submit/1052920"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.01358
  },
  "CVE-2026-134544": {
   "id": "CVE-2026-134544",
@@ -392734,7 +392734,7 @@
    "https://vuldb.com/submit/1052922"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.02658
  },
  "CVE-2026-134545": {
   "id": "CVE-2026-134545",
@@ -392755,7 +392755,7 @@
    "https://vuldb.com/submit/1052923"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00284
  },
  "CVE-2026-134553": {
   "id": "CVE-2026-134553",
@@ -392775,7 +392775,7 @@
    "https://github.com/wiroai/Wiro-MCP/commit/ac61f79888fd36fae8e282995847e542c4ef1cbd"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00431
  },
  "CVE-2026-134560": {
   "id": "CVE-2026-134560",
@@ -392796,7 +392796,7 @@
    "https://vuldb.com/cve/CVE-2026-134560"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00162
  },
  "CVE-2026-134566": {
   "id": "CVE-2026-134566",
@@ -392817,7 +392817,7 @@
    "https://vuldb.com/cve/CVE-2026-134566"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00289
  },
  "CVE-2026-134567": {
   "id": "CVE-2026-134567",
@@ -392838,7 +392838,7 @@
    "https://vuldb.com/cve/CVE-2026-134567"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00289
  },
  "CVE-2026-134568": {
   "id": "CVE-2026-134568",
@@ -392859,7 +392859,7 @@
    "https://vuldb.com/cve/CVE-2026-134568"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00361
  },
  "CVE-2026-134569": {
   "id": "CVE-2026-134569",
@@ -392880,7 +392880,7 @@
    "https://vuldb.com/cve/CVE-2026-134569"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00361
  },
  "CVE-2026-134570": {
   "id": "CVE-2026-134570",
@@ -392901,7 +392901,7 @@
    "https://vuldb.com/cve/CVE-2026-134570"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00361
  },
  "CVE-2026-134571": {
   "id": "CVE-2026-134571",
@@ -392922,7 +392922,7 @@
    "https://vuldb.com/cve/CVE-2026-134571"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00365
  },
  "CVE-2026-134654": {
   "id": "CVE-2026-134654",
@@ -392942,7 +392942,7 @@
    "https://github.com/hieunc229/mailflare/security/advisories/GHSA-f3p5-jm88-58h3"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00458
  },
  "CVE-2026-134655": {
   "id": "CVE-2026-134655",
@@ -392962,7 +392962,7 @@
    "https://www.vulncheck.com/advisories/open5gs-amf-through-2.8.0-orphaned-smf-sessions-via-create-sm-context-response"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0053
  },
  "CVE-2026-134656": {
   "id": "CVE-2026-134656",
@@ -392982,7 +392982,7 @@
    "https://github.com/openairinterface/oai-cn5g-smf/issues/13"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00601
  },
  "CVE-2026-134657": {
   "id": "CVE-2026-134657",
@@ -393002,7 +393002,7 @@
    "https://github.com/openairinterface/oai-cn5g-pcf/issues/8"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00601
  },
  "CVE-2026-134658": {
   "id": "CVE-2026-134658",
@@ -393022,7 +393022,7 @@
    "https://github.com/free5gc/smf/commit/572d3bd6483db9a749d415bbe04abd855f4917d4"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00548
  },
  "CVE-2026-134659": {
   "id": "CVE-2026-134659",
@@ -393042,7 +393042,7 @@
    "https://github.com/openairinterface/oai-cn5g-amf/issues/18"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00548
  },
  "CVE-2026-134660": {
   "id": "CVE-2026-134660",
@@ -393062,7 +393062,7 @@
    "https://github.com/gpac/gpac/issues/3768"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00229
  },
  "CVE-2026-134661": {
   "id": "CVE-2026-134661",
@@ -393082,7 +393082,7 @@
    "https://github.com/gpac/gpac/commit/5e620eff3bea16972dd948b2a153e416ffb1c81d"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00229
  },
  "CVE-2026-134662": {
   "id": "CVE-2026-134662",
@@ -393102,7 +393102,7 @@
    "https://github.com/gpac/gpac/blob/v26.07.0/src/scenegraph/vrml_tools.c#L620-L629"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00257
  },
  "CVE-2026-134663": {
   "id": "CVE-2026-134663",
@@ -393122,7 +393122,7 @@
    "https://github.com/gpac/gpac/commit/3e535640b48ed3218e74929cbf3e42250fce3ddf"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00221
  },
  "CVE-2026-134664": {
   "id": "CVE-2026-134664",
@@ -393142,7 +393142,7 @@
    "https://github.com/gpac/gpac/commit/3e535640b48ed3218e74929cbf3e42250fce3ddf"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00229
  },
  "CVE-2026-134665": {
   "id": "CVE-2026-134665",
@@ -393162,7 +393162,7 @@
    "https://github.com/gpac/gpac/commit/3e535640b48ed3218e74929cbf3e42250fce3ddf"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00221
  },
  "CVE-2026-134666": {
   "id": "CVE-2026-134666",
@@ -393182,7 +393182,7 @@
    "https://github.com/gpac/gpac/commit/3e535640b48ed3218e74929cbf3e42250fce3ddf"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00222
  },
  "CVE-2026-134667": {
   "id": "CVE-2026-134667",
@@ -393202,7 +393202,7 @@
    "https://github.com/gpac/gpac/issues/3902"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00251
  },
  "CVE-2026-134668": {
   "id": "CVE-2026-134668",
@@ -393222,7 +393222,7 @@
    "https://github.com/gpac/gpac/blob/v26.07.0/src/scene_manager/loader_xmt.c#L3446-L3458"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0025
  },
  "CVE-2026-134669": {
   "id": "CVE-2026-134669",
@@ -393242,7 +393242,7 @@
    "https://github.com/gpac/gpac/issues/3780"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00227
  },
  "CVE-2026-134670": {
   "id": "CVE-2026-134670",
@@ -393262,7 +393262,7 @@
    "https://github.com/gpac/gpac/issues/3776"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00221
  },
  "CVE-2026-134671": {
   "id": "CVE-2026-134671",
@@ -393282,7 +393282,7 @@
    "https://github.com/gpac/gpac/commit/5e620eff3bea16972dd948b2a153e416ffb1c81d"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00221
  },
  "CVE-2026-134672": {
   "id": "CVE-2026-134672",
@@ -393302,7 +393302,7 @@
    "https://github.com/gpac/gpac/issues/3772"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00229
  },
  "CVE-2026-134673": {
   "id": "CVE-2026-134673",
@@ -393322,7 +393322,7 @@
    "https://github.com/gpac/gpac/issues/3771"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00221
  },
  "CVE-2026-134674": {
   "id": "CVE-2026-134674",
@@ -393342,7 +393342,7 @@
    "https://github.com/freedit-org/freedit/issues/465"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00421
  },
  "CVE-2026-134675": {
   "id": "CVE-2026-134675",
@@ -393362,7 +393362,7 @@
    "https://github.com/beromir/Servas/issues/142"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00488
  },
  "CVE-2026-134676": {
   "id": "CVE-2026-134676",
@@ -393382,7 +393382,7 @@
    "https://github.com/gpac/gpac/commit/f6e7fdaab515a4e70094f6cf3068ddac20edf7c5"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00221
  },
  "CVE-2026-134677": {
   "id": "CVE-2026-134677",
@@ -393402,7 +393402,7 @@
    "https://github.com/gpac/gpac/commit/f6e7fdaab515a4e70094f6cf3068ddac20edf7c5"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00221
  },
  "CVE-2026-134678": {
   "id": "CVE-2026-134678",
@@ -393422,7 +393422,7 @@
    "https://github.com/freedit-org/freedit/issues/464"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00531
  },
  "CVE-2026-134679": {
   "id": "CVE-2026-134679",
@@ -393442,7 +393442,7 @@
    "https://www.vulncheck.com/advisories/weddingshare-through-1.8.2-missing-authorization-via-mediaviewer-galleryitem"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00496
  },
  "CVE-2026-134680": {
   "id": "CVE-2026-134680",
@@ -393462,7 +393462,7 @@
    "https://github.com/gpac/gpac/issues/3834"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00213
  },
  "CVE-2026-134681": {
   "id": "CVE-2026-134681",
@@ -393482,7 +393482,7 @@
    "https://github.com/gpac/gpac/issues/3791"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00213
  },
  "CVE-2026-134682": {
   "id": "CVE-2026-134682",
@@ -393502,7 +393502,7 @@
    "https://github.com/gpac/gpac/commit/f6e7fdaab515a4e70094f6cf3068ddac20edf7c5"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00206
  },
  "CVE-2026-134683": {
   "id": "CVE-2026-134683",
@@ -393522,7 +393522,7 @@
    "https://github.com/gpac/gpac/issues/3792"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00213
  },
  "CVE-2026-134684": {
   "id": "CVE-2026-134684",
@@ -393542,7 +393542,7 @@
    "https://github.com/gpac/gpac/blob/v26.07.0/src/scene_manager/loader_xmt.c#L578-L585"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00224
  },
  "CVE-2026-134685": {
   "id": "CVE-2026-134685",
@@ -393562,7 +393562,7 @@
    "https://github.com/gpac/gpac/issues/3841"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00206
  },
  "CVE-2026-134686": {
   "id": "CVE-2026-134686",
@@ -393582,7 +393582,7 @@
    "https://github.com/gpac/gpac/issues/3848"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00213
  },
  "CVE-2026-134687": {
   "id": "CVE-2026-134687",
@@ -393602,7 +393602,7 @@
    "https://github.com/gpac/gpac/issues/3844"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00218
  },
  "CVE-2026-134688": {
   "id": "CVE-2026-134688",
@@ -393622,7 +393622,7 @@
    "https://github.com/gpac/gpac/issues/3840"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00206
  },
  "CVE-2026-134689": {
   "id": "CVE-2026-134689",
@@ -393642,7 +393642,7 @@
    "https://github.com/gpac/gpac/issues/3838"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00213
  },
  "CVE-2026-134690": {
   "id": "CVE-2026-134690",
@@ -393662,7 +393662,7 @@
    "https://github.com/gpac/gpac/blob/v26.07.0/src/compositor/mpeg4_layout.c#L837-L842"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00241
  },
  "CVE-2026-134691": {
   "id": "CVE-2026-134691",
@@ -393682,7 +393682,7 @@
    "https://github.com/gpac/gpac/commit/ef6a5b7e740d119ca00ec15c57a7ed0554e5b2db"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00206
  },
  "CVE-2026-134692": {
   "id": "CVE-2026-134692",
@@ -393702,7 +393702,7 @@
    "https://github.com/gpac/gpac/commit/c3aa04432e63e0f19b41f5c898a9073eaf6b5815"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00206
  },
  "CVE-2026-134693": {
   "id": "CVE-2026-134693",
@@ -393722,7 +393722,7 @@
    "https://github.com/gpac/gpac/issues/3885"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00213
  },
  "CVE-2026-134694": {
   "id": "CVE-2026-134694",
@@ -393742,7 +393742,7 @@
    "https://github.com/gammapy/gammapy/issues/7086"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00276
  },
  "CVE-2026-134695": {
   "id": "CVE-2026-134695",
@@ -393762,7 +393762,7 @@
    "https://github.com/gpac/gpac/commit/2a94e8935720ed36b9ebcf9db0c0a1fd888890a4"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00211
  },
  "CVE-2026-134696": {
   "id": "CVE-2026-134696",
@@ -393782,7 +393782,7 @@
    "https://github.com/gpac/gpac/commit/6d198eda188c0e813ac32a078ddb7546a2dc4368"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00218
  },
  "CVE-2026-134697": {
   "id": "CVE-2026-134697",
@@ -393802,7 +393802,7 @@
    "https://github.com/gpac/gpac/commit/24b13792c0119560ed4c52e19785008177227da4"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00226
  },
  "CVE-2026-134698": {
   "id": "CVE-2026-134698",
@@ -393822,7 +393822,7 @@
    "https://github.com/gpac/gpac/issues/3884"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00213
  },
  "CVE-2026-134699": {
   "id": "CVE-2026-134699",
@@ -393842,7 +393842,7 @@
    "https://github.com/gpac/gpac/issues/3883"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00211
  },
  "CVE-2026-134700": {
   "id": "CVE-2026-134700",
@@ -393862,7 +393862,7 @@
    "https://github.com/gpac/gpac/blob/v26.07.0/src/scenegraph/commands.c#L196-L252"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00237
  },
  "CVE-2026-134701": {
   "id": "CVE-2026-134701",
@@ -393882,7 +393882,7 @@
    "https://github.com/gpac/gpac/commit/d727ef4462c72d4033a70803e9130bd9dd542401"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0021
  },
  "CVE-2026-134702": {
   "id": "CVE-2026-134702",
@@ -393902,7 +393902,7 @@
    "https://github.com/gpac/gpac/issues/3939"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00218
  },
  "CVE-2026-134703": {
   "id": "CVE-2026-134703",
@@ -393922,7 +393922,7 @@
    "https://github.com/libexpat/libexpat/pull/1519"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00406
  },
  "CVE-2026-134704": {
   "id": "CVE-2026-134704",
@@ -393942,7 +393942,7 @@
    "https://github.com/OpenShot/openshot-qt/issues/6249"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00259
  },
  "CVE-2026-134572": {
   "id": "CVE-2026-134572",
@@ -393963,7 +393963,7 @@
    "https://vuldb.com/cve/CVE-2026-134572"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00289
  },
  "CVE-2026-134616": {
   "id": "CVE-2026-134616",
@@ -393984,7 +393984,7 @@
    "https://vuldb.com/cve/CVE-2026-134616"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00289
  },
  "CVE-2026-134623": {
   "id": "CVE-2026-134623",
@@ -394005,7 +394005,7 @@
    "https://github.com/microweber/microweber/commit/e639d26e61b989b100f8b6f6bb78c0cecca79b99"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00583
  },
  "CVE-2026-134651": {
   "id": "CVE-2026-134651",
@@ -394024,7 +394024,7 @@
    "https://bugzilla.redhat.com/show_bug.cgi?id=2580912"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00678
  },
  "CVE-2026-105394": {
   "id": "CVE-2026-105394",
@@ -394040,7 +394040,7 @@
    "https://wpscan.com/vulnerability/6cb7e3c2-4057-49e2-85bb-ccc83307e5f7/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00216
  },
  "CVE-2026-107592": {
   "id": "CVE-2026-107592",
@@ -394056,7 +394056,7 @@
    "https://wpscan.com/vulnerability/f8e01bf5-cffe-4ec2-9ed9-33e31cd550e1/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0015
  },
  "CVE-2026-107593": {
   "id": "CVE-2026-107593",
@@ -394072,7 +394072,7 @@
    "https://wpscan.com/vulnerability/b153220d-a295-4082-ba75-c14d66d5efb9/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00259
  },
  "CVE-2026-120413": {
   "id": "CVE-2026-120413",
@@ -394088,7 +394088,7 @@
    "https://wpscan.com/vulnerability/9fa2d095-5659-4af8-9815-aa6ba94377c8/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00225
  },
  "CVE-2026-123068": {
   "id": "CVE-2026-123068",
@@ -394104,7 +394104,7 @@
    "https://wpscan.com/vulnerability/59235295-8a3f-498e-96ad-6ce01b4a485a/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00304
  },
  "CVE-2026-123136": {
   "id": "CVE-2026-123136",
@@ -394120,7 +394120,7 @@
    "https://wpscan.com/vulnerability/7ca8fd67-4253-4da1-9f40-927265c77c2f/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00204
  },
  "CVE-2026-127024": {
   "id": "CVE-2026-127024",
@@ -394136,7 +394136,7 @@
    "https://wpscan.com/vulnerability/b5f717e6-730f-439f-b223-222ef44a85e4/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00339
  },
  "CVE-2026-132814": {
   "id": "CVE-2026-132814",
@@ -394152,7 +394152,7 @@
    "https://wpscan.com/vulnerability/f442b280-573d-43a3-a52b-86dc2571a722/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00293
  },
  "CVE-2026-133362": {
   "id": "CVE-2026-133362",
@@ -394168,7 +394168,7 @@
    "https://wpscan.com/vulnerability/3cfd7014-c3d4-4028-8677-33390a14c301/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00223
  },
  "CVE-2026-14233": {
   "id": "CVE-2026-14233",
@@ -394184,7 +394184,7 @@
    "https://wpscan.com/vulnerability/e72358ff-62b7-4561-9b46-e80a59d6bc5b/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00236
  },
  "CVE-2026-94259": {
   "id": "CVE-2026-94259",
@@ -394200,7 +394200,7 @@
    "https://wpscan.com/vulnerability/6925ed6c-659a-49cc-b5e4-88f666842af5/"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00264
  },
  "CVE-2026-129016": {
   "id": "CVE-2026-129016",
@@ -394218,7 +394218,7 @@
    "https://patchstack.com/database/wordpress/plugin/menubar/vulnerability/wordpress-menubar-plugin-5-9-4-cross-site-scripting-xss-vulnerability?_s_id=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00251
  },
  "CVE-2026-131700": {
   "id": "CVE-2026-131700",
@@ -394236,7 +394236,7 @@
    "https://patchstack.com/database/wordpress/plugin/geo-mashup/vulnerability/wordpress-geo-mashup-plugin-1-13-23-cross-site-scripting-xss-vulnerability?_s_id=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00251
  },
  "CVE-2026-131705": {
   "id": "CVE-2026-131705",
@@ -394254,7 +394254,7 @@
    "https://patchstack.com/database/wordpress/plugin/profilegrid-user-profiles-groups-and-communities/vulnerability/wordpress-profilegrid-plugin-6-0-0-6-sql-injection-vulnerability-2?_s_id=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00357
  },
  "CVE-2026-131706": {
   "id": "CVE-2026-131706",
@@ -394272,7 +394272,7 @@
    "https://patchstack.com/database/wordpress/plugin/profilegrid-user-profiles-groups-and-communities/vulnerability/wordpress-profilegrid-plugin-6-0-0-6-sql-injection-vulnerability?_s_id=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.0032
  },
  "CVE-2026-131707": {
   "id": "CVE-2026-131707",
@@ -394290,7 +394290,7 @@
    "https://patchstack.com/database/wordpress/plugin/profilegrid-user-profiles-groups-and-communities/vulnerability/wordpress-profilegrid-plugin-6-0-0-6-php-object-injection-vulnerability?_s_id=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00518
  },
  "CVE-2026-131708": {
   "id": "CVE-2026-131708",
@@ -394308,7 +394308,7 @@
    "https://patchstack.com/database/wordpress/plugin/profilegrid-user-profiles-groups-and-communities/vulnerability/wordpress-profilegrid-plugin-6-0-0-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00251
  },
  "CVE-2026-131720": {
   "id": "CVE-2026-131720",
@@ -394326,7 +394326,7 @@
    "https://patchstack.com/database/wordpress/plugin/bookit/vulnerability/wordpress-bookit-plugin-2-6-0-8-sensitive-data-exposure-vulnerability?_s_id=cve"
   ],
   "kev": false,
-  "epss": null
+  "epss": 0.00416
  },
  "CVE-2026-109889": {
   "id": "CVE-2026-109889",
@@ -394540,6 +394540,674 @@
   "products": [],
   "refs": [
    "https://patchstack.com/database/wordpress/plugin/woocommerce-fortnox-integration/vulnerability/wordpress-woocommerce-fortnox-integration-plugin-4-8-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131780": {
+  "id": "CVE-2026-131780",
+  "published": "2026-11-22T14:17:28.593",
+  "modified": "2026-11-22T14:17:29.180",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Themify Themify Builder themify-builder allows Reflected XSS.This issue affects Themify Builder: from n/a through 7.8.5.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/themify-builder/vulnerability/wordpress-themify-builder-plugin-7-8-5-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129083": {
+  "id": "CVE-2026-129083",
+  "published": "2026-11-22T15:17:11.937",
+  "modified": "2026-11-22T15:17:12.057",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WPKoi WordPress Themes WPKoi Templates for Elementor wpkoi-templates-for-elementor allows Stored XSS.This issue affects WPKoi Templates for Elementor: from n/a through 3.7.5.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/wpkoi-templates-for-elementor/vulnerability/wordpress-wpkoi-templates-for-elementor-plugin-3-7-5-cross-site-scripting-xss-vulnerability-2?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129085": {
+  "id": "CVE-2026-129085",
+  "published": "2026-11-22T15:17:12.093",
+  "modified": "2026-11-22T15:17:12.207",
+  "desc": "Missing Authorization vulnerability in Aguila Technologies WP Customer Area customer-area allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Customer Area: from n/a through 8.4.5.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/customer-area/vulnerability/wordpress-wp-customer-area-plugin-8-4-5-broken-access-control-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131754": {
+  "id": "CVE-2026-131754",
+  "published": "2026-11-22T15:17:12.247",
+  "modified": "2026-11-22T15:17:12.363",
+  "desc": "Deserialization of Untrusted Data vulnerability in Pierre Lannoy APCu Manager apcu-manager allows Object Injection.This issue affects APCu Manager: from n/a through 4.6.1.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/apcu-manager/vulnerability/wordpress-apcu-manager-plugin-4-6-1-php-object-injection-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131775": {
+  "id": "CVE-2026-131775",
+  "published": "2026-11-22T15:17:12.403",
+  "modified": "2026-11-22T15:17:12.513",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in nK Ghost Kit ghostkit allows Stored XSS.This issue affects Ghost Kit: from n/a through 3.8.1.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/ghostkit/vulnerability/wordpress-ghost-kit-plugin-3-8-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131782": {
+  "id": "CVE-2026-131782",
+  "published": "2026-11-22T15:17:12.543",
+  "modified": "2026-11-22T15:17:12.653",
+  "desc": "Deserialization of Untrusted Data vulnerability in mra13 / Team Tips and Tricks HQ Simple Shopping Cart wordpress-simple-paypal-shopping-cart allows Object Injection.This issue affects Simple Shopping Cart: from n/a through 5.3.3.",
+  "cvss": 9.8,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/wordpress-simple-paypal-shopping-cart/vulnerability/wordpress-simple-shopping-cart-plugin-5-3-3-php-object-injection-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134748": {
+  "id": "CVE-2026-134748",
+  "published": "2026-11-22T15:17:12.700",
+  "modified": "2026-11-22T15:17:12.700",
+  "desc": "Members WordPress plugin by MemberPress 3.2.28 before 3.3.2 contains an authentication bypass vulnerability that allows unauthenticated visitors to evade Private Site mode via login page exemption. Attackers can request the front-end login path with a pagename query variable to make WordPress render hidden published pages or the full blog index.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-288"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/caseproof/members/blob/3.3.1/inc/functions-private-site.php#L145-L165",
+   "https://github.com/caseproof/members/commit/b43960048e65029446184ee372e9a782efea4a07",
+   "https://github.com/caseproof/members/security/advisories/GHSA-4jhr-qq5j-w7qg"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134749": {
+  "id": "CVE-2026-134749",
+  "published": "2026-11-22T15:17:12.877",
+  "modified": "2026-11-22T15:17:12.877",
+  "desc": "MemberPress Members before 3.3.1, with the Block Permissions add-on enabled, contains a denial of service vulnerability that allows authenticated Author-level users to crash pages by saving a non-string blockPermissionsMessage block attribute. Attackers can store a JSON array in the attribute so wpautop() in get_block_replacement_content() throws a PHP 8 TypeError, causing fatal errors on post, home, search, and REST pages for unauthorized viewers.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1287"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/caseproof/members/blob/3.3.0/addons/members-block-permissions/src/Block.php#L99-L122",
+   "https://github.com/caseproof/members/commit/a8268a42ffa5c53b32f5ca6d3fa96f2e7214d945",
+   "https://github.com/caseproof/members/security/advisories/GHSA-3x7x-q94j-c2mq"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134750": {
+  "id": "CVE-2026-134750",
+  "published": "2026-11-22T15:17:13.030",
+  "modified": "2026-11-22T15:17:13.030",
+  "desc": "Members WordPress plugin before 3.3.1 contains a missing authorization vulnerability that allows unauthenticated visitors to read comments on role-restricted posts via the Latest Comments block. Attackers can view pages hosting the block, where get_the_ID() checks the host page and get_comment_excerpt() bypasses filtering, exposing restricted comments, post titles, and links.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/caseproof/members/blob/3.3.0/inc/functions-content-permissions.php#L596-L606",
+   "https://github.com/caseproof/members/commit/a8268a42ffa5c53b32f5ca6d3fa96f2e7214d945",
+   "https://github.com/caseproof/members/security/advisories/GHSA-32h5-cmfg-7j95"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134751": {
+  "id": "CVE-2026-134751",
+  "published": "2026-11-22T15:17:13.177",
+  "modified": "2026-11-22T15:17:13.177",
+  "desc": "Members WordPress plugin before 3.3.1 contains a missing authorization vulnerability that allows unauthenticated visitors to read role-restricted posts by viewing Latest Posts blocks in full-content mode. The block renders raw post_content without firing the_content filter, bypassing members_content_permissions_protect() and exposing complete bodies of restricted posts.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/caseproof/members/blob/3.3.0/inc/functions-content-permissions.php",
+   "https://github.com/caseproof/members/commit/a8268a42ffa5c53b32f5ca6d3fa96f2e7214d945",
+   "https://github.com/caseproof/members/security/advisories/GHSA-7g48-q9rf-j74r"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134752": {
+  "id": "CVE-2026-134752",
+  "published": "2026-11-22T15:17:13.323",
+  "modified": "2026-11-22T15:17:13.323",
+  "desc": "WPGSI: Spreadsheet Integration before 3.8.5 contains a cross-site request forgery vulnerability that allows unauthenticated attackers to delete posts by abusing the delete action in wpgsi_show_view() without nonce verification. Attackers can trick a logged-in administrator into following a crafted wpgsi-show link with action=delete and an id parameter to delete arbitrary posts or pages.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.svn.wordpress.org/wpgsi/tags/3.8.4/admin/class-wpgsi-show.php",
+   "https://plugins.svn.wordpress.org/wpgsi/tags/3.8.5/admin/class-wpgsi-show.php",
+   "https://wordpress.org/plugins/wpgsi/#developers"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134753": {
+  "id": "CVE-2026-134753",
+  "published": "2026-11-22T15:17:13.483",
+  "modified": "2026-11-22T15:17:13.483",
+  "desc": "dsniff through 2.5a2 contains an integer underflow in decode_sniffer() in decode_sniffer.c that allows unauthenticated remote attackers to write past the global obuf buffer. Attackers can send a UDP datagram to port 2001 on a monitored segment with a 4096-byte string, disabling base64_pton bounds checks to corrupt memory and crash dsniff.",
+  "cvss": 8.3,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-191"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hackerschoice/dsniff/blob/v2.5a2/decode_sniffer.c#L46",
+   "https://github.com/hackerschoice/dsniff/blob/v2.5a2/trigger.c#L357",
+   "https://github.com/hackerschoice/dsniff/issues/7"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134754": {
+  "id": "CVE-2026-134754",
+  "published": "2026-11-22T15:17:13.640",
+  "modified": "2026-11-22T15:17:13.640",
+  "desc": "anacrolix/torrent before 1.62.0 contains an uncontrolled recursion vulnerability in Decoder.readOneValue in bencode/decode.go that allows attackers to crash the process by supplying deeply nested bencode data. Attackers can deliver crafted .torrent files or magnet link metadata with millions of nested lists to cause a fatal stack overflow, or deeply nested v2 file trees to exhaust CPU.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-674"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/anacrolix/torrent/blob/v1.61.0/bencode/decode.go#L532-L591",
+   "https://github.com/anacrolix/torrent/blob/v1.61.0/metainfo/file-tree.go#L35-L50",
+   "https://github.com/anacrolix/torrent/commit/76452a2c8a2fd9c59d4d4f10fc3495723d538c7b"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134755": {
+  "id": "CVE-2026-134755",
+  "published": "2026-11-22T15:17:13.797",
+  "modified": "2026-11-22T15:17:13.797",
+  "desc": "better-chatbot before 2.0.0 contains a missing authorization vulnerability that lets built-in tools run without user confirmation in Manual tool mode, because src/app/api/chat/route.ts keeps their execute handlers. Attackers can plant prompt-injected documents or web pages that make the HTTP request tool send conversation data to attacker-controlled URLs.",
+  "cvss": 6.0,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/keinsaasforever/better-chatbot/blob/v1.26.0/src/app/api/chat/route.ts#L298",
+   "https://github.com/keinsaasforever/better-chatbot/commit/61e47d8770e39dccc8d9b16ec047c2dd39a8ce47",
+   "https://github.com/keinsaasforever/better-chatbot/pull/402"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134756": {
+  "id": "CVE-2026-134756",
+  "published": "2026-11-22T15:17:13.953",
+  "modified": "2026-11-22T15:17:13.953",
+  "desc": "Portainer Community Edition and Business Edition 2.39.0 before 2.45.1 contain a server-side request forgery vulnerability because user-supplied URLs are only syntax-checked by validate.IsURL without resolved address validation. Authenticated users can abuse Git cloning, Helm retrieval, registry ping, or the GitLab proxy to reach loopback, internal, and cloud metadata addresses, probing ports and reading responses.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/portainer/portainer/blob/2.44.0/api/http/handler/registries/registry_ping.go",
+   "https://github.com/portainer/portainer/blob/2.44.0/pkg/libhttp/ssrf/ssrf.go",
+   "https://github.com/portainer/portainer/releases/tag/2.45.1"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134757": {
+  "id": "CVE-2026-134757",
+  "published": "2026-11-22T15:17:14.117",
+  "modified": "2026-11-22T15:17:14.117",
+  "desc": "Anacrolix torrent before 1.63.0 contains an improper certificate validation vulnerability in NewClient within tracker/http/client.go, which unconditionally sets InsecureSkipVerify to true for HTTPS trackers. Attackers able to intercept tracker traffic can impersonate trackers with any certificate, observe info_hash and peer_id values, and return forged peer lists.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-295"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/anacrolix/torrent/blob/v1.62.0/tracker/http/client.go#L41-L55",
+   "https://github.com/anacrolix/torrent/commit/1db2ea2eb9c8ff172f776121a587d69c60ae3ac2",
+   "https://github.com/anacrolix/torrent/releases/tag/v1.63.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134758": {
+  "id": "CVE-2026-134758",
+  "published": "2026-11-22T15:17:14.270",
+  "modified": "2026-11-22T15:17:14.270",
+  "desc": "Wfuzz through 3.1.1 contains a stored cross-site scripting vulnerability that allows malicious target servers to inject script by returning crafted links written unescaped into HTML reports. When the links script and html printer are used, attacker-supplied href values close the unquoted anchor tag and execute JavaScript when the operator opens the report.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/xmendez/wfuzz/blob/v3.1.1/src/wfuzz/plugins/printers/printers.py#L153",
+   "https://github.com/xmendez/wfuzz/blob/v3.1.1/src/wfuzz/plugins/scripts/links.py#L58",
+   "https://github.com/xmendez/wfuzz/issues/395"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129024": {
+  "id": "CVE-2026-129024",
+  "published": "2026-11-22T16:16:39.513",
+  "modified": "2026-11-22T16:16:39.630",
+  "desc": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Everest Forms Everest Forms everest-forms allows Path Traversal.This issue affects Everest Forms: from n/a through 3.6.4.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/everest-forms/vulnerability/wordpress-everest-forms-plugin-3-6-4-arbitrary-file-deletion-vulnerability-2?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129066": {
+  "id": "CVE-2026-129066",
+  "published": "2026-11-22T16:16:39.663",
+  "modified": "2026-11-22T16:16:39.783",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Everest Forms Everest Forms everest-forms allows Stored XSS.This issue affects Everest Forms: from n/a through 3.6.4.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/everest-forms/vulnerability/wordpress-everest-forms-plugin-3-6-4-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-129081": {
+  "id": "CVE-2026-129081",
+  "published": "2026-11-22T16:16:39.817",
+  "modified": "2026-11-22T16:16:39.980",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Aguila Technologies WP Customer Area customer-area allows Stored XSS.This issue affects WP Customer Area: from n/a through 8.4.5.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/customer-area/vulnerability/wordpress-wp-customer-area-plugin-8-4-5-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131698": {
+  "id": "CVE-2026-131698",
+  "published": "2026-11-22T16:16:40.100",
+  "modified": "2026-11-22T16:16:40.360",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Bootstrapped Ventures WP Recipe Maker wp-recipe-maker allows Stored XSS.This issue affects WP Recipe Maker: from n/a through 10.9.2.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/wp-recipe-maker/vulnerability/wordpress-wp-recipe-maker-plugin-10-9-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131726": {
+  "id": "CVE-2026-131726",
+  "published": "2026-11-22T16:16:40.407",
+  "modified": "2026-11-22T16:16:40.570",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Awesomemotive Coming Soon Page, Under Construction & Maintenance Mode by SeedProd coming-soon allows DOM-Based XSS.This issue affects Coming Soon Page, Under Construction & Maintenance Mode by SeedProd: from n/a through 6.20.12.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/coming-soon/vulnerability/wordpress-coming-soon-page-under-construction-maintenance-mode-by-seedprod-plugin-6-20-12-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131741": {
+  "id": "CVE-2026-131741",
+  "published": "2026-11-22T16:16:40.617",
+  "modified": "2026-11-22T16:16:40.803",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Brainstorm Force CartFlows cartflows allows Reflected XSS.This issue affects CartFlows: from n/a through 3.3.2.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/cartflows/vulnerability/wordpress-cartflows-plugin-3-3-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131750": {
+  "id": "CVE-2026-131750",
+  "published": "2026-11-22T16:16:40.857",
+  "modified": "2026-11-22T16:16:41.027",
+  "desc": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Everest Forms Everest Forms everest-forms allows Path Traversal.This issue affects Everest Forms: from n/a through 3.6.4.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/everest-forms/vulnerability/wordpress-everest-forms-plugin-3-6-4-arbitrary-file-deletion-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131755": {
+  "id": "CVE-2026-131755",
+  "published": "2026-11-22T16:16:41.073",
+  "modified": "2026-11-22T16:16:41.243",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Jayasree TU Successful Redirection for Contact Form cf7-redirection allows Reflected XSS.This issue affects Successful Redirection for Contact Form: from n/a through 2.0.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/cf7-redirection/vulnerability/wordpress-successful-redirection-for-contact-form-plugin-2-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131772": {
+  "id": "CVE-2026-131772",
+  "published": "2026-11-22T16:16:41.293",
+  "modified": "2026-11-22T16:16:41.470",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PluginUs.Net HUSKY woocommerce-products-filter allows Stored XSS.This issue affects HUSKY: from n/a through 1.4.8.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/woocommerce-products-filter/vulnerability/wordpress-husky-plugin-1-4-8-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131777": {
+  "id": "CVE-2026-131777",
+  "published": "2026-11-22T16:16:41.520",
+  "modified": "2026-11-22T16:16:43.633",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in mra13 / Team Tips and Tricks HQ Stripe Payments stripe-payments allows Stored XSS.This issue affects Stripe Payments: from n/a through 2.1.4.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/stripe-payments/vulnerability/wordpress-stripe-payments-plugin-2-1-4-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131786": {
+  "id": "CVE-2026-131786",
+  "published": "2026-11-22T16:16:43.683",
+  "modified": "2026-11-22T16:16:43.870",
+  "desc": "Insertion of Sensitive Information Into Sent Data vulnerability in myCred myCred mycred allows Retrieve Embedded Sensitive Data.This issue affects myCred: from n/a through 4.0.3.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-201"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/mycred/vulnerability/wordpress-mycred-plugin-4-0-3-sensitive-data-exposure-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131788": {
+  "id": "CVE-2026-131788",
+  "published": "2026-11-22T16:16:43.930",
+  "modified": "2026-11-22T16:16:44.103",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Kadence kadence allows Stored XSS.This issue affects Kadence: from n/a through 1.6.0.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/theme/kadence/vulnerability/wordpress-kadence-theme-1-6-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131790": {
+  "id": "CVE-2026-131790",
+  "published": "2026-11-22T16:16:44.157",
+  "modified": "2026-11-22T16:16:44.313",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Gutenberg Blocks by Kadence Blocks kadence-blocks allows Stored XSS.This issue affects Gutenberg Blocks by Kadence Blocks: from n/a through 3.9.1.1.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/kadence-blocks/vulnerability/wordpress-gutenberg-blocks-by-kadence-blocks-plugin-3-9-1-1-cross-site-scripting-xss-vulnerability-2?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131791": {
+  "id": "CVE-2026-131791",
+  "published": "2026-11-22T16:16:44.557",
+  "modified": "2026-11-22T16:16:44.677",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in seowriting SEOWriting seowriting allows Stored XSS.This issue affects SEOWriting: from n/a through 1.15.0.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/seowriting/vulnerability/wordpress-seowriting-plugin-1-15-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131792": {
+  "id": "CVE-2026-131792",
+  "published": "2026-11-22T16:16:44.710",
+  "modified": "2026-11-22T16:16:44.820",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in weDevs Dokan dokan-lite allows Stored XSS.This issue affects Dokan: from n/a through 5.3.4.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/dokan-lite/vulnerability/wordpress-dokan-plugin-5-3-4-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131793": {
+  "id": "CVE-2026-131793",
+  "published": "2026-11-22T16:16:44.850",
+  "modified": "2026-11-22T16:16:44.950",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in IT Path Solutions Contact Form to Any API contact-form-to-any-api allows Stored XSS.This issue affects Contact Form to Any API: from n/a through 3.0.7.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/contact-form-to-any-api/vulnerability/wordpress-contact-form-to-any-api-plugin-3-0-7-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-131794": {
+  "id": "CVE-2026-131794",
+  "published": "2026-11-22T16:16:44.980",
+  "modified": "2026-11-22T16:16:45.080",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in YellowPencil YellowPencil Visual CSS Style Editor yellow-pencil-visual-theme-customizer allows Reflected XSS.This issue affects YellowPencil Visual CSS Style Editor: from n/a through 7.6.7.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/yellow-pencil-visual-theme-customizer/vulnerability/wordpress-yellowpencil-visual-css-style-editor-plugin-7-6-7-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-132147": {
+  "id": "CVE-2026-132147",
+  "published": "2026-11-22T16:16:45.117",
+  "modified": "2026-11-22T16:16:45.117",
+  "desc": "An arbitrary file read vulnerability was discovered in debbugs, a bug tracking system based on the active Debian BTS. versions.cgi failed to correctly sanitize package name inputs in found\n\nand fixed query parameters. Crafted query parameters could cause version.cgi to output any lines of the target file which contained spaces.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [
+   "https://salsa.debian.org/debbugs-team/debbugs/-/commit/2fbf06866c9322090675a37aa55e4e7fa560bce0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134624": {
+  "id": "CVE-2026-134624",
+  "published": "2026-11-22T19:16:32.163",
+  "modified": "2026-11-22T19:16:32.163",
+  "desc": "N-able MailAssure (SpamExperts) before 20261121.1943 does not restrict the destination of the LDAP synchronisation connection check performed when a relay is configured. An authenticated API user can cause the server to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+  "cvss": 9.3,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://me.n-able.com/s/security-advisory/aArVy0000002mrlKAA"
   ],
   "kev": false,
   "epss": null

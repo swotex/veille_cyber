@@ -8862,5 +8862,29 @@
   "lang": "en",
   "date": "2026-11-22T05:03:41+00:00",
   "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and…"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/": {
+  "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-22T18:45:37+00:00",
+  "summary": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to…"
+ },
+ "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/": {
+  "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+  "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-22T15:43:04+00:00",
+  "summary": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/": {
+  "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+  "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-22T15:15:25+00:00",
+  "summary": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices. [...]"
  }
 }
