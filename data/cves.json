@@ -46872,7 +46872,7 @@
  "CVE-2026-84725": {
   "id": "CVE-2026-84725",
   "published": "2026-10-28T18:17:20.420",
-  "modified": "2026-11-11T19:17:45.807",
+  "modified": "2026-11-22T01:16:55.310",
   "desc": "when EAP runs with -secmgr, the openjdk-orb's JDKBridge honours attacker-supplied CDR codebase URLs during object unmarshalling on :3528, allowing an unauthenticated attacker to load and instantiate arbitrary classes from a remote URL in the server JVM before EJB security interceptors run.",
   "cvss": 8.1,
   "sev": "HIGH",
@@ -46882,9 +46882,9 @@
   ],
   "products": [],
   "refs": [
-   "https://access.redhat.com/errata/RHSA-2026:95887",
    "https://access.redhat.com/errata/RHSA-2026:99096",
-   "https://access.redhat.com/errata/RHSA-2026:99097"
+   "https://access.redhat.com/errata/RHSA-2026:99097",
+   "https://access.redhat.com/errata/RHSA-2026:99098"
   ],
   "kev": false,
   "epss": 0.00573
@@ -49945,7 +49945,7 @@
  "CVE-2026-114488": {
   "id": "CVE-2026-114488",
   "published": "2026-10-29T06:17:19.103",
-  "modified": "2026-11-06T18:17:53.670",
+  "modified": "2026-11-22T01:16:52.097",
   "desc": "A flaw was found in Wildfly. A remote attacker can bypass authentication on IIOP EJB invocations as the CSIv2 security interceptor accepts ITTPrincipalName identity assertions in the service context without verifying transport-level authentication, allowing a pre-auth attacker on the port 3528 to impersonate any principal on every IIOP-exposed @Remote EJB.",
   "cvss": 7.4,
   "sev": "HIGH",
@@ -49955,7 +49955,6 @@
   ],
   "products": [],
   "refs": [
-   "https://access.redhat.com/errata/RHSA-2026:95887",
    "https://access.redhat.com/security/cve/CVE-2026-114488",
    "https://bugzilla.redhat.com/show_bug.cgi?id=2491619"
   ],
@@ -50112,7 +50111,7 @@
  "CVE-2026-15564": {
   "id": "CVE-2026-15564",
   "published": "2026-10-29T06:17:20.590",
-  "modified": "2026-11-06T18:18:07.480",
+  "modified": "2026-11-22T01:16:54.353",
   "desc": "Wildfly's IIOP listener may permit deserialization of input streams before authentication is performed. An attacker who can gain access to the IIOP port may be able to construct and send malicious objects and achieve deserialization, if the target EJB allows untyped method parameters, and depending on the potential gadget chains available in the running classpath.",
   "cvss": 7.4,
   "sev": "HIGH",
@@ -50122,7 +50121,6 @@
   ],
   "products": [],
   "refs": [
-   "https://access.redhat.com/errata/RHSA-2026:95887",
    "https://access.redhat.com/security/cve/CVE-2026-15564",
    "https://bugzilla.redhat.com/show_bug.cgi?id=2478005"
   ],
@@ -50132,7 +50130,7 @@
  "CVE-2026-19610": {
   "id": "CVE-2026-19610",
   "published": "2026-10-29T06:17:20.797",
-  "modified": "2026-11-06T18:18:10.703",
+  "modified": "2026-11-22T01:16:54.957",
   "desc": "A flaw was found in the platform-mbean component of JBoss EAP, which provides management access to JVM-level metrics and configurations. The issue occurs because the handler for the read-resource operation on the runtime management resource fails to perform required Role-Based Access Control (RBAC) checks. This allows an authenticated user with low-privileged access, such as the Monitor role, to view sensitive system properties and JVM configuration details that should be restricted.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -50142,7 +50140,6 @@
   ],
   "products": [],
   "refs": [
-   "https://access.redhat.com/errata/RHSA-2026:95887",
    "https://access.redhat.com/security/cve/CVE-2026-19610",
    "https://bugzilla.redhat.com/show_bug.cgi?id=2514537"
   ],
@@ -138765,7 +138762,7 @@
  "CVE-2026-85634": {
   "id": "CVE-2026-85634",
   "published": "2026-10-15T17:17:29.250",
-  "modified": "2026-11-06T17:20:02.387",
+  "modified": "2026-11-22T01:16:55.610",
   "desc": "A flaw was found in the ContentRepositoryImpl.copyExplodedContent function of the wildfly-core library, which is used by WildFly and JBoss EAP to manage server deployments. The issue occurs when the library processes an unsanitized deployment name. Due to a missing containment check, an attacker with the Deployer RBAC role can use path traversal sequences to access files outside the restricted deployment directory. This can allow the attacker to delete arbitrary directories or create files with arbitrary content, leading to a full privilege escalation to the management SuperUser role.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -138775,7 +138772,6 @@
   ],
   "products": [],
   "refs": [
-   "https://access.redhat.com/errata/RHSA-2026:95887",
    "https://access.redhat.com/security/cve/CVE-2026-85634",
    "https://bugzilla.redhat.com/show_bug.cgi?id=2528476"
   ],
@@ -222057,7 +222053,7 @@
  "CVE-2026-125396": {
   "id": "CVE-2026-125396",
   "published": "2026-11-10T00:17:13.713",
-  "modified": "2026-11-12T20:57:59.173",
+  "modified": "2026-11-21T23:16:54.413",
   "desc": "Ghostscript before 10.08.0 contains a -dSAFER bypass vulnerability in the .putgstringcopy procedure in gs_fonts.ps, which calls the privileged .forceput operator without checking operand types. Attackers can supply crafted PostScript or PDF documents that trigger a type error, recover .forceput via a custom error handler, and cause a use-after-free across save/restore to execute arbitrary code.",
   "cvss": 8.5,
   "sev": "HIGH",
@@ -357242,7 +357238,7 @@
  "CVE-2026-115560": {
   "id": "CVE-2026-115560",
   "published": "2026-11-19T15:17:24.610",
-  "modified": "2026-11-20T05:18:38.473",
+  "modified": "2026-11-22T01:16:52.303",
   "desc": "Session serializer mismatch can lead to remote code execution.\n\nSession upload progress, when enabled, can store attacker-controlled data in a session key using the php_binary or php_serialize session serializer. If the same session is later read with the php serializer, because session.serialize_handler is changed at runtime or differs between applications sharing a session store, bytes inside the key can be passed to the unserializer. A remote attacker able to submit a multipart upload can inject objects, which may lead to code execution when the reading application contains a suitable gadget chain, or to session corruption or denial of service.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
   "cvss": 9.2,
   "sev": "CRITICAL",
@@ -357253,7 +357249,9 @@
   ],
   "products": [],
   "refs": [
-   "https://github.com/php/php-src/security/advisories/GHSA-658j-r8rw-q6mx"
+   "https://github.com/php/php-src/security/advisories/GHSA-658j-r8rw-q6mx",
+   "https://access.redhat.com/security/cve/cve-2026-115560",
+   "https://github.com/murrez/php2shell/blob/a8e24f4efab57f67384909d9408e42a74b973bfb/poc.py#L776-L791"
   ],
   "kev": false,
   "epss": 0.71117
@@ -357420,7 +357418,7 @@
  "CVE-2026-126714": {
   "id": "CVE-2026-126714",
   "published": "2026-11-19T15:17:26.167",
-  "modified": "2026-11-20T15:17:40.600",
+  "modified": "2026-11-22T01:16:52.470",
   "desc": "Partially overwritten session files can lead to remote code execution.\n\nThe files session save handler, which is the default, writes updated session data into the existing session file without first clearing it. If a write is interrupted, the file can contain the beginning of the new session followed by the end of the old one, and bytes of an ordinary string can later be unserialized as objects. An attacker who can influence the session data, for example through session upload progress, and interrupt a write at a suitable point may inject objects, which can lead to code execution when the application contains a suitable gadget chain. Session data can also be corrupted.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
   "cvss": 9.2,
   "sev": "CRITICAL",
@@ -357432,8 +357430,8 @@
   "products": [],
   "refs": [
    "https://github.com/php/php-src/security/advisories/GHSA-fm2m-fjf5-v3cp",
-   "https://bugzilla.suse.com/show_bug.cgi?id=1290690",
-   "https://depthfirst.com/phpAfterShell"
+   "https://access.redhat.com/security/cve/cve-2026-126714",
+   "https://bugzilla.suse.com/show_bug.cgi?id=1290690"
   ],
   "kev": false,
   "epss": 0.13104
@@ -357516,7 +357514,7 @@
  "CVE-2026-129289": {
   "id": "CVE-2026-129289",
   "published": "2026-11-19T15:17:27.523",
-  "modified": "2026-11-20T15:17:42.143",
+  "modified": "2026-11-22T00:16:58.823",
   "desc": "PHP-FPM request smuggling through an unread HTTP request body.\n\nPHP does not discard the unread part of an HTTP request body at request shutdown when the application has opened php://input without reading it to the end. When the front end reuses backend connections, which is not the default in nginx or Apache (for example nginx with fastcgi_keep_conn on, or Apache mod_proxy_fcgi with enablereuse=on), PHP-FPM can parse the leftover bytes as a new FastCGI request. An unauthenticated remote attacker can use a single crafted multipart/form-data request to forge a backend request with chosen parameters such as SCRIPT_FILENAME, REMOTE_ADDR and PHP_ADMIN_VALUE, which can lead to execution of attacker-controlled PHP code. With LSAPI, subsequent requests on the connection can be disrupted.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
   "cvss": 9.2,
   "sev": "CRITICAL",
@@ -357528,8 +357526,8 @@
   "products": [],
   "refs": [
    "https://github.com/php/php-src/security/advisories/GHSA-qc49-hpvq-g2w6",
-   "https://bugzilla.suse.com/show_bug.cgi?id=1290687",
-   "https://github.com/anonaddy/docker/issues/465"
+   "https://access.redhat.com/security/cve/cve-2026-129289",
+   "https://bugzilla.suse.com/show_bug.cgi?id=1290687"
   ],
   "kev": false,
   "epss": 0.16138
@@ -357592,7 +357590,7 @@
  "CVE-2026-129474": {
   "id": "CVE-2026-129474",
   "published": "2026-11-19T15:17:28.110",
-  "modified": "2026-11-20T05:18:41.323",
+  "modified": "2026-11-22T01:16:52.627",
   "desc": "Use-after-free in magic method backtraces can lead to remote code execution.\n\nWhen collecting the arguments of a method call handled by __call() or __callStatic() for a backtrace, PHP can read stale values that may refer to freed memory. If a fatal error such as exceeding memory_limit occurs while an application enters such a call, with fatal_error_backtraces enabled (the default) and zend.exception_ignore_args disabled, a remote attacker who controls enough request data to influence memory allocation may cause memory corruption, crash the PHP worker or, with knowledge of memory addresses, execute arbitrary code. php.ini-production enables zend.exception_ignore_args, which prevents this.\n\nThis issue affects PHP versions 8.5.* before 8.5.13.",
   "cvss": 9.2,
   "sev": "CRITICAL",
@@ -357602,7 +357600,9 @@
   ],
   "products": [],
   "refs": [
-   "https://github.com/php/php-src/security/advisories/GHSA-8mjj-2r7p-4hg2"
+   "https://github.com/php/php-src/security/advisories/GHSA-8mjj-2r7p-4hg2",
+   "https://access.redhat.com/security/cve/cve-2026-129474",
+   "https://github.com/murrez/php2shell/blob/a8e24f4efab57f67384909d9408e42a74b973bfb/poc.py#L808-L816"
   ],
   "kev": false,
   "epss": 0.07248
@@ -392553,6 +392553,289 @@
    "https://github.com/yanghao233/submit/issues/1",
    "https://itsourcecode.com/",
    "https://vuldb.com/cve/CVE-2026-134007"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134009": {
+  "id": "CVE-2026-134009",
+  "published": "2026-11-21T20:16:34.790",
+  "modified": "2026-11-21T20:16:35.820",
+  "desc": "A vulnerability was detected in liukuo362573 YiShaAdmin up to ba04d5072885447553e372bb87e372b55a90780c. Impacted is the function SqlServerPageSql/OraclePageSql/MySqlPageSql/ of the file YiSha.Data/YiSha.Data/Extension/DatabasePageExtension.cs of the component Pagination Sorting. The manipulation of the argument sort results in sql injection. It is possible to launch the attack remotely. The exploit is now public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available. The patch is identified as 19b0bdffc9587bff291bac81586953277abe5b84. Applying a patch is advised to resolve this issue.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/liukuo362573/YiShaAdmin/",
+   "https://github.com/liukuo362573/YiShaAdmin/commit/19b0bdffc9587bff291bac81586953277abe5b84",
+   "https://vuldb.com/cve/CVE-2026-134009"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134533": {
+  "id": "CVE-2026-134533",
+  "published": "2026-11-21T20:16:35.870",
+  "modified": "2026-11-21T20:16:36.027",
+  "desc": "A vulnerability was identified in Skyvern-AI Skyvern 1.0.56. Impacted is the function classify_url of the file skyvern/forge/sdk/browser_egress_policy.py. The manipulation leads to server-side request forgery. The attack is possible to be carried out remotely. Upgrading to version 1.0.57 is recommended to address this issue. The identifier of the patch is 10b8d829c2750ebf62f2b70dec0e288297e752dd. Upgrading the affected component is recommended.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Skyvern-AI/skyvern/",
+   "https://github.com/Skyvern-AI/skyvern/commit/10b8d829c2750ebf62f2b70dec0e288297e752dd",
+   "https://github.com/Skyvern-AI/skyvern/issues/9010"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-115589": {
+  "id": "CVE-2026-115589",
+  "published": "2026-11-21T23:16:54.263",
+  "modified": "2026-11-21T23:16:54.263",
+  "desc": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134534": {
+  "id": "CVE-2026-134534",
+  "published": "2026-11-21T23:16:54.593",
+  "modified": "2026-11-21T23:16:54.780",
+  "desc": "A security flaw has been discovered in Skyvern-AI Skyvern 1.0.56. The affected element is the function classify_url of the file skyvern/forge/sdk/browser_egress_policy.py. The manipulation results in server-side request forgery. The attack may be performed from remote. Upgrading to version 1.0.57 is sufficient to fix this issue. The patch is identified as 10b8d829c2750ebf62f2b70dec0e288297e752dd. It is recommended to upgrade the affected component.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Skyvern-AI/skyvern/",
+   "https://github.com/Skyvern-AI/skyvern/commit/10b8d829c2750ebf62f2b70dec0e288297e752dd",
+   "https://github.com/Skyvern-AI/skyvern/issues/9010"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134536": {
+  "id": "CVE-2026-134536",
+  "published": "2026-11-21T23:16:54.830",
+  "modified": "2026-11-21T23:16:54.983",
+  "desc": "A weakness has been identified in Drakeling Labs Operation Harsh Doorstop up to 0.14.2.1 Build 19523588. The impacted element is the function LaunchURL of the component Workshop Configuration. This manipulation causes unrestricted upload. It is possible to initiate the attack remotely. Upgrading to version 0.14.2.2 Build 26092794 is sufficient to resolve this issue. Upgrading the affected component is advised.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-284",
+   "CWE-434"
+  ],
+  "products": [],
+  "refs": [
+   "https://drbloop.dev/blog/one-click-remote-code-execution-in-operation-harsh-doorstop",
+   "https://operationharshdoorstop.com/blog/6adab67ae8ec6ecd6acda09f",
+   "https://steamcommunity.com/app/736590"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134540": {
+  "id": "CVE-2026-134540",
+  "published": "2026-11-21T23:16:55.030",
+  "modified": "2026-11-21T23:16:55.180",
+  "desc": "A security vulnerability has been detected in ggml-org llama.cpp 0.7.0-dev. This affects the function common_sampler_init of the file common/sampling.cpp of the component llama-server. Such manipulation of the argument grammar_triggers[].type leads to improper input validation. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. Upgrading to version b12405 mitigates this issue. The name of the patch is 9f26fe11c73c7e74a5e99e7f1b6370ad8e1cb22d. It is advisable to upgrade the affected component.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-20"
+  ],
+  "products": [],
+  "refs": [
+   "https://gist.github.com/Yunzez/90b17f91d7f1955805e0045a1a76fb6d#file-repro_llamacpp_grammar_triggers_abort-py",
+   "https://github.com/ggml-org/llama.cpp/",
+   "https://github.com/ggml-org/llama.cpp/commit/9f26fe11c73c7e74a5e99e7f1b6370ad8e1cb22d"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134541": {
+  "id": "CVE-2026-134541",
+  "published": "2026-11-22T00:16:59.950",
+  "modified": "2026-11-22T00:17:00.097",
+  "desc": "A vulnerability was detected in Surya2Developer Online Shopping System 1.0. This impacts an unknown function of the file product.php of the component GET Parameter Handler. Performing a manipulation of the argument p results in sql injection. The attack can be initiated remotely. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Surya2Developer/Online_shopping_-system/issues/5",
+   "https://vuldb.com/cve/CVE-2026-134541",
+   "https://vuldb.com/submit/1052911"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134543": {
+  "id": "CVE-2026-134543",
+  "published": "2026-11-22T00:17:00.150",
+  "modified": "2026-11-22T00:17:00.307",
+  "desc": "A flaw has been found in jprocms up to 1.7.7. Affected is the function StrUtil.format of the component Database Backup Module. Executing a manipulation of the argument host/port/username/password/dbName can lead to os command injection. The attack can be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:L/SC:L/SI:L/SA:L/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-77",
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://ucn9h68n9289.feishu.cn/wiki/ZkAEwbKNSitfe4kKz9GcEtNXnY6?from=from_copylink",
+   "https://vuldb.com/cve/CVE-2026-134543",
+   "https://vuldb.com/submit/1052920"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134544": {
+  "id": "CVE-2026-134544",
+  "published": "2026-11-22T00:17:00.360",
+  "modified": "2026-11-22T00:17:00.503",
+  "desc": "A vulnerability has been found in jprocms up to 1.7.7. Affected by this vulnerability is the function validateParam of the component Expression Language Handler. The manipulation leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+  "cvss": 2.0,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-77",
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://ucn9h68n9289.feishu.cn/wiki/KgeFwmVXGiuUnlkVF0vcw6XhnGd?from=from_copylink",
+   "https://vuldb.com/cve/CVE-2026-134544",
+   "https://vuldb.com/submit/1052922"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134545": {
+  "id": "CVE-2026-134545",
+  "published": "2026-11-22T00:17:00.550",
+  "modified": "2026-11-22T00:17:00.693",
+  "desc": "A vulnerability was found in Xinchen Technology Huangjintong Second-level System Third-generation Management Terminal System up to 3.2. Affected by this issue is some unknown functionality of the file /paraframework/storSelect.htm. The manipulation of the argument warehouseID results in sql injection. The attack may be launched remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://ucn9h68n9289.feishu.cn/wiki/TpqOwGLK8iZlTWktjpPcVEg2nrb?from=from_copylink",
+   "https://vuldb.com/cve/CVE-2026-134545",
+   "https://vuldb.com/submit/1052923"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134553": {
+  "id": "CVE-2026-134553",
+  "published": "2026-11-22T01:16:52.780",
+  "modified": "2026-11-22T01:16:52.967",
+  "desc": "A vulnerability was determined in wiroai Wiro-MCP up to 1.3.0. This affects the function upload_file of the file src/tools/upload-file.ts of the component File Upload. This manipulation of the argument url causes server-side request forgery. Remote exploitation of the attack is possible. Upgrading to version 1.3.1 is able to mitigate this issue. Patch name: ac61f79888fd36fae8e282995847e542c4ef1cbd. It is recommended to upgrade the affected component.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://efek.me/blog/wiro-ai-mcp-server-side-request-forgery",
+   "https://github.com/wiroai/Wiro-MCP/",
+   "https://github.com/wiroai/Wiro-MCP/commit/ac61f79888fd36fae8e282995847e542c4ef1cbd"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134560": {
+  "id": "CVE-2026-134560",
+  "published": "2026-11-22T01:16:53.010",
+  "modified": "2026-11-22T01:16:53.167",
+  "desc": "A weakness has been identified in twogood unshield up to 1.6.2. Impacted is the function unshield_get_cab_descriptor of the file lib/libunshield.c of the component Cabinet Descriptor Parser. Executing a manipulation can lead to out-of-bounds read. The attack requires local access. The pull request to fix this issue awaits acceptance.",
+  "cvss": 4.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/twogood/unshield/",
+   "https://github.com/twogood/unshield/pull/238",
+   "https://vuldb.com/cve/CVE-2026-134560"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134566": {
+  "id": "CVE-2026-134566",
+  "published": "2026-11-22T01:16:53.230",
+  "modified": "2026-11-22T01:16:53.417",
+  "desc": "A security vulnerability has been detected in itsourcecode Document Management System 1.0. The affected element is an unknown function of the file /edit.php. The manipulation of the argument ID leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ZacheryZ/submit/issues/1",
+   "https://itsourcecode.com/",
+   "https://vuldb.com/cve/CVE-2026-134566"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134567": {
+  "id": "CVE-2026-134567",
+  "published": "2026-11-22T01:16:53.477",
+  "modified": "2026-11-22T01:16:53.633",
+  "desc": "A vulnerability was detected in itsourcecode Document Management System 1.0. The impacted element is an unknown function of the file /showlist.php. The manipulation of the argument condition results in sql injection. It is possible to launch the attack remotely. The exploit is now public and may be used.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ZacheryZ/submit/issues/2",
+   "https://itsourcecode.com/",
+   "https://vuldb.com/cve/CVE-2026-134567"
   ],
   "kev": false,
   "epss": null

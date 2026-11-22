@@ -8822,5 +8822,29 @@
   "lang": "en",
   "date": "2026-11-21T12:08:50+00:00",
   "summary": "A threat actor used autonomous Cairn AI agents to discover and exploit a critical MONAI Label vulnerability. The post Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day appeared first on SecurityWeek ."
+ },
+ "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/": {
+  "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+  "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-21T22:59:58+00:00",
+  "summary": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]"
+ },
+ "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/": {
+  "title": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
+  "url": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-22T00:53:02+00:00",
+  "summary": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains. The post FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/": {
+  "title": "President Trump Taps Kirsten Davies as National Cyber Director",
+  "url": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-21T13:00:00+00:00",
+  "summary": "White House says the battle-tested cyber leader will drive an America First cyber strategy. The post President Trump Taps Kirsten Davies as National Cyber Director appeared first on SecurityWeek ."
  }
 }
