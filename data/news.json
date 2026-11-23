@@ -8886,5 +8886,29 @@
   "lang": "en",
   "date": "2026-11-22T15:15:25+00:00",
   "summary": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices. [...]"
+ },
+ "https://www.zataz.com/ledger-un-pirate-piege-dautres-pirates-avec-un-faux-fichier/": {
+  "title": "Ledger : un pirate piège d’autres pirates avec un faux fichier",
+  "url": "https://www.zataz.com/ledger-un-pirate-piege-dautres-pirates-avec-un-faux-fichier/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-23T01:31:54+00:00",
+  "summary": "Sur un forum pirate, une prétendue nouvelle fuite de données Ledger dissimule un piège. ZATAZ a suivi la manœuvre."
+ },
+ "https://www.zataz.com/cyberattaque-a-chambourcy-inc-ransom-revendique-lattaque/": {
+  "title": "Cyberattaque à Chambourcy : INC Ransom revendique l’attaque",
+  "url": "https://www.zataz.com/cyberattaque-a-chambourcy-inc-ransom-revendique-lattaque/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-23T00:36:24+00:00",
+  "summary": "Cyberattaque à Chambourcy : INC Ransom revendique l'intrusion. ZATAZ révèle des documents de police municipale exposés."
+ },
+ "https://www.darkreading.com/endpoint-security/microsoft-offense-defense-ai-security-tools": {
+  "title": "Microsoft Debuts Offensive, Defensive Security Tools for the AI Era",
+  "url": "https://www.darkreading.com/endpoint-security/microsoft-offense-defense-ai-security-tools",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-20T13:51:30+00:00",
+  "summary": "Microsoft announces new AI agent security tools and transparency standards to protect enterprise systems at its Ignite technical conference."
  }
 }

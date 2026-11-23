@@ -119262,7 +119262,7 @@
  "CVE-2026-86565": {
   "id": "CVE-2026-86565",
   "published": "2026-10-14T17:20:05.770",
-  "modified": "2026-11-11T14:17:48.483",
+  "modified": "2026-11-23T01:17:10.977",
   "desc": "A flaw was found in DPDK lib/vhost. A guest can desynchronize virtqueue size from inflight descriptor table size, causing an out-of-bounds write in the host vhost process.",
   "cvss": 8.2,
   "sev": "HIGH",
@@ -119272,9 +119272,9 @@
   ],
   "products": [],
   "refs": [
+   "https://access.redhat.com/errata/RHSA-2026:102088",
    "https://access.redhat.com/errata/RHSA-2026:94629",
-   "https://access.redhat.com/errata/RHSA-2026:94630",
-   "https://access.redhat.com/errata/RHSA-2026:96083"
+   "https://access.redhat.com/errata/RHSA-2026:94630"
   ],
   "kev": false,
   "epss": 0.00171
@@ -119282,7 +119282,7 @@
  "CVE-2026-86567": {
   "id": "CVE-2026-86567",
   "published": "2026-10-14T18:19:18.390",
-  "modified": "2026-11-11T14:17:48.903",
+  "modified": "2026-11-23T01:17:11.250",
   "desc": "A flaw was found in DPDK lib/vhost. The VDUSE handler fails to invalidate vring pointers when the IOTLB is invalidated, leading to use-after-unmap.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -119292,9 +119292,9 @@
   ],
   "products": [],
   "refs": [
+   "https://access.redhat.com/errata/RHSA-2026:102087",
    "https://access.redhat.com/errata/RHSA-2026:94629",
-   "https://access.redhat.com/errata/RHSA-2026:94630",
-   "https://access.redhat.com/errata/RHSA-2026:96083"
+   "https://access.redhat.com/errata/RHSA-2026:94630"
   ],
   "kev": false,
   "epss": 0.00192
@@ -138702,7 +138702,7 @@
  "CVE-2026-86848": {
   "id": "CVE-2026-86848",
   "published": "2026-10-14T18:19:19.223",
-  "modified": "2026-11-11T14:17:49.733",
+  "modified": "2026-11-23T01:17:11.460",
   "desc": "A flaw was found in DPDK lib/vhost vhost-crypto. The indirect-descriptor snapshot double-fetches a guest descriptor next index, allowing a malicious guest to cause an out-of-bounds access in the host backend.",
   "cvss": 8.8,
   "sev": "HIGH",
@@ -138712,9 +138712,9 @@
   ],
   "products": [],
   "refs": [
+   "https://access.redhat.com/errata/RHSA-2026:102088",
    "https://access.redhat.com/errata/RHSA-2026:94629",
-   "https://access.redhat.com/errata/RHSA-2026:94630",
-   "https://access.redhat.com/errata/RHSA-2026:96083"
+   "https://access.redhat.com/errata/RHSA-2026:94630"
   ],
   "kev": false,
   "epss": 0.00105
@@ -383830,8 +383830,8 @@
  "CVE-2026-133968": {
   "id": "CVE-2026-133968",
   "published": "2026-11-20T19:18:51.670",
-  "modified": "2026-11-20T22:17:50.750",
-  "desc": "monailabel (aka MONAI Label) through 0.8.5 allows directory traversal, with resultant remote code execution, via the image parameter to the PUT /datastore/image endpoint, as exploited in the wild starting in September 2026.",
+  "modified": "2026-11-22T21:16:37.460",
+  "desc": "monailabel (aka MONAI Label) before 0.8.6 allows directory traversal, with resultant remote code execution, via the image parameter to the PUT /datastore/image endpoint, as exploited in the wild starting in September 2026.",
   "cvss": 9.8,
   "sev": "CRITICAL",
   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
@@ -383841,8 +383841,8 @@
   "products": [],
   "refs": [
    "https://github.com/Project-MONAI/MONAILabel/pull/1915",
-   "https://github.com/Project-MONAI/MONAILabel/security/advisories/GHSA-qc22-rmgc-vg94",
-   "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382"
+   "https://github.com/Project-MONAI/MONAILabel/releases/tag/0.8.6",
+   "https://github.com/Project-MONAI/MONAILabel/security/advisories/GHSA-qc22-rmgc-vg94"
   ],
   "kev": false,
   "epss": 0.03759
@@ -395208,6 +395208,1453 @@
   "products": [],
   "refs": [
    "https://me.n-able.com/s/security-advisory/aArVy0000002mrlKAA"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134761": {
+  "id": "CVE-2026-134761",
+  "published": "2026-11-22T22:17:31.267",
+  "modified": "2026-11-22T22:17:31.397",
+  "desc": "libical before 4.0.7 contains a use-after-free and double free vulnerability in icalparser_clean() that allows attackers to corrupt heap memory by supplying truncated iCalendar input. Attackers can provide an iCalendar file or stream missing a matching END line, causing the returned component to be freed twice and crashing applications.",
+  "cvss": 5.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:P/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-415"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/libical/libical/blob/v4.0.6/src/libical/icalparser.c#L1170-L1198",
+   "https://github.com/libical/libical/commit/6c48980adfda60abba4827ed76c8cfb8e943cb72",
+   "https://github.com/libical/libical/issues/1444"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134762": {
+  "id": "CVE-2026-134762",
+  "published": "2026-11-22T22:17:31.450",
+  "modified": "2026-11-22T22:17:31.580",
+  "desc": "ntop nDPI through 6.0 contains a heap out-of-bounds read and unsigned length underflow in ndpi_serializer_get_buffer() in src/lib/ndpi_serializer.c when stripping leading NUL and space bytes. Buffers holding only spaces or NULs, or a used length of 0 set through ndpi_serializer_set_buffer_len(), cause reads past the heap buffer or a wrapped 4294967295 length, crashing the embedding application.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ntop/nDPI/blob/6.0/src/lib/ndpi_serializer.c#L422-L438",
+   "https://github.com/ntop/nDPI/commit/05941e21d7701dd507c3aaf93d00c38cfbbc02db",
+   "https://github.com/ntop/nDPI/security/advisories/GHSA-cjvm-pg5v-f378"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134763": {
+  "id": "CVE-2026-134763",
+  "published": "2026-11-22T22:17:31.630",
+  "modified": "2026-11-22T22:17:31.760",
+  "desc": "FreeRDP before 3.33.1 contains a heap use-after-free vulnerability in the WinPR wLinkedList collection because LinkedList_FreeNode() frees nodes without updating the cached list->current enumerator pointer. When calling code removes the node the enumerator references, LinkedList_Enumerator_MoveNext() or LinkedList_Enumerator_Current() reads freed heap memory, which can crash the process.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-416"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/FreeRDP/FreeRDP/blob/3.33.0/winpr/libwinpr/utils/collections/LinkedList.c#L309-L350",
+   "https://github.com/FreeRDP/FreeRDP/commit/247c0379a17f9a8a2e742c929517397dd1989dbf",
+   "https://github.com/FreeRDP/FreeRDP/releases/tag/3.33.1"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134764": {
+  "id": "CVE-2026-134764",
+  "published": "2026-11-22T22:17:31.823",
+  "modified": "2026-11-22T22:17:31.823",
+  "desc": "Ground Station before 0.8.25 contains a path traversal vulnerability that allows authenticated non-administrator operators to write files outside data/decoded via the post_process_pipeline value. Attackers can insert ../ sequences into a scheduled observation's IQ task configuration so SatDump creates directories, overwrites same-named files, and recursively deletes created trees on failure.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sgoudelis/ground-station/blob/v0.8.24/backend/observations/executor.py#L1197-L1220",
+   "https://github.com/sgoudelis/ground-station/blob/v0.8.24/backend/tasks/satdumpprocessor.py#L334-L347",
+   "https://github.com/sgoudelis/ground-station/commit/eff75e269640619944bc1d0efb4698947c7558cb"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134765": {
+  "id": "CVE-2026-134765",
+  "published": "2026-11-22T22:17:31.983",
+  "modified": "2026-11-22T22:17:32.117",
+  "desc": "Kirby 5.0.0 before 5.6.4 contains a race condition in Kirby\\Api\\Upload::processChunk() that allows authenticated users with upload permission to bypass SVG sanitization. Attackers can race concurrent chunked uploads sharing a filename to swap a benign SVG with a script-bearing SVG, executing stored cross-site scripting in the site origin.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:P/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-367"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/getkirby/kirby/blob/5.6.3/src/Api/Upload.php#L251-L310",
+   "https://github.com/getkirby/kirby/commit/1d40fb5eda3727dd4b03fd3359f4a565452bec66",
+   "https://github.com/getkirby/kirby/releases/tag/5.6.4"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134793": {
+  "id": "CVE-2026-134793",
+  "published": "2026-11-22T22:17:32.177",
+  "modified": "2026-11-22T22:17:32.330",
+  "desc": "Electerm before 5.9.0 on Windows contains an OS command injection vulnerability that allows attackers to execute PowerShell code via crafted file or folder names containing Unicode quote characters. Attackers can deliver names containing U+2019 through archives, WSL distributions, or SMB shares, which break out of getFolderSizeWin() and calcLocal() quoting when victims request folder sizes, executing code as the electerm user.",
+  "cvss": 8.5,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/electerm/electerm/blob/v5.8.0/src/app/lib/fs.js#L106-L115",
+   "https://github.com/electerm/electerm/blob/v5.8.0/src/client/components/sftp/file-info-modal.jsx#L183-L192",
+   "https://github.com/electerm/electerm/commit/488b112d10dc21545f18284d4eb52db6dafb7f31"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134794": {
+  "id": "CVE-2026-134794",
+  "published": "2026-11-22T22:17:32.390",
+  "modified": "2026-11-22T22:17:32.527",
+  "desc": "HedgeDoc before 1.12.1 contains a prototype pollution vulnerability in the POST /history/:noteId endpoint that allows authenticated users to modify Object.prototype by supplying __proto__ as the noteId. Attackers can send a pinned value to /history/__proto__, which historyPost() in lib/history.js assigns onto the prototype, crashing the Node.js process and causing denial of service for all users.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hedgedoc/hedgedoc/blob/1.12.0/lib/history.js#L156-L161",
+   "https://github.com/hedgedoc/hedgedoc/commit/47060c247fb0902aebf1fe70cba130d9de623fc2",
+   "https://github.com/hedgedoc/hedgedoc/releases/tag/1.12.1"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134795": {
+  "id": "CVE-2026-134795",
+  "published": "2026-11-22T22:17:32.570",
+  "modified": "2026-11-22T22:17:32.570",
+  "desc": "graphql-core 3.2.12 before 3.2.14 and 3.3.0rc1 before 3.3.2 contains a denial of service vulnerability that allows unauthenticated attackers to bypass the parser max_tokens limit using long runs of comments. Attackers can submit GraphQL documents of consecutive comments that Lexer.lookahead fully tokenizes before limit checks, consuming CPU and memory proportional to document size.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/graphql-python/graphql-core/blob/v3.3.1/src/graphql/language/lexer.py#L84-L110",
+   "https://github.com/graphql-python/graphql-core/blob/v3.3.1/src/graphql/language/parser.py#L1479-L1507",
+   "https://github.com/graphql-python/graphql-core/commit/b7e3305e0a96d5b02a600355f56157ca29a94851"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134796": {
+  "id": "CVE-2026-134796",
+  "published": "2026-11-22T22:17:32.727",
+  "modified": "2026-11-22T22:17:32.727",
+  "desc": "Donetick before 0.1.86 contains a path traversal vulnerability in the GET /api/v1/assets/*filepath route that allows unauthenticated attackers to bypass URL signature checks by prefixing paths with profiles/. Attackers who know a private upload's storage key can request profiles/../users/<id>/<uuid>.<ext> to retrieve private attachments without a signature or login.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/donetick/donetick/blob/v0.1.85/internal/storage/handler.go#L71-L79",
+   "https://github.com/donetick/donetick/commit/12d8159783b1cc937ac50e00d5c4b6273b51dc9a",
+   "https://github.com/donetick/donetick/releases/tag/v0.1.86"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134797": {
+  "id": "CVE-2026-134797",
+  "published": "2026-11-22T22:17:32.873",
+  "modified": "2026-11-22T22:17:32.873",
+  "desc": "Donetick before 0.1.86 contains a path traversal vulnerability that allows authenticated users to delete other users' files by storing a crafted image value via PUT /api/v1/users. Attackers can set their image to a traversal key and upload a new profile photo, causing storage.Delete to remove other users' attachments or photos under the storage root.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/donetick/donetick/blob/v0.1.85/internal/user/handler.go#L1436-L1445",
+   "https://github.com/donetick/donetick/commit/12d8159783b1cc937ac50e00d5c4b6273b51dc9a",
+   "https://github.com/donetick/donetick/releases/tag/v0.1.86"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134798": {
+  "id": "CVE-2026-134798",
+  "published": "2026-11-22T22:17:33.040",
+  "modified": "2026-11-22T22:17:33.040",
+  "desc": "Donetick through 0.1.86 contains a blind server-side request forgery vulnerability that allows self-registered users to make the server send requests by setting unvalidated circle webhook or Discord notification URLs. Attackers can point these URLs at loopback or internal services, causing EventsProducer and the Discord notifier to POST partly attacker-influenced bodies to internal network hosts.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/donetick/donetick/blob/v0.1.86/internal/events/producer.go#L100",
+   "https://github.com/donetick/donetick/blob/v0.1.86/internal/notifier/service/discord/discord.go#L69",
+   "https://github.com/donetick/donetick/commit/da3ee4ef630a79a7b5baf5a079becdac76e08509"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134799": {
+  "id": "CVE-2026-134799",
+  "published": "2026-11-22T22:17:33.190",
+  "modified": "2026-11-22T22:17:33.313",
+  "desc": "ByteStash 1.5.0 before 1.6.1 contains a login cross-site request forgery vulnerability in the /api/auth/oidc/callback handler because OIDC state is not bound to the initiating browser. Attackers can start an OIDC login with their own account and lure victims into opening the withheld callback URL, logging them into the attacker's account to read saved snippets.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-352"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/jordan-dalby/ByteStash/blob/v1.6.0/server/src/oidc/oidcConfig.js#L150-L160",
+   "https://github.com/jordan-dalby/ByteStash/commit/32b8e7bc1efcd242e4fa0873657c90d08d533383",
+   "https://github.com/jordan-dalby/ByteStash/pull/384"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134800": {
+  "id": "CVE-2026-134800",
+  "published": "2026-11-22T22:17:33.367",
+  "modified": "2026-11-22T22:17:33.367",
+  "desc": "VoidAuth before 1.19.2 contains an insufficient session expiration vulnerability that allows attackers to retain account access because the POST /reset_password/passkey/end handler never calls endUserSessions(). Attackers holding a stolen session cookie keep authenticated access to the victim's account even after the victim recovers it by registering a new passkey.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-613"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/voidauth/voidauth/blob/v1.19.1/server/routes/public.ts#L137-L169",
+   "https://github.com/voidauth/voidauth/commit/4aad1a25623aa11489f81a55cadda8e2a9afc76c",
+   "https://github.com/voidauth/voidauth/releases/tag/v1.19.2"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134801": {
+  "id": "CVE-2026-134801",
+  "published": "2026-11-22T22:17:33.527",
+  "modified": "2026-11-22T22:17:33.527",
+  "desc": "VoidAuth before 1.19.2 contains an improper verification vulnerability that allows authenticated users to retain the emailVerified flag by changing their email address while EMAIL_VERIFICATION is disabled. Attackers with a previously verified account can set another person's address via the PATCH /email handler, receiving OIDC email_verified=true claims to impersonate that owner in relying applications.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/voidauth/voidauth/blob/v1.19.1/server/routes/user.ts#L97-L124",
+   "https://github.com/voidauth/voidauth/commit/4aad1a25623aa11489f81a55cadda8e2a9afc76c",
+   "https://github.com/voidauth/voidauth/releases/tag/v1.19.2"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134802": {
+  "id": "CVE-2026-134802",
+  "published": "2026-11-22T22:17:33.703",
+  "modified": "2026-11-22T22:17:33.703",
+  "desc": "VoidAuth before 1.19.2 contains an access control bypass vulnerability that allows authenticated users to evade stricter ProxyAuth domain rules by sending percent-encoded path separators. Attackers can request paths with encoded slashes, backslashes, semicolons, or dot segments that match a broader rule, reaching restricted paths once the reverse proxy or backend decodes them.",
+  "cvss": 7.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/voidauth/voidauth/blob/v1.19.1/server/util/proxyAuth.ts#L12-L41",
+   "https://github.com/voidauth/voidauth/blob/v1.19.1/shared/url.ts#L147",
+   "https://github.com/voidauth/voidauth/commit/4aad1a25623aa11489f81a55cadda8e2a9afc76c"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134803": {
+  "id": "CVE-2026-134803",
+  "published": "2026-11-22T22:17:33.857",
+  "modified": "2026-11-22T22:17:33.990",
+  "desc": "DBHub before 1.7.0 contains a read-only mode bypass vulnerability that allows MCP clients restricted to readonly execute_sql to run write and DDL statements via backslash-escaped quotes. Attackers can hide stacked statements that clear transaction_read_only or COMMIT inside strings misparsed by scanSingleQuotedString, letting them modify or drop MySQL, MariaDB, or PostgreSQL data.",
+  "cvss": 7.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-436"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/bytebase/dbhub/blob/v1.6.1/src/utils/sql-parser.ts#L79-L88",
+   "https://github.com/bytebase/dbhub/commit/cc9e3c7ad36b9fafd333a08d455781f2c5b548ee",
+   "https://github.com/bytebase/dbhub/pull/505"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134804": {
+  "id": "CVE-2026-134804",
+  "published": "2026-11-22T22:17:34.037",
+  "modified": "2026-11-22T22:17:34.037",
+  "desc": "Portainer 2.39.0 before 2.39.9, 2.40.0 before 2.45.4, and 3.0.0 before 3.1.0 contains an authorization bypass vulnerability that allows Standard users to access other users' containers via the WebSocket attach and exec endpoints. Attackers with shared environment access can use leaked container or exec IDs to hijack sessions over /api/websocket/attach or /api/websocket/exec, gaining interactive root shells.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/portainer/portainer/blob/2.45.3/api/http/handler/websocket/attach.go#L42-L92",
+   "https://github.com/portainer/portainer/blob/2.45.3/api/http/handler/websocket/exec.go#L45-L96",
+   "https://github.com/portainer/portainer/commit/52f82e7c7eec08fa4b421cd423798b8966e13857"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134805": {
+  "id": "CVE-2026-134805",
+  "published": "2026-11-22T22:17:34.203",
+  "modified": "2026-11-22T22:17:34.327",
+  "desc": "Zipline before 4.8.3 contains a server-side request forgery vulnerability that allows authenticated OIDC users to make the server fetch arbitrary URLs via the userinfo picture claim. Attackers who control their picture claim at the identity provider can force fetchToDataURL() to request internal or cloud-metadata URLs and read responses from their stored avatar.",
+  "cvss": 7.0,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/diced/zipline/blob/v4.8.2/src/lib/base64.ts#L10-L25",
+   "https://github.com/diced/zipline/blob/v4.8.2/src/server/routes/api/auth/oauth/oidc.ts#L93",
+   "https://github.com/diced/zipline/commit/ca431b9c63f68308daa9b8255f30d601e0196af3"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134806": {
+  "id": "CVE-2026-134806",
+  "published": "2026-11-22T22:17:34.380",
+  "modified": "2026-11-22T22:17:34.380",
+  "desc": "Opencast before 20.6 contains a path traversal vulnerability in WorkspaceImpl.toWorkspaceFile that allows authenticated ingest users to write files outside the workspace root via unvalidated element paths. Attackers can submit media packages whose element URIs or identifiers contain ../ sequences, causing Workspace.get to create directories and write fetched content with Opencast process privileges.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/opencast/opencast/blob/20.5/modules/workspace-impl/src/main/java/org/opencastproject/workspace/impl/WorkspaceImpl.java#L794-L813",
+   "https://github.com/opencast/opencast/commit/eb0b9fa68ff5c0beb56f0b0a81b7d6e4c6761c45",
+   "https://github.com/opencast/opencast/releases/tag/20.6"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134807": {
+  "id": "CVE-2026-134807",
+  "published": "2026-11-22T22:17:34.537",
+  "modified": "2026-11-22T22:17:34.537",
+  "desc": "Reposilite 3.5.27 before 3.6.7 contains a brute-force protection bypass vulnerability that allows unauthenticated remote attackers to evade login bans by spoofing the X-Forwarded-For header. Attackers can rotate the header value to make unlimited password or token guesses, or forge failed attempts to lock out legitimate clients.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-348"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/dzikoysk/reposilite/blob/3.6.6/reposilite-backend/src/main/kotlin/com/reposilite/web/application/JavalinConfiguration.kt#L84",
+   "https://github.com/dzikoysk/reposilite/commit/1611a76abc46226e3e3b9401e64ae6c5b8ca8b7c",
+   "https://github.com/dzikoysk/reposilite/releases/tag/3.6.7"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134808": {
+  "id": "CVE-2026-134808",
+  "published": "2026-11-22T22:17:34.697",
+  "modified": "2026-11-22T22:17:34.830",
+  "desc": "Gogs before 0.14.4 on Windows contains a path equivalence vulnerability in isRepositoryGitPath that allows authenticated users with write access to bypass .git directory protection using NTFS aliases. Attackers can create, rename or upload files via aliases like git~1 or .git::$INDEX_ALLOCATION to overwrite .git/config or hooks and execute commands as the Gogs process.",
+  "cvss": 7.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-41"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/gogs/gogs/blob/v0.14.3/internal/database/repo_editor.go#L539-L547",
+   "https://github.com/gogs/gogs/commit/43017045492c85e201536bfc7af49fa9f74b0069",
+   "https://github.com/gogs/gogs/commit/aa7fc903688471724a9565f1258d961e626d3cd0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134809": {
+  "id": "CVE-2026-134809",
+  "published": "2026-11-22T22:17:34.873",
+  "modified": "2026-11-22T22:17:34.873",
+  "desc": "OpenOLAT 20.2.2 before 20.3.12, 21.0.0 before 21.0.7, and 21.1.0 before 21.1.2 contains a missing authentication vulnerability in the TranscodingDeliveryDispatcher notifyResult callback endpoint. Unauthenticated attackers can POST crafted TranscoderJobResult JSON with attacker-supplied URLs to overwrite transcoded video and audio files and force server-side requests.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-306"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OpenOLAT/OpenOLAT/blob/OpenOLAT_21.0.6/src/main/java/org/olat/core/commons/services/video/dispatcher/TranscodingDeliveryDispatcher.java#L304-L410",
+   "https://github.com/OpenOLAT/OpenOLAT/commit/5ac8d361389a8ef63911fbe524b6d5638705327a",
+   "https://www.vulncheck.com/advisories/openolat-20.2.2-before-20.3.12-21.0.7-and-21.1.2-missing-authentication-via-notifyresult"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134810": {
+  "id": "CVE-2026-134810",
+  "published": "2026-11-22T22:17:35.030",
+  "modified": "2026-11-22T22:17:35.030",
+  "desc": "diaspora* before 0.10.0 contains a path traversal (zip slip) vulnerability in ImportService#unzip_photos_file that allows authenticated users to write files outside the extraction folder. Attackers can upload a crafted photos zip archive during account import with ../ entry names to create new files at arbitrary locations writable by the diaspora* process.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/diaspora/diaspora/blob/v0.9.1.0/app/services/import_service.rb#L85-L90",
+   "https://github.com/diaspora/diaspora/commit/e9b616cd583823f75ac1d1f8e701da4316071e04",
+   "https://github.com/diaspora/diaspora/releases/tag/v0.10.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134811": {
+  "id": "CVE-2026-134811",
+  "published": "2026-11-22T22:17:35.183",
+  "modified": "2026-11-22T22:17:35.183",
+  "desc": "diaspora* before 0.10.0 contains an HTML injection vulnerability in Notifier#invite that allows authenticated users to inject HTML or markdown into invitation emails through unescaped profile names. Attackers can set profile first or last names containing raw HTML, links, or images so invitation emails sent from the pod render spoofed content in recipients' mail clients.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-116"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/diaspora/diaspora/blob/v0.9.1.0/app/mailers/notifier.rb#L35-L51",
+   "https://github.com/diaspora/diaspora/commit/3a3b35636905f5d09d8eff356c0ba0b70c4a24d4",
+   "https://github.com/diaspora/diaspora/releases/tag/v0.10.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134812": {
+  "id": "CVE-2026-134812",
+  "published": "2026-11-22T22:17:35.343",
+  "modified": "2026-11-22T22:17:35.343",
+  "desc": "msgpackr before 2.1.4 contains an inefficient algorithmic complexity vulnerability that allows remote attackers to cause denial of service by repeatedly re-decoding buffered incomplete values. Attackers can stream a large container of small elements in small chunks to UnpackrStream or decodeIter, triggering quadratic decoding cost that blocks the Node.js event loop.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-407"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/kriszyp/msgpackr/blob/v2.1.3/iterators.js#L89-L127",
+   "https://github.com/kriszyp/msgpackr/commit/4eae7a11e96bb4ac292bb9ec9b4765cf18095a2f",
+   "https://github.com/kriszyp/msgpackr/issues/229"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134813": {
+  "id": "CVE-2026-134813",
+  "published": "2026-11-22T22:17:35.497",
+  "modified": "2026-11-22T22:17:35.497",
+  "desc": "Faye websocket-driver 0.5.0 before 0.8.0, permessage-deflate before 0.2.0, and websocket-extensions before 0.2.0 contain a decompression bomb vulnerability because messages are fully inflated before maxLength is enforced. Unauthenticated remote clients negotiating permessage-deflate can send highly compressible messages, forcing processIncomingMessage() to allocate excessive memory and crash the server process.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-409"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/faye/permessage-deflate-node/blob/0.1.7/lib/session.js#L23-L68",
+   "https://github.com/faye/permessage-deflate-node/commit/1db8cb6f973d0a7565e0c7530cec53efe9c7e6d3",
+   "https://github.com/faye/permessage-deflate-node/security/advisories/GHSA-67p7-xj24-jfm9"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134814": {
+  "id": "CVE-2026-134814",
+  "published": "2026-11-22T22:17:35.660",
+  "modified": "2026-11-22T22:17:35.660",
+  "desc": "binary-parser before 2.3.1 contains a code injection vulnerability that allows attackers controlling parser definitions to inject JavaScript through string-typed options passed unvalidated by Context.generateOption(). Attackers can supply crafted length, lengthInBytes, key, tag, offset, or namely() alias values to execute arbitrary JavaScript in the Node.js process when the parser is compiled.",
+  "cvss": 9.2,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/keichi/binary-parser/blob/v2.3.0/lib/binary_parser.ts#L26-L35",
+   "https://github.com/keichi/binary-parser/commit/110206bb126a80071158fb0e2e3d7cc658f2bfe4",
+   "https://github.com/keichi/binary-parser/commit/4b26e04c396253e704ad8e41b928d9e31316f62e"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134815": {
+  "id": "CVE-2026-134815",
+  "published": "2026-11-22T22:17:35.807",
+  "modified": "2026-11-22T22:17:35.807",
+  "desc": "simple-git before 4.1.0 contains an argument injection vulnerability that allows attackers to bypass the allowUnsafePack guard by supplying the --exec option to non-push git operations. Attackers who influence arguments passed to listRemote() or raw() can inject --exec for ls-remote, archive, fetch-pack or send-pack to execute commands on the host.",
+  "cvss": 9.2,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-88"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/steveukx/git-js/blob/simple-git%404.0.2/packages/argv-parser/src/vulnerabilities/detect-vulnerable-flags.ts#L71",
+   "https://github.com/steveukx/git-js/commit/c8ee6bb4dd0c1259af31da821dc68d74ff5d6f10",
+   "https://github.com/steveukx/git-js/releases/tag/%40simple-git%2Fargv-parser%403.0.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134816": {
+  "id": "CVE-2026-134816",
+  "published": "2026-11-22T22:17:35.973",
+  "modified": "2026-11-22T22:17:36.097",
+  "desc": "sigstore-js @sigstore/oci before 0.8.0 contains a credential exposure vulnerability that leaks registry credentials by replaying OAuth2 password-grant request bodies on cross-origin 307 or 308 redirects. Attackers who can make a trusted token service redirect to their host via open redirect or compromise receive the username and password POSTed by RegistryClient.",
+  "cvss": 8.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-201"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sigstore/sigstore-js/blob/%40sigstore/oci%400.7.2/packages/oci/src/registry.ts#L505-L520",
+   "https://github.com/sigstore/sigstore-js/commit/7ca56e9d068458642fc8a148c4916717b6918bec",
+   "https://github.com/sigstore/sigstore-js/security/advisories/GHSA-9mj6-f434-pgcg"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134817": {
+  "id": "CVE-2026-134817",
+  "published": "2026-11-22T22:17:36.147",
+  "modified": "2026-11-22T22:17:36.147",
+  "desc": "mcp-server-kubernetes before 4.2.0 contains an argument injection vulnerability that allows remote MCP clients to inject kubectl flags by supplying dash-prefixed values as positional operands in tools such as exec_in_pod, kubectl_patch, and kubectl_logs. Attackers connected over SSE or Streamable HTTP transport can supply values like --filename to make kubectl read files from the server host, bypassing file-read restrictions.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-88"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Flux159/mcp-server-kubernetes/blob/v4.1.9/src/tools/exec_in_pod.ts#L105",
+   "https://github.com/Flux159/mcp-server-kubernetes/commit/588d4949b0233974c3966a7d24d532be11e56d0d",
+   "https://github.com/Flux159/mcp-server-kubernetes/pull/390"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134818": {
+  "id": "CVE-2026-134818",
+  "published": "2026-11-22T22:17:36.307",
+  "modified": "2026-11-22T22:17:36.307",
+  "desc": "oasdiff 1.24.0 before 1.34.1 fails to enforce --allow-external-refs=false when --open is used, because the recordingReader() capture reader in load/capture.go never applies the external-reference policy. Attackers supplying an untrusted OpenAPI spec can use external $ref values to read local files or trigger HTTP requests, with contents uploaded in the review bundle.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-610"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/oasdiff/oasdiff/blob/v1.34.0/load/capture.go#L46-L62",
+   "https://github.com/oasdiff/oasdiff/commit/5331dec281a3dd687d1e9f093961098efd66b2f2",
+   "https://github.com/oasdiff/oasdiff/commit/b762ae6335f6b22204b0f6c633604660464415a2"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134819": {
+  "id": "CVE-2026-134819",
+  "published": "2026-11-22T22:17:36.467",
+  "modified": "2026-11-22T22:17:36.467",
+  "desc": "Delta Sharing reference server 1.4.0 before 1.5.0 contains an incorrect permission assignment vulnerability that allows share recipients to read unshared data via container-scoped Azure SAS tokens. Recipients with a valid bearer token can request credentials from the temporary-table-credentials endpoint to read every blob in the storage container, including unshared tables.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-732"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/delta-io/delta-sharing/blob/v1.4.1/server/src/main/scala/io/delta/sharing/server/credential/azure/AzureCredentialVendor.scala#L130-L144",
+   "https://github.com/delta-io/delta-sharing/commit/a38b169f036a5565d42aa4fcce36b4f6a3f47a61",
+   "https://github.com/delta-io/delta-sharing/pull/1023"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134820": {
+  "id": "CVE-2026-134820",
+  "published": "2026-11-22T22:17:36.620",
+  "modified": "2026-11-22T22:17:36.620",
+  "desc": "Gunicorn 25.2.0 before 27.0.0 contains an HTTP request smuggling vulnerability in the pure-Python ASGI parser that allows unauthenticated remote attackers to desynchronize request framing by sending malformed framing headers. Attackers can send whitespace-padded Transfer-Encoding or Content-Length headers, signed Content-Length values, or invalid chunk terminators to smuggle requests past front-end proxies to the ASGI application.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-444"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/benoitc/gunicorn/blob/26.2.2/gunicorn/asgi/parser.py#L583",
+   "https://github.com/benoitc/gunicorn/commit/400f5ec95abf3aac0f1f0f0bc9a6a001660085c4",
+   "https://github.com/benoitc/gunicorn/commit/6f4c2193a7f68106c88635933c2be5772fae1f3d"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134821": {
+  "id": "CVE-2026-134821",
+  "published": "2026-11-22T22:17:36.770",
+  "modified": "2026-11-22T22:17:36.770",
+  "desc": "Gunicorn 25.2.0 before 27.0.0 contains a memory exhaustion vulnerability in the pure-Python ASGI HTTP/1 parser that buffers protocol lines without size limits. Unauthenticated remote attackers can send request lines, headers, chunk-size lines or trailers lacking CRLF to grow worker memory and consume CPU, causing denial of service.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/benoitc/gunicorn/blob/26.2.2/gunicorn/asgi/parser.py#L744-L748",
+   "https://github.com/benoitc/gunicorn/commit/3007d5240e55190f85fff7180168d5aaa8377f30",
+   "https://github.com/benoitc/gunicorn/pull/3789"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134822": {
+  "id": "CVE-2026-134822",
+  "published": "2026-11-22T22:17:36.913",
+  "modified": "2026-11-22T22:17:36.913",
+  "desc": "Sustainsys.Saml2 before 1.0.4 and 2.x before 2.11.1 contains an improper signature verification vulnerability that allows attackers to tamper with signed parameters by exploiting mis-parsing in CheckSignature() of Saml2RedirectBinding.cs. Attackers can append data after an extra '=' in RelayState of an intercepted or replayed Redirect-binding message, causing applications to trust the tampered value.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-347"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Sustainsys/Saml2/blob/v2.11.0/Sustainsys.Saml2/WebSSO/Saml2RedirectBinding.cs#L147",
+   "https://github.com/Sustainsys/Saml2/commit/5586ddf5b7007abe2f6db15d722a420cb5469e99",
+   "https://github.com/Sustainsys/Saml2/issues/1408"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134823": {
+  "id": "CVE-2026-134823",
+  "published": "2026-11-22T22:17:37.070",
+  "modified": "2026-11-22T22:17:37.070",
+  "desc": "Kitty 0.43.0 before 0.51.0 contains a terminal escape sequence injection vulnerability that allows attackers to emit escape sequences by crafting malicious file or archive member names. When a victim highlights such an entry in the choose-files kitten preview panel, unsanitized names are written raw, enabling OSC 52 clipboard overwrites, OSC 8 links, window title changes, or screen spoofing.",
+  "cvss": 4.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-150"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/kovidgoyal/kitty/blob/v0.50.0/kittens/choose_files/archive.go#L101",
+   "https://github.com/kovidgoyal/kitty/commit/4fa6709910d289ef5b8771eefeaac876343bb083",
+   "https://github.com/kovidgoyal/kitty/releases/tag/v0.51.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134824": {
+  "id": "CVE-2026-134824",
+  "published": "2026-11-22T22:17:37.230",
+  "modified": "2026-11-22T22:17:37.230",
+  "desc": "Nektos act 0.2.92 before 0.2.98 contains a link following vulnerability that allows malicious repositories to read host files by setting --eventpath in an untrusted project .actrc to a symlink. Attackers can commit an event.json symlink pointing to files like ~/.ssh/id_rsa, which act copies into the job container as GITHUB_EVENT_PATH for workflow steps to exfiltrate.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-59"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/nektos/act/blob/v0.2.97/cmd/actrc.go#L33",
+   "https://github.com/nektos/act/commit/dfa7f8969ccbe333c216298de2161454de8daaef",
+   "https://github.com/nektos/act/releases/tag/v0.2.98"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134825": {
+  "id": "CVE-2026-134825",
+  "published": "2026-11-22T22:17:37.390",
+  "modified": "2026-11-22T22:17:37.390",
+  "desc": "Gradio 6.27.0 before 6.32.0 contains an authentication bypass vulnerability in gradio/history.py that allows remote unauthenticated attackers to use the operator's locally saved Hugging Face token by sending a forged Host: localhost header. When ssr_mode is enabled, requests proxied through the local Node SSR server pass the loopback check, letting attackers call run history endpoints to list buckets, read records and assets, and write buckets under the operator's account.",
+  "cvss": 8.3,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-290"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/gradio-app/gradio/blob/gradio%406.31.0/gradio/history.py#L521-L559",
+   "https://github.com/gradio-app/gradio/commit/fda8037b83f316454e96201dfad96e50944f8547",
+   "https://github.com/gradio-app/gradio/pull/14050"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134826": {
+  "id": "CVE-2026-134826",
+  "published": "2026-11-22T22:17:37.550",
+  "modified": "2026-11-22T22:17:37.550",
+  "desc": "erxes before 3.4.14 contains a missing authentication vulnerability in the insurance_api plugin that allows unauthenticated attackers to create, overwrite or delete contract templates via GraphQL mutations. Attackers can inject HTML into templates rendered by headless Chromium during generateContractPDF to pull internal network content into PDFs and exfiltrate customer fields.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-306"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/erxes/erxes/blob/3.4.7/backend/plugins/insurance_api/src/modules/insurance/graphql/resolvers/mutations/template.ts#L21-L104",
+   "https://github.com/erxes/erxes/commit/6370a571faf8e45ca58b9bd7d6d65715a2cf5925",
+   "https://github.com/erxes/erxes/releases/tag/3.4.14"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134827": {
+  "id": "CVE-2026-134827",
+  "published": "2026-11-22T22:17:37.707",
+  "modified": "2026-11-22T22:17:37.833",
+  "desc": "Lightdash before 3.212.0 contains an insufficiently protected credentials vulnerability in getGitlabInstallationRepoReadAccess that sends the organization GitLab app token to unverified hosts. Project developers can set the dbt connection host_domain to an attacker-controlled server and capture the token when the AI agent reads the repository, gaining access to every reachable repository.",
+  "cvss": 8.3,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-522"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/lightdash/lightdash/blob/3.211.0/packages/backend/src/ee/services/AiWritebackService/AiWritebackService.ts#L1165-L1201",
+   "https://github.com/lightdash/lightdash/commit/e207ceb480e394c7ce50f676057bf4a2807588e6",
+   "https://github.com/lightdash/lightdash/pull/32389"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134828": {
+  "id": "CVE-2026-134828",
+  "published": "2026-11-22T22:17:37.877",
+  "modified": "2026-11-22T22:17:38.003",
+  "desc": "Penpot 2.18.0 before 2.19.1 contains a stored cross-site scripting vulnerability in the sanitize-svg function that allows authenticated users to bypass filtering through unescaped re-serialization. Attackers with file edit permission can upload SVGs using entity-encoded or CDATA-wrapped markup or attribute quote breakouts to execute JavaScript in the Penpot origin when victims open them.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/penpot/penpot/blob/2.19.0/backend/src/app/media/svg.clj#L97-L106",
+   "https://github.com/penpot/penpot/commit/4874da450f1e1f055e44109ef451ef0452f0bcea",
+   "https://github.com/penpot/penpot/pull/12887"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134829": {
+  "id": "CVE-2026-134829",
+  "published": "2026-11-22T22:17:38.060",
+  "modified": "2026-11-22T22:17:38.060",
+  "desc": "Umami 3.3.0 before 3.5.0 contains a race condition in two-factor authentication attempt limiting that allows attackers holding a user's password to bypass lockout. Attackers can send many concurrent POST requests to /api/2fa/verify that pass checkRateLimit before recordFailedAttempt runs, brute-forcing TOTP or backup codes beyond the five-attempt limit.",
+  "cvss": 7.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-367"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/umami-software/umami/blob/v3.4.1/src/lib/two-factor/rate-limit.ts#L8-L17",
+   "https://github.com/umami-software/umami/commit/9411f67d7e37d149a40eef016022ed5fe5c6671d",
+   "https://github.com/umami-software/umami/releases/tag/v3.5.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134830": {
+  "id": "CVE-2026-134830",
+  "published": "2026-11-22T22:17:38.227",
+  "modified": "2026-11-22T22:17:38.357",
+  "desc": "Casdoor before 4.27.1 contains an uncontrolled resource consumption vulnerability in decodeSamlMessage that allows unauthenticated attackers to exhaust memory by sending unbounded DEFLATE-compressed SAML messages. Attackers can send a small, highly compressed SAMLRequest or SAMLResponse to the /api/saml/logout/:owner/:application endpoint, which inflates to gigabytes and crashes or stalls the server.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-409"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/casdoor/casdoor/blob/v4.27.0/object/saml_idp.go#L336-L350",
+   "https://github.com/casdoor/casdoor/commit/70b103a26f1d523d81470f26ead9a4eff3393c36",
+   "https://github.com/casdoor/casdoor/releases/tag/v4.27.1"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134831": {
+  "id": "CVE-2026-134831",
+  "published": "2026-11-22T22:17:38.407",
+  "modified": "2026-11-22T22:17:38.543",
+  "desc": "Chatwoot before 4.20.0 contains an information disclosure vulnerability that allows unauthenticated attackers to read unpublished help center articles through the public portal API. Attackers can request archived articles by slug via the ArticlesController show actions or read draft translations exposed through associated_articles in article JSON responses.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/chatwoot/chatwoot/blob/v4.19.1/app/controllers/public/api/v1/portals/articles_controller.rb#L73-L75",
+   "https://github.com/chatwoot/chatwoot/commit/99b00a9f019ad97e09ba1f8ce01ee07f295289ef",
+   "https://github.com/chatwoot/chatwoot/pull/16554"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134832": {
+  "id": "CVE-2026-134832",
+  "published": "2026-11-22T22:17:38.593",
+  "modified": "2026-11-22T22:17:38.593",
+  "desc": "Vim 9.2.0405 before 9.2.1352 contains a security bypass vulnerability in expand_tag_fname() that allows attackers to evade 'tagsecure' URL checks by escaping URLs in tags file entries. Attackers can supply a crafted tags file in a cloned repository so that jumping to a tag makes netrw fetch an attacker-controlled URL leaking environment variable values.",
+  "cvss": 4.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-180"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/vim/vim/blob/v9.2.1351/src/tag.c#L4180-L4205",
+   "https://github.com/vim/vim/commit/8da4660cf4068e6812b4eacdf78c8b05c7774d9a",
+   "https://github.com/vim/vim/releases/tag/v9.2.1352"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134833": {
+  "id": "CVE-2026-134833",
+  "published": "2026-11-22T22:17:38.753",
+  "modified": "2026-11-22T22:17:38.753",
+  "desc": "RSSHub before 2026.11.01-8521.e529e9b contains a domain validation bypass in the javdb routes that allows unauthenticated attackers to capture the operator's JAVDB_SESSION cookie. Attackers can pass an absolute javdb.com URL in the category parameter and set the domain query to a host they control, causing processItems to send the _jdb_session cookie there.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-522"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/DIYgod/RSSHub/blob/v2026.11.01-8520.3f6985f/lib/routes/javdb/utils.ts#L14-L38",
+   "https://github.com/DIYgod/RSSHub/commit/e529e9b8cf3d529e405022d86e8a21da50c7e32b",
+   "https://github.com/DIYgod/RSSHub/releases/tag/v2026.11.01-8521.e529e9b"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134834": {
+  "id": "CVE-2026-134834",
+  "published": "2026-11-22T22:17:38.907",
+  "modified": "2026-11-22T22:17:39.033",
+  "desc": "Tandoor Recipes before 2.7.4 contains a path traversal vulnerability in Nextcloud.get_file that allows authenticated recipe editors to write and delete files by using unsanitized recipe names in temporary paths. Attackers can set a recipe name containing ../ segments via PATCH /api/recipe/<pk>/ and request /api/get_recipe_file/<pk>/ to overwrite and remove .pdf files outside the temporary directory.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/TandoorRecipes/recipes/blob/2.7.3/cookbook/provider/nextcloud.py#L110-L123",
+   "https://github.com/TandoorRecipes/recipes/commit/d9282c0cab5add50c3a952428049d907e228d69a",
+   "https://github.com/TandoorRecipes/recipes/releases/tag/2.7.4"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134835": {
+  "id": "CVE-2026-134835",
+  "published": "2026-11-22T22:17:39.080",
+  "modified": "2026-11-22T22:17:39.080",
+  "desc": "Langfuse before 4.82.0 contains a server-side request forgery vulnerability that allows organization admins to target internal hosts by setting the GitHub Enterprise SSO baseUrl, which skips outbound-URL validation. Attackers can point baseUrl to loopback, RFC1918, or cloud metadata addresses so user sign-ins trigger server requests carrying stored OAuth client credentials.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/langfuse/langfuse/blob/v4.81.0/web/src/ee/features/multi-tenant-sso/validateSsoConfig.ts#L27-L53",
+   "https://github.com/langfuse/langfuse/commit/5ffd41280461c4728075173b50b38650a820b1f2",
+   "https://github.com/langfuse/langfuse/pull/20164"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134836": {
+  "id": "CVE-2026-134836",
+  "published": "2026-11-22T22:17:39.237",
+  "modified": "2026-11-22T22:17:39.357",
+  "desc": "Dashy 4.0.0 before 4.9.12 contains a credential disclosure vulnerability in isLocalRequest that attaches user credentials to lookalike hosts due to prefix-only origin checks. Attackers can lure logged-in users to a crafted ?config= link pointing to a lookalike host, capturing bearer tokens or HTTP auth headers to read configuration and stored API keys, or modify them when the victim is an admin.",
+  "cvss": 8.6,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-346"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Lissy93/dashy/blob/4.9.11/src/utils/request.js#L16-L23",
+   "https://github.com/Lissy93/dashy/commit/86c5094943035dfb404ef5a67be9ff6cef1a6746",
+   "https://github.com/Lissy93/dashy/releases/tag/4.9.12"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134837": {
+  "id": "CVE-2026-134837",
+  "published": "2026-11-22T22:17:39.407",
+  "modified": "2026-11-22T22:17:39.553",
+  "desc": "Frappe before 15.126.0 and 16.x before 16.55.0 contains a prototype pollution vulnerability that allows Dashboard Manager users to pollute Object.prototype by storing __proto__ keys in Dashboard Chart custom_options. When any user, including administrators, views a dashboard rendering the chart, Object.assign merges attacker properties into Object.prototype, altering Frappe desk client behavior for that session.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/frappe/frappe/blob/v16.54.0/frappe/public/js/frappe/widgets/chart_widget.js#L765-L777",
+   "https://github.com/frappe/frappe/commit/537ee178ebbbd54ac1ee97883ff447e187c3a23c",
+   "https://github.com/frappe/frappe/commit/82e49e0a7eabd843d85bc9d401eb063bc979a5d7"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134838": {
+  "id": "CVE-2026-134838",
+  "published": "2026-11-22T22:17:39.607",
+  "modified": "2026-11-22T22:17:39.607",
+  "desc": "Weblate before 2026.11 contains an account takeover vulnerability in the reset_password view that allows unauthenticated attackers to reset victim passwords by abusing case-insensitive Unicode e-mail matching. Attackers controlling a lookalike mailbox using a dotless i or other case-folding variant receive the victim's reset link, since it is sent to the typed address, and set a new password.",
+  "cvss": 9.1,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-178"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/WeblateOrg/weblate/blob/weblate-2026.10.1/weblate/accounts/forms.py#L87-L99",
+   "https://github.com/WeblateOrg/weblate/commit/8340ccd9dee8c6d0586e62c19697c3de2c42ffd2",
+   "https://github.com/WeblateOrg/weblate/commit/c129f67ec98e6da36b4f27103283a091fa15310c"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134839": {
+  "id": "CVE-2026-134839",
+  "published": "2026-11-22T22:17:39.783",
+  "modified": "2026-11-22T22:17:39.783",
+  "desc": "Linkwarden before 2.17.0 contains an incorrect authorization vulnerability in the archive upload handler that allows collection members with only add permission to modify other users' links. Attackers can send POST requests to /api/v1/archives/<linkId> to replace another user's stored screenshot, PDF, readable, or HTML archive with attacker-supplied content.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/linkwarden/linkwarden/blob/v2.16.3/apps/web/pages/api/v1/archives/%5BlinkId%5D.ts#L28-L38",
+   "https://github.com/linkwarden/linkwarden/commit/ce14bceccb1df77aa9b18a87a8584f87feeaa188",
+   "https://github.com/linkwarden/linkwarden/releases/tag/v2.17.0"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134840": {
+  "id": "CVE-2026-134840",
+  "published": "2026-11-22T22:17:40.397",
+  "modified": "2026-11-22T22:17:40.530",
+  "desc": "HumHub before 1.19.4 contains a missing authorization vulnerability in GroupController actionNewMemberSearch and actionAdminUserSearch, which skip the checkGroupAccess check. A manager of any single group can query admin-user-search and new-member-search with another group's id parameter to enumerate members, including administrators.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/humhub/humhub/blob/v1.19.3/protected/humhub/modules/admin/controllers/GroupController.php#L323-L367",
+   "https://github.com/humhub/humhub/commit/06f647622d11ccb153948a5614a7c6dcd35264a8",
+   "https://github.com/humhub/humhub/pull/8668"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134859": {
+  "id": "CVE-2026-134859",
+  "published": "2026-11-22T22:17:40.610",
+  "modified": "2026-11-22T22:17:40.610",
+  "desc": "Assimp through 6.0.6 contains an out-of-bounds read vulnerability in PLYImporter::LoadFace and createFromeTriStrip that fails to validate face vertex indices against the vertex count. Attackers can supply a crafted PLY file processed with normal generation but without aiProcess_ValidateDataStructure to crash the application or leak adjacent heap memory into generated normals.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-129"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/Ply/PlyLoader.cpp#L605-L617",
+   "https://github.com/assimp/assimp/pull/7075",
+   "https://www.vulncheck.com/advisories/assimp-through-6.0.6-out-of-bounds-read-via-ply-importer-face-indices"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134860": {
+  "id": "CVE-2026-134860",
+  "published": "2026-11-22T22:17:40.810",
+  "modified": "2026-11-22T22:17:40.810",
+  "desc": "Assimp through 6.0.6 contains an out-of-bounds read vulnerability in ReadFloat in ColladaLoader.cpp because accessor stride and offset bounds are checked only by ai_assert. Attackers can supply a crafted Collada file whose animation accessor describes more values than its float_array holds to read past the array or dereference null, crashing the importing application.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/Collada/ColladaLoader.cpp#L94-L98",
+   "https://github.com/assimp/assimp/pull/7076",
+   "https://www.vulncheck.com/advisories/assimp-through-6.0.6-out-of-bounds-read-via-collada-readfloat"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134861": {
+  "id": "CVE-2026-134861",
+  "published": "2026-11-22T22:17:40.990",
+  "modified": "2026-11-22T22:17:40.990",
+  "desc": "Assimp through 6.0.6 contains an out-of-bounds write vulnerability in glTFAsset.inl that allows attackers to corrupt memory via oversized glTF 1.0 accessor elements. Attackers can supply a crafted glTF 1.0 file with VEC4 position or VEC3 index accessors to overflow heap or stack buffers during import, crashing applications.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/glTF/glTFAsset.inl#L425-L477",
+   "https://github.com/assimp/assimp/pull/6860",
+   "https://github.com/assimp/assimp/pull/7090"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134862": {
+  "id": "CVE-2026-134862",
+  "published": "2026-11-22T22:17:41.140",
+  "modified": "2026-11-22T22:17:41.140",
+  "desc": "Assimp through 6.0.6 contains an out-of-bounds read vulnerability in glTFImporter::ImportMeshes that uses NORMAL and TEXCOORD accessors without comparing their counts to the POSITION vertex count. Attackers can supply a crafted glTF 1.0 file with shorter normal or texture coordinate arrays to trigger heap out-of-bounds reads and writes that crash the importing application.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/glTF/glTFImporter.cpp#L280-L303",
+   "https://github.com/assimp/assimp/pull/7090",
+   "https://www.vulncheck.com/advisories/assimp-through-6.0.6-out-of-bounds-read-via-gltf-1.0-accessor-counts"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134863": {
+  "id": "CVE-2026-134863",
+  "published": "2026-11-22T22:17:41.290",
+  "modified": "2026-11-22T22:17:41.290",
+  "desc": "Assimp through 6.0.6 contains an invalid pointer dereference vulnerability in glTFImporter::ImportEmbeddedTextures that derives the texture format hint without checking the strchr result. Attackers can supply a crafted glTF 1.0 file with an embedded image mime type lacking a slash to crash the importing application.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-476"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/glTF/glTFImporter.cpp#L683",
+   "https://github.com/assimp/assimp/pull/7081",
+   "https://www.vulncheck.com/advisories/assimp-through-6.0.6-invalid-pointer-dereference-via-gltf-1.0-embedded-image"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134864": {
+  "id": "CVE-2026-134864",
+  "published": "2026-11-22T22:17:41.440",
+  "modified": "2026-11-22T22:17:41.440",
+  "desc": "Assimp through 6.0.6 contains a use of uninitialized resource vulnerability in glTFImporter::ImportMeshes that builds TRIANGLE_STRIP and TRIANGLE_FAN faces from unfilled faces. Attackers can supply a crafted glTF 1.0 file whose strip or fan primitives trigger out-of-bounds reads or null pointer dereferences, crashing the importing application.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-908"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/glTF/glTFImporter.cpp#L363-L379",
+   "https://github.com/assimp/assimp/issues/7065",
+   "https://github.com/assimp/assimp/pull/7077"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134865": {
+  "id": "CVE-2026-134865",
+  "published": "2026-11-22T22:17:41.597",
+  "modified": "2026-11-22T22:17:41.597",
+  "desc": "Assimp through 6.0.6 contains an out-of-bounds read vulnerability in ColladaParser::CopyVertex that allows attackers to read heap memory by supplying primitives lacking a VERTEX input. Attackers can provide a crafted Collada file whose SIZE_MAX per-vertex offset bypasses the release-removed ai_assert check, crashing the importing application.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-125"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/Collada/ColladaParser.cpp#L1932-L1954",
+   "https://github.com/assimp/assimp/issues/6522",
+   "https://github.com/assimp/assimp/pull/7086"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134866": {
+  "id": "CVE-2026-134866",
+  "published": "2026-11-22T22:17:41.750",
+  "modified": "2026-11-22T22:17:41.750",
+  "desc": "Assimp 6.0.0 through 6.0.6 contains an infinite loop vulnerability in SkipLine that allows attackers to hang parsing by supplying files with '#' comment lines. Attackers can provide crafted OFF, LWS, or MD3 shader files so ReadFile never returns, consuming a CPU core and denying service.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-835"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/include/assimp/ParsingUtils.h#L151-L162",
+   "https://github.com/assimp/assimp/issues/6604",
+   "https://github.com/assimp/assimp/issues/6942"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134867": {
+  "id": "CVE-2026-134867",
+  "published": "2026-11-22T22:17:41.907",
+  "modified": "2026-11-22T22:17:41.907",
+  "desc": "Assimp through 6.0.6 contains an uncontrolled memory allocation vulnerability in FBXConverter::GetRotationKeyframeList that allows attackers to exhaust memory via unbounded rotation angle differences. Attackers can supply a crafted FBX file of about 111 KB whose keyframe interpolation loop never advances, consuming gigabytes of memory until the importing process is killed.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/FBX/FBXConverter.cpp#L3443-L3500",
+   "https://github.com/assimp/assimp/issues/6948",
+   "https://github.com/assimp/assimp/pull/7089"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134868": {
+  "id": "CVE-2026-134868",
+  "published": "2026-11-22T22:17:42.067",
+  "modified": "2026-11-22T22:17:42.067",
+  "desc": "Assimp through 6.0.6 contains an infinite loop vulnerability in ColladaParser::ReadPrimitives that allows attackers to exhaust memory via non-numeric index values. Attackers can supply a crafted Collada file whose <p> index list contains a non-digit character, causing endless zero-index appends until the importing process crashes.",
+  "cvss": 6.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-835"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/assimp/assimp/blob/v6.0.6/code/AssetLib/Collada/ColladaParser.cpp#L1788-L1798",
+   "https://github.com/assimp/assimp/issues/6532",
+   "https://github.com/assimp/assimp/pull/7087"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134730": {
+  "id": "CVE-2026-134730",
+  "published": "2026-11-22T23:16:50.240",
+  "modified": "2026-11-22T23:16:50.403",
+  "desc": "A security vulnerability has been detected in xuxueli xxl-job 3.5.0/3.5.1-SNAPSHOT. The affected element is the function insert/update of the file admin/src/main/java/com/xxl/job/admin/business/controller/JobGroupController.java of the component Group Management. The manipulation of the argument addressList leads to cross-site request forgery. Remote exploitation of the attack is possible. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-352",
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://vuldb.com/cve/CVE-2026-134730",
+   "https://vuldb.com/submit/1053704",
+   "https://vuldb.com/vuln/442086"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134731": {
+  "id": "CVE-2026-134731",
+  "published": "2026-11-23T00:17:02.567",
+  "modified": "2026-11-23T00:17:03.210",
+  "desc": "A vulnerability was detected in itsourcecode Insurance Management System 1.0. The impacted element is an unknown function of the file /insertClient.php. The manipulation of the argument client_id results in sql injection. The attack can be executed remotely. The exploit is now public and may be used.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/q251995379/submit/issues/1",
+   "https://itsourcecode.com/",
+   "https://vuldb.com/cve/CVE-2026-134731"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134732": {
+  "id": "CVE-2026-134732",
+  "published": "2026-11-23T00:17:03.253",
+  "modified": "2026-11-23T00:17:03.390",
+  "desc": "A flaw has been found in Open Asset Import Library Assimp up to 6.0.5. This affects the function ASEImporter::InternReadFile of the file code/AssetLib/ASE/ASELoader.cpp of the component ASE File Importer. This manipulation causes out-of-bounds write. The attack is possible to be carried out remotely. The exploit has been published and may be used. Upgrading to version 6.0.6 mitigates this issue. Patch name: 7ccc44a338dcdcc81023484388126ab1a8250e94. You should upgrade the affected component.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/PassMoon/CVE-application/tree/main/assimp-2-ase-heap-corruption",
+   "https://github.com/assimp/assimp/commit/7ccc44a338dcdcc81023484388126ab1a8250e94",
+   "https://github.com/assimp/assimp/releases/tag/v6.0.6"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134733": {
+  "id": "CVE-2026-134733",
+  "published": "2026-11-23T00:17:03.437",
+  "modified": "2026-11-23T00:17:03.577",
+  "desc": "A vulnerability has been found in itsourcecode Event Management System 1.0. This impacts an unknown function of the file booking.php. Such manipulation of the argument venue_id leads to cross site scripting. The attack may be performed from remote. The exploit has been disclosed to the public and may be used.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79",
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ckkkkj/submit/issues/3",
+   "https://itsourcecode.com/",
+   "https://vuldb.com/cve/CVE-2026-134733"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134734": {
+  "id": "CVE-2026-134734",
+  "published": "2026-11-23T00:17:03.620",
+  "modified": "2026-11-23T00:17:03.757",
+  "desc": "A vulnerability was found in Webkul Bagisto up to 2.4.13. Affected is the function RazorpayController::paymentSuccess of the file packages/Webkul/Razorpay/src/Http/Controllers/RazorpayController.php of the component Payment Gateway Success/Callback Controllers. Performing a manipulation results in insufficient verification of data authenticity. It is possible to initiate the attack remotely. Upgrading to version 2.4.14 is able to address this issue. It is suggested to upgrade the affected component.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/bagisto/bagisto/releases/tag/v2.4.14",
+   "https://vuldb.com/cve/CVE-2026-134734",
+   "https://vuldb.com/submit/1053791"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134735": {
+  "id": "CVE-2026-134735",
+  "published": "2026-11-23T01:17:09.210",
+  "modified": "2026-11-23T01:17:10.290",
+  "desc": "A vulnerability was determined in Webkul Bagisto up to 2.4.12. Affected by this vulnerability is the function Success of the file packages/Webkul/PayU/src/Http/Controllers/PayUController.php of the component Payu Payment Gateway. Executing a manipulation of the argument Status can lead to insufficient verification of data authenticity. It is possible to launch the attack remotely. Upgrading to version 2.4.13 addresses this issue. Upgrading the affected component is recommended.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/bagisto/bagisto/releases/tag/v2.4.13",
+   "https://vuldb.com/cve/CVE-2026-134735",
+   "https://vuldb.com/submit/1053792"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134779": {
+  "id": "CVE-2026-134779",
+  "published": "2026-11-23T01:17:10.337",
+  "modified": "2026-11-23T01:17:10.493",
+  "desc": "A weakness has been identified in Open Asset Import Library Assimp up to 6.0.6. The affected element is the function Assimp::ColladaLoader::CreateAnimation of the file code/AssetLib/Collada/ColladaLoader.cpp of the component Collada Loader. This manipulation of the argument mSize causes out-of-bounds write. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks. The pull request to fix this issue awaits acceptance.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/PassMoon/CVE-application/tree/main/assimp-3-copy-move-oob-write",
+   "https://github.com/assimp/assimp/pull/6961",
+   "https://vuldb.com/cve/CVE-2026-134779"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134780": {
+  "id": "CVE-2026-134780",
+  "published": "2026-11-23T01:17:10.550",
+  "modified": "2026-11-23T01:17:10.700",
+  "desc": "A security vulnerability has been detected in Open Asset Import Library Assimp up to 6.0.6. The impacted element is the function Assimp::JoinVerticesProcess::ProcessMesh of the file code/PostProcessing/JoinVerticesProcess.cpp of the component PostProcessing JoinVerticesProcess. Such manipulation leads to out-of-bounds write. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/PassMoon/CVE-application/tree/main/assimp-4-joinvertices-oob-write",
+   "https://vuldb.com/cve/CVE-2026-134780",
+   "https://vuldb.com/submit/1053804"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134781": {
+  "id": "CVE-2026-134781",
+  "published": "2026-11-23T01:17:10.750",
+  "modified": "2026-11-23T01:17:10.900",
+  "desc": "A vulnerability was detected in Open Asset Import Library Assimp up to 6.0.5. This affects the function Assimp::PretransformVertices::BuildMeshRefCountArray of the file PretransformVertices.cpp. Performing a manipulation results in out-of-bounds write. The attack can be initiated remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-787"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/PassMoon/CVE-application/tree/main/assimp-5-pretransform-oob-write",
+   "https://vuldb.com/cve/CVE-2026-134781",
+   "https://vuldb.com/submit/1053805"
   ],
   "kev": false,
   "epss": null
