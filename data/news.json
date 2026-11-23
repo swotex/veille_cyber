@@ -8910,5 +8910,173 @@
   "lang": "en",
   "date": "2026-11-20T13:51:30+00:00",
   "summary": "Microsoft announces new AI agent security tools and transparency standards to protect enterprise systems at its Ignite technical conference."
+ },
+ "https://www.zataz.com/courtiers-en-or-pirates-dix-personnes-mises-en-examen/": {
+  "title": "Courtiers en or piratés, dix personnes mises en examen",
+  "url": "https://www.zataz.com/courtiers-en-or-pirates-dix-personnes-mises-en-examen/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-23T12:05:22+00:00",
+  "summary": "Trois courtiers en métaux précieux piratés, des clients ciblés par de faux policiers et dix personnes mises en examen."
+ },
+ "https://www.zataz.com/laquaponey-un-drole-de-cadeau-de-noel-qui-fait-reflechir/": {
+  "title": "L’aquaponey, un drôle de cadeau de Noël qui fait réfléchir !",
+  "url": "https://www.zataz.com/laquaponey-un-drole-de-cadeau-de-noel-qui-fait-reflechir/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-23T11:53:31+00:00",
+  "summary": "Un poney sous le sapin pour comprendre comment les algorithmes et l’IA donnent du crédit aux fausses informations."
+ },
+ "https://www.zataz.com/cyberespionnage-en-bulgarie-62-millions-de-pages-volees/": {
+  "title": "Cyberespionnage en Bulgarie, 62 millions de pages volées",
+  "url": "https://www.zataz.com/cyberespionnage-en-bulgarie-62-millions-de-pages-volees/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-23T10:59:22+00:00",
+  "summary": "La Bulgarie révèle cinq ans de cyberespionnage et le vol d’au moins 62 millions de pages."
+ },
+ "https://www.zataz.com/cleverbridge-confirme-un-vol-de-donnees-bancaires/": {
+  "title": "Cleverbridge confirme un vol de données bancaires",
+  "url": "https://www.zataz.com/cleverbridge-confirme-un-vol-de-donnees-bancaires/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-23T10:51:12+00:00",
+  "summary": "Cleverbridge confirme un vol de données de cartes bancaires. Une notification détaille les numéros, dates et CVV."
+ },
+ "https://www.zataz.com/blackhat-sector-une-ia-offensive-a-louer-pour-500-e/": {
+  "title": "BlackHat Sector : une IA offensive à louer pour 500 €",
+  "url": "https://www.zataz.com/blackhat-sector-une-ia-offensive-a-louer-pour-500-e/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-23T10:29:10+00:00",
+  "summary": "BlackHat Sector commercialise une IA offensive après des cyberattaques revendiquées contre des sociétés françaises."
+ },
+ "https://www.zataz.com/cyberattaque-contre-aaaep-585-000-personnes-exposees/": {
+  "title": "Cyberattaque contre AAAEP : 585 000 personnes exposées ?",
+  "url": "https://www.zataz.com/cyberattaque-contre-aaaep-585-000-personnes-exposees/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-23T10:19:58+00:00",
+  "summary": "AAAEP visée par BlackHatSect0r : 585 000 personnes potentiellement concernées, données psychotechniques et appels exposés."
+ },
+ "https://www.zataz.com/blackhatsect0r-phishing-bancaire-extorsion-et-industrie/": {
+  "title": "BlackHatSect0r : phishing bancaire, extorsion et industrie",
+  "url": "https://www.zataz.com/blackhatsect0r-phishing-bancaire-extorsion-et-industrie/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-23T09:51:37+00:00",
+  "summary": "BlackHatSect0r associe phishing bancaire, extorsion, destruction de sauvegardes et interfaces industrielles exposées."
+ },
+ "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/": {
+  "title": "Call center operator gets 8 years for helping scam 30,000 Americans",
+  "url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-23T12:02:23+00:00",
+  "summary": "A Peruvian call center operator was sentenced to eight years in prison for stealing millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/": {
+  "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-23T09:11:15+00:00",
+  "summary": "Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/": {
+  "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-23T07:44:19+00:00",
+  "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html": {
+  "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-23T12:41:04+00:00",
+  "summary": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to…"
+ },
+ "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html": {
+  "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+  "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-23T12:28:09+00:00",
+  "summary": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-2026-134624, is a server-side…"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html": {
+  "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-23T09:11:56+00:00",
+  "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability,…"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html": {
+  "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+  "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-23T09:04:08+00:00",
+  "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company…"
+ },
+ "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html": {
+  "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+  "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-23T08:24:15+00:00",
+  "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned…"
+ },
+ "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/": {
+  "title": "AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos",
+  "url": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-23T12:16:20+00:00",
+  "summary": "Dragos uncovered undetected intrusions at three AI inference providers using nearly two million prompts sent to AI services. The post AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/": {
+  "title": "BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted",
+  "url": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-23T11:44:18+00:00",
+  "summary": "Backdoors on low-cost consumer devices served modules for ad fraud and for turning devices into residential proxies. The post BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/": {
+  "title": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
+  "url": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-23T11:35:15+00:00",
+  "summary": "Threat actors could exploit them to leak or modify server information and to execute commands as root. The post SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/": {
+  "title": "CrowdStrike to Acquire Zscaler in $43.9 Billion Deal",
+  "url": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-23T11:31:44+00:00",
+  "summary": "CrowdStrike expects the combined company to have more than $10 billion in annual recurring revenue. The post CrowdStrike to Acquire Zscaler in $43.9 Billion Deal appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges": {
+  "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
+  "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-21T01:31:23+00:00",
+  "summary": "Identity, runtime and development controls are converging as enterprises are tasked with keeping agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html": {
+  "title": "Humans Have Rights. Machines Do Not.",
+  "url": "https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-23T12:00:54+00:00",
+  "summary": "This essay originally appeared in Tech Policy Press . Last year, Character.AI asked a federal court in Florida to dismiss a wrongful-death suit, brought by the mother of a fourteen-year-old boy who had killed himself after months of conversation with its…"
  }
 }
