@@ -9310,5 +9310,125 @@
   "lang": "en",
   "date": "2026-11-20T20:43:45+00:00",
   "summary": "Det er ikke påvist noen konkret sammenheng mellom de to hendelsene, selv om de helt klart har mange likhetstrekk."
+ },
+ "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/": {
+  "title": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
+  "url": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T13:34:23+00:00",
+  "summary": "OpenAI and Cisco launched an open-source Linux security tool named Shirudo that deploys temporary runtime protections to block vulnerability exploitation while administrators prepare and roll out patches, without restarting services. [...]"
+ },
+ "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html": {
+  "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+  "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-24T13:28:26+00:00",
+  "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as…"
+ },
+ "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html": {
+  "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+  "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-24T13:28:21+00:00",
+  "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is…"
+ },
+ "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html": {
+  "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+  "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-24T12:02:00+00:00",
+  "summary": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday. The same loading…"
+ },
+ "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html": {
+  "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+  "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-24T12:01:54+00:00",
+  "summary": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose? According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research.…"
+ },
+ "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html": {
+  "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+  "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-24T10:44:49+00:00",
+  "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi.…"
+ },
+ "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html": {
+  "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+  "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-24T08:34:20+00:00",
+  "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No…"
+ },
+ "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html": {
+  "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+  "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-24T06:02:57+00:00",
+  "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems…"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html": {
+  "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-24T06:02:45+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities…"
+ },
+ "https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse/": {
+  "title": "Anthropic Expands Enterprise Safeguards for Detecting AI Misuse",
+  "url": "https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-24T13:30:23+00:00",
+  "summary": "EFS helps zero-retention customers spot Claude misuse spread across many requests while keeping conversation data in their own cloud. The post Anthropic Expands Enterprise Safeguards for Detecting AI Misuse appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/": {
+  "title": "OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems",
+  "url": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-24T12:20:41+00:00",
+  "summary": "OpenAI and Cisco’s Shirudo uses AI-generated shields to block Linux exploits while patches are prepared, but it’s not yet production-ready. The post OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/": {
+  "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
+  "url": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-24T11:50:21+00:00",
+  "summary": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/": {
+  "title": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
+  "url": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-24T10:44:44+00:00",
+  "summary": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents. The post Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine/": {
+  "title": "Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine",
+  "url": "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-24T10:35:04+00:00",
+  "summary": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations. The post Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine appeared first on SecurityWeek ."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html": {
+  "title": "We Get the Infrastructure We Pay For",
+  "url": "https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-24T12:06:50+00:00",
+  "summary": "This essay originally appeared as part of a round table in The Free Press entitled “Is America’s Infrastructure Under Attack?” Microsoft, the FAA, banks, United Airlines, the NSA—it’s been a really bad week in cyberspace. But, amazing as it might seem, these…"
  }
 }
