@@ -9430,5 +9430,205 @@
   "lang": "en",
   "date": "2026-11-24T12:06:50+00:00",
   "summary": "This essay originally appeared as part of a round table in The Free Press entitled “Is America’s Infrastructure Under Attack?” Microsoft, the FAA, banks, United Airlines, the NSA—it’s been a really bad week in cyberspace. But, amazing as it might seem, these…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1608/": {
+  "title": "Vulnérabilité dans Google Chrome (24 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1608/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-24T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Google Chrome. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1609/": {
+  "title": "Vulnérabilité dans Laravel (24 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1609/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-24T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Laravel. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1610/": {
+  "title": "Multiples vulnérabilités dans Postfix (24 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1610/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-24T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Postfix. Elles permettent à un attaquant de provoquer un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1611/": {
+  "title": "Multiples vulnérabilités dans Traefik (24 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1611/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-24T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Traefik. Elle permet à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1612/": {
+  "title": "Vulnérabilité dans les produits F5 (24 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1612/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-24T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans les produits F5. Elle permet à un attaquant de provoquer un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1613/": {
+  "title": "Multiples vulnérabilités dans OpenSSL (24 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1613/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-24T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans OpenSSL. Elles permettent à un attaquant de provoquer un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1614/": {
+  "title": "Multiples vulnérabilités dans les produits Elastic (24 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1614/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-24T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Elastic. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/": {
+  "title": "Rackspace shuts down Spot cloud platform after security breach",
+  "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T21:37:30+00:00",
+  "summary": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/": {
+  "title": "New Inception extortion gang launches large-scale vishing campaign",
+  "url": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T20:21:20+00:00",
+  "summary": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/": {
+  "title": "Turnitin discloses cyberattack affecting customer-facing systems",
+  "url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T18:59:52+00:00",
+  "summary": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/": {
+  "title": "Radware discloses breach exposing customer cloud access keys",
+  "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T17:49:05+00:00",
+  "summary": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/": {
+  "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
+  "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T16:30:19+00:00",
+  "summary": "The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/": {
+  "title": "European Commission confirms data theft in EU Academy breach",
+  "url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T16:22:44+00:00",
+  "summary": "The European Commission, the European Union's main executive body, has confirmed that attackers breached its EU Academy online learning hub and stole the personal data of an undisclosed number of users. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/": {
+  "title": "Hackers compromise Check Point Servers in 22 organizations",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T16:15:23+00:00",
+  "summary": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/": {
+  "title": "Police disrupt 57 illegal streaming services with 7.3 million visits",
+  "url": "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T15:10:10+00:00",
+  "summary": "Law enforcement authorities from 11 countries have disrupted 57 illegal streaming services that operated hundreds of websites and drew over 7.3 million visits each year. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/": {
+  "title": "From Vulnerability Noise to Resilience: Rethinking Security in the AI Era",
+  "url": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T15:01:11+00:00",
+  "summary": "AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce…"
+ },
+ "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/": {
+  "title": "McDonald's Japan data breach exposes customer location information",
+  "url": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-24T14:09:37+00:00",
+  "summary": "McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app. [...]"
+ },
+ "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html": {
+  "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+  "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-24T16:54:07+00:00",
+  "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the…"
+ },
+ "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/": {
+  "title": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
+  "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-24T22:41:58+00:00",
+  "summary": "It was not clear what specific information was compromised or who was responsible. The post An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/": {
+  "title": "VMware Updates Patch Critical ESX, vCenter Vulnerabilities",
+  "url": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-24T16:32:56+00:00",
+  "summary": "The critical bugs include an authentication bypass in vCenter and flaws that could allow code execution on ESX hosts. The post VMware Updates Patch Critical ESX, vCenter Vulnerabilities appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/": {
+  "title": "European Commission Uncovers Data Breach in Cyberattack Investigation",
+  "url": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-24T14:49:59+00:00",
+  "summary": "Names and email addresses of EU Academy users were exposed in the AI-assisted cyberattack the European Commission detected in October. The post European Commission Uncovers Data Breach in Cyberattack Investigation appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/": {
+  "title": "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
+  "url": "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-24T14:21:56+00:00",
+  "summary": "The attacks were launched from 99 IP addresses and targeted organizations across multiple industries and countries. The post Check Point Security Management Servers Hacked in AI-Assisted Campaign appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/cyber-risk/satellites-ground-level-cybersecurity-problem": {
+  "title": "Satellites Have a Ground-Level Cybersecurity Problem",
+  "url": "https://www.darkreading.com/cyber-risk/satellites-ground-level-cybersecurity-problem",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-24T22:05:34+00:00",
+  "summary": "Weaknesses in the ground-based infrastructure supporting satellite services are becoming more consequential as a new space race gathers pace."
+ },
+ "https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn": {
+  "title": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
+  "url": "https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-24T21:48:06+00:00",
+  "summary": "The China-aligned espionage group rebuilt the open source VPN software from source, stripping out the artifacts that would normally expose it to defenders."
+ },
+ "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc": {
+  "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
+  "url": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-24T21:36:11+00:00",
+  "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems."
  }
 }
