@@ -9078,5 +9078,237 @@
   "lang": "en",
   "date": "2026-11-23T12:00:54+00:00",
   "summary": "This essay originally appeared in Tech Policy Press . Last year, Character.AI asked a federal court in Florida to dismiss a wrongful-death suit, brought by the mother of a fourteen-year-old boy who had killed himself after months of conversation with its…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1599/": {
+  "title": "Multiples vulnérabilités dans SPIP (23 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1599/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-23T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans SPIP. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS) et une injection de requêtes illégitimes par rebond (CSRF)."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1600/": {
+  "title": "Multiples vulnérabilités dans les produits Palo Alto Networks (23 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1600/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-23T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Palo Alto Networks. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1601/": {
+  "title": "Vulnérabilité dans Laravel (23 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1601/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-23T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Laravel. Elle permet à un attaquant de provoquer un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1602/": {
+  "title": "Multiples vulnérabilités dans Roundcube Webmail (23 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1602/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-23T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Roundcube Webmail. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1603/": {
+  "title": "Multiples vulnérabilités dans Microsoft Edge (23 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1603/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-23T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1604/": {
+  "title": "Vulnérabilité dans Microsoft Office (23 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1604/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-23T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Microsoft Office. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1605/": {
+  "title": "Vulnérabilité dans Mattermost Server (23 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1605/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-23T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Mattermost Server. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1606/": {
+  "title": "Multiples vulnérabilités dans MongoDB (23 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1606/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-23T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans MongoDB. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1607/": {
+  "title": "Multiples vulnérabilités dans les produits Synology (23 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1607/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-23T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Synology. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des…"
+ },
+ "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/": {
+  "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+  "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-23T20:54:51+00:00",
+  "summary": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/": {
+  "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+  "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-23T20:00:20+00:00",
+  "summary": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/": {
+  "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+  "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-23T19:42:20+00:00",
+  "summary": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/": {
+  "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+  "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-23T18:38:40+00:00",
+  "summary": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/": {
+  "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
+  "url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-23T16:50:01+00:00",
+  "summary": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/": {
+  "title": "AI Agents Are Creating a Shared Responsibility Gap",
+  "url": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-23T15:00:10+00:00",
+  "summary": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities,…"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/": {
+  "title": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-23T13:28:45+00:00",
+  "summary": "Microsoft is working to fix a long-standing Windows issue that has been causing significant audio quality drops for Bluetooth headphone users. [...]"
+ },
+ "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html": {
+  "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+  "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-23T17:45:15+00:00",
+  "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to…"
+ },
+ "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html": {
+  "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+  "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-23T15:10:48+00:00",
+  "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's…"
+ },
+ "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html": {
+  "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+  "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-23T13:22:20+00:00",
+  "summary": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code…"
+ },
+ "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/": {
+  "title": "Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms",
+  "url": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-23T15:47:40+00:00",
+  "summary": "Microsoft closed an Azure API Management flaw exploited to target secrets at Norwegian energy companies, with other sectors also affected. The post Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/": {
+  "title": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
+  "url": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-23T15:06:49+00:00",
+  "summary": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/": {
+  "title": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
+  "url": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-23T13:58:07+00:00",
+  "summary": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE. The post phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/": {
+  "title": "GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw",
+  "url": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-23T13:26:22+00:00",
+  "summary": "Attackers abused a flaw in the GoodCloud remote management service to push malware to devices, and cleaning them requires new firmware. The post GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure": {
+  "title": "Industrial Serial Gateways Broadcast That They're Insecure",
+  "url": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-23T22:02:46+00:00",
+  "summary": "Critical OT access devices will often tell you, and anyone else, whether they're protected by authentication — and many aren't."
+ },
+ "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal": {
+  "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
+  "url": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-23T21:21:42+00:00",
+  "summary": "CrowdStrike's $44 billion acquisition of Zscaler would unite endpoint protection and zero-trust network security to obtain greater control over AI agents."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise": {
+  "title": "US Cyber Director Pick Signals Shift Toward Expertise",
+  "url": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-23T20:13:48+00:00",
+  "summary": "Trump named Kirsten Davies as Acting National Cyber Director, bringing greater industry experience to the role amid recent outages and rising geopolitical tensions."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors": {
+  "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
+  "url": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-23T17:45:52+00:00",
+  "summary": "Ransomware isn't slowing down. A new framework gives security teams the edge to trace attackers back to their source."
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes": {
+  "title": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-23T16:17:21+00:00",
+  "summary": "A China-nexus actor used the Cairn penetration testing tool in attacks against East Asian universities, exploiting a zero-day in a medical imaging app."
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian": {
+  "title": "Nok et norsk energiselskap har blitt utsatt for et datainnbrudd på to dager",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-20T20:43:45+00:00",
+  "summary": "Det er ikke påvist noen konkret sammenheng mellom de to hendelsene, selv om de helt klart har mange likhetstrekk."
  }
 }
