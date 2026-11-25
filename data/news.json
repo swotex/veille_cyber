@@ -9694,5 +9694,269 @@
   "lang": "en",
   "date": "2026-11-25T15:00:00+00:00",
   "summary": "Dark Reading Confidential Episode 23: Cyber insurers share their view of the AI-driven threat landscape and how mounting challenges are putting pressure on both sides of the policy, leaving the current model unsustainable."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1615/": {
+  "title": "Multiples vulnérabilités dans Tenable Enclave Security (25 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1615/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-25T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Tenable Enclave Security. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1616/": {
+  "title": "Multiples vulnérabilités dans les produits Mozilla (25 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1616/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-25T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits Mozilla. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1617/": {
+  "title": "Vulnérabilité dans Laravel (25 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1617/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-25T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Laravel. Elle permet à un attaquant de provoquer un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1618/": {
+  "title": "Vulnérabilité dans les produits Schneider Electric (25 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1618/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-25T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans les produits Schneider Electric. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1619/": {
+  "title": "Multiples vulnérabilités dans Symfony (25 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1619/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-25T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Symfony. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournement de la politique de sécurité."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1620/": {
+  "title": "Vulnérabilité dans Microsoft Office (25 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1620/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-25T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Microsoft Office. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1621/": {
+  "title": "Vulnérabilité dans Palo Alto Networks PAN-OS (25 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1621/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-25T00:00:00+00:00",
+  "summary": "Une vulnérabilité a été découverte dans Palo Alto Networks PAN-OS. Elle permet à un attaquant de provoquer une élévation de privilèges. Palo Alto Networks indique que la vulnérabilité CVE-2026-43600 est activement exploitée."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1622/": {
+  "title": "Multiples vulnérabilités dans les produits VMware (25 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1622/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-25T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.zataz.com/skimming-en-alsace-des-cartes-bancaires-piegees-a-la-pompe/": {
+  "title": "Skimming en Alsace, des cartes bancaires piégées à la pompe",
+  "url": "https://www.zataz.com/skimming-en-alsace-des-cartes-bancaires-piegees-a-la-pompe/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-25T11:40:44+00:00",
+  "summary": "Skimming ? En Alsace, des retraits de 500 à 1 000 euros après un plein alertent les gendarmes. Comment réagir face à la fraude."
+ },
+ "https://www.zataz.com/faux-jeu-ducros-sur-tiktok-le-piege-du-coffret-de-noel/": {
+  "title": "Faux jeu Ducros sur TikTok, le piège du coffret de Noël",
+  "url": "https://www.zataz.com/faux-jeu-ducros-sur-tiktok-le-piege-du-coffret-de-noel/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-25T10:46:52+00:00",
+  "summary": "ZATAZ retrace le faux jeu Ducros sur TikTok, du coffret d’épices de Noël au formulaire de carte bancaire."
+ },
+ "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/": {
+  "title": "CISA warns of critical unpatched flaw in Danfoss refrigeration controllers",
+  "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-25T16:13:40+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning about a critical vulnerability in Danfoss AK-SM 8xxA Series controllers used by food retailers to manage commercial refrigeration, HVAC, and lighting systems. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/": {
+  "title": "More Pentests Without More Pentesters: Where AI Safely Helps",
+  "url": "https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-25T15:00:10+00:00",
+  "summary": "Penetration testers spend a significant portion of their engagements on documentation, reporting, and other tasks outside of testing. PentestPad explains how AI can reduce this workload, help teams handle more engagements, and keep sensitive client data…"
+ },
+ "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/": {
+  "title": "InfraTrust warns of exploited supply chain flaws in network appliances",
+  "url": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-25T15:00:00+00:00",
+  "summary": "Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors…"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/": {
+  "title": "Microsoft fixes Microsoft 365 bug blocking access to Office apps",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-25T11:16:32+00:00",
+  "summary": "Earlier this week, Microsoft resolved a known issue that was preventing some Microsoft 365 customers from accessing Office applications. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/": {
+  "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-25T10:10:20+00:00",
+  "summary": "The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/": {
+  "title": "Microsoft confirms authentication issues after November updates",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-25T09:02:57+00:00",
+  "summary": "Microsoft has confirmed that customers may experience authentication issues after installing November security updates that address a high-severity remote code execution vulnerability. [...]"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html": {
+  "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+  "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-25T12:48:54+00:00",
+  "summary": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. The vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below - CVE-2026-120705 (CVSS score: 8.6) - An…"
+ },
+ "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html": {
+  "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
+  "url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-25T12:30:08+00:00",
+  "summary": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in \"unauthorized access to a limited subset of its systems,\" the bureau said on Tuesday. As a precaution, it has taken some…"
+ },
+ "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html": {
+  "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+  "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-25T11:51:48+00:00",
+  "summary": "TL;DR More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break. Validity-only triage misses 46% of…"
+ },
+ "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html": {
+  "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+  "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-25T11:23:26+00:00",
+  "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026. The vulnerability,…"
+ },
+ "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html": {
+  "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
+  "url": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-25T10:43:07+00:00",
+  "summary": "A former OpenAI employee accused of concealing a covert recording device at the company's San Francisco offices will be allowed to be released from jail on a $1 million bond, a San Francisco federal court judge ruled Tuesday. Abdulrahman Alfozan, a…"
+ },
+ "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html": {
+  "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
+  "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-25T09:06:59+00:00",
+  "summary": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from. The flaw used in the attack had been in the registry's code since February 2016,…"
+ },
+ "https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/": {
+  "title": "Two Newly Disclosed GeoServer Vulnerabilities Under Attack",
+  "url": "https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-25T15:27:36+00:00",
+  "summary": "Attackers are probing GeoServer instances for two high-severity flaws that can be chained with other bugs for unauthenticated RCE. The post Two Newly Disclosed GeoServer Vulnerabilities Under Attack appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/shinyhunters-claims-comeback-new-inception-group-rejects-alleged-ties/": {
+  "title": "ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties",
+  "url": "https://www.securityweek.com/shinyhunters-claims-comeback-new-inception-group-rejects-alleged-ties/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-25T14:15:25+00:00",
+  "summary": "An account tied to ShinyHunters announced the group’s return, as Okta spots possible links between Inception and ShinyHunters hackers. The post ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/": {
+  "title": "US Treasury’s FinCEN Disconnects Systems Following Cyber Incident",
+  "url": "https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-25T13:39:21+00:00",
+  "summary": "FinCEN has extended deadlines for filers affected by the disruptions while it is investigating the incident. The post US Treasury’s FinCEN Disconnects Systems Following Cyber Incident appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/ground-truth-ciso-matt-martin-on-building-a-real-security-program-without-an-enterprise-budget/": {
+  "title": "Ground Truth: CISO Matt Martin on Building a Real Security Program Without an Enterprise Budget",
+  "url": "https://www.securityweek.com/ground-truth-ciso-matt-martin-on-building-a-real-security-program-without-an-enterprise-budget/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-25T13:30:00+00:00",
+  "summary": "Matthew Martin is Chief Information Security and Privacy Officer at Western Carolina University. The post Ground Truth: CISO Matt Martin on Building a Real Security Program Without an Enterprise Budget appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/plagiarism-checker-turnitin-investigating-cyberattack/": {
+  "title": "Plagiarism Checker Turnitin Investigating Cyberattack",
+  "url": "https://www.securityweek.com/plagiarism-checker-turnitin-investigating-cyberattack/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-25T10:40:07+00:00",
+  "summary": "The edtech company says the systems are fully operational and safe to use while it investigates the incident. The post Plagiarism Checker Turnitin Investigating Cyberattack appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/": {
+  "title": "Hackers Exploit Unpatched Flaw in Defunct Idunno AntiCsrf Library",
+  "url": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-25T09:05:13+00:00",
+  "summary": "Attackers can exploit CVE-2026-131914 to achieve remote code execution via a single web request containing specially crafted data. The post Hackers Exploit Unpatched Flaw in Defunct Idunno AntiCsrf Library appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments": {
+  "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
+  "url": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-25T15:48:04+00:00",
+  "summary": "Researchers discovered 13 malicious NuGet packages as part of a fake recruitment campaign that spreads malware and gives attackers access to developers' machines."
+ },
+ "https://www.darkreading.com/cyber-risk/bot-world-just-living": {
+  "title": "It's a Bot World. We're Just Living in It",
+  "url": "https://www.darkreading.com/cyber-risk/bot-world-just-living",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-25T15:20:27+00:00",
+  "summary": "Bot detection has become a losing game. Security teams need to limit privileged access for humans and their machine counterparts equally."
+ },
+ "https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing": {
+  "title": "Latin America Sees Cyberattacks on Ports, Pipelines & Manufacturing",
+  "url": "https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-25T14:00:00+00:00",
+  "summary": "From the Port of Santos in Brazil to a pipeline in Argentina, cyberattacks are increasingly affecting industrial systems throughout the region."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/how-southeastern-university-handle-data": {
+  "title": "How Southeastern University Got a Handle on Its Data",
+  "url": "https://www.darkreading.com/cybersecurity-operations/how-southeastern-university-handle-data",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-24T15:46:46+00:00",
+  "summary": "Data security posture management (DSPM) allowed the university to uncover sensitive information, tighten access controls, and lay the groundwork for safer AI adoption."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html": {
+  "title": "Tracking Incidents of Hacking Using AI Tools",
+  "url": "https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-25T12:07:21+00:00",
+  "summary": "Daniel Meissler is tracking incidents of AI-enhanced hacking, and the offensive harnesses the hackers are using."
  }
 }
