@@ -9630,5 +9630,69 @@
   "lang": "en",
   "date": "2026-11-24T21:36:11+00:00",
   "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems."
+ },
+ "https://www.zataz.com/chu-de-bordeaux-et-sig-sauer-cibles-par-scarlettgroup/": {
+  "title": "CHU de Bordeaux et SIG Sauer ciblés par ScarlettGroup",
+  "url": "https://www.zataz.com/chu-de-bordeaux-et-sig-sauer-cibles-par-scarlettgroup/",
+  "source": "ZATAZ",
+  "lang": "fr",
+  "date": "2026-11-25T07:40:26+00:00",
+  "summary": "Le CHU de Bordeaux confirme une intrusion. ScarlettGroup menace de publier des données et revendique aussi SIG Sauer."
+ },
+ "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/": {
+  "title": "Hackers reportedly breached CIA intelligence analysis system",
+  "url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-25T07:45:03+00:00",
+  "summary": "Unknown attackers have reportedly breached an open-source intelligence analysis system at the US Central Intelligence Agency (CIA) [...]"
+ },
+ "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html": {
+  "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
+  "url": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-25T06:50:19+00:00",
+  "summary": "An unknown threat actor has been using artificial intelligence (AI)-driven offensive tooling in a campaign targeting Check Point Security Management servers, impacting 22 distinct organizations across the world. The intrusion activity, tracked by GreyNoise…"
+ },
+ "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html": {
+  "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
+  "url": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-25T06:37:06+00:00",
+  "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts. The attacks have targeted…"
+ },
+ "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html": {
+  "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
+  "url": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-25T06:21:12+00:00",
+  "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account. The…"
+ },
+ "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/": {
+  "title": "Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls",
+  "url": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-25T08:12:24+00:00",
+  "summary": "A China-linked hacking group chained PHP2Shell with Fragnesia in AI-assisted attacks that hit 25 servers. The post Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/": {
+  "title": "Drupal Flaw Found by Anthropic Scanner Exploited in Attacks",
+  "url": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-25T08:01:06+00:00",
+  "summary": "CISA has added the vulnerability to its KEV catalog and instructed federal agencies to patch it within three days. The post Drupal Flaw Found by Anthropic Scanner Exploited in Attacks appeared first on SecurityWeek ."
+ },
+ "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide": {
+  "title": "Cyber Insurers See New Divide: AI Defense 'Haves' & 'Have Nots'",
+  "url": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-25T15:00:00+00:00",
+  "summary": "Dark Reading Confidential Episode 23: Cyber insurers share their view of the AI-driven threat landscape and how mounting challenges are putting pressure on both sides of the policy, leaving the current model unsustainable."
  }
 }
