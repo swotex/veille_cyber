@@ -9958,5 +9958,29 @@
   "lang": "en",
   "date": "2026-11-25T12:07:21+00:00",
   "summary": "Daniel Meissler is tracking incidents of AI-enhanced hacking, and the offensive harnesses the hackers are using."
+ },
+ "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/": {
+  "title": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-25T22:05:09+00:00",
+  "summary": "Threat actors are chaining exploits for the PHP2Shell and Fragnesia vulnerabilities to target Palo Alto Networks devices with management interfaces exposed to the internet. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/": {
+  "title": "1Password customer data stolen after employee GitHub account breach",
+  "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-25T21:33:33+00:00",
+  "summary": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/": {
+  "title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
+  "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-25T19:39:31+00:00",
+  "summary": "Swiss and Italian cybersecurity agencies are warning about automated cyberattacks powered by AI agents targeting organizations in the critical infrastructure sector. [...]"
  }
 }
