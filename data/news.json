@@ -10294,5 +10294,173 @@
   "lang": "en",
   "date": "2026-11-27T12:02:23+00:00",
   "summary": "This essay originally appeared in The Guardian . It’s an expanded version of the one I posted as “ We Get the Infrastructure We Pay For .” It’s been a bad week for our computerized infrastructure. We’ve seen outages at Microsoft , the FAA , a handful of…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1630/": {
+  "title": "Multiples vulnérabilités dans Synology DSM et DSM Enterprise (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1630/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Synology DSM et DSM Enterprise. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1631/": {
+  "title": "Multiples vulnérabilités dans Xen (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1631/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans Xen. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1632/": {
+  "title": "Multiples vulnérabilités dans FreeRADIUS (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1632/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans FreeRADIUS. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1633/": {
+  "title": "Multiples vulnérabilités dans MongoDB (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1633/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans MongoDB. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et une atteinte à la confidentialité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1634/": {
+  "title": "Multiples vulnérabilités dans SolarWinds Serv-U (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1634/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans SolarWinds Serv-U. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1635/": {
+  "title": "Multiples vulnérabilités dans SPIP (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1635/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans SPIP. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une falsification de requêtes côté serveur…"
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1636/": {
+  "title": "Multiples vulnérabilités dans le noyau Linux de Red Hat (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1636/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1637/": {
+  "title": "Multiples vulnérabilités dans le noyau Linux de SUSE (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1637/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1638/": {
+  "title": "Multiples vulnérabilités dans le noyau Linux de Debian (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1638/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et une atteinte à l'intégrité des données."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1639/": {
+  "title": "Multiples vulnérabilités dans le noyau Linux de Debian LTS (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1639/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance."
+ },
+ "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1640/": {
+  "title": "Multiples vulnérabilités dans les produits IBM (27 novembre 2026)",
+  "url": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1640/",
+  "source": "CERT-FR Avis",
+  "lang": "fr",
+  "date": "2026-11-27T00:00:00+00:00",
+  "summary": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données."
+ },
+ "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/": {
+  "title": "pCloud confirms password manager hack after suspicious login alerts",
+  "url": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T19:26:04+00:00",
+  "summary": "The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/": {
+  "title": "New Boston Scientific data breach exposes personal, medical info",
+  "url": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T18:57:42+00:00",
+  "summary": "Medical technology company Boston Scientific is sending data breach notices to individuals affected by a cyberattack on the firm. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/": {
+  "title": "Unpatched Cacti zero-day with public PoC gives remote code execution",
+  "url": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T17:06:13+00:00",
+  "summary": "A zero-day vulnerability in the Cacti network monitoring platform has been publicly disclosed, along with a proof-of-concept exploit that lets unauthenticated attackers execute commands on vulnerable servers. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/": {
+  "title": "US Air Force cloud platform reportedly hacked in latest federal breach",
+  "url": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T15:09:40+00:00",
+  "summary": "Hackers have reportedly breached the US Air Force's Cloud One computing platform, adding to a recent wave of cyberattacks affecting US government agencies, including the FBI, CIA, and Treasury Department. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/": {
+  "title": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs",
+  "url": "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T15:00:10+00:00",
+  "summary": "Forgotten virtual machines, unpatched servers, and excessive access permissions can create security blind spots across IT infrastructure. ISPsystem explains how centralized infrastructure management, access controls, and resource lifecycle automation can…"
+ },
+ "https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/": {
+  "title": "Malwarebytes Antivirus: Get 50% off during Black Friday 2026",
+  "url": "https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T14:22:06+00:00",
+  "summary": "Malwarebytes' 2026 Black Friday and Cyber Monday sale is now live, offering 50% off security subscriptions for individuals, families, and small businesses, including its antivirus software, VPN, identity theft protection, and personal data removal services.…"
+ },
+ "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html": {
+  "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
+  "url": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-27T16:36:11+00:00",
+  "summary": "A Vietnam-sponsored hacking group has been attributed to attacks targeting Southeast Asian military, government, and legislative organizations with an aim to gather intelligence on South China Sea defense and military agreements. The previously undocumented…"
+ },
+ "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html": {
+  "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+  "url": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-27T11:49:34+00:00",
+  "summary": "Cybersecurity researchers have disclosed details of a cyber attack in which a threat actor leveraged a Microsoft Store application to deliver a remote access trojan (RAT) called Vinci RAT. The intrusion, according to eSentire, begins with a redirection to a…"
+ },
+ "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks": {
+  "title": "Matters.AI Lands India’s Largest Cybersecurity Pre-Series A Round to Fight AI Data Risks",
+  "url": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
+  "source": "Dark Reading",
+  "lang": "en",
+  "date": "2026-11-27T15:27:20+00:00",
+  "summary": "The security startup consolidates four legacy security tools into an autonomous platform that uses context-aware AI to trace sensitive data lineage, analyze user intent, and automatically remediate threats across enterprise environments."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-giant-squid-in-newfoundland.html": {
+  "title": "Friday Squid Blogging: Giant Squid in Newfoundland",
+  "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-giant-squid-in-newfoundland.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-27T22:01:25+00:00",
+  "summary": "The two have an interesting history . As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy."
  }
 }
