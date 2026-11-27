@@ -66068,7 +66068,7 @@
  "CVE-2026-102010": {
   "id": "CVE-2026-102010",
   "published": "2026-09-28T19:16:48.830",
-  "modified": "2026-11-25T03:17:27.333",
+  "modified": "2026-11-26T21:17:14.930",
   "desc": "A flaw was found in GCC. When an application calls the erase_if function on a binary heap priority queue in libstdc++, the library reallocates storage but fails to update its internal entry pointer. An attacker capable of triggering this operation can exploit this use-after-free condition, leading to a Denial of Service (DoS) via an application crash or potential memory corruption.",
   "cvss": 7.0,
   "sev": "HIGH",
@@ -173045,7 +173045,7 @@
  "CVE-2026-107912": {
   "id": "CVE-2026-107912",
   "published": "2026-11-05T14:16:59.697",
-  "modified": "2026-11-05T17:17:35.427",
+  "modified": "2026-11-26T20:17:21.973",
   "desc": "A flaw was found in the management interface of the Quarkus framework, specifically within the quarkus-vertx-http component. The issue occurs when the framework incorrectly combines the management root path with specific permission rules, leading to a situation where security policies are applied to the wrong internal paths. As a result, an attacker can bypass intended authorization checks and gain unauthorized access to sensitive management endpoints.",
   "cvss": 7.7,
   "sev": "HIGH",
@@ -173055,8 +173055,9 @@
   ],
   "products": [],
   "refs": [
-   "https://access.redhat.com/security/cve/CVE-2026-107912",
-   "https://bugzilla.redhat.com/show_bug.cgi?id=2548364"
+   "https://access.redhat.com/errata/RHSA-2026:95289",
+   "https://access.redhat.com/errata/RHSA-2026:95579",
+   "https://access.redhat.com/errata/RHSA-2026:96037"
   ],
   "kev": false,
   "epss": 0.00178
@@ -173264,7 +173265,7 @@
  "CVE-2026-117691": {
   "id": "CVE-2026-117691",
   "published": "2026-11-05T14:17:01.320",
-  "modified": "2026-11-16T14:19:46.350",
+  "modified": "2026-11-26T20:17:22.190",
   "desc": "A flaw was found in the SAML HTTP-Redirect binding implementation of Keycloak. The issue occurs because the server processes percent-encoded parameter names (like %53AMLResponse) while the signature verification logic only checks literal parameter names. An attacker can use this discrepancy to provide a crafted, unsigned SAML message that the server processes instead of a legitimately signed one, leading to full account takeover of federated users.",
   "cvss": 9.1,
   "sev": "CRITICAL",
@@ -173276,9 +173277,9 @@
    "redhat build of keycloak"
   ],
   "refs": [
-   "https://access.redhat.com/errata/RHSA-2026:96039",
-   "https://access.redhat.com/errata/RHSA-2026:96040",
-   "https://access.redhat.com/security/cve/CVE-2026-117691"
+   "https://access.redhat.com/errata/RHSA-2026:96037",
+   "https://access.redhat.com/errata/RHSA-2026:96038",
+   "https://access.redhat.com/errata/RHSA-2026:96039"
   ],
   "kev": false,
   "epss": 0.0032
@@ -203537,7 +203538,7 @@
  "CVE-2026-120984": {
   "id": "CVE-2026-120984",
   "published": "2026-11-07T14:17:01.580",
-  "modified": "2026-11-09T14:17:07.390",
+  "modified": "2026-11-26T20:17:22.380",
   "desc": "A flaw was found in the Keycloak server's client management component. When a client is created or imported with authorization services enabled, the system fails to properly clear an internal session attribute used during the setup process. This allows an authenticated attacker with client management permissions to bypass security controls and upload a malicious JavaScript policy, which is then executed on the server when an authorization request is made. Successful exploitation could allow the attacker to run arbitrary code on the server, potentially compromising the entire system.",
   "cvss": 9.1,
   "sev": "CRITICAL",
@@ -203547,8 +203548,9 @@
   ],
   "products": [],
   "refs": [
-   "https://access.redhat.com/security/cve/CVE-2026-120984",
-   "https://bugzilla.redhat.com/show_bug.cgi?id=2565599"
+   "https://access.redhat.com/errata/RHSA-2026:96037",
+   "https://access.redhat.com/errata/RHSA-2026:96038",
+   "https://access.redhat.com/security/cve/CVE-2026-120984"
   ],
   "kev": false,
   "epss": 0.00607
@@ -216360,7 +216362,7 @@
  "CVE-2026-84503": {
   "id": "CVE-2026-84503",
   "published": "2026-11-09T18:17:34.233",
-  "modified": "2026-11-26T01:17:12.060",
+  "modified": "2026-11-26T23:17:04.060",
   "desc": "A flaw was found in ansible-core's ansible.builtin.git module. The module\ninvokes git (ls-remote, clone, fetch) with the repository URL as a positional\nargument and without a \"--\" separator, so a repository URL that begins with a\ndash is interpreted by git as a command-line option. A caller that passes an\nattacker-controlled repository URL to the module can trigger argument\ninjection (for example --upload-pack/--exec), resulting in arbitrary command\nexecution on the host running the module.",
   "cvss": 6.7,
   "sev": "MEDIUM",
@@ -286401,7 +286403,7 @@
  "CVE-2026-86323": {
   "id": "CVE-2026-86323",
   "published": "2026-11-12T21:17:33.223",
-  "modified": "2026-11-24T09:17:09.633",
+  "modified": "2026-11-26T23:17:04.423",
   "desc": "A missing authorization check has been found in the user_mail_notifications function in mail_notifications_controller.rb of the mail notification API in the foreman package. The action returns another user's notification settings when only the generic view permission for mail notifications is present. A low-privileged network attacker or user who can view mail notifications can request any user id and read that user's subscription choices and stored mail search strings.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -286421,7 +286423,7 @@
  "CVE-2026-86324": {
   "id": "CVE-2026-86324",
   "published": "2026-11-12T21:17:33.390",
-  "modified": "2026-11-24T09:17:09.790",
+  "modified": "2026-11-26T23:17:04.633",
   "desc": "A missing authorization check has been found in the find_user function in user_aware.rb of the SSH key API in the foreman package. The create action attaches a new public key to the user id in the request without checking that the caller may edit that user. A low-privileged network attacker or user who already holds permission to create SSH keys can add their key to another user's account. That key is then stored with the victim and can be used by features that export that user's SSH keys.",
   "cvss": 4.3,
   "sev": "MEDIUM",
@@ -287319,7 +287321,7 @@
  "CVE-2026-107193": {
   "id": "CVE-2026-107193",
   "published": "2026-10-12T06:16:58.463",
-  "modified": "2026-11-13T02:18:49.440",
+  "modified": "2026-11-26T21:17:15.387",
   "desc": "A flaw has been found in **permission filters** in the **foreman** package. The API loads a filter by its identifier and does not apply the search limit on the caller's permission. A low-privileged network attacker or user must already be allowed to delete filters for one role only. They can delete filters that belong to other unlocked roles. Those other roles then lose the access the deleted filters had granted.",
   "cvss": 6.5,
   "sev": "MEDIUM",
@@ -405146,8 +405148,8 @@
  "CVE-2026-115296": {
   "id": "CVE-2026-115296",
   "published": "2026-11-23T22:19:11.940",
-  "modified": "2026-11-24T20:18:36.677",
-  "desc": "Missing authorization in Kibana Security AI Assistant conversation deletion can allow an authenticated assistant user to permanently delete a shared or global conversation owned by another user in the same space. The individual-delete path can treat read access to a shared conversation as permission to delete it without checking ownership. The deleted conversation history is lost to its legitimate owner.",
+  "modified": "2026-11-26T17:17:05.853",
+  "desc": "Missing authorization in the Elastic AI Assistant for Security in Kibana can allow an authenticated assistant user to permanently delete a shared or global Security AI Assistant conversation owned by another user in the same space. The individual-delete path can treat read access to a shared conversation as permission to delete it without checking ownership. The deleted conversation history is lost to its legitimate owner.",
   "cvss": 6.5,
   "sev": "MEDIUM",
   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
@@ -441491,7 +441493,7 @@
  "CVE-2026-126984": {
   "id": "CVE-2026-126984",
   "published": "2026-11-26T16:17:50.623",
-  "modified": "2026-11-26T16:17:50.623",
+  "modified": "2026-11-26T18:17:17.380",
   "desc": "A **server-side request forgery** flaw has been found in the get_remote_artifact_url() function in pulp_python/app/models.py of the pull-through caching feature in the **pulp_python** package. The function uses the redirect query parameter from the client request as the URL to download. A network attacker or user who can reach the content app of a Python distribution that has a remote can choose that URL. The content app downloads it and returns the response. When the remote has a username and password, the download sends those credentials to the host in the URL. When the remote policy is immediate, the default, or on_demand, the file is saved into the distribution's repository and later clients are served that file. The project name and version come from the file, and the filename comes from the request path. A filename the repository already stores is served from the stored file.",
   "cvss": 10.0,
   "sev": "CRITICAL",
@@ -443846,6 +443848,1861 @@
    "https://plugins.trac.wordpress.org/browser/sumup-payment-gateway-for-woocommerce/tags/2.17.1/includes/class-wc-sumup-gateway.php#L1794",
    "https://plugins.trac.wordpress.org/browser/sumup-payment-gateway-for-woocommerce/tags/2.17.1/includes/class-wc-sumup-gateway.php#L1877",
    "https://plugins.trac.wordpress.org/browser/sumup-payment-gateway-for-woocommerce/tags/2.17.1/includes/class-wc-sumup-gateway.php#L244"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2025-8209": {
+  "id": "CVE-2025-8209",
+  "published": "2026-11-26T17:17:05.527",
+  "modified": "2026-11-26T17:17:05.660",
+  "desc": "The Ultimate Bootstrap Elements for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple widgets in all versions up to, and including, 1.5.3 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/changeset/3821945",
+   "https://plugins.trac.wordpress.org/changeset?reponame=&new=3821945%40ultimate-bootstrap-elements-for-elementor%2Ftags%2F1.5.4&old=3360205%40ultimate-bootstrap-elements-for-elementor%2Ftags%2F1.5.3",
+   "https://wordpress.org/plugins/ultimate-bootstrap-elements-for-elementor/#developers"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-102001": {
+  "id": "CVE-2026-102001",
+  "published": "2026-11-26T17:17:05.690",
+  "modified": "2026-11-26T17:17:05.813",
+  "desc": "The wpForo Forum plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'nickname / display_name (via WP core profile form); thread[body] carries the [quote data-userid=..] trigger' parameter in all versions up to, and including, 3.2.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Exploitation requires that the site administrator has disabled the profiles.mention_nicknames setting (which is off by default), causing apply_quotes() to use display_name rather than a sanitized nickname when building the data-mention attribute.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.trac.wordpress.org/browser/wpforo/tags/3.2.1/classes/Actions.php#L761",
+   "https://plugins.trac.wordpress.org/browser/wpforo/tags/3.2.1/classes/Template.php#L3052",
+   "https://plugins.trac.wordpress.org/browser/wpforo/tags/3.2.1/classes/Template.php#L75"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135205": {
+  "id": "CVE-2026-135205",
+  "published": "2026-11-26T17:17:05.980",
+  "modified": "2026-11-26T17:17:05.980",
+  "desc": "@fastify/middie is the plugin that adds Express-style middleware support to the Fastify web framework. In versions 9.3.6 through 9.3.9, a route or mount path written without a leading slash inside a plugin registered under a prefix is handled inconsistently: the middleware is mounted with a separating slash after the prefix, while the route is concatenated directly onto the prefix, so a request to the concatenated path reaches the route handler without running the middleware mounted for it. An attacker can use this to bypass authentication or other middleware-based access controls on the affected routes. The issue is fixed in @fastify/middie 9.3.10, and users should upgrade to 9.3.10 or later. As a workaround, begin all route and mount paths with a slash, or enforce authentication in a Fastify hook such as preHandler that runs after the router resolves the request.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-436",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://cna.openjsf.org/security-advisories.html",
+   "https://github.com/fastify/middie/security/advisories/GHSA-4c7f-6888-3vrh"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135230": {
+  "id": "CVE-2026-135230",
+  "published": "2026-11-26T17:17:06.117",
+  "modified": "2026-11-26T17:17:06.117",
+  "desc": "@fastify/express is the plugin that lets an application run Express middleware and Express applications inside the Fastify web framework. In versions from 4.0.3 before 4.0.14, the plugin decodes certain percent-encoded characters in the request path that Express would otherwise keep encoded, including the Unicode line separator and paragraph separator characters, and leaves them raw. A JavaScript regular expression treats those two characters as line terminators, so a regular-expression mount path that relies on the dot metacharacter fails to match a request containing them while Fastify's own router still routes the request to its handler, and the middleware mounted on that regular-expression path is therefore skipped. An attacker can use this to bypass authentication or other middleware-based access controls on routes guarded by a regular-expression mount; string mount paths are not affected. The issue is fixed in @fastify/express 4.0.14, and users should upgrade to 4.0.14 or later. As a workaround, use string mount paths, avoid the dot metacharacter in regular-expression mounts by using a character class or the dotAll flag, or enforce authentication in a Fastify hook such as preHandler that runs after the router resolves the request.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-185",
+   "CWE-436"
+  ],
+  "products": [],
+  "refs": [
+   "https://cna.openjsf.org/security-advisories.html",
+   "https://github.com/fastify/fastify-express/security/advisories/GHSA-x6w9-3qcm-vp2j"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135264": {
+  "id": "CVE-2026-135264",
+  "published": "2026-11-26T17:17:06.243",
+  "modified": "2026-11-26T17:17:06.243",
+  "desc": "@fastify/express is the plugin that lets an application run Express middleware and Express applications inside the Fastify web framework. In versions from 4.0.7 before 4.0.14, when middleware is mounted on a nested array of mount paths the plugin rewrites only the top level of the array, so paths inside a nested array are not adjusted for a plugin registered under a prefix and the middleware never runs for them, a nested regular-expression mount keeps its global or sticky flag and is matched statefully so it is skipped on alternating requests, a nested regular expression is not matched case-insensitively when case sensitivity is disabled, and nested dynamic paths are not covered by the earlier empty-segment check. An attacker can use any of these to bypass authentication or other middleware-based access controls on the affected routes. The issue is fixed in @fastify/express 4.0.14, and users should upgrade to 4.0.14 or later. As a workaround, flatten mount path arrays before passing them to the plugin, or enforce authentication in a Fastify hook such as preHandler that runs after the router resolves the request.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-436",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://cna.openjsf.org/security-advisories.html",
+   "https://github.com/fastify/fastify-express/security/advisories/GHSA-wjm9-696x-9549"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135270": {
+  "id": "CVE-2026-135270",
+  "published": "2026-11-26T17:17:06.370",
+  "modified": "2026-11-26T17:17:06.370",
+  "desc": "@fastify/express is the plugin that lets an application run Express middleware and Express applications inside the Fastify web framework. In versions from 4.0.5 before 4.0.14, a mount path that begins with an Express 5 optional leading segment written as a group is treated as relative and has a slash prepended when it is joined to the plugin prefix, which changes what the pattern matches so the middleware ends up mounted on a path that no longer corresponds to the real request paths. The middleware therefore never runs for requests that match the intended routes, while the Fastify routes still resolve to their handlers. An attacker can use this to bypass authentication or other middleware-based access controls on the affected routes. The issue is fixed in @fastify/express 4.0.14, and users should upgrade to 4.0.14 or later. As a workaround, mount the middleware on each path spelling explicitly, or enforce authentication in a Fastify hook such as preHandler that runs after the router resolves the request.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-436",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://cna.openjsf.org/security-advisories.html",
+   "https://github.com/fastify/fastify-express/security/advisories/GHSA-j373-fcw4-2ccv"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135279": {
+  "id": "CVE-2026-135279",
+  "published": "2026-11-26T17:17:06.490",
+  "modified": "2026-11-26T17:17:06.490",
+  "desc": "@fastify/express is the plugin that lets an application run Express middleware and Express applications inside the Fastify web framework. In versions before 4.0.14, a request with an empty dynamic route parameter reaches a Fastify route handler while middleware mounted for that path inside an Express Router or sub-application is skipped, because Fastify's router accepts an empty value where Express requires a non-empty one, and an unanchored regular-expression mount passed to the plugin is bypassed the same way. An earlier fix covered only the mount paths passed to the plugin directly, not middleware mounted inside a routed Express application. An attacker can use this to bypass authentication or other middleware-based access controls on the affected routes, with the practical impact depending on what the empty value selects in the application. The issue is fixed in @fastify/express 4.0.14, and users should upgrade to 4.0.14 or later. As a workaround, enforce authentication in a Fastify hook such as preHandler that runs after routing, mount the middleware on a static parent path, or require non-empty values in the route params schema.",
+  "cvss": 9.1,
+  "sev": "CRITICAL",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-287",
+   "CWE-436"
+  ],
+  "products": [],
+  "refs": [
+   "https://cna.openjsf.org/security-advisories.html",
+   "https://github.com/fastify/fastify-express/security/advisories/GHSA-f9qf-hfc5-7xpj"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135280": {
+  "id": "CVE-2026-135280",
+  "published": "2026-11-26T17:17:06.613",
+  "modified": "2026-11-26T17:17:06.613",
+  "desc": "@fastify/express is the plugin that lets an application run Express middleware and Express applications inside the Fastify web framework. In versions before 4.0.14, when an application enables case-insensitive routing, middleware mounted on a path can still be skipped in two cases: a string mount path or plugin prefix containing a Unicode character whose case folding differs from a plain lowercase conversion fails to match the lowercased request path, and a matcher that stays case-sensitive inside an Express Router or application, such as a regular expression without the ignore-case flag or an explicitly case-sensitive router, only matches its own casing. In both cases a request reaches the Fastify route handler while the path-scoped middleware does not run. An attacker can use this to bypass authentication or other middleware-based access controls on the affected routes, and only applications that enable case-insensitive routing are affected. The issue is fixed in @fastify/express 4.0.14, and users should upgrade to 4.0.14 or later. As a workaround, enforce authentication in a Fastify hook such as preHandler that runs after routing, avoid such Unicode characters in mount paths, and match case-insensitively inside Express routers and applications.",
+  "cvss": 7.4,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "cwe": [
+   "CWE-178",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://cna.openjsf.org/security-advisories.html",
+   "https://github.com/fastify/fastify-express/security/advisories/GHSA-f446-h93m-fvr5"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137407": {
+  "id": "CVE-2026-137407",
+  "published": "2026-11-26T17:17:06.750",
+  "modified": "2026-11-26T17:17:06.893",
+  "desc": "A security vulnerability has been detected in Max Foundry Media Library Folders Plugin up to 8.4.3 on WordPress. Affected by this issue is the function mlfp_toggle_file_access of the file media-library-plus.php of the component Block Direct Access. Such manipulation of the argument file_id leads to missing authorization. The attack can be executed remotely. Upgrading to version 8.4.4 can resolve this issue. You should upgrade the affected component.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-862",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.svn.wordpress.org/media-library-plus/tags/8.4.4/",
+   "https://vuldb.com/cve/CVE-2026-137407",
+   "https://vuldb.com/submit/1062951"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137409": {
+  "id": "CVE-2026-137409",
+  "published": "2026-11-26T17:17:06.940",
+  "modified": "2026-11-26T17:17:07.087",
+  "desc": "A flaw has been found in chuckfairy node-webcam up to 0.8.2. This vulnerability affects the function generateSh of the file src/webcams/FSWebcam.js of the component FSWebcam. Executing a manipulation can lead to os command injection. The attack may be performed from remote. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-77",
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/chuckfairy/node-webcam/",
+   "https://github.com/chuckfairy/node-webcam/issues/74",
+   "https://vuldb.com/cve/CVE-2026-137409"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137410": {
+  "id": "CVE-2026-137410",
+  "published": "2026-11-26T17:17:07.133",
+  "modified": "2026-11-26T17:17:07.280",
+  "desc": "A vulnerability has been found in liuwy-project zhglxt up to 3fd4ad44458f87bdad0afa997ba29706488fa1ff. This issue affects the function markdownUploadFile of the file zhglxt-web/src/main/java/com/zhglxt/web/controller/common/CommonController.java. The manipulation of the argument editormd-image-file leads to unrestricted upload. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-284",
+   "CWE-434"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/bkglfpp/CVE-md/blob/main/zhglxt/zhglxt-Stored-XSS.md",
+   "https://vuldb.com/cve/CVE-2026-137410",
+   "https://vuldb.com/submit/1063692"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137411": {
+  "id": "CVE-2026-137411",
+  "published": "2026-11-26T17:17:07.320",
+  "modified": "2026-11-26T17:17:07.467",
+  "desc": "A vulnerability was found in projectworlds Online Jewellery Shopping System 1.0. Impacted is the function searchItem of the file application/models/dashbord_model.php of the component Dashbord Search. The manipulation of the argument q results in sql injection. It is possible to launch the attack remotely. The exploit has been made public and could be used.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ubfbuz3/cve/issues/62",
+   "https://vuldb.com/cve/CVE-2026-137411",
+   "https://vuldb.com/submit/1063701"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137412": {
+  "id": "CVE-2026-137412",
+  "published": "2026-11-26T18:17:17.497",
+  "modified": "2026-11-26T18:17:17.640",
+  "desc": "A vulnerability was determined in projectworlds Online Jewellery Shopping System 1.0. The affected element is the function Dashbord_model.searchAdvance of the file /jewllary-shop/application/models/dashbord_model.php of the component Advanced Search. This manipulation of the argument from/to causes sql injection. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/ubfbuz3/cve/issues/63",
+   "https://vuldb.com/cve/CVE-2026-137412",
+   "https://vuldb.com/submit/1063702"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137414": {
+  "id": "CVE-2026-137414",
+  "published": "2026-11-26T18:17:17.687",
+  "modified": "2026-11-26T18:17:17.830",
+  "desc": "A vulnerability was identified in itsourcecode Event Management System 1.0. The impacted element is an unknown function of the file view_event.php. Such manipulation of the argument ID leads to sql injection. The attack can be launched remotely. The exploit is publicly available and might be used.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Tintin027/submit/issues/1",
+   "https://itsourcecode.com/",
+   "https://vuldb.com/cve/CVE-2026-137414"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137415": {
+  "id": "CVE-2026-137415",
+  "published": "2026-11-26T18:17:17.873",
+  "modified": "2026-11-26T18:17:18.017",
+  "desc": "A security flaw has been discovered in Tencent RapidJSON up to 1.1.0. This affects the function Writer::WriteString in the library include/rapidjson/writer.h. Performing a manipulation of the argument length results in integer overflow. The attack may be initiated remotely. The patch is named 297637bc0a0f00dc504dbc1a47ebdaa577f8ae19. To fix this issue, it is recommended to deploy a patch.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-189",
+   "CWE-190"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Tencent/rapidjson/",
+   "https://github.com/Tencent/rapidjson/commit/297637bc0a0f00dc504dbc1a47ebdaa577f8ae19",
+   "https://github.com/Tencent/rapidjson/issues/2336"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137416": {
+  "id": "CVE-2026-137416",
+  "published": "2026-11-26T18:17:18.070",
+  "modified": "2026-11-26T18:17:18.220",
+  "desc": "A weakness has been identified in sgl-project SpecForge 0.2.0. This impacts the function Eagle3DraftModel.load_embedding of the file specforge/modeling/draft/base.py of the component Draft Embedding Loader. Executing a manipulation can lead to path traversal. The attack can only be executed locally. The exploit has been made available to the public and could be used for attacks. This patch is called d8a0d78e071199563ef19d9171052096dec89f71. It is advisable to implement a patch to correct this issue.",
+  "cvss": 0.9,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/sgl-project/SpecForge/",
+   "https://github.com/sgl-project/SpecForge/commit/d8a0d78e071199563ef19d9171052096dec89f71",
+   "https://github.com/sgl-project/SpecForge/issues/1041"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-120353": {
+  "id": "CVE-2026-120353",
+  "published": "2026-11-26T19:17:09.037",
+  "modified": "2026-11-26T19:17:09.037",
+  "desc": "The Apache Airflow TaskFlow decorators @task.bash, @task.sql, @task.analytics, @task.kubernetes_cmd and the common.ai decorators (@task.llm, @task.agent, @task.llm_sql, @task.llm_branch, @task.llm_file_analysis, @task.llm_schema_compare) rendered Jinja templates a second time after the task runner had already rendered them, so any value copied into env, op_args, op_kwargs or the returned prompt, command or SQL was evaluated as a template on the worker. An attacker who can only trigger a Dag run (for example a user with trigger permission supplying run conf), or who controls text that a Dag passes into one of these decorators as an argument or prompt (for example a ticket or a downloaded document), could run arbitrary commands on the worker and read connection passwords and Variables, in any deployment that uses an affected decorator in a Dag that passes such input through env, parameters or prompt. Users are recommended to upgrade apache-airflow-providers-standard to 1.22.0, apache-airflow-providers-cncf-kubernetes to 11.0.0, apache-airflow-providers-common-sql to 3.0.0 and apache-airflow-providers-common-ai to 1.2.0 or later.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [
+   "CWE-1336"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/apache/airflow/pull/76244",
+   "https://lists.apache.org/thread/6szpozm1htzv0cyn11vc6m3pj8xz97nj"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134470": {
+  "id": "CVE-2026-134470",
+  "published": "2026-11-26T19:17:09.163",
+  "modified": "2026-11-26T19:17:09.277",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Host.it Fastcache by Host.it fastcache-by-host-it allows Stored XSS.This issue affects Fastcache by Host.it: from n/a through 1.7.14.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/fastcache-by-host-it/vulnerability/wordpress-fastcache-by-host-it-plugin-1-7-14-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134488": {
+  "id": "CVE-2026-134488",
+  "published": "2026-11-26T19:17:09.310",
+  "modified": "2026-11-26T19:17:09.430",
+  "desc": "Missing Authorization vulnerability in Mamunur Rashid Radius Booking — Booking Calendar for Appointments &amp; Services radius-booking allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Radius Booking — Booking Calendar for Appointments &amp; Services: from n/a through 1.0.22.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/radius-booking/vulnerability/wordpress-radius-booking-booking-calendar-for-appointments-services-plugin-1-0-22-broken-access-control-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134712": {
+  "id": "CVE-2026-134712",
+  "published": "2026-11-26T19:17:09.460",
+  "modified": "2026-11-26T19:17:09.570",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in DevItems ShopLentor woolentor-addons allows Stored XSS.This issue affects ShopLentor: from n/a through 3.5.9.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/woolentor-addons/vulnerability/wordpress-shoplentor-plugin-3-5-9-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134713": {
+  "id": "CVE-2026-134713",
+  "published": "2026-11-26T19:17:09.603",
+  "modified": "2026-11-26T19:17:09.713",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in INTINITUM FORM Transliterator serbian-transliteration allows Stored XSS.This issue affects Transliterator: from n/a through 2.5.15.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/serbian-transliteration/vulnerability/wordpress-transliterator-plugin-2-5-15-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134714": {
+  "id": "CVE-2026-134714",
+  "published": "2026-11-26T19:17:09.740",
+  "modified": "2026-11-26T19:17:09.850",
+  "desc": "Missing Authorization vulnerability in Webful Creations RepairBuddy computer-repair-shop allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects RepairBuddy: from n/a through 4.1237.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/computer-repair-shop/vulnerability/wordpress-repairbuddy-plugin-4-1237-broken-access-control-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134955": {
+  "id": "CVE-2026-134955",
+  "published": "2026-11-26T19:17:09.880",
+  "modified": "2026-11-26T19:17:09.993",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in tychesoftwares Product Input Fields for WooCommerce product-input-fields-for-woocommerce allows Reflected XSS.This issue affects Product Input Fields for WooCommerce: from n/a through 2.0.3.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/product-input-fields-for-woocommerce/vulnerability/wordpress-product-input-fields-for-woocommerce-plugin-2-0-3-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135037": {
+  "id": "CVE-2026-135037",
+  "published": "2026-11-26T19:17:10.030",
+  "modified": "2026-11-26T19:17:10.143",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Mohammed Kaludi AMP for WP accelerated-mobile-pages allows Stored XSS.This issue affects AMP for WP: from n/a through 1.1.21.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/accelerated-mobile-pages/vulnerability/wordpress-amp-for-wp-plugin-1-1-21-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135038": {
+  "id": "CVE-2026-135038",
+  "published": "2026-11-26T19:17:10.173",
+  "modified": "2026-11-26T19:17:10.283",
+  "desc": "Missing Authorization vulnerability in weDevs WP ERP erp allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP ERP: from n/a through 2.0.0.",
+  "cvss": 7.5,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-862"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/erp/vulnerability/wordpress-wp-erp-plugin-2-0-0-broken-access-control-vulnerability-2?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135039": {
+  "id": "CVE-2026-135039",
+  "published": "2026-11-26T19:17:10.313",
+  "modified": "2026-11-26T19:17:10.423",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP GiveWP give allows Reflected XSS.This issue affects GiveWP: from n/a through 4.19.2.1.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/give/vulnerability/wordpress-givewp-plugin-4-19-2-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137418": {
+  "id": "CVE-2026-137418",
+  "published": "2026-11-26T19:17:10.460",
+  "modified": "2026-11-26T19:17:10.610",
+  "desc": "A security vulnerability has been detected in Cerebras ModelZoo up to d76e028d6a5f784954b1329b3ae44721ca8da36a. Affected is the function StreamingShardedHFReader of the file src/cerebras/modelzoo/tools/checkpoint_converters/streaming_checkpoints.py of the component Checkpoint Converter. The manipulation of the argument weight_map leads to path traversal. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/Cerebras/modelzoo/",
+   "https://github.com/Cerebras/modelzoo/issues/99",
+   "https://github.com/user-attachments/files/34119096/poc.zip"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137436": {
+  "id": "CVE-2026-137436",
+  "published": "2026-11-26T19:17:10.653",
+  "modified": "2026-11-26T19:17:10.793",
+  "desc": "A vulnerability was found in SourceCodester Basic Hotel Online Reservation System 1.0. The affected element is an unknown function of the file add_reserve.php. Performing a manipulation of the argument room_id results in sql injection. Remote exploitation of the attack is possible. The exploit has been made public and could be used.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/OnlyCMJB/cve/issues/5",
+   "https://vuldb.com/cve/CVE-2026-137436",
+   "https://vuldb.com/submit/1064089"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137437": {
+  "id": "CVE-2026-137437",
+  "published": "2026-11-26T19:17:10.843",
+  "modified": "2026-11-26T19:17:10.983",
+  "desc": "A vulnerability was determined in SourceCodester Basic Hotel Online Reservation System 1.0. The impacted element is an unknown function of the file add_reserve.php. Executing a manipulation of the argument Date can lead to sql injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hubdk01/cve/issues/14",
+   "https://vuldb.com/cve/CVE-2026-137437",
+   "https://vuldb.com/submit/1064093"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137440": {
+  "id": "CVE-2026-137440",
+  "published": "2026-11-26T19:17:11.023",
+  "modified": "2026-11-26T19:17:11.167",
+  "desc": "A vulnerability was identified in SourceCodester Basic Hotel Online Reservation System 1.0. This affects an unknown function of the file /HOR/admin/add_room.php. The manipulation of the argument photo leads to unrestricted upload. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-284",
+   "CWE-434"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/hubdk01/cve/issues/15",
+   "https://vuldb.com/cve/CVE-2026-137440",
+   "https://vuldb.com/submit/1064101"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134489": {
+  "id": "CVE-2026-134489",
+  "published": "2026-11-26T20:17:22.527",
+  "modified": "2026-11-26T20:17:22.640",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Themeum Kirki kirki allows Stored XSS.This issue affects Kirki: from n/a through 6.4.2.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/kirki/vulnerability/wordpress-kirki-plugin-6-4-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134705": {
+  "id": "CVE-2026-134705",
+  "published": "2026-11-26T20:17:22.670",
+  "modified": "2026-11-26T20:17:22.783",
+  "desc": "Incorrect Privilege Assignment vulnerability in miniOrange miniorange otp verification miniorange-otp-verification allows Privilege Escalation.This issue affects miniorange otp verification: from n/a through 5.6.2.",
+  "cvss": 8.8,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "cwe": [
+   "CWE-266"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/miniorange-otp-verification/vulnerability/wordpress-miniorange-otp-verification-plugin-5-6-2-privilege-escalation-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134720": {
+  "id": "CVE-2026-134720",
+  "published": "2026-11-26T20:17:22.810",
+  "modified": "2026-11-26T20:17:22.923",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Webful Creations RepairBuddy computer-repair-shop allows Stored XSS.This issue affects RepairBuddy: from n/a through 4.1237.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/computer-repair-shop/vulnerability/wordpress-repairbuddy-plugin-4-1237-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134991": {
+  "id": "CVE-2026-134991",
+  "published": "2026-11-26T20:17:22.953",
+  "modified": "2026-11-26T20:17:23.060",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in IdeaBox Creations PowerPack Addons for Elementor powerpack-lite-for-elementor allows Stored XSS.This issue affects PowerPack Addons for Elementor: from n/a through 3.2.0.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/powerpack-lite-for-elementor/vulnerability/wordpress-powerpack-addons-for-elementor-plugin-3-2-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-134997": {
+  "id": "CVE-2026-134997",
+  "published": "2026-11-26T20:17:23.097",
+  "modified": "2026-11-26T20:17:23.213",
+  "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in KAP ASIAs LottieFiles – JSON Based Animation Lottie & Bodymovin for Elementor <= 1.10.9 - Authenticated (Contributor+) Stored Cross-Site Scripting include-lottie-animation-for-elementor allows Stored XSS.This issue affects LottieFiles – JSON Based Animation Lottie & Bodymovin for Elementor <= 1.10.9 - Authenticated (Contributor+) Stored Cross-Site Scripting: from n/a through 2.0.3.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://patchstack.com/database/wordpress/plugin/include-lottie-animation-for-elementor/vulnerability/wordpress-lottiefiles-json-based-animation-lottie-bodymovin-for-elementor-1-10-9-authenticated-contributor-stored-cross-site-scripting-plugin-2-0-3-cross-site-scripting-xss-vulnerability?_s_id=cve"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137441": {
+  "id": "CVE-2026-137441",
+  "published": "2026-11-26T20:17:23.250",
+  "modified": "2026-11-26T20:17:23.397",
+  "desc": "A security flaw has been discovered in itsourcecode Event Management System 1.0. This impacts an unknown function of the file /admin/manage_event.php. The manipulation of the argument ID results in sql injection. The attack may be performed from remote. The exploit has been released to the public and may be used for attacks.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/wangpenglei11/Submit/issues/3",
+   "https://itsourcecode.com/",
+   "https://vuldb.com/cve/CVE-2026-137441"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137450": {
+  "id": "CVE-2026-137450",
+  "published": "2026-11-26T20:17:23.443",
+  "modified": "2026-11-26T20:17:23.590",
+  "desc": "A security vulnerability has been detected in GH05TCREW PentestAgent 0.2.0. This vulnerability affects the function _execute_single of the file pentestagent/agents/base_agent.py of the component Workspace Scope Gate. Such manipulation leads to missing authorization. The attack needs to be performed locally. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+  "cvss": 1.9,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-862",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/GH05TCREW/pentestagent/",
+   "https://github.com/GH05TCREW/pentestagent/issues/110",
+   "https://vuldb.com/cve/CVE-2026-137450"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137506": {
+  "id": "CVE-2026-137506",
+  "published": "2026-11-26T20:17:23.643",
+  "modified": "2026-11-26T20:17:23.643",
+  "desc": "ezdxf through 1.4.5 contains a code injection vulnerability in the dxf2code add-on that allows attackers to inject Python code via unescaped single quotes in DXF table entry names. Attackers can craft a DXF file whose layer, linetype, style, or appid names break out of quoted strings in generated scripts, executing code with the privileges of the user running them.",
+  "cvss": 8.5,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/mozman/ezdxf/blob/84ae31976940f99e6d5f4d3b2e9131da02b574fe/src/ezdxf/addons/dxf2code.py#L477-L481",
+   "https://github.com/mozman/ezdxf/commit/8cde125a7370afb5988f73b978599172c05f53fd",
+   "https://github.com/mozman/ezdxf/issues/1489"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137507": {
+  "id": "CVE-2026-137507",
+  "published": "2026-11-26T20:17:23.800",
+  "modified": "2026-11-26T20:17:23.800",
+  "desc": "torchvision before 0.29.2 contains a path traversal vulnerability in _extract_tar() that allows attackers to write files outside the extraction directory by supplying crafted tar archives. Attackers controlling archives passed to extract_archive() or download_and_extract_archive() can use .. paths, absolute paths, or symlinks to overwrite Python modules and achieve code execution.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/pytorch/vision/blob/v0.29.1/torchvision/datasets/utils.py#L209-L213",
+   "https://github.com/pytorch/vision/commit/7a7520f83957fe6a0f934fe7035f07b5ef32e8f9",
+   "https://github.com/pytorch/vision/commit/b22811118b30f18ef02006fc6215a52140fd689f"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137518": {
+  "id": "CVE-2026-137518",
+  "published": "2026-11-26T20:17:23.957",
+  "modified": "2026-11-26T20:17:23.957",
+  "desc": "pyfda through 0.9.5 contains an insecure deserialization vulnerability in load_filter() that allows attackers to execute code by supplying crafted .npz or .pkl filter files. Attackers can embed a __reduce__ gadget that runs via np.load with allow_pickle=True or pickle.load before validation, executing code with the user's privileges.",
+  "cvss": 8.5,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-502"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/chipmuenk/pyfda/blob/24104d691dc8116c3f39f0b3da40bff230af4114/pyfda/libs/pyfda_io_lib.py#L1636-L1652",
+   "https://github.com/chipmuenk/pyfda/commit/621abcbe41f7e5391b1a93fa945eed7c4aec4169",
+   "https://github.com/chipmuenk/pyfda/commit/cd498b48cb85b6696dd35af6f3a94538d5dd783c"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137529": {
+  "id": "CVE-2026-137529",
+  "published": "2026-11-26T20:17:24.130",
+  "modified": "2026-11-26T20:17:24.130",
+  "desc": "JAL (Just Another Ledger) through 2026.11.3 contains an arbitrary file overwrite vulnerability in backup restore that allows attackers to write files by supplying a crafted .tgz backup with a symlink member. Attackers can include a jal.sqlite symlink to an absolute path followed by a regular jal.sqlite member, overwriting files such as shell startup scripts for code execution.",
+  "cvss": 8.5,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-59"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/titov-vv/jal/blob/a27d31743f9e3cc894265085b2cd3938a0cb7046/jal/db/backup_restore.py#L72-L88",
+   "https://github.com/titov-vv/jal/commit/0353001ca085e3a1ce15c8a6fc216ddf5fd2daae",
+   "https://github.com/titov-vv/jal/issues/104"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137539": {
+  "id": "CVE-2026-137539",
+  "published": "2026-11-26T20:17:24.283",
+  "modified": "2026-11-26T20:17:24.283",
+  "desc": "lastversion before 3.6.20 contains a path traversal vulnerability in extract_tar() that allows attackers to write files outside the extraction directory via tar symlink members. Attackers controlling a project's release assets can craft a tarball with a symlink followed by a file beneath it, writing files like usercustomize.py to achieve code execution.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-59"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/dvershinin/lastversion/blob/17e18ae09ad3038bc4a09e5026405d614eacd7b7/src/lastversion/utils.py#L348-L391",
+   "https://github.com/dvershinin/lastversion/commit/feb362e7af52c03063755dbbce82ff53ff4bafbf",
+   "https://github.com/dvershinin/lastversion/issues/246"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137588": {
+  "id": "CVE-2026-137588",
+  "published": "2026-11-26T20:17:24.443",
+  "modified": "2026-11-26T20:17:24.443",
+  "desc": "LibreChat 0.7.6 before 0.8.8 contains a denial of service vulnerability that allows authenticated users to block the server event loop by uploading a crafted conversation import file to POST /api/convos/import. Attackers can submit many messages with unresolvable parentMessageId values, triggering quadratic processing in cloneMessagesWithTimestamps or adjustTimestampsForOrdering and stalling the Node.js event loop for minutes for all users.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-407"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/LibreChat-AI/LibreChat/blob/v0.8.8-rc2/api/server/utils/import/fork.js#L57",
+   "https://github.com/LibreChat-AI/LibreChat/commit/e43fed2ed400305333e8c6aec4c2c25c5ef10054",
+   "https://github.com/LibreChat-AI/LibreChat/releases/tag/v0.8.8"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137655": {
+  "id": "CVE-2026-137655",
+  "published": "2026-11-26T20:17:24.593",
+  "modified": "2026-11-26T20:17:24.593",
+  "desc": "Video Popup Block by WPZOOM 1.1.2 before 1.1.9 contains a stored cross-site scripting vulnerability that allows Contributor-level users to inject markup via unescaped video URL and popup width values. Attackers can store a block whose .mp4 URL or width breaks out of attributes in frontend.js, executing script in the site's origin when users open the popup.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79"
+  ],
+  "products": [],
+  "refs": [
+   "https://plugins.svn.wordpress.org/wpzoom-video-popup-block/tags/1.1.8/src/scripts/frontend.js",
+   "https://plugins.svn.wordpress.org/wpzoom-video-popup-block/tags/1.1.9/readme.txt",
+   "https://plugins.trac.wordpress.org/changeset/3826345/wpzoom-video-popup-block"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137656": {
+  "id": "CVE-2026-137656",
+  "published": "2026-11-26T20:17:24.743",
+  "modified": "2026-11-26T20:17:24.743",
+  "desc": "LibreChat 0.7.8 before 0.8.9 contains a race condition vulnerability in checkBalance that allows authenticated users to obtain multiple auto-refill credits by sending concurrent requests. Attackers can send simultaneous chat requests that each pass the unlocked lastRefill check, receiving repeated refillAmount credits and bypassing configured token credit limits.",
+  "cvss": 2.3,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-362"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/LibreChat-AI/LibreChat/blob/v0.8.8-rc2/packages/api/src/middleware/checkBalance.ts#L113-L140",
+   "https://github.com/LibreChat-AI/LibreChat/blob/v0.8.8-rc2/packages/data-schemas/src/methods/transaction.ts#L242-L246",
+   "https://github.com/LibreChat-AI/LibreChat/commit/0fea0240d65225f4837122d12f6d364d6964b10f"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137657": {
+  "id": "CVE-2026-137657",
+  "published": "2026-11-26T20:17:24.893",
+  "modified": "2026-11-26T20:17:25.033",
+  "desc": "InternLM LMDeploy 0.9.0 through 0.18.0 contains an unbounded resource allocation vulnerability in the DistServe proxy /distserve/connection_warmup endpoint that allows unauthenticated attackers to exhaust memory. While a prefill/decode connection is pending, for example after registering a slow node via /nodes/add, repeated warmup requests spawn unbounded wait_for_conn() tasks and sockets until the proxy process is killed.",
+  "cvss": 8.7,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/InternLM/lmdeploy/blob/v0.18.0/lmdeploy/pytorch/disagg/conn/proxy_conn.py#L210-L259",
+   "https://github.com/InternLM/lmdeploy/blob/v0.18.0/lmdeploy/serve/proxy/proxy.py#L553-L564",
+   "https://github.com/InternLM/lmdeploy/issues/4972"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-126139": {
+  "id": "CVE-2026-126139",
+  "published": "2026-11-26T21:17:15.733",
+  "modified": "2026-11-26T21:17:15.733",
+  "desc": "Docker Sandboxes re-resolves saved mount paths when replacing a sandbox container during kit changes or restarting a sandbox. An attacker able to replace a source ancestor in a shared writable workspace with a symlink can redirect another sandbox's mount to a different host directory, exposing its contents and permitting modification through read-write mounts. The destination must remain accessible to the daemon and allowed by policy where enforced. Saved-mount replay during kit replacement was introduced in version 0.35.0; ordinary restart replay was added in version 0.45.0. This saved-mount replay issue is fixed in version 0.54.0.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-61"
+  ],
+  "products": [],
+  "refs": [
+   "https://docs.docker.com/ai/sandboxes/",
+   "https://docs.docker.com/ai/sandboxes/security/isolation/#hypervisor-isolation"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137618": {
+  "id": "CVE-2026-137618",
+  "published": "2026-11-26T21:17:15.873",
+  "modified": "2026-11-26T21:17:16.017",
+  "desc": "A vulnerability was identified in RT-Thread up to 5.3.0. This impacts the function hpm_adc_enabled of the file bsp/hpmicro/libraries/drivers/drv_adc.c of the component HPM ADC Driver. The manipulation of the argument channel leads to improper validation of array index. The attack needs to be performed locally. The exploit is publicly available and might be used. The identifier of the patch is fc64f78669b42b35981f97c23c7e952832f3b48b. It is recommended to apply a patch to fix this issue.",
+  "cvss": 1.9,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:L/SI:L/SA:L/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-129"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/RT-Thread/rt-thread/",
+   "https://github.com/RT-Thread/rt-thread/commit/fc64f78669b42b35981f97c23c7e952832f3b48b",
+   "https://github.com/RT-Thread/rt-thread/issues/11951"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137620": {
+  "id": "CVE-2026-137620",
+  "published": "2026-11-26T21:17:16.077",
+  "modified": "2026-11-26T21:17:16.237",
+  "desc": "A security flaw has been discovered in RT-Thread up to 5.3.0. Affected is the function davinci_spi_get_prescale of the file bsp/dm365/drivers/spi-davinci.c of the component DM365 SPI Driver. The manipulation of the argument max_hz results in divide by zero. The attack requires a local approach. The exploit has been released to the public and may be used for attacks. The patch is identified as e12183f7b87eddf182b95bf8b400acd626880306. Applying a patch is advised to resolve this issue.",
+  "cvss": 5.2,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-369",
+   "CWE-404"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/RT-Thread/rt-thread/",
+   "https://github.com/RT-Thread/rt-thread/commit/e12183f7b87eddf182b95bf8b400acd626880306",
+   "https://github.com/RT-Thread/rt-thread/issues/11950"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137621": {
+  "id": "CVE-2026-137621",
+  "published": "2026-11-26T22:17:55.373",
+  "modified": "2026-11-26T22:17:55.517",
+  "desc": "A weakness has been identified in RT-Thread up to 5.3.0. Affected by this vulnerability is the function bl_adc_get_value of the file bsp/bouffalo_lab/libraries/rt_drivers/drv_adc.c of the component Bouffalo ADC Driver. This manipulation of the argument channel causes improper validation of array index. The attack requires local access. Patch name: b3a0eb5e12c6dca8145fc49d76c4785478c9e55b. It is suggested to install a patch to address this issue.",
+  "cvss": 4.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-119",
+   "CWE-129"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/RT-Thread/rt-thread/",
+   "https://github.com/RT-Thread/rt-thread/commit/b3a0eb5e12c6dca8145fc49d76c4785478c9e55b",
+   "https://github.com/RT-Thread/rt-thread/issues/11949"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-4981": {
+  "id": "CVE-2026-4981",
+  "published": "2026-11-26T22:17:58.977",
+  "modified": "2026-11-26T22:17:59.110",
+  "desc": "A flaw was found in Red Hat Advanced Cluster Security (ACS). An unauthenticated remote attacker can exploit a vulnerability in the login interface's OAuth callback endpoint by crafting a malicious URL. This URL, containing unvalidated `error` and `error_uri` parameters, allows the attacker to display arbitrary error messages, leading to content spoofing. Furthermore, the attacker can redirect victims to malicious domains, effectively performing an open redirect under the guise of the trusted application's user interface.",
+  "cvss": 5.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+  "cwe": [
+   "CWE-601"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-4981",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2452218"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135107": {
+  "id": "CVE-2026-135107",
+  "published": "2026-11-26T23:17:01.237",
+  "modified": "2026-11-26T23:17:01.363",
+  "desc": "An **uncontrolled memory allocation** flaw has been found in the smbd_smb2_ioctl_pipe_write_done() function in source3/smbd/smb2_ioctl_named_pipe.c of the SMB2 named-pipe ioctl handling in the samba package. The file server reserves memory for a named-pipe response using a size chosen by the client. It does not keep that size within the maximum the client and the server have already agreed. A low-privileged network attacker or user who can open a named pipe can request a very large response. The file server reserves that memory before it reads the pipe and holds it until the request ends. Repeating this on more connections can exhaust memory and keep the file service unavailable while those requests continue.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-789"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-135107",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2472623",
+   "https://bugzilla.samba.org/show_bug.cgi?id=16156"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137596": {
+  "id": "CVE-2026-137596",
+  "published": "2026-11-26T23:17:01.490",
+  "modified": "2026-11-26T23:17:01.607",
+  "desc": "A server-side request forgery (SSRF) flaw was found in KubeVirt's decentralized live migration. The connectURL field of a VirtualMachineInstanceMigration object is not validated at admission, and the privileged synchronization-controller dials the attacker-specified URL. Connection and DNS errors from the dial are exposed in a condition readable in the tenant's namespace. A user with the kubevirt.io:migrate role (a role designed for tenant delegation) can use this behavior as a blind network-reconnaissance oracle to determine the existence and connectivity of internal hosts and ports from the controller's network vantage, including services isolated from the tenant by network policy. TLS certificate pinning prevents session completion with non-KubeVirt hosts, limiting the impact to information disclosure of internal network topology; no data content, integrity, or availability impact is possible.",
+  "cvss": 5.0,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N",
+  "cwe": [
+   "CWE-918"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-137596",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2584985"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137602": {
+  "id": "CVE-2026-137602",
+  "published": "2026-11-26T23:17:01.640",
+  "modified": "2026-11-26T23:17:01.757",
+  "desc": "A flaw was found in Keycloak. This vulnerability enables information disclosure when the parameterized-scopes feature is enabled. The protocol mapper fails to enforce authorization checks for certain scope parameter types during token and authorization requests. An authenticated remote attacker can exploit this flaw by supplying a crafted scope parameter to retrieve sensitive profile attributes of other users without authorization.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "cwe": [
+   "CWE-639"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-137602",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2585023"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137653": {
+  "id": "CVE-2026-137653",
+  "published": "2026-11-26T23:17:01.793",
+  "modified": "2026-11-26T23:17:01.910",
+  "desc": "A flaw was found in spice-server. A malicious SPICE client can send a message header declaring an arbitrarily large message body. The server sizes the receive-buffer allocation from this declared size before any message content is received; when the allocation fails, the process hosting the SPICE server terminates abruptly, causing a denial of service for the virtual machine it serves. On hosts with sufficient free memory, the same technique can instead hold large amounts of memory per connection. Exploitation requires network access to the SPICE port; credential requirements depend on the server's authentication configuration.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+  "cwe": [
+   "CWE-770"
+  ],
+  "products": [],
+  "refs": [
+   "https://access.redhat.com/security/cve/CVE-2026-137653",
+   "https://bugzilla.redhat.com/show_bug.cgi?id=2584941"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137660": {
+  "id": "CVE-2026-137660",
+  "published": "2026-11-26T23:17:01.960",
+  "modified": "2026-11-26T23:17:02.127",
+  "desc": "A vulnerability has been found in stylefeng Guns up to 2.2. Affected by this issue is the function TokenAndPermissionInterceptor.preHandle of the file TokenAndPermissionInterceptor.java of the component JWT Signing. Such manipulation leads to use of hard-coded cryptographic key\r . It is possible to launch the attack remotely. The project was informed of the problem early through an issue report but has not responded yet.",
+  "cvss": 6.9,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-320",
+   "CWE-321"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/stylefeng/Guns/",
+   "https://github.com/stylefeng/Guns/issues/117",
+   "https://vuldb.com/cve/CVE-2026-137660"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-7181": {
+  "id": "CVE-2026-7181",
+  "published": "2026-11-26T23:17:03.440",
+  "modified": "2026-11-26T23:17:03.440",
+  "desc": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+  "cvss": null,
+  "sev": null,
+  "vector": null,
+  "cwe": [],
+  "products": [],
+  "refs": [],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-114454": {
+  "id": "CVE-2026-114454",
+  "published": "2026-11-27T00:16:39.503",
+  "modified": "2026-11-27T00:16:39.610",
+  "desc": "Path traversal in TPM device management in Canonical LXD from 4.8 before 5.0.12, 5.21.10, 6.10.2 allows a remote authenticated user with project access to recursively delete arbitrary files and directories on the host as root via a crafted device name during instance or device removal.",
+  "cvss": 7.2,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-39g7-pjhx-p454"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-115843": {
+  "id": "CVE-2026-115843",
+  "published": "2026-11-27T00:16:39.650",
+  "modified": "2026-11-27T00:16:39.760",
+  "desc": "In LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2, an improper limitation of a pathname to a restricted directory vulnerability allows an authenticated client restricted to a single project to write and delete files at arbitrary host filesystem paths as root.\n\n When a custom storage volume is pushed to a LXD daemon, the snapshot names supplied by the migration peer are never validated and are used to build the filesystem path of each received snapshot. This allows an attacker to place attacker-controlled files into any host directory as root, gaining root-level code execution on the host, and to recursively delete an attacker-chosen path.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-20",
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-hfwr-h8hx-pw2g"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-115844": {
+  "id": "CVE-2026-115844",
+  "published": "2026-11-27T00:16:39.810",
+  "modified": "2026-11-27T00:16:39.917",
+  "desc": "In LXD before 5.21.0 and 6.10.0, an OS command injection vulnerability allows an authenticated client restricted to a single project to execute arbitrary code as root on the host.\n\n The raw.dnsmasq bridge network configuration key is not restricted to server administrators and is copied verbatim into the dnsmasq configuration file, so a user whose project keeps the default features.networks=false can have a bridge network created in the default project with an injected dhcp-script directive. This allows an attacker to make the host dnsmasq execute attacker-chosen code as root on a DHCP lease event and fully compromise the host.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-78"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-4x5q-58w4-gjxq"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-122225": {
+  "id": "CVE-2026-122225",
+  "published": "2026-11-27T00:16:39.967",
+  "modified": "2026-11-27T00:16:40.070",
+  "desc": "Symbolic link following in imported VM backup config drive preparation in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with project-scoped permissions to disclose sensitive host files, including LXD server and cluster keys, and overwrite host files as root via importing and starting a VM backup with a symlinked config directory.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-61"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-33c5-5rqh-hpmf"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127151": {
+  "id": "CVE-2026-127151",
+  "published": "2026-11-27T00:16:40.113",
+  "modified": "2026-11-27T00:16:40.223",
+  "desc": "Exposure of resource to wrong sphere in VM disk migration, export, and attach NBD servers in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows an unprivileged local user in the host network namespace to read and modify a guest VM's disk and execute code inside the guest via connecting to abstract Unix sockets while an operation is active.",
+  "cvss": 6.2,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-668"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-9q32-28xc-rj2v"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127152": {
+  "id": "CVE-2026-127152",
+  "published": "2026-11-27T00:16:40.260",
+  "modified": "2026-11-27T00:16:40.367",
+  "desc": "Improper privilege management during container rebuild in Canonical LXD before 5.21.10, 6.10.2 allows a local user with container permissions to gain root privileges on the host via rebuilding a never-started unprivileged container so it starts without a user namespace or privileged-container hardening.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-269",
+   "CWE-271"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-v3r3-p5j8-9v5h"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127153": {
+  "id": "CVE-2026-127153",
+  "published": "2026-11-27T00:16:40.407",
+  "modified": "2026-11-27T00:16:40.520",
+  "desc": "Path traversal in proxy and CDI GPU device name handling in Canonical LXD before 5.0.12, 5.21.10, and 6.10.2 allows an authenticated user with access to a restricted project permitting proxy or GPU devices to read, overwrite, or delete arbitrary host files as root and terminate host processes via crafted device names containing path traversal sequences.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:N/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-9p5f-cj8j-2gvw"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127154": {
+  "id": "CVE-2026-127154",
+  "published": "2026-11-27T00:16:40.560",
+  "modified": "2026-11-27T00:16:40.663",
+  "desc": "Improper link resolution in image metadata tarball unpacking in Canonical LXD before 5.0.12, 5.21.10, and 6.10.2 allows an authenticated user with a restricted client certificate to write arbitrary host files as root and execute code on the host via a crafted rootfs symlink in an image metadata tarball.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:N/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-59",
+   "CWE-73"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-f5f6-6x9q-gh3f"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127157": {
+  "id": "CVE-2026-127157",
+  "published": "2026-11-27T00:16:40.707",
+  "modified": "2026-11-27T00:16:40.810",
+  "desc": "Exposure of sensitive information in token operation events in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows an authenticated user restricted to a project to gain full server access and cancel pending token operations via capturing certificate or cluster join token secrets broadcast to default project event listeners.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-3vw7-m6cc-q5rj"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127158": {
+  "id": "CVE-2026-127158",
+  "published": "2026-11-27T00:16:40.850",
+  "modified": "2026-11-27T00:16:40.960",
+  "desc": "Exposure of sensitive information and missing requestor validation in instance, volume, and snapshot migration operations in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with project event or operation read access to read migrating configuration and filesystem data and disrupt the migration via capturing per-connection websocket secrets from operation metadata and racing the migration's data channels.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-200",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-w75w-3wf7-g5pg"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127160": {
+  "id": "CVE-2026-127160",
+  "published": "2026-11-27T00:16:41.000",
+  "modified": "2026-11-27T00:16:41.103",
+  "desc": "Configuration injection in virtual machine disk device handling in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with VM creation permissions in a restricted project to bypass low-level VM restrictions and control the root QEMU process via quotes and line breaks in a disk device's guest path.",
+  "cvss": 5.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:L/SI:L/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-4qmm-cj9m-mmwr"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127161": {
+  "id": "CVE-2026-127161",
+  "published": "2026-11-27T00:16:41.143",
+  "modified": "2026-11-27T00:16:41.247",
+  "desc": "Exposure of sensitive information in live and stateful migration operations in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with project event or operation read access to read a migrating instance's checkpointed runtime state and disrupt the migration via capturing the state connection secret from operation events or queries.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-3p86-jgmm-hp96"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127162": {
+  "id": "CVE-2026-127162",
+  "published": "2026-11-27T00:16:41.297",
+  "modified": "2026-11-27T00:16:41.403",
+  "desc": "Improper output encoding in Prometheus metrics exposition in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows a user controlling a virtual machine to forge host metric labels and break metrics scraping via unescaped guest-controlled filesystem mountpoints and network interface names.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-116"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-25w7-6vhq-9xqg"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-127163": {
+  "id": "CVE-2026-127163",
+  "published": "2026-11-27T00:16:41.440",
+  "modified": "2026-11-27T00:16:41.440",
+  "desc": "Improper certificate validation in websocket connections in Canonical pylxd before 2.4.3 allows a network attacker to read command stdin and spoof command output via impersonating a remote LXD endpoint.",
+  "cvss": 9.1,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-295"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/pylxd/security/advisories/GHSA-3wgp-hmvf-xj8h"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-133530": {
+  "id": "CVE-2026-133530",
+  "published": "2026-11-27T00:16:41.570",
+  "modified": "2026-11-27T00:16:41.570",
+  "desc": "The Android application \"Tokyo Fire Department Official App\" contains a path traversal vulnerability that allows a malicious application installed on a user's device to obtain sensitive information from the affected application.",
+  "cvss": 1.8,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:A/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://jvn.jp/en/jp/JVN16383801/",
+   "https://play.google.com/store/apps/details?id=jp.tokyo.metro.tfd.TokyoFireDeptApp"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135372": {
+  "id": "CVE-2026-135372",
+  "published": "2026-11-27T00:16:41.717",
+  "modified": "2026-11-27T00:16:41.813",
+  "desc": "Incorrect authorization in custom storage volume, backup, and storage bucket endpoints in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with a project-restricted certificate or per-object authorization to read, rename, move, replace, or delete other projects' storage resources and bypass cluster group restrictions via missing project or object ownership checks.",
+  "cvss": 5.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-2x8c-5pfm-m9pg"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135373": {
+  "id": "CVE-2026-135373",
+  "published": "2026-11-27T00:16:41.860",
+  "modified": "2026-11-27T00:16:41.963",
+  "desc": "Path traversal in container device path resolution and VM disk format detection in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with project access, including an unprivileged local user through lxd-user, to read and modify arbitrary host files or Ceph RBD images and gain root privileges on the host via crafted device paths or QCOW2 backing file references.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-4q9m-c399-26hg"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135374": {
+  "id": "CVE-2026-135374",
+  "published": "2026-11-27T00:16:42.000",
+  "modified": "2026-11-27T00:16:42.103",
+  "desc": "Insufficient verification of data authenticity in shared image handling in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated user restricted to a single project to export private images, replace public image contents, remove other projects' images, and pin daemon memory via abusing fingerprint-based image sharing, partial fingerprints, and non-expiring push upload tokens.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-345"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-7rmq-8p53-99m4"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135375": {
+  "id": "CVE-2026-135375",
+  "published": "2026-11-27T00:16:42.147",
+  "modified": "2026-11-27T00:16:42.250",
+  "desc": "Untrusted search path and context handling in host-side instance helpers in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with restricted project access or root inside an unprivileged container to execute arbitrary code as root on the host, read daemon memory, remount read-only shifted disks as read-write, and disrupt other projects' mounts via file API, SFTP, syscall interception, and disk hot-plug operations.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-426"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-7w4q-6726-h2w5"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135376": {
+  "id": "CVE-2026-135376",
+  "published": "2026-11-27T00:16:42.290",
+  "modified": "2026-11-27T00:16:42.393",
+  "desc": "Incorrect authorization in project restriction enforcement in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with restricted project access to bypass project limits and access forbidden storage pools, volumes, network addresses, and CPU resources via instance moves, backup imports with overrides, received snapshots, or unvalidated volatile keys.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-897f-jx8m-f3mh"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135377": {
+  "id": "CVE-2026-135377",
+  "published": "2026-11-27T00:16:42.433",
+  "modified": "2026-11-27T00:16:42.540",
+  "desc": "Exposure of sensitive information in API responses, exports, and host-side artifacts in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows an authenticated lower-privileged user or a local host user to read credentials, private keys, and other projects' metadata and inject arguments into Ceph administration commands via unfiltered endpoints, exported configurations, log files, process command lines, and unvalidated bucket parameters.",
+  "cvss": 5.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-200"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-9ggh-g7fm-7fjj"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135378": {
+  "id": "CVE-2026-135378",
+  "published": "2026-11-27T00:16:42.580",
+  "modified": "2026-11-27T00:16:42.690",
+  "desc": "Incorrect authorization in NIC, managed network, network zone, and ACL handling in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated user of a restricted project or root inside an instance to manipulate host interfaces and firewall rules, read fragments of root-owned files through error messages, and disrupt or intercept other projects' networks and DNS records via unvalidated device and network configurations.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:L/SI:L/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-ch2g-rpx5-6fhp"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135379": {
+  "id": "CVE-2026-135379",
+  "published": "2026-11-27T00:16:42.730",
+  "modified": "2026-11-27T00:16:42.833",
+  "desc": "Improper control of code generation and project restriction enforcement in container configuration handling in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with restricted project access to execute arbitrary commands as root on the host, crash the daemon, and alter shared bridge DHCP assignments via image-supplied LXC configuration, concurrent rename races during updates, and unvalidated syscall or hardware address settings.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-cqmv-vjc9-5h35"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135380": {
+  "id": "CVE-2026-135380",
+  "published": "2026-11-27T00:16:42.873",
+  "modified": "2026-11-27T00:16:42.977",
+  "desc": "Incorrect authorization in instance, snapshot, and image operations in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with restricted project or per-object permissions to read and modify other clients' resources and execute arbitrary code as root on the host via missing entitlement checks on secondary objects and push-mode container migrations.",
+  "cvss": 5.8,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-cwhg-p49m-r95r"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135381": {
+  "id": "CVE-2026-135381",
+  "published": "2026-11-27T00:16:43.017",
+  "modified": "2026-11-27T00:16:43.117",
+  "desc": "Incorrect permission assignment for critical resources in rsync transfer sockets, instance storage directories, proxy socket paths, and disk staging mounts in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an unprivileged local user to gain root privileges on the host, read or modify transferred volumes, alter host file permissions, and inject AppArmor rules via connecting to unauthenticated abstract Unix sockets, running setuid binaries, or racing path and mount operations.",
+  "cvss": 6.3,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-732"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-fxg7-8r76-78r5"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135382": {
+  "id": "CVE-2026-135382",
+  "published": "2026-11-27T00:16:43.157",
+  "modified": "2026-11-27T00:16:43.260",
+  "desc": "Path traversal in backup, image, storage volume, and migration handling in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with restricted project access to read and write arbitrary host files as root and exhaust daemon memory via crafted symlinks, unvalidated path components, or oversized metadata.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-p9wc-rm6w-fg66"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135383": {
+  "id": "CVE-2026-135383",
+  "published": "2026-11-27T00:16:43.300",
+  "modified": "2026-11-27T00:16:43.403",
+  "desc": "Incorrect authorization in TLS certificate trust store and revocation handling in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated client with a restricted or revoked TLS certificate to gain unrestricted administrative access to the server or cluster via trust-lookup races, forwarded cluster identity headers, CA-issued certificate detaching, or stale revocation and session state.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-q3xj-r9qq-p638"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135384": {
+  "id": "CVE-2026-135384",
+  "published": "2026-11-27T00:16:43.450",
+  "modified": "2026-11-27T00:16:43.560",
+  "desc": "Improper authentication in OIDC bearer token verification in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows a remote attacker holding a token signed by the configured identity provider to authenticate to the LXD API and gain unauthorized control or impersonate users via presenting tokens issued for other applications, ID tokens, or unverified email claims.",
+  "cvss": 9.2,
+  "sev": "CRITICAL",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-287"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-v3m9-p36m-qjqc"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-135385": {
+  "id": "CVE-2026-135385",
+  "published": "2026-11-27T00:16:43.600",
+  "modified": "2026-11-27T00:16:43.703",
+  "desc": "Incorrect authorization in backup export and network zone read endpoints in Canonical LXD before 6.10.2 allows an authenticated user with view-only access to export instance and custom storage volume backups and read network zone TSIG peer keys via endpoints enforcing only view permissions.",
+  "cvss": 7.1,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-863"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-wvfc-p24c-mp98"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-136972": {
+  "id": "CVE-2026-136972",
+  "published": "2026-11-27T00:16:43.743",
+  "modified": "2026-11-27T00:16:43.850",
+  "desc": "Exposure of resource to wrong sphere in image template handling in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with restricted project access to read and overwrite host block and character devices via importing device nodes in an image's templates directory and accessing them through instance template endpoints.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-668"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-8gf7-9vvc-x36m"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-136973": {
+  "id": "CVE-2026-136973",
+  "published": "2026-11-27T00:16:43.893",
+  "modified": "2026-11-27T00:16:44.000",
+  "desc": "Exposure of resource to wrong sphere in optimized ZFS backup imports in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with restricted project access to mount an attacker-controlled filesystem over arbitrary host paths and execute code as root on the host via importing a filesystem ZFS stream declared as a block volume.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-20",
+   "CWE-668"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-8mqp-3g9q-46p2"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-136974": {
+  "id": "CVE-2026-136974",
+  "published": "2026-11-27T00:16:44.047",
+  "modified": "2026-11-27T00:16:44.153",
+  "desc": "Configuration injection in liblxc instance configuration generation in Canonical LXD before 6.10.2, 5.21.10, 5.0.12, 4.0.16 allows an authenticated user with restricted project access or a local user of the LXD user socket to execute arbitrary commands as root on the host via line breaks in instance configuration keys and values.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-269",
+   "CWE-93"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-9w8p-7chg-j6jr"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-136975": {
+  "id": "CVE-2026-136975",
+  "published": "2026-11-27T00:16:44.193",
+  "modified": "2026-11-27T00:16:44.310",
+  "desc": "Authentication bypass by spoofing in bridged NIC MAC filtering in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows a privileged user inside an instance sharing a managed bridge to intercept and deny inbound network traffic addressed to a neighbour instance via sending frames with a spoofed source MAC address before filtering drops them.",
+  "cvss": 6.2,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:H/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-290"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-f969-h6pc-hjv9"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-136976": {
+  "id": "CVE-2026-136976",
+  "published": "2026-11-27T00:16:44.347",
+  "modified": "2026-11-27T00:16:44.450",
+  "desc": "Improper link resolution before file access in recursive file pull in Canonical LXD before 4.0.15, 5.0.11, 5.21.9, and 6.8 on case-insensitive client filesystems allows an authenticated user with write access to an instance directory or custom volume to write arbitrary files outside the target directory and execute code as the operator via case-variant symlinks.",
+  "cvss": 8.5,
+  "sev": "HIGH",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-22"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-j7j6-8prc-c4g6"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-136977": {
+  "id": "CVE-2026-136977",
+  "published": "2026-11-27T00:16:44.497",
+  "modified": "2026-11-27T00:16:44.600",
+  "desc": "Improper authentication in the guest API connection handling in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows a root user inside an unisolated instance to impersonate another instance and read its configuration, metadata, and devices across project boundaries via holding open connections across PID wrap-around.",
+  "cvss": 5.1,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-287"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-jqcw-fqh2-qjpm"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-136978": {
+  "id": "CVE-2026-136978",
+  "published": "2026-11-27T00:16:44.640",
+  "modified": "2026-11-27T00:16:44.743",
+  "desc": "Exposure of resource to wrong sphere in the instance file transfer API in Canonical LXD before 4.0.16, 5.0.12, 5.21.10, 6.10.2 allows an authenticated user with restricted project access to read and write arbitrary host block or character devices, compromise the host, and hang file transfer requests via importing device nodes or named pipes outside /dev in an image or backup and opening them on a stopped instance.",
+  "cvss": 6.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-668"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-xhf6-9xgm-cjrc"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137114": {
+  "id": "CVE-2026-137114",
+  "published": "2026-11-27T00:16:44.783",
+  "modified": "2026-11-27T00:16:44.890",
+  "desc": "Exposure of resource to wrong sphere in image and backup metadata handling in Canonical LXD before 6.10.2, 5.21.10, 5.0.12, 4.0.16 allows an authenticated user with restricted project access to read and overwrite arbitrary host files, access other projects' data, and block the daemon via importing device nodes, hard links, symlinks, or named pipes.",
+  "cvss": 6.4,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:L/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-20",
+   "CWE-668"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/canonical/lxd/security/advisories/GHSA-fvhv-5r5f-xx7c"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137667": {
+  "id": "CVE-2026-137667",
+  "published": "2026-11-27T00:16:44.927",
+  "modified": "2026-11-27T00:16:45.087",
+  "desc": "A vulnerability was detected in ONNX ONNXMLTools up to 1.16.0. This affects the function get_set_node of the file onnxmltools/utils/visualize.py of the component Model Visualization. The manipulation results in cross site scripting. The attack can be executed remotely. The exploit is now public and may be used. The pull request to fix this issue awaits acceptance.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-79",
+   "CWE-94"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/onnx/onnxmltools/",
+   "https://github.com/onnx/onnxmltools/issues/815",
+   "https://github.com/onnx/onnxmltools/pull/817"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137668": {
+  "id": "CVE-2026-137668",
+  "published": "2026-11-27T00:16:45.143",
+  "modified": "2026-11-27T00:16:45.297",
+  "desc": "A flaw has been found in ONNX ONNXMLTools up to 1.16.0. This impacts the function visualize_model of the file onnxmltools/utils/visualize.py. This manipulation of the argument producer_name causes basic cross site scripting. The attack is possible to be carried out remotely. The exploit has been published and may be used. The pull request to fix this issue awaits acceptance.",
+  "cvss": 2.1,
+  "sev": "LOW",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-80"
+  ],
+  "products": [],
+  "refs": [
+   "https://github.com/onnx/onnxmltools/",
+   "https://github.com/onnx/onnxmltools/issues/816",
+   "https://github.com/onnx/onnxmltools/pull/817"
+  ],
+  "kev": false,
+  "epss": null
+ },
+ "CVE-2026-137677": {
+  "id": "CVE-2026-137677",
+  "published": "2026-11-27T01:16:40.270",
+  "modified": "2026-11-27T01:16:40.423",
+  "desc": "A vulnerability has been found in code-projects Simple Laundry System 1.0. This affects an unknown function of the file viewdetailforuser.php. The manipulation of the argument serviceId leads to sql injection. The attack is possible to be carried out remotely. The exploit has been disclosed to the public and may be used.",
+  "cvss": 5.5,
+  "sev": "MEDIUM",
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "cwe": [
+   "CWE-74",
+   "CWE-89"
+  ],
+  "products": [],
+  "refs": [
+   "https://code-projects.org/",
+   "https://github.com/zzzxc643/CVE1/blob/main/simple/vul2.md",
+   "https://vuldb.com/cve/CVE-2026-137677"
   ],
   "kev": false,
   "epss": null
