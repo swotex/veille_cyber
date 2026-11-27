@@ -10182,5 +10182,117 @@
   "lang": "en",
   "date": "2026-11-26T17:06:55+00:00",
   "summary": "FIFA didn’t say when the cyberattack took place, or the precise nature of the hacked information. The post FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’ appeared first on SecurityWeek ."
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/": {
+  "title": "Microsoft removes WSUS server role in Windows Server 2028",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T11:18:36+00:00",
+  "summary": "Microsoft will remove the WSUS server role from Windows Server 2028, the next major release of its server operating system. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/": {
+  "title": "Drupal warns of new site takeover flaw exploited in attacks",
+  "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T10:10:15+00:00",
+  "summary": "The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/": {
+  "title": "SAP confirms security incident after suspicious GitHub activity",
+  "url": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T09:56:36+00:00",
+  "summary": "SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment. [...]"
+ },
+ "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/": {
+  "title": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T09:08:16+00:00",
+  "summary": "Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month's security hotpatch update (KB5131077). [...]"
+ },
+ "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/": {
+  "title": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
+  "url": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
+  "source": "BleepingComputer",
+  "lang": "en",
+  "date": "2026-11-27T08:06:58+00:00",
+  "summary": "​A 12-year-old critical vulnerability in the Linux kernel's Network File System (NFS) server, tracked as CVE-2026-99362, allows remote attackers to gain root privileges. [...]"
+ },
+ "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html": {
+  "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+  "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-27T10:32:18+00:00",
+  "summary": "Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening…"
+ },
+ "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html": {
+  "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+  "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-27T09:29:30+00:00",
+  "summary": "Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website. \"Evidence indicates that malicious files were generated not only…"
+ },
+ "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html": {
+  "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+  "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-27T06:04:20+00:00",
+  "summary": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday. Three of the attacks targeted critical…"
+ },
+ "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html": {
+  "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+  "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+  "source": "The Hacker News",
+  "lang": "en",
+  "date": "2026-11-27T05:48:20+00:00",
+  "summary": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution. The proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been…"
+ },
+ "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/": {
+  "title": "In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities",
+  "url": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-27T11:00:00+00:00",
+  "summary": "Noteworthy stories that might have slipped under the radar: RansomwareHelp accused of profiting from ransom payments, USDA payment systems breach, cybersecurity firm Radware hacked. The post In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal…"
+ },
+ "https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/": {
+  "title": "100,000 Potentially Impacted by Colorado Data Breach",
+  "url": "https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-27T09:30:54+00:00",
+  "summary": "Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data. The post 100,000 Potentially Impacted by Colorado Data Breach appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/": {
+  "title": "Hex Package Manager Warns of Potential Data Breach",
+  "url": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-27T07:44:49+00:00",
+  "summary": "A vulnerability in hex.pm allowed hackers to run commands on web servers. No evidence of data modification was found, but database reads are not logged. The post Hex Package Manager Warns of Potential Data Breach appeared first on SecurityWeek ."
+ },
+ "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/": {
+  "title": "SAP Confirms Cyberattack, Source Code Reportedly Compromised",
+  "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+  "source": "SecurityWeek",
+  "lang": "en",
+  "date": "2026-11-27T07:36:14+00:00",
+  "summary": "SAP has detected suspicious activity on GitHub, where hackers reportedly used stolen employee tokens to copy and alter source code. The post SAP Confirms Cyberattack, Source Code Reportedly Compromised appeared first on SecurityWeek ."
+ },
+ "https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html": {
+  "title": "Recent Outages Have Economic Causes",
+  "url": "https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html",
+  "source": "Schneier on Security",
+  "lang": "en",
+  "date": "2026-11-27T12:02:23+00:00",
+  "summary": "This essay originally appeared in The Guardian . It’s an expanded version of the one I posted as “ We Get the Infrastructure We Pay For .” It’s been a bad week for our computerized infrastructure. We’ve seen outages at Microsoft , the FAA , a handful of…"
  }
 }
